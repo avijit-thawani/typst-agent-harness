@@ -1,0 +1,30 @@
+{
+  "sample_id": "pubmed_table_004",
+  "set": "pubmed_table",
+  "mode": "visual",
+  "model": "opus",
+  "method": "claude opus agentic (visual, effort medium) [v3]",
+  "claude_exit": 0,
+  "cost_usd": 1.5738945,
+  "num_turns": 28,
+  "duration_s": 397,
+  "is_error": false,
+  "tool_calls": 27,
+  "score_runs": 10,
+  "baseline_overall": null,
+  "final": {
+    "compiled": true,
+    "overall": 0.7705346387445058,
+    "visual": 0.6757404047363527,
+    "content": 0.9832684721338648,
+    "pagination": 1.0,
+    "layout": 0.9005865312300194,
+    "typography": 0.9196873608729386,
+    "raster": 0.32920939186735676,
+    "pages": "2/2",
+    "review_flags": [
+      "content_visual_disagreement",
+      "raster_layout_disagreement"
+    ]
+  }
+}

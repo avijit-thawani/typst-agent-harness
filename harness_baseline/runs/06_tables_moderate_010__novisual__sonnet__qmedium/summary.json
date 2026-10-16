@@ -1,0 +1,29 @@
+{
+  "sample_id": "06_tables_moderate_010",
+  "mode": "novisual",
+  "model": "sonnet",
+  "method": "claude sonnet agentic (novisual, effort medium)",
+  "claude_exit": 0,
+  "cost_usd": 2.3794228499999996,
+  "num_turns": 34,
+  "duration_s": 1465,
+  "is_error": false,
+  "tool_calls": 33,
+  "score_runs": 13,
+  "baseline_overall": 0.3086678382041997,
+  "final": {
+    "compiled": true,
+    "overall": 0.6716621881891618,
+    "visual": 0.5424921083537695,
+    "content": 0.9986533941061805,
+    "pagination": 0.9973490427098675,
+    "layout": 0.7861404764986532,
+    "typography": 0.8463276059868984,
+    "raster": 0.20075658967968846,
+    "pages": "2/2",
+    "review_flags": [
+      "content_visual_disagreement",
+      "raster_layout_disagreement"
+    ]
+  }
+}

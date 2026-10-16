@@ -1,0 +1,23 @@
+You are converting a LaTeX document to Typst (v0.15) with maximum visual fidelity.
+
+Files here:
+- main.tex       : LaTeX source (ground-truth content)
+- reference.pdf  : the pdfLaTeX render to match (do NOT read the PDF bytes; use feedback/reference_pages/*.png)
+- output.typ     : YOUR deliverable; write/overwrite this Typst file
+- ./score.sh     : compiles output.typ and prints a v2 EVIDENCE VECTOR
+
+This evaluator is NON-COMPENSATORY: there is no single overall score. You are
+judged on a GATE LADDER first, then continuous drivers. Your job:
+1. Pass every HARD GATE (these are the failures a human reviewer objects to):
+   page-count delta = 0, token recall & precision >= 0.95, and number_f1 = 1
+   when numbers are present. A high driver score NEVER excuses a failed gate.
+2. Once gates pass, hill-climb the CONTINUOUS DRIVERS (ink_f1_reg, ltsim_macro
+   up; center_q90 down). The REPORT-ONLY fields (ssim, page_break_f1, strict_f1)
+   are diagnostic context, not targets — strict_f1 can be low for math that the
+   PDF tokenizes differently even when content is correct, so trust the gates.
+
+Visual feedback ON: feedback/reference_pages/*.png are the reference page renders; read them to match margins, paper size, pagination.
+
+Procedure: write output.typ, run ./score.sh, iterate. ./score.sh auto-checkpoints
+your best version by (gates passed, driver mean); that best version is graded.
+Stop when gates pass and drivers plateau.

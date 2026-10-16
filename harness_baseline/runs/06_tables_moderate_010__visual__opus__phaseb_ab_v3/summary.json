@@ -1,0 +1,30 @@
+{
+  "sample_id": "06_tables_moderate_010",
+  "set": null,
+  "mode": "visual",
+  "model": "opus",
+  "method": "claude opus agentic (visual, effort medium) [v3]",
+  "claude_exit": 0,
+  "cost_usd": 1.9679769999999999,
+  "num_turns": 37,
+  "duration_s": 372,
+  "is_error": false,
+  "tool_calls": 36,
+  "score_runs": 11,
+  "baseline_overall": 0.3086678382041997,
+  "final": {
+    "compiled": true,
+    "overall": 0.793524101527638,
+    "visual": 0.7008422199842117,
+    "content": 0.9993880629244134,
+    "pagination": 1.0,
+    "layout": 0.8836993793054347,
+    "typography": 0.8928876461835025,
+    "raster": 0.3888632599566071,
+    "pages": "2/2",
+    "review_flags": [
+      "content_visual_disagreement",
+      "raster_layout_disagreement"
+    ]
+  }
+}

@@ -1,0 +1,5442 @@
+{
+ "evaluator": {
+  "name": "pdf_metric_axes_v2",
+  "version": 2,
+  "aggregate_score": null,
+  "policy": "No compensatory scalar. Report raw axes, coverage, abstentions, and localized evidence."
+ },
+ "inputs": {
+  "reference_pdf": "~/Downloads/learn/latex_typst/dataset_expansion/runs_agentic/i2s_equation_001__visual__opus__dsx_v3/work/reference.pdf",
+  "candidate_pdf": "~/Downloads/learn/latex_typst/dataset_expansion/runs_agentic/i2s_equation_001__visual__opus__dsx_v3/final_candidate.pdf",
+  "reference_page_count": 1,
+  "candidate_page_count": 1
+ },
+ "configuration": {
+  "render_dpi": 96,
+  "ink_threshold": 245,
+  "ink_tolerance_px": 2,
+  "normalization": "Unicode NFKC, soft-hyphen removal, collapsed whitespace; case preserved"
+ },
+ "applicability": {
+  "tables": null,
+  "formulas": null,
+  "figures": null
+ },
+ "axes": {
+  "canvas": {
+   "status": "scored",
+   "applicable": true,
+   "metrics": {
+    "reference_page_count": 1,
+    "candidate_page_count": 1,
+    "page_count_delta": 0,
+    "paired_page_count": 1,
+    "exact_paired_size_rate": 1.0,
+    "width_abs_log_ratio_max": 0.0,
+    "height_abs_log_ratio_max": 0.0
+   },
+   "evidence": {
+    "page_pairs": [
+     {
+      "page": 0,
+      "reference_size_points": [
+       612.0,
+       792.0
+      ],
+      "candidate_size_points": [
+       612.0,
+       792.0
+      ],
+      "width_abs_log_ratio": 0.0,
+      "height_abs_log_ratio": 0.0,
+      "exact_size_match": true
+     }
+    ]
+   },
+   "interpretation": "Canvas/page-size mismatch only; no token layout residual is folded into this axis."
+  },
+  "content": {
+   "status": "scored",
+   "applicable": true,
+   "metrics": {
+    "matched_block_normalized_edit_similarity_macro": 0.6649335670563414,
+    "matched_block_count": 53,
+    "strict_nfc_token_inventory": {
+     "reference_count": 236,
+     "candidate_count": 152,
+     "matched_count": 35,
+     "precision": 0.23026315789473684,
+     "recall": 0.1483050847457627,
+     "f1": 0.18041237113402062,
+     "exact_match": false,
+     "missing": [
+      "1",
+      "1",
+      "v",
+      "u",
+      "u",
+      "u",
+      "t",
+      "clipped",
+      "clipped",
+      "clipped",
+      "log",
+      "log",
+      "N",
+      "N",
+      "N",
+      "N",
+      "N",
+      "N",
+      "N",
+      "N",
+      "N",
+      "N",
+      "N",
+      "N"
+     ],
+     "extra": [
+      "\ud835\uddbc\ud835\uddc5\ud835\uddc2\ud835\uddc9\ud835\uddc9\ud835\uddbe\ud835\uddbdlog",
+      "\ud835\uddbc\ud835\uddc5\ud835\uddc2\ud835\uddc9\ud835\uddc9\ud835\uddbe\ud835\uddbdlog",
+      "\ud835\udc41",
+      "\ud835\udc41",
+      "\ud835\udc41",
+      "\ud835\udc41",
+      "\ud835\udc41",
+      "\ud835\udc41",
+      "\ud835\udc41",
+      "\ud835\udc41",
+      "\ud835\udc41",
+      "\ud835\udc41",
+      "\ud835\udc41",
+      "\ud835\udc41",
+      "\ud835\udc41",
+      "\ud835\udc41",
+      "\ud835\udc41",
+      "\ud835\udc36\u22c6",
+      "\ud835\udeff",
+      "\ud835\udeff",
+      "\ud835\udeff",
+      "\ud835\udeff",
+      "\ud835\udeff",
+      "\ud835\udc41min{\ud835\udc51\ud835\udf07\u22c6,\ud835\udf080(\ud835\udc60,"
+     ],
+     "missing_count": 201,
+     "extra_count": 117
+    },
+    "strict_nfc_document_edit_similarity": 0.3863404689092762,
+    "compatibility_nfkc_token_inventory": {
+     "reference_count": 236,
+     "candidate_count": 152,
+     "matched_count": 84,
+     "precision": 0.5526315789473685,
+     "recall": 0.3559322033898305,
+     "f1": 0.4329896907216495
+    },
+    "compatibility_nfkc_document_edit_similarity": 0.63506625891947
+   },
+   "evidence": {
+    "unmatched_reference_words": [
+     {
+      "word_index": 5,
+      "page": 0,
+      "bbox": [
+       72.0,
+       191.78746032714844,
+       80.07691192626953,
+       206.13365173339844
+      ],
+      "text": "1",
+      "normalized": "1"
+     },
+     {
+      "word_index": 20,
+      "page": 0,
+      "bbox": [
+       226.10287475585938,
+       258.9129333496094,
+       237.61196899414062,
+       269.822021484375
+      ],
+      "text": "v",
+      "normalized": "v"
+     },
+     {
+      "word_index": 21,
+      "page": 0,
+      "bbox": [
+       226.10287475585938,
+       265.0220642089844,
+       237.61196899414062,
+       275.93115234375
+      ],
+      "text": "u",
+      "normalized": "u"
+     },
+     {
+      "word_index": 22,
+      "page": 0,
+      "bbox": [
+       226.10287475585938,
+       271.5675964355469,
+       237.61196899414062,
+       282.4766845703125
+      ],
+      "text": "u",
+      "normalized": "u"
+     },
+     {
+      "word_index": 23,
+      "page": 0,
+      "bbox": [
+       226.10287475585938,
+       278.1131286621094,
+       237.61196899414062,
+       289.022216796875
+      ],
+      "text": "u",
+      "normalized": "u"
+     },
+     {
+      "word_index": 24,
+      "page": 0,
+      "bbox": [
+       226.10287475585938,
+       284.65863037109375,
+       237.61196899414062,
+       295.5677185058594
+      ],
+      "text": "t",
+      "normalized": "t"
+     },
+     {
+      "word_index": 26,
+      "page": 0,
+      "bbox": [
+       331.63970947265625,
+       273.5998229980469,
+       345.57061767578125,
+       284.5089111328125
+      ],
+      "text": "log",
+      "normalized": "log"
+     },
+     {
+      "word_index": 29,
+      "page": 0,
+      "bbox": [
+       108.096923828125,
+       272.3615417480469,
+       123.84964752197266,
+       283.2706298828125
+      ],
+      "text": "X",
+      "normalized": "X"
+     },
+     {
+      "word_index": 32,
+      "page": 0,
+      "bbox": [
+       135.06375122070312,
+       279.4623107910156,
+       160.3206024169922,
+       293.8358154296875
+      ],
+      "text": "d\u00b5\u22c6,\u03bd0",
+      "normalized": "d\u03bc\u22c6,\u03bd0"
+     },
+     {
+      "word_index": 34,
+      "page": 0,
+      "bbox": [
+       474.65155029296875,
+       282.9267272949219,
+       481.01153564453125,
+       293.8358154296875
+      ],
+      "text": "V",
+      "normalized": "V"
+     },
+     {
+      "word_index": 35,
+      "page": 0,
+      "bbox": [
+       483.439453125,
+       280.48858642578125,
+       490.02276611328125,
+       288.4587097167969
+      ],
+      "text": "\u2212",
+      "normalized": "\u2212"
+     },
+     {
+      "word_index": 36,
+      "page": 0,
+      "bbox": [
+       481.01519775390625,
+       286.7537536621094,
+       489.3758544921875,
+       294.7238464355469
+      ],
+      "text": "pe",
+      "normalized": "pe"
+     },
+     {
+      "word_index": 37,
+      "page": 0,
+      "bbox": [
+       270.58624267578125,
+       281.9615478515625,
+       277.8516845703125,
+       292.8706359863281
+      ],
+      "text": "n",
+      "normalized": "n"
+     },
+     {
+      "word_index": 38,
+      "page": 0,
+      "bbox": [
+       408.0295104980469,
+       281.9615478515625,
+       466.83428955078125,
+       297.978271484375
+      ],
+      "text": "oVarPs,a,\u03bd0(s)",
+      "normalized": "oVarPs,a,\u03bd0(s)"
+     },
+     {
+      "word_index": 40,
+      "page": 0,
+      "bbox": [
+       166.3175048828125,
+       282.9267272949219,
+       174.44479370117188,
+       293.8358154296875
+      ],
+      "text": "s,",
+      "normalized": "s,"
+     },
+     {
+      "word_index": 43,
+      "page": 0,
+      "bbox": [
+       215.4626922607422,
+       282.9267272949219,
+       221.10269165039062,
+       293.8358154296875
+      ],
+      "text": "\u03c1",
+      "normalized": "\u03c1"
+     },
+     {
+      "word_index": 44,
+      "page": 0,
+      "bbox": [
+       368.8981018066406,
+       294.272216796875,
+       371.919921875,
+       305.1813049316406
+      ],
+      "text": ",",
+      "normalized": ","
+     },
+     {
+      "word_index": 46,
+      "page": 0,
+      "bbox": [
+       374.9420471191406,
+       300.47393798828125,
+       406.8323974609375,
+       308.44403076171875
+      ],
+      "text": "S(A+B)",
+      "normalized": "S(A+B)"
+     },
+     {
+      "word_index": 47,
+      "page": 0,
+      "bbox": [
+       277.8590087890625,
+       292.7041015625,
+       303.1158752441406,
+       305.1812744140625
+      ],
+      "text": "d\u00b5\u22c6,\u03bd0",
+      "normalized": "d\u03bc\u22c6,\u03bd0"
+     },
+     {
+      "word_index": 48,
+      "page": 0,
+      "bbox": [
+       238.81356811523438,
+       294.2721862792969,
+       247.5735626220703,
+       305.1812744140625
+      ],
+      "text": "N",
+      "normalized": "N"
+     },
+     {
+      "word_index": 49,
+      "page": 0,
+      "bbox": [
+       250.58624267578125,
+       294.2721862792969,
+       268.7498474121094,
+       305.1812744140625
+      ],
+      "text": "min",
+      "normalized": "min"
+     },
+     {
+      "word_index": 50,
+      "page": 0,
+      "bbox": [
+       309.1127624511719,
+       294.272216796875,
+       317.2400207519531,
+       305.1813049316406
+      ],
+      "text": "s,",
+      "normalized": "s,"
+     },
+     {
+      "word_index": 53,
+      "page": 0,
+      "bbox": [
+       358.2579040527344,
+       294.272216796875,
+       363.89788818359375,
+       305.1813049316406
+      ],
+      "text": "\u03c1",
+      "normalized": "\u03c1"
+     },
+     {
+      "word_index": 54,
+      "page": 0,
+      "bbox": [
+       98.70585632324219,
+       298.34088134765625,
+       133.2392578125,
+       306.45819091796875
+      ],
+      "text": "s\u2208S,a\u2208A",
+      "normalized": "s\u2208S,a\u2208A"
+     }
+    ],
+    "unmatched_candidate_words": [
+     {
+      "word_index": 19,
+      "page": 0,
+      "bbox": [
+       283.5707702636719,
+       273.83575439453125,
+       322.53900146484375,
+       287.2139587402344
+      ],
+      "text": "\ud835\uddbc\ud835\uddc5\ud835\uddc2\ud835\uddc9\ud835\uddc9\ud835\uddbe\ud835\uddbdlog",
+      "normalized": "clippedlog"
+     },
+     {
+      "word_index": 24,
+      "page": 0,
+      "bbox": [
+       218.40785217285156,
+       291.23773193359375,
+       295.02801513671875,
+       303.2409362792969
+      ],
+      "text": "\ud835\udc41min{\ud835\udc51\ud835\udf07\u22c6,\ud835\udf080(\ud835\udc60,",
+      "normalized": "Nmin{d\u03bc\u22c6,\u03bd0(s,"
+     },
+     {
+      "word_index": 27,
+      "page": 0,
+      "bbox": [
+       336.6112976074219,
+       292.2409362792969,
+       350.53729248046875,
+       303.2409362792969
+      ],
+      "text": "\ud835\udf0c),",
+      "normalized": "\u03c1),"
+     },
+     {
+      "word_index": 29,
+      "page": 0,
+      "bbox": [
+       353.4706115722656,
+       292.2409362792969,
+       392.35784912109375,
+       306.40234375
+      ],
+      "text": "\ud835\udc46(\ud835\udc34+\ud835\udc35)}",
+      "normalized": "S(A+B)}"
+     },
+     {
+      "word_index": 30,
+      "page": 0,
+      "bbox": [
+       113.65375518798828,
+       280.3268127441406,
+       153.2405548095703,
+       293.68194580078125
+      ],
+      "text": "\ud835\udc51\ud835\udf07\u22c6,\ud835\udf080(\ud835\udc60,",
+      "normalized": "d\u03bc\u22c6,\u03bd0(s,"
+     },
+     {
+      "word_index": 34,
+      "page": 0,
+      "bbox": [
+       393.45782470703125,
+       282.1627197265625,
+       464.4320373535156,
+       299.00482177734375
+      ],
+      "text": "\ud835\uddb5\ud835\uddba\ud835\uddcb\ud835\udc43\ud835\udc60,\ud835\udc4e,\ud835\udf080(\ud835\udc60)(\ud835\udc49\u2212",
+      "normalized": "VarPs,a,\u03bd0(s)(V\u2212"
+     },
+     {
+      "word_index": 35,
+      "page": 0,
+      "bbox": [
+       454.9874267578125,
+       282.68194580078125,
+       470.0860290527344,
+       295.7587585449219
+      ],
+      "text": "\ud835\uddc9\ud835\uddbe)",
+      "normalized": "pe)"
+     },
+     {
+      "word_index": 38,
+      "page": 0,
+      "bbox": [
+       86.96922302246094,
+       282.68194580078125,
+       102.85322570800781,
+       293.68194580078125
+      ],
+      "text": "\u2211",
+      "normalized": "\u2211"
+     },
+     {
+      "word_index": 39,
+      "page": 0,
+      "bbox": [
+       78.00202178955078,
+       297.6881408691406,
+       111.82041931152344,
+       305.3881530761719
+      ],
+      "text": "\ud835\udc60\u2208\ud835\udcae\ufe00,\ud835\udc4e\u2208\ud835\udc9c\ufe00",
+      "normalized": "s\u2208S\ufe00,a\u2208A\ufe00"
+     },
+     {
+      "word_index": 41,
+      "page": 0,
+      "bbox": [
+       97.08702087402344,
+       319.80859375,
+       136.0552520751953,
+       333.1867980957031
+      ],
+      "text": "\ud835\uddbc\ud835\uddc5\ud835\uddc2\ud835\uddc9\ud835\uddc9\ud835\uddbe\ud835\uddbdlog",
+      "normalized": "clippedlog"
+     },
+     {
+      "word_index": 43,
+      "page": 0,
+      "bbox": [
+       66.38846588134766,
+       318.4060974121094,
+       102.6200180053711,
+       339.65478515625
+      ],
+      "text": "\u2264\u221a\ud835\udc36\u22c6",
+      "normalized": "\u2264\u221aC\u22c6"
+     },
+     {
+      "word_index": 46,
+      "page": 0,
+      "bbox": [
+       159.5967254638672,
+       328.65478515625,
+       175.48072814941406,
+       339.65478515625
+      ],
+      "text": "\u2211",
+      "normalized": "\u2211"
+     },
+     {
+      "word_index": 47,
+      "page": 0,
+      "bbox": [
+       186.28125,
+       327.6515808105469,
+       236.86805725097656,
+       339.9182434082031
+      ],
+      "text": "\u221a\ud835\udc51\ud835\udf07\u22c6,\ud835\udf080(\ud835\udc60,",
+      "normalized": "\u221ad\u03bc\u22c6,\u03bd0(s,"
+     },
+     {
+      "word_index": 50,
+      "page": 0,
+      "bbox": [
+       278.45135498046875,
+       328.1355895996094,
+       360.2935485839844,
+       344.9776611328125
+      ],
+      "text": "\ud835\udf0c)\ud835\uddb5\ud835\uddba\ud835\uddcb\ud835\udc43\ud835\udc60,\ud835\udc4e,\ud835\udf080(\ud835\udc60)(\ud835\udc49\u2212",
+      "normalized": "\u03c1)VarPs,a,\u03bd0(s)(V\u2212"
+     },
+     {
+      "word_index": 51,
+      "page": 0,
+      "bbox": [
+       350.8489685058594,
+       328.65478515625,
+       365.9475402832031,
+       341.7315979003906
+      ],
+      "text": "\ud835\uddc9\ud835\uddbe)",
+      "normalized": "pe)"
+     },
+     {
+      "word_index": 52,
+      "page": 0,
+      "bbox": [
+       150.6295166015625,
+       343.6609802246094,
+       184.4479217529297,
+       351.3609924316406
+      ],
+      "text": "\ud835\udc60\u2208\ud835\udcae\ufe00,\ud835\udc4e\u2208\ud835\udc9c\ufe00",
+      "normalized": "s\u2208S\ufe00,a\u2208A\ufe00"
+     },
+     {
+      "word_index": 53,
+      "page": 0,
+      "bbox": [
+       105.03146362304688,
+       364.34375,
+       159.04281616210938,
+       377.7219543457031
+      ],
+      "text": "\ud835\uddbc\ud835\uddc5\ud835\uddc2\ud835\uddc9\ud835\uddc9\ud835\uddbe\ud835\uddbd\ud835\udc46(\ud835\udc34+",
+      "normalized": "clippedS(A+"
+     },
+     {
+      "word_index": 57,
+      "page": 0,
+      "bbox": [
+       77.38846588134766,
+       362.94122314453125,
+       110.56446838378906,
+       384.18994140625
+      ],
+      "text": "+\u221a\ud835\udc36\u22c6",
+      "normalized": "+\u221aC\u22c6"
+     },
+     {
+      "word_index": 60,
+      "page": 0,
+      "bbox": [
+       213.82305908203125,
+       373.18994140625,
+       229.70706176757812,
+       384.18994140625
+      ],
+      "text": "\u2211",
+      "normalized": "\u2211"
+     },
+     {
+      "word_index": 61,
+      "page": 0,
+      "bbox": [
+       240.50758361816406,
+       372.1064453125,
+       291.0943908691406,
+       384.18994140625
+      ],
+      "text": "\u221a\ud835\udc51\ud835\udf07\u22c6,\ud835\udf080(\ud835\udc60,",
+      "normalized": "\u221ad\u03bc\u22c6,\u03bd0(s,"
+     },
+     {
+      "word_index": 65,
+      "page": 0,
+      "bbox": [
+       345.9901428222656,
+       372.1867370605469,
+       402.07940673828125,
+       384.4533996582031
+      ],
+      "text": "\u22c5\u221a\ud835\udc51\ud835\udf07\u22c6,\ud835\udf080(\ud835\udc60,",
+      "normalized": "\u22c5\u221ad\u03bc\u22c6,\u03bd0(s,"
+     },
+     {
+      "word_index": 68,
+      "page": 0,
+      "bbox": [
+       443.6626892089844,
+       372.6707458496094,
+       525.5048828125,
+       389.5128173828125
+      ],
+      "text": "\ud835\udf0c)\ud835\uddb5\ud835\uddba\ud835\uddcb\ud835\udc43\ud835\udc60,\ud835\udc4e,\ud835\udf080(\ud835\udc60)(\ud835\udc49\u2212",
+      "normalized": "\u03c1)VarPs,a,\u03bd0(s)(V\u2212"
+     },
+     {
+      "word_index": 69,
+      "page": 0,
+      "bbox": [
+       516.060302734375,
+       373.18994140625,
+       531.1588745117188,
+       386.2667541503906
+      ],
+      "text": "\ud835\uddc9\ud835\uddbe)",
+      "normalized": "pe)"
+     },
+     {
+      "word_index": 70,
+      "page": 0,
+      "bbox": [
+       204.85585021972656,
+       388.1961364746094,
+       238.67425537109375,
+       395.8961486816406
+      ],
+      "text": "\ud835\udc60\u2208\ud835\udcae\ufe00,\ud835\udc4e\u2208\ud835\udc9c\ufe00",
+      "normalized": "s\u2208S\ufe00,a\u2208A\ufe00"
+     }
+    ],
+    "lowest_similarity_block_pairs": [
+     {
+      "reference_block_index": 44,
+      "candidate_block_index": 21,
+      "reference_page": 0,
+      "candidate_page": 0,
+      "reference_text": "s, a, \u03bd0(s); \u03c1",
+      "candidate_text": "\u221a\ud835\udc51\ud835\udf07\u22c6,\ud835\udf080(\ud835\udc60, \ud835\udc4e, \ud835\udf080(\ud835\udc60); \ud835\udf0c) \u22c5\u221a\ud835\udc51\ud835\udf07\u22c6,\ud835\udf080(\ud835\udc60, \ud835\udc4e, \ud835\udf080(\ud835\udc60); \ud835\udf0c)\ud835\uddb5\ud835\uddba\ud835\uddcb\ud835\udc43\ud835\udc60,\ud835\udc4e,\ud835\udf080(\ud835\udc60)(\ud835\udc49\u2212 \ud835\uddc9\ud835\uddbe)",
+      "normalized_edit_similarity": 0.20588235294117652
+     },
+     {
+      "reference_block_index": 30,
+      "candidate_block_index": 16,
+      "reference_page": 0,
+      "candidate_page": 0,
+      "reference_text": "s, a, \u03bd0(s); \u03c1",
+      "candidate_text": "\u221a\ud835\udc51\ud835\udf07\u22c6,\ud835\udf080(\ud835\udc60, \ud835\udc4e, \ud835\udf080(\ud835\udc60); \ud835\udf0c)\ud835\uddb5\ud835\uddba\ud835\uddcb\ud835\udc43\ud835\udc60,\ud835\udc4e,\ud835\udf080(\ud835\udc60)(\ud835\udc49\u2212 \ud835\uddc9\ud835\uddbe)",
+      "normalized_edit_similarity": 0.32558139534883723
+     },
+     {
+      "reference_block_index": 60,
+      "candidate_block_index": 27,
+      "reference_page": 0,
+      "candidate_page": 0,
+      "reference_text": "s, a, \u03bd0(s); \u03c1",
+      "candidate_text": "\ud835\udc51\ud835\udf07\u22c6,\ud835\udf080(\ud835\udc60, \ud835\udc4e, \ud835\udf080(\ud835\udc60); \ud835\udf0c)\ud835\uddb5\ud835\uddba\ud835\uddcb\ud835\udc43\ud835\udc60,\ud835\udc4e,\ud835\udf080(\ud835\udc60)(\ud835\udc49\u2212 \ud835\uddc9\ud835\uddbe)",
+      "normalized_edit_similarity": 0.33333333333333337
+     },
+     {
+      "reference_block_index": 77,
+      "candidate_block_index": 35,
+      "reference_page": 0,
+      "candidate_page": 0,
+      "reference_text": "s, a, \u03bd0(s); \u03c1",
+      "candidate_text": "\ud835\udc51\ud835\udf07\u22c6,\ud835\udf080(\ud835\udc60, \ud835\udc4e, \ud835\udf080(\ud835\udc60); \ud835\udf0c)\ud835\uddb5\ud835\uddba\ud835\uddcb\ud835\udc43\ud835\udc60,\ud835\udc4e,\ud835\udf080(\ud835\udc60)(\ud835\udc49\u2212 \ud835\uddc9\ud835\uddbe)",
+      "normalized_edit_similarity": 0.33333333333333337
+     },
+     {
+      "reference_block_index": 89,
+      "candidate_block_index": 41,
+      "reference_page": 0,
+      "candidate_page": 0,
+      "reference_text": "s, a, \u03bd0(s); \u03c1",
+      "candidate_text": "\ud835\udc51\ud835\udf07\u22c6,\ud835\udf080(\ud835\udc60, \ud835\udc4e, \ud835\udf080(\ud835\udc60); \ud835\udf0c)\ud835\uddb5\ud835\uddba\ud835\uddcb\ud835\udc43\ud835\udc60,\ud835\udc4e,\ud835\udf080(\ud835\udc60)(\ud835\udc49\u2212 \ud835\uddc9\ud835\uddbe)",
+      "normalized_edit_similarity": 0.33333333333333337
+     },
+     {
+      "reference_block_index": 101,
+      "candidate_block_index": 47,
+      "reference_page": 0,
+      "candidate_page": 0,
+      "reference_text": "\u03b4",
+      "candidate_text": "\ud835\udeff\u221a\u2211",
+      "normalized_edit_similarity": 0.33333333333333337
+     },
+     {
+      "reference_block_index": 113,
+      "candidate_block_index": 53,
+      "reference_page": 0,
+      "candidate_page": 0,
+      "reference_text": "\u03b4",
+      "candidate_text": "\ud835\udeff\u221a\u2211",
+      "normalized_edit_similarity": 0.33333333333333337
+     },
+     {
+      "reference_block_index": 19,
+      "candidate_block_index": 6,
+      "reference_page": 0,
+      "candidate_page": 0,
+      "reference_text": "s, a, \u03bd0(s); \u03c1",
+      "candidate_text": "\ud835\udeff \ud835\udc41min{\ud835\udc51\ud835\udf07\u22c6,\ud835\udf080(\ud835\udc60, \ud835\udc4e, \ud835\udf080(\ud835\udc60); \ud835\udf0c), 1 \ud835\udc46(\ud835\udc34+\ud835\udc35)}",
+      "normalized_edit_similarity": 0.35
+     },
+     {
+      "reference_block_index": 8,
+      "candidate_block_index": 23,
+      "reference_page": 0,
+      "candidate_page": 0,
+      "reference_text": "(i) \u2264",
+      "candidate_text": "\u2264 (ii) \u221a\ud835\udc36\u22c6",
+      "normalized_edit_similarity": 0.4
+     },
+     {
+      "reference_block_index": 88,
+      "candidate_block_index": 39,
+      "reference_page": 0,
+      "candidate_page": 0,
+      "reference_text": "\u22642",
+      "candidate_text": "\u22642\u221a\ud835\udc36\u22c6",
+      "normalized_edit_similarity": 0.4
+     },
+     {
+      "reference_block_index": 71,
+      "candidate_block_index": 33,
+      "reference_page": 0,
+      "candidate_page": 0,
+      "reference_text": "\u03b4 N",
+      "candidate_text": "\ud835\udeff \ud835\udc41 [ \u2211",
+      "normalized_edit_similarity": 0.4285714285714286
+     },
+     {
+      "reference_block_index": 85,
+      "candidate_block_index": 40,
+      "reference_page": 0,
+      "candidate_page": 0,
+      "reference_text": "\u03b4 N",
+      "candidate_text": "\ud835\udeff \ud835\udc41 \u221a \u2211",
+      "normalized_edit_similarity": 0.4285714285714286
+     },
+     {
+      "reference_block_index": 10,
+      "candidate_block_index": 28,
+      "reference_page": 0,
+      "candidate_page": 0,
+      "reference_text": "\u03b4",
+      "candidate_text": "\ud835\udeff\u22c5",
+      "normalized_edit_similarity": 0.5
+     },
+     {
+      "reference_block_index": 14,
+      "candidate_block_index": 9,
+      "reference_page": 0,
+      "candidate_page": 0,
+      "reference_text": "\u03b13",
+      "candidate_text": "\ud835\udefc3 \u2264",
+      "normalized_edit_similarity": 0.5
+     },
+     {
+      "reference_block_index": 24,
+      "candidate_block_index": 14,
+      "reference_page": 0,
+      "candidate_page": 0,
+      "reference_text": "C\u22c6",
+      "candidate_text": "\u2264\u221a\ud835\udc36\u22c6",
+      "normalized_edit_similarity": 0.5
+     },
+     {
+      "reference_block_index": 37,
+      "candidate_block_index": 19,
+      "reference_page": 0,
+      "candidate_page": 0,
+      "reference_text": "C\u22c6",
+      "candidate_text": "+\u221a\ud835\udc36\u22c6",
+      "normalized_edit_similarity": 0.5
+     },
+     {
+      "reference_block_index": 59,
+      "candidate_block_index": 29,
+      "reference_page": 0,
+      "candidate_page": 0,
+      "reference_text": "SA \u00b7",
+      "candidate_text": "\ud835\udc46\ud835\udc34\u22c5\u221a \u2211",
+      "normalized_edit_similarity": 0.5
+     },
+     {
+      "reference_block_index": 68,
+      "candidate_block_index": 32,
+      "reference_page": 0,
+      "candidate_page": 0,
+      "reference_text": "C\u22c6",
+      "candidate_text": "+\u221a\ud835\udc36\u22c6",
+      "normalized_edit_similarity": 0.5
+     },
+     {
+      "reference_block_index": 97,
+      "candidate_block_index": 43,
+      "reference_page": 0,
+      "candidate_page": 0,
+      "reference_text": "(iii) = 2",
+      "candidate_text": "= (iii) 2\u221a\ud835\udc36\u22c6",
+      "normalized_edit_similarity": 0.5
+     },
+     {
+      "reference_block_index": 76,
+      "candidate_block_index": 34,
+      "reference_page": 0,
+      "candidate_page": 0,
+      "reference_text": "s, a, \u03bd0(s); \u03c1",
+      "candidate_text": "\ud835\udc51\ud835\udf07\u22c6,\ud835\udf080(\ud835\udc60, \ud835\udc4e, \ud835\udf080(\ud835\udc60); \ud835\udf0c)]\u221a \u2211",
+      "normalized_edit_similarity": 0.5384615384615384
+     },
+     {
+      "reference_block_index": 99,
+      "candidate_block_index": 46,
+      "reference_page": 0,
+      "candidate_page": 0,
+      "reference_text": "d\u00b5\u22c6,\u03bd0 (s; \u03c1) E a\u223c\u00b5\u22c6(s),b\u223c\u03bd0(s)",
+      "candidate_text": "\ud835\udc51\ud835\udf07\u22c6,\ud835\udf080(\ud835\udc60; \ud835\udf0c)\ud835\udd3c\ud835\udc4e\u223c\ud835\udf07\u22c6(\ud835\udc60),\ud835\udc4f\u223c\ud835\udf080(\ud835\udc60)[\ud835\uddb5\ud835\uddba\ud835\uddcb\ud835\udc43\ud835\udc60,\ud835\udc4e,\ud835\udc4f(\ud835\udc49\u2212 \ud835\uddc9\ud835\uddbe)]",
+      "normalized_edit_similarity": 0.5434782608695652
+     },
+     {
+      "reference_block_index": 26,
+      "candidate_block_index": 15,
+      "reference_page": 0,
+      "candidate_page": 0,
+      "reference_text": "\u03b4 N",
+      "candidate_text": "\ud835\udeff \ud835\udc41 \u2211",
+      "normalized_edit_similarity": 0.6
+     },
+     {
+      "reference_block_index": 39,
+      "candidate_block_index": 20,
+      "reference_page": 0,
+      "candidate_page": 0,
+      "reference_text": "\u03b4 N",
+      "candidate_text": "\ud835\udeff \ud835\udc41 \u2211",
+      "normalized_edit_similarity": 0.6
+     },
+     {
+      "reference_block_index": 110,
+      "candidate_block_index": 52,
+      "reference_page": 0,
+      "candidate_page": 0,
+      "reference_text": "d\u00b5\u22c6,\u03bd0 (s; \u03c1) VarP \u00b5\u22c6,\u03bd0 s",
+      "candidate_text": "\ud835\udc51\ud835\udf07\u22c6,\ud835\udf080(\ud835\udc60; \ud835\udf0c)\ud835\uddb5\ud835\uddba\ud835\uddcb\ud835\udc43\ud835\udf07\u22c6,\ud835\udf080 \ud835\udc60 (\ud835\udc49\u2212 \ud835\uddc9\ud835\uddbe).",
+      "normalized_edit_similarity": 0.625
+     }
+    ]
+   },
+   "interpretation": "Strict NFC preservation is the primary text view. NFKC is reported separately as a compatibility view for ligature/encoding equivalence; it never hides the strict mismatch."
+  },
+  "critical_content": {
+   "status": "scored",
+   "applicable": true,
+   "metrics": {
+    "numbers": {
+     "reference_count": 7,
+     "candidate_count": 5,
+     "matched_count": 5,
+     "precision": 1.0,
+     "recall": 0.7142857142857143,
+     "f1": 0.8333333333333333,
+     "exact_match": false,
+     "missing": [
+      "1",
+      "1"
+     ],
+     "extra": [],
+     "missing_count": 2,
+     "extra_count": 0
+    },
+    "operators": {
+     "reference_count": 39,
+     "candidate_count": 64,
+     "matched_count": 39,
+     "precision": 0.609375,
+     "recall": 1.0,
+     "f1": 0.7572815533980582,
+     "exact_match": false,
+     "missing": [],
+     "extra": [
+      "\u2211",
+      "\u2211",
+      "\u2211",
+      "\u2211",
+      "\u2211",
+      "\u2211",
+      "\u2211",
+      "\u2211",
+      "\u2211",
+      "\u221a",
+      "\u221a",
+      "\u221a",
+      "\u221a",
+      "\u221a",
+      "\u221a",
+      "\u221a",
+      "\u221a",
+      "\u221a",
+      "\u221a",
+      "\u221a",
+      "\u221a",
+      "\u221a",
+      "\u221a",
+      "\u221a"
+     ],
+     "missing_count": 0,
+     "extra_count": 25
+    },
+    "citation_markers": {
+     "reference_count": 0,
+     "candidate_count": 0,
+     "matched_count": 0,
+     "precision": 1.0,
+     "recall": 1.0,
+     "f1": 1.0,
+     "exact_match": true,
+     "missing": [],
+     "extra": [],
+     "missing_count": 0,
+     "extra_count": 0
+    }
+   },
+   "evidence": {
+    "normalization": "Unicode NFKC; case preserved; multiset comparison",
+    "number_pattern": "(?<![\\w.])[+-]?(?:\\d+(?:[.,]\\d+)*|\\.\\d+)(?:[eE][+-]?\\d+)?%?",
+    "operator_inventory": "*+/<=>^\u00b1\u00d7\u00f7\u2190\u2192\u2194\u2202\u2207\u2208\u2209\u220f\u2211\u2212\u221a\u221e\u2229\u222a\u222b\u2248\u2260\u2264\u2265\u2282\u2286",
+    "citation_pattern": "\\[(?:\\d+[a-z]?(?:\\s*[-,;]\\s*\\d+[a-z]?){0,12})\\]|\\((?:18|19|20)\\d{2}[a-z]?\\)"
+   },
+   "interpretation": "Exact critical-symbol inventories prevent visually small numeric or operator errors from disappearing inside a document-level text average. Empty inventories are reported as exact but do not establish construct applicability."
+  },
+  "text_grounding": {
+   "status": "scored",
+   "applicable": true,
+   "metrics": {
+    "reference_word_count": 236,
+    "candidate_word_count": 152,
+    "exact_matched_word_count": 84,
+    "word_precision": 0.5526315789473685,
+    "word_recall": 0.3559322033898305,
+    "word_hmean": 0.4329896907216495,
+    "split_count": null,
+    "merge_count": null
+   },
+   "evidence": {
+    "match_policy": "exact Unicode-NFKC word text with deterministic page/position assignment for repeats"
+   },
+   "interpretation": "Digital-PDF exact-word grounding adaptation; it is not the published CLEval algorithm. Split/merge values remain null until a validated implementation exists."
+  },
+  "geometry": {
+   "status": "scored",
+   "applicable": true,
+   "metrics": {
+    "matched_token_count": 84,
+    "reference_match_coverage": 0.3559322033898305,
+    "candidate_match_coverage": 0.5526315789473685,
+    "center_displacement_q50": 0.03998834630616259,
+    "center_displacement_q90": 0.1030447272448253,
+    "center_displacement_max": 0.5071605840053522,
+    "bbox_iou_q10": 0.0,
+    "bbox_iou_q50": 0.0,
+    "width_abs_log_ratio_q90": 0.09418713782233552,
+    "height_abs_log_ratio_q90": 0.09402069950023828
+   },
+   "evidence": {
+    "worst_token_pairs": [
+     {
+      "token": "s",
+      "reference_word_index": 55,
+      "candidate_word_index": 147,
+      "reference_page": 0,
+      "candidate_page": 0,
+      "reference_bbox": [
+       98.25621032714844,
+       309.1529235839844,
+       109.16529846191406,
+       320.06201171875
+      ],
+      "candidate_bbox": [
+       307.31365966796875,
+       612.9431762695312,
+       310.9986572265625,
+       618.4431762695312
+      ],
+      "reference_bbox_normalized": [
+       0.1605493632796543,
+       0.3903446004848288,
+       0.17837467068940208,
+       0.4041187016650884
+      ],
+      "candidate_bbox_normalized": [
+       0.5021465027254391,
+       0.7739181518554688,
+       0.5081677405662786,
+       0.7808625962999132
+      ],
+      "center_displacement": 0.5071605840053522,
+      "bbox_iou": 0.0,
+      "width_abs_log_ratio": 1.0853263525548622,
+      "height_abs_log_ratio": 0.6848481234320701
+     },
+     {
+      "token": "\u03c1)",
+      "reference_word_index": 205,
+      "candidate_word_index": 33,
+      "reference_page": 0,
+      "candidate_page": 0,
+      "reference_bbox": [
+       304.17108154296875,
+       552.6939086914062,
+       314.04400634765625,
+       563.60302734375
+      ],
+      "candidate_bbox": [
+       194.8238525390625,
+       282.68194580078125,
+       205.6918487548828,
+       293.68194580078125
+      ],
+      "reference_bbox_normalized": [
+       0.49701157114864175,
+       0.6978458443073311,
+       0.5131438012216606,
+       0.7116199840198864
+      ],
+      "candidate_bbox_normalized": [
+       0.31833962833180146,
+       0.3569216487383602,
+       0.33609779208314183,
+       0.370810537627249
+      ],
+      "center_displacement": 0.38447887455800267,
+      "bbox_iou": 0.0,
+      "width_abs_log_ratio": 0.09602620102678043,
+      "height_abs_log_ratio": 0.008296259686413687
+     },
+     {
+      "token": "clipped",
+      "reference_word_index": 25,
+      "candidate_word_index": 78,
+      "reference_page": 0,
+      "candidate_page": 0,
+      "reference_bbox": [
+       304.40264892578125,
+       279.41937255859375,
+       329.29327392578125,
+       287.38946533203125
+      ],
+      "candidate_bbox": [
+       98.80081939697266,
+       413.602294921875,
+       121.26172637939453,
+       421.30230712890625
+      ],
+      "reference_bbox_normalized": [
+       0.49738994922513274,
+       0.3528022380790325,
+       0.5380609051074857,
+       0.3628654865303425
+      ],
+      "candidate_bbox_normalized": [
+       0.16143924738067428,
+       0.5222251198508523,
+       0.1981400757833244,
+       0.5319473574859928
+      ],
+      "center_displacement": 0.37795098698882246,
+      "bbox_iou": 0.0,
+      "width_abs_log_ratio": 0.10271489593511902,
+      "height_abs_log_ratio": 0.03447421887819304
+     },
+     {
+      "token": "\u03c1)",
+      "reference_word_index": 227,
+      "candidate_word_index": 64,
+      "reference_page": 0,
+      "candidate_page": 0,
+      "reference_bbox": [
+       303.93994140625,
+       596.5576171875,
+       313.8128662109375,
+       607.4667358398438
+      ],
+      "candidate_bbox": [
+       332.6777038574219,
+       373.18994140625,
+       343.5456848144531,
+       384.18994140625
+      ],
+      "reference_bbox_normalized": [
+       0.496633891186683,
+       0.7532293146306818,
+       0.5127661212597018,
+       0.767003454343237
+      ],
+      "candidate_bbox_normalized": [
+       0.5435910193748723,
+       0.47119942096748735,
+       0.5613491581935509,
+       0.48508830985637624
+      ],
+      "center_displacement": 0.2859903535110991,
+      "bbox_iou": 0.0,
+      "width_abs_log_ratio": 0.09602479701454354,
+      "height_abs_log_ratio": 0.00829625968641765
+     },
+     {
+      "token": "\u2264",
+      "reference_word_index": 119,
+      "candidate_word_index": 140,
+      "reference_page": 0,
+      "candidate_page": 0,
+      "reference_bbox": [
+       88.14151763916016,
+       417.77154541015625,
+       96.61788177490234,
+       428.6806335449219
+      ],
+      "candidate_bbox": [
+       68.2078628540039,
+       602.4766845703125,
+       76.76586151123047,
+       613.4766845703125
+      ],
+      "reference_bbox_normalized": [
+       0.14402208764568653,
+       0.5274893250128235,
+       0.1578723558413437,
+       0.5412634261930832
+      ],
+      "candidate_bbox_normalized": [
+       0.111450756297392,
+       0.7607028845584753,
+       0.1254344142340367,
+       0.7745917734473643
+      ],
+      "center_displacement": 0.23552471015306073,
+      "bbox_iou": 0.0,
+      "width_abs_log_ratio": 0.009584760808468392,
+      "height_abs_log_ratio": 0.008299057127879162
+     },
+     {
+      "token": "\u221a",
+      "reference_word_index": 109,
+      "candidate_word_index": 40,
+      "reference_page": 0,
+      "candidate_page": 0,
+      "reference_bbox": [
+       185.52450561523438,
+       408.0026550292969,
+       194.6117706298828,
+       418.9117431640625
+      ],
+      "candidate_bbox": [
+       205.6918487548828,
+       297.9521484375,
+       217.30784606933594,
+       308.9521484375
+      ],
+      "reference_bbox_normalized": [
+       0.3031446170183568,
+       0.5151548674612334,
+       0.3179930892645144,
+       0.5289289686414931
+      ],
+      "candidate_bbox_normalized": [
+       0.33609779208314183,
+       0.3762022076231061,
+       0.3550781798518561,
+       0.390091096511995
+      ],
+      "center_displacement": 0.14324187438247085,
+      "bbox_iou": 0.0,
+      "width_abs_log_ratio": 0.24550924244878025,
+      "height_abs_log_ratio": 0.008299057127875199
+     },
+     {
+      "token": "log",
+      "reference_word_index": 83,
+      "candidate_word_index": 76,
+      "reference_page": 0,
+      "candidate_page": 0,
+      "reference_bbox": [
+       203.03323364257812,
+       366.27752685546875,
+       216.96414184570312,
+       377.1866149902344
+      ],
+      "candidate_bbox": [
+       124.8110580444336,
+       416.7702941894531,
+       138.8690643310547,
+       427.7702941894531
+      ],
+      "reference_bbox_normalized": [
+       0.3317536497427747,
+       0.46247162481751103,
+       0.35451657164330574,
+       0.47624572599777065
+      ],
+      "candidate_bbox_normalized": [
+       0.20393963732750586,
+       0.5262251189260772,
+       0.22691023583505668,
+       0.5401140078149661
+      ],
+      "center_displacement": 0.14276455440433075,
+      "bbox_iou": 0.0,
+      "width_abs_log_ratio": 0.009082092638900953,
+      "height_abs_log_ratio": 0.008299057127883126
+     },
+     {
+      "token": "\u03b4",
+      "reference_word_index": 233,
+      "candidate_word_index": 114,
+      "reference_page": 0,
+      "candidate_page": 0,
+      "reference_bbox": [
+       224.37521362304688,
+       604.040771484375,
+       229.21884155273438,
+       614.9498901367188
+      ],
+      "candidate_bbox": [
+       192.53762817382812,
+       510.0107116699219,
+       196.533935546875,
+       517.710693359375
+      ],
+      "reference_bbox_normalized": [
+       0.3666261660507302,
+       0.7626777417732008,
+       0.3745405907724418,
+       0.776451881485756
+      ],
+      "candidate_bbox_normalized": [
+       0.3146039676042943,
+       0.6439529187751539,
+       0.32113388161254086,
+       0.6536751178779987
+      ],
+      "center_displacement": 0.1317557122975948,
+      "bbox_iou": 0.0,
+      "width_abs_log_ratio": 0.19229323417904784,
+      "height_abs_log_ratio": 0.3483810622482433
+     },
+     {
+      "token": "\u2264",
+      "reference_word_index": 68,
+      "candidate_word_index": 71,
+      "reference_page": 0,
+      "candidate_page": 0,
+      "reference_bbox": [
+       86.7410888671875,
+       331.8964538574219,
+       95.21745300292969,
+       342.8055419921875
+      ],
+      "candidate_bbox": [
+       67.24536895751953,
+       416.7702941894531,
+       75.8033676147461,
+       427.7702941894531
+      ],
+      "reference_bbox_normalized": [
+       0.14173380533854166,
+       0.4190611791129064,
+       0.15558407353419884,
+       0.43283528029316604
+      ],
+      "candidate_bbox_normalized": [
+       0.1098780538521561,
+       0.5262251189260772,
+       0.1238617117888008,
+       0.5401140078149661
+      ],
+      "center_displacement": 0.11183451396578159,
+      "bbox_iou": 0.0,
+      "width_abs_log_ratio": 0.009584760808468392,
+      "height_abs_log_ratio": 0.008299057127883126
+     },
+     {
+      "token": "\u03b4",
+      "reference_word_index": 120,
+      "candidate_word_index": 58,
+      "reference_page": 0,
+      "candidate_page": 0,
+      "reference_bbox": [
+       168.8423614501953,
+       425.4561462402344,
+       173.6859893798828,
+       436.365234375
+      ],
+      "candidate_bbox": [
+       194.98207092285156,
+       370.79852294921875,
+       198.97837829589844,
+       378.49853515625
+      ],
+      "reference_bbox_normalized": [
+       0.275886211519927,
+       0.5371921038386798,
+       0.2838006362416386,
+       0.5509662050189394
+      ],
+      "candidate_bbox_normalized": [
+       0.3185981551026986,
+       0.46817995321871053,
+       0.32512806911094516,
+       0.477902190853851
+      ],
+      "center_displacement": 0.082535224895927,
+      "bbox_iou": 0.0,
+      "width_abs_log_ratio": 0.19229323417904784,
+      "height_abs_log_ratio": 0.34837430148338105
+     },
+     {
+      "token": "log",
+      "reference_word_index": 139,
+      "candidate_word_index": 111,
+      "reference_page": 0,
+      "candidate_page": 0,
+      "reference_bbox": [
+       203.03323364257812,
+       453.8131103515625,
+       216.96414184570312,
+       464.7221984863281
+      ],
+      "candidate_bbox": [
+       173.77914428710938,
+       503.5558776855469,
+       187.83714294433594,
+       514.5558471679688
+      ],
+      "reference_bbox_normalized": [
+       0.3317536497427747,
+       0.5729963514539931,
+       0.35451657164330574,
+       0.5867704526342526
+      ],
+      "candidate_bbox_normalized": [
+       0.28395285014233557,
+       0.6358028758655895,
+       0.30692343618355544,
+       0.6496917262221827
+      ],
+      "center_displacement": 0.07891052216922251,
+      "bbox_iou": 0.0,
+      "width_abs_log_ratio": 0.009081549930607124,
+      "height_abs_log_ratio": 0.00829628279874925
+     },
+     {
+      "token": "log",
+      "reference_word_index": 58,
+      "candidate_word_index": 55,
+      "reference_page": 0,
+      "candidate_page": 0,
+      "reference_bbox": [
+       145.3948974609375,
+       322.7710266113281,
+       159.3258056640625,
+       333.68011474609375
+      ],
+      "candidate_bbox": [
+       176.2235870361328,
+       364.34375,
+       190.28158569335938,
+       375.34375
+      ],
+      "reference_bbox_normalized": [
+       0.23757336186427697,
+       0.4075391750143032,
+       0.260336283764808,
+       0.4213132761945628
+      ],
+      "candidate_bbox_normalized": [
+       0.28794703764073987,
+       0.46002998737373735,
+       0.31091762368195974,
+       0.47391887626262624
+      ],
+      "center_displacement": 0.07286489397993494,
+      "bbox_iou": 0.0,
+      "width_abs_log_ratio": 0.009081549930607124,
+      "height_abs_log_ratio": 0.008299057127879162
+     },
+     {
+      "token": "\u03b4",
+      "reference_word_index": 174,
+      "candidate_word_index": 93,
+      "reference_page": 0,
+      "candidate_page": 0,
+      "reference_bbox": [
+       217.67445373535156,
+       505.0387878417969,
+       221.42041015625,
+       513.0089111328125
+      ],
+      "candidate_bbox": [
+       194.98207092285156,
+       462.1947937011719,
+       198.97837829589844,
+       469.8948059082031
+      ],
+      "reference_bbox_normalized": [
+       0.35567721198586855,
+       0.637675237173986,
+       0.361798055810866,
+       0.6477385241575916
+      ],
+      "candidate_bbox_normalized": [
+       0.3185981551026986,
+       0.5835792849762271,
+       0.32512806911094516,
+       0.5933015226113676
+      ],
+      "center_displacement": 0.06560930474752441,
+      "bbox_iou": 0.0,
+      "width_abs_log_ratio": 0.0646938075585968,
+      "height_abs_log_ratio": 0.03447804788251439
+     },
+     {
+      "token": "log",
+      "reference_word_index": 112,
+      "candidate_word_index": 90,
+      "reference_page": 0,
+      "candidate_page": 0,
+      "reference_bbox": [
+       149.3911895751953,
+       417.9730529785156,
+       163.3220977783203,
+       428.88214111328125
+      ],
+      "candidate_bbox": [
+       176.2235870361328,
+       455.739990234375,
+       190.28158569335938,
+       466.739990234375
+      ],
+      "reference_bbox_normalized": [
+       0.24410325093986163,
+       0.527743753760752,
+       0.26686617284039266,
+       0.5415178549410117
+      ],
+      "candidate_bbox_normalized": [
+       0.28794703764073987,
+       0.5754292805989584,
+       0.31091762368195974,
+       0.5893181694878472
+      ],
+      "center_displacement": 0.06489052066298334,
+      "bbox_iou": 0.0,
+      "width_abs_log_ratio": 0.009081549930607124,
+      "height_abs_log_ratio": 0.008299057127871235
+     },
+     {
+      "token": "a,",
+      "reference_word_index": 158,
+      "candidate_word_index": 103,
+      "reference_page": 0,
+      "candidate_page": 0,
+      "reference_bbox": [
+       464.1536560058594,
+       463.1399841308594,
+       472.93548583984375,
+       474.049072265625
+      ],
+      "candidate_bbox": [
+       433.4582214355469,
+       464.586181640625,
+       442.3352355957031,
+       475.586181640625
+      ],
+      "reference_bbox_normalized": [
+       0.7584210065455218,
+       0.5847727072359336,
+       0.7727704016990911,
+       0.5985468084161932
+      ],
+      "candidate_bbox_normalized": [
+       0.708265067705142,
+       0.5865987141927084,
+       0.7227699928034365,
+       0.6004876030815972
+      ],
+      "center_displacement": 0.05011357796616183,
+      "bbox_iou": 0.0,
+      "width_abs_log_ratio": 0.01078046196555452,
+      "height_abs_log_ratio": 0.008299057127871235
+     },
+     {
+      "token": "\u03bd0(s);",
+      "reference_word_index": 159,
+      "candidate_word_index": 104,
+      "reference_page": 0,
+      "candidate_page": 0,
+      "reference_bbox": [
+       474.7572937011719,
+       463.1399841308594,
+       501.5242919921875,
+       475.0433349609375
+      ],
+      "candidate_bbox": [
+       444.1685485839844,
+       464.586181640625,
+       471.3748779296875,
+       477.6629943847656
+      ],
+      "reference_bbox_normalized": [
+       0.7757472119300194,
+       0.5847727072359336,
+       0.8194841372421364,
+       0.5998021906072443
+      ],
+      "candidate_bbox_normalized": [
+       0.7257656022614124,
+       0.5865987141927084,
+       0.7702203887739992,
+       0.6031098413949061
+      ],
+      "center_displacement": 0.04968902180946916,
+      "bbox_iou": 0.0,
+      "width_abs_log_ratio": 0.016279921105020113,
+      "height_abs_log_ratio": 0.09402069950023868
+     },
+     {
+      "token": "a,",
+      "reference_word_index": 154,
+      "candidate_word_index": 98,
+      "reference_page": 0,
+      "candidate_page": 0,
+      "reference_bbox": [
+       316.7567443847656,
+       463.13995361328125,
+       325.5385437011719,
+       474.0490417480469
+      ],
+      "candidate_bbox": [
+       287.431396484375,
+       464.586181640625,
+       296.30841064453125,
+       475.586181640625
+      ],
+      "reference_bbox_normalized": [
+       0.5175763797136693,
+       0.584772668703638,
+       0.5319257250019148,
+       0.5985467698838975
+      ],
+      "candidate_bbox_normalized": [
+       0.4696591445823121,
+       0.5865987141927084,
+       0.4841640696806066,
+       0.6004876030815972
+      ],
+      "center_displacement": 0.04787650638176827,
+      "bbox_iou": 0.0,
+      "width_abs_log_ratio": 0.010783937053519578,
+      "height_abs_log_ratio": 0.008299057127879162
+     },
+     {
+      "token": "\u03bd0(s);",
+      "reference_word_index": 155,
+      "candidate_word_index": 99,
+      "reference_page": 0,
+      "candidate_page": 0,
+      "reference_bbox": [
+       327.3603820800781,
+       463.13995361328125,
+       354.12738037109375,
+       475.0433044433594
+      ],
+      "candidate_bbox": [
+       298.1417236328125,
+       464.586181640625,
+       325.3480224609375,
+       477.6629943847656
+      ],
+      "reference_bbox_normalized": [
+       0.5349025850981669,
+       0.584772668703638,
+       0.5786395104102839,
+       0.5998021520749487
+      ],
+      "candidate_bbox_normalized": [
+       0.4871596791385825,
+       0.5865987141927084,
+       0.5316144157858456,
+       0.6031098413949061
+      ],
+      "center_displacement": 0.04745347502497254,
+      "bbox_iou": 0.0,
+      "width_abs_log_ratio": 0.016278799395624027,
+      "height_abs_log_ratio": 0.09402069950023868
+     },
+     {
+      "token": "a,",
+      "reference_word_index": 96,
+      "candidate_word_index": 62,
+      "reference_page": 0,
+      "candidate_page": 0,
+      "reference_bbox": [
+       320.39312744140625,
+       375.6044006347656,
+       329.1749572753906,
+       386.51348876953125
+      ],
+      "candidate_bbox": [
+       292.927734375,
+       373.18994140625,
+       301.80474853515625,
+       384.18994140625
+      ],
+      "reference_bbox_normalized": [
+       0.5235181820938011,
+       0.47424798059945156,
+       0.5378675772473703,
+       0.4880220817797112
+      ],
+      "candidate_bbox_normalized": [
+       0.4786400888480392,
+       0.47119942096748735,
+       0.49314501394633375,
+       0.48508830985637624
+      ],
+      "center_displacement": 0.04490007222837969,
+      "bbox_iou": 0.0,
+      "width_abs_log_ratio": 0.010780461965558473,
+      "height_abs_log_ratio": 0.008299057127879162
+     },
+     {
+      "token": "\u03bd0(s);",
+      "reference_word_index": 97,
+      "candidate_word_index": 63,
+      "reference_page": 0,
+      "candidate_page": 0,
+      "reference_bbox": [
+       330.99676513671875,
+       375.6044006347656,
+       357.7637634277344,
+       387.50775146484375
+      ],
+      "candidate_bbox": [
+       303.6380615234375,
+       373.18994140625,
+       330.8443603515625,
+       386.2667541503906
+      ],
+      "reference_bbox_normalized": [
+       0.5408443874782987,
+       0.47424798059945156,
+       0.5845813127904157,
+       0.4892774639707623
+      ],
+      "candidate_bbox_normalized": [
+       0.49614062340430964,
+       0.47119942096748735,
+       0.5405953600515727,
+       0.4877105481696851
+      ],
+      "center_displacement": 0.04440486595468278,
+      "bbox_iou": 0.0,
+      "width_abs_log_ratio": 0.016278799395624027,
+      "height_abs_log_ratio": 0.09402069950023828
+     },
+     {
+      "token": "N",
+      "reference_word_index": 196,
+      "candidate_word_index": 131,
+      "reference_page": 0,
+      "candidate_page": 0,
+      "reference_bbox": [
+       222.259765625,
+       545.3138427734375,
+       231.01976013183594,
+       556.2229614257812
+      ],
+      "candidate_bbox": [
+       195.72488403320312,
+       552.0278930664062,
+       204.55789184570312,
+       563.0278930664062
+      ],
+      "reference_bbox_normalized": [
+       0.3631695516748366,
+       0.6885275792593908,
+       0.3774832681892744,
+       0.702301718971946
+      ],
+      "candidate_bbox_normalized": [
+       0.3198119020150378,
+       0.6970049154878867,
+       0.33424492131650835,
+       0.7108938043767755
+      ],
+      "center_displacement": 0.04413114481396394,
+      "bbox_iou": 0.0,
+      "width_abs_log_ratio": 0.00830031435536055,
+      "height_abs_log_ratio": 0.008296259686413687
+     },
+     {
+      "token": "log",
+      "reference_word_index": 195,
+      "candidate_word_index": 130,
+      "reference_page": 0,
+      "candidate_page": 0,
+      "reference_bbox": [
+       205.1551971435547,
+       552.6939086914062,
+       219.0861053466797,
+       563.60302734375
+      ],
+      "candidate_bbox": [
+       178.73355102539062,
+       559.4749145507812,
+       192.7915496826172,
+       570.4749145507812
+      ],
+      "reference_bbox_normalized": [
+       0.33522091036528545,
+       0.6978458443073311,
+       0.3579838322658165,
+       0.7116199840198864
+      ],
+      "candidate_bbox_normalized": [
+       0.29204828598920035,
+       0.7064077203924005,
+       0.3150188720304202,
+       0.7202966092812895
+      ],
+      "center_displacement": 0.04392279992035016,
+      "bbox_iou": 0.0,
+      "width_abs_log_ratio": 0.009081549930607124,
+      "height_abs_log_ratio": 0.008296259686421835
+     },
+     {
+      "token": "N",
+      "reference_word_index": 221,
+      "candidate_word_index": 144,
+      "reference_page": 0,
+      "candidate_page": 0,
+      "reference_bbox": [
+       222.02862548828125,
+       589.1776123046875,
+       230.7886199951172,
+       600.0867309570312
+      ],
+      "candidate_bbox": [
+       195.50927734375,
+       595.0296630859375,
+       204.34228515625,
+       606.0296630859375
+      ],
+      "reference_bbox_normalized": [
+       0.36279187171287786,
+       0.7439111266473327,
+       0.37710558822731566,
+       0.757685266359888
+      ],
+      "candidate_bbox_normalized": [
+       0.31945960350285946,
+       0.7513000796539615,
+       0.3338926228043301,
+       0.7651889685428503
+      ],
+      "center_displacement": 0.043908622852428685,
+      "bbox_iou": 0.0,
+      "width_abs_log_ratio": 0.008300314355364513,
+      "height_abs_log_ratio": 0.008296259686413687
+     },
+     {
+      "token": "N",
+      "reference_word_index": 140,
+      "candidate_word_index": 91,
+      "reference_page": 0,
+      "candidate_page": 0,
+      "reference_bbox": [
+       220.15472412109375,
+       451.81475830078125,
+       226.87353515625,
+       459.78485107421875
+      ],
+      "candidate_bbox": [
+       193.2149200439453,
+       454.0657958984375,
+       200.1834259033203,
+       461.76580810546875
+      ],
+      "reference_bbox_normalized": [
+       0.35972994137433617,
+       0.5704731796727036,
+       0.3707083907781863,
+       0.5805364281240136
+      ],
+      "candidate_bbox_normalized": [
+       0.3157106536665773,
+       0.5733153988616635,
+       0.3270971011492162,
+       0.583037636496804
+      ],
+      "center_displacement": 0.04389666929983444,
+      "bbox_iou": 0.0,
+      "width_abs_log_ratio": 0.036489624825410225,
+      "height_abs_log_ratio": 0.03447421887819304
+     }
+    ]
+   },
+   "interpretation": "Token boxes are normalized by each page's own canvas; canvas mismatch remains a separate axis."
+  },
+  "text_ltsim": {
+   "status": "scored",
+   "applicable": true,
+   "metrics": {
+    "paired_page_count": 1,
+    "scored_page_count": 1,
+    "abstained_page_count": 0,
+    "text_ltsim_page_macro": 0.7492908068141483,
+    "text_ltsim_element_weighted": 0.7492908068141483,
+    "text_ltsim_worst_page": 0.7492908068141483
+   },
+   "evidence": {
+    "pages": [
+     {
+      "page": 0,
+      "status": "scored",
+      "reference_block_count": 116,
+      "candidate_block_count": 55,
+      "emd": 0.28862811071936956,
+      "text_ltsim": 0.7492908068141483,
+      "largest_cost_contributions": [
+       {
+        "reference_block_index": 40,
+        "candidate_block_index": 5,
+        "mass": 0.008620689655172414,
+        "cost": 0.4987227404112722,
+        "reference_bbox_normalized": [
+         0.8794459922640931,
+         0.47116948137379655,
+         0.9045624577142055,
+         0.48914329451744004
+        ],
+        "candidate_bbox_normalized": [
+         0.1088265811695772,
+         0.346327194059738,
+         0.12211286008747574,
+         0.35604943169487846
+        ]
+       },
+       {
+        "reference_block_index": 115,
+        "candidate_block_index": 54,
+        "mass": 0.008620689655172414,
+        "cost": 0.4965339028612855,
+        "reference_bbox_normalized": [
+         0.4955437354792177,
+         0.9357262813683712,
+         0.5044563642514297,
+         0.9495003440163352
+        ],
+        "candidate_bbox_normalized": [
+         0.356467776828342,
+         0.7794946227410827,
+         0.37971875558491625,
+         0.7892167833116319
+        ]
+       },
+       {
+        "reference_block_index": 109,
+        "candidate_block_index": 50,
+        "mass": 0.00768025078369906,
+        "cost": 0.4812872964254622,
+        "reference_bbox_normalized": [
+         0.5959539475783803,
+         0.7501509695342092,
+         0.6210703132978452,
+         0.7681247441455571
+        ],
+        "candidate_bbox_normalized": [
+         0.10847788542703865,
+         0.7501085069444444,
+         0.128407297570721,
+         0.7745917734473643
+        ]
+       },
+       {
+        "reference_block_index": 42,
+        "candidate_block_index": 9,
+        "mass": 0.007366771159874597,
+        "cost": 0.4958582028985177,
+        "reference_bbox_normalized": [
+         0.635666741265191,
+         0.4722679985894097,
+         0.6769361308976716,
+         0.48802204324741555
+        ],
+        "candidate_bbox_normalized": [
+         0.0838163600248449,
+         0.3569216487383602,
+         0.12246154336368337,
+         0.3734327759405579
+        ]
+       },
+       {
+        "reference_block_index": 64,
+        "candidate_block_index": 54,
+        "mass": 0.007210031347962401,
+        "cost": 0.4983527829576325,
+        "reference_bbox_normalized": [
+         0.5990260005776399,
+         0.5568320534446023,
+         0.6108976376602073,
+         0.5706061546248619
+        ],
+        "candidate_bbox_normalized": [
+         0.356467776828342,
+         0.7794946227410827,
+         0.37971875558491625,
+         0.7892167833116319
+        ]
+       },
+       {
+        "reference_block_index": 66,
+        "candidate_block_index": 37,
+        "mass": 0.008620689655172414,
+        "cost": 0.4062895760462357,
+        "reference_bbox_normalized": [
+         0.6138802821340125,
+         0.5659252898861663,
+         0.6727902780171313,
+         0.5852069276751894
+        ],
+        "candidate_bbox_normalized": [
+         0.582330641403697,
+         0.6055459301881115,
+         0.6375894484177135,
+         0.615268167823252
+        ]
+       },
+       {
+        "reference_block_index": 98,
+        "candidate_block_index": 44,
+        "mass": 0.00768025078369906,
+        "cost": 0.44039276511518444,
+        "reference_bbox_normalized": [
+         0.7008544822144352,
+         0.6947674221462674,
+         0.7259708479339001,
+         0.7127412738222064
+        ],
+        "candidate_bbox_normalized": [
+         0.1739238913542305,
+         0.6952382867986505,
+         0.28725525600458285,
+         0.7121299204200205
+        ]
+       },
+       {
+        "reference_block_index": 7,
+        "candidate_block_index": 10,
+        "mass": 0.008620689655172414,
+        "cost": 0.3898100490918267,
+        "reference_bbox_normalized": [
+         0.1766289605034722,
+         0.34389083554046324,
+         0.2023687051012625,
+         0.35766493672072286
+        ],
+        "candidate_bbox_normalized": [
+         0.14210657356611264,
+         0.3569216487383602,
+         0.1680608263202742,
+         0.370810537627249
+        ]
+       },
+       {
+        "reference_block_index": 49,
+        "candidate_block_index": 24,
+        "mass": 0.008620689655172414,
+        "cost": 0.38558543421836733,
+        "reference_bbox_normalized": [
+         0.35619957618464054,
+         0.5088964134755761,
+         0.4151095720677594,
+         0.5281780127323035
+        ],
+        "candidate_bbox_normalized": [
+         0.2628239899678947,
+         0.5136556914358428,
+         0.2777962030148974,
+         0.5275445803247317
+        ]
+       },
+       {
+        "reference_block_index": 22,
+        "candidate_block_index": 12,
+        "mass": 0.008620689655172414,
+        "cost": 0.3797300541807469,
+        "reference_bbox_normalized": [
+         0.34417779461231107,
+         0.4032821269950481,
+         0.3620031020220588,
+         0.41705622817530774
+        ],
+        "candidate_bbox_normalized": [
+         0.33609779208314183,
+         0.3762022076231061,
+         0.3550781798518561,
+         0.390091096511995
+        ]
+       },
+       {
+        "reference_block_index": 65,
+        "candidate_block_index": 30,
+        "mass": 0.008620689655172414,
+        "cost": 0.3781240754069165,
+        "reference_bbox_normalized": [
+         0.37897738288430605,
+         0.5568320919768979,
+         0.3908490448995353,
+         0.5706061931571575
+        ],
+        "candidate_bbox_normalized": [
+         0.3343319612390855,
+         0.5451723349214804,
+         0.3895907931857639,
+         0.5548945725566209
+        ]
+       },
+       {
+        "reference_block_index": 51,
+        "candidate_block_index": 24,
+        "mass": 0.008620689655172414,
+        "cost": 0.37762122451487357,
+        "reference_bbox_normalized": [
+         0.3031446170183568,
+         0.5151548674612334,
+         0.3179930892645144,
+         0.5289289686414931
+        ],
+        "candidate_bbox_normalized": [
+         0.2628239899678947,
+         0.5136556914358428,
+         0.2777962030148974,
+         0.5275445803247317
+        ]
+       },
+       {
+        "reference_block_index": 35,
+        "candidate_block_index": 1,
+        "mass": 0.006583072100313475,
+        "cost": 0.48529563640349493,
+        "reference_bbox_normalized": [
+         0.6089288050832312,
+         0.45821453826596037,
+         0.6356666913998672,
+         0.4877676915640783
+        ],
+        "candidate_bbox_normalized": [
+         0.3885980493882123,
+         0.20108864524147727,
+         0.6114019256791258,
+         0.21624016039299243
+        ]
+       },
+       {
+        "reference_block_index": 17,
+        "candidate_block_index": 4,
+        "mass": 0.008620689655172414,
+        "cost": 0.36464551392730327,
+        "reference_bbox_normalized": [
+         0.4540179882174224,
+         0.36957588581123735,
+         0.49528737784990295,
+         0.3853298919369476
+        ],
+        "candidate_bbox_normalized": [
+         0.4519375071806066,
+         0.3439813093705611,
+         0.4723917643229167,
+         0.359641104033499
+        ]
+       },
+       {
+        "reference_block_index": 93,
+        "candidate_block_index": 42,
+        "mass": 0.008620689655172414,
+        "cost": 0.3629165618599972,
+        "reference_bbox_normalized": [
+         0.3813885458154616,
+         0.6783377907492898,
+         0.4249536850873162,
+         0.6982801803434738
+        ],
+        "candidate_bbox_normalized": [
+         0.34571581572489024,
+         0.665919602519334,
+         0.40097464767156865,
+         0.6756417630898832
+        ]
+       },
+       {
+        "reference_block_index": 104,
+        "candidate_block_index": 48,
+        "mass": 0.008620689655172414,
+        "cost": 0.3580793758007471,
+        "reference_bbox_normalized": [
+         0.38101086585350286,
+         0.7337212610726405,
+         0.4245760051253574,
+         0.7536636506668245
+        ],
+        "candidate_bbox_normalized": [
+         0.35682005040785847,
+         0.7251994585750079,
+         0.3800710540970946,
+         0.7349216191455571
+        ]
+       },
+       {
+        "reference_block_index": 25,
+        "candidate_block_index": 13,
+        "mass": 0.008620689655172414,
+        "cost": 0.35272321635369974,
+        "reference_bbox_normalized": [
+         0.3001143760930479,
+         0.4059757271198311,
+         0.3258541331571691,
+         0.4197498283000908
+        ],
+        "candidate_bbox_normalized": [
+         0.15863892299677032,
+         0.4016848092127328,
+         0.23849198085809845,
+         0.4206904016359888
+        ]
+       },
+       {
+        "reference_block_index": 87,
+        "candidate_block_index": 40,
+        "mass": 0.008620689655172414,
+        "cost": 0.3488733854166397,
+        "reference_bbox_normalized": [
+         0.4463082107843137,
+         0.6398216787010732,
+         0.4875776004167943,
+         0.6555756848267834
+        ],
+        "candidate_bbox_normalized": [
+         0.23290938333748212,
+         0.6439529187751539,
+         0.38632234560897927,
+         0.6703889634874132
+        ]
+       },
+       {
+        "reference_block_index": 112,
+        "candidate_block_index": 52,
+        "mass": 0.008620689655172414,
+        "cost": 0.3438073582116703,
+        "reference_bbox_normalized": [
+         0.6300593856113409,
+         0.753229391695273,
+         0.6349970001021242,
+         0.7670035314078283
+        ],
+        "candidate_bbox_normalized": [
+         0.38451896617615144,
+         0.7594362509371054,
+         0.5831690270916309,
+         0.7808625962999132
+        ]
+       },
+       {
+        "reference_block_index": 12,
+        "candidate_block_index": 4,
+        "mass": 0.008620689655172414,
+        "cost": 0.3435460632282138,
+        "reference_bbox_normalized": [
+         0.4421343834571589,
+         0.35601205536813446,
+         0.45400602053972633,
+         0.3697861565483941
+        ],
+        "candidate_bbox_normalized": [
+         0.4519375071806066,
+         0.3439813093705611,
+         0.4723917643229167,
+         0.359641104033499
+        ]
+       },
+       {
+        "reference_block_index": 33,
+        "candidate_block_index": 19,
+        "mass": 0.008620689655172414,
+        "cost": 0.34229495106658825,
+        "reference_bbox_normalized": [
+         0.17639421949199602,
+         0.4452768961588542,
+         0.19421952690174377,
+         0.4590509973391138
+        ],
+        "candidate_bbox_normalized": [
+         0.12645174163618897,
+         0.4582591201319839,
+         0.1806608960519429,
+         0.48508830985637624
+        ]
+       },
+       {
+        "reference_block_index": 56,
+        "candidate_block_index": 29,
+        "mass": 0.008620689655172414,
+        "cost": 0.33533604591259547,
+        "reference_bbox_normalized": [
+         0.43343328338822507,
+         0.5257638102830059,
+         0.4747026730207057,
+         0.5415178549410117
+        ],
+        "candidate_bbox_normalized": [
+         0.2777962030148974,
+         0.5262251189260772,
+         0.3749385160558364,
+         0.5443605365175189
+        ]
+       },
+       {
+        "reference_block_index": 28,
+        "candidate_block_index": 17,
+        "mass": 0.0067398119122257065,
+        "cost": 0.4281801538801834,
+        "reference_bbox_normalized": [
+         0.3620031768200444,
+         0.41733558731849746,
+         0.403272566452525,
+         0.4330896319765033
+        ],
+        "candidate_bbox_normalized": [
+         0.2461266611136642,
+         0.4339153790714765,
+         0.3013854930603426,
+         0.44363761670661694
+        ]
+       },
+       {
+        "reference_block_index": 86,
+        "candidate_block_index": 48,
+        "mass": 0.005799373040752353,
+        "cost": 0.49508725837467116,
+        "reference_bbox_normalized": [
+         0.6900875116485397,
+         0.6387232000177557,
+         0.7152038773680045,
+         0.6566969746291035
+        ],
+        "candidate_bbox_normalized": [
+         0.35682005040785847,
+         0.7251994585750079,
+         0.3800710540970946,
+         0.7349216191455571
+        ]
+       }
+      ]
+     }
+    ],
+    "equations": "uniform mass; delta_bbox=(1+GIoU)/2; delta_label=1 for text; mu=1-(delta_bbox+delta_label)/2; Text-LTSim=exp(-EMD), sigma=1"
+   },
+   "interpretation": "Faithful published LTSim equations on extracted text blocks only. It measures text-layout geometry/segmentation, not full semantic layout; non-text classes abstain."
+  },
+  "block_transport": {
+   "status": "scored",
+   "applicable": true,
+   "metrics": {
+    "reference_block_count": 116,
+    "candidate_block_count": 55,
+    "transported_mass": 1.0,
+    "combined_transport_cost": 0.444634660940717,
+    "combined_transport_similarity_exp": 0.6410584369419489,
+    "transported_geometry_cost": 0.4323957203685039,
+    "geometry_transport_similarity_exp": 0.6489525221360096,
+    "transported_content_cost": 0.4673641220033985,
+    "content_transport_similarity_exp": 0.6266518711303181,
+    "nonzero_flow_count": 170
+   },
+   "evidence": {
+    "largest_cost_contributions": [
+     {
+      "reference_block_index": 3,
+      "candidate_block_index": 2,
+      "mass": 0.11662817551963048,
+      "combined_cost": 0.18262335498393498,
+      "geometry_cost": 0.22807439228297688,
+      "content_cost": 0.0982142857142857,
+      "reference_page": 0,
+      "candidate_page": 0,
+      "reference_bbox_stacked_normalized": [
+       0.11764705882352941,
+       0.27641560332943693,
+       0.8823527417151756,
+       0.3072972731156783
+      ],
+      "candidate_bbox_stacked_normalized": [
+       0.11764705882352941,
+       0.27068970420143823,
+       0.8823529411764706,
+       0.327472995025943
+      ],
+      "reference_text": "The following display is drawn from a source-backed image-to-LaTeX benchmark and reproduced verbatim.",
+      "candidate_text": "Derivation The following display is drawn from a source-backed image-to-LaTeX benchmark and reproduced verbatim."
+     },
+     {
+      "reference_block_index": 99,
+      "candidate_block_index": 46,
+      "mass": 0.03579676674364896,
+      "combined_cost": 0.3892379273052029,
+      "geometry_cost": 0.3530081824762319,
+      "content_cost": 0.4565217391304348,
+      "reference_page": 0,
+      "candidate_page": 0,
+      "reference_bbox_stacked_normalized": [
+       0.4279324400658701,
+       0.6958659008295849,
+       0.6180494221207363,
+       0.7228013626252762
+      ],
+      "candidate_bbox_stacked_normalized": [
+       0.3848712646883298,
+       0.7051410867710306,
+       0.7005796744153391,
+       0.7247813831676136
+      ],
+      "reference_text": "d\u00b5\u22c6,\u03bd0 (s; \u03c1) E a\u223c\u00b5\u22c6(s),b\u223c\u03bd0(s)",
+      "candidate_text": "\ud835\udc51\ud835\udf07\u22c6,\ud835\udf080(\ud835\udc60; \ud835\udf0c)\ud835\udd3c\ud835\udc4e\u223c\ud835\udf07\u22c6(\ud835\udc60),\ud835\udc4f\u223c\ud835\udf080(\ud835\udc60)[\ud835\uddb5\ud835\uddba\ud835\uddcb\ud835\udc43\ud835\udc60,\ud835\udc4e,\ud835\udc4f(\ud835\udc49\u2212 \ud835\uddc9\ud835\uddbe)]"
+     },
+     {
+      "reference_block_index": 110,
+      "candidate_block_index": 52,
+      "mass": 0.03002309468822171,
+      "combined_cost": 0.3443275586954106,
+      "geometry_cost": 0.3278116287621702,
+      "content_cost": 0.375,
+      "reference_page": 0,
+      "candidate_page": 0,
+      "reference_bbox_stacked_normalized": [
+       0.42755476010391136,
+       0.7512493711529356,
+       0.5823703342013888,
+       0.7739001958057133
+      ],
+      "candidate_bbox_stacked_normalized": [
+       0.38451896617615144,
+       0.7594362509371054,
+       0.5831690270916309,
+       0.7808625962999132
+      ],
+      "reference_text": "d\u00b5\u22c6,\u03bd0 (s; \u03c1) VarP \u00b5\u22c6,\u03bd0 s",
+      "candidate_text": "\ud835\udc51\ud835\udf07\u22c6,\ud835\udf080(\ud835\udc60; \ud835\udf0c)\ud835\uddb5\ud835\uddba\ud835\uddcb\ud835\udc43\ud835\udf07\u22c6,\ud835\udf080 \ud835\udc60 (\ud835\udc49\u2212 \ud835\uddc9\ud835\uddbe)."
+     },
+     {
+      "reference_block_index": 44,
+      "candidate_block_index": 21,
+      "mass": 0.016166281755196306,
+      "combined_cost": 0.561048824975532,
+      "geometry_cost": 0.43555022846914426,
+      "content_cost": 0.7941176470588235,
+      "reference_page": 0,
+      "candidate_page": 0,
+      "reference_bbox_stacked_normalized": [
+       0.5072793399586397,
+       0.47424798059945156,
+       0.5967975192599826,
+       0.4892774639707623
+      ],
+      "candidate_bbox_stacked_normalized": [
+       0.3929862477420981,
+       0.46983137034406564,
+       0.8679066576988869,
+       0.4918091128570865
+      ],
+      "reference_text": "s, a, \u03bd0(s); \u03c1",
+      "candidate_text": "\u221a\ud835\udc51\ud835\udf07\u22c6,\ud835\udf080(\ud835\udc60, \ud835\udc4e, \ud835\udf080(\ud835\udc60); \ud835\udf0c) \u22c5\u221a\ud835\udc51\ud835\udf07\u22c6,\ud835\udf080(\ud835\udc60, \ud835\udc4e, \ud835\udf080(\ud835\udc60); \ud835\udf0c)\ud835\uddb5\ud835\uddba\ud835\uddcb\ud835\udc43\ud835\udc60,\ud835\udc4e,\ud835\udf080(\ud835\udc60)(\ud835\udc49\u2212 \ud835\uddc9\ud835\uddbe)"
+     },
+     {
+      "reference_block_index": 45,
+      "candidate_block_index": 21,
+      "mass": 0.016166281755196306,
+      "combined_cost": 0.561048824975532,
+      "geometry_cost": 0.43555022846914426,
+      "content_cost": 0.7941176470588235,
+      "reference_page": 0,
+      "candidate_page": 0,
+      "reference_bbox_stacked_normalized": [
+       0.6867349662032782,
+       0.47424798059945156,
+       0.7762531455046211,
+       0.4892774639707623
+      ],
+      "candidate_bbox_stacked_normalized": [
+       0.3929862477420981,
+       0.46983137034406564,
+       0.8679066576988869,
+       0.4918091128570865
+      ],
+      "reference_text": "s, a, \u03bd0(s); \u03c1",
+      "candidate_text": "\u221a\ud835\udc51\ud835\udf07\u22c6,\ud835\udf080(\ud835\udc60, \ud835\udc4e, \ud835\udf080(\ud835\udc60); \ud835\udf0c) \u22c5\u221a\ud835\udc51\ud835\udf07\u22c6,\ud835\udf080(\ud835\udc60, \ud835\udc4e, \ud835\udf080(\ud835\udc60); \ud835\udf0c)\ud835\uddb5\ud835\uddba\ud835\uddcb\ud835\udc43\ud835\udc60,\ud835\udc4e,\ud835\udf080(\ud835\udc60)(\ud835\udc49\u2212 \ud835\uddc9\ud835\uddbe)"
+     },
+     {
+      "reference_block_index": 1,
+      "candidate_block_index": 1,
+      "mass": 0.02705749718151071,
+      "combined_cost": 0.3280867516646341,
+      "geometry_cost": 0.5047488487148216,
+      "content_cost": 0.0,
+      "reference_page": 0,
+      "candidate_page": 0,
+      "reference_bbox_stacked_normalized": [
+       0.39130957609687755,
+       0.18607366927946456,
+       0.608690498701108,
+       0.20116858048872513
+      ],
+      "candidate_bbox_stacked_normalized": [
+       0.3885980493882123,
+       0.20108864524147727,
+       0.6114019256791258,
+       0.21624016039299243
+      ],
+      "reference_text": "Dataset-expansion sample",
+      "candidate_text": "Dataset-expansion sample"
+     },
+     {
+      "reference_block_index": 89,
+      "candidate_block_index": 41,
+      "mass": 0.016166281755196306,
+      "combined_cost": 0.5408187783257564,
+      "geometry_cost": 0.4730545307575741,
+      "content_cost": 0.6666666666666666,
+      "reference_page": 0,
+      "candidate_page": 0,
+      "reference_bbox_stacked_normalized": [
+       0.4973764357224009,
+       0.6418016607111151,
+       0.5868946150237438,
+       0.6568311440824258
+      ],
+      "candidate_bbox_stacked_normalized": [
+       0.4039702820622064,
+       0.6457056758379696,
+       0.6795688205295138,
+       0.6675821169458255
+      ],
+      "reference_text": "s, a, \u03bd0(s); \u03c1",
+      "candidate_text": "\ud835\udc51\ud835\udf07\u22c6,\ud835\udf080(\ud835\udc60, \ud835\udc4e, \ud835\udf080(\ud835\udc60); \ud835\udf0c)\ud835\uddb5\ud835\uddba\ud835\uddcb\ud835\udc43\ud835\udc60,\ud835\udc4e,\ud835\udf080(\ud835\udc60)(\ud835\udc49\u2212 \ud835\uddc9\ud835\uddbe)"
+     },
+     {
+      "reference_block_index": 46,
+      "candidate_block_index": 21,
+      "mass": 0.015011547344110854,
+      "combined_cost": 0.5801794479696034,
+      "geometry_cost": 0.457063404116132,
+      "content_cost": 0.8088235294117647,
+      "reference_page": 0,
+      "candidate_page": 0,
+      "reference_bbox_stacked_normalized": [
+       0.7844234292024101,
+       0.47424798059945156,
+       0.8666727901284211,
+       0.4932524555861348
+      ],
+      "candidate_bbox_stacked_normalized": [
+       0.3929862477420981,
+       0.46983137034406564,
+       0.8679066576988869,
+       0.4918091128570865
+      ],
+      "reference_text": "VarPs,a,\u03bd0(s)",
+      "candidate_text": "\u221a\ud835\udc51\ud835\udf07\u22c6,\ud835\udf080(\ud835\udc60, \ud835\udc4e, \ud835\udf080(\ud835\udc60); \ud835\udf0c) \u22c5\u221a\ud835\udc51\ud835\udf07\u22c6,\ud835\udf080(\ud835\udc60, \ud835\udc4e, \ud835\udf080(\ud835\udc60); \ud835\udf0c)\ud835\uddb5\ud835\uddba\ud835\uddcb\ud835\udc43\ud835\udc60,\ud835\udc4e,\ud835\udf080(\ud835\udc60)(\ud835\udc49\u2212 \ud835\uddc9\ud835\uddbe)"
+     },
+     {
+      "reference_block_index": 106,
+      "candidate_block_index": 49,
+      "mass": 0.018475750577367205,
+      "combined_cost": 0.4600013348362235,
+      "geometry_cost": 0.5093137944848782,
+      "content_cost": 0.368421052631579,
+      "reference_page": 0,
+      "candidate_page": 0,
+      "reference_bbox_stacked_normalized": [
+       0.21002167346430758,
+       0.741452997381037,
+       0.32990317251168044,
+       0.7588642004764441
+      ],
+      "candidate_bbox_stacked_normalized": [
+       0.13340003817689186,
+       0.7477626607875631,
+       0.2869029824250664,
+       0.7745917734473643
+      ],
+      "reference_text": "clippedS (A + B)",
+      "candidate_text": "2\u221a\ud835\udc36\u22c6 \ud835\uddbc\ud835\uddc5\ud835\uddc2\ud835\uddc9\ud835\uddc9\ud835\uddbe\ud835\uddbd\ud835\udc46(\ud835\udc34+ \ud835\udc35)"
+     },
+     {
+      "reference_block_index": 19,
+      "candidate_block_index": 6,
+      "mass": 0.016166281755196306,
+      "combined_cost": 0.5058390315314909,
+      "geometry_cost": 0.4282138946638321,
+      "content_cost": 0.65,
+      "reference_page": 0,
+      "candidate_page": 0,
+      "reference_bbox_stacked_normalized": [
+       0.5050862131555096,
+       0.37155582928898356,
+       0.5946043924568525,
+       0.38658531266029433
+      ],
+      "candidate_bbox_stacked_normalized": [
+       0.35687557544583587,
+       0.3539021809895833,
+       0.6411075966030944,
+       0.3868716461489899
+      ],
+      "reference_text": "s, a, \u03bd0(s); \u03c1",
+      "candidate_text": "\ud835\udeff \ud835\udc41min{\ud835\udc51\ud835\udf07\u22c6,\ud835\udf080(\ud835\udc60, \ud835\udc4e, \ud835\udf080(\ud835\udc60); \ud835\udf0c), 1 \ud835\udc46(\ud835\udc34+\ud835\udc35)}"
+     },
+     {
+      "reference_block_index": 90,
+      "candidate_block_index": 41,
+      "mass": 0.015011547344110856,
+      "combined_cost": 0.5376296631619663,
+      "geometry_cost": 0.4553276869158456,
+      "content_cost": 0.6904761904761905,
+      "reference_page": 0,
+      "candidate_page": 0,
+      "reference_bbox_stacked_normalized": [
+       0.5950648987215329,
+       0.6418016607111151,
+       0.6773142097822202,
+       0.6608061356977983
+      ],
+      "candidate_bbox_stacked_normalized": [
+       0.4039702820622064,
+       0.6457056758379696,
+       0.6795688205295138,
+       0.6675821169458255
+      ],
+      "reference_text": "VarPs,a,\u03bd0(s)",
+      "candidate_text": "\ud835\udc51\ud835\udf07\u22c6,\ud835\udf080(\ud835\udc60, \ud835\udc4e, \ud835\udf080(\ud835\udc60); \ud835\udf0c)\ud835\uddb5\ud835\uddba\ud835\uddcb\ud835\udc43\ud835\udc60,\ud835\udc4e,\ud835\udf080(\ud835\udc60)(\ud835\udc49\u2212 \ud835\uddc9\ud835\uddbe)"
+     },
+     {
+      "reference_block_index": 77,
+      "candidate_block_index": 35,
+      "mass": 0.016166281755196306,
+      "combined_cost": 0.49455348130475774,
+      "geometry_cost": 0.4018771507252683,
+      "content_cost": 0.6666666666666666,
+      "reference_page": 0,
+      "candidate_page": 0,
+      "reference_bbox_stacked_normalized": [
+       0.7421821644103604,
+       0.5847727072359336,
+       0.8317003437117034,
+       0.5998021906072443
+      ],
+      "candidate_bbox_stacked_normalized": [
+       0.6405851077410131,
+       0.5853320420390428,
+       0.9161836711409824,
+       0.6072084446146031
+      ],
+      "reference_text": "s, a, \u03bd0(s); \u03c1",
+      "candidate_text": "\ud835\udc51\ud835\udf07\u22c6,\ud835\udf080(\ud835\udc60, \ud835\udc4e, \ud835\udf080(\ud835\udc60); \ud835\udf0c)\ud835\uddb5\ud835\uddba\ud835\uddcb\ud835\udc43\ud835\udc60,\ud835\udc4e,\ud835\udf080(\ud835\udc60)(\ud835\udc49\u2212 \ud835\uddc9\ud835\uddbe)"
+     },
+     {
+      "reference_block_index": 30,
+      "candidate_block_index": 16,
+      "mass": 0.016166281755196306,
+      "combined_cost": 0.49296196100313683,
+      "geometry_cost": 0.39525453750035366,
+      "content_cost": 0.6744186046511628,
+      "reference_page": 0,
+      "candidate_page": 0,
+      "reference_bbox_stacked_normalized": [
+       0.4130714266907935,
+       0.4193155693285393,
+       0.5025896558574602,
+       0.4343450526998501
+      ],
+      "candidate_bbox_stacked_normalized": [
+       0.3043811274509804,
+       0.41370149092240766,
+       0.5979534971947763,
+       0.43557785496567236
+      ],
+      "reference_text": "s, a, \u03bd0(s); \u03c1",
+      "candidate_text": "\u221a\ud835\udc51\ud835\udf07\u22c6,\ud835\udf080(\ud835\udc60, \ud835\udc4e, \ud835\udf080(\ud835\udc60); \ud835\udf0c)\ud835\uddb5\ud835\uddba\ud835\uddcb\ud835\udc43\ud835\udc60,\ud835\udc4e,\ud835\udf080(\ud835\udc60)(\ud835\udc49\u2212 \ud835\uddc9\ud835\uddbe)"
+     },
+     {
+      "reference_block_index": 31,
+      "candidate_block_index": 16,
+      "mass": 0.015011547344110854,
+      "combined_cost": 0.5298537719937291,
+      "geometry_cost": 0.43948880843400173,
+      "content_cost": 0.6976744186046512,
+      "reference_page": 0,
+      "candidate_page": 0,
+      "reference_bbox_stacked_normalized": [
+       0.5107599395552492,
+       0.4193155693285393,
+       0.5930092506159365,
+       0.43832004431522253
+      ],
+      "candidate_bbox_stacked_normalized": [
+       0.3043811274509804,
+       0.41370149092240766,
+       0.5979534971947763,
+       0.43557785496567236
+      ],
+      "reference_text": "VarPs,a,\u03bd0(s)",
+      "candidate_text": "\u221a\ud835\udc51\ud835\udf07\u22c6,\ud835\udf080(\ud835\udc60, \ud835\udc4e, \ud835\udf080(\ud835\udc60); \ud835\udf0c)\ud835\uddb5\ud835\uddba\ud835\uddcb\ud835\udc43\ud835\udc60,\ud835\udc4e,\ud835\udf080(\ud835\udc60)(\ud835\udc49\u2212 \ud835\uddc9\ud835\uddbe)"
+     },
+     {
+      "reference_block_index": 60,
+      "candidate_block_index": 27,
+      "mass": 0.016166281755196306,
+      "combined_cost": 0.48580848258117226,
+      "geometry_cost": 0.3884233065351368,
+      "content_cost": 0.6666666666666666,
+      "reference_page": 0,
+      "candidate_page": 0,
+      "reference_bbox_stacked_normalized": [
+       0.4845015083263123,
+       0.5277437922930477,
+       0.574019737492979,
+       0.5427732756643584
+      ],
+      "candidate_bbox_stacked_normalized": [
+       0.39258642757640166,
+       0.5249584467724117,
+       0.6681849660437091,
+       0.5468348108156763
+      ],
+      "reference_text": "s, a, \u03bd0(s); \u03c1",
+      "candidate_text": "\ud835\udc51\ud835\udf07\u22c6,\ud835\udf080(\ud835\udc60, \ud835\udc4e, \ud835\udf080(\ud835\udc60); \ud835\udf0c)\ud835\uddb5\ud835\uddba\ud835\uddcb\ud835\udc43\ud835\udc60,\ud835\udc4e,\ud835\udf080(\ud835\udc60)(\ud835\udc49\u2212 \ud835\uddc9\ud835\uddbe)"
+     },
+     {
+      "reference_block_index": 78,
+      "candidate_block_index": 35,
+      "mass": 0.015011547344110854,
+      "combined_cost": 0.4994806857536201,
+      "geometry_cost": 0.3966369524414668,
+      "content_cost": 0.6904761904761905,
+      "reference_page": 0,
+      "candidate_page": 0,
+      "reference_bbox_stacked_normalized": [
+       0.8398706772748161,
+       0.5847727072359336,
+       0.9221199384701797,
+       0.6037771822226168
+      ],
+      "candidate_bbox_stacked_normalized": [
+       0.6405851077410131,
+       0.5853320420390428,
+       0.9161836711409824,
+       0.6072084446146031
+      ],
+      "reference_text": "VarPs,a,\u03bd0(s)",
+      "candidate_text": "\ud835\udc51\ud835\udf07\u22c6,\ud835\udf080(\ud835\udc60, \ud835\udc4e, \ud835\udf080(\ud835\udc60); \ud835\udf0c)\ud835\uddb5\ud835\uddba\ud835\uddcb\ud835\udc43\ud835\udc60,\ud835\udc4e,\ud835\udf080(\ud835\udc60)(\ud835\udc49\u2212 \ud835\uddc9\ud835\uddbe)"
+     },
+     {
+      "reference_block_index": 61,
+      "candidate_block_index": 27,
+      "mass": 0.015011547344110854,
+      "combined_cost": 0.48240705479409984,
+      "geometry_cost": 0.3703698278883587,
+      "content_cost": 0.6904761904761905,
+      "reference_page": 0,
+      "candidate_page": 0,
+      "reference_bbox_stacked_normalized": [
+       0.582190021190768,
+       0.5277437922930477,
+       0.6644393322514552,
+       0.5467482672797309
+      ],
+      "candidate_bbox_stacked_normalized": [
+       0.39258642757640166,
+       0.5249584467724117,
+       0.6681849660437091,
+       0.5468348108156763
+      ],
+      "reference_text": "VarPs,a,\u03bd0(s)",
+      "candidate_text": "\ud835\udc51\ud835\udf07\u22c6,\ud835\udf080(\ud835\udc60, \ud835\udc4e, \ud835\udf080(\ud835\udc60); \ud835\udf0c)\ud835\uddb5\ud835\uddba\ud835\uddcb\ud835\udc43\ud835\udc60,\ud835\udc4e,\ud835\udf080(\ud835\udc60)(\ud835\udc49\u2212 \ud835\uddc9\ud835\uddbe)"
+     },
+     {
+      "reference_block_index": 2,
+      "candidate_block_index": 2,
+      "mass": 0.00964014466075283,
+      "combined_cost": 0.7444612724992332,
+      "geometry_cost": 0.645325034614205,
+      "content_cost": 0.9285714285714286,
+      "reference_page": 0,
+      "candidate_page": 0,
+      "reference_bbox_stacked_normalized": [
+       0.11764705882352941,
+       0.24215588425145004,
+       0.27538489048777065,
+       0.2602697622896445
+      ],
+      "candidate_bbox_stacked_normalized": [
+       0.11764705882352941,
+       0.27068970420143823,
+       0.8823529411764706,
+       0.327472995025943
+      ],
+      "reference_text": "1 Derivation",
+      "candidate_text": "Derivation The following display is drawn from a source-backed image-to-LaTeX benchmark and reproduced verbatim."
+     },
+     {
+      "reference_block_index": 16,
+      "candidate_block_index": 6,
+      "mass": 0.011547344110854504,
+      "combined_cost": 0.5946207732191753,
+      "geometry_cost": 0.5109550357218082,
+      "content_cost": 0.75,
+      "reference_page": 0,
+      "candidate_page": 0,
+      "reference_bbox_stacked_normalized": [
+       0.6027746761546415,
+       0.36903265750769415,
+       0.6647588193806169,
+       0.38944953379004893
+      ],
+      "candidate_bbox_stacked_normalized": [
+       0.35687557544583587,
+       0.3539021809895833,
+       0.6411075966030944,
+       0.3868716461489899
+      ],
+      "reference_text": ", 1 S(A+B)",
+      "candidate_text": "\ud835\udeff \ud835\udc41min{\ud835\udc51\ud835\udf07\u22c6,\ud835\udf080(\ud835\udc60, \ud835\udc4e, \ud835\udf080(\ud835\udc60); \ud835\udf0c), 1 \ud835\udc46(\ud835\udc34+\ud835\udc35)}"
+     },
+     {
+      "reference_block_index": 100,
+      "candidate_block_index": 46,
+      "mass": 0.010392609699769052,
+      "combined_cost": 0.6515830605515025,
+      "geometry_cost": 0.5693251098785657,
+      "content_cost": 0.8043478260869565,
+      "reference_page": 0,
+      "candidate_page": 0,
+      "reference_bbox_stacked_normalized": [
+       0.6284500820184845,
+       0.6978458443073311,
+       0.6880534552281199,
+       0.7141649650804924
+      ],
+      "candidate_bbox_stacked_normalized": [
+       0.3848712646883298,
+       0.7051410867710306,
+       0.7005796744153391,
+       0.7247813831676136
+      ],
+      "reference_text": "VarPs,a,b",
+      "candidate_text": "\ud835\udc51\ud835\udf07\u22c6,\ud835\udf080(\ud835\udc60; \ud835\udf0c)\ud835\udd3c\ud835\udc4e\u223c\ud835\udf07\u22c6(\ud835\udc60),\ud835\udc4f\u223c\ud835\udf080(\ud835\udc60)[\ud835\uddb5\ud835\uddba\ud835\uddcb\ud835\udc43\ud835\udc60,\ud835\udc4e,\ud835\udc4f(\ud835\udc49\u2212 \ud835\uddc9\ud835\uddbe)]"
+     },
+     {
+      "reference_block_index": 76,
+      "candidate_block_index": 34,
+      "mass": 0.016166281755196306,
+      "combined_cost": 0.39279070677121636,
+      "geometry_cost": 0.3557726849734689,
+      "content_cost": 0.46153846153846156,
+      "reference_page": 0,
+      "candidate_page": 0,
+      "reference_bbox_stacked_normalized": [
+       0.5013374877131842,
+       0.584772668703638,
+       0.590855716879851,
+       0.5998021520749487
+      ],
+      "candidate_bbox_stacked_normalized": [
+       0.4019791846181832,
+       0.5836250998757102,
+       0.6229371712877859,
+       0.6047341317841501
+      ],
+      "reference_text": "s, a, \u03bd0(s); \u03c1",
+      "candidate_text": "\ud835\udc51\ud835\udf07\u22c6,\ud835\udf080(\ud835\udc60, \ud835\udc4e, \ud835\udf080(\ud835\udc60); \ud835\udf0c)]\u221a \u2211"
+     },
+     {
+      "reference_block_index": 83,
+      "candidate_block_index": 38,
+      "mass": 0.02254791431792559,
+      "combined_cost": 0.26500711191881815,
+      "geometry_cost": 0.3587522001548251,
+      "content_cost": 0.09090909090909094,
+      "reference_page": 0,
+      "candidate_page": 0,
+      "reference_bbox_stacked_normalized": [
+       0.20198106454088796,
+       0.6275020946155895,
+       0.3637763129340278,
+       0.6474364309599905
+      ],
+      "candidate_bbox_stacked_normalized": [
+       0.16762585110134548,
+       0.6336889941282947,
+       0.3231029136508119,
+       0.6526945480192551
+      ],
+      "reference_text": "clippedS (A + B) log N",
+      "candidate_text": "\ud835\uddbc\ud835\uddc5\ud835\uddc2\ud835\uddc9\ud835\uddc9\ud835\uddbe\ud835\uddbd\ud835\udc46(\ud835\udc34+ \ud835\udc35) log \ud835\udc41"
+     },
+     {
+      "reference_block_index": 15,
+      "candidate_block_index": 7,
+      "mass": 0.016166281755196306,
+      "combined_cost": 0.36795272248981004,
+      "geometry_cost": 0.3702769157185889,
+      "content_cost": 0.36363636363636365,
+      "reference_page": 0,
+      "candidate_page": 0,
+      "reference_bbox_stacked_normalized": [
+       0.27176062889348446,
+       0.357230716281467,
+       0.3612789079254749,
+       0.3722601996527778
+      ],
+      "candidate_bbox_stacked_normalized": [
+       0.1857087503071704,
+       0.35394799588906645,
+       0.33609779208314183,
+       0.3734327759405579
+      ],
+      "reference_text": "s, a, \u03bd0(s); \u03c1",
+      "candidate_text": "\ud835\udc51\ud835\udf07\u22c6,\ud835\udf080(\ud835\udc60, \ud835\udc4e, \ud835\udf080(\ud835\udc60); \ud835\udf0c)"
+     },
+     {
+      "reference_block_index": 95,
+      "candidate_block_index": 44,
+      "mass": 0.015783540022547914,
+      "combined_cost": 0.3639812985808501,
+      "geometry_cost": 0.4926635362782309,
+      "content_cost": 0.125,
+      "reference_page": 0,
+      "candidate_page": 0,
+      "reference_bbox_stacked_normalized": [
+       0.21039935342626634,
+       0.686069449993095,
+       0.3302808524736392,
+       0.7034806530885022
+      ],
+      "candidate_bbox_stacked_normalized": [
+       0.1739238913542305,
+       0.6952382867986505,
+       0.28725525600458285,
+       0.7121299204200205
+      ],
+      "reference_text": "clippedS (A + B)",
+      "candidate_text": "\ud835\uddbc\ud835\uddc5\ud835\uddc2\ud835\uddc9\ud835\uddc9\ud835\uddbe\ud835\uddbd\ud835\udc46(\ud835\udc34+ \ud835\udc35)"
+     }
+    ],
+    "mass_policy": "block normalized-character count; minimum mass unit 1",
+    "cost_policy": "0.65 * (1 - rescaled GIoU) + 0.35 * normalized Levenshtein distance",
+    "page_geometry": "page boxes stacked vertically and normalized by max page count"
+   },
+   "interpretation": "Exact optimal transport over extracted text blocks. This is an LTSim-inspired, fully specified adaptation\u2014not the published LTSim implementation or a semantic table/formula metric. Report geometry and content costs separately with the flows."
+  },
+  "layout_relations": {
+   "status": "scored",
+   "applicable": true,
+   "metrics": {
+    "matched_block_count": 53,
+    "reference_block_coverage": 0.45689655172413796,
+    "candidate_block_coverage": 0.9636363636363636,
+    "matched_block_iou_q10": 0.0,
+    "matched_block_iou_q50": 0.1594694486501702,
+    "matched_block_center_displacement_q90": 0.05977921473818765,
+    "pairwise_relation_count": 1378,
+    "pairwise_relation_agreement": 0.8940493468795355
+   },
+   "evidence": {
+    "relation_mismatches": [
+     {
+      "reference_block_pair": [
+       0,
+       8
+      ],
+      "candidate_block_pair": [
+       0,
+       23
+      ],
+      "reference_relation": "left_of",
+      "candidate_relation": "below",
+      "reference_text": [
+       "Equation Sample 1",
+       "(i) \u2264"
+      ]
+     },
+     {
+      "reference_block_pair": [
+       0,
+       15
+      ],
+      "candidate_block_pair": [
+       0,
+       7
+      ],
+      "reference_relation": "below",
+      "candidate_relation": "left_of",
+      "reference_text": [
+       "Equation Sample 1",
+       "s, a, \u03bd0(s); \u03c1"
+      ]
+     },
+     {
+      "reference_block_pair": [
+       0,
+       37
+      ],
+      "candidate_block_pair": [
+       0,
+       19
+      ],
+      "reference_relation": "below",
+      "candidate_relation": "left_of",
+      "reference_text": [
+       "Equation Sample 1",
+       "C\u22c6"
+      ]
+     },
+     {
+      "reference_block_pair": [
+       0,
+       52
+      ],
+      "candidate_block_pair": [
+       0,
+       5
+      ],
+      "reference_relation": "below",
+      "candidate_relation": "left_of",
+      "reference_text": [
+       "Equation Sample 1",
+       "(ii)"
+      ]
+     },
+     {
+      "reference_block_pair": [
+       1,
+       31
+      ],
+      "candidate_block_pair": [
+       1,
+       8
+      ],
+      "reference_relation": "below",
+      "candidate_relation": "right_of",
+      "reference_text": [
+       "Dataset-expansion sample",
+       "VarPs,a,\u03bd0(s)"
+      ]
+     },
+     {
+      "reference_block_pair": [
+       1,
+       54
+      ],
+      "candidate_block_pair": [
+       1,
+       26
+      ],
+      "reference_relation": "below",
+      "candidate_relation": "left_of",
+      "reference_text": [
+       "Dataset-expansion sample",
+       "clipped"
+      ]
+     },
+     {
+      "reference_block_pair": [
+       3,
+       10
+      ],
+      "candidate_block_pair": [
+       2,
+       28
+      ],
+      "reference_relation": "right_of",
+      "candidate_relation": "left_of",
+      "reference_text": [
+       "The following display is drawn from a source-backed image-to-LaTeX benchmark and reproduced verbatim.",
+       "\u03b4"
+      ]
+     },
+     {
+      "reference_block_pair": [
+       3,
+       31
+      ],
+      "candidate_block_pair": [
+       2,
+       8
+      ],
+      "reference_relation": "below",
+      "candidate_relation": "right_of",
+      "reference_text": [
+       "The following display is drawn from a source-backed image-to-LaTeX benchmark and reproduced verbatim.",
+       "VarPs,a,\u03bd0(s)"
+      ]
+     },
+     {
+      "reference_block_pair": [
+       3,
+       39
+      ],
+      "candidate_block_pair": [
+       2,
+       20
+      ],
+      "reference_relation": "below",
+      "candidate_relation": "left_of",
+      "reference_text": [
+       "The following display is drawn from a source-backed image-to-LaTeX benchmark and reproduced verbatim.",
+       "\u03b4 N"
+      ]
+     },
+     {
+      "reference_block_pair": [
+       3,
+       51
+      ],
+      "candidate_block_pair": [
+       2,
+       24
+      ],
+      "reference_relation": "below",
+      "candidate_relation": "left_of",
+      "reference_text": [
+       "The following display is drawn from a source-backed image-to-LaTeX benchmark and reproduced verbatim.",
+       "\u221a"
+      ]
+     },
+     {
+      "reference_block_pair": [
+       3,
+       88
+      ],
+      "candidate_block_pair": [
+       2,
+       39
+      ],
+      "reference_relation": "below",
+      "candidate_relation": "left_of",
+      "reference_text": [
+       "The following display is drawn from a source-backed image-to-LaTeX benchmark and reproduced verbatim.",
+       "\u22642"
+      ]
+     },
+     {
+      "reference_block_pair": [
+       5,
+       10
+      ],
+      "candidate_block_pair": [
+       3,
+       28
+      ],
+      "reference_relation": "right_of",
+      "candidate_relation": "left_of",
+      "reference_text": [
+       "clipped log N",
+       "\u03b4"
+      ]
+     },
+     {
+      "reference_block_pair": [
+       5,
+       30
+      ],
+      "candidate_block_pair": [
+       3,
+       16
+      ],
+      "reference_relation": "left_of",
+      "candidate_relation": "below",
+      "reference_text": [
+       "clipped log N",
+       "s, a, \u03bd0(s); \u03c1"
+      ]
+     },
+     {
+      "reference_block_pair": [
+       5,
+       31
+      ],
+      "candidate_block_pair": [
+       3,
+       8
+      ],
+      "reference_relation": "below",
+      "candidate_relation": "right_of",
+      "reference_text": [
+       "clipped log N",
+       "VarPs,a,\u03bd0(s)"
+      ]
+     },
+     {
+      "reference_block_pair": [
+       5,
+       59
+      ],
+      "candidate_block_pair": [
+       3,
+       29
+      ],
+      "reference_relation": "left_of",
+      "candidate_relation": "below",
+      "reference_text": [
+       "clipped log N",
+       "SA \u00b7"
+      ]
+     },
+     {
+      "reference_block_pair": [
+       6,
+       10
+      ],
+      "candidate_block_pair": [
+       4,
+       28
+      ],
+      "reference_relation": "right_of",
+      "candidate_relation": "left_of",
+      "reference_text": [
+       "C\u22c6",
+       "\u03b4"
+      ]
+     },
+     {
+      "reference_block_pair": [
+       6,
+       31
+      ],
+      "candidate_block_pair": [
+       4,
+       8
+      ],
+      "reference_relation": "below",
+      "candidate_relation": "right_of",
+      "reference_text": [
+       "C\u22c6",
+       "VarPs,a,\u03bd0(s)"
+      ]
+     },
+     {
+      "reference_block_pair": [
+       6,
+       44
+      ],
+      "candidate_block_pair": [
+       4,
+       21
+      ],
+      "reference_relation": "below",
+      "candidate_relation": "right_of",
+      "reference_text": [
+       "C\u22c6",
+       "s, a, \u03bd0(s); \u03c1"
+      ]
+     },
+     {
+      "reference_block_pair": [
+       8,
+       14
+      ],
+      "candidate_block_pair": [
+       23,
+       9
+      ],
+      "reference_relation": "left_of",
+      "candidate_relation": "above",
+      "reference_text": [
+       "(i) \u2264",
+       "\u03b13"
+      ]
+     },
+     {
+      "reference_block_pair": [
+       8,
+       15
+      ],
+      "candidate_block_pair": [
+       23,
+       7
+      ],
+      "reference_relation": "right_of",
+      "candidate_relation": "above",
+      "reference_text": [
+       "(i) \u2264",
+       "s, a, \u03bd0(s); \u03c1"
+      ]
+     },
+     {
+      "reference_block_pair": [
+       8,
+       20
+      ],
+      "candidate_block_pair": [
+       23,
+       11
+      ],
+      "reference_relation": "right_of",
+      "candidate_relation": "above",
+      "reference_text": [
+       "(i) \u2264",
+       "s\u2208S,a\u2208A"
+      ]
+     },
+     {
+      "reference_block_pair": [
+       8,
+       23
+      ],
+      "candidate_block_pair": [
+       23,
+       13
+      ],
+      "reference_relation": "right_of",
+      "candidate_relation": "above",
+      "reference_text": [
+       "(i) \u2264",
+       "clipped log N"
+      ]
+     },
+     {
+      "reference_block_pair": [
+       8,
+       24
+      ],
+      "candidate_block_pair": [
+       23,
+       14
+      ],
+      "reference_relation": "below",
+      "candidate_relation": "above",
+      "reference_text": [
+       "(i) \u2264",
+       "C\u22c6"
+      ]
+     },
+     {
+      "reference_block_pair": [
+       8,
+       26
+      ],
+      "candidate_block_pair": [
+       23,
+       15
+      ],
+      "reference_relation": "right_of",
+      "candidate_relation": "above",
+      "reference_text": [
+       "(i) \u2264",
+       "\u03b4 N"
+      ]
+     }
+    ],
+    "worst_block_pairs": [
+     {
+      "reference_block_index": 10,
+      "candidate_block_index": 28,
+      "reference_page": 0,
+      "candidate_page": 0,
+      "reference_bbox_normalized": [
+       0.5727229398839614,
+       0.35310433127663354,
+       0.578843758776297,
+       0.3631675797279435
+      ],
+      "candidate_bbox_normalized": [
+       0.2355586531894659,
+       0.5262251189260772,
+       0.2588298024694904,
+       0.5496417729541508
+      ],
+      "center_displacement": 0.3745636772783896,
+      "bbox_iou": 0.0,
+      "reference_text": "\u03b4"
+     },
+     {
+      "reference_block_index": 52,
+      "candidate_block_index": 5,
+      "reference_page": 0,
+      "candidate_page": 0,
+      "reference_bbox_normalized": [
+       0.1417338552038654,
+       0.5175914186419863,
+       0.16017450070848652,
+       0.5276547056255918
+      ],
+      "candidate_bbox_normalized": [
+       0.1088265811695772,
+       0.346327194059738,
+       0.12211286008747574,
+       0.35604943169487846
+      ],
+      "center_displacement": 0.17506861501842708,
+      "bbox_iou": 0.0,
+      "reference_text": "(ii)"
+     },
+     {
+      "reference_block_index": 8,
+      "candidate_block_index": 23,
+      "reference_page": 0,
+      "candidate_page": 0,
+      "reference_bbox_normalized": [
+       0.1417338552038654,
+       0.34707838116270123,
+       0.15633270163941226,
+       0.37075042724609375
+      ],
+      "candidate_bbox_normalized": [
+       0.10847788542703865,
+       0.5132848180905737,
+       0.17048010483286738,
+       0.5401140078149661
+      ],
+      "center_displacement": 0.16805681625542357,
+      "bbox_iou": 0.0,
+      "reference_text": "(i) \u2264"
+     },
+     {
+      "reference_block_index": 31,
+      "candidate_block_index": 8,
+      "reference_page": 0,
+      "candidate_page": 0,
+      "reference_bbox_normalized": [
+       0.5107599395552492,
+       0.4193155693285393,
+       0.5930092506159365,
+       0.43832004431522253
+      ],
+      "candidate_bbox_normalized": [
+       0.6429049423317504,
+       0.35626606026081126,
+       0.7681144265567555,
+       0.3775313406279593
+      ],
+      "center_displacement": 0.1656340659859678,
+      "bbox_iou": 0.0,
+      "reference_text": "VarPs,a,\u03bd0(s)"
+     },
+     {
+      "reference_block_index": 44,
+      "candidate_block_index": 21,
+      "reference_page": 0,
+      "candidate_page": 0,
+      "reference_bbox_normalized": [
+       0.5072793399586397,
+       0.47424798059945156,
+       0.5967975192599826,
+       0.4892774639707623
+      ],
+      "candidate_bbox_normalized": [
+       0.3929862477420981,
+       0.46983137034406564,
+       0.8679066576988869,
+       0.4918091128570865
+      ],
+      "center_displacement": 0.07841368731314872,
+      "bbox_iou": 0.12889954306171156,
+      "reference_text": "s, a, \u03bd0(s); \u03c1"
+     },
+     {
+      "reference_block_index": 106,
+      "candidate_block_index": 49,
+      "reference_page": 0,
+      "candidate_page": 0,
+      "reference_bbox_normalized": [
+       0.21002167346430758,
+       0.741452997381037,
+       0.32990317251168044,
+       0.7588642004764441
+      ],
+      "candidate_bbox_normalized": [
+       0.13340003817689186,
+       0.7477626607875631,
+       0.2869029824250664,
+       0.7745917734473643
+      ],
+      "center_displacement": 0.06081739244034211,
+      "bbox_iou": 0.1594694486501702,
+      "reference_text": "clippedS (A + B)"
+     },
+     {
+      "reference_block_index": 15,
+      "candidate_block_index": 7,
+      "reference_page": 0,
+      "candidate_page": 0,
+      "reference_bbox_normalized": [
+       0.27176062889348446,
+       0.357230716281467,
+       0.3612789079254749,
+       0.3722601996527778
+      ],
+      "candidate_bbox_normalized": [
+       0.1857087503071704,
+       0.35394799588906645,
+       0.33609779208314183,
+       0.3734327759405579
+      ],
+      "center_displacement": 0.05562650392956968,
+      "bbox_iou": 0.2922409992727233,
+      "reference_text": "s, a, \u03bd0(s); \u03c1"
+     },
+     {
+      "reference_block_index": 68,
+      "candidate_block_index": 32,
+      "reference_page": 0,
+      "candidate_page": 0,
+      "reference_bbox_normalized": [
+       0.19617298849267897,
+       0.5711520416568024,
+       0.21710337221232895,
+       0.5867704141019571
+      ],
+      "candidate_bbox_normalized": [
+       0.12645174163618897,
+       0.5736584518895005,
+       0.1806608960519429,
+       0.6004876030815972
+      ],
+      "center_displacement": 0.053698094137982585,
+      "bbox_iou": 0.0,
+      "reference_text": "C\u22c6"
+     },
+     {
+      "reference_block_index": 37,
+      "candidate_block_index": 19,
+      "reference_page": 0,
+      "candidate_page": 0,
+      "reference_bbox_normalized": [
+       0.19617298849267897,
+       0.4606273150203204,
+       0.21710337221232895,
+       0.4762456874654751
+      ],
+      "candidate_bbox_normalized": [
+       0.12645174163618897,
+       0.4582591201319839,
+       0.1806608960519429,
+       0.48508830985637624
+      ],
+      "center_displacement": 0.05318048113803114,
+      "bbox_iou": 0.0,
+      "reference_text": "C\u22c6"
+     },
+     {
+      "reference_block_index": 24,
+      "candidate_block_index": 14,
+      "reference_page": 0,
+      "candidate_page": 0,
+      "reference_bbox_normalized": [
+       0.18032824447731566,
+       0.40569490374940814,
+       0.2012586157306347,
+       0.4213132761945628
+      ],
+      "candidate_bbox_normalized": [
+       0.10847788542703865,
+       0.4020279007728654,
+       0.1676797679826325,
+       0.4288570519649621
+      ],
+      "center_displacement": 0.05275022988909506,
+      "bbox_iou": 0.0,
+      "reference_text": "C\u22c6"
+     },
+     {
+      "reference_block_index": 19,
+      "candidate_block_index": 6,
+      "reference_page": 0,
+      "candidate_page": 0,
+      "reference_bbox_normalized": [
+       0.5050862131555096,
+       0.37155582928898356,
+       0.5946043924568525,
+       0.38658531266029433
+      ],
+      "candidate_bbox_normalized": [
+       0.35687557544583587,
+       0.3539021809895833,
+       0.6411075966030944,
+       0.3868716461489899
+      ],
+      "center_displacement": 0.05158978984691161,
+      "bbox_iou": 0.14357221067233591,
+      "reference_text": "s, a, \u03bd0(s); \u03c1"
+     },
+     {
+      "reference_block_index": 80,
+      "candidate_block_index": 37,
+      "reference_page": 0,
+      "candidate_page": 0,
+      "reference_bbox_normalized": [
+       0.631705639409084,
+       0.604235022959083,
+       0.6881327909581801,
+       0.6144841512044271
+      ],
+      "candidate_bbox_normalized": [
+       0.582330641403697,
+       0.6055459301881115,
+       0.6375894484177135,
+       0.615268167823252
+      ],
+      "center_displacement": 0.04997014979806818,
+      "bbox_iou": 0.04947497133999625,
+      "reference_text": "s\u2208S,a\u2208A"
+     },
+     {
+      "reference_block_index": 79,
+      "candidate_block_index": 36,
+      "reference_page": 0,
+      "candidate_page": 0,
+      "reference_bbox_normalized": [
+       0.3908609377792458,
+       0.6042349844267874,
+       0.44728806439568014,
+       0.6144841126721314
+      ],
+      "candidate_bbox_normalized": [
+       0.34372471828086704,
+       0.6055459301881115,
+       0.39898355022754545,
+       0.615268167823252
+      ],
+      "center_displacement": 0.047731862187708245,
+      "bbox_iou": 0.06961044314710511,
+      "reference_text": "s\u2208S,a\u2208A"
+     },
+     {
+      "reference_block_index": 47,
+      "candidate_block_index": 22,
+      "reference_page": 0,
+      "candidate_page": 0,
+      "reference_bbox_normalized": [
+       0.37897738288430605,
+       0.493710296322601,
+       0.4354045095007404,
+       0.5039594245679451
+      ],
+      "candidate_bbox_normalized": [
+       0.334731781404782,
+       0.4901466369628906,
+       0.3899906133514604,
+       0.4998688745980311
+      ],
+      "center_displacement": 0.04499281174674243,
+      "bbox_iou": 0.06473521995083065,
+      "reference_text": "s\u2208S,a\u2208A"
+     },
+     {
+      "reference_block_index": 102,
+      "candidate_block_index": 48,
+      "reference_page": 0,
+      "candidate_page": 0,
+      "reference_bbox_normalized": [
+       0.3996093600404029,
+       0.7173082756273674,
+       0.4236020854875153,
+       0.7275574038727115
+      ],
+      "candidate_bbox_normalized": [
+       0.35682005040785847,
+       0.7251994585750079,
+       0.3800710540970946,
+       0.7349216191455571
+      ],
+      "center_displacement": 0.043829009939726604,
+      "bbox_iou": 0.0,
+      "reference_text": "s\u2208S"
+     },
+     {
+      "reference_block_index": 114,
+      "candidate_block_index": 54,
+      "reference_page": 0,
+      "candidate_page": 0,
+      "reference_bbox_normalized": [
+       0.3992316800784441,
+       0.7726917459507181,
+       0.42322440552555657,
+       0.7829408741960622
+      ],
+      "candidate_bbox_normalized": [
+       0.356467776828342,
+       0.7794946227410827,
+       0.37971875558491625,
+       0.7892167833116319
+      ],
+      "center_displacement": 0.04362765879721141,
+      "bbox_iou": 0.0,
+      "reference_text": "s\u2208S"
+     },
+     {
+      "reference_block_index": 96,
+      "candidate_block_index": 45,
+      "reference_page": 0,
+      "candidate_page": 0,
+      "reference_bbox_normalized": [
+       0.2558451633827359,
+       0.6885275792593908,
+       0.3774832681892744,
+       0.7210683340978141
+      ],
+      "candidate_bbox_normalized": [
+       0.21671374950533598,
+       0.6970049154878867,
+       0.33424492131650835,
+       0.7298244129527699
+      ],
+      "center_displacement": 0.04207662082878718,
+      "bbox_iou": 0.3181960122519535,
+      "reference_text": "N log N"
+     },
+     {
+      "reference_block_index": 91,
+      "candidate_block_index": 42,
+      "reference_page": 0,
+      "candidate_page": 0,
+      "reference_bbox_normalized": [
+       0.38689986085580064,
+       0.6612639764342645,
+       0.44332701240489686,
+       0.6715131046796086
+      ],
+      "candidate_bbox_normalized": [
+       0.34571581572489024,
+       0.665919602519334,
+       0.40097464767156865,
+       0.6756417630898832
+      ],
+      "center_displacement": 0.04199849826809645,
+      "bbox_iou": 0.07593030582815469,
+      "reference_text": "s\u2208S,a\u2208A"
+     },
+     {
+      "reference_block_index": 108,
+      "candidate_block_index": 51,
+      "reference_page": 0,
+      "candidate_page": 0,
+      "reference_bbox_normalized": [
+       0.2554674834207772,
+       0.7439111266473327,
+       0.37710558822731566,
+       0.776451881485756
+      ],
+      "candidate_bbox_normalized": [
+       0.21636147592581956,
+       0.7513000796539615,
+       0.3338926228043301,
+       0.7841195000542535
+      ],
+      "center_displacement": 0.04184230410081993,
+      "bbox_iou": 0.3375911244793473,
+      "reference_text": "N log N"
+     },
+     {
+      "reference_block_index": 95,
+      "candidate_block_index": 44,
+      "reference_page": 0,
+      "candidate_page": 0,
+      "reference_bbox_normalized": [
+       0.21039935342626634,
+       0.686069449993095,
+       0.3302808524736392,
+       0.7034806530885022
+      ],
+      "candidate_bbox_normalized": [
+       0.1739238913542305,
+       0.6952382867986505,
+       0.28725525600458285,
+       0.7121299204200205
+      ],
+      "center_displacement": 0.04073666390425756,
+      "bbox_iou": 0.18807740120969726,
+      "reference_text": "clippedS (A + B)"
+     },
+     {
+      "reference_block_index": 36,
+      "candidate_block_index": 18,
+      "reference_page": 0,
+      "candidate_page": 0,
+      "reference_bbox_normalized": [
+       0.20891314238504646,
+       0.4599484530362216,
+       0.3707083907781863,
+       0.47988275084832704
+      ],
+      "candidate_bbox_normalized": [
+       0.1716200385997498,
+       0.45791606710414695,
+       0.3270971011492162,
+       0.47692165952740295
+      ],
+      "center_displacement": 0.04052917371723317,
+      "bbox_iou": 0.4805562397139397,
+      "reference_text": "clippedS (A + B) log N"
+     },
+     {
+      "reference_block_index": 67,
+      "candidate_block_index": 31,
+      "reference_page": 0,
+      "candidate_page": 0,
+      "reference_bbox_normalized": [
+       0.20891314238504646,
+       0.5704731796727036,
+       0.3707083907781863,
+       0.590407477484809
+      ],
+      "candidate_bbox_normalized": [
+       0.1716200385997498,
+       0.5733153988616635,
+       0.3270971011492162,
+       0.5923209527526239
+      ],
+      "center_displacement": 0.040522023343783804,
+      "bbox_iou": 0.4855567018002976,
+      "reference_text": "clippedS (A + B) log N"
+     },
+     {
+      "reference_block_index": 62,
+      "candidate_block_index": 30,
+      "reference_page": 0,
+      "candidate_page": 0,
+      "reference_bbox_normalized": [
+       0.374024933459712,
+       0.5472061080161972,
+       0.4304520850088082,
+       0.5574552362615411
+      ],
+      "candidate_bbox_normalized": [
+       0.3343319612390855,
+       0.5451723349214804,
+       0.3895907931857639,
+       0.5548945725566209
+      ],
+      "center_displacement": 0.04034259010377024,
+      "bbox_iou": 0.12017133882876202,
+      "reference_text": "s\u2208S,a\u2208A"
+     },
+     {
+      "reference_block_index": 51,
+      "candidate_block_index": 24,
+      "reference_page": 0,
+      "candidate_page": 0,
+      "reference_bbox_normalized": [
+       0.3031446170183568,
+       0.5151548674612334,
+       0.3179930892645144,
+       0.5289289686414931
+      ],
+      "candidate_bbox_normalized": [
+       0.2628239899678947,
+       0.5136556914358428,
+       0.2777962030148974,
+       0.5275445803247317
+      ],
+      "center_displacement": 0.04028456556593281,
+      "bbox_iou": 0.0,
+      "reference_text": "\u221a"
+     }
+    ]
+   },
+   "interpretation": "Transparent matched-block relation trial inspired by pairwise-layout work; this is not the published PaIRS or LTSim metric."
+  },
+  "reading_order": {
+   "status": "scored",
+   "applicable": true,
+   "metrics": {
+    "matched_block_count": 53,
+    "reference_block_coverage": 0.45689655172413796,
+    "candidate_block_coverage": 0.9636363636363636,
+    "inversion_count": 65,
+    "kendall_tau": 0.9056603773584906
+   },
+   "evidence": {
+    "inverted_block_pairs": [
+     {
+      "reference_block_pair": [
+       8,
+       14
+      ],
+      "candidate_block_pair": [
+       23,
+       9
+      ],
+      "reference_text": [
+       "(i) \u2264",
+       "\u03b13"
+      ],
+      "candidate_text": [
+       "\u2264 (ii) \u221a\ud835\udc36\u22c6",
+       "\ud835\udefc3 \u2264"
+      ]
+     },
+     {
+      "reference_block_pair": [
+       8,
+       15
+      ],
+      "candidate_block_pair": [
+       23,
+       7
+      ],
+      "reference_text": [
+       "(i) \u2264",
+       "s, a, \u03bd0(s); \u03c1"
+      ],
+      "candidate_text": [
+       "\u2264 (ii) \u221a\ud835\udc36\u22c6",
+       "\ud835\udc51\ud835\udf07\u22c6,\ud835\udf080(\ud835\udc60, \ud835\udc4e, \ud835\udf080(\ud835\udc60); \ud835\udf0c)"
+      ]
+     },
+     {
+      "reference_block_pair": [
+       8,
+       19
+      ],
+      "candidate_block_pair": [
+       23,
+       6
+      ],
+      "reference_text": [
+       "(i) \u2264",
+       "s, a, \u03bd0(s); \u03c1"
+      ],
+      "candidate_text": [
+       "\u2264 (ii) \u221a\ud835\udc36\u22c6",
+       "\ud835\udeff \ud835\udc41min{\ud835\udc51\ud835\udf07\u22c6,\ud835\udf080(\ud835\udc60, \ud835\udc4e, \ud835\udf080(\ud835\udc60); \ud835\udf0c), 1 \ud835\udc46(\ud835\udc34+\ud835\udc35)}"
+      ]
+     },
+     {
+      "reference_block_pair": [
+       8,
+       20
+      ],
+      "candidate_block_pair": [
+       23,
+       11
+      ],
+      "reference_text": [
+       "(i) \u2264",
+       "s\u2208S,a\u2208A"
+      ],
+      "candidate_text": [
+       "\u2264 (ii) \u221a\ud835\udc36\u22c6",
+       "\ud835\udc60\u2208\ud835\udcae\ufe00,\ud835\udc4e\u2208\ud835\udc9c\ufe00"
+      ]
+     },
+     {
+      "reference_block_pair": [
+       8,
+       23
+      ],
+      "candidate_block_pair": [
+       23,
+       13
+      ],
+      "reference_text": [
+       "(i) \u2264",
+       "clipped log N"
+      ],
+      "candidate_text": [
+       "\u2264 (ii) \u221a\ud835\udc36\u22c6",
+       "\ud835\uddbc\ud835\uddc5\ud835\uddc2\ud835\uddc9\ud835\uddc9\ud835\uddbe\ud835\uddbdlog \ud835\udc41"
+      ]
+     },
+     {
+      "reference_block_pair": [
+       8,
+       24
+      ],
+      "candidate_block_pair": [
+       23,
+       14
+      ],
+      "reference_text": [
+       "(i) \u2264",
+       "C\u22c6"
+      ],
+      "candidate_text": [
+       "\u2264 (ii) \u221a\ud835\udc36\u22c6",
+       "\u2264\u221a\ud835\udc36\u22c6"
+      ]
+     },
+     {
+      "reference_block_pair": [
+       8,
+       26
+      ],
+      "candidate_block_pair": [
+       23,
+       15
+      ],
+      "reference_text": [
+       "(i) \u2264",
+       "\u03b4 N"
+      ],
+      "candidate_text": [
+       "\u2264 (ii) \u221a\ud835\udc36\u22c6",
+       "\ud835\udeff \ud835\udc41 \u2211"
+      ]
+     },
+     {
+      "reference_block_pair": [
+       8,
+       30
+      ],
+      "candidate_block_pair": [
+       23,
+       16
+      ],
+      "reference_text": [
+       "(i) \u2264",
+       "s, a, \u03bd0(s); \u03c1"
+      ],
+      "candidate_text": [
+       "\u2264 (ii) \u221a\ud835\udc36\u22c6",
+       "\u221a\ud835\udc51\ud835\udf07\u22c6,\ud835\udf080(\ud835\udc60, \ud835\udc4e, \ud835\udf080(\ud835\udc60); \ud835\udf0c)\ud835\uddb5\ud835\uddba\ud835\uddcb\ud835\udc43\ud835\udc60,\ud835\udc4e,\ud835\udf080(\ud835\udc60)(\ud835\udc49\u2212 \ud835\uddc9\ud835\uddbe)"
+      ]
+     },
+     {
+      "reference_block_pair": [
+       8,
+       31
+      ],
+      "candidate_block_pair": [
+       23,
+       8
+      ],
+      "reference_text": [
+       "(i) \u2264",
+       "VarPs,a,\u03bd0(s)"
+      ],
+      "candidate_text": [
+       "\u2264 (ii) \u221a\ud835\udc36\u22c6",
+       "\ud835\uddb5\ud835\uddba\ud835\uddcb\ud835\udc43\ud835\udc60,\ud835\udc4e,\ud835\udf080(\ud835\udc60)(\ud835\udc49\u2212 \ud835\uddc9\ud835\uddbe)"
+      ]
+     },
+     {
+      "reference_block_pair": [
+       8,
+       32
+      ],
+      "candidate_block_pair": [
+       23,
+       17
+      ],
+      "reference_text": [
+       "(i) \u2264",
+       "s\u2208S,a\u2208A"
+      ],
+      "candidate_text": [
+       "\u2264 (ii) \u221a\ud835\udc36\u22c6",
+       "\ud835\udc60\u2208\ud835\udcae\ufe00,\ud835\udc4e\u2208\ud835\udc9c\ufe00"
+      ]
+     },
+     {
+      "reference_block_pair": [
+       8,
+       36
+      ],
+      "candidate_block_pair": [
+       23,
+       18
+      ],
+      "reference_text": [
+       "(i) \u2264",
+       "clippedS (A + B) log N"
+      ],
+      "candidate_text": [
+       "\u2264 (ii) \u221a\ud835\udc36\u22c6",
+       "\ud835\uddbc\ud835\uddc5\ud835\uddc2\ud835\uddc9\ud835\uddc9\ud835\uddbe\ud835\uddbd\ud835\udc46(\ud835\udc34+ \ud835\udc35) log \ud835\udc41"
+      ]
+     },
+     {
+      "reference_block_pair": [
+       8,
+       37
+      ],
+      "candidate_block_pair": [
+       23,
+       19
+      ],
+      "reference_text": [
+       "(i) \u2264",
+       "C\u22c6"
+      ],
+      "candidate_text": [
+       "\u2264 (ii) \u221a\ud835\udc36\u22c6",
+       "+\u221a\ud835\udc36\u22c6"
+      ]
+     },
+     {
+      "reference_block_pair": [
+       8,
+       39
+      ],
+      "candidate_block_pair": [
+       23,
+       20
+      ],
+      "reference_text": [
+       "(i) \u2264",
+       "\u03b4 N"
+      ],
+      "candidate_text": [
+       "\u2264 (ii) \u221a\ud835\udc36\u22c6",
+       "\ud835\udeff \ud835\udc41 \u2211"
+      ]
+     },
+     {
+      "reference_block_pair": [
+       8,
+       44
+      ],
+      "candidate_block_pair": [
+       23,
+       21
+      ],
+      "reference_text": [
+       "(i) \u2264",
+       "s, a, \u03bd0(s); \u03c1"
+      ],
+      "candidate_text": [
+       "\u2264 (ii) \u221a\ud835\udc36\u22c6",
+       "\u221a\ud835\udc51\ud835\udf07\u22c6,\ud835\udf080(\ud835\udc60, \ud835\udc4e, \ud835\udf080(\ud835\udc60); \ud835\udf0c) \u22c5\u221a\ud835\udc51\ud835\udf07\u22c6,\ud835\udf080(\ud835\udc60, \ud835\udc4e, \ud835\udf080(\ud835\udc60); \ud835\udf0c)\ud835\uddb5\ud835\uddba\ud835\uddcb\ud835\udc43\ud835\udc60,\ud835\udc4e,\ud835\udf080(\ud835\udc60)(\ud835\udc49\u2212 \ud835\uddc9\ud835\uddbe)"
+      ]
+     },
+     {
+      "reference_block_pair": [
+       8,
+       47
+      ],
+      "candidate_block_pair": [
+       23,
+       22
+      ],
+      "reference_text": [
+       "(i) \u2264",
+       "s\u2208S,a\u2208A"
+      ],
+      "candidate_text": [
+       "\u2264 (ii) \u221a\ud835\udc36\u22c6",
+       "\ud835\udc60\u2208\ud835\udcae\ufe00,\ud835\udc4e\u2208\ud835\udc9c\ufe00"
+      ]
+     },
+     {
+      "reference_block_pair": [
+       8,
+       52
+      ],
+      "candidate_block_pair": [
+       23,
+       5
+      ],
+      "reference_text": [
+       "(i) \u2264",
+       "(ii)"
+      ],
+      "candidate_text": [
+       "\u2264 (ii) \u221a\ud835\udc36\u22c6",
+       "(i)"
+      ]
+     },
+     {
+      "reference_block_pair": [
+       10,
+       14
+      ],
+      "candidate_block_pair": [
+       28,
+       9
+      ],
+      "reference_text": [
+       "\u03b4",
+       "\u03b13"
+      ],
+      "candidate_text": [
+       "\ud835\udeff\u22c5",
+       "\ud835\udefc3 \u2264"
+      ]
+     },
+     {
+      "reference_block_pair": [
+       10,
+       15
+      ],
+      "candidate_block_pair": [
+       28,
+       7
+      ],
+      "reference_text": [
+       "\u03b4",
+       "s, a, \u03bd0(s); \u03c1"
+      ],
+      "candidate_text": [
+       "\ud835\udeff\u22c5",
+       "\ud835\udc51\ud835\udf07\u22c6,\ud835\udf080(\ud835\udc60, \ud835\udc4e, \ud835\udf080(\ud835\udc60); \ud835\udf0c)"
+      ]
+     },
+     {
+      "reference_block_pair": [
+       10,
+       19
+      ],
+      "candidate_block_pair": [
+       28,
+       6
+      ],
+      "reference_text": [
+       "\u03b4",
+       "s, a, \u03bd0(s); \u03c1"
+      ],
+      "candidate_text": [
+       "\ud835\udeff\u22c5",
+       "\ud835\udeff \ud835\udc41min{\ud835\udc51\ud835\udf07\u22c6,\ud835\udf080(\ud835\udc60, \ud835\udc4e, \ud835\udf080(\ud835\udc60); \ud835\udf0c), 1 \ud835\udc46(\ud835\udc34+\ud835\udc35)}"
+      ]
+     },
+     {
+      "reference_block_pair": [
+       10,
+       20
+      ],
+      "candidate_block_pair": [
+       28,
+       11
+      ],
+      "reference_text": [
+       "\u03b4",
+       "s\u2208S,a\u2208A"
+      ],
+      "candidate_text": [
+       "\ud835\udeff\u22c5",
+       "\ud835\udc60\u2208\ud835\udcae\ufe00,\ud835\udc4e\u2208\ud835\udc9c\ufe00"
+      ]
+     },
+     {
+      "reference_block_pair": [
+       10,
+       23
+      ],
+      "candidate_block_pair": [
+       28,
+       13
+      ],
+      "reference_text": [
+       "\u03b4",
+       "clipped log N"
+      ],
+      "candidate_text": [
+       "\ud835\udeff\u22c5",
+       "\ud835\uddbc\ud835\uddc5\ud835\uddc2\ud835\uddc9\ud835\uddc9\ud835\uddbe\ud835\uddbdlog \ud835\udc41"
+      ]
+     },
+     {
+      "reference_block_pair": [
+       10,
+       24
+      ],
+      "candidate_block_pair": [
+       28,
+       14
+      ],
+      "reference_text": [
+       "\u03b4",
+       "C\u22c6"
+      ],
+      "candidate_text": [
+       "\ud835\udeff\u22c5",
+       "\u2264\u221a\ud835\udc36\u22c6"
+      ]
+     },
+     {
+      "reference_block_pair": [
+       10,
+       26
+      ],
+      "candidate_block_pair": [
+       28,
+       15
+      ],
+      "reference_text": [
+       "\u03b4",
+       "\u03b4 N"
+      ],
+      "candidate_text": [
+       "\ud835\udeff\u22c5",
+       "\ud835\udeff \ud835\udc41 \u2211"
+      ]
+     },
+     {
+      "reference_block_pair": [
+       10,
+       30
+      ],
+      "candidate_block_pair": [
+       28,
+       16
+      ],
+      "reference_text": [
+       "\u03b4",
+       "s, a, \u03bd0(s); \u03c1"
+      ],
+      "candidate_text": [
+       "\ud835\udeff\u22c5",
+       "\u221a\ud835\udc51\ud835\udf07\u22c6,\ud835\udf080(\ud835\udc60, \ud835\udc4e, \ud835\udf080(\ud835\udc60); \ud835\udf0c)\ud835\uddb5\ud835\uddba\ud835\uddcb\ud835\udc43\ud835\udc60,\ud835\udc4e,\ud835\udf080(\ud835\udc60)(\ud835\udc49\u2212 \ud835\uddc9\ud835\uddbe)"
+      ]
+     }
+    ]
+   },
+   "interpretation": "Kendall tau is computed only on content-matched blocks; coverage must accompany it."
+  },
+  "pagination": {
+   "status": "scored",
+   "applicable": true,
+   "metrics": {
+    "reference_page_count": 1,
+    "candidate_page_count": 1,
+    "page_count_delta": 0,
+    "matched_block_count": 53,
+    "matched_block_page_assignment_accuracy": 1.0,
+    "page_break_precision": 1.0,
+    "page_break_recall": 1.0,
+    "page_break_f1": 1.0,
+    "page_break_true_positive": 0,
+    "page_break_false_positive": 0,
+    "page_break_false_negative": 0
+   },
+   "evidence": {
+    "mismatched_page_breaks": []
+   },
+   "interpretation": "Page count, matched-block page assignment, and page-break boundaries are reported independently."
+  },
+  "typography": {
+   "status": "scored",
+   "applicable": true,
+   "metrics": {
+    "styled_matched_token_count": 84,
+    "reference_styled_token_count": 236,
+    "candidate_styled_token_count": 152,
+    "reference_style_coverage": 0.3559322033898305,
+    "candidate_style_coverage": 0.5526315789473685,
+    "style_coverage_hmean": 0.4329896907216495,
+    "font_size_abs_log_ratio_q50": 0.008299057127878501,
+    "font_size_abs_log_ratio_q90": 0.034478222105848784,
+    "font_size_abs_log_ratio_max": 0.6848481234320668,
+    "font_name_exact_agreement_rate": 0.0,
+    "color_exact_agreement_rate": 1.0,
+    "bold_agreement_rate": 1.0,
+    "italic_agreement_rate": 0.5,
+    "serif_agreement_rate": 1.0,
+    "monospace_agreement_rate": 1.0,
+    "baseline_displacement_q90": 0.07030529446072058
+   },
+   "evidence": {
+    "style_mismatches": [
+     {
+      "token": "s",
+      "reference_page": 0,
+      "candidate_page": 0,
+      "reference_bbox": [
+       98.25621032714844,
+       309.1529235839844,
+       109.16529846191406,
+       320.06201171875
+      ],
+      "candidate_bbox": [
+       307.31365966796875,
+       612.9431762695312,
+       310.9986572265625,
+       618.4431762695312
+      ],
+      "reference_font": "CMEX10",
+      "candidate_font": "NewCMMath-Book",
+      "reference_size": 10.909088134765625,
+      "candidate_size": 5.5,
+      "font_size_abs_log_ratio": 0.6848481234320668,
+      "reference_style_bits": {
+       "italic": false,
+       "serif": true,
+       "monospace": false,
+       "bold": false
+      },
+      "candidate_style_bits": {
+       "italic": false,
+       "serif": true,
+       "monospace": false,
+       "bold": false
+      },
+      "reference_color": 0,
+      "candidate_color": 0
+     },
+     {
+      "token": "\u03b4",
+      "reference_page": 0,
+      "candidate_page": 0,
+      "reference_bbox": [
+       168.8423614501953,
+       425.4561462402344,
+       173.6859893798828,
+       436.365234375
+      ],
+      "candidate_bbox": [
+       194.98207092285156,
+       370.79852294921875,
+       198.97837829589844,
+       378.49853515625
+      ],
+      "reference_font": "CMMI10",
+      "candidate_font": "NewCMMath-Book",
+      "reference_size": 10.909088134765625,
+      "candidate_size": 7.699999809265137,
+      "font_size_abs_log_ratio": 0.3483759115816156,
+      "reference_style_bits": {
+       "italic": true,
+       "serif": true,
+       "monospace": false,
+       "bold": false
+      },
+      "candidate_style_bits": {
+       "italic": false,
+       "serif": true,
+       "monospace": false,
+       "bold": false
+      },
+      "reference_color": 0,
+      "candidate_color": 0
+     },
+     {
+      "token": "\u03b4",
+      "reference_page": 0,
+      "candidate_page": 0,
+      "reference_bbox": [
+       224.37521362304688,
+       604.040771484375,
+       229.21884155273438,
+       614.9498901367188
+      ],
+      "candidate_bbox": [
+       192.53762817382812,
+       510.0107116699219,
+       196.533935546875,
+       517.710693359375
+      ],
+      "reference_font": "CMMI10",
+      "candidate_font": "NewCMMath-Book",
+      "reference_size": 10.909088134765625,
+      "candidate_size": 7.699999809265137,
+      "font_size_abs_log_ratio": 0.3483759115816156,
+      "reference_style_bits": {
+       "italic": true,
+       "serif": true,
+       "monospace": false,
+       "bold": false
+      },
+      "candidate_style_bits": {
+       "italic": false,
+       "serif": true,
+       "monospace": false,
+       "bold": false
+      },
+      "reference_color": 0,
+      "candidate_color": 0
+     },
+     {
+      "token": "Derivation",
+      "reference_page": 0,
+      "candidate_page": 0,
+      "reference_bbox": [
+       94.42311096191406,
+       191.78746032714844,
+       168.53555297851562,
+       206.13365173339844
+      ],
+      "candidate_bbox": [
+       72.0,
+       214.38624572753906,
+       153.3736114501953,
+       229.78623962402344
+      ],
+      "reference_font": "LMRoman12-Bold",
+      "candidate_font": "NewCM10-Bold",
+      "reference_size": 14.346196174621582,
+      "candidate_size": 15.399999618530273,
+      "font_size_abs_log_ratio": 0.07088265252102555,
+      "reference_style_bits": {
+       "italic": false,
+       "serif": true,
+       "monospace": false,
+       "bold": true
+      },
+      "candidate_style_bits": {
+       "italic": false,
+       "serif": true,
+       "monospace": false,
+       "bold": true
+      },
+      "reference_color": 0,
+      "candidate_color": 0
+     },
+     {
+      "token": "(i)",
+      "reference_page": 0,
+      "candidate_page": 0,
+      "reference_bbox": [
+       86.74111938476562,
+       274.8860778808594,
+       95.67561340332031,
+       282.856201171875
+      ],
+      "candidate_bbox": [
+       66.60186767578125,
+       274.2911376953125,
+       74.73307037353516,
+       281.99114990234375
+      ],
+      "reference_font": "LMRoman8-Regular",
+      "candidate_font": "NewCMMath-Book",
+      "reference_size": 7.970111846923828,
+      "candidate_size": 7.699999809265137,
+      "font_size_abs_log_ratio": 0.034478222105848784,
+      "reference_style_bits": {
+       "italic": false,
+       "serif": true,
+       "monospace": false,
+       "bold": false
+      },
+      "candidate_style_bits": {
+       "italic": false,
+       "serif": true,
+       "monospace": false,
+       "bold": false
+      },
+      "reference_color": 0,
+      "candidate_color": 0
+     },
+     {
+      "token": "(ii)",
+      "reference_page": 0,
+      "candidate_page": 0,
+      "reference_bbox": [
+       86.74111938476562,
+       409.9324035644531,
+       98.02679443359375,
+       417.90252685546875
+      ],
+      "candidate_bbox": [
+       66.38846588134766,
+       408.3794860839844,
+       76.66026306152344,
+       416.0794982910156
+      ],
+      "reference_font": "LMRoman8-Regular",
+      "candidate_font": "NewCMMath-Book",
+      "reference_size": 7.970111846923828,
+      "candidate_size": 7.699999809265137,
+      "font_size_abs_log_ratio": 0.034478222105848784,
+      "reference_style_bits": {
+       "italic": false,
+       "serif": true,
+       "monospace": false,
+       "bold": false
+      },
+      "candidate_style_bits": {
+       "italic": false,
+       "serif": true,
+       "monospace": false,
+       "bold": false
+      },
+      "reference_color": 0,
+      "candidate_color": 0
+     },
+     {
+      "token": "(iii)",
+      "reference_page": 0,
+      "candidate_page": 0,
+      "reference_bbox": [
+       86.74111938476562,
+       547.5889282226562,
+       100.37798309326172,
+       555.5590209960938
+      ],
+      "candidate_bbox": [
+       66.38846588134766,
+       553.9881591796875,
+       78.80086517333984,
+       561.6881103515625
+      ],
+      "reference_font": "LMRoman8-Regular",
+      "candidate_font": "NewCMMath-Book",
+      "reference_size": 7.970111846923828,
+      "candidate_size": 7.699999809265137,
+      "font_size_abs_log_ratio": 0.034478222105848784,
+      "reference_style_bits": {
+       "italic": false,
+       "serif": true,
+       "monospace": false,
+       "bold": false
+      },
+      "candidate_style_bits": {
+       "italic": false,
+       "serif": true,
+       "monospace": false,
+       "bold": false
+      },
+      "reference_color": 0,
+      "candidate_color": 0
+     },
+     {
+      "token": "(iv)",
+      "reference_page": 0,
+      "candidate_page": 0,
+      "reference_bbox": [
+       86.74114990234375,
+       588.51708984375,
+       100.14688110351562,
+       596.4871826171875
+      ],
+      "candidate_bbox": [
+       66.38846588134766,
+       594.0859375,
+       78.58526611328125,
+       601.785888671875
+      ],
+      "reference_font": "LMRoman8-Regular",
+      "candidate_font": "NewCMMath-Book",
+      "reference_size": 7.970111846923828,
+      "candidate_size": 7.699999809265137,
+      "font_size_abs_log_ratio": 0.034478222105848784,
+      "reference_style_bits": {
+       "italic": false,
+       "serif": true,
+       "monospace": false,
+       "bold": false
+      },
+      "candidate_style_bits": {
+       "italic": false,
+       "serif": true,
+       "monospace": false,
+       "bold": false
+      },
+      "reference_color": 0,
+      "candidate_color": 0
+     },
+     {
+      "token": "1",
+      "reference_page": 0,
+      "candidate_page": 0,
+      "reference_bbox": [
+       388.7709655761719,
+       292.27386474609375,
+       393.0030822753906,
+       300.24395751953125
+      ],
+      "candidate_bbox": [
+       366.7415771484375,
+       290.5667419433594,
+       371.12286376953125,
+       298.2667541503906
+      ],
+      "reference_font": "CMR8",
+      "candidate_font": "NewCMMath-Book",
+      "reference_size": 7.970111846923828,
+      "candidate_size": 7.699999809265137,
+      "font_size_abs_log_ratio": 0.034478222105848784,
+      "reference_style_bits": {
+       "italic": false,
+       "serif": true,
+       "monospace": false,
+       "bold": false
+      },
+      "candidate_style_bits": {
+       "italic": false,
+       "serif": true,
+       "monospace": false,
+       "bold": false
+      },
+      "reference_color": 0,
+      "candidate_color": 0
+     },
+     {
+      "token": "N",
+      "reference_page": 0,
+      "candidate_page": 0,
+      "reference_bbox": [
+       348.7442932128906,
+       271.6014709472656,
+       355.4631042480469,
+       279.5715637207031
+      ],
+      "candidate_bbox": [
+       325.4723205566406,
+       272.1615295410156,
+       332.4408264160156,
+       279.8615417480469
+      ],
+      "reference_font": "CMMI8",
+      "candidate_font": "NewCMMath-Book",
+      "reference_size": 7.970111846923828,
+      "candidate_size": 7.699999809265137,
+      "font_size_abs_log_ratio": 0.034478222105848784,
+      "reference_style_bits": {
+       "italic": true,
+       "serif": true,
+       "monospace": false,
+       "bold": false
+      },
+      "candidate_style_bits": {
+       "italic": false,
+       "serif": true,
+       "monospace": false,
+       "bold": false
+      },
+      "reference_color": 0,
+      "candidate_color": 0
+     },
+     {
+      "token": "N",
+      "reference_page": 0,
+      "candidate_page": 0,
+      "reference_bbox": [
+       162.4994659423828,
+       320.7726745605469,
+       169.21827697753906,
+       328.7427673339844
+      ],
+      "candidate_bbox": [
+       138.98858642578125,
+       318.1343688964844,
+       145.95709228515625,
+       325.8343811035156
+      ],
+      "reference_font": "CMMI8",
+      "candidate_font": "NewCMMath-Book",
+      "reference_size": 7.970111846923828,
+      "candidate_size": 7.699999809265137,
+      "font_size_abs_log_ratio": 0.034478222105848784,
+      "reference_style_bits": {
+       "italic": true,
+       "serif": true,
+       "monospace": false,
+       "bold": false
+      },
+      "candidate_style_bits": {
+       "italic": false,
+       "serif": true,
+       "monospace": false,
+       "bold": false
+      },
+      "reference_color": 0,
+      "candidate_color": 0
+     },
+     {
+      "token": "N",
+      "reference_page": 0,
+      "candidate_page": 0,
+      "reference_bbox": [
+       220.15472412109375,
+       364.2791748046875,
+       226.87353515625,
+       372.249267578125
+      ],
+      "candidate_bbox": [
+       193.2149200439453,
+       362.6695251464844,
+       200.1834259033203,
+       370.3695373535156
+      ],
+      "reference_font": "CMMI8",
+      "candidate_font": "NewCMMath-Book",
+      "reference_size": 7.970111846923828,
+      "candidate_size": 7.699999809265137,
+      "font_size_abs_log_ratio": 0.034478222105848784,
+      "reference_style_bits": {
+       "italic": true,
+       "serif": true,
+       "monospace": false,
+       "bold": false
+      },
+      "candidate_style_bits": {
+       "italic": false,
+       "serif": true,
+       "monospace": false,
+       "bold": false
+      },
+      "reference_color": 0,
+      "candidate_color": 0
+     },
+     {
+      "token": "N",
+      "reference_page": 0,
+      "candidate_page": 0,
+      "reference_bbox": [
+       220.15472412109375,
+       451.81475830078125,
+       226.87353515625,
+       459.78485107421875
+      ],
+      "candidate_bbox": [
+       193.2149200439453,
+       454.0657958984375,
+       200.1834259033203,
+       461.76580810546875
+      ],
+      "reference_font": "CMMI8",
+      "candidate_font": "NewCMMath-Book",
+      "reference_size": 7.970111846923828,
+      "candidate_size": 7.699999809265137,
+      "font_size_abs_log_ratio": 0.034478222105848784,
+      "reference_style_bits": {
+       "italic": true,
+       "serif": true,
+       "monospace": false,
+       "bold": false
+      },
+      "candidate_style_bits": {
+       "italic": false,
+       "serif": true,
+       "monospace": false,
+       "bold": false
+      },
+      "reference_color": 0,
+      "candidate_color": 0
+     },
+     {
+      "token": "N",
+      "reference_page": 0,
+      "candidate_page": 0,
+      "reference_bbox": [
+       215.91229248046875,
+       496.9816589355469,
+       222.631103515625,
+       504.9517517089844
+      ],
+      "candidate_bbox": [
+       190.77047729492188,
+       501.8816833496094,
+       197.73898315429688,
+       509.5816955566406
+      ],
+      "reference_font": "CMMI8",
+      "candidate_font": "NewCMMath-Book",
+      "reference_size": 7.970111846923828,
+      "candidate_size": 7.699999809265137,
+      "font_size_abs_log_ratio": 0.034478222105848784,
+      "reference_style_bits": {
+       "italic": true,
+       "serif": true,
+       "monospace": false,
+       "bold": false
+      },
+      "candidate_style_bits": {
+       "italic": false,
+       "serif": true,
+       "monospace": false,
+       "bold": false
+      },
+      "reference_color": 0,
+      "candidate_color": 0
+     },
+     {
+      "token": "clipped",
+      "reference_page": 0,
+      "candidate_page": 0,
+      "reference_bbox": [
+       304.40264892578125,
+       279.41937255859375,
+       329.29327392578125,
+       287.38946533203125
+      ],
+      "candidate_bbox": [
+       98.80081939697266,
+       413.602294921875,
+       121.26172637939453,
+       421.30230712890625
+      ],
+      "reference_font": "CMSS8",
+      "candidate_font": "NewCMMath-Book",
+      "reference_size": 7.970111846923828,
+      "candidate_size": 7.699999809265137,
+      "font_size_abs_log_ratio": 0.034478222105848784,
+      "reference_style_bits": {
+       "italic": false,
+       "serif": true,
+       "monospace": false,
+       "bold": false
+      },
+      "candidate_style_bits": {
+       "italic": false,
+       "serif": true,
+       "monospace": false,
+       "bold": false
+      },
+      "reference_color": 0,
+      "candidate_color": 0
+     },
+     {
+      "token": "\u03b4",
+      "reference_page": 0,
+      "candidate_page": 0,
+      "reference_bbox": [
+       350.5064392089844,
+       279.65863037109375,
+       354.25238037109375,
+       287.62872314453125
+      ],
+      "candidate_bbox": [
+       327.2394714355469,
+       280.29052734375,
+       331.23577880859375,
+       287.99053955078125
+      ],
+      "reference_font": "CMMI8",
+      "candidate_font": "NewCMMath-Book",
+      "reference_size": 7.970111846923828,
+      "candidate_size": 7.699999809265137,
+      "font_size_abs_log_ratio": 0.034478222105848784,
+      "reference_style_bits": {
+       "italic": true,
+       "serif": true,
+       "monospace": false,
+       "bold": false
+      },
+      "candidate_style_bits": {
+       "italic": false,
+       "serif": true,
+       "monospace": false,
+       "bold": false
+      },
+      "reference_color": 0,
+      "candidate_color": 0
+     },
+     {
+      "token": "\u03b4",
+      "reference_page": 0,
+      "candidate_page": 0,
+      "reference_bbox": [
+       164.26162719726562,
+       328.829833984375,
+       168.00758361816406,
+       336.7999267578125
+      ],
+      "candidate_bbox": [
+       140.7557373046875,
+       326.2633972167969,
+       144.75204467773438,
+       333.9634094238281
+      ],
+      "reference_font": "CMMI8",
+      "candidate_font": "NewCMMath-Book",
+      "reference_size": 7.970111846923828,
+      "candidate_size": 7.699999809265137,
+      "font_size_abs_log_ratio": 0.034478222105848784,
+      "reference_style_bits": {
+       "italic": true,
+       "serif": true,
+       "monospace": false,
+       "bold": false
+      },
+      "candidate_style_bits": {
+       "italic": false,
+       "serif": true,
+       "monospace": false,
+       "bold": false
+      },
+      "reference_color": 0,
+      "candidate_color": 0
+     },
+     {
+      "token": "\u03b4",
+      "reference_page": 0,
+      "candidate_page": 0,
+      "reference_bbox": [
+       217.67445373535156,
+       505.0387878417969,
+       221.42041015625,
+       513.0089111328125
+      ],
+      "candidate_bbox": [
+       194.98207092285156,
+       462.1947937011719,
+       198.97837829589844,
+       469.8948059082031
+      ],
+      "reference_font": "CMMI8",
+      "candidate_font": "NewCMMath-Book",
+      "reference_size": 7.970111846923828,
+      "candidate_size": 7.699999809265137,
+      "font_size_abs_log_ratio": 0.034478222105848784,
+      "reference_style_bits": {
+       "italic": true,
+       "serif": true,
+       "monospace": false,
+       "bold": false
+      },
+      "candidate_style_bits": {
+       "italic": false,
+       "serif": true,
+       "monospace": false,
+       "bold": false
+      },
+      "reference_color": 0,
+      "candidate_color": 0
+     },
+     {
+      "token": "=",
+      "reference_page": 0,
+      "candidate_page": 0,
+      "reference_bbox": [
+       89.31712341308594,
+       552.6939086914062,
+       97.79348754882812,
+       563.60302734375
+      ],
+      "candidate_bbox": [
+       68.31566619873047,
+       559.4749145507812,
+       76.87366485595703,
+       570.4749145507812
+      ],
+      "reference_font": "CMR10",
+      "candidate_font": "NewCMMath-Book",
+      "reference_size": 10.909088134765625,
+      "candidate_size": 11.0,
+      "font_size_abs_log_ratio": 0.008299057127878501,
+      "reference_style_bits": {
+       "italic": false,
+       "serif": true,
+       "monospace": false,
+       "bold": false
+      },
+      "candidate_style_bits": {
+       "italic": false,
+       "serif": true,
+       "monospace": false,
+       "bold": false
+      },
+      "reference_color": 0,
+      "candidate_color": 0
+     },
+     {
+      "token": "B)",
+      "reference_page": 0,
+      "candidate_page": 0,
+      "reference_bbox": [
+       188.16763305664062,
+       366.2774963378906,
+       201.22232055664062,
+       377.1866149902344
+      ],
+      "candidate_bbox": [
+       161.4872589111328,
+       364.34375,
+       174.3902587890625,
+       375.34375
+      ],
+      "reference_font": "CMMI10",
+      "candidate_font": "NewCMMath-Book",
+      "reference_size": 10.909088134765625,
+      "candidate_size": 11.0,
+      "font_size_abs_log_ratio": 0.008299057127878501,
+      "reference_style_bits": {
+       "italic": true,
+       "serif": true,
+       "monospace": false,
+       "bold": false
+      },
+      "candidate_style_bits": {
+       "italic": false,
+       "serif": true,
+       "monospace": false,
+       "bold": false
+      },
+      "reference_color": 0,
+      "candidate_color": 0
+     },
+     {
+      "token": "B)",
+      "reference_page": 0,
+      "candidate_page": 0,
+      "reference_bbox": [
+       188.16763305664062,
+       453.8130798339844,
+       201.22232055664062,
+       464.7221984863281
+      ],
+      "candidate_bbox": [
+       161.4872589111328,
+       455.739990234375,
+       174.3902587890625,
+       466.739990234375
+      ],
+      "reference_font": "CMMI10",
+      "candidate_font": "NewCMMath-Book",
+      "reference_size": 10.909088134765625,
+      "candidate_size": 11.0,
+      "font_size_abs_log_ratio": 0.008299057127878501,
+      "reference_style_bits": {
+       "italic": true,
+       "serif": true,
+       "monospace": false,
+       "bold": false
+      },
+      "candidate_style_bits": {
+       "italic": false,
+       "serif": true,
+       "monospace": false,
+       "bold": false
+      },
+      "reference_color": 0,
+      "candidate_color": 0
+     },
+     {
+      "token": "B)",
+      "reference_page": 0,
+      "candidate_page": 0,
+      "reference_bbox": [
+       183.92520141601562,
+       498.97998046875,
+       196.97988891601562,
+       509.88909912109375
+      ],
+      "candidate_bbox": [
+       159.04281616210938,
+       503.5558776855469,
+       171.94581604003906,
+       514.5558471679688
+      ],
+      "reference_font": "CMMI10",
+      "candidate_font": "NewCMMath-Book",
+      "reference_size": 10.909088134765625,
+      "candidate_size": 11.0,
+      "font_size_abs_log_ratio": 0.008299057127878501,
+      "reference_style_bits": {
+       "italic": true,
+       "serif": true,
+       "monospace": false,
+       "bold": false
+      },
+      "candidate_style_bits": {
+       "italic": false,
+       "serif": true,
+       "monospace": false,
+       "bold": false
+      },
+      "reference_color": 0,
+      "candidate_color": 0
+     },
+     {
+      "token": "B)",
+      "reference_page": 0,
+      "candidate_page": 0,
+      "reference_bbox": [
+       189.07717895507812,
+       543.3670043945312,
+       202.1318817138672,
+       554.276123046875
+      ],
+      "candidate_bbox": [
+       162.897216796875,
+       550.6287231445312,
+       175.8002166748047,
+       561.6287231445312
+      ],
+      "reference_font": "CMMI10",
+      "candidate_font": "NewCMMath-Book",
+      "reference_size": 10.909088134765625,
+      "candidate_size": 11.0,
+      "font_size_abs_log_ratio": 0.008299057127878501,
+      "reference_style_bits": {
+       "italic": true,
+       "serif": true,
+       "monospace": false,
+       "bold": false
+      },
+      "candidate_style_bits": {
+       "italic": false,
+       "serif": true,
+       "monospace": false,
+       "bold": false
+      },
+      "reference_color": 0,
+      "candidate_color": 0
+     },
+     {
+      "token": "B)",
+      "reference_page": 0,
+      "candidate_page": 0,
+      "reference_bbox": [
+       188.84603881835938,
+       587.2307739257812,
+       201.90074157714844,
+       598.139892578125
+      ],
+      "candidate_bbox": [
+       162.68161010742188,
+       593.6304321289062,
+       175.58462524414062,
+       604.6304321289062
+      ],
+      "reference_font": "CMMI10",
+      "candidate_font": "NewCMMath-Book",
+      "reference_size": 10.909088134765625,
+      "candidate_size": 11.0,
+      "font_size_abs_log_ratio": 0.008299057127878501,
+      "reference_style_bits": {
+       "italic": true,
+       "serif": true,
+       "monospace": false,
+       "bold": false
+      },
+      "candidate_style_bits": {
+       "italic": false,
+       "serif": true,
+       "monospace": false,
+       "bold": false
+      },
+      "reference_color": 0,
+      "candidate_color": 0
+     }
+    ]
+   },
+   "interpretation": "Raw PDF font observables are diagnostic; font names and flags are renderer metadata, not perceptual truth."
+  },
+  "raster_ink": {
+   "status": "scored",
+   "applicable": true,
+   "metrics": {
+    "paired_page_count": 1,
+    "unpaired_page_count": 0,
+    "unregistered_tolerant_ink_f1_macro": 0.4525530257929857,
+    "registered_tolerant_ink_f1_macro": 0.4525530257929857,
+    "registration_gain": 0.0
+   },
+   "evidence": {
+    "pages": [
+     {
+      "page": 0,
+      "reference_raster_size": [
+       816,
+       1056
+      ],
+      "candidate_raster_size_before_resize": [
+       816,
+       1056
+      ],
+      "candidate_resized_to_reference_canvas": true,
+      "coordinate_frame": "registered_reference_raster",
+      "registration_translation_px": [
+       0,
+       0
+      ],
+      "unregistered": {
+       "reference_ink_pixels": 30130,
+       "candidate_ink_pixels": 30833,
+       "precision": 0.4525670547789706,
+       "recall": 0.45253899767673417,
+       "f1": 0.4525530257929857,
+       "unmatched_ink_pixels": 33374,
+       "unmatched_ink_fraction_of_union": 0.5912972609049998
+      },
+      "registered": {
+       "reference_ink_pixels": 30130,
+       "candidate_ink_pixels": 30833,
+       "precision": 0.4525670547789706,
+       "recall": 0.45253899767673417,
+       "f1": 0.4525530257929857,
+       "unmatched_ink_pixels": 33374,
+       "unmatched_ink_fraction_of_union": 0.5912972609049998
+      },
+      "registered_mean_absolute_gray_difference": 0.028657224457667795,
+      "top_difference_bbox": {
+       "pixel_bbox": [
+        69,
+        153,
+        791,
+        1000
+       ],
+       "normalized_bbox": [
+        0.08455882352941177,
+        0.14488636363636365,
+        0.9693627450980392,
+        0.946969696969697
+       ]
+      }
+     }
+    ],
+    "top_difference_bbox": {
+     "page": 0,
+     "unpaired_side": null,
+     "coordinate_frame": "registered_reference_raster",
+     "registration_translation_px": [
+      0,
+      0
+     ],
+     "pixel_bbox": [
+      69,
+      153,
+      791,
+      1000
+     ],
+     "normalized_bbox": [
+      0.08455882352941177,
+      0.14488636363636365,
+      0.9693627450980392,
+      0.946969696969697
+     ]
+    }
+   },
+   "interpretation": "Candidate pages are resized to the reference canvas, then optionally translation-registered. Use canvas and geometry axes for layout claims."
+  },
+  "raster_perceptual": {
+   "status": "scored",
+   "applicable": true,
+   "metrics": {
+    "paired_page_count": 1,
+    "scored_page_count": 1,
+    "abstained_page_count": 0,
+    "unpaired_page_count": 0,
+    "unregistered_ssim_macro": 0.7811400018559754,
+    "registered_ssim_macro": 0.7811400018559754,
+    "unregistered_multiscale_ssim_diagnostic_macro": 0.8529877996337758,
+    "registered_multiscale_ssim_diagnostic_macro": 0.8529877996337758
+   },
+   "evidence": {
+    "pages": [
+     {
+      "page": 0,
+      "status": "scored",
+      "unregistered_ssim": 0.7811400018559754,
+      "registered_ssim": 0.7811400018559754,
+      "unregistered_multiscale_ssim_diagnostic": 0.8529877996337758,
+      "registered_multiscale_ssim_diagnostic": 0.8529877996337758,
+      "unregistered_scale_scores": [
+       {
+        "downsample_factor": 1,
+        "ssim": 0.7811400018559754
+       },
+       {
+        "downsample_factor": 2,
+        "ssim": 0.723228221007296
+       },
+       {
+        "downsample_factor": 4,
+        "ssim": 0.6768445570977931
+       },
+       {
+        "downsample_factor": 8,
+        "ssim": 0.6457262606990427
+       }
+      ],
+      "registered_scale_scores": [
+       {
+        "downsample_factor": 1,
+        "ssim": 0.7811400018559754
+       },
+       {
+        "downsample_factor": 2,
+        "ssim": 0.723228221007296
+       },
+       {
+        "downsample_factor": 4,
+        "ssim": 0.6768445570977931
+       },
+       {
+        "downsample_factor": 8,
+        "ssim": 0.6457262606990427
+       }
+      ],
+      "registration_translation_px": [
+       0,
+       0
+      ],
+      "candidate_resized_to_reference_canvas": false,
+      "reference_raster_size": [
+       816,
+       1056
+      ],
+      "candidate_raster_size_before_resize": [
+       816,
+       1056
+      ],
+      "registered_difference_bbox": {
+       "pixel_bbox": [
+        69,
+        153,
+        791,
+        1000
+       ],
+       "normalized_bbox": [
+        0.08455882352941177,
+        0.14488636363636365,
+        0.9693627450980392,
+        0.946969696969697
+       ]
+      }
+     }
+    ]
+   },
+   "interpretation": "SSIM is reported before and after translation-only registration. The multiscale value is the documented geometric mean of four SSIM scales, not canonical MS-SSIM. No candidate resizing is performed; SSIM abstains when physical canvases/grids differ."
+  },
+  "tables": {
+   "status": "abstain",
+   "applicable": null,
+   "metrics": {},
+   "evidence": {
+    "source_flags": {
+     "reference": null,
+     "candidate": null
+    }
+   },
+   "reason": "Applicability for tables was not established by source metadata."
+  },
+  "formulas": {
+   "status": "abstain",
+   "applicable": null,
+   "metrics": {},
+   "evidence": {
+    "source_flags": {
+     "reference": null,
+     "candidate": null
+    }
+   },
+   "reason": "Applicability for formulas was not established by source metadata."
+  },
+  "figures": {
+   "status": "abstain",
+   "applicable": null,
+   "metrics": {},
+   "evidence": {
+    "source_flags": {
+     "reference": null,
+     "candidate": null
+    }
+   },
+   "reason": "Applicability for figures was not established by source metadata."
+  }
+ }
+}

@@ -1,0 +1,185 @@
+#set page(paper: "us-letter", margin: 1in)
+#set text(size: 11pt, font: "New Computer Modern")
+#set par(leading: 0.65em)
+#set heading(numbering: "1")
+
+// Table captions go above the table (LaTeX table convention)
+#show figure.where(kind: table): set figure.caption(position: top)
+#show figure.where(kind: table): set figure(gap: 6pt)
+
+// Match LaTeX article section heading (\Large\bfseries with standard spacing)
+#show heading.where(level: 1): it => {
+  v(16.5pt, weak: true)
+  text(size: 14.4pt, weight: "bold")[#counter(heading).display() #it.body]
+  v(10.8pt, weak: true)
+}
+
+// Title block matching LaTeX \maketitle for article class at 11pt
+#v(2em)
+#align(center)[
+  #text(size: 17.28pt, weight: "bold")[Simple Tables]\
+  #v(1.5em)
+  #text(size: 12pt)[Source-backed grouped table sample]\
+  #v(1em)
+]
+#v(1.5em)
+
+= Tables
+
+These tables are grouped from source-backed LaTeX table data and compiled as a single benchmark data point.
+
+// Table 1: Multi-row structure matching LaTeX tabular rows
+// Each \\ in LaTeX creates a new row; \hline after each L group
+#figure(
+  caption: [Source table 1: 2512.04438\_table\_2],
+  kind: table,
+  supplement: "Table",
+  layout(available => {
+    let tbl = table(
+      columns: (1cm, 10.1cm),
+      stroke: none,
+      align: (center + horizon, left + horizon),
+      inset: (x: 6pt, y: 2pt),
+      // Vertical borders: left, middle, right
+      table.vline(x: 0, stroke: 0.4pt),
+      table.vline(x: 1, stroke: 0.4pt),
+      table.vline(x: 2, stroke: 0.4pt),
+      // Top border
+      table.hline(y: 0, stroke: 0.4pt),
+      // Header row
+      [*Alg.*], [*Non-trivial Lie brackets*],
+      table.hline(y: 1, stroke: 0.4pt),
+
+      // L1 (rows 1-2)
+      [$L_1$], [$[x_1,x_2]=x_3, #h(3pt) [x_1,x_3]=x_4, #h(3pt) [x_1,x_7]= -x_1, #h(3pt) [x_2,x_7]=2x_2,$],
+      [], [$[x_3,x_7]=x_3, #h(3pt) [x_5,x_6] = -x_5, #h(3pt) [x_6,x_7]=x_4$],
+      table.hline(y: 3, stroke: 0.4pt),
+
+      // L2 (rows 3-5)
+      [$L_2$], [$[x_1,x_2]=x_3, #h(3pt) [x_1,x_3]=x_4, #h(3pt) [x_1,x_7]=-x_1, #h(3pt) [x_2,x_6]=-x_2,$],
+      [], [$[x_3,x_6]=-x_3, #h(3pt) [x_3,x_7]=-x_3, #h(3pt) [x_4,x_6]=-x_4, #h(3pt) [x_4,x_7]=-2x_4,$],
+      [], [$[x_6,x_7]=x_5$],
+      table.hline(y: 6, stroke: 0.4pt),
+
+      // L3a (rows 6-8)
+      [$L_3^a$], [$[x_1,x_2]=x_3, #h(3pt) [x_1,x_3]=x_4, #h(3pt) [x_1,x_7]=-a x_1, #h(3pt) [x_2,x_6]=-x_2,$],
+      [], [$[x_3,x_6]=-x_3, #h(3pt) [x_3,x_7]=-a x_3, #h(3pt) [x_4,x_6]=-x_4, #h(3pt) [x_4,x_7]=-2a x_4,$],
+      [], [$[x_5,x_7]=-x_5$ ($a eq.not 0$)],
+      table.hline(y: 9, stroke: 0.4pt),
+
+      // L4ab (rows 9-11)
+      [$L_4^(a b)$], [$[x_1,x_2] = x_3, #h(3pt) [x_1,x_3] = x_4, #h(3pt) [x_1,x_6] = -x_1, #h(3pt) [x_2,x_6] = -a x_2,$],
+      [], [$[x_2,x_7] = -b x_2, #h(3pt) [x_3,x_6] = -(1+a)x_3, #h(3pt) [x_3,x_7] = -b x_3,$],
+      [], [$[x_4,x_6] = -(2+a)x_4, #h(3pt) [x_4,x_7] = -b x_4, #h(3pt) [x_5,x_7] = -x_5$ ($b eq.not 0$)],
+      table.hline(y: 12, stroke: 0.4pt),
+
+      // L5a (rows 12-14)
+      [$L_5^a$], [$[x_1,x_2] = x_3, #h(3pt) [x_1,x_3] = x_4, #h(3pt) [x_1,x_6] = -x_1, #h(3pt) [x_1,x_7] = -x_2,$],
+      [], [$[x_2,x_6] = -x_2, #h(3pt) [x_3,x_6] = 2x_3, #h(3pt) [x_4,x_6] = -3x_4, #h(3pt) [x_5,x_6] = -a x_5,$],
+      [], [$[x_5,x_7] = -x_5$],
+      table.hline(y: 15, stroke: 0.4pt),
+
+      // L6 (rows 15-17)
+      [$L_6$], [$[x_1,x_2] = x_3, #h(3pt) [x_1,x_3]=x_4, #h(3pt) [x_1,x_7]=-x_1-x_5, #h(3pt) [x_2,x_6]=-x_2,$],
+      [], [$[x_3,x_6]=-x_3, #h(3pt) [x_3,x_7]=-x_3, #h(3pt) [x_4,x_6]=-x_4, #h(3pt) [x_4,x_7]=-2x_4,$],
+      [], [$[x_5,x_7]=-x_5$],
+      table.hline(y: 18, stroke: 0.4pt),
+
+      // L7a (rows 18-20)
+      [$L_7^a$], [$[x_1,x_2]=x_3, #h(3pt) [x_1,x_3] = x_4, #h(3pt) [x_1,x_6] = -x_1, #h(3pt) [x_1,x_7] = -x_5,$],
+      [], [$[x_2,x_6] = -a x_2, [x_2,x_7] = - x_2, [x_6,x_3] = (1+a)x_3, [x_3,x_7] = -x_3,$],
+      [], [$[x_4,x_6] = -(2+a)x_4, #h(3pt) [x_4,x_7] = -x_4, #h(3pt) [x_5,x_6] = -x_5$],
+      table.hline(y: 21, stroke: 0.4pt),
+
+      // L8a (rows 21-22)
+      [$L_8^a$], [$[x_1,x_2] = x_3, #h(3pt) [x_1,x_3]=x_4, #h(3pt) [x_2,x_6] = -x_2, #h(3pt) [x_2,x_7] = -x_4,$],
+      [], [$[x_3,x_6] = -x_3, #h(3pt) [x_4,x_6] = -x_4, #h(3pt) [x_5,x_6] = -a x_5, #h(3pt) [x_5,x_7] = -x_5$],
+      table.hline(y: 23, stroke: 0.4pt),
+
+      // L9 (rows 23-25)
+      [$L_9$], [$[x_1,x_2] = x_3, #h(3pt) [x_1,x_3] = x_4, #h(3pt) [x_1,x_7] = -x_1, #h(3pt) [x_2,x_6] = -x_2,$],
+      [], [$[x_2,x_7] = -x_5, #h(3pt) [x_3,x_6] = -x_3, #h(3pt) [x_3,x_7] = -x_3, #h(3pt) [x_4,x_6] = -x_4,$],
+      [], [$[x_4,x_7] = -2x_4, #h(3pt) [x_5,x_6] = -x_5$],
+      table.hline(y: 26, stroke: 0.4pt),
+
+      // L10a (rows 26-28)
+      [$L_(10)^a$], [$[x_1,x_2] = x_3, #h(3pt) [x_1,x_3] = x_4, #h(3pt) [x_1,x_6] = -x_1, #h(3pt) [x_2,x_6] = -a x_2,$],
+      [], [$[x_2,x_7] = -x_2-x_5, #h(3pt) [x_3,x_6]=-(1+a)x_3, #h(3pt) [x_3,x_7] = -x_3,$],
+      [], [$[x_4,x_6] = -(2+a)x_4, #h(3pt) [x_4,x_7] = -x_4, #h(3pt) [x_6,x_5] = a x_5, #h(3pt) [x_7,x_5] = x_5$],
+      table.hline(y: 29, stroke: 0.4pt),
+
+      // L11 (rows 29-31)
+      [$L_(11)$], [$[x_1,x_2] = x_3, #h(3pt) [x_1,x_3] = x_4, #h(3pt) [x_1,x_7] = -x_1, #h(3pt) [x_2,x_6] = -x_2,$],
+      [], [$[x_3,x_6] = -x_3, #h(3pt) [x_3,x_7] = -x_3, #h(3pt) [x_4,x_6] = -x_4, #h(3pt) [x_4,x_7] = -2x_4,$],
+      [], [$[x_5,x_6] = -x_5, #h(3pt) [x_5,x_7] = -x_4-2x_5$],
+      table.hline(y: 32, stroke: 0.4pt),
+
+      // L12a (rows 32-35, 4 rows)
+      [$L_(12)^a$], [$[x_1,x_2] = x_3, #h(3pt) [x_1,x_3] = x_4, #h(3pt) [x_1,x_6] = -x_1, #h(3pt) [x_2,x_6] = -a x_2,$],
+      [], [$[x_2,x_7] = -x_2, #h(3pt) [x_3,x_6] = -(1+a)x_3, #h(3pt) [x_3,x_7] = -x_3,$],
+      [], [$[x_4,x_6] = -(2+a)x_4, #h(3pt) [x_4,x_7] = -x_4, #h(3pt) [x_5,x_6] = -(2+a)x_5,$],
+      [], [$[x_5,x_7] = -x_4-x_5$],
+      table.hline(y: 36, stroke: 0.4pt),
+    )
+    let tw = measure(tbl).width
+    let s = available.width / tw
+    scale(x: s * 100%, y: s * 100%, reflow: true, tbl)
+  })
+)
+
+// Table 2: auto-scale to fit linewidth
+#figure(
+  caption: [Source table 2: 2512.00750\_table\_1],
+  kind: table,
+  supplement: "Table",
+  layout(available => {
+    let tbl = table(
+      columns: 7,
+      stroke: none,
+      align: (left, center, center, center, center, center, center),
+      inset: (x: 6pt, y: 3pt),
+      table.hline(stroke: 0.8pt),
+      [Instrument], [Energy band], [Obs. Id], [Start time], [Stop time], [Exposure time], [Mean count rate],
+      [], [(keV)], [], [YYYY-MM-DD HH:MM:SS], [YYYY-MM-DD HH:MM:SS], [(sec)], [(counts/s)],
+      table.hline(stroke: 0.4pt),
+      [], [], [9000001276], [2017-06-06 15:36:34], [2017-06-06 21:06:10], [2803], [$0.357 plus.minus 0.012$],
+      [], [], [9000001368], [2017-07-09 08:33:18], [2017-07-09 16:32:50], [9565], [$0.718 plus.minus 0.009$],
+      [], [], [9000001438], [2017-08-07 05:41:13], [2017-08-07 13:32:51], [8837], [$0.428 plus.minus 0.007$],
+      [], [], [9000001524], [2017-09-07 18:46:48], [2017-09-08 03:35:55], [5316], [$0.247 plus.minus 0.007$],
+      [], [], [9000001632], [2017-10-21 22:03:13], [2017-10-22 07:52:31], [4591], [$0.277 plus.minus 0.008$],
+      [*SXT*], [0.5 -- 7.0], [9000001710], [2017-11-22 01:44:24], [2017-11-22 05:53:31], [3031], [$0.212 plus.minus 0.009$],
+      [], [], [9000001754], [2017-12-07 22:11:13], [2017-12-08 06:50:15], [3595], [$0.247 plus.minus 0.009$],
+      [], [], [9000002266], [2018-08-01 17:31:24], [2018-08-01 23:03:30], [7063], [$0.514 plus.minus 0.009$],
+      [], [], [9000002356], [2018-09-11 18:01:33], [2018-09-12 02:05:12], [8345], [$0.452 plus.minus 0.008$],
+      [], [], [9000004598], [2021-07-28 01:52:16], [2021-07-31 01:54:59], [61920], [$0.257 plus.minus 0.002$],
+      [], [], [9000004626], [2021-08-05 15:09:14], [2021-08-07 01:21:42], [41190], [$0.156 plus.minus 0.002$],
+      table.hline(stroke: 0.4pt),
+      [], [], [9000001276], [2017-06-06 15:36:34], [2017-06-06 21:06:09], [10590], [$2.633 plus.minus 0.045$],
+      [], [], [9000001368], [2017-07-09 08:50:51], [2017-07-09 16:32:50], [11940], [$5.169 plus.minus 0.046$],
+      [], [], [9000001438], [2017-08-07 09:39:31], [2017-08-07 13:32:51], [10730], [$2.629 plus.minus 0.045$],
+      [], [], [9000001524], [2017-09-07 19:49:41], [2017-09-08 03:35:56], [11300], [$5.255 plus.minus 0.048$],
+      [], [], [9000001632], [2017-10-21 22:50:42], [2017-10-22 07:52:31], [9616], [$1.404 plus.minus 0.048$],
+      [*LAXPC*], [3.0 -- 20.0], [9000001710], [2017-11-22 00:27:27], [2017-11-22 05:53:33], [11680], [$2.492 plus.minus 0.045$],
+      [], [], [9000001754], [2017-12-07 23:34:44], [2017-12-08 06:50:13], [12960], [$1.661 plus.minus 0.043$],
+      [], [], [9000002266], [2018-08-01 19:08:21], [2018-08-01 23:03:30], [12670], [$3.490 plus.minus 0.044$],
+      [], [], [9000002356], [2018-09-11 19:13:45], [2018-09-12 02:05:12], [12060], [$2.077 plus.minus 0.046$],
+      [], [], [9000004598], [2021-07-28 01:46:56], [2021-07-31 01:55:00], [102600], [$1.496 plus.minus 0.022$],
+      [], [], [9000004626], [2021-08-05 15:09:13], [2021-08-07 01:21:42], [55860], [$1.127 plus.minus 0.025$],
+      table.hline(stroke: 0.4pt),
+      [], [], [00035031184], [2020-07-22 02:01:19], [2020-07-23 23:02:52], [9660], [$0.379 plus.minus 0.006$],
+      [#text(weight: "bold")[#emph[Swift]-XRT]], [0.5 -- 7.0], [\& 00081310002], [], [], [], [],
+      [], [], [00035031241], [2022-08-06 03:58:51], [2022-08-06 04:24:53], [1556], [$0.356 plus.minus 0.015$],
+      table.hline(stroke: 0.4pt),
+      [], [], [00035031184], [2020-07-22 02:01:19], [2020-07-23 23:02:52], [8002], [--],
+      [#text(weight: "bold")[#emph[Swift]-UVOT]], [--], [\& 00081310002], [], [], [], [],
+      [], [], [00035031241], [2022-08-06 03:58:51], [2022-08-06 04:24:53], [1535], [--],
+      table.hline(stroke: 0.4pt),
+      [#text(weight: "bold")[#emph[NuSTAR]]], [3.0 -- 20.0], [60160836002], [2020-07-22 19:26:09], [2020-07-23 07:11:09], [20880], [$0.127 plus.minus 0.003$],
+      [], [], [80801650002], [2022-08-05 18:26:09], [2022-08-06 07:11:09], [22910], [$0.075 plus.minus 0.002$],
+      table.hline(stroke: 0.4pt),
+    )
+    let tw = measure(tbl).width
+    let s = available.width / tw
+    scale(x: s * 100%, y: s * 100%, reflow: true, tbl)
+  })
+)

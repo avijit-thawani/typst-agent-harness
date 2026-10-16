@@ -1,0 +1,6194 @@
+{
+ "evaluator": {
+  "name": "pdf_metric_axes_v2",
+  "version": 2,
+  "aggregate_score": null,
+  "policy": "No compensatory scalar. Report raw axes, coverage, abstentions, and localized evidence."
+ },
+ "inputs": {
+  "reference_pdf": "~/Downloads/learn/latex_typst/harness_baseline/runs/09_algorithms_003__novisual__opus__core/work/reference.pdf",
+  "candidate_pdf": "~/Downloads/learn/latex_typst/harness_baseline/runs/09_algorithms_003__novisual__opus__core/final_candidate.pdf",
+  "reference_page_count": 2,
+  "candidate_page_count": 2
+ },
+ "configuration": {
+  "render_dpi": 96,
+  "ink_threshold": 245,
+  "ink_tolerance_px": 2,
+  "normalization": "Unicode NFKC, soft-hyphen removal, collapsed whitespace; case preserved"
+ },
+ "applicability": {
+  "tables": null,
+  "formulas": null,
+  "figures": null
+ },
+ "axes": {
+  "canvas": {
+   "status": "scored",
+   "applicable": true,
+   "metrics": {
+    "reference_page_count": 2,
+    "candidate_page_count": 2,
+    "page_count_delta": 0,
+    "paired_page_count": 2,
+    "exact_paired_size_rate": 1.0,
+    "width_abs_log_ratio_max": 0.0,
+    "height_abs_log_ratio_max": 0.0
+   },
+   "evidence": {
+    "page_pairs": [
+     {
+      "page": 0,
+      "reference_size_points": [
+       612.0,
+       792.0
+      ],
+      "candidate_size_points": [
+       612.0,
+       792.0
+      ],
+      "width_abs_log_ratio": 0.0,
+      "height_abs_log_ratio": 0.0,
+      "exact_size_match": true
+     },
+     {
+      "page": 1,
+      "reference_size_points": [
+       612.0,
+       792.0
+      ],
+      "candidate_size_points": [
+       612.0,
+       792.0
+      ],
+      "width_abs_log_ratio": 0.0,
+      "height_abs_log_ratio": 0.0,
+      "exact_size_match": true
+     }
+    ]
+   },
+   "interpretation": "Canvas/page-size mismatch only; no token layout residual is folded into this axis."
+  },
+  "content": {
+   "status": "scored",
+   "applicable": true,
+   "metrics": {
+    "matched_block_normalized_edit_similarity_macro": 0.9606953613579684,
+    "matched_block_count": 34,
+    "strict_nfc_token_inventory": {
+     "reference_count": 209,
+     "candidate_count": 211,
+     "matched_count": 128,
+     "precision": 0.6066350710900474,
+     "recall": 0.6124401913875598,
+     "f1": 0.6095238095238095,
+     "exact_match": false,
+     "missing": [
+      "benchmark",
+      "2",
+      "t",
+      "t",
+      "t",
+      "t",
+      "t",
+      "t",
+      "\u2208{\u22121,",
+      "\u2208{\u22121,",
+      ".",
+      ".",
+      ".",
+      ".",
+      ".",
+      ".",
+      ",",
+      ",",
+      "\u2212T",
+      "\u2212T",
+      "traceback}",
+      "traceback}",
+      "\u25b7Retrieve",
+      "Pu,t"
+     ],
+     "extra": [
+      "Source-backed",
+      "Algorithm",
+      "algorithmic",
+      "bench",
+      "mark",
+      "procedure",
+      "\ud835\udc61\u2208{\u22121,",
+      "\ud835\udc61\u2208{\u22121,",
+      "\u2026,",
+      "\u2026,",
+      "\u2212\ud835\udc47traceback}",
+      "\u2212\ud835\udc47traceback}",
+      "\u25b7",
+      "\u25b7",
+      "\u25b7",
+      "\u25b7",
+      "\u25b7",
+      "Retrieve",
+      "\ud835\udc43\ud835\udc62,\ud835\udc61",
+      "\ud835\udc43\ud835\udc62,\ud835\udc61",
+      "\ud835\udc43\ud835\udc62,\ud835\udc61",
+      "\ud835\udc43\ud835\udc62,\ud835\udc61",
+      "\ud835\udc43\ud835\udc62,\ud835\udc61",
+      "\ud835\udc43\ud835\udc62,\ud835\udc61"
+     ],
+     "missing_count": 81,
+     "extra_count": 83
+    },
+    "strict_nfc_document_edit_similarity": 0.8141295206055509,
+    "compatibility_nfkc_token_inventory": {
+     "reference_count": 209,
+     "candidate_count": 211,
+     "matched_count": 184,
+     "precision": 0.8720379146919431,
+     "recall": 0.8803827751196173,
+     "f1": 0.8761904761904763
+    },
+    "compatibility_nfkc_document_edit_similarity": 0.8968985750209556
+   },
+   "evidence": {
+    "unmatched_reference_words": [
+     {
+      "word_index": 20,
+      "page": 0,
+      "bbox": [
+       487.7565612792969,
+       218.9496612548828,
+       539.8583374023438,
+       229.8587646484375
+      ],
+      "text": "benchmark",
+      "normalized": "benchmark"
+     },
+     {
+      "word_index": 45,
+      "page": 1,
+      "bbox": [
+       108.5706558227539,
+       129.8218231201172,
+       141.30885314941406,
+       140.872314453125
+      ],
+      "text": "\u2208{\u22121,",
+      "normalized": "\u2208{\u22121,"
+     },
+     {
+      "word_index": 46,
+      "page": 1,
+      "bbox": [
+       143.13067626953125,
+       129.9632110595703,
+       146.1634063720703,
+       140.872314453125
+      ],
+      "text": ".",
+      "normalized": "."
+     },
+     {
+      "word_index": 47,
+      "page": 1,
+      "bbox": [
+       147.9743194580078,
+       129.9632110595703,
+       151.00704956054688,
+       140.872314453125
+      ],
+      "text": ".",
+      "normalized": "."
+     },
+     {
+      "word_index": 48,
+      "page": 1,
+      "bbox": [
+       152.82887268066406,
+       129.9632110595703,
+       155.86160278320312,
+       140.872314453125
+      ],
+      "text": ".",
+      "normalized": "."
+     },
+     {
+      "word_index": 49,
+      "page": 1,
+      "bbox": [
+       157.6834259033203,
+       129.9632110595703,
+       160.71615600585938,
+       140.872314453125
+      ],
+      "text": ",",
+      "normalized": ","
+     },
+     {
+      "word_index": 50,
+      "page": 1,
+      "bbox": [
+       162.52706909179688,
+       129.8218231201172,
+       177.38525390625,
+       140.872314453125
+      ],
+      "text": "\u2212T",
+      "normalized": "\u2212T"
+     },
+     {
+      "word_index": 51,
+      "page": 1,
+      "bbox": [
+       178.89300537109375,
+       128.3021240234375,
+       220.4645538330078,
+       140.73092651367188
+      ],
+      "text": "traceback}",
+      "normalized": "traceback}"
+     },
+     {
+      "word_index": 53,
+      "page": 1,
+      "bbox": [
+       406.83563232421875,
+       129.9632110595703,
+       455.2283935546875,
+       140.88580322265625
+      ],
+      "text": "\u25b7Retrieve",
+      "normalized": "\u25b7Retrieve"
+     },
+     {
+      "word_index": 59,
+      "page": 1,
+      "bbox": [
+       119.96295166015625,
+       143.3718719482422,
+       225.2902374267578,
+       154.9464111328125
+      ],
+      "text": "\u2190Power.GetValue(t)",
+      "normalized": "\u2190Power.GetValue(t)"
+     },
+     {
+      "word_index": 63,
+      "page": 1,
+      "bbox": [
+       101.61060333251953,
+       170.6112823486328,
+       105.54878997802734,
+       181.5203857421875
+      ],
+      "text": "t",
+      "normalized": "t"
+     },
+     {
+      "word_index": 64,
+      "page": 1,
+      "bbox": [
+       108.57061004638672,
+       170.4698944091797,
+       141.30880737304688,
+       181.5203857421875
+      ],
+      "text": "\u2208{\u22121,",
+      "normalized": "\u2208{\u22121,"
+     },
+     {
+      "word_index": 65,
+      "page": 1,
+      "bbox": [
+       143.13063049316406,
+       170.6112823486328,
+       146.16336059570312,
+       181.5203857421875
+      ],
+      "text": ".",
+      "normalized": "."
+     },
+     {
+      "word_index": 66,
+      "page": 1,
+      "bbox": [
+       147.97427368164062,
+       170.6112823486328,
+       151.0070037841797,
+       181.5203857421875
+      ],
+      "text": ".",
+      "normalized": "."
+     },
+     {
+      "word_index": 67,
+      "page": 1,
+      "bbox": [
+       152.82882690429688,
+       170.6112823486328,
+       155.86155700683594,
+       181.5203857421875
+      ],
+      "text": ".",
+      "normalized": "."
+     },
+     {
+      "word_index": 68,
+      "page": 1,
+      "bbox": [
+       157.68338012695312,
+       170.6112823486328,
+       160.7161102294922,
+       181.5203857421875
+      ],
+      "text": ",",
+      "normalized": ","
+     },
+     {
+      "word_index": 69,
+      "page": 1,
+      "bbox": [
+       162.5270233154297,
+       170.4698944091797,
+       177.3852081298828,
+       181.5203857421875
+      ],
+      "text": "\u2212T",
+      "normalized": "\u2212T"
+     },
+     {
+      "word_index": 70,
+      "page": 1,
+      "bbox": [
+       178.8929443359375,
+       168.94921875,
+       220.46449279785156,
+       181.37899780273438
+      ],
+      "text": "traceback}",
+      "normalized": "traceback}"
+     },
+     {
+      "word_index": 72,
+      "page": 1,
+      "bbox": [
+       345.1227722167969,
+       170.6112823486328,
+       382.8028564453125,
+       181.53387451171875
+      ],
+      "text": "\u25b7Initial",
+      "normalized": "\u25b7Initial"
+     },
+     {
+      "word_index": 81,
+      "page": 1,
+      "bbox": [
+       143.52195739746094,
+       184.16029357910156,
+       274.3983459472656,
+       195.59344482421875
+      ],
+      "text": "MinimumPower.GetValue(t)",
+      "normalized": "MinimumPower.GetValue(t)"
+     },
+     {
+      "word_index": 97,
+      "page": 1,
+      "bbox": [
+       234.7391357421875,
+       240.55433654785156,
+       271.3827819824219,
+       251.4769287109375
+      ],
+      "text": "\u25b7Exact",
+      "normalized": "\u25b7Exact"
+     },
+     {
+      "word_index": 154,
+      "page": 1,
+      "bbox": [
+       338.84033203125,
+       439.4934387207031,
+       404.7640075683594,
+       450.4160461425781
+      ],
+      "text": "\u25b7Reconstruct",
+      "normalized": "\u25b7Reconstruct"
+     },
+     {
+      "word_index": 172,
+      "page": 1,
+      "bbox": [
+       138.34889221191406,
+       512.2333984375,
+       141.40940856933594,
+       520.2034912109375
+      ],
+      "text": "t",
+      "normalized": "t"
+     },
+     {
+      "word_index": 180,
+      "page": 1,
+      "bbox": [
+       368.76904296875,
+       547.8873901367188,
+       402.39093017578125,
+       558.8099975585938
+      ],
+      "text": "\u25b7Final",
+      "normalized": "\u25b7Final"
+     }
+    ],
+    "unmatched_candidate_words": [
+     {
+      "word_index": 20,
+      "page": 0,
+      "bbox": [
+       510.2355651855469,
+       212.88522338867188,
+       542.0146484375,
+       223.88522338867188
+      ],
+      "text": "bench\u00ad",
+      "normalized": "bench"
+     },
+     {
+      "word_index": 21,
+      "page": 0,
+      "bbox": [
+       72.0,
+       227.54824829101562,
+       96.78300476074219,
+       238.54824829101562
+      ],
+      "text": "mark",
+      "normalized": "mark"
+     },
+     {
+      "word_index": 34,
+      "page": 0,
+      "bbox": [
+       88.5,
+       254.89425659179688,
+       145.42498779296875,
+       265.8942565917969
+      ],
+      "text": "Algorithm",
+      "normalized": "Algorithm"
+     },
+     {
+      "word_index": 36,
+      "page": 0,
+      "bbox": [
+       159.62599182128906,
+       254.89425659179688,
+       227.79299926757812,
+       265.8942565917969
+      ],
+      "text": "Source-backed",
+      "normalized": "Source-backed"
+     },
+     {
+      "word_index": 37,
+      "page": 0,
+      "bbox": [
+       231.45599365234375,
+       254.89425659179688,
+       285.8840026855469,
+       265.8942565917969
+      ],
+      "text": "algorithmic",
+      "normalized": "algorithmic"
+     },
+     {
+      "word_index": 38,
+      "page": 0,
+      "bbox": [
+       289.5469970703125,
+       254.89425659179688,
+       336.9789733886719,
+       265.8942565917969
+      ],
+      "text": "procedure",
+      "normalized": "procedure"
+     },
+     {
+      "word_index": 40,
+      "page": 0,
+      "bbox": [
+       91.06300354003906,
+       285.5402526855469,
+       131.53811645507812,
+       296.5402526855469
+      ],
+      "text": "\ud835\udc61\u2208{\u22121,",
+      "normalized": "t\u2208{\u22121,"
+     },
+     {
+      "word_index": 41,
+      "page": 0,
+      "bbox": [
+       133.37144470214844,
+       285.5402526855469,
+       145.63644409179688,
+       296.5402526855469
+      ],
+      "text": "\u2026,",
+      "normalized": "...,"
+     },
+     {
+      "word_index": 42,
+      "page": 0,
+      "bbox": [
+       147.4697723388672,
+       284.20703125,
+       202.9526824951172,
+       296.5402526855469
+      ],
+      "text": "\u2212\ud835\udc47traceback}",
+      "normalized": "\u2212Ttraceback}"
+     },
+     {
+      "word_index": 44,
+      "page": 0,
+      "bbox": [
+       405.3247985839844,
+       284.572265625,
+       410.9347839355469,
+       297.11224365234375
+      ],
+      "text": "\u25b7",
+      "normalized": "\u25b7"
+     },
+     {
+      "word_index": 45,
+      "page": 0,
+      "bbox": [
+       414.872802734375,
+       285.5402526855469,
+       454.2418212890625,
+       296.5402526855469
+      ],
+      "text": "Retrieve",
+      "normalized": "Retrieve"
+     },
+     {
+      "word_index": 51,
+      "page": 0,
+      "bbox": [
+       108.77519989013672,
+       299.6532287597656,
+       119.77519989013672,
+       310.6532287597656
+      ],
+      "text": "\u2190",
+      "normalized": "\u2190"
+     },
+     {
+      "word_index": 52,
+      "page": 0,
+      "bbox": [
+       123.43820190429688,
+       301.8332824707031,
+       197.6046142578125,
+       310.63330078125
+      ],
+      "text": "Power.GetValue",
+      "normalized": "Power.GetValue"
+     },
+     {
+      "word_index": 53,
+      "page": 0,
+      "bbox": [
+       201.2738494873047,
+       299.6532287597656,
+       213.8028564453125,
+       310.6532287597656
+      ],
+      "text": "(\ud835\udc61)",
+      "normalized": "(t)"
+     },
+     {
+      "word_index": 57,
+      "page": 0,
+      "bbox": [
+       91.06300354003906,
+       327.94525146484375,
+       131.53811645507812,
+       338.94525146484375
+      ],
+      "text": "\ud835\udc61\u2208{\u22121,",
+      "normalized": "t\u2208{\u22121,"
+     },
+     {
+      "word_index": 58,
+      "page": 0,
+      "bbox": [
+       133.37144470214844,
+       327.94525146484375,
+       145.63644409179688,
+       338.94525146484375
+      ],
+      "text": "\u2026,",
+      "normalized": "...,"
+     },
+     {
+      "word_index": 59,
+      "page": 0,
+      "bbox": [
+       147.4697723388672,
+       326.6120300292969,
+       202.9526824951172,
+       338.94525146484375
+      ],
+      "text": "\u2212\ud835\udc47traceback}",
+      "normalized": "\u2212Ttraceback}"
+     },
+     {
+      "word_index": 61,
+      "page": 0,
+      "bbox": [
+       342.4840087890625,
+       326.97723388671875,
+       348.093994140625,
+       339.5172424316406
+      ],
+      "text": "\u25b7",
+      "normalized": "\u25b7"
+     },
+     {
+      "word_index": 62,
+      "page": 0,
+      "bbox": [
+       352.031982421875,
+       327.94525146484375,
+       381.3030090332031,
+       338.94525146484375
+      ],
+      "text": "Initial",
+      "normalized": "Initial"
+     },
+     {
+      "word_index": 71,
+      "page": 0,
+      "bbox": [
+       132.02920532226562,
+       344.27130126953125,
+       243.27880859375,
+       353.0713195800781
+      ],
+      "text": "MinimumPower.GetValue",
+      "normalized": "MinimumPower.GetValue"
+     },
+     {
+      "word_index": 72,
+      "page": 0,
+      "bbox": [
+       246.95118713378906,
+       342.09124755859375,
+       259.4801940917969,
+       353.09124755859375
+      ],
+      "text": "(\ud835\udc61)",
+      "normalized": "(t)"
+     },
+     {
+      "word_index": 88,
+      "page": 0,
+      "bbox": [
+       235.72459411621094,
+       397.60821533203125,
+       241.3345947265625,
+       410.1482238769531
+      ],
+      "text": "\u25b7",
+      "normalized": "\u25b7"
+     },
+     {
+      "word_index": 89,
+      "page": 0,
+      "bbox": [
+       245.27259826660156,
+       398.57623291015625,
+       272.1676025390625,
+       409.57623291015625
+      ],
+      "text": "Exact",
+      "normalized": "Exact"
+     },
+     {
+      "word_index": 146,
+      "page": 0,
+      "bbox": [
+       340.27301025390625,
+       581.209228515625,
+       345.88299560546875,
+       593.7492065429688
+      ],
+      "text": "\u25b7",
+      "normalized": "\u25b7"
+     }
+    ],
+    "lowest_similarity_block_pairs": [
+     {
+      "reference_block_index": 14,
+      "candidate_block_index": 28,
+      "reference_page": 1,
+      "candidate_page": 1,
+      "reference_text": "SON_UP",
+      "candidate_text": "\ud835\udc46STOP",
+      "normalized_edit_similarity": 0.33333333333333337
+     },
+     {
+      "reference_block_index": 8,
+      "candidate_block_index": 30,
+      "reference_page": 1,
+      "candidate_page": 1,
+      "reference_text": "u,t \u21900 SSTOP",
+      "candidate_text": "\ud835\udc62,\ud835\udc61 \u21900 \ud835\udc46ON_UP",
+      "normalized_edit_similarity": 0.6923076923076923
+     },
+     {
+      "reference_block_index": 30,
+      "candidate_block_index": 27,
+      "reference_page": 1,
+      "candidate_page": 0,
+      "reference_text": "u,t \u21900",
+      "candidate_text": "\ud835\udc62,\ud835\udc61 \u21901",
+      "normalized_edit_similarity": 0.8333333333333334
+     },
+     {
+      "reference_block_index": 28,
+      "candidate_block_index": 7,
+      "reference_page": 1,
+      "candidate_page": 0,
+      "reference_text": "u,t \u21901 SSTOP",
+      "candidate_text": "\ud835\udc62,\ud835\udc61 \u21900 \ud835\udc46STOP",
+      "normalized_edit_similarity": 0.9166666666666666
+     },
+     {
+      "reference_block_index": 6,
+      "candidate_block_index": 5,
+      "reference_page": 1,
+      "candidate_page": 0,
+      "reference_text": "for t \u2208{\u22121, . . . , \u2212T traceback} do \u25b7Retrieve the values of Pu,t Pu,t \u2190Power.GetValue(t) end for for t \u2208{\u22121, . . . , \u2212T traceback} do \u25b7Initial conditions on the state variables if Pu,t > MinimumPower.GetValue(t) then",
+      "candidate_text": "for \ud835\udc61\u2208{\u22121, \u2026, \u2212\ud835\udc47traceback} do \u25b7 Retrieve the values of \ud835\udc43\ud835\udc62,\ud835\udc61 \ud835\udc43\ud835\udc62,\ud835\udc61 \u2190 Power.GetValue (\ud835\udc61) end for for \ud835\udc61\u2208{\u22121, \u2026, \u2212\ud835\udc47traceback} do \u25b7 Initial conditions on the state variables if \ud835\udc43\ud835\udc62,\ud835\udc61 > MinimumPower.GetValue (\ud835\udc61) then",
+      "normalized_edit_similarity": 0.9308755760368663
+     },
+     {
+      "reference_block_index": 27,
+      "candidate_block_index": 26,
+      "reference_page": 1,
+      "candidate_page": 0,
+      "reference_text": "t \u21901 end if else \u25b7Final possibility: the unit is OFF. SOFF",
+      "candidate_text": "\ud835\udc61 \u21901 end if else \u25b7 Final possibility: the unit is OFF. \ud835\udc46OFF",
+      "normalized_edit_similarity": 0.9830508474576272
+     },
+     {
+      "reference_block_index": 21,
+      "candidate_block_index": 20,
+      "reference_page": 1,
+      "candidate_page": 0,
+      "reference_text": "t\u22121 \u21901 end if else if Pu,t > 0 then \u25b7Reconstruct the startups and shutdowns if Pu,t < Pu,t\u22121 then",
+      "candidate_text": "\ud835\udc61\u22121 \u21901 end if else if \ud835\udc43\ud835\udc62,\ud835\udc61 > 0 then \u25b7 Reconstruct the startups and shutdowns if \ud835\udc43\ud835\udc62,\ud835\udc61 < \ud835\udc43\ud835\udc62,\ud835\udc61\u22121 then",
+      "normalized_edit_similarity": 0.9897959183673469
+     },
+     {
+      "reference_block_index": 10,
+      "candidate_block_index": 9,
+      "reference_page": 1,
+      "candidate_page": 0,
+      "reference_text": "u,t \u21900 if Pu,t < Pu,t\u22121 then \u25b7Exact initialization required only if the FLAT state is defined. SON_UP",
+      "candidate_text": "\ud835\udc62,\ud835\udc61 \u21900 if \ud835\udc43\ud835\udc62,\ud835\udc61 < \ud835\udc43\ud835\udc62,\ud835\udc61\u22121 then \u25b7 Exact initialization required only if the FLAT state is defined. \ud835\udc46ON_UP",
+      "normalized_edit_similarity": 0.9901960784313726
+     },
+     {
+      "reference_block_index": 3,
+      "candidate_block_index": 3,
+      "reference_page": 0,
+      "candidate_page": 0,
+      "reference_text": "This sample contains algorithmic pseudocode extracted from a source-backed LaTeX benchmark dataset. It is wrapped in a minimal article document for pdfLaTeX validation.",
+      "candidate_text": "This sample contains algorithmic pseudocode extracted from a source-backed LaTeX bench\u00ad mark dataset. It is wrapped in a minimal article document for pdfLaTeX validation.",
+      "normalized_edit_similarity": 0.9940828402366864
+     },
+     {
+      "reference_block_index": 0,
+      "candidate_block_index": 0,
+      "reference_page": 0,
+      "candidate_page": 0,
+      "reference_text": "Algorithmic Pseudocode Sample 3",
+      "candidate_text": "Algorithmic Pseudocode Sample 3",
+      "normalized_edit_similarity": 1.0
+     },
+     {
+      "reference_block_index": 1,
+      "candidate_block_index": 1,
+      "reference_page": 0,
+      "candidate_page": 0,
+      "reference_text": "Source-backed Image2Struct algorithm sample",
+      "candidate_text": "Source-backed Image2Struct algorithm sample",
+      "normalized_edit_similarity": 1.0
+     },
+     {
+      "reference_block_index": 2,
+      "candidate_block_index": 2,
+      "reference_page": 0,
+      "candidate_page": 0,
+      "reference_text": "1 Algorithm",
+      "candidate_text": "1 Algorithm",
+      "normalized_edit_similarity": 1.0
+     },
+     {
+      "reference_block_index": 5,
+      "candidate_block_index": 34,
+      "reference_page": 1,
+      "candidate_page": 1,
+      "reference_text": "Algorithm 2 Initialization of the control and state variables",
+      "candidate_text": "Algorithm 2 Initialization of the control and state variables",
+      "normalized_edit_similarity": 1.0
+     },
+     {
+      "reference_block_index": 7,
+      "candidate_block_index": 6,
+      "reference_page": 1,
+      "candidate_page": 0,
+      "reference_text": "SOFF",
+      "candidate_text": "\ud835\udc46OFF",
+      "normalized_edit_similarity": 1.0
+     },
+     {
+      "reference_block_index": 9,
+      "candidate_block_index": 29,
+      "reference_page": 1,
+      "candidate_page": 1,
+      "reference_text": "u,t \u21900 SSTART",
+      "candidate_text": "\ud835\udc62,\ud835\udc61 \u21900 \ud835\udc46START",
+      "normalized_edit_similarity": 1.0
+     },
+     {
+      "reference_block_index": 11,
+      "candidate_block_index": 31,
+      "reference_page": 1,
+      "candidate_page": 1,
+      "reference_text": "t\u22121 \u21900 SON_DOWN",
+      "candidate_text": "\ud835\udc61\u22121 \u21900 \ud835\udc46ON_DOWN",
+      "normalized_edit_similarity": 1.0
+     },
+     {
+      "reference_block_index": 12,
+      "candidate_block_index": 11,
+      "reference_page": 1,
+      "candidate_page": 0,
+      "reference_text": "t\u22121 \u21901 SON_FLAT",
+      "candidate_text": "\ud835\udc61\u22121 \u21901 \ud835\udc46ON_FLAT",
+      "normalized_edit_similarity": 1.0
+     },
+     {
+      "reference_block_index": 13,
+      "candidate_block_index": 12,
+      "reference_page": 1,
+      "candidate_page": 0,
+      "reference_text": "t\u22121 \u21900 else if Pu,t > Pu,t\u22121 then",
+      "candidate_text": "\ud835\udc61\u22121 \u21900 else if \ud835\udc43\ud835\udc62,\ud835\udc61 > \ud835\udc43\ud835\udc62,\ud835\udc61\u22121 then",
+      "normalized_edit_similarity": 1.0
+     },
+     {
+      "reference_block_index": 15,
+      "candidate_block_index": 14,
+      "reference_page": 1,
+      "candidate_page": 0,
+      "reference_text": "t\u22121 \u21901 SON_DOWN",
+      "candidate_text": "\ud835\udc61\u22121 \u21901 \ud835\udc46ON_DOWN",
+      "normalized_edit_similarity": 1.0
+     },
+     {
+      "reference_block_index": 16,
+      "candidate_block_index": 32,
+      "reference_page": 1,
+      "candidate_page": 1,
+      "reference_text": "t\u22121 \u21900 SON_FLAT",
+      "candidate_text": "\ud835\udc61\u22121 \u21900 \ud835\udc46ON_FLAT",
+      "normalized_edit_similarity": 1.0
+     },
+     {
+      "reference_block_index": 17,
+      "candidate_block_index": 16,
+      "reference_page": 1,
+      "candidate_page": 0,
+      "reference_text": "t\u22121 \u21900 else if Pu,t = Pu,t\u22121 then",
+      "candidate_text": "\ud835\udc61\u22121 \u21900 else if \ud835\udc43\ud835\udc62,\ud835\udc61 = \ud835\udc43\ud835\udc62,\ud835\udc61\u22121 then",
+      "normalized_edit_similarity": 1.0
+     },
+     {
+      "reference_block_index": 18,
+      "candidate_block_index": 13,
+      "reference_page": 1,
+      "candidate_page": 0,
+      "reference_text": "SON_UP",
+      "candidate_text": "\ud835\udc46ON_UP",
+      "normalized_edit_similarity": 1.0
+     },
+     {
+      "reference_block_index": 19,
+      "candidate_block_index": 10,
+      "reference_page": 1,
+      "candidate_page": 0,
+      "reference_text": "t\u22121 \u21900 SON_DOWN",
+      "candidate_text": "\ud835\udc61\u22121 \u21900 \ud835\udc46ON_DOWN",
+      "normalized_edit_similarity": 1.0
+     },
+     {
+      "reference_block_index": 20,
+      "candidate_block_index": 15,
+      "reference_page": 1,
+      "candidate_page": 0,
+      "reference_text": "t\u22121 \u21900 SON_FLAT",
+      "candidate_text": "\ud835\udc61\u22121 \u21900 \ud835\udc46ON_FLAT",
+      "normalized_edit_similarity": 1.0
+     }
+    ]
+   },
+   "interpretation": "Strict NFC preservation is the primary text view. NFKC is reported separately as a compatibility view for ligature/encoding equivalence; it never hides the strict mismatch."
+  },
+  "critical_content": {
+   "status": "scored",
+   "applicable": true,
+   "metrics": {
+    "numbers": {
+     "reference_count": 46,
+     "candidate_count": 45,
+     "matched_count": 45,
+     "precision": 1.0,
+     "recall": 0.9782608695652174,
+     "f1": 0.989010989010989,
+     "exact_match": false,
+     "missing": [
+      "2"
+     ],
+     "extra": [],
+     "missing_count": 1,
+     "extra_count": 0
+    },
+    "operators": {
+     "reference_count": 51,
+     "candidate_count": 51,
+     "matched_count": 51,
+     "precision": 1.0,
+     "recall": 1.0,
+     "f1": 1.0,
+     "exact_match": true,
+     "missing": [],
+     "extra": [],
+     "missing_count": 0,
+     "extra_count": 0
+    },
+    "citation_markers": {
+     "reference_count": 0,
+     "candidate_count": 0,
+     "matched_count": 0,
+     "precision": 1.0,
+     "recall": 1.0,
+     "f1": 1.0,
+     "exact_match": true,
+     "missing": [],
+     "extra": [],
+     "missing_count": 0,
+     "extra_count": 0
+    }
+   },
+   "evidence": {
+    "normalization": "Unicode NFKC; case preserved; multiset comparison",
+    "number_pattern": "(?<![\\w.])[+-]?(?:\\d+(?:[.,]\\d+)*|\\.\\d+)(?:[eE][+-]?\\d+)?%?",
+    "operator_inventory": "*+/<=>^\u00b1\u00d7\u00f7\u2190\u2192\u2194\u2202\u2207\u2208\u2209\u220f\u2211\u2212\u221a\u221e\u2229\u222a\u222b\u2248\u2260\u2264\u2265\u2282\u2286",
+    "citation_pattern": "\\[(?:\\d+[a-z]?(?:\\s*[-,;]\\s*\\d+[a-z]?){0,12})\\]|\\((?:18|19|20)\\d{2}[a-z]?\\)"
+   },
+   "interpretation": "Exact critical-symbol inventories prevent visually small numeric or operator errors from disappearing inside a document-level text average. Empty inventories are reported as exact but do not establish construct applicability."
+  },
+  "text_grounding": {
+   "status": "scored",
+   "applicable": true,
+   "metrics": {
+    "reference_word_count": 209,
+    "candidate_word_count": 211,
+    "exact_matched_word_count": 184,
+    "word_precision": 0.8720379146919431,
+    "word_recall": 0.8803827751196173,
+    "word_hmean": 0.8761904761904763,
+    "split_count": null,
+    "merge_count": null
+   },
+   "evidence": {
+    "match_policy": "exact Unicode-NFKC word text with deterministic page/position assignment for repeats"
+   },
+   "interpretation": "Digital-PDF exact-word grounding adaptation; it is not the published CLEval algorithm. Split/merge values remain null until a validated implementation exists."
+  },
+  "geometry": {
+   "status": "scored",
+   "applicable": true,
+   "metrics": {
+    "matched_token_count": 184,
+    "reference_match_coverage": 0.8803827751196173,
+    "candidate_match_coverage": 0.8720379146919431,
+    "center_displacement_q50": 0.18934636797598436,
+    "center_displacement_q90": 0.4835405670010415,
+    "center_displacement_max": 0.6724050007117084,
+    "bbox_iou_q10": 0.0,
+    "bbox_iou_q50": 0.0,
+    "width_abs_log_ratio_q90": 0.08656472302261417,
+    "height_abs_log_ratio_q90": 0.07892013750591731
+   },
+   "evidence": {
+    "worst_token_pairs": [
+     {
+      "token": "and",
+      "reference_word_index": 40,
+      "candidate_word_index": 150,
+      "reference_page": 1,
+      "candidate_page": 0,
+      "reference_bbox": [
+       273.6874694824219,
+       113.97969055175781,
+       291.1529235839844,
+       124.8887939453125
+      ],
+      "candidate_bbox": [
+       469.73199462890625,
+       582.1771850585938,
+       487.1560363769531,
+       593.1771850585938
+      ],
+      "reference_bbox_normalized": [
+       0.4472017475202972,
+       0.1439137506966639,
+       0.47574007121566075,
+       0.15768787114307134
+      ],
+      "candidate_bbox_normalized": [
+       0.7675359389361214,
+       0.7350722033568103,
+       0.7960065953871783,
+       0.7489610922456992
+      ],
+      "center_displacement": 0.6724050007117084,
+      "bbox_iou": 0.0,
+      "width_abs_log_ratio": 0.0023739163868898307,
+      "height_abs_log_ratio": 0.008297658406166199
+     },
+     {
+      "token": "1",
+      "reference_word_index": 33,
+      "candidate_word_index": 35,
+      "reference_page": 0,
+      "candidate_page": 0,
+      "reference_bbox": [
+       303.28802490234375,
+       741.3756103515625,
+       308.7098388671875,
+       752.2847290039062
+      ],
+      "candidate_bbox": [
+       149.63800048828125,
+       254.89425659179688,
+       155.96299743652344,
+       265.8942565917969
+      ],
+      "reference_bbox_normalized": [
+       0.4955686681410846,
+       0.9360803161004577,
+       0.5044278412862541,
+       0.949854455813013
+      ],
+      "candidate_bbox_normalized": [
+       0.24450653674555758,
+       0.3218361825654001,
+       0.25484149907928666,
+       0.335725071454289
+      ],
+      "center_displacement": 0.6632402267623798,
+      "bbox_iou": 0.0,
+      "width_abs_log_ratio": 0.1540791128029059,
+      "height_abs_log_ratio": 0.00829625968641765
+     },
+     {
+      "token": "\u21900",
+      "reference_word_index": 203,
+      "candidate_word_index": 197,
+      "reference_page": 1,
+      "candidate_page": 1,
+      "reference_bbox": [
+       171.79490661621094,
+       639.8990478515625,
+       191.1912841796875,
+       650.9495239257812
+      ],
+      "candidate_bbox": [
+       149.91055297851562,
+       127.09896850585938,
+       169.4661102294922,
+       138.09896850585938
+      ],
+      "reference_bbox_normalized": [
+       0.2807106317258349,
+       0.8079533432469224,
+       0.3124040591171364,
+       0.8219059645527541
+      ],
+      "candidate_bbox_normalized": [
+       0.2449518839518229,
+       0.1604784955882063,
+       0.27690540887171927,
+       0.17436738447709518
+      ],
+      "center_displacement": 0.6484861977684712,
+      "bbox_iou": 0.0,
+      "width_abs_log_ratio": 0.00817317929745801,
+      "height_abs_log_ratio": 0.004578237877022774
+     },
+     {
+      "token": "t\u22121",
+      "reference_word_index": 202,
+      "candidate_word_index": 196,
+      "reference_page": 1,
+      "candidate_page": 1,
+      "reference_bbox": [
+       122.0779037475586,
+       645.3580322265625,
+       135.95384216308594,
+       653.431396484375
+      ],
+      "candidate_bbox": [
+       109.54299926757812,
+       132.66171264648438,
+       123.24130249023438,
+       140.36172485351562
+      ],
+      "reference_bbox_normalized": [
+       0.19947369893391928,
+       0.8148460002860638,
+       0.22214680092007505,
+       0.825039642025726
+      ],
+      "candidate_bbox_normalized": [
+       0.17899182886859172,
+       0.16750216243242977,
+       0.2013746772716248,
+       0.17722440006757023
+      ],
+      "center_displacement": 0.647907966847194,
+      "bbox_iou": 0.0,
+      "width_abs_log_ratio": 0.012884318094087393,
+      "height_abs_log_ratio": 0.04734836570984128
+     },
+     {
+      "token": "SON_FLAT",
+      "reference_word_index": 201,
+      "candidate_word_index": 195,
+      "reference_page": 1,
+      "candidate_page": 1,
+      "reference_bbox": [
+       115.38890075683594,
+       636.3953247070312,
+       167.09239196777344,
+       650.9495239257812
+      ],
+      "candidate_bbox": [
+       102.80000305175781,
+       124.6492691040039,
+       146.23899841308594,
+       138.09896850585938
+      ],
+      "reference_bbox_normalized": [
+       0.18854395548502603,
+       0.8035294503876658,
+       0.2730267842610677,
+       0.8219059645527541
+      ],
+      "candidate_bbox_normalized": [
+       0.1679738611956827,
+       0.15738544078788372,
+       0.23895261178608812,
+       0.17436738447709518
+      ],
+      "center_displacement": 0.6474180717896987,
+      "bbox_iou": 0.0,
+      "width_abs_log_ratio": 0.1741677591754355,
+      "height_abs_log_ratio": 0.07892280158475312
+     },
+     {
+      "token": "end",
+      "reference_word_index": 204,
+      "candidate_word_index": 198,
+      "reference_page": 1,
+      "candidate_page": 1,
+      "reference_bbox": [
+       99.11790466308594,
+       653.6002197265625,
+       118.66700744628906,
+       664.5093383789062
+      ],
+      "candidate_bbox": [
+       87.4000015258789,
+       141.24496459960938,
+       107.25499725341797,
+       152.24496459960938
+      ],
+      "reference_bbox_normalized": [
+       0.16195736056059792,
+       0.8252528026850536,
+       0.1939003389645246,
+       0.8390269423976089
+      ],
+      "candidate_bbox_normalized": [
+       0.14281046000960607,
+       0.17833960176718355,
+       0.17525326348597708,
+       0.19222849065607245
+      ],
+      "center_displacement": 0.6471317919965868,
+      "bbox_iou": 0.0,
+      "width_abs_log_ratio": 0.015526257464123745,
+      "height_abs_log_ratio": 0.00829625968641765
+     },
+     {
+      "token": "end",
+      "reference_word_index": 206,
+      "candidate_word_index": 200,
+      "reference_page": 1,
+      "candidate_page": 1,
+      "reference_bbox": [
+       82.84690856933594,
+       667.149169921875,
+       102.39601135253906,
+       678.0582885742188
+      ],
+      "candidate_bbox": [
+       72.0,
+       155.39102172851562,
+       91.8550033569336,
+       166.39102172851562
+      ],
+      "reference_bbox_normalized": [
+       0.13537076563616984,
+       0.8423600630326704,
+       0.1673137440400965,
+       0.8561342027452257
+      ],
+      "candidate_bbox_normalized": [
+       0.11764705882352941,
+       0.19620078501075205,
+       0.15008987476623137,
+       0.21008967389964095
+      ],
+      "center_displacement": 0.6463381490282755,
+      "bbox_iou": 0.0,
+      "width_abs_log_ratio": 0.015526641719713168,
+      "height_abs_log_ratio": 0.00829625968641765
+     },
+     {
+      "token": "\u21900",
+      "reference_word_index": 200,
+      "candidate_word_index": 194,
+      "reference_page": 1,
+      "candidate_page": 1,
+      "reference_bbox": [
+       177.6309051513672,
+       623.56005859375,
+       197.02728271484375,
+       634.6105346679688
+      ],
+      "candidate_bbox": [
+       154.299560546875,
+       112.98599243164062,
+       173.85511779785156,
+       123.98599243164062
+      ],
+      "reference_bbox_normalized": [
+       0.2902465770447176,
+       0.78732330630524,
+       0.3219400044360192,
+       0.8012759276110717
+      ],
+      "candidate_bbox_normalized": [
+       0.2521234649458742,
+       0.14265908135308158,
+       0.2840769898657705,
+       0.15654797024197048
+      ],
+      "center_displacement": 0.6458146195459947,
+      "bbox_iou": 0.0,
+      "width_abs_log_ratio": 0.008173179297455367,
+      "height_abs_log_ratio": 0.004578237877022774
+     },
+     {
+      "token": "t\u22121",
+      "reference_word_index": 199,
+      "candidate_word_index": 193,
+      "reference_page": 1,
+      "candidate_page": 1,
+      "reference_bbox": [
+       122.0779037475586,
+       629.0200805664062,
+       135.95384216308594,
+       637.0934448242188
+      ],
+      "candidate_bbox": [
+       109.54299926757812,
+       118.5486831665039,
+       123.24130249023438,
+       126.2486801147461
+      ],
+      "reference_bbox_normalized": [
+       0.19947369893391928,
+       0.7942172734424321,
+       0.22214680092007505,
+       0.8044109151820944
+      ],
+      "candidate_bbox_normalized": [
+       0.17899182886859172,
+       0.14968268076578775,
+       0.2013746772716248,
+       0.15940489913478043
+      ],
+      "center_displacement": 0.645100161514763,
+      "bbox_iou": 0.0,
+      "width_abs_log_ratio": 0.012884318094087393,
+      "height_abs_log_ratio": 0.04735034736958938
+     },
+     {
+      "token": "SON_DOWN",
+      "reference_word_index": 198,
+      "candidate_word_index": 192,
+      "reference_page": 1,
+      "candidate_page": 1,
+      "reference_bbox": [
+       115.38890075683594,
+       620.057373046875,
+       173.2453155517578,
+       634.6105346679688
+      ],
+      "candidate_bbox": [
+       102.80000305175781,
+       110.53629302978516,
+       150.62799072265625,
+       123.98599243164062
+      ],
+      "reference_bbox_normalized": [
+       0.18854395548502603,
+       0.7829007235440341,
+       0.2830805809669245,
+       0.8012759276110717
+      ],
+      "candidate_bbox_normalized": [
+       0.1679738611956827,
+       0.13956602655275904,
+       0.24612416784747754,
+       0.15654797024197048
+      ],
+      "center_displacement": 0.6446733088573916,
+      "bbox_iou": 0.0,
+      "width_abs_log_ratio": 0.19035334990326913,
+      "height_abs_log_ratio": 0.07885150706497251
+     },
+     {
+      "token": "\u21900",
+      "reference_word_index": 197,
+      "candidate_word_index": 191,
+      "reference_page": 1,
+      "candidate_page": 1,
+      "reference_bbox": [
+       160.1739044189453,
+       607.2220458984375,
+       179.57028198242188,
+       618.2725219726562
+      ],
+      "candidate_bbox": [
+       139.75425720214844,
+       98.87301635742188,
+       159.309814453125,
+       109.87301635742188
+      ],
+      "reference_bbox_normalized": [
+       0.2617220660440283,
+       0.7666945023970171,
+       0.29341549343532985,
+       0.7806471237028488
+      ],
+      "candidate_bbox_normalized": [
+       0.22835662941527524,
+       0.12483966711795691,
+       0.2603101543351716,
+       0.1387285560068458
+      ],
+      "center_displacement": 0.6427465507904686,
+      "bbox_iou": 0.0,
+      "width_abs_log_ratio": 0.00817317929745713,
+      "height_abs_log_ratio": 0.004578237877022774
+     },
+     {
+      "token": "SON_UP",
+      "reference_word_index": 195,
+      "candidate_word_index": 189,
+      "reference_page": 1,
+      "candidate_page": 1,
+      "reference_bbox": [
+       115.38890075683594,
+       603.7183227539062,
+       155.4719696044922,
+       618.2725219726562
+      ],
+      "candidate_bbox": [
+       102.80000305175781,
+       96.4233169555664,
+       136.08270263671875,
+       109.87301635742188
+      ],
+      "reference_bbox_normalized": [
+       0.18854395548502603,
+       0.7622706095377604,
+       0.25403916602041204,
+       0.7806471237028488
+      ],
+      "candidate_bbox_normalized": [
+       0.1679738611956827,
+       0.12174661231763435,
+       0.22235735724954045,
+       0.1387285560068458
+      ],
+      "center_displacement": 0.6417533002801922,
+      "bbox_iou": 0.0,
+      "width_abs_log_ratio": 0.18591629190097939,
+      "height_abs_log_ratio": 0.07892280158475998
+     },
+     {
+      "token": "SSTART",
+      "reference_word_index": 192,
+      "candidate_word_index": 186,
+      "reference_page": 1,
+      "candidate_page": 1,
+      "reference_bbox": [
+       115.38890075683594,
+       589.0703125,
+       152.11654663085938,
+       601.6415405273438
+      ],
+      "candidate_bbox": [
+       102.80000305175781,
+       83.4108657836914,
+       137.0452117919922,
+       95.75997924804688
+      ],
+      "reference_bbox_normalized": [
+       0.18854395548502603,
+       0.7437756470959596,
+       0.24855644874323427,
+       0.7596484097567472
+      ],
+      "candidate_bbox_normalized": [
+       0.1679738611956827,
+       0.10531674972688308,
+       0.22393008462743821,
+       0.12090906470712989
+      ],
+      "center_displacement": 0.6389988400399816,
+      "bbox_iou": 0.0,
+      "width_abs_log_ratio": 0.0699831009209217,
+      "height_abs_log_ratio": 0.01782643669061555
+     },
+     {
+      "token": "u,t",
+      "reference_word_index": 193,
+      "candidate_word_index": 187,
+      "reference_page": 1,
+      "candidate_page": 1,
+      "reference_bbox": [
+       122.0779037475586,
+       595.726318359375,
+       132.39120483398438,
+       603.6964111328125
+      ],
+      "candidate_bbox": [
+       109.54299926757812,
+       90.15274810791016,
+       120.67720031738281,
+       97.85274505615234
+      ],
+      "reference_bbox_normalized": [
+       0.19947369893391928,
+       0.7521796948982008,
+       0.21632549809474572,
+       0.7622429433495107
+      ],
+      "candidate_bbox_normalized": [
+       0.17899182886859172,
+       0.11382922740897747,
+       0.1971849678388608,
+       0.12355144577797013
+      ],
+      "center_displacement": 0.6388282467012303,
+      "bbox_iou": 0.0,
+      "width_abs_log_ratio": 0.07658711713096793,
+      "height_abs_log_ratio": 0.03447620053792078
+     },
+     {
+      "token": "SSTOP",
+      "reference_word_index": 189,
+      "candidate_word_index": 183,
+      "reference_page": 1,
+      "candidate_page": 1,
+      "reference_bbox": [
+       115.38890075683594,
+       574.42236328125,
+       146.4418487548828,
+       586.9935302734375
+      ],
+      "candidate_bbox": [
+       102.80000305175781,
+       69.2978286743164,
+       131.2779083251953,
+       81.64700317382812
+      ],
+      "reference_bbox_normalized": [
+       0.18854395548502603,
+       0.72528076171875,
+       0.23928406659294577,
+       0.7411534473149464
+      ],
+      "candidate_bbox_normalized": [
+       0.1679738611956827,
+       0.08749725842716718,
+       0.21450638615227993,
+       0.1030896504720052
+      ],
+      "center_displacement": 0.638326474841346,
+      "bbox_iou": 0.0,
+      "width_abs_log_ratio": 0.08656521440246005,
+      "height_abs_log_ratio": 0.017816639071636785
+     },
+     {
+      "token": "u,t",
+      "reference_word_index": 190,
+      "candidate_word_index": 184,
+      "reference_page": 1,
+      "candidate_page": 1,
+      "reference_bbox": [
+       122.0779037475586,
+       581.078369140625,
+       132.39120483398438,
+       589.0484619140625
+      ],
+      "candidate_bbox": [
+       109.54299926757812,
+       76.0397720336914,
+       120.67720031738281,
+       83.7397689819336
+      ],
+      "reference_bbox_normalized": [
+       0.19947369893391928,
+       0.7336848095209911,
+       0.21632549809474572,
+       0.7437480579723011
+      ],
+      "candidate_bbox_normalized": [
+       0.17899182886859172,
+       0.09600981317385278,
+       0.1971849678388608,
+       0.10573203154284545
+      ],
+      "center_displacement": 0.638153100791653,
+      "bbox_iou": 0.0,
+      "width_abs_log_ratio": 0.07658711713096793,
+      "height_abs_log_ratio": 0.03447620053793032
+     },
+     {
+      "token": "t",
+      "reference_word_index": 44,
+      "candidate_word_index": 158,
+      "reference_page": 1,
+      "candidate_page": 0,
+      "reference_bbox": [
+       101.61064910888672,
+       129.9632110595703,
+       105.54883575439453,
+       140.872314453125
+      ],
+      "candidate_bbox": [
+       124.94300079345703,
+       615.8290405273438,
+       128.26939392089844,
+       623.5289916992188
+      ],
+      "reference_bbox_normalized": [
+       0.1660304724001417,
+       0.16409496345905342,
+       0.17246541789933748,
+       0.17786908390546086
+      ],
+      "candidate_bbox_normalized": [
+       0.20415523005466835,
+       0.7775619198577572,
+       0.2095905129426445,
+       0.7872840804283066
+      ],
+      "center_displacement": 0.6125975047109375,
+      "bbox_iou": 0.0,
+      "width_abs_log_ratio": 0.16883180305448248,
+      "height_abs_log_ratio": 0.34838362686759694
+     },
+     {
+      "token": "of",
+      "reference_word_index": 37,
+      "candidate_word_index": 48,
+      "reference_page": 1,
+      "candidate_page": 0,
+      "reference_bbox": [
+       206.20375061035156,
+       113.97969055175781,
+       214.9419403076172,
+       124.8887939453125
+      ],
+      "candidate_bbox": [
+       509.351806640625,
+       285.5402526855469,
+       518.349853515625,
+       296.5402526855469
+      ],
+      "reference_bbox_normalized": [
+       0.33693423302345027,
+       0.1439137506966639,
+       0.3512123207640804,
+       0.15768787114307134
+      ],
+      "candidate_bbox_normalized": [
+       0.8322741938572303,
+       0.3605306220777107,
+       0.8469768848294527,
+       0.3744195109665996
+      ],
+      "center_displacement": 0.5408509756482824,
+      "bbox_iou": 0.0,
+      "width_abs_log_ratio": 0.029304500142344283,
+      "height_abs_log_ratio": 0.008297658406170163
+     },
+     {
+      "token": "of",
+      "reference_word_index": 56,
+      "candidate_word_index": 205,
+      "reference_page": 1,
+      "candidate_page": 1,
+      "reference_bbox": [
+       509.8174743652344,
+       129.97669982910156,
+       518.5556640625,
+       140.88580322265625
+      ],
+      "candidate_bbox": [
+       208.2239990234375,
+       182.73703002929688,
+       217.08999633789062,
+       193.73703002929688
+      ],
+      "reference_bbox_normalized": [
+       0.8330350888320823,
+       0.1641119947337141,
+       0.8473131765727124,
+       0.17788611518012154
+      ],
+      "candidate_bbox_normalized": [
+       0.3402352925219567,
+       0.23072857326931423,
+       0.35472221623838335,
+       0.24461746215820312
+      ],
+      "center_displacement": 0.49718623586115424,
+      "bbox_iou": 0.0,
+      "width_abs_log_ratio": 0.014520393664739482,
+      "height_abs_log_ratio": 0.008297658406170163
+     },
+     {
+      "token": "and",
+      "reference_word_index": 157,
+      "candidate_word_index": 208,
+      "reference_page": 1,
+      "candidate_page": 1,
+      "reference_bbox": [
+       469.3567810058594,
+       439.5069580078125,
+       486.8222351074219,
+       450.4160461425781
+      ],
+      "candidate_bbox": [
+       276.698974609375,
+       182.73703002929688,
+       294.4309997558594,
+       193.73703002929688
+      ],
+      "reference_bbox_normalized": [
+       0.766922844780816,
+       0.5549330277876421,
+       0.7954611684761795,
+       0.5687071289679017
+      ],
+      "candidate_bbox_normalized": [
+       0.4521225075316585,
+       0.23072857326931423,
+       0.48109640482983557,
+       0.24461746215820312
+      ],
+      "center_displacement": 0.45170067299410904,
+      "bbox_iou": 0.0,
+      "width_abs_log_ratio": 0.015147456440438533,
+      "height_abs_log_ratio": 0.008299057127883126
+     },
+     {
+      "token": "the",
+      "reference_word_index": 38,
+      "candidate_word_index": 46,
+      "reference_page": 1,
+      "candidate_page": 0,
+      "reference_bbox": [
+       218.5528564453125,
+       113.97969055175781,
+       233.61831665039062,
+       124.8887939453125
+      ],
+      "candidate_bbox": [
+       458.1798095703125,
+       285.5402526855469,
+       472.5128173828125,
+       296.5402526855469
+      ],
+      "reference_bbox_normalized": [
+       0.35711251053155635,
+       0.1439137506966639,
+       0.3817292755725337,
+       0.15768787114307134
+      ],
+      "candidate_bbox_normalized": [
+       0.7486598195593341,
+       0.3605306220777107,
+       0.7720797669653799,
+       0.3744195109665996
+      ],
+      "center_displacement": 0.446977377074565,
+      "bbox_iou": 0.0,
+      "width_abs_log_ratio": 0.049839604067969716,
+      "height_abs_log_ratio": 0.008297658406170163
+     },
+     {
+      "token": "for",
+      "reference_word_index": 207,
+      "candidate_word_index": 56,
+      "reference_page": 1,
+      "candidate_page": 0,
+      "reference_bbox": [
+       106.00691986083984,
+       667.149169921875,
+       121.15966033935547,
+       678.0582885742188
+      ],
+      "candidate_bbox": [
+       72.0,
+       327.94525146484375,
+       87.4000015258789,
+       338.94525146484375
+      ],
+      "reference_bbox_normalized": [
+       0.17321392134124158,
+       0.8423600630326704,
+       0.19797330120809717,
+       0.8561342027452257
+      ],
+      "candidate_bbox_normalized": [
+       0.11764705882352941,
+       0.41407228720308553,
+       0.14281046000960607,
+       0.4279611760919744
+      ],
+      "center_displacement": 0.4317945615320502,
+      "bbox_iou": 0.0,
+      "width_abs_log_ratio": 0.016186203234812766,
+      "height_abs_log_ratio": 0.00829625968641765
+     },
+     {
+      "token": "\u21900",
+      "reference_word_index": 142,
+      "candidate_word_index": 188,
+      "reference_page": 1,
+      "candidate_page": 1,
+      "reference_bbox": [
+       193.90090942382812,
+       395.9150390625,
+       213.2972869873047,
+       406.96551513671875
+      ],
+      "candidate_bbox": [
+       140.7167510986328,
+       84.75997924804688,
+       160.27230834960938,
+       95.75997924804688
+      ],
+      "reference_bbox_normalized": [
+       0.3168315513461244,
+       0.49989272608901514,
+       0.34852497873742594,
+       0.5138453473948469
+      ],
+      "candidate_bbox_normalized": [
+       0.22992933186051112,
+       0.107020175818241,
+       0.26188285678040746,
+       0.12090906470712989
+      ],
+      "center_displacement": 0.4023720791762094,
+      "bbox_iou": 0.0,
+      "width_abs_log_ratio": 0.00817317929745713,
+      "height_abs_log_ratio": 0.004578237877022774
+     },
+     {
+      "token": "t\u22121",
+      "reference_word_index": 144,
+      "candidate_word_index": 190,
+      "reference_page": 1,
+      "candidate_page": 1,
+      "reference_bbox": [
+       138.34890747070312,
+       417.7130432128906,
+       152.22483825683594,
+       425.78643798828125
+      ],
+      "candidate_bbox": [
+       109.54299926757812,
+       104.43570709228516,
+       123.24130249023438,
+       112.13570404052734
+      ],
+      "reference_bbox_normalized": [
+       0.2260603063246783,
+       0.5274154586021347,
+       0.24873339584450316,
+       0.5376091388740925
+      ],
+      "candidate_bbox_normalized": [
+       0.17899182886859172,
+       0.13186326653066308,
+       0.2013746772716248,
+       0.14158548489965575
+      ],
+      "center_displacement": 0.3985940338844738,
+      "bbox_iou": 0.0,
+      "width_abs_log_ratio": 0.012883768264851535,
+      "height_abs_log_ratio": 0.0473541273947878
+     }
+    ]
+   },
+   "interpretation": "Token boxes are normalized by each page's own canvas; canvas mismatch remains a separate axis."
+  },
+  "text_ltsim": {
+   "status": "scored",
+   "applicable": true,
+   "metrics": {
+    "paired_page_count": 2,
+    "scored_page_count": 2,
+    "abstained_page_count": 0,
+    "text_ltsim_page_macro": 0.6466934553632954,
+    "text_ltsim_element_weighted": 0.6463507703219027,
+    "text_ltsim_worst_page": 0.6399539828825728
+   },
+   "evidence": {
+    "pages": [
+     {
+      "page": 0,
+      "status": "scored",
+      "reference_block_count": 5,
+      "candidate_block_count": 28,
+      "emd": 0.4255153864659894,
+      "text_ltsim": 0.653432927844018,
+      "largest_cost_contributions": [
+       {
+        "reference_block_index": 1,
+        "candidate_block_index": 24,
+        "mass": 0.03571428571428571,
+        "cost": 0.49496111950042254,
+        "reference_bbox_normalized": [
+         0.3060653786254085,
+         0.1861886303834241,
+         0.6940820232715482,
+         0.20128358012498027
+        ],
+        "candidate_bbox_normalized": [
+         0.1931372499154284,
+         0.8225493768248895,
+         0.23966977487202562,
+         0.8381417014382102
+        ]
+       },
+       {
+        "reference_block_index": 1,
+        "candidate_block_index": 21,
+        "mass": 0.03571428571428571,
+        "cost": 0.49451065782837633,
+        "reference_bbox_normalized": [
+         0.3060653786254085,
+         0.1861886303834241,
+         0.6940820232715482,
+         0.20128358012498027
+        ],
+        "candidate_bbox_normalized": [
+         0.1931372499154284,
+         0.7690493651110717,
+         0.23966977487202562,
+         0.7846416897243924
+        ]
+       },
+       {
+        "reference_block_index": 1,
+        "candidate_block_index": 18,
+        "mass": 0.03571428571428571,
+        "cost": 0.49139059331595936,
+        "reference_bbox_normalized": [
+         0.3060653786254085,
+         0.1861886303834241,
+         0.6940820232715482,
+         0.20128358012498027
+        ],
+        "candidate_bbox_normalized": [
+         0.1931372499154284,
+         0.6637111625286064,
+         0.2854735430549173,
+         0.6954194656526199
+        ]
+       },
+       {
+        "reference_block_index": 0,
+        "candidate_block_index": 17,
+        "mass": 0.03571428571428571,
+        "cost": 0.4911715886710889,
+        "reference_bbox_normalized": [
+         0.3019085055083231,
+         0.14285088548756608,
+         0.6982005000893586,
+         0.1645875025277186
+        ],
+        "candidate_bbox_normalized": [
+         0.1931372499154284,
+         0.6606180980952099,
+         0.24752074596928617,
+         0.6776000514174952
+        ]
+       },
+       {
+        "reference_block_index": 1,
+        "candidate_block_index": 19,
+        "mass": 0.03571428571428571,
+        "cost": 0.490968095110635,
+        "reference_bbox_normalized": [
+         0.3060653786254085,
+         0.1861886303834241,
+         0.6940820232715482,
+         0.20128358012498027
+        ],
+        "candidate_bbox_normalized": [
+         0.1931372499154284,
+         0.6815305767637311,
+         0.30924037858551623,
+         0.7132388798877446
+        ]
+       },
+       {
+        "reference_block_index": 0,
+        "candidate_block_index": 13,
+        "mass": 0.03571428571428571,
+        "cost": 0.4898129398599409,
+        "reference_bbox_normalized": [
+         0.3019085055083231,
+         0.14285088548756608,
+         0.6982005000893586,
+         0.1645875025277186
+        ],
+        "candidate_bbox_normalized": [
+         0.1931372499154284,
+         0.5892986336139717,
+         0.24752074596928617,
+         0.6062806254685528
+        ]
+       },
+       {
+        "reference_block_index": 1,
+        "candidate_block_index": 16,
+        "mass": 0.03571428571428571,
+        "cost": 0.48712453005869405,
+        "reference_bbox_normalized": [
+         0.3060653786254085,
+         0.1861886303834241,
+         0.6940820232715482,
+         0.20128358012498027
+        ],
+        "candidate_bbox_normalized": [
+         0.1679738611956827,
+         0.6280306035822089,
+         0.3729710797079248,
+         0.6624027598987926
+        ]
+       },
+       {
+        "reference_block_index": 4,
+        "candidate_block_index": 27,
+        "mass": 0.03571428571428596,
+        "cost": 0.48299448544474066,
+        "reference_bbox_normalized": [
+         0.4955686681410846,
+         0.9360803161004577,
+         0.5044278412862541,
+         0.949854455813013
+        ],
+        "candidate_bbox_normalized": [
+         0.17899182886859172,
+         0.8956139304421165,
+         0.24424332263422946,
+         0.9121451329703283
+        ]
+       },
+       {
+        "reference_block_index": 4,
+        "candidate_block_index": 25,
+        "mass": 0.03571428571428571,
+        "cost": 0.4820907079357284,
+        "reference_bbox_normalized": [
+         0.4955686681410846,
+         0.9360803161004577,
+         0.5044278412862541,
+         0.949854455813013
+        ],
+        "candidate_bbox_normalized": [
+         0.1931372499154284,
+         0.8242528125493214,
+         0.27762257195765677,
+         0.8559611156733349
+        ]
+       },
+       {
+        "reference_block_index": 4,
+        "candidate_block_index": 23,
+        "mass": 0.035714285714285685,
+        "cost": 0.4820204363475675,
+        "reference_bbox_normalized": [
+         0.4955686681410846,
+         0.9360803161004577,
+         0.5044278412862541,
+         0.949854455813013
+        ],
+        "candidate_bbox_normalized": [
+         0.1679738611956827,
+         0.7885722150706281,
+         0.28704627043281505,
+         0.8203222101384943
+        ]
+       },
+       {
+        "reference_block_index": 2,
+        "candidate_block_index": 11,
+        "mass": 0.03571428571428571,
+        "cost": 0.47423980180629055,
+        "reference_bbox_normalized": [
+         0.11764708375619128,
+         0.24231710337629223,
+         0.2721969255434921,
+         0.26043100068063446
+        ],
+        "candidate_bbox_normalized": [
+         0.1931372499154284,
+         0.5388917248658459,
+         0.30924037858551623,
+         0.5706000665221551
+        ]
+       },
+       {
+        "reference_block_index": 2,
+        "candidate_block_index": 10,
+        "mass": 0.03571428571428571,
+        "cost": 0.47251971246777236,
+        "reference_bbox_normalized": [
+         0.11764708375619128,
+         0.24231710337629223,
+         0.2721969255434921,
+         0.26043100068063446
+        ],
+        "candidate_bbox_normalized": [
+         0.1931372499154284,
+         0.5210722720984257,
+         0.2854735430549173,
+         0.5527806137547349
+        ]
+       },
+       {
+        "reference_block_index": 2,
+        "candidate_block_index": 12,
+        "mass": 0.03571428571428571,
+        "cost": 0.47235855843787655,
+        "reference_bbox_normalized": [
+         0.11764708375619128,
+         0.24231710337629223,
+         0.2721969255434921,
+         0.26043100068063446
+        ],
+        "candidate_bbox_normalized": [
+         0.1679738611956827,
+         0.5567111776332663,
+         0.3729710797079248,
+         0.5910833724821457
+        ]
+       },
+       {
+        "reference_block_index": 2,
+        "candidate_block_index": 8,
+        "mass": 0.03571428571428571,
+        "cost": 0.46551320429888776,
+        "reference_bbox_normalized": [
+         0.11764708375619128,
+         0.24231710337629223,
+         0.2721969255434921,
+         0.26043100068063446
+        ],
+        "candidate_bbox_normalized": [
+         0.1679738611956827,
+         0.4675722603846078,
+         0.2524591583052492,
+         0.499280602040917
+        ]
+       },
+       {
+        "reference_block_index": 3,
+        "candidate_block_index": 6,
+        "mass": 0.03571428571428571,
+        "cost": 0.4577111723426961,
+        "reference_bbox_normalized": [
+         0.11764708375619128,
+         0.2764515924935389,
+         0.8821214663436989,
+         0.30733428338561397
+        ],
+        "candidate_bbox_normalized": [
+         0.1679738611956827,
+         0.44804933336046004,
+         0.20629052554859834,
+         0.463641735038372
+        ]
+       },
+       {
+        "reference_block_index": 4,
+        "candidate_block_index": 20,
+        "mass": 0.03571428571428571,
+        "cost": 0.4298819999777278,
+        "reference_bbox_normalized": [
+         0.4955686681410846,
+         0.9360803161004577,
+         0.5044278412862541,
+         0.949854455813013
+        ],
+        "candidate_bbox_normalized": [
+         0.14281046000960607,
+         0.6993499909988558,
+         0.8823530409071181,
+         0.7694444752702809
+        ]
+       },
+       {
+        "reference_block_index": 3,
+        "candidate_block_index": 9,
+        "mass": 0.03571428571428571,
+        "cost": 0.4255133425054828,
+        "reference_bbox_normalized": [
+         0.11764708375619128,
+         0.2764515924935389,
+         0.8821214663436989,
+         0.30733428338561397
+        ],
+        "candidate_bbox_normalized": [
+         0.1679738611956827,
+         0.4853917131520281,
+         0.8867673188253166,
+         0.5349611609873145
+        ]
+       },
+       {
+        "reference_block_index": 0,
+        "candidate_block_index": 14,
+        "mass": 0.02857142857142847,
+        "cost": 0.48812863637662074,
+        "reference_bbox_normalized": [
+         0.3019085055083231,
+         0.14285088548756608,
+         0.6982005000893586,
+         0.1645875025277186
+        ],
+        "candidate_bbox_normalized": [
+         0.1931372499154284,
+         0.5923917365796638,
+         0.2854735430549173,
+         0.6241000397036774
+        ]
+       },
+       {
+        "reference_block_index": 0,
+        "candidate_block_index": 15,
+        "mass": 0.02857142857142872,
+        "cost": 0.4878050604636093,
+        "reference_bbox_normalized": [
+         0.3019085055083231,
+         0.14285088548756608,
+         0.6982005000893586,
+         0.1645875025277186
+        ],
+        "candidate_bbox_normalized": [
+         0.1931372499154284,
+         0.6102111508147885,
+         0.30924037858551623,
+         0.6419194924710977
+        ]
+       },
+       {
+        "reference_block_index": 4,
+        "candidate_block_index": 26,
+        "mass": 0.03571428571428571,
+        "cost": 0.34321483673939857,
+        "reference_bbox_normalized": [
+         0.4955686681410846,
+         0.9360803161004577,
+         0.5044278412862541,
+         0.949854455813013
+        ],
+        "candidate_bbox_normalized": [
+         0.14281046000960607,
+         0.842072226784446,
+         0.8867673188253166,
+         0.9095028193310054
+        ]
+       },
+       {
+        "reference_block_index": 3,
+        "candidate_block_index": 4,
+        "mass": 0.03571428571428571,
+        "cost": 0.338633301143928,
+        "reference_bbox_normalized": [
+         0.11764708375619128,
+         0.2764515924935389,
+         0.8821214663436989,
+         0.30733428338561397
+        ],
+        "candidate_bbox_normalized": [
+         0.14460784313725492,
+         0.3218361825654001,
+         0.5506192375631893,
+         0.335725071454289
+        ]
+       },
+       {
+        "reference_block_index": 3,
+        "candidate_block_index": 5,
+        "mass": 0.03571428571428571,
+        "cost": 0.3248901997594986,
+        "reference_bbox_normalized": [
+         0.11764708375619128,
+         0.2764515924935389,
+         0.8821214663436989,
+         0.30733428338561397
+        ],
+        "candidate_bbox_normalized": [
+         0.11764705882352941,
+         0.35884726167929293,
+         0.8823529411764706,
+         0.44844448205196497
+        ]
+       },
+       {
+        "reference_block_index": 0,
+        "candidate_block_index": 0,
+        "mass": 0.03571428571428571,
+        "cost": 0.3101716886241995,
+        "reference_bbox_normalized": [
+         0.3019085055083231,
+         0.14285088548756608,
+         0.6982005000893586,
+         0.1645875025277186
+        ],
+        "candidate_bbox_normalized": [
+         0.2883058934429892,
+         0.10905879434913096,
+         0.7116941564223346,
+         0.13087697462602096
+        ]
+       },
+       {
+        "reference_block_index": 4,
+        "candidate_block_index": 22,
+        "mass": 0.021428571428571228,
+        "cost": 0.48744044820108234,
+        "reference_bbox_normalized": [
+         0.4955686681410846,
+         0.9360803161004577,
+         0.5044278412862541,
+         0.949854455813013
+        ],
+        "candidate_bbox_normalized": [
+         0.1931372499154284,
+         0.7707528008355035,
+         0.27762257195765677,
+         0.8024611039595171
+        ]
+       }
+      ]
+     },
+     {
+      "page": 1,
+      "status": "scored",
+      "reference_block_count": 31,
+      "candidate_block_count": 7,
+      "emd": 0.44635900695945396,
+      "text_ltsim": 0.6399539828825728,
+      "largest_cost_contributions": [
+       {
+        "reference_block_index": 35,
+        "candidate_block_index": 28,
+        "mass": 0.03225806451612903,
+        "cost": 0.499269688208245,
+        "reference_bbox_normalized": [
+         0.4955686182757608,
+         0.9360803931650489,
+         0.5044277914209303,
+         0.9498545328776041
+        ],
+        "candidate_bbox_normalized": [
+         0.1679738611956827,
+         0.08749725842716718,
+         0.21450638615227993,
+         0.1030896504720052
+        ]
+       },
+       {
+        "reference_block_index": 33,
+        "candidate_block_index": 28,
+        "mass": 0.03225806451612903,
+        "cost": 0.48819635868103495,
+        "reference_bbox_normalized": [
+         0.18854395548502603,
+         0.78732330630524,
+         0.3219400044360192,
+         0.8219059645527541
+        ],
+        "candidate_bbox_normalized": [
+         0.1679738611956827,
+         0.08749725842716718,
+         0.21450638615227993,
+         0.1030896504720052
+        ]
+       },
+       {
+        "reference_block_index": 30,
+        "candidate_block_index": 29,
+        "mass": 0.03225806451612903,
+        "cost": 0.4871720989824644,
+        "reference_bbox_normalized": [
+         0.19947369893391928,
+         0.7456957884509154,
+         0.287925296359592,
+         0.7622429433495107
+        ],
+        "candidate_bbox_normalized": [
+         0.1679738611956827,
+         0.08920076158311632,
+         0.2524591583052492,
+         0.12090906470712989
+        ]
+       },
+       {
+        "reference_block_index": 31,
+        "candidate_block_index": 29,
+        "mass": 0.03225806451612903,
+        "cost": 0.48368976239447736,
+        "reference_bbox_normalized": [
+         0.18854395548502603,
+         0.7622706095377604,
+         0.25403916602041204,
+         0.7806471237028488
+        ],
+        "candidate_bbox_normalized": [
+         0.1679738611956827,
+         0.08920076158311632,
+         0.2524591583052492,
+         0.12090906470712989
+        ]
+       },
+       {
+        "reference_block_index": 34,
+        "candidate_block_index": 28,
+        "mass": 0.03225806451612903,
+        "cost": 0.48299611390863495,
+        "reference_bbox_normalized": [
+         0.13537076563616984,
+         0.8079533432469224,
+         0.3124040591171364,
+         0.8561342027452257
+        ],
+        "candidate_bbox_normalized": [
+         0.1679738611956827,
+         0.08749725842716718,
+         0.21450638615227993,
+         0.1030896504720052
+        ]
+       },
+       {
+        "reference_block_index": 26,
+        "candidate_block_index": 29,
+        "mass": 0.03225806451612903,
+        "cost": 0.4828622241026399,
+        "reference_bbox_normalized": [
+         0.21513055040945414,
+         0.6402753579496133,
+         0.3052455428379034,
+         0.6713366267657039
+        ],
+        "candidate_bbox_normalized": [
+         0.1679738611956827,
+         0.08920076158311632,
+         0.2524591583052492,
+         0.12090906470712989
+        ]
+       },
+       {
+        "reference_block_index": 25,
+        "candidate_block_index": 30,
+        "mass": 0.03225806451612903,
+        "cost": 0.48234540057108966,
+        "reference_bbox_normalized": [
+         0.21513055040945414,
+         0.638356565225004,
+         0.265870636584712,
+         0.6542279792554451
+        ],
+        "candidate_bbox_normalized": [
+         0.1679738611956827,
+         0.107020175818241,
+         0.26188285678040746,
+         0.1387285560068458
+        ]
+       },
+       {
+        "reference_block_index": 29,
+        "candidate_block_index": 29,
+        "mass": 0.03225806451612903,
+        "cost": 0.48112448392024065,
+        "reference_bbox_normalized": [
+         0.18854395548502603,
+         0.7272008260091146,
+         0.2786589479134753,
+         0.7596484097567472
+        ],
+        "candidate_bbox_normalized": [
+         0.1679738611956827,
+         0.08920076158311632,
+         0.2524591583052492,
+         0.12090906470712989
+        ]
+       },
+       {
+        "reference_block_index": 22,
+        "candidate_block_index": 30,
+        "mass": 0.03225806451612903,
+        "cost": 0.48051788586932576,
+        "reference_bbox_normalized": [
+         0.21513055040945414,
+         0.5870332814226247,
+         0.265870636584712,
+         0.6029060055511166
+        ],
+        "candidate_bbox_normalized": [
+         0.1679738611956827,
+         0.107020175818241,
+         0.26188285678040746,
+         0.1387285560068458
+        ]
+       },
+       {
+        "reference_block_index": 23,
+        "candidate_block_index": 30,
+        "mass": 0.03225806451612903,
+        "cost": 0.47949191830921545,
+        "reference_bbox_normalized": [
+         0.21513055040945414,
+         0.5889533842452849,
+         0.3052455428379034,
+         0.6200133429633247
+        ],
+        "candidate_bbox_normalized": [
+         0.1679738611956827,
+         0.107020175818241,
+         0.26188285678040746,
+         0.1387285560068458
+        ]
+       },
+       {
+        "reference_block_index": 28,
+        "candidate_block_index": 30,
+        "mass": 0.03225806451612903,
+        "cost": 0.4782984523787559,
+        "reference_bbox_normalized": [
+         0.18854395548502603,
+         0.7087058635673138,
+         0.2702014399509804,
+         0.7411534473149464
+        ],
+        "candidate_bbox_normalized": [
+         0.1679738611956827,
+         0.107020175818241,
+         0.26188285678040746,
+         0.1387285560068458
+        ]
+       },
+       {
+        "reference_block_index": 20,
+        "candidate_block_index": 31,
+        "mass": 0.03225806451612903,
+        "cost": 0.4745100688935304,
+        "reference_bbox_normalized": [
+         0.21513057534211602,
+         0.49989272608901514,
+         0.34852497873742594,
+         0.5344753843365293
+        ],
+        "candidate_bbox_normalized": [
+         0.1679738611956827,
+         0.12483966711795691,
+         0.2603101543351716,
+         0.15654797024197048
+        ]
+       },
+       {
+        "reference_block_index": 19,
+        "candidate_block_index": 31,
+        "mass": 0.03225806451612903,
+        "cost": 0.4722926503160938,
+        "reference_bbox_normalized": [
+         0.21513057534211602,
+         0.4792639221807923,
+         0.32000211329241984,
+         0.5138453473948469
+        ],
+        "candidate_bbox_normalized": [
+         0.1679738611956827,
+         0.12483966711795691,
+         0.2603101543351716,
+         0.15654797024197048
+        ]
+       },
+       {
+        "reference_block_index": 17,
+        "candidate_block_index": 31,
+        "mass": 0.03225806451612903,
+        "cost": 0.46969484717101084,
+        "reference_bbox_normalized": [
+         0.18854395548502603,
+         0.44249621304598724,
+         0.3918687159719031,
+         0.4748123246009904
+        ],
+        "candidate_bbox_normalized": [
+         0.1679738611956827,
+         0.12483966711795691,
+         0.2603101543351716,
+         0.15654797024197048
+        ]
+       },
+       {
+        "reference_block_index": 16,
+        "candidate_block_index": 31,
+        "mass": 0.03225806451612903,
+        "cost": 0.4685130584569177,
+        "reference_bbox_normalized": [
+         0.21513057534211602,
+         0.4218674091377644,
+         0.34852497873742594,
+         0.456448834351819
+        ],
+        "candidate_bbox_normalized": [
+         0.1679738611956827,
+         0.12483966711795691,
+         0.2603101543351716,
+         0.15654797024197048
+        ]
+       },
+       {
+        "reference_block_index": 15,
+        "candidate_block_index": 32,
+        "mass": 0.03225806451612903,
+        "cost": 0.4590061912190999,
+        "reference_bbox_normalized": [
+         0.21513057534211602,
+         0.4012373336637863,
+         0.32000211329241984,
+         0.4358199919113005
+        ],
+        "candidate_bbox_normalized": [
+         0.1679738611956827,
+         0.14265908135308158,
+         0.2840769898657705,
+         0.17436738447709518
+        ]
+       },
+       {
+        "reference_block_index": 13,
+        "candidate_block_index": 32,
+        "mass": 0.03225806451612903,
+        "cost": 0.45495487732574635,
+        "reference_bbox_normalized": [
+         0.18854395548502603,
+         0.36447089609473643,
+         0.3918687159719031,
+         0.39678577461628
+        ],
+        "candidate_bbox_normalized": [
+         0.1679738611956827,
+         0.14265908135308158,
+         0.2840769898657705,
+         0.17436738447709518
+        ]
+       },
+       {
+        "reference_block_index": 21,
+        "candidate_block_index": 34,
+        "mass": 0.03225806451612903,
+        "cost": 0.4498838154165784,
+        "reference_bbox_normalized": [
+         0.16195736056059792,
+         0.5205228015629932,
+         0.8822705636616626,
+         0.5870535879424124
+        ],
+        "candidate_bbox_normalized": [
+         0.11764705882352941,
+         0.23072857326931423,
+         0.5996519599864686,
+         0.24461746215820312
+        ]
+       },
+       {
+        "reference_block_index": 14,
+        "candidate_block_index": 33,
+        "mass": 0.03225806451612903,
+        "cost": 0.4451702863797773,
+        "reference_bbox_normalized": [
+         0.21513057534211602,
+         0.39681471237028487,
+         0.28062578587750203,
+         0.4151899549696181
+        ],
+        "candidate_bbox_normalized": [
+         0.11764705882352941,
+         0.1604784955882063,
+         0.27690540887171927,
+         0.21008967389964095
+        ]
+       },
+       {
+        "reference_block_index": 11,
+        "candidate_block_index": 33,
+        "mass": 0.03225806451612903,
+        "cost": 0.42782195917147803,
+        "reference_bbox_normalized": [
+         0.21513057534211602,
+         0.3232119589140921,
+         0.32000211329241984,
+         0.3577934033942945
+        ],
+        "candidate_bbox_normalized": [
+         0.11764705882352941,
+         0.1604784955882063,
+         0.27690540887171927,
+         0.21008967389964095
+        ]
+       },
+       {
+        "reference_block_index": 32,
+        "candidate_block_index": 28,
+        "mass": 0.027649769585253475,
+        "cost": 0.4878482266143499,
+        "reference_bbox_normalized": [
+         0.18854395548502603,
+         0.7666945023970171,
+         0.29341549343532985,
+         0.8012759276110717
+        ],
+        "candidate_bbox_normalized": [
+         0.1679738611956827,
+         0.08749725842716718,
+         0.21450638615227993,
+         0.1030896504720052
+        ]
+       },
+       {
+        "reference_block_index": 18,
+        "candidate_block_index": 32,
+        "mass": 0.027649769585253448,
+        "cost": 0.46999443070746905,
+        "reference_bbox_normalized": [
+         0.21513057534211602,
+         0.4748400293215357,
+         0.28062578587750203,
+         0.49321650495432845
+        ],
+        "candidate_bbox_normalized": [
+         0.1679738611956827,
+         0.14265908135308158,
+         0.2840769898657705,
+         0.17436738447709518
+        ]
+       },
+       {
+        "reference_block_index": 7,
+        "candidate_block_index": 34,
+        "mass": 0.03225806451612903,
+        "cost": 0.3830997998604113,
+        "reference_bbox_normalized": [
+         0.18854404274934258,
+         0.247535628501815,
+         0.23080618864570568,
+         0.26340708106455174
+        ],
+        "candidate_bbox_normalized": [
+         0.11764705882352941,
+         0.23072857326931423,
+         0.5996519599864686,
+         0.24461746215820312
+        ]
+       },
+       {
+        "reference_block_index": 9,
+        "candidate_block_index": 33,
+        "mass": 0.03225806451612903,
+        "cost": 0.3798745601277055,
+        "reference_bbox_normalized": [
+         0.18854403028301164,
+         0.267949402934373,
+         0.27865902271146087,
+         0.3003970059481534
+        ],
+        "candidate_bbox_normalized": [
+         0.11764705882352941,
+         0.1604784955882063,
+         0.27690540887171927,
+         0.21008967389964095
+        ]
+       }
+      ]
+     }
+    ],
+    "equations": "uniform mass; delta_bbox=(1+GIoU)/2; delta_label=1 for text; mu=1-(delta_bbox+delta_label)/2; Text-LTSim=exp(-EMD), sigma=1"
+   },
+   "interpretation": "Faithful published LTSim equations on extracted text blocks only. It measures text-layout geometry/segmentation, not full semantic layout; non-text classes abstain."
+  },
+  "block_transport": {
+   "status": "scored",
+   "applicable": true,
+   "metrics": {
+    "reference_block_count": 36,
+    "candidate_block_count": 35,
+    "transported_mass": 1.0,
+    "combined_transport_cost": 0.5369360472930768,
+    "combined_transport_similarity_exp": 0.5845365036189476,
+    "transported_geometry_cost": 0.7906718261121434,
+    "geometry_transport_similarity_exp": 0.4535399928965901,
+    "transported_content_cost": 0.06571245805766751,
+    "content_transport_similarity_exp": 0.9364000798821467,
+    "nonzero_flow_count": 70
+   },
+   "evidence": {
+    "largest_cost_contributions": [
+     {
+      "reference_block_index": 6,
+      "candidate_block_index": 5,
+      "mass": 0.182916307161346,
+      "combined_cost": 0.6108686705488601,
+      "geometry_cost": 0.9025771110180973,
+      "content_cost": 0.06912442396313367,
+      "reference_page": 1,
+      "candidate_page": 0,
+      "reference_bbox_stacked_normalized": [
+       0.13537084043415543,
+       0.580998815671362,
+       0.8822509167241115,
+       0.6237779867769492
+      ],
+      "candidate_bbox_stacked_normalized": [
+       0.11764705882352941,
+       0.17942363083964646,
+       0.8823529411764706,
+       0.22422224102598248
+      ],
+      "reference_text": "for t \u2208{\u22121, . . . , \u2212T traceback} do \u25b7Retrieve the values of Pu,t Pu,t \u2190Power.GetValue(t) end for for t \u2208{\u22121, . . . , \u2212T traceback} do \u25b7Initial conditions on the state variables if",
+      "candidate_text": "for \ud835\udc61\u2208{\u22121, \u2026, \u2212\ud835\udc47traceback} do \u25b7 Retrieve the values of \ud835\udc43\ud835\udc62,\ud835\udc61 \ud835\udc43\ud835\udc62,\ud835\udc61 \u2190 Power.GetValue (\ud835\udc61) end for for \ud835\udc61\u2208{\u22121, \u2026, \u2212\ud835\udc47traceback} do \u25b7 Initial conditions on the state variables if \ud835\udc43\ud835\udc62,\ud835\udc61 > Mi"
+     },
+     {
+      "reference_block_index": 10,
+      "candidate_block_index": 9,
+      "mass": 0.08800690250215704,
+      "combined_cost": 0.6158417276896959,
+      "geometry_cost": 0.942169777139502,
+      "content_cost": 0.009803921568627416,
+      "reference_page": 1,
+      "candidate_page": 0,
+      "reference_bbox_stacked_normalized": [
+       0.18854403028301164,
+       0.643222182688087,
+       0.8822065365859886,
+       0.6685823382753314
+      ],
+      "candidate_bbox_stacked_normalized": [
+       0.1679738611956827,
+       0.24269585657601406,
+       0.8867673188253166,
+       0.26748058049365725
+      ],
+      "reference_text": "u,t \u21900 if Pu,t < Pu,t\u22121 then \u25b7Exact initialization required only if the FLAT state is defined. SON_UP",
+      "candidate_text": "\ud835\udc62,\ud835\udc61 \u21900 if \ud835\udc43\ud835\udc62,\ud835\udc61 < \ud835\udc43\ud835\udc62,\ud835\udc61\u22121 then \u25b7 Exact initialization required only if the FLAT state is defined. \ud835\udc46ON_UP"
+     },
+     {
+      "reference_block_index": 21,
+      "candidate_block_index": 20,
+      "mass": 0.08455565142364108,
+      "combined_cost": 0.6041844588492661,
+      "geometry_cost": 0.9240200465812884,
+      "content_cost": 0.010204081632653073,
+      "reference_page": 1,
+      "candidate_page": 0,
+      "reference_bbox_stacked_normalized": [
+       0.16195736056059792,
+       0.7602614007814966,
+       0.8822705636616626,
+       0.7935267939712062
+      ],
+      "candidate_bbox_stacked_normalized": [
+       0.14281046000960607,
+       0.3496749954994279,
+       0.8823530409071181,
+       0.38472223763514046
+      ],
+      "reference_text": "t\u22121 \u21901 end if else if Pu,t > 0 then \u25b7Reconstruct the startups and shutdowns if Pu,t < Pu,t\u22121 then",
+      "candidate_text": "\ud835\udc61\u22121 \u21901 end if else if \ud835\udc43\ud835\udc62,\ud835\udc61 > 0 then \u25b7 Reconstruct the startups and shutdowns if \ud835\udc43\ud835\udc62,\ud835\udc61 < \ud835\udc43\ud835\udc62,\ud835\udc61\u22121 then"
+     },
+     {
+      "reference_block_index": 27,
+      "candidate_block_index": 26,
+      "mass": 0.05090595340811044,
+      "combined_cost": 0.6077215005170338,
+      "geometry_cost": 0.925829687888005,
+      "content_cost": 0.016949152542372836,
+      "reference_page": 1,
+      "candidate_page": 0,
+      "reference_bbox_stacked_normalized": [
+       0.16195736056059792,
+       0.8286919641976405,
+       0.8822255851396548,
+       0.8613292424365728
+      ],
+      "candidate_bbox_stacked_normalized": [
+       0.14281046000960607,
+       0.421036113392223,
+       0.8867673188253166,
+       0.4547514096655027
+      ],
+      "reference_text": "t \u21901 end if else \u25b7Final possibility: the unit is OFF. SOFF",
+      "candidate_text": "\ud835\udc61 \u21901 end if else \u25b7 Final possibility: the unit is OFF. \ud835\udc46OFF"
+     },
+     {
+      "reference_block_index": 5,
+      "candidate_block_index": 34,
+      "mass": 0.040929052027996946,
+      "combined_cost": 0.5613640636851698,
+      "geometry_cost": 0.8636370210541073,
+      "content_cost": 0.0,
+      "reference_page": 1,
+      "candidate_page": 1,
+      "reference_bbox_stacked_normalized": [
+       0.11764705882352941,
+       0.5719551654777142,
+       0.5926207000134038,
+       0.5788439355715357
+      ],
+      "candidate_bbox_stacked_normalized": [
+       0.11764705882352941,
+       0.6153642866346571,
+       0.5996519599864686,
+       0.6223087310791016
+      ],
+      "reference_text": "Algorithm 2 Initialization of the control and state variables",
+      "candidate_text": "Algorithm 2 Initialization of the control and state variables"
+     },
+     {
+      "reference_block_index": 17,
+      "candidate_block_index": 16,
+      "mass": 0.028472821397756677,
+      "combined_cost": 0.6266576373662509,
+      "geometry_cost": 0.9640886728711553,
+      "content_cost": 0.0,
+      "reference_page": 1,
+      "candidate_page": 0,
+      "reference_bbox_stacked_normalized": [
+       0.18854395548502603,
+       0.7212481065229936,
+       0.3918687159719031,
+       0.7374061623004952
+      ],
+      "candidate_bbox_stacked_normalized": [
+       0.1679738611956827,
+       0.31401530179110443,
+       0.3729710797079248,
+       0.3312013799493963
+      ],
+      "reference_text": "t\u22121 \u21900 else if Pu,t = Pu,t\u22121 then",
+      "candidate_text": "\ud835\udc61\u22121 \u21900 else if \ud835\udc43\ud835\udc62,\ud835\udc61 = \ud835\udc43\ud835\udc62,\ud835\udc61\u22121 then"
+     },
+     {
+      "reference_block_index": 13,
+      "candidate_block_index": 12,
+      "mass": 0.02847282139775668,
+      "combined_cost": 0.6264716923688277,
+      "geometry_cost": 0.9638026036443502,
+      "content_cost": 0.0,
+      "reference_page": 1,
+      "candidate_page": 0,
+      "reference_bbox_stacked_normalized": [
+       0.18854395548502603,
+       0.6822354480473682,
+       0.3918687159719031,
+       0.69839288730814
+      ],
+      "candidate_bbox_stacked_normalized": [
+       0.1679738611956827,
+       0.27835558881663314,
+       0.3729710797079248,
+       0.29554168624107285
+      ],
+      "reference_text": "t\u22121 \u21900 else if Pu,t > Pu,t\u22121 then",
+      "candidate_text": "\ud835\udc61\u22121 \u21900 else if \ud835\udc43\ud835\udc62,\ud835\udc61 > \ud835\udc43\ud835\udc62,\ud835\udc61\u22121 then"
+     },
+     {
+      "reference_block_index": 3,
+      "candidate_block_index": 3,
+      "mass": 0.1458153580672994,
+      "combined_cost": 0.1194375165282184,
+      "geometry_cost": 0.18056386247855172,
+      "content_cost": 0.00591715976331364,
+      "reference_page": 0,
+      "candidate_page": 0,
+      "reference_bbox_stacked_normalized": [
+       0.11764708375619128,
+       0.13822579624676945,
+       0.8821214663436989,
+       0.15366714169280699
+      ],
+      "candidate_bbox_stacked_normalized": [
+       0.11764705882352941,
+       0.1343972369877979,
+       0.885644850388072,
+       0.1505986415978634
+      ],
+      "reference_text": "This sample contains algorithmic pseudocode extracted from a source-backed LaTeX benchmark dataset. It is wrapped in a minimal article document for pdfLaTeX validation.",
+      "candidate_text": "This sample contains algorithmic pseudocode extracted from a source-backed LaTeX bench\u00ad mark dataset. It is wrapped in a minimal article document for pdfLaTeX validation."
+     },
+     {
+      "reference_block_index": 1,
+      "candidate_block_index": 1,
+      "mass": 0.03710094909404659,
+      "combined_cost": 0.3835137201118604,
+      "geometry_cost": 0.5900211078644007,
+      "content_cost": 0.0,
+      "reference_page": 0,
+      "candidate_page": 0,
+      "reference_bbox_stacked_normalized": [
+       0.3060653786254085,
+       0.09309431519171205,
+       0.6940820232715482,
+       0.10064179006249013
+      ],
+      "candidate_bbox_stacked_normalized": [
+       0.30106862386067706,
+       0.08242566657788826,
+       0.6989313262739992,
+       0.09000142415364583
+      ],
+      "reference_text": "Source-backed Image2Struct algorithm sample",
+      "candidate_text": "Source-backed Image2Struct algorithm sample"
+     },
+     {
+      "reference_block_index": 5,
+      "candidate_block_index": 4,
+      "mass": 0.013779468151375249,
+      "combined_cost": 0.881010294058193,
+      "geometry_cost": 0.9846564423089476,
+      "content_cost": 0.6885245901639344,
+      "reference_page": 1,
+      "candidate_page": 0,
+      "reference_bbox_stacked_normalized": [
+       0.11764705882352941,
+       0.5719551654777142,
+       0.5926207000134038,
+       0.5788439355715357
+      ],
+      "candidate_bbox_stacked_normalized": [
+       0.14460784313725492,
+       0.16091809128270004,
+       0.5506192375631893,
+       0.1678625357271445
+      ],
+      "reference_text": "Algorithm 2 Initialization of the control and state variables",
+      "candidate_text": "Algorithm 1 Source-backed algorithmic procedure"
+     },
+     {
+      "reference_block_index": 34,
+      "candidate_block_index": 33,
+      "mass": 0.0181190681622088,
+      "combined_cost": 0.6105860795240428,
+      "geometry_cost": 0.939363199267758,
+      "content_cost": 0.0,
+      "reference_page": 1,
+      "candidate_page": 1,
+      "reference_bbox_stacked_normalized": [
+       0.13537076563616984,
+       0.9039766716234612,
+       0.3124040591171364,
+       0.9280671013726128
+      ],
+      "candidate_bbox_stacked_normalized": [
+       0.11764705882352941,
+       0.5802392477941032,
+       0.27690540887171927,
+       0.6050448369498205
+      ],
+      "reference_text": "t\u22121 \u21900 end if end for",
+      "candidate_text": "\ud835\udc61\u22121 \u21900 end if end for"
+     },
+     {
+      "reference_block_index": 0,
+      "candidate_block_index": 0,
+      "mass": 0.026747195858498704,
+      "combined_cost": 0.4032231952114594,
+      "geometry_cost": 0.620343377248399,
+      "content_cost": 0.0,
+      "reference_page": 0,
+      "candidate_page": 0,
+      "reference_bbox_stacked_normalized": [
+       0.3019085055083231,
+       0.07142544274378304,
+       0.6982005000893586,
+       0.0822937512638593
+      ],
+      "candidate_bbox_stacked_normalized": [
+       0.2883058934429892,
+       0.05452939717456548,
+       0.7116941564223346,
+       0.06543848731301048
+      ],
+      "reference_text": "Algorithmic Pseudocode Sample 3",
+      "candidate_text": "Algorithmic Pseudocode Sample 3"
+     },
+     {
+      "reference_block_index": 32,
+      "candidate_block_index": 10,
+      "mass": 0.012942191544434857,
+      "combined_cost": 0.6341334640820017,
+      "geometry_cost": 0.9755899447415409,
+      "content_cost": 0.0,
+      "reference_page": 1,
+      "candidate_page": 0,
+      "reference_bbox_stacked_normalized": [
+       0.18854395548502603,
+       0.8833472511985085,
+       0.29341549343532985,
+       0.9006379638055358
+      ],
+      "candidate_bbox_stacked_normalized": [
+       0.1931372499154284,
+       0.26053613604921283,
+       0.2854735430549173,
+       0.27639030687736743
+      ],
+      "reference_text": "t\u22121 \u21900 SON_DOWN",
+      "candidate_text": "\ud835\udc61\u22121 \u21900 \ud835\udc46ON_DOWN"
+     },
+     {
+      "reference_block_index": 15,
+      "candidate_block_index": 14,
+      "mass": 0.012942191544434857,
+      "combined_cost": 0.6300915408090937,
+      "geometry_cost": 0.9693716012447594,
+      "content_cost": 0.0,
+      "reference_page": 1,
+      "candidate_page": 0,
+      "reference_bbox_stacked_normalized": [
+       0.21513057534211602,
+       0.7006186668318931,
+       0.32000211329241984,
+       0.7179099959556503
+      ],
+      "candidate_bbox_stacked_normalized": [
+       0.1931372499154284,
+       0.2961958682898319,
+       0.2854735430549173,
+       0.3120500198518387
+      ],
+      "reference_text": "t\u22121 \u21901 SON_DOWN",
+      "candidate_text": "\ud835\udc61\u22121 \u21901 \ud835\udc46ON_DOWN"
+     },
+     {
+      "reference_block_index": 12,
+      "candidate_block_index": 11,
+      "mass": 0.012942191544434857,
+      "combined_cost": 0.629335570025536,
+      "geometry_cost": 0.9682085692700553,
+      "content_cost": 0.0,
+      "reference_page": 1,
+      "candidate_page": 0,
+      "reference_bbox_stacked_normalized": [
+       0.21513057534211602,
+       0.6719204103103792,
+       0.34852497873742594,
+       0.6892117394341363
+      ],
+      "candidate_bbox_stacked_normalized": [
+       0.1931372499154284,
+       0.26944586243292296,
+       0.30924037858551623,
+       0.28530003326107756
+      ],
+      "reference_text": "t\u22121 \u21901 SON_FLAT",
+      "candidate_text": "\ud835\udc61\u22121 \u21901 \ud835\udc46ON_FLAT"
+     },
+     {
+      "reference_block_index": 19,
+      "candidate_block_index": 18,
+      "mass": 0.012431468290663435,
+      "combined_cost": 0.6302489700609213,
+      "geometry_cost": 0.9696138000937251,
+      "content_cost": 0.0,
+      "reference_page": 1,
+      "candidate_page": 0,
+      "reference_bbox_stacked_normalized": [
+       0.21513057534211602,
+       0.7396319610903961,
+       0.32000211329241984,
+       0.7569226736974235
+      ],
+      "candidate_bbox_stacked_normalized": [
+       0.1931372499154284,
+       0.3318555812643032,
+       0.2854735430549173,
+       0.34770973282630996
+      ],
+      "reference_text": "t\u22121 \u21900 SON_DOWN",
+      "candidate_text": "\ud835\udc61\u22121 \u21900 \ud835\udc46ON_DOWN"
+     },
+     {
+      "reference_block_index": 20,
+      "candidate_block_index": 19,
+      "mass": 0.012431468290663435,
+      "combined_cost": 0.6296605411851729,
+      "geometry_cost": 0.968708524900266,
+      "content_cost": 0.0,
+      "reference_page": 1,
+      "candidate_page": 0,
+      "reference_bbox_stacked_normalized": [
+       0.21513057534211602,
+       0.7499463630445076,
+       0.34852497873742594,
+       0.7672376921682647
+      ],
+      "candidate_bbox_stacked_normalized": [
+       0.1931372499154284,
+       0.34076528838186554,
+       0.30924037858551623,
+       0.3566194399438723
+      ],
+      "reference_text": "t\u22121 \u21900 SON_FLAT",
+      "candidate_text": "\ud835\udc61\u22121 \u21900 \ud835\udc46ON_FLAT"
+     },
+     {
+      "reference_block_index": 16,
+      "candidate_block_index": 32,
+      "mass": 0.012942191544434857,
+      "combined_cost": 0.6024194463046991,
+      "geometry_cost": 0.9267991481610756,
+      "content_cost": 0.0,
+      "reference_page": 1,
+      "candidate_page": 1,
+      "reference_bbox_stacked_normalized": [
+       0.21513057534211602,
+       0.7109337045688822,
+       0.34852497873742594,
+       0.7282244171759095
+      ],
+      "candidate_bbox_stacked_normalized": [
+       0.1679738611956827,
+       0.5713295406765408,
+       0.2840769898657705,
+       0.5871836922385476
+      ],
+      "reference_text": "t\u22121 \u21900 SON_FLAT",
+      "candidate_text": "\ud835\udc61\u22121 \u21900 \ud835\udc46ON_FLAT"
+     },
+     {
+      "reference_block_index": 11,
+      "candidate_block_index": 31,
+      "mass": 0.012942191544434857,
+      "combined_cost": 0.5898515092333363,
+      "geometry_cost": 0.9074638603589789,
+      "content_cost": 0.0,
+      "reference_page": 1,
+      "candidate_page": 1,
+      "reference_bbox_stacked_normalized": [
+       0.21513057534211602,
+       0.661605979457046,
+       0.32000211329241984,
+       0.6788967016971472
+      ],
+      "candidate_bbox_stacked_normalized": [
+       0.1679738611956827,
+       0.5624198335589785,
+       0.2603101543351716,
+       0.5782739851209853
+      ],
+      "reference_text": "t\u22121 \u21900 SON_DOWN",
+      "candidate_text": "\ud835\udc61\u22121 \u21900 \ud835\udc46ON_DOWN"
+     },
+     {
+      "reference_block_index": 33,
+      "candidate_block_index": 15,
+      "mass": 0.011920745036892014,
+      "combined_cost": 0.6333219972819254,
+      "geometry_cost": 0.9743415342798852,
+      "content_cost": 0.0,
+      "reference_page": 1,
+      "candidate_page": 0,
+      "reference_bbox_stacked_normalized": [
+       0.18854395548502603,
+       0.89366165315262,
+       0.3219400044360192,
+       0.9109529822763771
+      ],
+      "candidate_bbox_stacked_normalized": [
+       0.1931372499154284,
+       0.30510557540739425,
+       0.30924037858551623,
+       0.32095974623554885
+      ],
+      "reference_text": "t\u22121 \u21900 SON_FLAT",
+      "candidate_text": "\ud835\udc61\u22121 \u21900 \ud835\udc46ON_FLAT"
+     },
+     {
+      "reference_block_index": 29,
+      "candidate_block_index": 8,
+      "mass": 0.011216566005176877,
+      "combined_cost": 0.6372673382760098,
+      "geometry_cost": 0.9804112896553996,
+      "content_cost": 0.0,
+      "reference_page": 1,
+      "candidate_page": 0,
+      "reference_bbox_stacked_normalized": [
+       0.18854395548502603,
+       0.8636004130045574,
+       0.2786589479134753,
+       0.8798242048783735
+      ],
+      "candidate_bbox_stacked_normalized": [
+       0.1679738611956827,
+       0.2337861301923039,
+       0.2524591583052492,
+       0.2496403010204585
+      ],
+      "reference_text": "u,t \u21900 SSTART",
+      "candidate_text": "\ud835\udc62,\ud835\udc61 \u21900 \ud835\udc46START"
+     },
+     {
+      "reference_block_index": 8,
+      "candidate_block_index": 30,
+      "mass": 0.010762331838565023,
+      "combined_cost": 0.6553937243419852,
+      "geometry_cost": 0.8426175640764269,
+      "content_cost": 0.3076923076923077,
+      "reference_page": 1,
+      "candidate_page": 1,
+      "reference_bbox_stacked_normalized": [
+       0.18854403028301164,
+       0.6247272202462861,
+       0.270201514748966,
+       0.6409510217531763
+      ],
+      "candidate_bbox_stacked_normalized": [
+       0.1679738611956827,
+       0.5535100879091205,
+       0.26188285678040746,
+       0.5693642780034229
+      ],
+      "reference_text": "u,t \u21900 SSTOP",
+      "candidate_text": "\ud835\udc62,\ud835\udc61 \u21900 \ud835\udc46ON_UP"
+     },
+     {
+      "reference_block_index": 28,
+      "candidate_block_index": 7,
+      "mass": 0.010353753235547885,
+      "combined_cost": 0.6666903106051949,
+      "geometry_cost": 0.9808056060592742,
+      "content_cost": 0.08333333333333337,
+      "reference_page": 1,
+      "candidate_page": 0,
+      "reference_bbox_stacked_normalized": [
+       0.18854395548502603,
+       0.8543529317836569,
+       0.2702014399509804,
+       0.8705767236574732
+      ],
+      "candidate_bbox_stacked_normalized": [
+       0.1679738611956827,
+       0.22487642307474157,
+       0.24424332263422946,
+       0.24073057463674835
+      ],
+      "reference_text": "u,t \u21901 SSTOP",
+      "candidate_text": "\ud835\udc62,\ud835\udc61 \u21900 \ud835\udc46STOP"
+     },
+     {
+      "reference_block_index": 6,
+      "candidate_block_index": 34,
+      "mass": 0.011702526919371486,
+      "combined_cost": 0.5808987475295657,
+      "geometry_cost": 0.45944720463605637,
+      "content_cost": 0.8064516129032258,
+      "reference_page": 1,
+      "candidate_page": 1,
+      "reference_bbox_stacked_normalized": [
+       0.13537084043415543,
+       0.580998815671362,
+       0.8822509167241115,
+       0.6237779867769492
+      ],
+      "candidate_bbox_stacked_normalized": [
+       0.11764705882352941,
+       0.6153642866346571,
+       0.5996519599864686,
+       0.6223087310791016
+      ],
+      "reference_text": "for t \u2208{\u22121, . . . , \u2212T traceback} do \u25b7Retrieve the values of Pu,t Pu,t \u2190Power.GetValue(t) end for for t \u2208{\u22121, . . . , \u2212T traceback} do \u25b7Initial conditions on the state variables if",
+      "candidate_text": "Algorithm 2 Initialization of the control and state variables"
+     }
+    ],
+    "mass_policy": "block normalized-character count; minimum mass unit 1",
+    "cost_policy": "0.65 * (1 - rescaled GIoU) + 0.35 * normalized Levenshtein distance",
+    "page_geometry": "page boxes stacked vertically and normalized by max page count"
+   },
+   "interpretation": "Exact optimal transport over extracted text blocks. This is an LTSim-inspired, fully specified adaptation\u2014not the published LTSim implementation or a semantic table/formula metric. Report geometry and content costs separately with the flows."
+  },
+  "layout_relations": {
+   "status": "scored",
+   "applicable": true,
+   "metrics": {
+    "matched_block_count": 34,
+    "reference_block_coverage": 0.9444444444444444,
+    "candidate_block_coverage": 0.9714285714285714,
+    "matched_block_iou_q10": 0.0,
+    "matched_block_iou_q50": 0.0,
+    "matched_block_center_displacement_q90": 0.26084263166270977,
+    "pairwise_relation_count": 561,
+    "pairwise_relation_agreement": 0.7165775401069518
+   },
+   "evidence": {
+    "relation_mismatches": [
+     {
+      "reference_block_pair": [
+       0,
+       7
+      ],
+      "candidate_block_pair": [
+       0,
+       6
+      ],
+      "reference_relation": "left_of",
+      "candidate_relation": "below",
+      "reference_text": [
+       "Algorithmic Pseudocode Sample 3",
+       "SOFF"
+      ]
+     },
+     {
+      "reference_block_pair": [
+       0,
+       12
+      ],
+      "candidate_block_pair": [
+       0,
+       11
+      ],
+      "reference_relation": "left_of",
+      "candidate_relation": "below",
+      "reference_text": [
+       "Algorithmic Pseudocode Sample 3",
+       "t\u22121 \u21901 SON_FLAT"
+      ]
+     },
+     {
+      "reference_block_pair": [
+       0,
+       14
+      ],
+      "candidate_block_pair": [
+       0,
+       28
+      ],
+      "reference_relation": "below",
+      "candidate_relation": "left_of",
+      "reference_text": [
+       "Algorithmic Pseudocode Sample 3",
+       "SON_UP"
+      ]
+     },
+     {
+      "reference_block_pair": [
+       0,
+       16
+      ],
+      "candidate_block_pair": [
+       0,
+       32
+      ],
+      "reference_relation": "below",
+      "candidate_relation": "left_of",
+      "reference_text": [
+       "Algorithmic Pseudocode Sample 3",
+       "t\u22121 \u21900 SON_FLAT"
+      ]
+     },
+     {
+      "reference_block_pair": [
+       0,
+       34
+      ],
+      "candidate_block_pair": [
+       0,
+       33
+      ],
+      "reference_relation": "below",
+      "candidate_relation": "left_of",
+      "reference_text": [
+       "Algorithmic Pseudocode Sample 3",
+       "t\u22121 \u21900 end if end for"
+      ]
+     },
+     {
+      "reference_block_pair": [
+       1,
+       12
+      ],
+      "candidate_block_pair": [
+       1,
+       11
+      ],
+      "reference_relation": "left_of",
+      "candidate_relation": "below",
+      "reference_text": [
+       "Source-backed Image2Struct algorithm sample",
+       "t\u22121 \u21901 SON_FLAT"
+      ]
+     },
+     {
+      "reference_block_pair": [
+       1,
+       13
+      ],
+      "candidate_block_pair": [
+       1,
+       12
+      ],
+      "reference_relation": "left_of",
+      "candidate_relation": "below",
+      "reference_text": [
+       "Source-backed Image2Struct algorithm sample",
+       "t\u22121 \u21900 else if Pu,t > Pu,t\u22121 then"
+      ]
+     },
+     {
+      "reference_block_pair": [
+       1,
+       15
+      ],
+      "candidate_block_pair": [
+       1,
+       14
+      ],
+      "reference_relation": "left_of",
+      "candidate_relation": "below",
+      "reference_text": [
+       "Source-backed Image2Struct algorithm sample",
+       "t\u22121 \u21901 SON_DOWN"
+      ]
+     },
+     {
+      "reference_block_pair": [
+       1,
+       16
+      ],
+      "candidate_block_pair": [
+       1,
+       32
+      ],
+      "reference_relation": "below",
+      "candidate_relation": "left_of",
+      "reference_text": [
+       "Source-backed Image2Struct algorithm sample",
+       "t\u22121 \u21900 SON_FLAT"
+      ]
+     },
+     {
+      "reference_block_pair": [
+       1,
+       28
+      ],
+      "candidate_block_pair": [
+       1,
+       7
+      ],
+      "reference_relation": "below",
+      "candidate_relation": "left_of",
+      "reference_text": [
+       "Source-backed Image2Struct algorithm sample",
+       "u,t \u21901 SSTOP"
+      ]
+     },
+     {
+      "reference_block_pair": [
+       1,
+       34
+      ],
+      "candidate_block_pair": [
+       1,
+       33
+      ],
+      "reference_relation": "below",
+      "candidate_relation": "left_of",
+      "reference_text": [
+       "Source-backed Image2Struct algorithm sample",
+       "t\u22121 \u21900 end if end for"
+      ]
+     },
+     {
+      "reference_block_pair": [
+       2,
+       7
+      ],
+      "candidate_block_pair": [
+       2,
+       6
+      ],
+      "reference_relation": "right_of",
+      "candidate_relation": "below",
+      "reference_text": [
+       "1 Algorithm",
+       "SOFF"
+      ]
+     },
+     {
+      "reference_block_pair": [
+       2,
+       8
+      ],
+      "candidate_block_pair": [
+       2,
+       30
+      ],
+      "reference_relation": "right_of",
+      "candidate_relation": "above",
+      "reference_text": [
+       "1 Algorithm",
+       "u,t \u21900 SSTOP"
+      ]
+     },
+     {
+      "reference_block_pair": [
+       2,
+       9
+      ],
+      "candidate_block_pair": [
+       2,
+       29
+      ],
+      "reference_relation": "right_of",
+      "candidate_relation": "above",
+      "reference_text": [
+       "1 Algorithm",
+       "u,t \u21900 SSTART"
+      ]
+     },
+     {
+      "reference_block_pair": [
+       2,
+       11
+      ],
+      "candidate_block_pair": [
+       2,
+       31
+      ],
+      "reference_relation": "below",
+      "candidate_relation": "above",
+      "reference_text": [
+       "1 Algorithm",
+       "t\u22121 \u21900 SON_DOWN"
+      ]
+     },
+     {
+      "reference_block_pair": [
+       2,
+       14
+      ],
+      "candidate_block_pair": [
+       2,
+       28
+      ],
+      "reference_relation": "below",
+      "candidate_relation": "above",
+      "reference_text": [
+       "1 Algorithm",
+       "SON_UP"
+      ]
+     },
+     {
+      "reference_block_pair": [
+       2,
+       16
+      ],
+      "candidate_block_pair": [
+       2,
+       32
+      ],
+      "reference_relation": "below",
+      "candidate_relation": "above",
+      "reference_text": [
+       "1 Algorithm",
+       "t\u22121 \u21900 SON_FLAT"
+      ]
+     },
+     {
+      "reference_block_pair": [
+       2,
+       21
+      ],
+      "candidate_block_pair": [
+       2,
+       20
+      ],
+      "reference_relation": "right_of",
+      "candidate_relation": "below",
+      "reference_text": [
+       "1 Algorithm",
+       "t\u22121 \u21901 end if else if Pu,t > 0 then \u25b7Reconstruct the startups and shutdowns if Pu,t < Pu,t\u22121 then"
+      ]
+     },
+     {
+      "reference_block_pair": [
+       2,
+       34
+      ],
+      "candidate_block_pair": [
+       2,
+       33
+      ],
+      "reference_relation": "below",
+      "candidate_relation": "above",
+      "reference_text": [
+       "1 Algorithm",
+       "t\u22121 \u21900 end if end for"
+      ]
+     },
+     {
+      "reference_block_pair": [
+       3,
+       6
+      ],
+      "candidate_block_pair": [
+       3,
+       5
+      ],
+      "reference_relation": "above",
+      "candidate_relation": "below",
+      "reference_text": [
+       "This sample contains algorithmic pseudocode extracted from a source-backed LaTeX benchmark dataset. It is wrapped in a m",
+       "for t \u2208{\u22121, . . . , \u2212T traceback} do \u25b7Retrieve the values of Pu,t Pu,t \u2190Power.GetValue(t) end for for t \u2208{\u22121, . . . , \u2212T"
+      ]
+     },
+     {
+      "reference_block_pair": [
+       3,
+       10
+      ],
+      "candidate_block_pair": [
+       3,
+       9
+      ],
+      "reference_relation": "right_of",
+      "candidate_relation": "below",
+      "reference_text": [
+       "This sample contains algorithmic pseudocode extracted from a source-backed LaTeX benchmark dataset. It is wrapped in a m",
+       "u,t \u21900 if Pu,t < Pu,t\u22121 then \u25b7Exact initialization required only if the FLAT state is defined. SON_UP"
+      ]
+     },
+     {
+      "reference_block_pair": [
+       3,
+       12
+      ],
+      "candidate_block_pair": [
+       3,
+       11
+      ],
+      "reference_relation": "left_of",
+      "candidate_relation": "below",
+      "reference_text": [
+       "This sample contains algorithmic pseudocode extracted from a source-backed LaTeX benchmark dataset. It is wrapped in a m",
+       "t\u22121 \u21901 SON_FLAT"
+      ]
+     },
+     {
+      "reference_block_pair": [
+       3,
+       13
+      ],
+      "candidate_block_pair": [
+       3,
+       12
+      ],
+      "reference_relation": "left_of",
+      "candidate_relation": "below",
+      "reference_text": [
+       "This sample contains algorithmic pseudocode extracted from a source-backed LaTeX benchmark dataset. It is wrapped in a m",
+       "t\u22121 \u21900 else if Pu,t > Pu,t\u22121 then"
+      ]
+     },
+     {
+      "reference_block_pair": [
+       3,
+       15
+      ],
+      "candidate_block_pair": [
+       3,
+       14
+      ],
+      "reference_relation": "left_of",
+      "candidate_relation": "below",
+      "reference_text": [
+       "This sample contains algorithmic pseudocode extracted from a source-backed LaTeX benchmark dataset. It is wrapped in a m",
+       "t\u22121 \u21901 SON_DOWN"
+      ]
+     }
+    ],
+    "worst_block_pairs": [
+     {
+      "reference_block_index": 34,
+      "candidate_block_index": 33,
+      "reference_page": 1,
+      "candidate_page": 1,
+      "reference_bbox_normalized": [
+       0.13537076563616984,
+       0.8079533432469224,
+       0.3124040591171364,
+       0.8561342027452257
+      ],
+      "candidate_bbox_normalized": [
+       0.11764705882352941,
+       0.1604784955882063,
+       0.27690540887171927,
+       0.21008967389964095
+      ],
+      "center_displacement": 0.6473069203791372,
+      "bbox_iou": 0.0,
+      "reference_text": "t\u22121 \u21900 end if end for"
+     },
+     {
+      "reference_block_index": 14,
+      "candidate_block_index": 28,
+      "reference_page": 1,
+      "candidate_page": 1,
+      "reference_bbox_normalized": [
+       0.21513057534211602,
+       0.39681471237028487,
+       0.28062578587750203,
+       0.4151899549696181
+      ],
+      "candidate_bbox_normalized": [
+       0.1679738611956827,
+       0.08749725842716718,
+       0.21450638615227993,
+       0.1030896504720052
+      ],
+      "center_displacement": 0.3158288731573502,
+      "bbox_iou": 0.0,
+      "reference_text": "SON_UP"
+     },
+     {
+      "reference_block_index": 16,
+      "candidate_block_index": 32,
+      "reference_page": 1,
+      "candidate_page": 1,
+      "reference_bbox_normalized": [
+       0.21513057534211602,
+       0.4218674091377644,
+       0.34852497873742594,
+       0.456448834351819
+      ],
+      "candidate_bbox_normalized": [
+       0.1679738611956827,
+       0.14265908135308158,
+       0.2840769898657705,
+       0.17436738447709518
+      ],
+      "center_displacement": 0.2861388754786309,
+      "bbox_iou": 0.0,
+      "reference_text": "t\u22121 \u21900 SON_FLAT"
+     },
+     {
+      "reference_block_index": 29,
+      "candidate_block_index": 8,
+      "reference_page": 1,
+      "candidate_page": 0,
+      "reference_bbox_normalized": [
+       0.18854395548502603,
+       0.7272008260091146,
+       0.2786589479134753,
+       0.7596484097567472
+      ],
+      "candidate_bbox_normalized": [
+       0.1679738611956827,
+       0.4675722603846078,
+       0.2524591583052492,
+       0.499280602040917
+      ],
+      "center_displacement": 0.26104772088973277,
+      "bbox_iou": 0.0,
+      "reference_text": "u,t \u21900 SSTART"
+     },
+     {
+      "reference_block_index": 28,
+      "candidate_block_index": 7,
+      "reference_page": 1,
+      "candidate_page": 0,
+      "reference_bbox_normalized": [
+       0.18854395548502603,
+       0.7087058635673138,
+       0.2702014399509804,
+       0.7411534473149464
+      ],
+      "candidate_bbox_normalized": [
+       0.1679738611956827,
+       0.44975284614948313,
+       0.24424332263422946,
+       0.4814611492734967
+      ],
+      "center_displacement": 0.26036409013298945,
+      "bbox_iou": 0.0,
+      "reference_text": "u,t \u21901 SSTOP"
+     },
+     {
+      "reference_block_index": 11,
+      "candidate_block_index": 31,
+      "reference_page": 1,
+      "candidate_page": 1,
+      "reference_bbox_normalized": [
+       0.21513057534211602,
+       0.3232119589140921,
+       0.32000211329241984,
+       0.3577934033942945
+      ],
+      "candidate_bbox_normalized": [
+       0.1679738611956827,
+       0.12483966711795691,
+       0.2603101543351716,
+       0.15654797024197048
+      ],
+      "center_displacement": 0.20682780581742377,
+      "bbox_iou": 0.0,
+      "reference_text": "t\u22121 \u21900 SON_DOWN"
+     },
+     {
+      "reference_block_index": 7,
+      "candidate_block_index": 6,
+      "reference_page": 1,
+      "candidate_page": 0,
+      "reference_bbox_normalized": [
+       0.18854404274934258,
+       0.247535628501815,
+       0.23080618864570568,
+       0.26340708106455174
+      ],
+      "candidate_bbox_normalized": [
+       0.1679738611956827,
+       0.44804933336046004,
+       0.20629052554859834,
+       0.463641735038372
+      ],
+      "center_displacement": 0.20163827792286085,
+      "bbox_iou": 0.0,
+      "reference_text": "SOFF"
+     },
+     {
+      "reference_block_index": 6,
+      "candidate_block_index": 5,
+      "reference_page": 1,
+      "candidate_page": 0,
+      "reference_bbox_normalized": [
+       0.13537084043415543,
+       0.16199763134272413,
+       0.8822509167241115,
+       0.24755597355389836
+      ],
+      "candidate_bbox_normalized": [
+       0.11764705882352941,
+       0.35884726167929293,
+       0.8823529411764706,
+       0.44844448205196497
+      ],
+      "center_displacement": 0.19906415637237698,
+      "bbox_iou": 0.0,
+      "reference_text": "for t \u2208{\u22121, . . . , \u2212T traceback} do \u25b7Retrieve the values of Pu,t Pu,t \u2190Power.GetValue(t) end for for t \u2208{\u22121, . . . , \u2212T traceback} do \u25b7Initial conditions on th"
+     },
+     {
+      "reference_block_index": 10,
+      "candidate_block_index": 9,
+      "reference_page": 1,
+      "candidate_page": 0,
+      "reference_bbox_normalized": [
+       0.18854403028301164,
+       0.28644436537617385,
+       0.8822065365859886,
+       0.3371646765506629
+      ],
+      "candidate_bbox_normalized": [
+       0.1679738611956827,
+       0.4853917131520281,
+       0.8867673188253166,
+       0.5349611609873145
+      ],
+      "center_displacement": 0.1985333529069574,
+      "bbox_iou": 0.0,
+      "reference_text": "u,t \u21900 if Pu,t < Pu,t\u22121 then \u25b7Exact initialization required only if the FLAT state is defined. SON_UP"
+     },
+     {
+      "reference_block_index": 12,
+      "candidate_block_index": 11,
+      "reference_page": 1,
+      "candidate_page": 0,
+      "reference_bbox_normalized": [
+       0.21513057534211602,
+       0.3438408206207584,
+       0.34852497873742594,
+       0.37842347886827254
+      ],
+      "candidate_bbox_normalized": [
+       0.1931372499154284,
+       0.5388917248658459,
+       0.30924037858551623,
+       0.5706000665221551
+      ],
+      "center_displacement": 0.19602303094635534,
+      "bbox_iou": 0.0,
+      "reference_text": "t\u22121 \u21901 SON_FLAT"
+     },
+     {
+      "reference_block_index": 13,
+      "candidate_block_index": 12,
+      "reference_page": 1,
+      "candidate_page": 0,
+      "reference_bbox_normalized": [
+       0.18854395548502603,
+       0.36447089609473643,
+       0.3918687159719031,
+       0.39678577461628
+      ],
+      "candidate_bbox_normalized": [
+       0.1679738611956827,
+       0.5567111776332663,
+       0.3729710797079248,
+       0.5910833724821457
+      ],
+      "center_displacement": 0.19427379775041506,
+      "bbox_iou": 0.0,
+      "reference_text": "t\u22121 \u21900 else if Pu,t > Pu,t\u22121 then"
+     },
+     {
+      "reference_block_index": 15,
+      "candidate_block_index": 14,
+      "reference_page": 1,
+      "candidate_page": 0,
+      "reference_bbox_normalized": [
+       0.21513057534211602,
+       0.4012373336637863,
+       0.32000211329241984,
+       0.4358199919113005
+      ],
+      "candidate_bbox_normalized": [
+       0.1931372499154284,
+       0.5923917365796638,
+       0.2854735430549173,
+       0.6241000397036774
+      ],
+      "center_displacement": 0.191810601293143,
+      "bbox_iou": 0.0,
+      "reference_text": "t\u22121 \u21901 SON_DOWN"
+     },
+     {
+      "reference_block_index": 17,
+      "candidate_block_index": 16,
+      "reference_page": 1,
+      "candidate_page": 0,
+      "reference_bbox_normalized": [
+       0.18854395548502603,
+       0.44249621304598724,
+       0.3918687159719031,
+       0.4748123246009904
+      ],
+      "candidate_bbox_normalized": [
+       0.1679738611956827,
+       0.6280306035822089,
+       0.3729710797079248,
+       0.6624027598987926
+      ],
+      "center_displacement": 0.18760319654039762,
+      "bbox_iou": 0.0,
+      "reference_text": "t\u22121 \u21900 else if Pu,t = Pu,t\u22121 then"
+     },
+     {
+      "reference_block_index": 26,
+      "candidate_block_index": 25,
+      "reference_page": 1,
+      "candidate_page": 0,
+      "reference_bbox_normalized": [
+       0.21513055040945414,
+       0.6402753579496133,
+       0.3052455428379034,
+       0.6713366267657039
+      ],
+      "candidate_bbox_normalized": [
+       0.1931372499154284,
+       0.8242528125493214,
+       0.27762257195765677,
+       0.8559611156733349
+      ],
+      "center_displacement": 0.18596314631027897,
+      "bbox_iou": 0.0,
+      "reference_text": "t \u21900 SSTART"
+     },
+     {
+      "reference_block_index": 27,
+      "candidate_block_index": 26,
+      "reference_page": 1,
+      "candidate_page": 0,
+      "reference_bbox_normalized": [
+       0.16195736056059792,
+       0.6573839283952809,
+       0.8822255851396548,
+       0.7226584848731455
+      ],
+      "candidate_bbox_normalized": [
+       0.14281046000960607,
+       0.842072226784446,
+       0.8867673188253166,
+       0.9095028193310054
+      ],
+      "center_displacement": 0.18590979544486502,
+      "bbox_iou": 0.0,
+      "reference_text": "t \u21901 end if else \u25b7Final possibility: the unit is OFF. SOFF"
+     },
+     {
+      "reference_block_index": 25,
+      "candidate_block_index": 24,
+      "reference_page": 1,
+      "candidate_page": 0,
+      "reference_bbox_normalized": [
+       0.21513055040945414,
+       0.638356565225004,
+       0.265870636584712,
+       0.6542279792554451
+      ],
+      "candidate_bbox_normalized": [
+       0.1931372499154284,
+       0.8225493768248895,
+       0.23966977487202562,
+       0.8381417014382102
+      ],
+      "center_displacement": 0.18562401345480917,
+      "bbox_iou": 0.0,
+      "reference_text": "SSTOP"
+     },
+     {
+      "reference_block_index": 24,
+      "candidate_block_index": 23,
+      "reference_page": 1,
+      "candidate_page": 0,
+      "reference_bbox_normalized": [
+       0.18854395548502603,
+       0.6060607216574929,
+       0.31451189128402013,
+       0.6371342822758839
+      ],
+      "candidate_bbox_normalized": [
+       0.1679738611956827,
+       0.7885722150706281,
+       0.28704627043281505,
+       0.8203222101384943
+      ],
+      "center_displacement": 0.18442037350200707,
+      "bbox_iou": 0.0,
+      "reference_text": "t \u21900 else"
+     },
+     {
+      "reference_block_index": 23,
+      "candidate_block_index": 22,
+      "reference_page": 1,
+      "candidate_page": 0,
+      "reference_bbox_normalized": [
+       0.21513055040945414,
+       0.5889533842452849,
+       0.3052455428379034,
+       0.6200133429633247
+      ],
+      "candidate_bbox_normalized": [
+       0.1931372499154284,
+       0.7707528008355035,
+       0.27762257195765677,
+       0.8024611039595171
+      ],
+      "center_displacement": 0.1838054547373064,
+      "bbox_iou": 0.0,
+      "reference_text": "t \u21901 SSTART"
+     },
+     {
+      "reference_block_index": 22,
+      "candidate_block_index": 21,
+      "reference_page": 1,
+      "candidate_page": 0,
+      "reference_bbox_normalized": [
+       0.21513055040945414,
+       0.5870332814226247,
+       0.265870636584712,
+       0.6029060055511166
+      ],
+      "candidate_bbox_normalized": [
+       0.1931372499154284,
+       0.7690493651110717,
+       0.23966977487202562,
+       0.7846416897243924
+      ],
+      "center_displacement": 0.18346527320813028,
+      "bbox_iou": 0.0,
+      "reference_text": "SSTOP"
+     },
+     {
+      "reference_block_index": 21,
+      "candidate_block_index": 20,
+      "reference_page": 1,
+      "candidate_page": 0,
+      "reference_bbox_normalized": [
+       0.16195736056059792,
+       0.5205228015629932,
+       0.8822705636616626,
+       0.5870535879424124
+      ],
+      "candidate_bbox_normalized": [
+       0.14281046000960607,
+       0.6993499909988558,
+       0.8823530409071181,
+       0.7694444752702809
+      ],
+      "center_displacement": 0.1808604097203568,
+      "bbox_iou": 0.0,
+      "reference_text": "t\u22121 \u21901 end if else if Pu,t > 0 then \u25b7Reconstruct the startups and shutdowns if Pu,t < Pu,t\u22121 then"
+     },
+     {
+      "reference_block_index": 9,
+      "candidate_block_index": 29,
+      "reference_page": 1,
+      "candidate_page": 1,
+      "reference_bbox_normalized": [
+       0.18854403028301164,
+       0.267949402934373,
+       0.27865902271146087,
+       0.3003970059481534
+      ],
+      "candidate_bbox_normalized": [
+       0.1679738611956827,
+       0.08920076158311632,
+       0.2524591583052492,
+       0.12090906470712989
+      ],
+      "center_displacement": 0.1806383715745235,
+      "bbox_iou": 0.0,
+      "reference_text": "u,t \u21900 SSTART"
+     },
+     {
+      "reference_block_index": 30,
+      "candidate_block_index": 27,
+      "reference_page": 1,
+      "candidate_page": 0,
+      "reference_bbox_normalized": [
+       0.19947369893391928,
+       0.7456957884509154,
+       0.287925296359592,
+       0.7622429433495107
+      ],
+      "candidate_bbox_normalized": [
+       0.17899182886859172,
+       0.8956139304421165,
+       0.24424332263422946,
+       0.9121451329703283
+      ],
+      "center_displacement": 0.15330462329781253,
+      "bbox_iou": 0.0,
+      "reference_text": "u,t \u21900"
+     },
+     {
+      "reference_block_index": 8,
+      "candidate_block_index": 30,
+      "reference_page": 1,
+      "candidate_page": 1,
+      "reference_bbox_normalized": [
+       0.18854403028301164,
+       0.2494544404925722,
+       0.270201514748966,
+       0.28190204350635256
+      ],
+      "candidate_bbox_normalized": [
+       0.1679738611956827,
+       0.107020175818241,
+       0.26188285678040746,
+       0.1387285560068458
+      ],
+      "center_displacement": 0.14353253327247573,
+      "bbox_iou": 0.0,
+      "reference_text": "u,t \u21900 SSTOP"
+     },
+     {
+      "reference_block_index": 18,
+      "candidate_block_index": 13,
+      "reference_page": 1,
+      "candidate_page": 0,
+      "reference_bbox_normalized": [
+       0.21513057534211602,
+       0.4748400293215357,
+       0.28062578587750203,
+       0.49321650495432845
+      ],
+      "candidate_bbox_normalized": [
+       0.1931372499154284,
+       0.5892986336139717,
+       0.24752074596928617,
+       0.6062806254685528
+      ],
+      "center_displacement": 0.11704958368788182,
+      "bbox_iou": 0.0,
+      "reference_text": "SON_UP"
+     }
+    ]
+   },
+   "interpretation": "Transparent matched-block relation trial inspired by pairwise-layout work; this is not the published PaIRS or LTSim metric."
+  },
+  "reading_order": {
+   "status": "scored",
+   "applicable": true,
+   "metrics": {
+    "matched_block_count": 34,
+    "reference_block_coverage": 0.9444444444444444,
+    "candidate_block_coverage": 0.9714285714285714,
+    "inversion_count": 192,
+    "kendall_tau": 0.31550802139037437
+   },
+   "evidence": {
+    "inverted_block_pairs": [
+     {
+      "reference_block_pair": [
+       5,
+       6
+      ],
+      "candidate_block_pair": [
+       34,
+       5
+      ],
+      "reference_text": [
+       "Algorithm 2 Initialization of the control and state variables",
+       "for t \u2208{\u22121, . . . , \u2212T traceback} do \u25b7Retrieve the values of Pu,t Pu,t \u2190Power.GetValue(t) end for for t \u2208{\u22121, . . . , \u2212T"
+      ],
+      "candidate_text": [
+       "Algorithm 2 Initialization of the control and state variables",
+       "for \ud835\udc61\u2208{\u22121, \u2026, \u2212\ud835\udc47traceback} do \u25b7 Retrieve the values of \ud835\udc43\ud835\udc62,\ud835\udc61 \ud835\udc43\ud835\udc62,\ud835\udc61 \u2190 Power.GetValue (\ud835\udc61) end for for \ud835\udc61\u2208{\u22121, \u2026, \u2212\ud835\udc47traceback}"
+      ]
+     },
+     {
+      "reference_block_pair": [
+       5,
+       7
+      ],
+      "candidate_block_pair": [
+       34,
+       6
+      ],
+      "reference_text": [
+       "Algorithm 2 Initialization of the control and state variables",
+       "SOFF"
+      ],
+      "candidate_text": [
+       "Algorithm 2 Initialization of the control and state variables",
+       "\ud835\udc46OFF"
+      ]
+     },
+     {
+      "reference_block_pair": [
+       5,
+       8
+      ],
+      "candidate_block_pair": [
+       34,
+       30
+      ],
+      "reference_text": [
+       "Algorithm 2 Initialization of the control and state variables",
+       "u,t \u21900 SSTOP"
+      ],
+      "candidate_text": [
+       "Algorithm 2 Initialization of the control and state variables",
+       "\ud835\udc62,\ud835\udc61 \u21900 \ud835\udc46ON_UP"
+      ]
+     },
+     {
+      "reference_block_pair": [
+       5,
+       9
+      ],
+      "candidate_block_pair": [
+       34,
+       29
+      ],
+      "reference_text": [
+       "Algorithm 2 Initialization of the control and state variables",
+       "u,t \u21900 SSTART"
+      ],
+      "candidate_text": [
+       "Algorithm 2 Initialization of the control and state variables",
+       "\ud835\udc62,\ud835\udc61 \u21900 \ud835\udc46START"
+      ]
+     },
+     {
+      "reference_block_pair": [
+       5,
+       10
+      ],
+      "candidate_block_pair": [
+       34,
+       9
+      ],
+      "reference_text": [
+       "Algorithm 2 Initialization of the control and state variables",
+       "u,t \u21900 if Pu,t < Pu,t\u22121 then \u25b7Exact initialization required only if the FLAT state is defined. SON_UP"
+      ],
+      "candidate_text": [
+       "Algorithm 2 Initialization of the control and state variables",
+       "\ud835\udc62,\ud835\udc61 \u21900 if \ud835\udc43\ud835\udc62,\ud835\udc61 < \ud835\udc43\ud835\udc62,\ud835\udc61\u22121 then \u25b7 Exact initialization required only if the FLAT state is defined. \ud835\udc46ON_UP"
+      ]
+     },
+     {
+      "reference_block_pair": [
+       5,
+       11
+      ],
+      "candidate_block_pair": [
+       34,
+       31
+      ],
+      "reference_text": [
+       "Algorithm 2 Initialization of the control and state variables",
+       "t\u22121 \u21900 SON_DOWN"
+      ],
+      "candidate_text": [
+       "Algorithm 2 Initialization of the control and state variables",
+       "\ud835\udc61\u22121 \u21900 \ud835\udc46ON_DOWN"
+      ]
+     },
+     {
+      "reference_block_pair": [
+       5,
+       12
+      ],
+      "candidate_block_pair": [
+       34,
+       11
+      ],
+      "reference_text": [
+       "Algorithm 2 Initialization of the control and state variables",
+       "t\u22121 \u21901 SON_FLAT"
+      ],
+      "candidate_text": [
+       "Algorithm 2 Initialization of the control and state variables",
+       "\ud835\udc61\u22121 \u21901 \ud835\udc46ON_FLAT"
+      ]
+     },
+     {
+      "reference_block_pair": [
+       5,
+       13
+      ],
+      "candidate_block_pair": [
+       34,
+       12
+      ],
+      "reference_text": [
+       "Algorithm 2 Initialization of the control and state variables",
+       "t\u22121 \u21900 else if Pu,t > Pu,t\u22121 then"
+      ],
+      "candidate_text": [
+       "Algorithm 2 Initialization of the control and state variables",
+       "\ud835\udc61\u22121 \u21900 else if \ud835\udc43\ud835\udc62,\ud835\udc61 > \ud835\udc43\ud835\udc62,\ud835\udc61\u22121 then"
+      ]
+     },
+     {
+      "reference_block_pair": [
+       5,
+       14
+      ],
+      "candidate_block_pair": [
+       34,
+       28
+      ],
+      "reference_text": [
+       "Algorithm 2 Initialization of the control and state variables",
+       "SON_UP"
+      ],
+      "candidate_text": [
+       "Algorithm 2 Initialization of the control and state variables",
+       "\ud835\udc46STOP"
+      ]
+     },
+     {
+      "reference_block_pair": [
+       5,
+       15
+      ],
+      "candidate_block_pair": [
+       34,
+       14
+      ],
+      "reference_text": [
+       "Algorithm 2 Initialization of the control and state variables",
+       "t\u22121 \u21901 SON_DOWN"
+      ],
+      "candidate_text": [
+       "Algorithm 2 Initialization of the control and state variables",
+       "\ud835\udc61\u22121 \u21901 \ud835\udc46ON_DOWN"
+      ]
+     },
+     {
+      "reference_block_pair": [
+       5,
+       16
+      ],
+      "candidate_block_pair": [
+       34,
+       32
+      ],
+      "reference_text": [
+       "Algorithm 2 Initialization of the control and state variables",
+       "t\u22121 \u21900 SON_FLAT"
+      ],
+      "candidate_text": [
+       "Algorithm 2 Initialization of the control and state variables",
+       "\ud835\udc61\u22121 \u21900 \ud835\udc46ON_FLAT"
+      ]
+     },
+     {
+      "reference_block_pair": [
+       5,
+       17
+      ],
+      "candidate_block_pair": [
+       34,
+       16
+      ],
+      "reference_text": [
+       "Algorithm 2 Initialization of the control and state variables",
+       "t\u22121 \u21900 else if Pu,t = Pu,t\u22121 then"
+      ],
+      "candidate_text": [
+       "Algorithm 2 Initialization of the control and state variables",
+       "\ud835\udc61\u22121 \u21900 else if \ud835\udc43\ud835\udc62,\ud835\udc61 = \ud835\udc43\ud835\udc62,\ud835\udc61\u22121 then"
+      ]
+     },
+     {
+      "reference_block_pair": [
+       5,
+       18
+      ],
+      "candidate_block_pair": [
+       34,
+       13
+      ],
+      "reference_text": [
+       "Algorithm 2 Initialization of the control and state variables",
+       "SON_UP"
+      ],
+      "candidate_text": [
+       "Algorithm 2 Initialization of the control and state variables",
+       "\ud835\udc46ON_UP"
+      ]
+     },
+     {
+      "reference_block_pair": [
+       5,
+       19
+      ],
+      "candidate_block_pair": [
+       34,
+       10
+      ],
+      "reference_text": [
+       "Algorithm 2 Initialization of the control and state variables",
+       "t\u22121 \u21900 SON_DOWN"
+      ],
+      "candidate_text": [
+       "Algorithm 2 Initialization of the control and state variables",
+       "\ud835\udc61\u22121 \u21900 \ud835\udc46ON_DOWN"
+      ]
+     },
+     {
+      "reference_block_pair": [
+       5,
+       20
+      ],
+      "candidate_block_pair": [
+       34,
+       15
+      ],
+      "reference_text": [
+       "Algorithm 2 Initialization of the control and state variables",
+       "t\u22121 \u21900 SON_FLAT"
+      ],
+      "candidate_text": [
+       "Algorithm 2 Initialization of the control and state variables",
+       "\ud835\udc61\u22121 \u21900 \ud835\udc46ON_FLAT"
+      ]
+     },
+     {
+      "reference_block_pair": [
+       5,
+       21
+      ],
+      "candidate_block_pair": [
+       34,
+       20
+      ],
+      "reference_text": [
+       "Algorithm 2 Initialization of the control and state variables",
+       "t\u22121 \u21901 end if else if Pu,t > 0 then \u25b7Reconstruct the startups and shutdowns if Pu,t < Pu,t\u22121 then"
+      ],
+      "candidate_text": [
+       "Algorithm 2 Initialization of the control and state variables",
+       "\ud835\udc61\u22121 \u21901 end if else if \ud835\udc43\ud835\udc62,\ud835\udc61 > 0 then \u25b7 Reconstruct the startups and shutdowns if \ud835\udc43\ud835\udc62,\ud835\udc61 < \ud835\udc43\ud835\udc62,\ud835\udc61\u22121 then"
+      ]
+     },
+     {
+      "reference_block_pair": [
+       5,
+       22
+      ],
+      "candidate_block_pair": [
+       34,
+       21
+      ],
+      "reference_text": [
+       "Algorithm 2 Initialization of the control and state variables",
+       "SSTOP"
+      ],
+      "candidate_text": [
+       "Algorithm 2 Initialization of the control and state variables",
+       "\ud835\udc46STOP"
+      ]
+     },
+     {
+      "reference_block_pair": [
+       5,
+       23
+      ],
+      "candidate_block_pair": [
+       34,
+       22
+      ],
+      "reference_text": [
+       "Algorithm 2 Initialization of the control and state variables",
+       "t \u21901 SSTART"
+      ],
+      "candidate_text": [
+       "Algorithm 2 Initialization of the control and state variables",
+       "\ud835\udc61 \u21901 \ud835\udc46START"
+      ]
+     },
+     {
+      "reference_block_pair": [
+       5,
+       24
+      ],
+      "candidate_block_pair": [
+       34,
+       23
+      ],
+      "reference_text": [
+       "Algorithm 2 Initialization of the control and state variables",
+       "t \u21900 else"
+      ],
+      "candidate_text": [
+       "Algorithm 2 Initialization of the control and state variables",
+       "\ud835\udc61 \u21900 else"
+      ]
+     },
+     {
+      "reference_block_pair": [
+       5,
+       25
+      ],
+      "candidate_block_pair": [
+       34,
+       24
+      ],
+      "reference_text": [
+       "Algorithm 2 Initialization of the control and state variables",
+       "SSTOP"
+      ],
+      "candidate_text": [
+       "Algorithm 2 Initialization of the control and state variables",
+       "\ud835\udc46STOP"
+      ]
+     },
+     {
+      "reference_block_pair": [
+       5,
+       26
+      ],
+      "candidate_block_pair": [
+       34,
+       25
+      ],
+      "reference_text": [
+       "Algorithm 2 Initialization of the control and state variables",
+       "t \u21900 SSTART"
+      ],
+      "candidate_text": [
+       "Algorithm 2 Initialization of the control and state variables",
+       "\ud835\udc61 \u21900 \ud835\udc46START"
+      ]
+     },
+     {
+      "reference_block_pair": [
+       5,
+       27
+      ],
+      "candidate_block_pair": [
+       34,
+       26
+      ],
+      "reference_text": [
+       "Algorithm 2 Initialization of the control and state variables",
+       "t \u21901 end if else \u25b7Final possibility: the unit is OFF. SOFF"
+      ],
+      "candidate_text": [
+       "Algorithm 2 Initialization of the control and state variables",
+       "\ud835\udc61 \u21901 end if else \u25b7 Final possibility: the unit is OFF. \ud835\udc46OFF"
+      ]
+     },
+     {
+      "reference_block_pair": [
+       5,
+       28
+      ],
+      "candidate_block_pair": [
+       34,
+       7
+      ],
+      "reference_text": [
+       "Algorithm 2 Initialization of the control and state variables",
+       "u,t \u21901 SSTOP"
+      ],
+      "candidate_text": [
+       "Algorithm 2 Initialization of the control and state variables",
+       "\ud835\udc62,\ud835\udc61 \u21900 \ud835\udc46STOP"
+      ]
+     },
+     {
+      "reference_block_pair": [
+       5,
+       29
+      ],
+      "candidate_block_pair": [
+       34,
+       8
+      ],
+      "reference_text": [
+       "Algorithm 2 Initialization of the control and state variables",
+       "u,t \u21900 SSTART"
+      ],
+      "candidate_text": [
+       "Algorithm 2 Initialization of the control and state variables",
+       "\ud835\udc62,\ud835\udc61 \u21900 \ud835\udc46START"
+      ]
+     }
+    ]
+   },
+   "interpretation": "Kendall tau is computed only on content-matched blocks; coverage must accompany it."
+  },
+  "pagination": {
+   "status": "scored",
+   "applicable": true,
+   "metrics": {
+    "reference_page_count": 2,
+    "candidate_page_count": 2,
+    "page_count_delta": 0,
+    "matched_block_count": 34,
+    "matched_block_page_assignment_accuracy": 0.3235294117647059,
+    "page_break_precision": 0.09090909090909091,
+    "page_break_recall": 1.0,
+    "page_break_f1": 0.16666666666666669,
+    "page_break_true_positive": 1,
+    "page_break_false_positive": 10,
+    "page_break_false_negative": 0
+   },
+   "evidence": {
+    "mismatched_page_breaks": [
+     {
+      "reference_block_pair": [
+       5,
+       6
+      ],
+      "candidate_block_pair": [
+       34,
+       5
+      ],
+      "reference_page_break": false,
+      "candidate_page_break": true,
+      "reference_pages": [
+       1,
+       1
+      ],
+      "candidate_pages": [
+       1,
+       0
+      ]
+     },
+     {
+      "reference_block_pair": [
+       7,
+       8
+      ],
+      "candidate_block_pair": [
+       6,
+       30
+      ],
+      "reference_page_break": false,
+      "candidate_page_break": true,
+      "reference_pages": [
+       1,
+       1
+      ],
+      "candidate_pages": [
+       0,
+       1
+      ]
+     },
+     {
+      "reference_block_pair": [
+       9,
+       10
+      ],
+      "candidate_block_pair": [
+       29,
+       9
+      ],
+      "reference_page_break": false,
+      "candidate_page_break": true,
+      "reference_pages": [
+       1,
+       1
+      ],
+      "candidate_pages": [
+       1,
+       0
+      ]
+     },
+     {
+      "reference_block_pair": [
+       10,
+       11
+      ],
+      "candidate_block_pair": [
+       9,
+       31
+      ],
+      "reference_page_break": false,
+      "candidate_page_break": true,
+      "reference_pages": [
+       1,
+       1
+      ],
+      "candidate_pages": [
+       0,
+       1
+      ]
+     },
+     {
+      "reference_block_pair": [
+       11,
+       12
+      ],
+      "candidate_block_pair": [
+       31,
+       11
+      ],
+      "reference_page_break": false,
+      "candidate_page_break": true,
+      "reference_pages": [
+       1,
+       1
+      ],
+      "candidate_pages": [
+       1,
+       0
+      ]
+     },
+     {
+      "reference_block_pair": [
+       13,
+       14
+      ],
+      "candidate_block_pair": [
+       12,
+       28
+      ],
+      "reference_page_break": false,
+      "candidate_page_break": true,
+      "reference_pages": [
+       1,
+       1
+      ],
+      "candidate_pages": [
+       0,
+       1
+      ]
+     },
+     {
+      "reference_block_pair": [
+       14,
+       15
+      ],
+      "candidate_block_pair": [
+       28,
+       14
+      ],
+      "reference_page_break": false,
+      "candidate_page_break": true,
+      "reference_pages": [
+       1,
+       1
+      ],
+      "candidate_pages": [
+       1,
+       0
+      ]
+     },
+     {
+      "reference_block_pair": [
+       15,
+       16
+      ],
+      "candidate_block_pair": [
+       14,
+       32
+      ],
+      "reference_page_break": false,
+      "candidate_page_break": true,
+      "reference_pages": [
+       1,
+       1
+      ],
+      "candidate_pages": [
+       0,
+       1
+      ]
+     },
+     {
+      "reference_block_pair": [
+       16,
+       17
+      ],
+      "candidate_block_pair": [
+       32,
+       16
+      ],
+      "reference_page_break": false,
+      "candidate_page_break": true,
+      "reference_pages": [
+       1,
+       1
+      ],
+      "candidate_pages": [
+       1,
+       0
+      ]
+     },
+     {
+      "reference_block_pair": [
+       33,
+       34
+      ],
+      "candidate_block_pair": [
+       19,
+       33
+      ],
+      "reference_page_break": false,
+      "candidate_page_break": true,
+      "reference_pages": [
+       1,
+       1
+      ],
+      "candidate_pages": [
+       0,
+       1
+      ]
+     }
+    ]
+   },
+   "interpretation": "Page count, matched-block page assignment, and page-break boundaries are reported independently."
+  },
+  "typography": {
+   "status": "scored",
+   "applicable": true,
+   "metrics": {
+    "styled_matched_token_count": 184,
+    "reference_styled_token_count": 209,
+    "candidate_styled_token_count": 211,
+    "reference_style_coverage": 0.8803827751196173,
+    "candidate_style_coverage": 0.8720379146919431,
+    "style_coverage_hmean": 0.8761904761904763,
+    "font_size_abs_log_ratio_q50": 0.008298008086413849,
+    "font_size_abs_log_ratio_q90": 0.034476726400631756,
+    "font_size_abs_log_ratio_max": 0.3483769606230803,
+    "font_name_exact_agreement_rate": 0.0,
+    "color_exact_agreement_rate": 1.0,
+    "bold_agreement_rate": 0.9945652173913043,
+    "italic_agreement_rate": 0.4076086956521739,
+    "serif_agreement_rate": 1.0,
+    "monospace_agreement_rate": 1.0,
+    "baseline_displacement_q90": 0.39529169159706196
+   },
+   "evidence": {
+    "style_mismatches": [
+     {
+      "token": "t",
+      "reference_page": 1,
+      "candidate_page": 0,
+      "reference_bbox": [
+       101.61064910888672,
+       129.9632110595703,
+       105.54883575439453,
+       140.872314453125
+      ],
+      "candidate_bbox": [
+       124.94300079345703,
+       615.8290405273438,
+       128.26939392089844,
+       623.5289916992188
+      ],
+      "reference_font": "CMMI10",
+      "candidate_font": "NewCMMath-Book",
+      "reference_size": 10.909099578857422,
+      "candidate_size": 7.699999809265137,
+      "font_size_abs_log_ratio": 0.3483769606230803,
+      "reference_style_bits": {
+       "italic": true,
+       "serif": true,
+       "monospace": false,
+       "bold": false
+      },
+      "candidate_style_bits": {
+       "italic": false,
+       "serif": true,
+       "monospace": false,
+       "bold": false
+      },
+      "reference_color": 0,
+      "candidate_color": 0
+     },
+     {
+      "token": "Pu,t",
+      "reference_page": 1,
+      "candidate_page": 0,
+      "reference_bbox": [
+       522.177490234375,
+       129.9632110595703,
+       539.5023193359375,
+       141.86724853515625
+      ],
+      "candidate_bbox": [
+       522.2877807617188,
+       285.5402526855469,
+       539.384033203125,
+       298.6170349121094
+      ],
+      "reference_font": "CMMI8",
+      "candidate_font": "NewCMMath-Book",
+      "reference_size": 7.970099925994873,
+      "candidate_size": 7.699999809265137,
+      "font_size_abs_log_ratio": 0.034476726400631756,
+      "reference_style_bits": {
+       "italic": true,
+       "serif": true,
+       "monospace": false,
+       "bold": false
+      },
+      "candidate_style_bits": {
+       "italic": false,
+       "serif": true,
+       "monospace": false,
+       "bold": false
+      },
+      "reference_color": 0,
+      "candidate_color": 0
+     },
+     {
+      "token": "Pu,t",
+      "reference_page": 1,
+      "candidate_page": 0,
+      "reference_bbox": [
+       99.11795043945312,
+       143.5132598876953,
+       116.43525695800781,
+       155.416259765625
+      ],
+      "candidate_bbox": [
+       87.4000015258789,
+       299.6532287597656,
+       104.49620056152344,
+       312.73004150390625
+      ],
+      "reference_font": "CMMI8",
+      "candidate_font": "NewCMMath-Book",
+      "reference_size": 7.970099925994873,
+      "candidate_size": 7.699999809265137,
+      "font_size_abs_log_ratio": 0.034476726400631756,
+      "reference_style_bits": {
+       "italic": true,
+       "serif": true,
+       "monospace": false,
+       "bold": false
+      },
+      "candidate_style_bits": {
+       "italic": false,
+       "serif": true,
+       "monospace": false,
+       "bold": false
+      },
+      "reference_color": 0,
+      "candidate_color": 0
+     },
+     {
+      "token": "Pu,t",
+      "reference_page": 1,
+      "candidate_page": 0,
+      "reference_bbox": [
+       111.15068054199219,
+       184.16029357910156,
+       128.4732666015625,
+       196.0643310546875
+      ],
+      "candidate_bbox": [
+       98.43299865722656,
+       342.09124755859375,
+       115.5291976928711,
+       355.16802978515625
+      ],
+      "reference_font": "CMMI8",
+      "candidate_font": "NewCMMath-Book",
+      "reference_size": 7.970099925994873,
+      "candidate_size": 7.699999809265137,
+      "font_size_abs_log_ratio": 0.034476726400631756,
+      "reference_style_bits": {
+       "italic": true,
+       "serif": true,
+       "monospace": false,
+       "bold": false
+      },
+      "candidate_style_bits": {
+       "italic": false,
+       "serif": true,
+       "monospace": false,
+       "bold": false
+      },
+      "reference_color": 0,
+      "candidate_color": 0
+     },
+     {
+      "token": "Pu,t",
+      "reference_page": 1,
+      "candidate_page": 0,
+      "reference_bbox": [
+       127.42167663574219,
+       240.55433654785156,
+       144.74424743652344,
+       252.4583740234375
+      ],
+      "candidate_bbox": [
+       113.83300018310547,
+       398.57623291015625,
+       130.92919921875,
+       411.6530456542969
+      ],
+      "reference_font": "CMMI8",
+      "candidate_font": "NewCMMath-Book",
+      "reference_size": 7.970099925994873,
+      "candidate_size": 7.699999809265137,
+      "font_size_abs_log_ratio": 0.034476726400631756,
+      "reference_style_bits": {
+       "italic": true,
+       "serif": true,
+       "monospace": false,
+       "bold": false
+      },
+      "candidate_style_bits": {
+       "italic": false,
+       "serif": true,
+       "monospace": false,
+       "bold": false
+      },
+      "reference_color": 0,
+      "candidate_color": 0
+     },
+     {
+      "token": "Pu,t",
+      "reference_page": 1,
+      "candidate_page": 0,
+      "reference_bbox": [
+       150.7998504638672,
+       302.351318359375,
+       168.1352081298828,
+       314.25433349609375
+      ],
+      "candidate_bbox": [
+       138.14300537109375,
+       455.0612487792969,
+       155.23919677734375,
+       468.1380310058594
+      ],
+      "reference_font": "CMMI8",
+      "candidate_font": "NewCMMath-Book",
+      "reference_size": 7.970099925994873,
+      "candidate_size": 7.699999809265137,
+      "font_size_abs_log_ratio": 0.034476726400631756,
+      "reference_style_bits": {
+       "italic": true,
+       "serif": true,
+       "monospace": false,
+       "bold": false
+      },
+      "candidate_style_bits": {
+       "italic": false,
+       "serif": true,
+       "monospace": false,
+       "bold": false
+      },
+      "reference_color": 0,
+      "candidate_color": 0
+     },
+     {
+      "token": "Pu,t",
+      "reference_page": 1,
+      "candidate_page": 0,
+      "reference_bbox": [
+       150.7998504638672,
+       364.1483459472656,
+       168.1352081298828,
+       376.0513610839844
+      ],
+      "candidate_bbox": [
+       138.14300537109375,
+       511.5462341308594,
+       155.23919677734375,
+       524.6229858398438
+      ],
+      "reference_font": "CMMI8",
+      "candidate_font": "NewCMMath-Book",
+      "reference_size": 7.970099925994873,
+      "candidate_size": 7.699999809265137,
+      "font_size_abs_log_ratio": 0.034476726400631756,
+      "reference_style_bits": {
+       "italic": true,
+       "serif": true,
+       "monospace": false,
+       "bold": false
+      },
+      "candidate_style_bits": {
+       "italic": false,
+       "serif": true,
+       "monospace": false,
+       "bold": false
+      },
+      "reference_color": 0,
+      "candidate_color": 0
+     },
+     {
+      "token": "Pu,t",
+      "reference_page": 1,
+      "candidate_page": 0,
+      "reference_bbox": [
+       134.52883911132812,
+       439.4934387207031,
+       151.8642120361328,
+       451.3974609375
+      ],
+      "candidate_bbox": [
+       122.74299621582031,
+       582.1771850585938,
+       139.83920288085938,
+       595.2540283203125
+      ],
+      "reference_font": "CMMI8",
+      "candidate_font": "NewCMMath-Book",
+      "reference_size": 7.970099925994873,
+      "candidate_size": 7.699999809265137,
+      "font_size_abs_log_ratio": 0.034476726400631756,
+      "reference_style_bits": {
+       "italic": true,
+       "serif": true,
+       "monospace": false,
+       "bold": false
+      },
+      "candidate_style_bits": {
+       "italic": false,
+       "serif": true,
+       "monospace": false,
+       "bold": false
+      },
+      "reference_color": 0,
+      "candidate_color": 0
+     },
+     {
+      "token": "Pu,t",
+      "reference_page": 1,
+      "candidate_page": 0,
+      "reference_bbox": [
+       127.421630859375,
+       453.0434265136719,
+       144.7442169189453,
+       464.9464416503906
+      ],
+      "candidate_bbox": [
+       113.83300018310547,
+       596.3232421875,
+       130.92919921875,
+       609.4000244140625
+      ],
+      "reference_font": "CMMI8",
+      "candidate_font": "NewCMMath-Book",
+      "reference_size": 7.970099925994873,
+      "candidate_size": 7.699999809265137,
+      "font_size_abs_log_ratio": 0.034476726400631756,
+      "reference_style_bits": {
+       "italic": true,
+       "serif": true,
+       "monospace": false,
+       "bold": false
+      },
+      "candidate_style_bits": {
+       "italic": false,
+       "serif": true,
+       "monospace": false,
+       "bold": false
+      },
+      "reference_color": 0,
+      "candidate_color": 0
+     },
+     {
+      "token": "Pu,t\u22121",
+      "reference_page": 1,
+      "candidate_page": 0,
+      "reference_bbox": [
+       159.79293823242188,
+       240.55433654785156,
+       187.920654296875,
+       252.4583740234375
+      ],
+      "candidate_bbox": [
+       147.42919921875,
+       398.57623291015625,
+       174.89730834960938,
+       411.6530456542969
+      ],
+      "reference_font": "CMMI8",
+      "candidate_font": "NewCMMath-Book",
+      "reference_size": 7.970099925994873,
+      "candidate_size": 7.699999809265137,
+      "font_size_abs_log_ratio": 0.034476726400631756,
+      "reference_style_bits": {
+       "italic": true,
+       "serif": true,
+       "monospace": false,
+       "bold": false
+      },
+      "candidate_style_bits": {
+       "italic": false,
+       "serif": true,
+       "monospace": false,
+       "bold": false
+      },
+      "reference_color": 0,
+      "candidate_color": 0
+     },
+     {
+      "token": "Pu,t\u22121",
+      "reference_page": 1,
+      "candidate_page": 0,
+      "reference_bbox": [
+       183.1829071044922,
+       302.351318359375,
+       211.3106231689453,
+       314.25433349609375
+      ],
+      "candidate_bbox": [
+       171.73919677734375,
+       455.0612487792969,
+       199.20730590820312,
+       468.1380310058594
+      ],
+      "reference_font": "CMMI8",
+      "candidate_font": "NewCMMath-Book",
+      "reference_size": 7.970099925994873,
+      "candidate_size": 7.699999809265137,
+      "font_size_abs_log_ratio": 0.034476726400631756,
+      "reference_style_bits": {
+       "italic": true,
+       "serif": true,
+       "monospace": false,
+       "bold": false
+      },
+      "candidate_style_bits": {
+       "italic": false,
+       "serif": true,
+       "monospace": false,
+       "bold": false
+      },
+      "reference_color": 0,
+      "candidate_color": 0
+     },
+     {
+      "token": "Pu,t\u22121",
+      "reference_page": 1,
+      "candidate_page": 0,
+      "reference_bbox": [
+       183.1829071044922,
+       364.1483459472656,
+       211.3106231689453,
+       376.0513610839844
+      ],
+      "candidate_bbox": [
+       171.73919677734375,
+       511.5462341308594,
+       199.20730590820312,
+       524.6229858398438
+      ],
+      "reference_font": "CMMI8",
+      "candidate_font": "NewCMMath-Book",
+      "reference_size": 7.970099925994873,
+      "candidate_size": 7.699999809265137,
+      "font_size_abs_log_ratio": 0.034476726400631756,
+      "reference_style_bits": {
+       "italic": true,
+       "serif": true,
+       "monospace": false,
+       "bold": false
+      },
+      "candidate_style_bits": {
+       "italic": false,
+       "serif": true,
+       "monospace": false,
+       "bold": false
+      },
+      "reference_color": 0,
+      "candidate_color": 0
+     },
+     {
+      "token": "Pu,t\u22121",
+      "reference_page": 1,
+      "candidate_page": 0,
+      "reference_bbox": [
+       159.79290771484375,
+       453.0434265136719,
+       187.92062377929688,
+       464.9464416503906
+      ],
+      "candidate_bbox": [
+       147.42919921875,
+       596.3232421875,
+       174.89730834960938,
+       609.4000244140625
+      ],
+      "reference_font": "CMMI8",
+      "candidate_font": "NewCMMath-Book",
+      "reference_size": 7.970099925994873,
+      "candidate_size": 7.699999809265137,
+      "font_size_abs_log_ratio": 0.034476726400631756,
+      "reference_style_bits": {
+       "italic": true,
+       "serif": true,
+       "monospace": false,
+       "bold": false
+      },
+      "candidate_style_bits": {
+       "italic": false,
+       "serif": true,
+       "monospace": false,
+       "bold": false
+      },
+      "reference_color": 0,
+      "candidate_color": 0
+     },
+     {
+      "token": "SOFF",
+      "reference_page": 1,
+      "candidate_page": 0,
+      "reference_bbox": [
+       115.38895416259766,
+       196.0482177734375,
+       141.25338745117188,
+       208.618408203125
+      ],
+      "candidate_bbox": [
+       102.80000305175781,
+       354.8550720214844,
+       126.24980163574219,
+       367.2042541503906
+      ],
+      "reference_font": "CMMI8",
+      "candidate_font": "NewCMMath-Book",
+      "reference_size": 7.970099925994873,
+      "candidate_size": 7.699999809265137,
+      "font_size_abs_log_ratio": 0.034476726400631756,
+      "reference_style_bits": {
+       "italic": true,
+       "serif": true,
+       "monospace": false,
+       "bold": false
+      },
+      "candidate_style_bits": {
+       "italic": false,
+       "serif": true,
+       "monospace": false,
+       "bold": false
+      },
+      "reference_color": 0,
+      "candidate_color": 0
+     },
+     {
+      "token": "SOFF",
+      "reference_page": 1,
+      "candidate_page": 0,
+      "reference_bbox": [
+       115.38890075683594,
+       559.7743530273438,
+       141.25332641601562,
+       572.3455200195312
+      ],
+      "candidate_bbox": [
+       102.80000305175781,
+       707.9771118164062,
+       126.24980163574219,
+       720.3262329101562
+      ],
+      "reference_font": "CMMI8",
+      "candidate_font": "NewCMMath-Book",
+      "reference_size": 7.970099925994873,
+      "candidate_size": 7.699999809265137,
+      "font_size_abs_log_ratio": 0.034476726400631756,
+      "reference_style_bits": {
+       "italic": true,
+       "serif": true,
+       "monospace": false,
+       "bold": false
+      },
+      "candidate_style_bits": {
+       "italic": false,
+       "serif": true,
+       "monospace": false,
+       "bold": false
+      },
+      "reference_color": 0,
+      "candidate_color": 0
+     },
+     {
+      "token": "SON_DOWN",
+      "reference_page": 1,
+      "candidate_page": 0,
+      "reference_bbox": [
+       131.659912109375,
+       268.8192138671875,
+       189.51632690429688,
+       283.37237548828125
+      ],
+      "candidate_bbox": [
+       118.19999694824219,
+       424.3525390625,
+       166.0279998779297,
+       437.80224609375
+      ],
+      "reference_font": "CMMI8",
+      "candidate_font": "NewCMMath-Book",
+      "reference_size": 7.970099925994873,
+      "candidate_size": 7.699999809265137,
+      "font_size_abs_log_ratio": 0.034476726400631756,
+      "reference_style_bits": {
+       "italic": true,
+       "serif": true,
+       "monospace": false,
+       "bold": false
+      },
+      "candidate_style_bits": {
+       "italic": false,
+       "serif": true,
+       "monospace": false,
+       "bold": false
+      },
+      "reference_color": 0,
+      "candidate_color": 0
+     },
+     {
+      "token": "SON_DOWN",
+      "reference_page": 1,
+      "candidate_page": 0,
+      "reference_bbox": [
+       131.659912109375,
+       330.6152648925781,
+       189.51632690429688,
+       345.16943359375
+      ],
+      "candidate_bbox": [
+       118.19999694824219,
+       480.8375244140625,
+       166.0279998779297,
+       494.2872314453125
+      ],
+      "reference_font": "CMMI8",
+      "candidate_font": "NewCMMath-Book",
+      "reference_size": 7.970099925994873,
+      "candidate_size": 7.699999809265137,
+      "font_size_abs_log_ratio": 0.034476726400631756,
+      "reference_style_bits": {
+       "italic": true,
+       "serif": true,
+       "monospace": false,
+       "bold": false
+      },
+      "candidate_style_bits": {
+       "italic": false,
+       "serif": true,
+       "monospace": false,
+       "bold": false
+      },
+      "reference_color": 0,
+      "candidate_color": 0
+     },
+     {
+      "token": "SON_DOWN",
+      "reference_page": 1,
+      "candidate_page": 0,
+      "reference_bbox": [
+       131.659912109375,
+       392.4123229980469,
+       189.51632690429688,
+       406.96551513671875
+      ],
+      "candidate_bbox": [
+       118.19999694824219,
+       537.3225708007812,
+       166.0279998779297,
+       550.772216796875
+      ],
+      "reference_font": "CMMI8",
+      "candidate_font": "NewCMMath-Book",
+      "reference_size": 7.970099925994873,
+      "candidate_size": 7.699999809265137,
+      "font_size_abs_log_ratio": 0.034476726400631756,
+      "reference_style_bits": {
+       "italic": true,
+       "serif": true,
+       "monospace": false,
+       "bold": false
+      },
+      "candidate_style_bits": {
+       "italic": false,
+       "serif": true,
+       "monospace": false,
+       "bold": false
+      },
+      "reference_color": 0,
+      "candidate_color": 0
+     },
+     {
+      "token": "SON_DOWN",
+      "reference_page": 1,
+      "candidate_page": 1,
+      "reference_bbox": [
+       115.38890075683594,
+       620.057373046875,
+       173.2453155517578,
+       634.6105346679688
+      ],
+      "candidate_bbox": [
+       102.80000305175781,
+       110.53629302978516,
+       150.62799072265625,
+       123.98599243164062
+      ],
+      "reference_font": "CMMI8",
+      "candidate_font": "NewCMMath-Book",
+      "reference_size": 7.970099925994873,
+      "candidate_size": 7.699999809265137,
+      "font_size_abs_log_ratio": 0.034476726400631756,
+      "reference_style_bits": {
+       "italic": true,
+       "serif": true,
+       "monospace": false,
+       "bold": false
+      },
+      "candidate_style_bits": {
+       "italic": false,
+       "serif": true,
+       "monospace": false,
+       "bold": false
+      },
+      "reference_color": 0,
+      "candidate_color": 0
+     },
+     {
+      "token": "SON_FLAT",
+      "reference_page": 1,
+      "candidate_page": 0,
+      "reference_bbox": [
+       131.659912109375,
+       285.1572265625,
+       183.36341857910156,
+       299.7113952636719
+      ],
+      "candidate_bbox": [
+       118.19999694824219,
+       438.4655456542969,
+       161.63900756835938,
+       451.9152526855469
+      ],
+      "reference_font": "CMMI8",
+      "candidate_font": "NewCMMath-Book",
+      "reference_size": 7.970099925994873,
+      "candidate_size": 7.699999809265137,
+      "font_size_abs_log_ratio": 0.034476726400631756,
+      "reference_style_bits": {
+       "italic": true,
+       "serif": true,
+       "monospace": false,
+       "bold": false
+      },
+      "candidate_style_bits": {
+       "italic": false,
+       "serif": true,
+       "monospace": false,
+       "bold": false
+      },
+      "reference_color": 0,
+      "candidate_color": 0
+     },
+     {
+      "token": "SON_FLAT",
+      "reference_page": 1,
+      "candidate_page": 0,
+      "reference_bbox": [
+       131.659912109375,
+       346.95428466796875,
+       183.36341857910156,
+       361.5074768066406
+      ],
+      "candidate_bbox": [
+       118.19999694824219,
+       494.9505310058594,
+       161.63900756835938,
+       508.4002380371094
+      ],
+      "reference_font": "CMMI8",
+      "candidate_font": "NewCMMath-Book",
+      "reference_size": 7.970099925994873,
+      "candidate_size": 7.699999809265137,
+      "font_size_abs_log_ratio": 0.034476726400631756,
+      "reference_style_bits": {
+       "italic": true,
+       "serif": true,
+       "monospace": false,
+       "bold": false
+      },
+      "candidate_style_bits": {
+       "italic": false,
+       "serif": true,
+       "monospace": false,
+       "bold": false
+      },
+      "reference_color": 0,
+      "candidate_color": 0
+     },
+     {
+      "token": "SON_FLAT",
+      "reference_page": 1,
+      "candidate_page": 0,
+      "reference_bbox": [
+       131.659912109375,
+       408.7503356933594,
+       183.36341857910156,
+       423.30450439453125
+      ],
+      "candidate_bbox": [
+       118.19999694824219,
+       551.435546875,
+       161.63900756835938,
+       564.8851928710938
+      ],
+      "reference_font": "CMMI8",
+      "candidate_font": "NewCMMath-Book",
+      "reference_size": 7.970099925994873,
+      "candidate_size": 7.699999809265137,
+      "font_size_abs_log_ratio": 0.034476726400631756,
+      "reference_style_bits": {
+       "italic": true,
+       "serif": true,
+       "monospace": false,
+       "bold": false
+      },
+      "candidate_style_bits": {
+       "italic": false,
+       "serif": true,
+       "monospace": false,
+       "bold": false
+      },
+      "reference_color": 0,
+      "candidate_color": 0
+     },
+     {
+      "token": "SON_FLAT",
+      "reference_page": 1,
+      "candidate_page": 1,
+      "reference_bbox": [
+       115.38890075683594,
+       636.3953247070312,
+       167.09239196777344,
+       650.9495239257812
+      ],
+      "candidate_bbox": [
+       102.80000305175781,
+       124.6492691040039,
+       146.23899841308594,
+       138.09896850585938
+      ],
+      "reference_font": "CMMI8",
+      "candidate_font": "NewCMMath-Book",
+      "reference_size": 7.970099925994873,
+      "candidate_size": 7.699999809265137,
+      "font_size_abs_log_ratio": 0.034476726400631756,
+      "reference_style_bits": {
+       "italic": true,
+       "serif": true,
+       "monospace": false,
+       "bold": false
+      },
+      "candidate_style_bits": {
+       "italic": false,
+       "serif": true,
+       "monospace": false,
+       "bold": false
+      },
+      "reference_color": 0,
+      "candidate_color": 0
+     },
+     {
+      "token": "SON_UP",
+      "reference_page": 1,
+      "candidate_page": 0,
+      "reference_bbox": [
+       131.65992736816406,
+       252.480224609375,
+       171.7429962158203,
+       267.034423828125
+      ],
+      "candidate_bbox": [
+       118.19999694824219,
+       410.2395324707031,
+       151.48269653320312,
+       423.6892395019531
+      ],
+      "reference_font": "CMMI8",
+      "candidate_font": "NewCMMath-Book",
+      "reference_size": 7.970099925994873,
+      "candidate_size": 7.699999809265137,
+      "font_size_abs_log_ratio": 0.034476726400631756,
+      "reference_style_bits": {
+       "italic": true,
+       "serif": true,
+       "monospace": false,
+       "bold": false
+      },
+      "candidate_style_bits": {
+       "italic": false,
+       "serif": true,
+       "monospace": false,
+       "bold": false
+      },
+      "reference_color": 0,
+      "candidate_color": 0
+     }
+    ]
+   },
+   "interpretation": "Raw PDF font observables are diagnostic; font names and flags are renderer metadata, not perceptual truth."
+  },
+  "raster_ink": {
+   "status": "scored",
+   "applicable": true,
+   "metrics": {
+    "paired_page_count": 2,
+    "unpaired_page_count": 0,
+    "unregistered_tolerant_ink_f1_macro": 0.11668995989299247,
+    "registered_tolerant_ink_f1_macro": 0.18952046249812995,
+    "registration_gain": 0.07283050260513749
+   },
+   "evidence": {
+    "pages": [
+     {
+      "page": 0,
+      "reference_raster_size": [
+       816,
+       1056
+      ],
+      "candidate_raster_size_before_resize": [
+       816,
+       1056
+      ],
+      "candidate_resized_to_reference_canvas": true,
+      "coordinate_frame": "registered_reference_raster",
+      "registration_translation_px": [
+       -39,
+       6
+      ],
+      "unregistered": {
+       "reference_ink_pixels": 8367,
+       "candidate_ink_pixels": 29384,
+       "precision": 0.06534168254832562,
+       "recall": 0.21178439106011712,
+       "f1": 0.09987041832009727,
+       "unmatched_ink_pixels": 34059,
+       "unmatched_ink_fraction_of_union": 0.9135997854077254
+      },
+      "registered": {
+       "reference_ink_pixels": 8367,
+       "candidate_ink_pixels": 29384,
+       "precision": 0.15824938742172612,
+       "recall": 0.547508067407673,
+       "f1": 0.24553142353037224,
+       "unmatched_ink_pixels": 28520,
+       "unmatched_ink_fraction_of_union": 0.8072459666006228
+      },
+      "registered_mean_absolute_gray_difference": 0.018685216678025935,
+      "top_difference_bbox": {
+       "pixel_bbox": [
+        57,
+        123,
+        720,
+        1000
+       ],
+       "normalized_bbox": [
+        0.06985294117647059,
+        0.11647727272727272,
+        0.8823529411764706,
+        0.946969696969697
+       ]
+      }
+     },
+     {
+      "page": 1,
+      "reference_raster_size": [
+       816,
+       1056
+      ],
+      "candidate_raster_size_before_resize": [
+       816,
+       1056
+      ],
+      "candidate_resized_to_reference_canvas": true,
+      "coordinate_frame": "registered_reference_raster",
+      "registration_translation_px": [
+       0,
+       0
+      ],
+      "unregistered": {
+       "reference_ink_pixels": 27119,
+       "candidate_ink_pixels": 5097,
+       "precision": 0.42044339807730036,
+       "recall": 0.07935395847929495,
+       "f1": 0.13350950146588766,
+       "unmatched_ink_pixels": 27921,
+       "unmatched_ink_fraction_of_union": 0.8889207258834766
+      },
+      "registered": {
+       "reference_ink_pixels": 27119,
+       "candidate_ink_pixels": 5097,
+       "precision": 0.42044339807730036,
+       "recall": 0.07935395847929495,
+       "f1": 0.13350950146588766,
+       "unmatched_ink_pixels": 27921,
+       "unmatched_ink_fraction_of_union": 0.8889207258834766
+      },
+      "registered_mean_absolute_gray_difference": 0.01598923836840143,
+      "top_difference_bbox": {
+       "pixel_bbox": [
+        96,
+        93,
+        720,
+        1000
+       ],
+       "normalized_bbox": [
+        0.11764705882352941,
+        0.08806818181818182,
+        0.8823529411764706,
+        0.946969696969697
+       ]
+      }
+     }
+    ],
+    "top_difference_bbox": {
+     "page": 1,
+     "unpaired_side": null,
+     "coordinate_frame": "registered_reference_raster",
+     "registration_translation_px": [
+      0,
+      0
+     ],
+     "pixel_bbox": [
+      96,
+      93,
+      720,
+      1000
+     ],
+     "normalized_bbox": [
+      0.11764705882352941,
+      0.08806818181818182,
+      0.8823529411764706,
+      0.946969696969697
+     ]
+    }
+   },
+   "interpretation": "Candidate pages are resized to the reference canvas, then optionally translation-registered. Use canvas and geometry axes for layout claims."
+  },
+  "raster_perceptual": {
+   "status": "scored",
+   "applicable": true,
+   "metrics": {
+    "paired_page_count": 2,
+    "scored_page_count": 2,
+    "abstained_page_count": 0,
+    "unpaired_page_count": 0,
+    "unregistered_ssim_macro": 0.8551755598392967,
+    "registered_ssim_macro": 0.8602801280313644,
+    "unregistered_multiscale_ssim_diagnostic_macro": 0.8780143522407591,
+    "registered_multiscale_ssim_diagnostic_macro": 0.8858264567748493
+   },
+   "evidence": {
+    "pages": [
+     {
+      "page": 0,
+      "status": "scored",
+      "unregistered_ssim": 0.8500167388833261,
+      "registered_ssim": 0.8602258752674614,
+      "unregistered_multiscale_ssim_diagnostic": 0.8693281164491178,
+      "registered_multiscale_ssim_diagnostic": 0.8849523255172983,
+      "unregistered_scale_scores": [
+       {
+        "downsample_factor": 1,
+        "ssim": 0.8500167388833261
+       },
+       {
+        "downsample_factor": 2,
+        "ssim": 0.7929464054272604
+       },
+       {
+        "downsample_factor": 4,
+        "ssim": 0.7151225896753134
+       },
+       {
+        "downsample_factor": 8,
+        "ssim": 0.6062633653958683
+       }
+      ],
+      "registered_scale_scores": [
+       {
+        "downsample_factor": 1,
+        "ssim": 0.8602258752674614
+       },
+       {
+        "downsample_factor": 2,
+        "ssim": 0.8103560912116036
+       },
+       {
+        "downsample_factor": 4,
+        "ssim": 0.7535949362061861
+       },
+       {
+        "downsample_factor": 8,
+        "ssim": 0.6616536686993266
+       }
+      ],
+      "registration_translation_px": [
+       -39,
+       6
+      ],
+      "candidate_resized_to_reference_canvas": false,
+      "reference_raster_size": [
+       816,
+       1056
+      ],
+      "candidate_raster_size_before_resize": [
+       816,
+       1056
+      ],
+      "registered_difference_bbox": {
+       "pixel_bbox": [
+        57,
+        123,
+        720,
+        1000
+       ],
+       "normalized_bbox": [
+        0.06985294117647059,
+        0.11647727272727272,
+        0.8823529411764706,
+        0.946969696969697
+       ]
+      }
+     },
+     {
+      "page": 1,
+      "status": "scored",
+      "unregistered_ssim": 0.8603343807952675,
+      "registered_ssim": 0.8603343807952675,
+      "unregistered_multiscale_ssim_diagnostic": 0.8867005880324004,
+      "registered_multiscale_ssim_diagnostic": 0.8867005880324004,
+      "unregistered_scale_scores": [
+       {
+        "downsample_factor": 1,
+        "ssim": 0.8603343807952675
+       },
+       {
+        "downsample_factor": 2,
+        "ssim": 0.8048826644944854
+       },
+       {
+        "downsample_factor": 4,
+        "ssim": 0.7471183248841904
+       },
+       {
+        "downsample_factor": 8,
+        "ssim": 0.6860314201254796
+       }
+      ],
+      "registered_scale_scores": [
+       {
+        "downsample_factor": 1,
+        "ssim": 0.8603343807952675
+       },
+       {
+        "downsample_factor": 2,
+        "ssim": 0.8048826644944854
+       },
+       {
+        "downsample_factor": 4,
+        "ssim": 0.7471183248841904
+       },
+       {
+        "downsample_factor": 8,
+        "ssim": 0.6860314201254796
+       }
+      ],
+      "registration_translation_px": [
+       0,
+       0
+      ],
+      "candidate_resized_to_reference_canvas": false,
+      "reference_raster_size": [
+       816,
+       1056
+      ],
+      "candidate_raster_size_before_resize": [
+       816,
+       1056
+      ],
+      "registered_difference_bbox": {
+       "pixel_bbox": [
+        96,
+        93,
+        720,
+        1000
+       ],
+       "normalized_bbox": [
+        0.11764705882352941,
+        0.08806818181818182,
+        0.8823529411764706,
+        0.946969696969697
+       ]
+      }
+     }
+    ]
+   },
+   "interpretation": "SSIM is reported before and after translation-only registration. The multiscale value is the documented geometric mean of four SSIM scales, not canonical MS-SSIM. No candidate resizing is performed; SSIM abstains when physical canvases/grids differ."
+  },
+  "tables": {
+   "status": "abstain",
+   "applicable": null,
+   "metrics": {},
+   "evidence": {
+    "source_flags": {
+     "reference": null,
+     "candidate": null
+    }
+   },
+   "reason": "Applicability for tables was not established by source metadata."
+  },
+  "formulas": {
+   "status": "abstain",
+   "applicable": null,
+   "metrics": {},
+   "evidence": {
+    "source_flags": {
+     "reference": null,
+     "candidate": null
+    }
+   },
+   "reason": "Applicability for formulas was not established by source metadata."
+  },
+  "figures": {
+   "status": "abstain",
+   "applicable": null,
+   "metrics": {},
+   "evidence": {
+    "source_flags": {
+     "reference": null,
+     "candidate": null
+    }
+   },
+   "reason": "Applicability for figures was not established by source metadata."
+  }
+ }
+}

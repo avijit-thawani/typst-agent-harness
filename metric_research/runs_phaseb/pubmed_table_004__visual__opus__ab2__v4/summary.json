@@ -1,0 +1,14 @@
+{
+  "sample_id": "pubmed_table_004",
+  "arm": "v4_v2feedback",
+  "mode": "visual",
+  "model": "opus",
+  "effort": "medium",
+  "cost_usd": 1.7507059999999999,
+  "num_turns": 32,
+  "duration_s": 409,
+  "final": {
+    "compiled": true,
+    "graded_file": "~/Downloads/learn/latex_typst/metric_research/runs_phaseb/pubmed_table_004__visual__opus__ab2__v4/work/feedback/best/output.typ"
+  }
+}

@@ -1,0 +1,29 @@
+{
+  "sample_id": "i2s_equation_001",
+  "set": "i2s_equation",
+  "mode": "visual",
+  "model": "opus",
+  "method": "claude opus agentic (visual, effort medium) [v3]",
+  "claude_exit": 0,
+  "cost_usd": 1.258458,
+  "num_turns": 30,
+  "duration_s": 282,
+  "is_error": false,
+  "tool_calls": 29,
+  "score_runs": 10,
+  "baseline_overall": null,
+  "final": {
+    "compiled": true,
+    "overall": 0.599961478899299,
+    "visual": 0.5905745299201953,
+    "content": 0.6177920224083601,
+    "pagination": 1.0,
+    "layout": 0.8369076129137902,
+    "typography": 0.8551012271856887,
+    "raster": 0.24322077357206132,
+    "pages": "1/1",
+    "review_flags": [
+      "raster_layout_disagreement"
+    ]
+  }
+}

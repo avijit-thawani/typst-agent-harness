@@ -1,0 +1,208 @@
+{
+ "pandoc": {
+  "06_tables_moderate_010": {
+   "overall": 0.020385576771997035,
+   "content": 0.05444209636517329,
+   "layout": 0.5956730415247203,
+   "typography": 0.8741221378332292,
+   "raster": 8.626874037387446e-19,
+   "pagination": 0.6499999999999999,
+   "status": "ok",
+   "pages": "2/1",
+   "token_precision": 1.0,
+   "token_recall": 0.027900146842878122
+  },
+  "05_tables_simple_023": {
+   "overall": 0.02350669503045802,
+   "content": 0.08485115041213617,
+   "layout": 0.5956730787984597,
+   "typography": 0.8741221378332292,
+   "raster": 8.208693995750663e-09,
+   "pagination": 0.5333333333333333,
+   "status": "ok",
+   "pages": "3/1",
+   "token_precision": 1.0,
+   "token_recall": 0.04042553191489362
+  },
+  "05_tables_simple_005": {
+   "overall": 0.020665150577659247,
+   "content": 0.056602609050678813,
+   "layout": 0.5956730787984597,
+   "typography": 0.8741221378332292,
+   "raster": 2.1552870273331629e-19,
+   "pagination": 0.6499999999999999,
+   "status": "ok",
+   "pages": "2/1",
+   "token_precision": 1.0,
+   "token_recall": 0.03150912106135987
+  },
+  "09_algorithms_003": {
+   "overall": 0.3301837902005463,
+   "content": 0.6252585697399526,
+   "layout": 0.3011576563186719,
+   "typography": 0.8247013512427468,
+   "raster": 0.058767505472409755,
+   "pagination": 0.43571428571428567,
+   "status": "ok",
+   "pages": "2/1",
+   "token_precision": 0.978494623655914,
+   "token_recall": 0.4666666666666667
+  },
+  "05_tables_simple_021": {
+   "overall": 0.02102206004420293,
+   "content": 0.06166514155290234,
+   "layout": 0.5956730787984597,
+   "typography": 0.8741221378332292,
+   "raster": 8.208693995750663e-09,
+   "pagination": 0.5333333333333333,
+   "status": "ok",
+   "pages": "3/1",
+   "token_precision": 1.0,
+   "token_recall": 0.03281519861830743
+  },
+  "07_figures_captions_007": {
+   "overall": 0.4957957803462966,
+   "content": 0.8917741132200764,
+   "layout": 0.468143975913651,
+   "typography": 0.8987022015172939,
+   "raster": 0.09934669286459798,
+   "pagination": 1.0,
+   "status": "ok",
+   "pages": "1/1",
+   "token_precision": 0.9523809523809523,
+   "token_recall": 0.821917808219178
+  },
+  "04_math_aligned_014": {
+   "overall": 0.47589243096150213,
+   "content": 0.7730210608969016,
+   "layout": 0.45711669200253224,
+   "typography": 0.8411678370893587,
+   "raster": 0.13440643431154078,
+   "pagination": 0.5827868852459016,
+   "status": "ok",
+   "pages": "2/1",
+   "token_precision": 0.8061674008810573,
+   "token_recall": 0.6853932584269663
+  },
+  "03_math_inline_display_004": {
+   "overall": 0.49178376802165047,
+   "content": 0.503050863712104,
+   "layout": 0.5302489313778445,
+   "typography": 0.8856222656294223,
+   "raster": 0.22774619021669057,
+   "pagination": 1.0,
+   "status": "ok",
+   "pages": "1/1",
+   "token_precision": 0.4972067039106145,
+   "token_recall": 0.5
+  }
+ },
+ "tylax": {
+  "06_tables_moderate_010": {
+   "overall": 0.1591619469614405,
+   "content": 0.09987679451467751,
+   "layout": 0.6113527598702132,
+   "typography": 0.869569516127182,
+   "raster": 0.012429551808719465,
+   "pagination": 0.6323529411764706,
+   "status": "ok",
+   "pages": "2/1",
+   "token_precision": 0.918918918918919,
+   "token_recall": 0.049926578560939794
+  },
+  "05_tables_simple_023": {
+   "overall": 0.2278645995901624,
+   "content": 0.15669143183044942,
+   "layout": 0.5293584531396532,
+   "typography": 0.8667599491847915,
+   "raster": 0.04722565509391081,
+   "pagination": 0.45619047619047615,
+   "status": "ok",
+   "pages": "3/1",
+   "token_precision": 0.9459459459459459,
+   "token_recall": 0.07446808510638298
+  },
+  "05_tables_simple_005": {
+   "overall": 0.15594202267790336,
+   "content": 0.10241888924107953,
+   "layout": 0.6103999339315399,
+   "typography": 0.8737107722653596,
+   "raster": 0.010737595937841488,
+   "pagination": 0.6235294117647059,
+   "status": "ok",
+   "pages": "2/1",
+   "token_precision": 0.918918918918919,
+   "token_recall": 0.05638474295190713
+  },
+  "09_algorithms_003": {
+   "overall": 0.3151354209619637,
+   "content": 0.4373361849943302,
+   "layout": 0.4271610468296621,
+   "typography": 0.7064094969100391,
+   "raster": 0.05857604038229386,
+   "pagination": 0.4954545454545454,
+   "status": "ok",
+   "pages": "2/1",
+   "token_precision": 0.44,
+   "token_recall": 0.3384615384615385
+  },
+  "05_tables_simple_021": {
+   "overall": 0.20129754489721652,
+   "content": 0.1116338705666123,
+   "layout": 0.5173123229829428,
+   "typography": 0.8659273802724299,
+   "raster": 0.04719757563248589,
+   "pagination": 0.4627450980392156,
+   "status": "ok",
+   "pages": "3/1",
+   "token_precision": 0.918918918918919,
+   "token_recall": 0.05872193436960276
+  },
+  "07_figures_captions_007": {
+   "status": "failed_compile",
+   "log": "error: unknown variable: ws\n   \u250c\u2500 ../lathe/results/latex_benchmark_v0/07_figures_captions/07_figures_captions_007/tylax.typ:24:74\n   \u2502\n24 \u2502   caption: [Time history of the effective pion mass (distance $8$) for $\\zws b e t a = 5 . 3 0$ and $\\zws k a p p a = 0 . 1 6 7 7$ on a $1 6^zws 3 \\zws t i m e s 3 2$ lattice. Symbols are: ($\\zws t i m e s$) HMC at $\\zws d e l t a \\zws t a u = 0 . 0 0 6 9$, ($+$) HMD at $\\zws d e l t a \\zws t a u = 0 . 0 0 6 9$, ($\\zws b i g c i r c$) HMD at $\\zws d e l t a \\zws t a u = 0 . 0 0 4$. Also shown is the blocksize$= 4 0$ ($\\zws D i a m o n d$) HMC acceptance uncorrected for autocorrelations.],\n   \u2502                                                                           ^^\n   \u2502\n   = hint: if you meant to display multiple letters as is, try adding spaces between each letter: `w s`\n   = hint: or if you meant to display this as text, try placing it in quotes: `\"ws\"`\n\n"
+  },
+  "04_math_aligned_014": {
+   "status": "failed_compile",
+   "log": "error: missing argument: denom\n   \u250c\u2500 ../lathe/results/latex_benchmark_v0/04_math_aligned/04_math_aligned_014/tylax.typ:54:72\n   \u2502\n54 \u2502 $ & \"(i)\" B = B_(1)union B_(2), = E_(1)union E_(2) \"and\" omega(E_(i))>= frac(,)omega(), i = 1,2 ; \\ & \"(ii)\" b(x)- b(y) \"does not change sign for all\"(x,y)in B_(i)times E_(i), i = 1,2 ; \\ & \"(iii)\" | b(x)- m_(b)()| <= | b(x)- b(y)| \"for all\"(x,y)in B_(i)times E_(i), i = 1,2 .  $\n   \u2502                                                                         ^^^^^^^\n\n"
+  },
+  "03_math_inline_display_004": {
+   "status": "failed_compile",
+   "log": "error: missing argument: denom\n   \u250c\u2500 ../lathe/results/latex_benchmark_v0/03_math_inline_display/03_math_inline_display_004/tylax.typ:33:19\n   \u2502\n33 \u2502 $ integral D V exp(frac(,)integral d^(4)x epsilon.alt^(mu nu tau lambda)zws^(+)W_(mu nu)^(alpha beta)zws^(+)G_(tau lambda)^(sigma rho)zws epsilon_(alpha beta sigma rho)- frac(,)integral d^(4)x epsilon.alt^(mu nu tau lambda)zws^(-)W_(mu nu)^(alpha beta)zws^(-)G_(tau lambda)^(sigma rho)zws epsilon_(alpha beta sigma rho)).  $\n   \u2502                    ^^^^^^^\n\n"
+  }
+ },
+ "typetex": {
+  "06_tables_moderate_010": {
+   "status": "failed_compile",
+   "log": "downloading @preview/mitex:0.2.4\n\n  0 B / 106.4 KiB (  0 %),   1.0 MiB/s, ETA: 0 s\n106.4 KiB / 106.4 KiB (100 %),   1.0 MiB/s, ETA: 0 s\ndownloading @preview/xarrow:0.2.0\n\n  0 B /  14.1 KiB (  0 %), 140.9 KiB/s, ETA: 0 s\n 14.1 KiB /  14.1 KiB (100 %), 140.9 KiB/s, ETA: 0 s\nerror: unknown variable: kai\n     \u250c\u2500 @preview/mitex:0.2.4/specs/latex/standard.typ:1030:30\n     \u2502\n1030 \u2502   KaTeX: of-sym(math.upright($kai A T E X$)),\n     \u2502                               ^^^\n     \u2502\n     = hint: if you meant to display multiple letters as is, try adding spaces between each letter: `k a i`\n     = hint: or if you meant to display this as text, try placing it in quotes: `\"kai\"`\n\n  while importing `latex/standard.typ` at @preview/mitex:0.2.4/specs/mod.typ:3:1\n    import \"latex/standard.typ\": package as latex-std\n  while importing `specs/mod.typ` at @preview/mitex:0.2.4/mitex.typ:1:1\n    import \"specs/mod.typ\": mitex-scope\n  while importing `mitex.typ` at @preview/mitex:0.2.4/lib.typ:1:1\n    import \"mitex.typ\": mitex-wasm, mitex-convert, mitex-scope, mitex, mitext, mimath, mi\n  while importing `@preview/mitex:0.2.4` at ../lathe/results/latex_benchmark_v0/06_tables_moderate/06_tables_moderate_010/typetex.typ:1:1\n    import \"@preview/mitex:0.2.4\": *\n\n"
+  },
+  "05_tables_simple_023": {
+   "status": "failed_compile",
+   "log": "error: unknown variable: kai\n     \u250c\u2500 @preview/mitex:0.2.4/specs/latex/standard.typ:1030:30\n     \u2502\n1030 \u2502   KaTeX: of-sym(math.upright($kai A T E X$)),\n     \u2502                               ^^^\n     \u2502\n     = hint: if you meant to display multiple letters as is, try adding spaces between each letter: `k a i`\n     = hint: or if you meant to display this as text, try placing it in quotes: `\"kai\"`\n\n  while importing `latex/standard.typ` at @preview/mitex:0.2.4/specs/mod.typ:3:1\n    import \"latex/standard.typ\": package as latex-std\n  while importing `specs/mod.typ` at @preview/mitex:0.2.4/mitex.typ:1:1\n    import \"specs/mod.typ\": mitex-scope\n  while importing `mitex.typ` at @preview/mitex:0.2.4/lib.typ:1:1\n    import \"mitex.typ\": mitex-wasm, mitex-convert, mitex-scope, mitex, mitext, mimath, mi\n  while importing `@preview/mitex:0.2.4` at ../lathe/results/latex_benchmark_v0/05_tables_simple/05_tables_simple_023/typetex.typ:1:1\n    import \"@preview/mitex:0.2.4\": *\n\n"
+  },
+  "05_tables_simple_005": {
+   "status": "failed_compile",
+   "log": "error: unknown variable: kai\n     \u250c\u2500 @preview/mitex:0.2.4/specs/latex/standard.typ:1030:30\n     \u2502\n1030 \u2502   KaTeX: of-sym(math.upright($kai A T E X$)),\n     \u2502                               ^^^\n     \u2502\n     = hint: if you meant to display multiple letters as is, try adding spaces between each letter: `k a i`\n     = hint: or if you meant to display this as text, try placing it in quotes: `\"kai\"`\n\n  while importing `latex/standard.typ` at @preview/mitex:0.2.4/specs/mod.typ:3:1\n    import \"latex/standard.typ\": package as latex-std\n  while importing `specs/mod.typ` at @preview/mitex:0.2.4/mitex.typ:1:1\n    import \"specs/mod.typ\": mitex-scope\n  while importing `mitex.typ` at @preview/mitex:0.2.4/lib.typ:1:1\n    import \"mitex.typ\": mitex-wasm, mitex-convert, mitex-scope, mitex, mitext, mimath, mi\n  while importing `@preview/mitex:0.2.4` at ../lathe/results/latex_benchmark_v0/05_tables_simple/05_tables_simple_005/typetex.typ:1:1\n    import \"@preview/mitex:0.2.4\": *\n\n"
+  },
+  "09_algorithms_003": {
+   "status": "failed_compile",
+   "log": "error: unknown variable: kai\n     \u250c\u2500 @preview/mitex:0.2.4/specs/latex/standard.typ:1030:30\n     \u2502\n1030 \u2502   KaTeX: of-sym(math.upright($kai A T E X$)),\n     \u2502                               ^^^\n     \u2502\n     = hint: if you meant to display multiple letters as is, try adding spaces between each letter: `k a i`\n     = hint: or if you meant to display this as text, try placing it in quotes: `\"kai\"`\n\n  while importing `latex/standard.typ` at @preview/mitex:0.2.4/specs/mod.typ:3:1\n    import \"latex/standard.typ\": package as latex-std\n  while importing `specs/mod.typ` at @preview/mitex:0.2.4/mitex.typ:1:1\n    import \"specs/mod.typ\": mitex-scope\n  while importing `mitex.typ` at @preview/mitex:0.2.4/lib.typ:1:1\n    import \"mitex.typ\": mitex-wasm, mitex-convert, mitex-scope, mitex, mitext, mimath, mi\n  while importing `@preview/mitex:0.2.4` at ../lathe/results/latex_benchmark_v0/09_algorithms/09_algorithms_003/typetex.typ:1:1\n    import \"@preview/mitex:0.2.4\": *\n\n"
+  },
+  "05_tables_simple_021": {
+   "status": "failed_compile",
+   "log": "error: unknown variable: kai\n     \u250c\u2500 @preview/mitex:0.2.4/specs/latex/standard.typ:1030:30\n     \u2502\n1030 \u2502   KaTeX: of-sym(math.upright($kai A T E X$)),\n     \u2502                               ^^^\n     \u2502\n     = hint: if you meant to display multiple letters as is, try adding spaces between each letter: `k a i`\n     = hint: or if you meant to display this as text, try placing it in quotes: `\"kai\"`\n\n  while importing `latex/standard.typ` at @preview/mitex:0.2.4/specs/mod.typ:3:1\n    import \"latex/standard.typ\": package as latex-std\n  while importing `specs/mod.typ` at @preview/mitex:0.2.4/mitex.typ:1:1\n    import \"specs/mod.typ\": mitex-scope\n  while importing `mitex.typ` at @preview/mitex:0.2.4/lib.typ:1:1\n    import \"mitex.typ\": mitex-wasm, mitex-convert, mitex-scope, mitex, mitext, mimath, mi\n  while importing `@preview/mitex:0.2.4` at ../lathe/results/latex_benchmark_v0/05_tables_simple/05_tables_simple_021/typetex.typ:1:1\n    import \"@preview/mitex:0.2.4\": *\n\n"
+  },
+  "07_figures_captions_007": {
+   "status": "failed_compile",
+   "log": "error: unknown variable: kai\n     \u250c\u2500 @preview/mitex:0.2.4/specs/latex/standard.typ:1030:30\n     \u2502\n1030 \u2502   KaTeX: of-sym(math.upright($kai A T E X$)),\n     \u2502                               ^^^\n     \u2502\n     = hint: if you meant to display multiple letters as is, try adding spaces between each letter: `k a i`\n     = hint: or if you meant to display this as text, try placing it in quotes: `\"kai\"`\n\n  while importing `latex/standard.typ` at @preview/mitex:0.2.4/specs/mod.typ:3:1\n    import \"latex/standard.typ\": package as latex-std\n  while importing `specs/mod.typ` at @preview/mitex:0.2.4/mitex.typ:1:1\n    import \"specs/mod.typ\": mitex-scope\n  while importing `mitex.typ` at @preview/mitex:0.2.4/lib.typ:1:1\n    import \"mitex.typ\": mitex-wasm, mitex-convert, mitex-scope, mitex, mitext, mimath, mi\n  while importing `@preview/mitex:0.2.4` at ../lathe/results/latex_benchmark_v0/07_figures_captions/07_figures_captions_007/typetex.typ:1:1\n    import \"@preview/mitex:0.2.4\": *\n\n"
+  },
+  "04_math_aligned_014": {
+   "status": "failed_compile",
+   "log": "error: unknown variable: kai\n     \u250c\u2500 @preview/mitex:0.2.4/specs/latex/standard.typ:1030:30\n     \u2502\n1030 \u2502   KaTeX: of-sym(math.upright($kai A T E X$)),\n     \u2502                               ^^^\n     \u2502\n     = hint: if you meant to display multiple letters as is, try adding spaces between each letter: `k a i`\n     = hint: or if you meant to display this as text, try placing it in quotes: `\"kai\"`\n\n  while importing `latex/standard.typ` at @preview/mitex:0.2.4/specs/mod.typ:3:1\n    import \"latex/standard.typ\": package as latex-std\n  while importing `specs/mod.typ` at @preview/mitex:0.2.4/mitex.typ:1:1\n    import \"specs/mod.typ\": mitex-scope\n  while importing `mitex.typ` at @preview/mitex:0.2.4/lib.typ:1:1\n    import \"mitex.typ\": mitex-wasm, mitex-convert, mitex-scope, mitex, mitext, mimath, mi\n  while importing `@preview/mitex:0.2.4` at ../lathe/results/latex_benchmark_v0/04_math_aligned/04_math_aligned_014/typetex.typ:1:1\n    import \"@preview/mitex:0.2.4\": *\n\n"
+  },
+  "03_math_inline_display_004": {
+   "status": "failed_compile",
+   "log": "error: unknown variable: kai\n     \u250c\u2500 @preview/mitex:0.2.4/specs/latex/standard.typ:1030:30\n     \u2502\n1030 \u2502   KaTeX: of-sym(math.upright($kai A T E X$)),\n     \u2502                               ^^^\n     \u2502\n     = hint: if you meant to display multiple letters as is, try adding spaces between each letter: `k a i`\n     = hint: or if you meant to display this as text, try placing it in quotes: `\"kai\"`\n\n  while importing `latex/standard.typ` at @preview/mitex:0.2.4/specs/mod.typ:3:1\n    import \"latex/standard.typ\": package as latex-std\n  while importing `specs/mod.typ` at @preview/mitex:0.2.4/mitex.typ:1:1\n    import \"specs/mod.typ\": mitex-scope\n  while importing `mitex.typ` at @preview/mitex:0.2.4/lib.typ:1:1\n    import \"mitex.typ\": mitex-wasm, mitex-convert, mitex-scope, mitex, mitext, mimath, mi\n  while importing `@preview/mitex:0.2.4` at ../lathe/results/latex_benchmark_v0/03_math_inline_display/03_math_inline_display_004/typetex.typ:1:1\n    import \"@preview/mitex:0.2.4\": *\n\n"
+  }
+ }
+}

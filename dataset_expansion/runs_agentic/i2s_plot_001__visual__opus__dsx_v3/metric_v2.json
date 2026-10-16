@@ -1,0 +1,3821 @@
+{
+ "evaluator": {
+  "name": "pdf_metric_axes_v2",
+  "version": 2,
+  "aggregate_score": null,
+  "policy": "No compensatory scalar. Report raw axes, coverage, abstentions, and localized evidence."
+ },
+ "inputs": {
+  "reference_pdf": "~/Downloads/learn/latex_typst/dataset_expansion/runs_agentic/i2s_plot_001__visual__opus__dsx_v3/work/reference.pdf",
+  "candidate_pdf": "~/Downloads/learn/latex_typst/dataset_expansion/runs_agentic/i2s_plot_001__visual__opus__dsx_v3/final_candidate.pdf",
+  "reference_page_count": 1,
+  "candidate_page_count": 1
+ },
+ "configuration": {
+  "render_dpi": 96,
+  "ink_threshold": 245,
+  "ink_tolerance_px": 2,
+  "normalization": "Unicode NFKC, soft-hyphen removal, collapsed whitespace; case preserved"
+ },
+ "applicability": {
+  "tables": null,
+  "formulas": null,
+  "figures": null
+ },
+ "axes": {
+  "canvas": {
+   "status": "scored",
+   "applicable": true,
+   "metrics": {
+    "reference_page_count": 1,
+    "candidate_page_count": 1,
+    "page_count_delta": 0,
+    "paired_page_count": 1,
+    "exact_paired_size_rate": 1.0,
+    "width_abs_log_ratio_max": 0.0,
+    "height_abs_log_ratio_max": 0.0
+   },
+   "evidence": {
+    "page_pairs": [
+     {
+      "page": 0,
+      "reference_size_points": [
+       612.0,
+       792.0
+      ],
+      "candidate_size_points": [
+       612.0,
+       792.0
+      ],
+      "width_abs_log_ratio": 0.0,
+      "height_abs_log_ratio": 0.0,
+      "exact_size_match": true
+     }
+    ]
+   },
+   "interpretation": "Canvas/page-size mismatch only; no token layout residual is folded into this axis."
+  },
+  "content": {
+   "status": "scored",
+   "applicable": true,
+   "metrics": {
+    "matched_block_normalized_edit_similarity_macro": 0.9265312272020808,
+    "matched_block_count": 12,
+    "strict_nfc_token_inventory": {
+     "reference_count": 39,
+     "candidate_count": 38,
+     "matched_count": 37,
+     "precision": 0.9736842105263158,
+     "recall": 0.9487179487179487,
+     "f1": 0.9610389610389611,
+     "exact_match": false,
+     "missing": [
+      "1",
+      "bench-"
+     ],
+     "extra": [
+      "bench"
+     ],
+     "missing_count": 2,
+     "extra_count": 1
+    },
+    "strict_nfc_document_edit_similarity": 0.9719626168224299,
+    "compatibility_nfkc_token_inventory": {
+     "reference_count": 39,
+     "candidate_count": 38,
+     "matched_count": 37,
+     "precision": 0.9736842105263158,
+     "recall": 0.9487179487179487,
+     "f1": 0.9610389610389611
+    },
+    "compatibility_nfkc_document_edit_similarity": 0.9719626168224299
+   },
+   "evidence": {
+    "unmatched_reference_words": [
+     {
+      "word_index": 19,
+      "page": 0,
+      "bbox": [
+       508.483642578125,
+       218.92115783691406,
+       540.0109252929688,
+       229.8302459716797
+      ],
+      "text": "bench-",
+      "normalized": "bench-"
+     },
+     {
+      "word_index": 38,
+      "page": 0,
+      "bbox": [
+       303.2727355957031,
+       741.09521484375,
+       308.727294921875,
+       752.0042724609375
+      ],
+      "text": "1",
+      "normalized": "1"
+     }
+    ],
+    "unmatched_candidate_words": [
+     {
+      "word_index": 19,
+      "page": 0,
+      "bbox": [
+       510.235595703125,
+       221.91262817382812,
+       542.0146484375,
+       232.91262817382812
+      ],
+      "text": "bench\u00ad",
+      "normalized": "bench"
+     }
+    ],
+    "lowest_similarity_block_pairs": [
+     {
+      "reference_block_index": 7,
+      "candidate_block_index": 7,
+      "reference_page": 0,
+      "candidate_page": 0,
+      "reference_text": "4 6",
+      "candidate_text": "4",
+      "normalized_edit_similarity": 0.33333333333333337
+     },
+     {
+      "reference_block_index": 3,
+      "candidate_block_index": 2,
+      "reference_page": 0,
+      "candidate_page": 0,
+      "reference_text": "The figure below is a TikZ/pgfplots drawing drawn from a source-backed image-to-LaTeX bench- mark.",
+      "candidate_text": "1 Visualization The figure below is a TikZ/pgfplots drawing drawn from a source-backed image-to-LaTeX bench\u00ad mark.",
+      "normalized_edit_similarity": 0.8495575221238938
+     },
+     {
+      "reference_block_index": 12,
+      "candidate_block_index": 11,
+      "reference_page": 0,
+      "candidate_page": 0,
+      "reference_text": "Figure 1: Source-backed plot.",
+      "candidate_text": "6 Figure 1: Source-backed plot.",
+      "normalized_edit_similarity": 0.935483870967742
+     },
+     {
+      "reference_block_index": 0,
+      "candidate_block_index": 0,
+      "reference_page": 0,
+      "candidate_page": 0,
+      "reference_text": "Plot Sample 1",
+      "candidate_text": "Plot Sample 1",
+      "normalized_edit_similarity": 1.0
+     },
+     {
+      "reference_block_index": 1,
+      "candidate_block_index": 1,
+      "reference_page": 0,
+      "candidate_page": 0,
+      "reference_text": "Dataset-expansion sample",
+      "candidate_text": "Dataset-expansion sample",
+      "normalized_edit_similarity": 1.0
+     },
+     {
+      "reference_block_index": 4,
+      "candidate_block_index": 3,
+      "reference_page": 0,
+      "candidate_page": 0,
+      "reference_text": "65 6",
+      "candidate_text": "65 6",
+      "normalized_edit_similarity": 1.0
+     },
+     {
+      "reference_block_index": 5,
+      "candidate_block_index": 4,
+      "reference_page": 0,
+      "candidate_page": 0,
+      "reference_text": "9",
+      "candidate_text": "9",
+      "normalized_edit_similarity": 1.0
+     },
+     {
+      "reference_block_index": 6,
+      "candidate_block_index": 5,
+      "reference_page": 0,
+      "candidate_page": 0,
+      "reference_text": "65 6",
+      "candidate_text": "65 6",
+      "normalized_edit_similarity": 1.0
+     },
+     {
+      "reference_block_index": 8,
+      "candidate_block_index": 6,
+      "reference_page": 0,
+      "candidate_page": 0,
+      "reference_text": "9",
+      "candidate_text": "9",
+      "normalized_edit_similarity": 1.0
+     },
+     {
+      "reference_block_index": 9,
+      "candidate_block_index": 9,
+      "reference_page": 0,
+      "candidate_page": 0,
+      "reference_text": "6 4",
+      "candidate_text": "6 4",
+      "normalized_edit_similarity": 1.0
+     },
+     {
+      "reference_block_index": 10,
+      "candidate_block_index": 10,
+      "reference_page": 0,
+      "candidate_page": 0,
+      "reference_text": "61 3",
+      "candidate_text": "61 3",
+      "normalized_edit_similarity": 1.0
+     },
+     {
+      "reference_block_index": 11,
+      "candidate_block_index": 8,
+      "reference_page": 0,
+      "candidate_page": 0,
+      "reference_text": "6",
+      "candidate_text": "6",
+      "normalized_edit_similarity": 1.0
+     }
+    ]
+   },
+   "interpretation": "Strict NFC preservation is the primary text view. NFKC is reported separately as a compatibility view for ligature/encoding equivalence; it never hides the strict mismatch."
+  },
+  "critical_content": {
+   "status": "scored",
+   "applicable": true,
+   "metrics": {
+    "numbers": {
+     "reference_count": 17,
+     "candidate_count": 16,
+     "matched_count": 16,
+     "precision": 1.0,
+     "recall": 0.9411764705882353,
+     "f1": 0.9696969696969697,
+     "exact_match": false,
+     "missing": [
+      "1"
+     ],
+     "extra": [],
+     "missing_count": 1,
+     "extra_count": 0
+    },
+    "operators": {
+     "reference_count": 1,
+     "candidate_count": 1,
+     "matched_count": 1,
+     "precision": 1.0,
+     "recall": 1.0,
+     "f1": 1.0,
+     "exact_match": true,
+     "missing": [],
+     "extra": [],
+     "missing_count": 0,
+     "extra_count": 0
+    },
+    "citation_markers": {
+     "reference_count": 0,
+     "candidate_count": 0,
+     "matched_count": 0,
+     "precision": 1.0,
+     "recall": 1.0,
+     "f1": 1.0,
+     "exact_match": true,
+     "missing": [],
+     "extra": [],
+     "missing_count": 0,
+     "extra_count": 0
+    }
+   },
+   "evidence": {
+    "normalization": "Unicode NFKC; case preserved; multiset comparison",
+    "number_pattern": "(?<![\\w.])[+-]?(?:\\d+(?:[.,]\\d+)*|\\.\\d+)(?:[eE][+-]?\\d+)?%?",
+    "operator_inventory": "*+/<=>^\u00b1\u00d7\u00f7\u2190\u2192\u2194\u2202\u2207\u2208\u2209\u220f\u2211\u2212\u221a\u221e\u2229\u222a\u222b\u2248\u2260\u2264\u2265\u2282\u2286",
+    "citation_pattern": "\\[(?:\\d+[a-z]?(?:\\s*[-,;]\\s*\\d+[a-z]?){0,12})\\]|\\((?:18|19|20)\\d{2}[a-z]?\\)"
+   },
+   "interpretation": "Exact critical-symbol inventories prevent visually small numeric or operator errors from disappearing inside a document-level text average. Empty inventories are reported as exact but do not establish construct applicability."
+  },
+  "text_grounding": {
+   "status": "scored",
+   "applicable": true,
+   "metrics": {
+    "reference_word_count": 39,
+    "candidate_word_count": 38,
+    "exact_matched_word_count": 37,
+    "word_precision": 0.9736842105263158,
+    "word_recall": 0.9487179487179487,
+    "word_hmean": 0.9610389610389611,
+    "split_count": null,
+    "merge_count": null
+   },
+   "evidence": {
+    "match_policy": "exact Unicode-NFKC word text with deterministic page/position assignment for repeats"
+   },
+   "interpretation": "Digital-PDF exact-word grounding adaptation; it is not the published CLEval algorithm. Split/merge values remain null until a validated implementation exists."
+  },
+  "geometry": {
+   "status": "scored",
+   "applicable": true,
+   "metrics": {
+    "matched_token_count": 37,
+    "reference_match_coverage": 0.9487179487179487,
+    "candidate_match_coverage": 0.9736842105263158,
+    "center_displacement_q50": 0.01325144860600348,
+    "center_displacement_q90": 0.01639191247993061,
+    "center_displacement_max": 0.0433097317921908,
+    "bbox_iou_q10": 0.0,
+    "bbox_iou_q50": 0.29890430455978767,
+    "width_abs_log_ratio_q90": 0.24034999751942668,
+    "height_abs_log_ratio_q90": 0.5352549737306337
+   },
+   "evidence": {
+    "worst_token_pairs": [
+     {
+      "token": "6",
+      "reference_word_index": 25,
+      "candidate_word_index": 25,
+      "reference_page": 0,
+      "candidate_page": 0,
+      "reference_bbox": [
+       485.1585998535156,
+       426.7655334472656,
+       492.17388916015625,
+       441.1117248535156
+      ],
+      "candidate_bbox": [
+       490.4519958496094,
+       395.8656311035156,
+       495.2315979003906,
+       404.265625
+      ],
+      "reference_bbox_normalized": [
+       0.7927428102181628,
+       0.5388453705142243,
+       0.8042057012420853,
+       0.5569592485524187
+      ],
+      "candidate_bbox_normalized": [
+       0.801392150081061,
+       0.49983034230241874,
+       0.8092019573535795,
+       0.5104363952020202
+      ],
+      "center_displacement": 0.0433097317921908,
+      "bbox_iou": 0.0,
+      "width_abs_log_ratio": 0.38373466378721016,
+      "height_abs_log_ratio": 0.5352535205089309
+     },
+     {
+      "token": "65",
+      "reference_word_index": 24,
+      "candidate_word_index": 24,
+      "reference_page": 0,
+      "candidate_page": 0,
+      "reference_bbox": [
+       476.9394836425781,
+       407.2194519042969,
+       492.17388916015625,
+       431.2709655761719
+      ],
+      "candidate_bbox": [
+       483.2519836425781,
+       386.99761962890625,
+       495.2315979003906,
+       400.8240051269531
+      ],
+      "reference_bbox_normalized": [
+       0.7793128817689186,
+       0.5141659746266375,
+       0.8042057012420853,
+       0.5445340474446615
+      ],
+      "candidate_bbox_normalized": [
+       0.7896274242525786,
+       0.48863335811730585,
+       0.8092019573535795,
+       0.5060909155643347
+      ],
+      "center_displacement": 0.032891172583378085,
+      "bbox_iou": 0.0,
+      "width_abs_log_ratio": 0.2403499975194182,
+      "height_abs_log_ratio": 0.553619173866784
+     },
+     {
+      "token": "6",
+      "reference_word_index": 27,
+      "candidate_word_index": 28,
+      "reference_page": 0,
+      "candidate_page": 0,
+      "reference_bbox": [
+       119.02702331542969,
+       420.6690673828125,
+       126.04231262207031,
+       435.0152587890625
+      ],
+      "candidate_bbox": [
+       115.56840515136719,
+       407.3470458984375,
+       121.56840515136719,
+       419.3470458984375
+      ],
+      "reference_bbox_normalized": [
+       0.1944886001886106,
+       0.531147812352036,
+       0.2059514912125332,
+       0.5492616903902304
+      ],
+      "candidate_bbox_normalized": [
+       0.18883726331922743,
+       0.5143270781545928,
+       0.19864118488785487,
+       0.5294785933061079
+      ],
+      "center_displacement": 0.019415487753205497,
+      "bbox_iou": 0.0,
+      "width_abs_log_ratio": 0.15633248462218172,
+      "height_abs_log_ratio": 0.17857784996093226
+     },
+     {
+      "token": "3",
+      "reference_word_index": 32,
+      "candidate_word_index": 32,
+      "reference_page": 0,
+      "candidate_page": 0,
+      "reference_bbox": [
+       426.87640380859375,
+       610.57861328125,
+       433.8916931152344,
+       624.9248046875
+      ],
+      "candidate_bbox": [
+       430.4482116699219,
+       600.6285400390625,
+       435.2278137207031,
+       609.0285034179688
+      ],
+      "reference_bbox_normalized": [
+       0.6975104637395323,
+       0.7709325925268308,
+       0.7089733547634549,
+       0.7890464705650253
+      ],
+      "candidate_bbox_normalized": [
+       0.7033467510946436,
+       0.75836936873619,
+       0.711156558367162,
+       0.7689753831034959
+      ],
+      "center_displacement": 0.016802607730216187,
+      "bbox_iou": 0.0,
+      "width_abs_log_ratio": 0.383734663787234,
+      "height_abs_log_ratio": 0.5352571535631878
+     },
+     {
+      "token": "Visualization",
+      "reference_word_index": 6,
+      "candidate_word_index": 6,
+      "reference_page": 0,
+      "candidate_page": 0,
+      "reference_bbox": [
+       94.42311096191406,
+       191.78746032714844,
+       186.10964965820312,
+       206.13365173339844
+      ],
+      "candidate_bbox": [
+       85.4749984741211,
+       202.6032257080078,
+       186.00621032714844,
+       218.0032196044922
+      ],
+      "reference_bbox_normalized": [
+       0.1542861290227354,
+       0.24215588425145004,
+       0.30410073473562604,
+       0.2602697622896445
+      ],
+      "candidate_bbox_normalized": [
+       0.1396650301864724,
+       0.25581215367172705,
+       0.30393171622083076,
+       0.27525659040971234
+      ],
+      "center_displacement": 0.016118115646406892,
+      "bbox_iou": 0.1272839460284986,
+      "width_abs_log_ratio": 0.09209267370383042,
+      "height_abs_log_ratio": 0.0708826133383869
+     },
+     {
+      "token": "9",
+      "reference_word_index": 23,
+      "candidate_word_index": 23,
+      "reference_page": 0,
+      "candidate_page": 0,
+      "reference_bbox": [
+       296.8624267578125,
+       314.438720703125,
+       306.32586669921875,
+       335.10125732421875
+      ],
+      "candidate_bbox": [
+       296.1374206542969,
+       302.6991882324219,
+       306.1374206542969,
+       322.6991882324219
+      ],
+      "reference_bbox_normalized": [
+       0.4850693247676675,
+       0.39701858674637,
+       0.500532461926828,
+       0.4231076481366398
+      ],
+      "candidate_bbox_normalized": [
+       0.48388467427172693,
+       0.3821959447379064,
+       0.5002245435527727,
+       0.40744846999043166
+      ],
+      "center_displacement": 0.015259170372053581,
+      "bbox_iou": 0.24023294876207368,
+      "width_abs_log_ratio": 0.05514914585789606,
+      "height_abs_log_ratio": 0.03258996193731441
+     },
+     {
+      "token": "6",
+      "reference_word_index": 22,
+      "candidate_word_index": 22,
+      "reference_page": 0,
+      "candidate_page": 0,
+      "reference_bbox": [
+       302.09271240234375,
+       272.0636291503906,
+       309.1080017089844,
+       286.4098205566406
+      ],
+      "candidate_bbox": [
+       301.74761962890625,
+       263.1072998046875,
+       306.5272216796875,
+       271.5072937011719
+      ],
+      "reference_bbox_normalized": [
+       0.4936155431410846,
+       0.34351468327069523,
+       0.5050784341650072,
+       0.36162856130888965
+      ],
+      "candidate_bbox_normalized": [
+       0.4930516660603043,
+       0.3322061866220802,
+       0.5008614733328227,
+       0.34281223952168166
+      ],
+      "center_displacement": 0.015250910603479915,
+      "bbox_iou": 0.0,
+      "width_abs_log_ratio": 0.383734663787227,
+      "height_abs_log_ratio": 0.5352535205089309
+     },
+     {
+      "token": "sample",
+      "reference_word_index": 4,
+      "candidate_word_index": 4,
+      "reference_page": 0,
+      "candidate_page": 0,
+      "reference_bbox": [
+       337.33453369140625,
+       147.37034606933594,
+       372.5185852050781,
+       159.3255157470703
+      ],
+      "candidate_bbox": [
+       335.4414978027344,
+       159.28524780273438,
+       368.4964904785156,
+       170.28524780273438
+      ],
+      "reference_bbox_normalized": [
+       0.5512002184500102,
+       0.18607366927946456,
+       0.608690498701108,
+       0.20116858048872513
+      ],
+      "candidate_bbox_normalized": [
+       0.5481070225534875,
+       0.2011177371246646,
+       0.6021184484943066,
+       0.2150066260135535
+      ],
+      "center_displacement": 0.015228209472529914,
+      "bbox_iou": 0.0016026280389903338,
+      "width_abs_log_ratio": 0.06242027872464089,
+      "height_abs_log_ratio": 0.08326852104627604
+     },
+     {
+      "token": "Dataset-expansion",
+      "reference_word_index": 3,
+      "candidate_word_index": 3,
+      "reference_page": 0,
+      "candidate_page": 0,
+      "reference_bbox": [
+       239.48146057128906,
+       147.37034606933594,
+       333.4371337890625,
+       159.3255157470703
+      ],
+      "candidate_bbox": [
+       243.5034942626953,
+       159.28524780273438,
+       331.7784729003906,
+       170.28524780273438
+      ],
+      "reference_bbox_normalized": [
+       0.39130957609687755,
+       0.18607366927946456,
+       0.5448319179559845,
+       0.20116858048872513
+      ],
+      "candidate_bbox_normalized": [
+       0.39788152657303155,
+       0.2011177371246646,
+       0.5421216877457363,
+       0.2150066260135535
+      ],
+      "center_displacement": 0.014569568937783328,
+      "bbox_iou": 0.001700199694940999,
+      "width_abs_log_ratio": 0.06236640971965927,
+      "height_abs_log_ratio": 0.08326852104627604
+     },
+     {
+      "token": "9",
+      "reference_word_index": 28,
+      "candidate_word_index": 26,
+      "reference_page": 0,
+      "candidate_page": 0,
+      "reference_bbox": [
+       436.59027099609375,
+       415.3117370605469,
+       446.0537109375,
+       435.9742736816406
+      ],
+      "candidate_bbox": [
+       435.91619873046875,
+       404.2555847167969,
+       445.91619873046875,
+       424.2555847167969
+      ],
+      "reference_bbox_normalized": [
+       0.7133827957452512,
+       0.5243835063895794,
+       0.7288459329044118,
+       0.5504725677798493
+      ],
+      "candidate_bbox_normalized": [
+       0.7122813704746221,
+       0.5104237180767637,
+       0.7286212397556678,
+       0.535676243329289
+      ],
+      "center_displacement": 0.014393337098482473,
+      "bbox_iou": 0.26722822164291415,
+      "width_abs_log_ratio": 0.05514914585788534,
+      "height_abs_log_ratio": 0.03258996193731429
+     },
+     {
+      "token": "1",
+      "reference_word_index": 5,
+      "candidate_word_index": 5,
+      "reference_page": 0,
+      "candidate_page": 0,
+      "reference_bbox": [
+       72.0,
+       191.78746032714844,
+       80.07691192626953,
+       206.13365173339844
+      ],
+      "candidate_bbox": [
+       72.0,
+       202.6032257080078,
+       80.8550033569336,
+       218.0032196044922
+      ],
+      "reference_bbox_normalized": [
+       0.11764705882352941,
+       0.24215588425145004,
+       0.13084462733050578,
+       0.2602697622896445
+      ],
+      "candidate_bbox_normalized": [
+       0.11764705882352941,
+       0.25581215367172705,
+       0.13211601855708102,
+       0.27525659040971234
+      ],
+      "center_displacement": 0.014335650249960094,
+      "bbox_iou": 0.127455323980584,
+      "width_abs_log_ratio": 0.09197303819714456,
+      "height_abs_log_ratio": 0.0708826133383869
+     },
+     {
+      "token": "4",
+      "reference_word_index": 26,
+      "candidate_word_index": 27,
+      "reference_page": 0,
+      "candidate_page": 0,
+      "reference_bbox": [
+       156.3874053955078,
+       415.3117370605469,
+       165.85084533691406,
+       435.9742736816406
+      ],
+      "candidate_bbox": [
+       156.36610412597656,
+       404.4755859375,
+       166.36610412597656,
+       424.4755859375
+      ],
+      "reference_bbox_normalized": [
+       0.25553497613645065,
+       0.5243835063895794,
+       0.2709981132956112,
+       0.5504725677798493
+      ],
+      "candidate_bbox_normalized": [
+       0.2555001701404846,
+       0.5107014973958334,
+       0.27184003942153034,
+       0.5359540226483586
+      ],
+      "center_displacement": 0.014106050970014486,
+      "bbox_iou": 0.2808183938054432,
+      "width_abs_log_ratio": 0.05514914585789249,
+      "height_abs_log_ratio": 0.032589961937318765
+     },
+     {
+      "token": "1:",
+      "reference_word_index": 35,
+      "candidate_word_index": 35,
+      "reference_page": 0,
+      "candidate_page": 0,
+      "reference_bbox": [
+       270.01641845703125,
+       637.252197265625,
+       278.503662109375,
+       648.1612548828125
+      ],
+      "candidate_bbox": [
+       271.5502014160156,
+       626.3428344726562,
+       280.10821533203125,
+       637.3428344726562
+      ],
+      "reference_bbox_normalized": [
+       0.441203298132404,
+       0.8046113601838699,
+       0.4550713433159722,
+       0.818385422831834
+      ],
+      "candidate_bbox_normalized": [
+       0.44370947943793404,
+       0.7908369122129498,
+       0.4576931623072406,
+       0.8047258011018387
+      ],
+      "center_displacement": 0.013954610057241397,
+      "bbox_iou": 0.0033866559955770597,
+      "width_abs_log_ratio": 0.008303854611210415,
+      "height_abs_log_ratio": 0.00830185457715425
+     },
+     {
+      "token": "Figure",
+      "reference_word_index": 34,
+      "candidate_word_index": 34,
+      "reference_page": 0,
+      "candidate_page": 0,
+      "reference_bbox": [
+       235.58731079101562,
+       637.252197265625,
+       266.3836669921875,
+       648.1612548828125
+      ],
+      "candidate_bbox": [
+       236.83419799804688,
+       626.3428344726562,
+       267.88720703125,
+       637.3428344726562
+      ],
+      "reference_bbox_normalized": [
+       0.38494658625982947,
+       0.8046113601838699,
+       0.4352674297257966,
+       0.818385422831834
+      ],
+      "candidate_bbox_normalized": [
+       0.3869839836569393,
+       0.7908369122129498,
+       0.43772419449550654,
+       0.8047258011018387
+      ],
+      "center_displacement": 0.013899871167895421,
+      "bbox_iou": 0.003968623561655125,
+      "width_abs_log_ratio": 0.00829933514182721,
+      "height_abs_log_ratio": 0.00830185457715425
+     },
+     {
+      "token": "plot.",
+      "reference_word_index": 37,
+      "candidate_word_index": 37,
+      "reference_page": 0,
+      "candidate_page": 0,
+      "reference_bbox": [
+       354.58367919921875,
+       637.252197265625,
+       376.4127502441406,
+       648.1612548828125
+      ],
+      "candidate_bbox": [
+       355.6011962890625,
+       626.3428344726562,
+       377.6122131347656,
+       637.3428344726562
+      ],
+      "reference_bbox_normalized": [
+       0.5793850967307496,
+       0.8046113601838699,
+       0.615053513470818,
+       0.818385422831834
+      ],
+      "candidate_bbox_normalized": [
+       0.5810477063546773,
+       0.7908369122129498,
+       0.6170134201548458,
+       0.8047258011018387
+      ],
+      "center_displacement": 0.013836101372461196,
+      "bbox_iou": 0.003943188709704575,
+      "width_abs_log_ratio": 0.008300478132016238,
+      "height_abs_log_ratio": 0.00830185457715425
+     },
+     {
+      "token": "Source-backed",
+      "reference_word_index": 36,
+      "candidate_word_index": 36,
+      "reference_page": 0,
+      "candidate_page": 0,
+      "reference_bbox": [
+       283.3473205566406,
+       637.252197265625,
+       350.96185302734375,
+       648.1612548828125
+      ],
+      "candidate_bbox": [
+       283.7712097167969,
+       626.3428344726562,
+       351.9382019042969,
+       637.3428344726562
+      ],
+      "reference_bbox_normalized": [
+       0.4629858179030076,
+       0.8046113601838699,
+       0.5734670801100388,
+       0.818385422831834
+      ],
+      "candidate_bbox_normalized": [
+       0.4636784472496681,
+       0.7908369122129498,
+       0.5750624214122498,
+       0.8047258011018387
+      ],
+      "center_displacement": 0.013764655735295242,
+      "bbox_iou": 0.004111074557539642,
+      "width_abs_log_ratio": 0.008137524848235132,
+      "height_abs_log_ratio": 0.00830185457715425
+     },
+     {
+      "token": "6",
+      "reference_word_index": 33,
+      "candidate_word_index": 33,
+      "reference_page": 0,
+      "candidate_page": 0,
+      "reference_bbox": [
+       175.06759643554688,
+       604.482177734375,
+       182.0828857421875,
+       618.828369140625
+      ],
+      "candidate_bbox": [
+       183.07266235351562,
+       610.60986328125,
+       189.07266235351562,
+       622.60986328125
+      ],
+      "reference_bbox_normalized": [
+       0.2860581641103707,
+       0.7632350728969381,
+       0.2975210551342933,
+       0.7813489509351326
+      ],
+      "candidate_bbox_normalized": [
+       0.2991383371789471,
+       0.7709720495975378,
+       0.3089422587475745,
+       0.786123564749053
+      ],
+      "center_displacement": 0.013755520314670984,
+      "bbox_iou": 0.0,
+      "width_abs_log_ratio": 0.15633248462218224,
+      "height_abs_log_ratio": 0.17857784996093226
+     },
+     {
+      "token": "6",
+      "reference_word_index": 29,
+      "candidate_word_index": 29,
+      "reference_page": 0,
+      "candidate_page": 0,
+      "reference_bbox": [
+       382.79132080078125,
+       578.9501953125,
+       392.2547607421875,
+       599.6127319335938
+      ],
+      "candidate_bbox": [
+       382.5278625488281,
+       568.5684204101562,
+       392.5278625488281,
+       588.5684204101562
+      ],
+      "reference_bbox_normalized": [
+       0.6254760143803615,
+       0.7309977213541666,
+       0.6409391515395221,
+       0.7570867827444365
+      ],
+      "candidate_bbox_normalized": [
+       0.6250455270405688,
+       0.7178894197097933,
+       0.6413853963216146,
+       0.7431419449623184
+      ],
+      "center_displacement": 0.01352657200777568,
+      "bbox_iou": 0.29890430455978767,
+      "width_abs_log_ratio": 0.05514914585789228,
+      "height_abs_log_ratio": 0.032589961937318765
+     },
+     {
+      "token": "4",
+      "reference_word_index": 30,
+      "candidate_word_index": 30,
+      "reference_page": 0,
+      "candidate_page": 0,
+      "reference_bbox": [
+       210.1863555908203,
+       578.9501953125,
+       219.64979553222656,
+       599.6127319335938
+      ],
+      "candidate_bbox": [
+       209.7544708251953,
+       568.7884521484375,
+       219.7544708251953,
+       588.7884521484375
+      ],
+      "reference_bbox_normalized": [
+       0.3434417575013404,
+       0.7309977213541666,
+       0.3589048946605009,
+       0.7570867827444365
+      ],
+      "candidate_bbox_normalized": [
+       0.3427360634398616,
+       0.7181672375611584,
+       0.3590759327209074,
+       0.7434197628136837
+      ],
+      "center_displacement": 0.01325144860600348,
+      "bbox_iou": 0.3078472293652122,
+      "width_abs_log_ratio": 0.05514914585789249,
+      "height_abs_log_ratio": 0.03258996193731429
+     },
+     {
+      "token": "1",
+      "reference_word_index": 2,
+      "candidate_word_index": 2,
+      "reference_page": 0,
+      "candidate_page": 0,
+      "reference_bbox": [
+       346.8436584472656,
+       112.83645629882812,
+       354.74554443359375,
+       130.05189514160156
+      ],
+      "candidate_bbox": [
+       350.76385498046875,
+       119.37456512451172,
+       359.40386962890625,
+       136.65457153320312
+      ],
+      "reference_bbox_normalized": [
+       0.5667380039988,
+       0.14247027310458096,
+       0.5796495824078329,
+       0.164206938310103
+      ],
+      "candidate_bbox_normalized": [
+       0.5731435538896548,
+       0.15072546101579762,
+       0.5872612248838337,
+       0.17254365092576152
+      ],
+      "center_displacement": 0.010860166261885221,
+      "bbox_iou": 0.17508355720146596,
+      "width_abs_log_ratio": 0.08930281480801582,
+      "height_abs_log_ratio": 0.003743545900169792
+     },
+     {
+      "token": "Plot",
+      "reference_word_index": 0,
+      "candidate_word_index": 0,
+      "reference_page": 0,
+      "candidate_page": 0,
+      "reference_bbox": [
+       257.2544860839844,
+       112.83645629882812,
+       286.3658142089844,
+       130.05189514160156
+      ],
+      "candidate_bbox": [
+       252.59616088867188,
+       119.37456512451172,
+       284.52960205078125,
+       136.65457153320312
+      ],
+      "reference_bbox_normalized": [
+       0.42035046745749083,
+       0.14247027310458096,
+       0.4679179970735039,
+       0.164206938310103
+      ],
+      "candidate_bbox_normalized": [
+       0.41273882498149,
+       0.15072546101579762,
+       0.4649176504097733,
+       0.17254365092576152
+      ],
+      "center_displacement": 0.009847658054018488,
+      "bbox_iou": 0.3823115441263936,
+      "width_abs_log_ratio": 0.09252639191434966,
+      "height_abs_log_ratio": 0.003743545900169792
+     },
+     {
+      "token": "Sample",
+      "reference_word_index": 1,
+      "candidate_word_index": 1,
+      "reference_page": 0,
+      "candidate_page": 0,
+      "reference_bbox": [
+       291.56488037109375,
+       112.83645629882812,
+       341.64459228515625,
+       130.05189514160156
+      ],
+      "candidate_bbox": [
+       290.2838439941406,
+       119.37456512451172,
+       345.0096130371094,
+       136.65457153320312
+      ],
+      "reference_bbox_normalized": [
+       0.47641320322074143,
+       0.14247027310458096,
+       0.5582427978515625,
+       0.164206938310103
+      ],
+      "candidate_bbox_normalized": [
+       0.47432000652637357,
+       0.15072546101579762,
+       0.5637411977730545,
+       0.17254365092576152
+      ],
+      "center_displacement": 0.008468863148494876,
+      "bbox_iou": 0.4200161401600676,
+      "width_abs_log_ratio": 0.088718721913366,
+      "height_abs_log_ratio": 0.003743545900169792
+     },
+     {
+      "token": "61",
+      "reference_word_index": 31,
+      "candidate_word_index": 31,
+      "reference_page": 0,
+      "candidate_page": 0,
+      "reference_bbox": [
+       418.65728759765625,
+       591.0325317382812,
+       433.8916931152344,
+       615.0840454101562
+      ],
+      "candidate_bbox": [
+       423.2481994628906,
+       591.760498046875,
+       435.2278137207031,
+       605.5869140625
+      ],
+      "reference_bbox_normalized": [
+       0.684080535290288,
+       0.746253196639244,
+       0.7089733547634549,
+       0.776621269457268
+      ],
+      "candidate_bbox_normalized": [
+       0.6915820252661612,
+       0.7471723460187816,
+       0.711156558367162,
+       0.7646299419981061
+      ],
+      "center_displacement": 0.007355039380541769,
+      "bbox_iou": 0.38235225970681624,
+      "width_abs_log_ratio": 0.24034999751942837,
+      "height_abs_log_ratio": 0.5536169666706577
+     },
+     {
+      "token": "image-to-LaTeX",
+      "reference_word_index": 18,
+      "candidate_word_index": 18,
+      "reference_page": 0,
+      "candidate_page": 0,
+      "reference_bbox": [
+       427.5163879394531,
+       218.92115783691406,
+       504.6327209472656,
+       229.8302459716797
+      ],
+      "candidate_bbox": [
+       428.75531005859375,
+       221.91262817382812,
+       506.5032958984375,
+       232.91262817382812
+      ],
+      "reference_bbox_normalized": [
+       0.6985561894435509,
+       0.27641560332943693,
+       0.8245632695216759,
+       0.29018970450969656
+      ],
+      "candidate_bbox_normalized": [
+       0.7005805719911663,
+       0.2801927123406921,
+       0.8276197645399306,
+       0.294081601229581
+      ],
+      "center_displacement": 0.0045997001463033114,
+      "bbox_iou": 0.5482821751828796,
+      "width_abs_log_ratio": 0.008157545127685923,
+      "height_abs_log_ratio": 0.008299057127879162
+     }
+    ]
+   },
+   "interpretation": "Token boxes are normalized by each page's own canvas; canvas mismatch remains a separate axis."
+  },
+  "text_ltsim": {
+   "status": "scored",
+   "applicable": true,
+   "metrics": {
+    "paired_page_count": 1,
+    "scored_page_count": 1,
+    "abstained_page_count": 0,
+    "text_ltsim_page_macro": 0.7692137537883864,
+    "text_ltsim_element_weighted": 0.7692137537883864,
+    "text_ltsim_worst_page": 0.7692137537883864
+   },
+   "evidence": {
+    "pages": [
+     {
+      "page": 0,
+      "status": "scored",
+      "reference_block_count": 14,
+      "candidate_block_count": 12,
+      "emd": 0.26238638478724124,
+      "text_ltsim": 0.7692137537883864,
+      "largest_cost_contributions": [
+       {
+        "reference_block_index": 6,
+        "candidate_block_index": 5,
+        "mass": 0.07142857142857142,
+        "cost": 0.31735001574725086,
+        "reference_bbox_normalized": [
+         0.7793128817689186,
+         0.5141659746266375,
+         0.8042057012420853,
+         0.5569592485524187
+        ],
+        "candidate_bbox_normalized": [
+         0.7896274242525786,
+         0.48863335811730585,
+         0.8092019573535795,
+         0.5104363952020202
+        ]
+       },
+       {
+        "reference_block_index": 7,
+        "candidate_block_index": 7,
+        "mass": 0.07142857142857138,
+        "cost": 0.2987215374131894,
+        "reference_bbox_normalized": [
+         0.1944886001886106,
+         0.5243835063895794,
+         0.2709981132956112,
+         0.5504725677798493
+        ],
+        "candidate_bbox_normalized": [
+         0.2555001701404846,
+         0.5107014973958334,
+         0.27184003942153034,
+         0.5359540226483586
+        ]
+       },
+       {
+        "reference_block_index": 12,
+        "candidate_block_index": 11,
+        "mass": 0.07142857142857141,
+        "cost": 0.2694119375974904,
+        "reference_bbox_normalized": [
+         0.38494658625982947,
+         0.8046113601838699,
+         0.615053513470818,
+         0.818385422831834
+        ],
+        "candidate_bbox_normalized": [
+         0.2991383371789471,
+         0.7709720495975378,
+         0.6170134201548458,
+         0.8047258011018387
+        ]
+       },
+       {
+        "reference_block_index": 1,
+        "candidate_block_index": 1,
+        "mass": 0.07142857142857142,
+        "cost": 0.25680478111223703,
+        "reference_bbox_normalized": [
+         0.39130957609687755,
+         0.18607366927946456,
+         0.608690498701108,
+         0.20116858048872513
+        ],
+        "candidate_bbox_normalized": [
+         0.39788152657303155,
+         0.2011177371246646,
+         0.6021184484943066,
+         0.2150066260135535
+        ]
+       },
+       {
+        "reference_block_index": 2,
+        "candidate_block_index": 8,
+        "mass": 0.035714285714285685,
+        "cost": 0.48354588818745925,
+        "reference_bbox_normalized": [
+         0.11764705882352941,
+         0.24215588425145004,
+         0.30410073473562604,
+         0.2602697622896445
+        ],
+        "candidate_bbox_normalized": [
+         0.18883726331922743,
+         0.5143270781545928,
+         0.19864118488785487,
+         0.5294785933061079
+        ]
+       },
+       {
+        "reference_block_index": 5,
+        "candidate_block_index": 4,
+        "mass": 0.07142857142857142,
+        "cost": 0.1984262652306934,
+        "reference_bbox_normalized": [
+         0.4850693247676675,
+         0.39701858674637,
+         0.500532461926828,
+         0.4231076481366398
+        ],
+        "candidate_bbox_normalized": [
+         0.48388467427172693,
+         0.3821959447379064,
+         0.5002245435527727,
+         0.40744846999043166
+        ]
+       },
+       {
+        "reference_block_index": 8,
+        "candidate_block_index": 6,
+        "mass": 0.07142857142857142,
+        "cost": 0.19051656474433343,
+        "reference_bbox_normalized": [
+         0.7133827957452512,
+         0.5243835063895794,
+         0.7288459329044118,
+         0.5504725677798493
+        ],
+        "candidate_bbox_normalized": [
+         0.7122813704746221,
+         0.5104237180767637,
+         0.7286212397556678,
+         0.535676243329289
+        ]
+       },
+       {
+        "reference_block_index": 10,
+        "candidate_block_index": 10,
+        "mass": 0.07142857142857142,
+        "cost": 0.17470423479875652,
+        "reference_bbox_normalized": [
+         0.684080535290288,
+         0.746253196639244,
+         0.7089733547634549,
+         0.7890464705650253
+        ],
+        "candidate_bbox_normalized": [
+         0.6915820252661612,
+         0.7471723460187816,
+         0.711156558367162,
+         0.7689753831034959
+        ]
+       },
+       {
+        "reference_block_index": 9,
+        "candidate_block_index": 9,
+        "mass": 0.07142857142857142,
+        "cost": 0.17130799786047968,
+        "reference_bbox_normalized": [
+         0.3434417575013404,
+         0.7309977213541666,
+         0.6409391515395221,
+         0.7570867827444365
+        ],
+        "candidate_bbox_normalized": [
+         0.3427360634398616,
+         0.7178894197097933,
+         0.6413853963216146,
+         0.7434197628136837
+        ]
+       },
+       {
+        "reference_block_index": 13,
+        "candidate_block_index": 8,
+        "mass": 0.023809523809523822,
+        "cost": 0.4995061702849337,
+        "reference_bbox_normalized": [
+         0.495543685613894,
+         0.9357262813683712,
+         0.5044563642514297,
+         0.9495003440163352
+        ],
+        "candidate_bbox_normalized": [
+         0.18883726331922743,
+         0.5143270781545928,
+         0.19864118488785487,
+         0.5294785933061079
+        ]
+       },
+       {
+        "reference_block_index": 11,
+        "candidate_block_index": 8,
+        "mass": 0.023809523809523822,
+        "cost": 0.4969316848631048,
+        "reference_bbox_normalized": [
+         0.2860581641103707,
+         0.7632350728969381,
+         0.2975210551342933,
+         0.7813489509351326
+        ],
+        "candidate_bbox_normalized": [
+         0.18883726331922743,
+         0.5143270781545928,
+         0.19864118488785487,
+         0.5294785933061079
+        ]
+       },
+       {
+        "reference_block_index": 0,
+        "candidate_block_index": 0,
+        "mass": 0.07142857142857142,
+        "cost": 0.1511808647641978,
+        "reference_bbox_normalized": [
+         0.42035046745749083,
+         0.14247027310458096,
+         0.5796495824078329,
+         0.164206938310103
+        ],
+        "candidate_bbox_normalized": [
+         0.41273882498149,
+         0.15072546101579762,
+         0.5872612248838337,
+         0.17254365092576152
+        ]
+       },
+       {
+        "reference_block_index": 4,
+        "candidate_block_index": 3,
+        "mass": 0.07142857142857142,
+        "cost": 0.14983860763763546,
+        "reference_bbox_normalized": [
+         0.4801856146918403,
+         0.31883532591540403,
+         0.5050784341650072,
+         0.36162856130888965
+        ],
+        "candidate_bbox_normalized": [
+         0.4812869402318219,
+         0.3210091446385239,
+         0.5008614733328227,
+         0.34281223952168166
+        ]
+       },
+       {
+        "reference_block_index": 3,
+        "candidate_block_index": 2,
+        "mass": 0.07142857142857147,
+        "cost": 0.11122262840916564,
+        "reference_bbox_normalized": [
+         0.11764705882352941,
+         0.27641560332943693,
+         0.8823707929623672,
+         0.3072972731156783
+        ],
+        "candidate_bbox_normalized": [
+         0.11764705882352941,
+         0.25581215367172705,
+         0.885644850388072,
+         0.31120666349777065
+        ]
+       },
+       {
+        "reference_block_index": 13,
+        "candidate_block_index": 5,
+        "mass": 0.011904761904761904,
+        "cost": 0.4990495848557235,
+        "reference_bbox_normalized": [
+         0.495543685613894,
+         0.9357262813683712,
+         0.5044563642514297,
+         0.9495003440163352
+        ],
+        "candidate_bbox_normalized": [
+         0.7896274242525786,
+         0.48863335811730585,
+         0.8092019573535795,
+         0.5104363952020202
+        ]
+       },
+       {
+        "reference_block_index": 13,
+        "candidate_block_index": 6,
+        "mass": 0.011904761904761904,
+        "cost": 0.4986921231225826,
+        "reference_bbox_normalized": [
+         0.495543685613894,
+         0.9357262813683712,
+         0.5044563642514297,
+         0.9495003440163352
+        ],
+        "candidate_bbox_normalized": [
+         0.7122813704746221,
+         0.5104237180767637,
+         0.7286212397556678,
+         0.535676243329289
+        ]
+       },
+       {
+        "reference_block_index": 13,
+        "candidate_block_index": 3,
+        "mass": 0.011904761904761904,
+        "cost": 0.49056521196730407,
+        "reference_bbox_normalized": [
+         0.495543685613894,
+         0.9357262813683712,
+         0.5044563642514297,
+         0.9495003440163352
+        ],
+        "candidate_bbox_normalized": [
+         0.4812869402318219,
+         0.3210091446385239,
+         0.5008614733328227,
+         0.34281223952168166
+        ]
+       },
+       {
+        "reference_block_index": 11,
+        "candidate_block_index": 10,
+        "mass": 0.011904761904761904,
+        "cost": 0.48908309219586943,
+        "reference_bbox_normalized": [
+         0.2860581641103707,
+         0.7632350728969381,
+         0.2975210551342933,
+         0.7813489509351326
+        ],
+        "candidate_bbox_normalized": [
+         0.6915820252661612,
+         0.7471723460187816,
+         0.711156558367162,
+         0.7689753831034959
+        ]
+       },
+       {
+        "reference_block_index": 13,
+        "candidate_block_index": 4,
+        "mass": 0.011904761904761904,
+        "cost": 0.4885311067651923,
+        "reference_bbox_normalized": [
+         0.495543685613894,
+         0.9357262813683712,
+         0.5044563642514297,
+         0.9495003440163352
+        ],
+        "candidate_bbox_normalized": [
+         0.48388467427172693,
+         0.3821959447379064,
+         0.5002245435527727,
+         0.40744846999043166
+        ]
+       },
+       {
+        "reference_block_index": 11,
+        "candidate_block_index": 7,
+        "mass": 0.011904761904761946,
+        "cost": 0.4863653214453567,
+        "reference_bbox_normalized": [
+         0.2860581641103707,
+         0.7632350728969381,
+         0.2975210551342933,
+         0.7813489509351326
+        ],
+        "candidate_bbox_normalized": [
+         0.2555001701404846,
+         0.5107014973958334,
+         0.27184003942153034,
+         0.5359540226483586
+        ]
+       },
+       {
+        "reference_block_index": 2,
+        "candidate_block_index": 0,
+        "mass": 0.011904761904761904,
+        "cost": 0.46508230276090456,
+        "reference_bbox_normalized": [
+         0.11764705882352941,
+         0.24215588425145004,
+         0.30410073473562604,
+         0.2602697622896445
+        ],
+        "candidate_bbox_normalized": [
+         0.41273882498149,
+         0.15072546101579762,
+         0.5872612248838337,
+         0.17254365092576152
+        ]
+       },
+       {
+        "reference_block_index": 2,
+        "candidate_block_index": 1,
+        "mass": 0.011904761904761904,
+        "cost": 0.4457905356095231,
+        "reference_bbox_normalized": [
+         0.11764705882352941,
+         0.24215588425145004,
+         0.30410073473562604,
+         0.2602697622896445
+        ],
+        "candidate_bbox_normalized": [
+         0.39788152657303155,
+         0.2011177371246646,
+         0.6021184484943066,
+         0.2150066260135535
+        ]
+       },
+       {
+        "reference_block_index": 11,
+        "candidate_block_index": 9,
+        "mass": 0.011904761904761904,
+        "cost": 0.4131636411377696,
+        "reference_bbox_normalized": [
+         0.2860581641103707,
+         0.7632350728969381,
+         0.2975210551342933,
+         0.7813489509351326
+        ],
+        "candidate_bbox_normalized": [
+         0.3427360634398616,
+         0.7178894197097933,
+         0.6413853963216146,
+         0.7434197628136837
+        ]
+       },
+       {
+        "reference_block_index": 11,
+        "candidate_block_index": 11,
+        "mass": 0.011904761904761849,
+        "cost": 0.30087655080634446,
+        "reference_bbox_normalized": [
+         0.2860581641103707,
+         0.7632350728969381,
+         0.2975210551342933,
+         0.7813489509351326
+        ],
+        "candidate_bbox_normalized": [
+         0.2991383371789471,
+         0.7709720495975378,
+         0.6170134201548458,
+         0.8047258011018387
+        ]
+       }
+      ]
+     }
+    ],
+    "equations": "uniform mass; delta_bbox=(1+GIoU)/2; delta_label=1 for text; mu=1-(delta_bbox+delta_label)/2; Text-LTSim=exp(-EMD), sigma=1"
+   },
+   "interpretation": "Faithful published LTSim equations on extracted text blocks only. It measures text-layout geometry/segmentation, not full semantic layout; non-text classes abstain."
+  },
+  "block_transport": {
+   "status": "scored",
+   "applicable": true,
+   "metrics": {
+    "reference_block_count": 14,
+    "candidate_block_count": 12,
+    "transported_mass": 1.0,
+    "combined_transport_cost": 0.2942697732873406,
+    "combined_transport_similarity_exp": 0.7450754628715028,
+    "transported_geometry_cost": 0.3620718869495304,
+    "geometry_transport_similarity_exp": 0.6962323160253928,
+    "transported_content_cost": 0.1683515622004167,
+    "content_transport_similarity_exp": 0.845056692465453,
+    "nonzero_flow_count": 25
+   },
+   "evidence": {
+    "largest_cost_contributions": [
+     {
+      "reference_block_index": 3,
+      "candidate_block_index": 2,
+      "mass": 0.48756218905472637,
+      "combined_cost": 0.1972442841885525,
+      "geometry_cost": 0.22244525681833127,
+      "content_cost": 0.1504424778761062,
+      "reference_page": 0,
+      "candidate_page": 0,
+      "reference_bbox_stacked_normalized": [
+       0.11764705882352941,
+       0.27641560332943693,
+       0.8823707929623672,
+       0.3072972731156783
+      ],
+      "candidate_bbox_stacked_normalized": [
+       0.11764705882352941,
+       0.25581215367172705,
+       0.885644850388072,
+       0.31120666349777065
+      ],
+      "reference_text": "The figure below is a TikZ/pgfplots drawing drawn from a source-backed image-to-LaTeX bench- mark.",
+      "candidate_text": "1 Visualization The figure below is a TikZ/pgfplots drawing drawn from a source-backed image-to-LaTeX bench\u00ad mark."
+     },
+     {
+      "reference_block_index": 12,
+      "candidate_block_index": 11,
+      "mass": 0.14427860696517414,
+      "combined_cost": 0.3728161640380278,
+      "geometry_cost": 0.5388238751949808,
+      "content_cost": 0.06451612903225801,
+      "reference_page": 0,
+      "candidate_page": 0,
+      "reference_bbox_stacked_normalized": [
+       0.38494658625982947,
+       0.8046113601838699,
+       0.615053513470818,
+       0.818385422831834
+      ],
+      "candidate_bbox_stacked_normalized": [
+       0.2991383371789471,
+       0.7709720495975378,
+       0.6170134201548458,
+       0.8047258011018387
+      ],
+      "reference_text": "Figure 1: Source-backed plot.",
+      "candidate_text": "6 Figure 1: Source-backed plot."
+     },
+     {
+      "reference_block_index": 2,
+      "candidate_block_index": 2,
+      "mass": 0.07462686567164178,
+      "combined_cost": 0.6712199471327152,
+      "geometry_cost": 0.5656617294213316,
+      "content_cost": 0.8672566371681416,
+      "reference_page": 0,
+      "candidate_page": 0,
+      "reference_bbox_stacked_normalized": [
+       0.11764705882352941,
+       0.24215588425145004,
+       0.30410073473562604,
+       0.2602697622896445
+      ],
+      "candidate_bbox_stacked_normalized": [
+       0.11764705882352941,
+       0.25581215367172705,
+       0.885644850388072,
+       0.31120666349777065
+      ],
+      "reference_text": "1 Visualization",
+      "candidate_text": "1 Visualization The figure below is a TikZ/pgfplots drawing drawn from a source-backed image-to-LaTeX bench\u00ad mark."
+     },
+     {
+      "reference_block_index": 1,
+      "candidate_block_index": 1,
+      "mass": 0.11940298507462686,
+      "combined_cost": 0.33384621544590815,
+      "geometry_cost": 0.5136095622244741,
+      "content_cost": 0.0,
+      "reference_page": 0,
+      "candidate_page": 0,
+      "reference_bbox_stacked_normalized": [
+       0.39130957609687755,
+       0.18607366927946456,
+       0.608690498701108,
+       0.20116858048872513
+      ],
+      "candidate_bbox_stacked_normalized": [
+       0.39788152657303155,
+       0.2011177371246646,
+       0.6021184484943066,
+       0.2150066260135535
+      ],
+      "reference_text": "Dataset-expansion sample",
+      "candidate_text": "Dataset-expansion sample"
+     },
+     {
+      "reference_block_index": 0,
+      "candidate_block_index": 0,
+      "mass": 0.06467661691542288,
+      "combined_cost": 0.19653512419345712,
+      "geometry_cost": 0.3023617295283956,
+      "content_cost": 0.0,
+      "reference_page": 0,
+      "candidate_page": 0,
+      "reference_bbox_stacked_normalized": [
+       0.42035046745749083,
+       0.14247027310458096,
+       0.5796495824078329,
+       0.164206938310103
+      ],
+      "candidate_bbox_stacked_normalized": [
+       0.41273882498149,
+       0.15072546101579762,
+       0.5872612248838337,
+       0.17254365092576152
+      ],
+      "reference_text": "Plot Sample 1",
+      "candidate_text": "Plot Sample 1"
+     },
+     {
+      "reference_block_index": 6,
+      "candidate_block_index": 5,
+      "mass": 0.019900497512437807,
+      "combined_cost": 0.4125550204714262,
+      "geometry_cost": 0.6347000314945018,
+      "content_cost": 0.0,
+      "reference_page": 0,
+      "candidate_page": 0,
+      "reference_bbox_stacked_normalized": [
+       0.7793128817689186,
+       0.5141659746266375,
+       0.8042057012420853,
+       0.5569592485524187
+      ],
+      "candidate_bbox_stacked_normalized": [
+       0.7896274242525786,
+       0.48863335811730585,
+       0.8092019573535795,
+       0.5104363952020202
+      ],
+      "reference_text": "65 6",
+      "candidate_text": "65 6"
+     },
+     {
+      "reference_block_index": 13,
+      "candidate_block_index": 11,
+      "mass": 0.004975124378109453,
+      "combined_cost": 0.926559950835786,
+      "geometry_cost": 0.9043850360252788,
+      "content_cost": 0.967741935483871,
+      "reference_page": 0,
+      "candidate_page": 0,
+      "reference_bbox_stacked_normalized": [
+       0.495543685613894,
+       0.9357262813683712,
+       0.5044563642514297,
+       0.9495003440163352
+      ],
+      "candidate_bbox_stacked_normalized": [
+       0.2991383371789471,
+       0.7709720495975378,
+       0.6170134201548458,
+       0.8047258011018387
+      ],
+      "reference_text": "1",
+      "candidate_text": "6 Figure 1: Source-backed plot."
+     },
+     {
+      "reference_block_index": 10,
+      "candidate_block_index": 10,
+      "mass": 0.01990049751243781,
+      "combined_cost": 0.22711550523838347,
+      "geometry_cost": 0.34940846959751304,
+      "content_cost": 0.0,
+      "reference_page": 0,
+      "candidate_page": 0,
+      "reference_bbox_stacked_normalized": [
+       0.684080535290288,
+       0.746253196639244,
+       0.7089733547634549,
+       0.7890464705650253
+      ],
+      "candidate_bbox_stacked_normalized": [
+       0.6915820252661612,
+       0.7471723460187816,
+       0.711156558367162,
+       0.7689753831034959
+      ],
+      "reference_text": "61 3",
+      "candidate_text": "61 3"
+     },
+     {
+      "reference_block_index": 4,
+      "candidate_block_index": 3,
+      "mass": 0.01990049751243781,
+      "combined_cost": 0.1947901899289261,
+      "geometry_cost": 0.2996772152752709,
+      "content_cost": 0.0,
+      "reference_page": 0,
+      "candidate_page": 0,
+      "reference_bbox_stacked_normalized": [
+       0.4801856146918403,
+       0.31883532591540403,
+       0.5050784341650072,
+       0.36162856130888965
+      ],
+      "candidate_bbox_stacked_normalized": [
+       0.4812869402318219,
+       0.3210091446385239,
+       0.5008614733328227,
+       0.34281223952168166
+      ],
+      "reference_text": "65 6",
+      "candidate_text": "65 6"
+     },
+     {
+      "reference_block_index": 11,
+      "candidate_block_index": 11,
+      "mass": 0.004975124378109453,
+      "combined_cost": 0.7298491934676026,
+      "geometry_cost": 0.6017531016126889,
+      "content_cost": 0.967741935483871,
+      "reference_page": 0,
+      "candidate_page": 0,
+      "reference_bbox_stacked_normalized": [
+       0.2860581641103707,
+       0.7632350728969381,
+       0.2975210551342933,
+       0.7813489509351326
+      ],
+      "candidate_bbox_stacked_normalized": [
+       0.2991383371789471,
+       0.7709720495975378,
+       0.6170134201548458,
+       0.8047258011018387
+      ],
+      "reference_text": "6",
+      "candidate_text": "6 Figure 1: Source-backed plot."
+     },
+     {
+      "reference_block_index": 9,
+      "candidate_block_index": 9,
+      "mass": 0.014925373134328358,
+      "combined_cost": 0.2227003972186235,
+      "geometry_cost": 0.34261599572095924,
+      "content_cost": 0.0,
+      "reference_page": 0,
+      "candidate_page": 0,
+      "reference_bbox_stacked_normalized": [
+       0.3434417575013404,
+       0.7309977213541666,
+       0.6409391515395221,
+       0.7570867827444365
+      ],
+      "candidate_bbox_stacked_normalized": [
+       0.3427360634398616,
+       0.7178894197097933,
+       0.6413853963216146,
+       0.7434197628136837
+      ],
+      "reference_text": "6 4",
+      "candidate_text": "6 4"
+     },
+     {
+      "reference_block_index": 7,
+      "candidate_block_index": 8,
+      "mass": 0.005,
+      "combined_cost": 0.6477112294554463,
+      "geometry_cost": 0.6375044555724816,
+      "content_cost": 0.6666666666666666,
+      "reference_page": 0,
+      "candidate_page": 0,
+      "reference_bbox_stacked_normalized": [
+       0.1944886001886106,
+       0.5243835063895794,
+       0.2709981132956112,
+       0.5504725677798493
+      ],
+      "candidate_bbox_stacked_normalized": [
+       0.18883726331922743,
+       0.5143270781545928,
+       0.19864118488785487,
+       0.5294785933061079
+      ],
+      "reference_text": "4 6",
+      "candidate_text": "6"
+     },
+     {
+      "reference_block_index": 7,
+      "candidate_block_index": 7,
+      "mass": 0.005,
+      "combined_cost": 0.6216713319704795,
+      "geometry_cost": 0.5974430748263788,
+      "content_cost": 0.6666666666666666,
+      "reference_page": 0,
+      "candidate_page": 0,
+      "reference_bbox_stacked_normalized": [
+       0.1944886001886106,
+       0.5243835063895794,
+       0.2709981132956112,
+       0.5504725677798493
+      ],
+      "candidate_bbox_stacked_normalized": [
+       0.2555001701404846,
+       0.5107014973958334,
+       0.27184003942153034,
+       0.5359540226483586
+      ],
+      "reference_text": "4 6",
+      "candidate_text": "4"
+     },
+     {
+      "reference_block_index": 7,
+      "candidate_block_index": 2,
+      "mass": 0.002810945273631793,
+      "combined_cost": 0.9329378171937777,
+      "geometry_cost": 0.9015925574254169,
+      "content_cost": 0.9911504424778761,
+      "reference_page": 0,
+      "candidate_page": 0,
+      "reference_bbox_stacked_normalized": [
+       0.1944886001886106,
+       0.5243835063895794,
+       0.2709981132956112,
+       0.5504725677798493
+      ],
+      "candidate_bbox_stacked_normalized": [
+       0.11764705882352941,
+       0.25581215367172705,
+       0.885644850388072,
+       0.31120666349777065
+      ],
+      "reference_text": "4 6",
+      "candidate_text": "1 Visualization The figure below is a TikZ/pgfplots drawing drawn from a source-backed image-to-LaTeX bench\u00ad mark."
+     },
+     {
+      "reference_block_index": 5,
+      "candidate_block_index": 4,
+      "mass": 0.004975124378109452,
+      "combined_cost": 0.25795414479990136,
+      "geometry_cost": 0.3968525304613867,
+      "content_cost": 0.0,
+      "reference_page": 0,
+      "candidate_page": 0,
+      "reference_bbox_stacked_normalized": [
+       0.4850693247676675,
+       0.39701858674637,
+       0.500532461926828,
+       0.4231076481366398
+      ],
+      "candidate_bbox_stacked_normalized": [
+       0.48388467427172693,
+       0.3821959447379064,
+       0.5002245435527727,
+       0.40744846999043166
+      ],
+      "reference_text": "9",
+      "candidate_text": "9"
+     },
+     {
+      "reference_block_index": 8,
+      "candidate_block_index": 6,
+      "mass": 0.0049751243781094535,
+      "combined_cost": 0.2476715341676334,
+      "geometry_cost": 0.38103312948866674,
+      "content_cost": 0.0,
+      "reference_page": 0,
+      "candidate_page": 0,
+      "reference_bbox_stacked_normalized": [
+       0.7133827957452512,
+       0.5243835063895794,
+       0.7288459329044118,
+       0.5504725677798493
+      ],
+      "candidate_bbox_stacked_normalized": [
+       0.7122813704746221,
+       0.5104237180767637,
+       0.7286212397556678,
+       0.535676243329289
+      ],
+      "reference_text": "9",
+      "candidate_text": "9"
+     },
+     {
+      "reference_block_index": 7,
+      "candidate_block_index": 11,
+      "mass": 0.0007711442786070034,
+      "combined_cost": 0.9537941455564312,
+      "geometry_cost": 0.9462837971339635,
+      "content_cost": 0.967741935483871,
+      "reference_page": 0,
+      "candidate_page": 0,
+      "reference_bbox_stacked_normalized": [
+       0.1944886001886106,
+       0.5243835063895794,
+       0.2709981132956112,
+       0.5504725677798493
+      ],
+      "candidate_bbox_stacked_normalized": [
+       0.2991383371789471,
+       0.7709720495975378,
+       0.6170134201548458,
+       0.8047258011018387
+      ],
+      "reference_text": "4 6",
+      "candidate_text": "6 Figure 1: Source-backed plot."
+     },
+     {
+      "reference_block_index": 7,
+      "candidate_block_index": 1,
+      "mass": 0.0005970149253731322,
+      "combined_cost": 0.9743875902424932,
+      "geometry_cost": 0.9830321901166561,
+      "content_cost": 0.9583333333333334,
+      "reference_page": 0,
+      "candidate_page": 0,
+      "reference_bbox_stacked_normalized": [
+       0.1944886001886106,
+       0.5243835063895794,
+       0.2709981132956112,
+       0.5504725677798493
+      ],
+      "candidate_bbox_stacked_normalized": [
+       0.39788152657303155,
+       0.2011177371246646,
+       0.6021184484943066,
+       0.2150066260135535
+      ],
+      "reference_text": "4 6",
+      "candidate_text": "Dataset-expansion sample"
+     },
+     {
+      "reference_block_index": 7,
+      "candidate_block_index": 0,
+      "mass": 0.0003233830845771196,
+      "combined_cost": 0.9610633810053619,
+      "geometry_cost": 0.9815176275822137,
+      "content_cost": 0.9230769230769231,
+      "reference_page": 0,
+      "candidate_page": 0,
+      "reference_bbox_stacked_normalized": [
+       0.1944886001886106,
+       0.5243835063895794,
+       0.2709981132956112,
+       0.5504725677798493
+      ],
+      "candidate_bbox_stacked_normalized": [
+       0.41273882498149,
+       0.15072546101579762,
+       0.5872612248838337,
+       0.17254365092576152
+      ],
+      "reference_text": "4 6",
+      "candidate_text": "Plot Sample 1"
+     },
+     {
+      "reference_block_index": 7,
+      "candidate_block_index": 10,
+      "mass": 9.950248756218985e-05,
+      "combined_cost": 0.9062690315621038,
+      "geometry_cost": 0.990413894710929,
+      "content_cost": 0.75,
+      "reference_page": 0,
+      "candidate_page": 0,
+      "reference_bbox_stacked_normalized": [
+       0.1944886001886106,
+       0.5243835063895794,
+       0.2709981132956112,
+       0.5504725677798493
+      ],
+      "candidate_bbox_stacked_normalized": [
+       0.6915820252661612,
+       0.7471723460187816,
+       0.711156558367162,
+       0.7689753831034959
+      ],
+      "reference_text": "4 6",
+      "candidate_text": "61 3"
+     },
+     {
+      "reference_block_index": 7,
+      "candidate_block_index": 3,
+      "mass": 9.950248756218985e-05,
+      "combined_cost": 0.8137992904609135,
+      "geometry_cost": 0.982768139170636,
+      "content_cost": 0.5,
+      "reference_page": 0,
+      "candidate_page": 0,
+      "reference_bbox_stacked_normalized": [
+       0.1944886001886106,
+       0.5243835063895794,
+       0.2709981132956112,
+       0.5504725677798493
+      ],
+      "candidate_bbox_stacked_normalized": [
+       0.4812869402318219,
+       0.3210091446385239,
+       0.5008614733328227,
+       0.34281223952168166
+      ],
+      "reference_text": "4 6",
+      "candidate_text": "65 6"
+     },
+     {
+      "reference_block_index": 7,
+      "candidate_block_index": 5,
+      "mass": 9.950248756219332e-05,
+      "combined_cost": 0.8042855918448624,
+      "geometry_cost": 0.9681316797613269,
+      "content_cost": 0.5,
+      "reference_page": 0,
+      "candidate_page": 0,
+      "reference_bbox_stacked_normalized": [
+       0.1944886001886106,
+       0.5243835063895794,
+       0.2709981132956112,
+       0.5504725677798493
+      ],
+      "candidate_bbox_stacked_normalized": [
+       0.7896274242525786,
+       0.48863335811730585,
+       0.8092019573535795,
+       0.5104363952020202
+      ],
+      "reference_text": "4 6",
+      "candidate_text": "65 6"
+     },
+     {
+      "reference_block_index": 7,
+      "candidate_block_index": 9,
+      "mass": 7.462686567164152e-05,
+      "combined_cost": 0.8513910512455319,
+      "geometry_cost": 0.9508580275572287,
+      "content_cost": 0.6666666666666666,
+      "reference_page": 0,
+      "candidate_page": 0,
+      "reference_bbox_stacked_normalized": [
+       0.1944886001886106,
+       0.5243835063895794,
+       0.2709981132956112,
+       0.5504725677798493
+      ],
+      "candidate_bbox_stacked_normalized": [
+       0.3427360634398616,
+       0.7178894197097933,
+       0.6413853963216146,
+       0.7434197628136837
+      ],
+      "reference_text": "4 6",
+      "candidate_text": "6 4"
+     },
+     {
+      "reference_block_index": 7,
+      "candidate_block_index": 4,
+      "mass": 2.487562189054833e-05,
+      "combined_cost": 0.9847842640078099,
+      "geometry_cost": 0.9765911753966308,
+      "content_cost": 1.0,
+      "reference_page": 0,
+      "candidate_page": 0,
+      "reference_bbox_stacked_normalized": [
+       0.1944886001886106,
+       0.5243835063895794,
+       0.2709981132956112,
+       0.5504725677798493
+      ],
+      "candidate_bbox_stacked_normalized": [
+       0.48388467427172693,
+       0.3821959447379064,
+       0.5002245435527727,
+       0.40744846999043166
+      ],
+      "reference_text": "4 6",
+      "candidate_text": "9"
+     }
+    ],
+    "mass_policy": "block normalized-character count; minimum mass unit 1",
+    "cost_policy": "0.65 * (1 - rescaled GIoU) + 0.35 * normalized Levenshtein distance",
+    "page_geometry": "page boxes stacked vertically and normalized by max page count"
+   },
+   "interpretation": "Exact optimal transport over extracted text blocks. This is an LTSim-inspired, fully specified adaptation\u2014not the published LTSim implementation or a semantic table/formula metric. Report geometry and content costs separately with the flows."
+  },
+  "layout_relations": {
+   "status": "scored",
+   "applicable": true,
+   "metrics": {
+    "matched_block_count": 12,
+    "reference_block_coverage": 0.8571428571428571,
+    "candidate_block_coverage": 1.0,
+    "matched_block_iou_q10": 0.00017001959437248942,
+    "matched_block_iou_q50": 0.2537305852024939,
+    "matched_block_center_displacement_q90": 0.04700428971513571,
+    "pairwise_relation_count": 66,
+    "pairwise_relation_agreement": 0.8939393939393939
+   },
+   "evidence": {
+    "relation_mismatches": [
+     {
+      "reference_block_pair": [
+       1,
+       6
+      ],
+      "candidate_block_pair": [
+       1,
+       5
+      ],
+      "reference_relation": "below",
+      "candidate_relation": "right_of",
+      "reference_text": [
+       "Dataset-expansion sample",
+       "65 6"
+      ]
+     },
+     {
+      "reference_block_pair": [
+       3,
+       7
+      ],
+      "candidate_block_pair": [
+       2,
+       7
+      ],
+      "reference_relation": "left_of",
+      "candidate_relation": "below",
+      "reference_text": [
+       "The figure below is a TikZ/pgfplots drawing drawn from a source-backed image-to-LaTeX bench- mark.",
+       "4 6"
+      ]
+     },
+     {
+      "reference_block_pair": [
+       3,
+       11
+      ],
+      "candidate_block_pair": [
+       2,
+       8
+      ],
+      "reference_relation": "below",
+      "candidate_relation": "left_of",
+      "reference_text": [
+       "The figure below is a TikZ/pgfplots drawing drawn from a source-backed image-to-LaTeX bench- mark.",
+       "6"
+      ]
+     },
+     {
+      "reference_block_pair": [
+       4,
+       11
+      ],
+      "candidate_block_pair": [
+       3,
+       8
+      ],
+      "reference_relation": "below",
+      "candidate_relation": "left_of",
+      "reference_text": [
+       "65 6",
+       "6"
+      ]
+     },
+     {
+      "reference_block_pair": [
+       5,
+       11
+      ],
+      "candidate_block_pair": [
+       4,
+       8
+      ],
+      "reference_relation": "below",
+      "candidate_relation": "left_of",
+      "reference_text": [
+       "9",
+       "6"
+      ]
+     },
+     {
+      "reference_block_pair": [
+       7,
+       11
+      ],
+      "candidate_block_pair": [
+       7,
+       8
+      ],
+      "reference_relation": "below",
+      "candidate_relation": "left_of",
+      "reference_text": [
+       "4 6",
+       "6"
+      ]
+     },
+     {
+      "reference_block_pair": [
+       11,
+       12
+      ],
+      "candidate_block_pair": [
+       8,
+       11
+      ],
+      "reference_relation": "right_of",
+      "candidate_relation": "below",
+      "reference_text": [
+       "6",
+       "Figure 1: Source-backed plot."
+      ]
+     }
+    ],
+    "worst_block_pairs": [
+     {
+      "reference_block_index": 11,
+      "candidate_block_index": 8,
+      "reference_page": 0,
+      "candidate_page": 0,
+      "reference_bbox_normalized": [
+       0.2860581641103707,
+       0.7632350728969381,
+       0.2975210551342933,
+       0.7813489509351326
+      ],
+      "candidate_bbox_normalized": [
+       0.18883726331922743,
+       0.5143270781545928,
+       0.19864118488785487,
+       0.5294785933061079
+      ],
+      "center_displacement": 0.26890261741256727,
+      "bbox_iou": 0.0,
+      "reference_text": "6"
+     },
+     {
+      "reference_block_index": 12,
+      "candidate_block_index": 11,
+      "reference_page": 0,
+      "candidate_page": 0,
+      "reference_bbox_normalized": [
+       0.38494658625982947,
+       0.8046113601838699,
+       0.615053513470818,
+       0.818385422831834
+      ],
+      "candidate_bbox_normalized": [
+       0.2991383371789471,
+       0.7709720495975378,
+       0.6170134201548458,
+       0.8047258011018387
+      ],
+      "center_displacement": 0.04813453417496806,
+      "bbox_iou": 0.001898242059658149,
+      "reference_text": "Figure 1: Source-backed plot."
+     },
+     {
+      "reference_block_index": 6,
+      "candidate_block_index": 5,
+      "reference_page": 0,
+      "candidate_page": 0,
+      "reference_bbox_normalized": [
+       0.7793128817689186,
+       0.5141659746266375,
+       0.8042057012420853,
+       0.5569592485524187
+      ],
+      "candidate_bbox_normalized": [
+       0.7896274242525786,
+       0.48863335811730585,
+       0.8092019573535795,
+       0.5104363952020202
+      ],
+      "center_displacement": 0.03683208957664452,
+      "bbox_iou": 0.0,
+      "reference_text": "65 6"
+     },
+     {
+      "reference_block_index": 7,
+      "candidate_block_index": 7,
+      "reference_page": 0,
+      "candidate_page": 0,
+      "reference_bbox_normalized": [
+       0.1944886001886106,
+       0.5243835063895794,
+       0.2709981132956112,
+       0.5504725677798493
+      ],
+      "candidate_bbox_normalized": [
+       0.2555001701404846,
+       0.5107014973958334,
+       0.27184003942153034,
+       0.5359540226483586
+      ],
+      "center_displacement": 0.033989433027104145,
+      "bbox_iou": 0.08043509778334466,
+      "reference_text": "4 6"
+     },
+     {
+      "reference_block_index": 5,
+      "candidate_block_index": 4,
+      "reference_page": 0,
+      "candidate_page": 0,
+      "reference_bbox_normalized": [
+       0.4850693247676675,
+       0.39701858674637,
+       0.500532461926828,
+       0.4231076481366398
+      ],
+      "candidate_bbox_normalized": [
+       0.48388467427172693,
+       0.3821959447379064,
+       0.5002245435527727,
+       0.40744846999043166
+      ],
+      "center_displacement": 0.015259170372053581,
+      "bbox_iou": 0.24023294876207368,
+      "reference_text": "9"
+     },
+     {
+      "reference_block_index": 1,
+      "candidate_block_index": 1,
+      "reference_page": 0,
+      "candidate_page": 0,
+      "reference_bbox_normalized": [
+       0.39130957609687755,
+       0.18607366927946456,
+       0.608690498701108,
+       0.20116858048872513
+      ],
+      "candidate_bbox_normalized": [
+       0.39788152657303155,
+       0.2011177371246646,
+       0.6021184484943066,
+       0.2150066260135535
+      ],
+      "center_displacement": 0.014441056685100312,
+      "bbox_iou": 0.0017001959437248926,
+      "reference_text": "Dataset-expansion sample"
+     },
+     {
+      "reference_block_index": 8,
+      "candidate_block_index": 6,
+      "reference_page": 0,
+      "candidate_page": 0,
+      "reference_bbox_normalized": [
+       0.7133827957452512,
+       0.5243835063895794,
+       0.7288459329044118,
+       0.5504725677798493
+      ],
+      "candidate_bbox_normalized": [
+       0.7122813704746221,
+       0.5104237180767637,
+       0.7286212397556678,
+       0.535676243329289
+      ],
+      "center_displacement": 0.014393337098482473,
+      "bbox_iou": 0.26722822164291415,
+      "reference_text": "9"
+     },
+     {
+      "reference_block_index": 9,
+      "candidate_block_index": 9,
+      "reference_page": 0,
+      "candidate_page": 0,
+      "reference_bbox_normalized": [
+       0.3434417575013404,
+       0.7309977213541666,
+       0.6409391515395221,
+       0.7570867827444365
+      ],
+      "candidate_bbox_normalized": [
+       0.3427360634398616,
+       0.7178894197097933,
+       0.6413853963216146,
+       0.7434197628136837
+      ],
+      "center_displacement": 0.013388289280001254,
+      "bbox_iou": 0.3161128926314797,
+      "reference_text": "6 4"
+     },
+     {
+      "reference_block_index": 10,
+      "candidate_block_index": 10,
+      "reference_page": 0,
+      "candidate_page": 0,
+      "reference_bbox_normalized": [
+       0.684080535290288,
+       0.746253196639244,
+       0.7089733547634549,
+       0.7890464705650253
+      ],
+      "candidate_bbox_normalized": [
+       0.6915820252661612,
+       0.7471723460187816,
+       0.711156558367162,
+       0.7689753831034959
+      ],
+      "center_displacement": 0.010730680570527932,
+      "bbox_iou": 0.3407334889440864,
+      "reference_text": "61 3"
+     },
+     {
+      "reference_block_index": 3,
+      "candidate_block_index": 2,
+      "reference_page": 0,
+      "candidate_page": 0,
+      "reference_bbox_normalized": [
+       0.11764705882352941,
+       0.27641560332943693,
+       0.8823707929623672,
+       0.3072972731156783
+      ],
+      "candidate_bbox_normalized": [
+       0.11764705882352941,
+       0.25581215367172705,
+       0.885644850388072,
+       0.31120666349777065
+      ],
+      "center_displacement": 0.008506042956696179,
+      "bbox_iou": 0.5551094863633377,
+      "reference_text": "The figure below is a TikZ/pgfplots drawing drawn from a source-backed image-to-LaTeX bench- mark."
+     },
+     {
+      "reference_block_index": 4,
+      "candidate_block_index": 3,
+      "reference_page": 0,
+      "candidate_page": 0,
+      "reference_bbox_normalized": [
+       0.4801856146918403,
+       0.31883532591540403,
+       0.5050784341650072,
+       0.36162856130888965
+      ],
+      "candidate_bbox_normalized": [
+       0.4812869402318219,
+       0.3210091446385239,
+       0.5008614733328227,
+       0.34281223952168166
+      ],
+      "center_displacement": 0.008465814956520703,
+      "bbox_iou": 0.4006455694494582,
+      "reference_text": "65 6"
+     },
+     {
+      "reference_block_index": 0,
+      "candidate_block_index": 0,
+      "reference_page": 0,
+      "candidate_page": 0,
+      "reference_bbox_normalized": [
+       0.42035046745749083,
+       0.14247027310458096,
+       0.5796495824078329,
+       0.164206938310103
+      ],
+      "candidate_bbox_normalized": [
+       0.41273882498149,
+       0.15072546101579762,
+       0.5872612248838337,
+       0.17254365092576152
+      ],
+      "center_displacement": 0.008295950263437601,
+      "bbox_iou": 0.41922083035742813,
+      "reference_text": "Plot Sample 1"
+     }
+    ]
+   },
+   "interpretation": "Transparent matched-block relation trial inspired by pairwise-layout work; this is not the published PaIRS or LTSim metric."
+  },
+  "reading_order": {
+   "status": "scored",
+   "applicable": true,
+   "metrics": {
+    "matched_block_count": 12,
+    "reference_block_coverage": 0.8571428571428571,
+    "candidate_block_coverage": 1.0,
+    "inversion_count": 3,
+    "kendall_tau": 0.9090909090909091
+   },
+   "evidence": {
+    "inverted_block_pairs": [
+     {
+      "reference_block_pair": [
+       7,
+       8
+      ],
+      "candidate_block_pair": [
+       7,
+       6
+      ],
+      "reference_text": [
+       "4 6",
+       "9"
+      ],
+      "candidate_text": [
+       "4",
+       "9"
+      ]
+     },
+     {
+      "reference_block_pair": [
+       9,
+       11
+      ],
+      "candidate_block_pair": [
+       9,
+       8
+      ],
+      "reference_text": [
+       "6 4",
+       "6"
+      ],
+      "candidate_text": [
+       "6 4",
+       "6"
+      ]
+     },
+     {
+      "reference_block_pair": [
+       10,
+       11
+      ],
+      "candidate_block_pair": [
+       10,
+       8
+      ],
+      "reference_text": [
+       "61 3",
+       "6"
+      ],
+      "candidate_text": [
+       "61 3",
+       "6"
+      ]
+     }
+    ]
+   },
+   "interpretation": "Kendall tau is computed only on content-matched blocks; coverage must accompany it."
+  },
+  "pagination": {
+   "status": "scored",
+   "applicable": true,
+   "metrics": {
+    "reference_page_count": 1,
+    "candidate_page_count": 1,
+    "page_count_delta": 0,
+    "matched_block_count": 12,
+    "matched_block_page_assignment_accuracy": 1.0,
+    "page_break_precision": 1.0,
+    "page_break_recall": 1.0,
+    "page_break_f1": 1.0,
+    "page_break_true_positive": 0,
+    "page_break_false_positive": 0,
+    "page_break_false_negative": 0
+   },
+   "evidence": {
+    "mismatched_page_breaks": []
+   },
+   "interpretation": "Page count, matched-block page assignment, and page-break boundaries are reported independently."
+  },
+  "typography": {
+   "status": "scored",
+   "applicable": true,
+   "metrics": {
+    "styled_matched_token_count": 37,
+    "reference_styled_token_count": 39,
+    "candidate_styled_token_count": 38,
+    "reference_style_coverage": 0.9487179487179487,
+    "candidate_style_coverage": 0.9736842105263158,
+    "style_coverage_hmean": 0.9610389610389611,
+    "font_size_abs_log_ratio_q50": 0.008299057127878501,
+    "font_size_abs_log_ratio_q90": 0.17857818233979583,
+    "font_size_abs_log_ratio_max": 0.5352531716915918,
+    "font_name_exact_agreement_rate": 0.0,
+    "color_exact_agreement_rate": 1.0,
+    "bold_agreement_rate": 1.0,
+    "italic_agreement_rate": 1.0,
+    "serif_agreement_rate": 1.0,
+    "monospace_agreement_rate": 1.0,
+    "baseline_displacement_q90": 0.0192030319059738
+   },
+   "evidence": {
+    "style_mismatches": [
+     {
+      "token": "3",
+      "reference_page": 0,
+      "candidate_page": 0,
+      "reference_bbox": [
+       426.87640380859375,
+       610.57861328125,
+       433.8916931152344,
+       624.9248046875
+      ],
+      "candidate_bbox": [
+       430.4482116699219,
+       600.6285400390625,
+       435.2278137207031,
+       609.0285034179688
+      ],
+      "reference_font": "CMR12",
+      "candidate_font": "NewCMMath-Book",
+      "reference_size": 14.346196174621582,
+      "candidate_size": 8.399999618530273,
+      "font_size_abs_log_ratio": 0.5352531716915918,
+      "reference_style_bits": {
+       "italic": false,
+       "serif": true,
+       "monospace": false,
+       "bold": false
+      },
+      "candidate_style_bits": {
+       "italic": false,
+       "serif": true,
+       "monospace": false,
+       "bold": false
+      },
+      "reference_color": 0,
+      "candidate_color": 0
+     },
+     {
+      "token": "6",
+      "reference_page": 0,
+      "candidate_page": 0,
+      "reference_bbox": [
+       302.09271240234375,
+       272.0636291503906,
+       309.1080017089844,
+       286.4098205566406
+      ],
+      "candidate_bbox": [
+       301.74761962890625,
+       263.1072998046875,
+       306.5272216796875,
+       271.5072937011719
+      ],
+      "reference_font": "CMR12",
+      "candidate_font": "NewCMMath-Book",
+      "reference_size": 14.346196174621582,
+      "candidate_size": 8.399999618530273,
+      "font_size_abs_log_ratio": 0.5352531716915918,
+      "reference_style_bits": {
+       "italic": false,
+       "serif": true,
+       "monospace": false,
+       "bold": false
+      },
+      "candidate_style_bits": {
+       "italic": false,
+       "serif": true,
+       "monospace": false,
+       "bold": false
+      },
+      "reference_color": 0,
+      "candidate_color": 0
+     },
+     {
+      "token": "6",
+      "reference_page": 0,
+      "candidate_page": 0,
+      "reference_bbox": [
+       485.1585998535156,
+       426.7655334472656,
+       492.17388916015625,
+       441.1117248535156
+      ],
+      "candidate_bbox": [
+       490.4519958496094,
+       395.8656311035156,
+       495.2315979003906,
+       404.265625
+      ],
+      "reference_font": "CMR12",
+      "candidate_font": "NewCMMath-Book",
+      "reference_size": 14.346196174621582,
+      "candidate_size": 8.399999618530273,
+      "font_size_abs_log_ratio": 0.5352531716915918,
+      "reference_style_bits": {
+       "italic": false,
+       "serif": true,
+       "monospace": false,
+       "bold": false
+      },
+      "candidate_style_bits": {
+       "italic": false,
+       "serif": true,
+       "monospace": false,
+       "bold": false
+      },
+      "reference_color": 0,
+      "candidate_color": 0
+     },
+     {
+      "token": "6",
+      "reference_page": 0,
+      "candidate_page": 0,
+      "reference_bbox": [
+       119.02702331542969,
+       420.6690673828125,
+       126.04231262207031,
+       435.0152587890625
+      ],
+      "candidate_bbox": [
+       115.56840515136719,
+       407.3470458984375,
+       121.56840515136719,
+       419.3470458984375
+      ],
+      "reference_font": "CMR12",
+      "candidate_font": "NewCMMath-Book",
+      "reference_size": 14.346196174621582,
+      "candidate_size": 12.0,
+      "font_size_abs_log_ratio": 0.17857818233979583,
+      "reference_style_bits": {
+       "italic": false,
+       "serif": true,
+       "monospace": false,
+       "bold": false
+      },
+      "candidate_style_bits": {
+       "italic": false,
+       "serif": true,
+       "monospace": false,
+       "bold": false
+      },
+      "reference_color": 0,
+      "candidate_color": 0
+     },
+     {
+      "token": "6",
+      "reference_page": 0,
+      "candidate_page": 0,
+      "reference_bbox": [
+       175.06759643554688,
+       604.482177734375,
+       182.0828857421875,
+       618.828369140625
+      ],
+      "candidate_bbox": [
+       183.07266235351562,
+       610.60986328125,
+       189.07266235351562,
+       622.60986328125
+      ],
+      "reference_font": "CMR12",
+      "candidate_font": "NewCMMath-Book",
+      "reference_size": 14.346196174621582,
+      "candidate_size": 12.0,
+      "font_size_abs_log_ratio": 0.17857818233979583,
+      "reference_style_bits": {
+       "italic": false,
+       "serif": true,
+       "monospace": false,
+       "bold": false
+      },
+      "candidate_style_bits": {
+       "italic": false,
+       "serif": true,
+       "monospace": false,
+       "bold": false
+      },
+      "reference_color": 0,
+      "candidate_color": 0
+     },
+     {
+      "token": "61",
+      "reference_page": 0,
+      "candidate_page": 0,
+      "reference_bbox": [
+       418.65728759765625,
+       591.0325317382812,
+       433.8916931152344,
+       615.0840454101562
+      ],
+      "candidate_bbox": [
+       423.2481994628906,
+       591.760498046875,
+       435.2278137207031,
+       605.5869140625
+      ],
+      "reference_font": "CMR12",
+      "candidate_font": "NewCMMath-Book",
+      "reference_size": 14.346196174621582,
+      "candidate_size": 12.0,
+      "font_size_abs_log_ratio": 0.17857818233979583,
+      "reference_style_bits": {
+       "italic": false,
+       "serif": true,
+       "monospace": false,
+       "bold": false
+      },
+      "candidate_style_bits": {
+       "italic": false,
+       "serif": true,
+       "monospace": false,
+       "bold": false
+      },
+      "reference_color": 0,
+      "candidate_color": 0
+     },
+     {
+      "token": "65",
+      "reference_page": 0,
+      "candidate_page": 0,
+      "reference_bbox": [
+       293.87359619140625,
+       252.517578125,
+       309.1080017089844,
+       276.5690612792969
+      ],
+      "candidate_bbox": [
+       294.547607421875,
+       254.23924255371094,
+       306.5272216796875,
+       268.065673828125
+      ],
+      "reference_font": "CMR12",
+      "candidate_font": "NewCMMath-Book",
+      "reference_size": 14.346196174621582,
+      "candidate_size": 12.0,
+      "font_size_abs_log_ratio": 0.17857818233979583,
+      "reference_style_bits": {
+       "italic": false,
+       "serif": true,
+       "monospace": false,
+       "bold": false
+      },
+      "candidate_style_bits": {
+       "italic": false,
+       "serif": true,
+       "monospace": false,
+       "bold": false
+      },
+      "reference_color": 0,
+      "candidate_color": 0
+     },
+     {
+      "token": "65",
+      "reference_page": 0,
+      "candidate_page": 0,
+      "reference_bbox": [
+       476.9394836425781,
+       407.2194519042969,
+       492.17388916015625,
+       431.2709655761719
+      ],
+      "candidate_bbox": [
+       483.2519836425781,
+       386.99761962890625,
+       495.2315979003906,
+       400.8240051269531
+      ],
+      "reference_font": "CMR12",
+      "candidate_font": "NewCMMath-Book",
+      "reference_size": 14.346196174621582,
+      "candidate_size": 12.0,
+      "font_size_abs_log_ratio": 0.17857818233979583,
+      "reference_style_bits": {
+       "italic": false,
+       "serif": true,
+       "monospace": false,
+       "bold": false
+      },
+      "candidate_style_bits": {
+       "italic": false,
+       "serif": true,
+       "monospace": false,
+       "bold": false
+      },
+      "reference_color": 0,
+      "candidate_color": 0
+     },
+     {
+      "token": "Dataset-expansion",
+      "reference_page": 0,
+      "candidate_page": 0,
+      "reference_bbox": [
+       239.48146057128906,
+       147.37034606933594,
+       333.4371337890625,
+       159.3255157470703
+      ],
+      "candidate_bbox": [
+       243.5034942626953,
+       159.28524780273438,
+       331.7784729003906,
+       170.28524780273438
+      ],
+      "reference_font": "LMRoman12-Regular",
+      "candidate_font": "NewCM10-Regular",
+      "reference_size": 11.955167770385742,
+      "candidate_size": 11.0,
+      "font_size_abs_log_ratio": 0.08326836150451908,
+      "reference_style_bits": {
+       "italic": false,
+       "serif": true,
+       "monospace": false,
+       "bold": false
+      },
+      "candidate_style_bits": {
+       "italic": false,
+       "serif": true,
+       "monospace": false,
+       "bold": false
+      },
+      "reference_color": 0,
+      "candidate_color": 0
+     },
+     {
+      "token": "sample",
+      "reference_page": 0,
+      "candidate_page": 0,
+      "reference_bbox": [
+       337.33453369140625,
+       147.37034606933594,
+       372.5185852050781,
+       159.3255157470703
+      ],
+      "candidate_bbox": [
+       335.4414978027344,
+       159.28524780273438,
+       368.4964904785156,
+       170.28524780273438
+      ],
+      "reference_font": "LMRoman12-Regular",
+      "candidate_font": "NewCM10-Regular",
+      "reference_size": 11.955167770385742,
+      "candidate_size": 11.0,
+      "font_size_abs_log_ratio": 0.08326836150451908,
+      "reference_style_bits": {
+       "italic": false,
+       "serif": true,
+       "monospace": false,
+       "bold": false
+      },
+      "candidate_style_bits": {
+       "italic": false,
+       "serif": true,
+       "monospace": false,
+       "bold": false
+      },
+      "reference_color": 0,
+      "candidate_color": 0
+     },
+     {
+      "token": "1",
+      "reference_page": 0,
+      "candidate_page": 0,
+      "reference_bbox": [
+       72.0,
+       191.78746032714844,
+       80.07691192626953,
+       206.13365173339844
+      ],
+      "candidate_bbox": [
+       72.0,
+       202.6032257080078,
+       80.8550033569336,
+       218.0032196044922
+      ],
+      "reference_font": "LMRoman12-Bold",
+      "candidate_font": "NewCM10-Bold",
+      "reference_size": 14.346196174621582,
+      "candidate_size": 15.399999618530273,
+      "font_size_abs_log_ratio": 0.07088265252102555,
+      "reference_style_bits": {
+       "italic": false,
+       "serif": true,
+       "monospace": false,
+       "bold": true
+      },
+      "candidate_style_bits": {
+       "italic": false,
+       "serif": true,
+       "monospace": false,
+       "bold": true
+      },
+      "reference_color": 0,
+      "candidate_color": 0
+     },
+     {
+      "token": "Visualization",
+      "reference_page": 0,
+      "candidate_page": 0,
+      "reference_bbox": [
+       94.42311096191406,
+       191.78746032714844,
+       186.10964965820312,
+       206.13365173339844
+      ],
+      "candidate_bbox": [
+       85.4749984741211,
+       202.6032257080078,
+       186.00621032714844,
+       218.0032196044922
+      ],
+      "reference_font": "LMRoman12-Bold",
+      "candidate_font": "NewCM10-Bold",
+      "reference_size": 14.346196174621582,
+      "candidate_size": 15.399999618530273,
+      "font_size_abs_log_ratio": 0.07088265252102555,
+      "reference_style_bits": {
+       "italic": false,
+       "serif": true,
+       "monospace": false,
+       "bold": true
+      },
+      "candidate_style_bits": {
+       "italic": false,
+       "serif": true,
+       "monospace": false,
+       "bold": true
+      },
+      "reference_color": 0,
+      "candidate_color": 0
+     },
+     {
+      "token": "4",
+      "reference_page": 0,
+      "candidate_page": 0,
+      "reference_bbox": [
+       156.3874053955078,
+       415.3117370605469,
+       165.85084533691406,
+       435.9742736816406
+      ],
+      "candidate_bbox": [
+       156.36610412597656,
+       404.4755859375,
+       166.36610412597656,
+       424.4755859375
+      ],
+      "reference_font": "CMR17",
+      "candidate_font": "NewCM10-Regular",
+      "reference_size": 20.662521362304688,
+      "candidate_size": 20.0,
+      "font_size_abs_log_ratio": 0.03258922346096256,
+      "reference_style_bits": {
+       "italic": false,
+       "serif": true,
+       "monospace": false,
+       "bold": false
+      },
+      "candidate_style_bits": {
+       "italic": false,
+       "serif": true,
+       "monospace": false,
+       "bold": false
+      },
+      "reference_color": 0,
+      "candidate_color": 0
+     },
+     {
+      "token": "4",
+      "reference_page": 0,
+      "candidate_page": 0,
+      "reference_bbox": [
+       210.1863555908203,
+       578.9501953125,
+       219.64979553222656,
+       599.6127319335938
+      ],
+      "candidate_bbox": [
+       209.7544708251953,
+       568.7884521484375,
+       219.7544708251953,
+       588.7884521484375
+      ],
+      "reference_font": "CMR17",
+      "candidate_font": "NewCM10-Regular",
+      "reference_size": 20.662521362304688,
+      "candidate_size": 20.0,
+      "font_size_abs_log_ratio": 0.03258922346096256,
+      "reference_style_bits": {
+       "italic": false,
+       "serif": true,
+       "monospace": false,
+       "bold": false
+      },
+      "candidate_style_bits": {
+       "italic": false,
+       "serif": true,
+       "monospace": false,
+       "bold": false
+      },
+      "reference_color": 0,
+      "candidate_color": 0
+     },
+     {
+      "token": "6",
+      "reference_page": 0,
+      "candidate_page": 0,
+      "reference_bbox": [
+       382.79132080078125,
+       578.9501953125,
+       392.2547607421875,
+       599.6127319335938
+      ],
+      "candidate_bbox": [
+       382.5278625488281,
+       568.5684204101562,
+       392.5278625488281,
+       588.5684204101562
+      ],
+      "reference_font": "CMR17",
+      "candidate_font": "NewCM10-Regular",
+      "reference_size": 20.662521362304688,
+      "candidate_size": 20.0,
+      "font_size_abs_log_ratio": 0.03258922346096256,
+      "reference_style_bits": {
+       "italic": false,
+       "serif": true,
+       "monospace": false,
+       "bold": false
+      },
+      "candidate_style_bits": {
+       "italic": false,
+       "serif": true,
+       "monospace": false,
+       "bold": false
+      },
+      "reference_color": 0,
+      "candidate_color": 0
+     },
+     {
+      "token": "9",
+      "reference_page": 0,
+      "candidate_page": 0,
+      "reference_bbox": [
+       296.8624267578125,
+       314.438720703125,
+       306.32586669921875,
+       335.10125732421875
+      ],
+      "candidate_bbox": [
+       296.1374206542969,
+       302.6991882324219,
+       306.1374206542969,
+       322.6991882324219
+      ],
+      "reference_font": "CMR17",
+      "candidate_font": "NewCM10-Regular",
+      "reference_size": 20.662521362304688,
+      "candidate_size": 20.0,
+      "font_size_abs_log_ratio": 0.03258922346096256,
+      "reference_style_bits": {
+       "italic": false,
+       "serif": true,
+       "monospace": false,
+       "bold": false
+      },
+      "candidate_style_bits": {
+       "italic": false,
+       "serif": true,
+       "monospace": false,
+       "bold": false
+      },
+      "reference_color": 0,
+      "candidate_color": 0
+     },
+     {
+      "token": "9",
+      "reference_page": 0,
+      "candidate_page": 0,
+      "reference_bbox": [
+       436.59027099609375,
+       415.3117370605469,
+       446.0537109375,
+       435.9742736816406
+      ],
+      "candidate_bbox": [
+       435.91619873046875,
+       404.2555847167969,
+       445.91619873046875,
+       424.2555847167969
+      ],
+      "reference_font": "CMR17",
+      "candidate_font": "NewCM10-Regular",
+      "reference_size": 20.662521362304688,
+      "candidate_size": 20.0,
+      "font_size_abs_log_ratio": 0.03258922346096256,
+      "reference_style_bits": {
+       "italic": false,
+       "serif": true,
+       "monospace": false,
+       "bold": false
+      },
+      "candidate_style_bits": {
+       "italic": false,
+       "serif": true,
+       "monospace": false,
+       "bold": false
+      },
+      "reference_color": 0,
+      "candidate_color": 0
+     },
+     {
+      "token": "1:",
+      "reference_page": 0,
+      "candidate_page": 0,
+      "reference_bbox": [
+       270.01641845703125,
+       637.252197265625,
+       278.503662109375,
+       648.1612548828125
+      ],
+      "candidate_bbox": [
+       271.5502014160156,
+       626.3428344726562,
+       280.10821533203125,
+       637.3428344726562
+      ],
+      "reference_font": "LMRoman10-Regular",
+      "candidate_font": "NewCM10-Regular",
+      "reference_size": 10.909088134765625,
+      "candidate_size": 11.0,
+      "font_size_abs_log_ratio": 0.008299057127878501,
+      "reference_style_bits": {
+       "italic": false,
+       "serif": true,
+       "monospace": false,
+       "bold": false
+      },
+      "candidate_style_bits": {
+       "italic": false,
+       "serif": true,
+       "monospace": false,
+       "bold": false
+      },
+      "reference_color": 0,
+      "candidate_color": 0
+     },
+     {
+      "token": "Figure",
+      "reference_page": 0,
+      "candidate_page": 0,
+      "reference_bbox": [
+       235.58731079101562,
+       637.252197265625,
+       266.3836669921875,
+       648.1612548828125
+      ],
+      "candidate_bbox": [
+       236.83419799804688,
+       626.3428344726562,
+       267.88720703125,
+       637.3428344726562
+      ],
+      "reference_font": "LMRoman10-Regular",
+      "candidate_font": "NewCM10-Regular",
+      "reference_size": 10.909088134765625,
+      "candidate_size": 11.0,
+      "font_size_abs_log_ratio": 0.008299057127878501,
+      "reference_style_bits": {
+       "italic": false,
+       "serif": true,
+       "monospace": false,
+       "bold": false
+      },
+      "candidate_style_bits": {
+       "italic": false,
+       "serif": true,
+       "monospace": false,
+       "bold": false
+      },
+      "reference_color": 0,
+      "candidate_color": 0
+     },
+     {
+      "token": "Source-backed",
+      "reference_page": 0,
+      "candidate_page": 0,
+      "reference_bbox": [
+       283.3473205566406,
+       637.252197265625,
+       350.96185302734375,
+       648.1612548828125
+      ],
+      "candidate_bbox": [
+       283.7712097167969,
+       626.3428344726562,
+       351.9382019042969,
+       637.3428344726562
+      ],
+      "reference_font": "LMRoman10-Regular",
+      "candidate_font": "NewCM10-Regular",
+      "reference_size": 10.909088134765625,
+      "candidate_size": 11.0,
+      "font_size_abs_log_ratio": 0.008299057127878501,
+      "reference_style_bits": {
+       "italic": false,
+       "serif": true,
+       "monospace": false,
+       "bold": false
+      },
+      "candidate_style_bits": {
+       "italic": false,
+       "serif": true,
+       "monospace": false,
+       "bold": false
+      },
+      "reference_color": 0,
+      "candidate_color": 0
+     },
+     {
+      "token": "The",
+      "reference_page": 0,
+      "candidate_page": 0,
+      "reference_bbox": [
+       72.0,
+       218.92115783691406,
+       90.78545379638672,
+       229.8302459716797
+      ],
+      "candidate_bbox": [
+       72.0,
+       221.91262817382812,
+       90.94200134277344,
+       232.91262817382812
+      ],
+      "reference_font": "LMRoman10-Regular",
+      "candidate_font": "NewCM10-Regular",
+      "reference_size": 10.909088134765625,
+      "candidate_size": 11.0,
+      "font_size_abs_log_ratio": 0.008299057127878501,
+      "reference_style_bits": {
+       "italic": false,
+       "serif": true,
+       "monospace": false,
+       "bold": false
+      },
+      "candidate_style_bits": {
+       "italic": false,
+       "serif": true,
+       "monospace": false,
+       "bold": false
+      },
+      "reference_color": 0,
+      "candidate_color": 0
+     },
+     {
+      "token": "TikZ/pgfplots",
+      "reference_page": 0,
+      "candidate_page": 0,
+      "reference_bbox": [
+       176.825439453125,
+       218.92115783691406,
+       243.5672607421875,
+       229.8302459716797
+      ],
+      "candidate_bbox": [
+       176.92352294921875,
+       221.91262817382812,
+       244.22152709960938,
+       232.91262817382812
+      ],
+      "reference_font": "LMRoman10-Regular",
+      "candidate_font": "NewCM10-Regular",
+      "reference_size": 10.909088134765625,
+      "candidate_size": 11.0,
+      "font_size_abs_log_ratio": 0.008299057127878501,
+      "reference_style_bits": {
+       "italic": false,
+       "serif": true,
+       "monospace": false,
+       "bold": false
+      },
+      "candidate_style_bits": {
+       "italic": false,
+       "serif": true,
+       "monospace": false,
+       "bold": false
+      },
+      "reference_color": 0,
+      "candidate_color": 0
+     },
+     {
+      "token": "a",
+      "reference_page": 0,
+      "candidate_page": 0,
+      "reference_bbox": [
+       167.51998901367188,
+       218.92115783691406,
+       172.9745330810547,
+       229.8302459716797
+      ],
+      "candidate_bbox": [
+       167.69122314453125,
+       221.91262817382812,
+       173.19122314453125,
+       232.91262817382812
+      ],
+      "reference_font": "LMRoman10-Regular",
+      "candidate_font": "NewCM10-Regular",
+      "reference_size": 10.909088134765625,
+      "candidate_size": 11.0,
+      "font_size_abs_log_ratio": 0.008299057127878501,
+      "reference_style_bits": {
+       "italic": false,
+       "serif": true,
+       "monospace": false,
+       "bold": false
+      },
+      "candidate_style_bits": {
+       "italic": false,
+       "serif": true,
+       "monospace": false,
+       "bold": false
+      },
+      "reference_color": 0,
+      "candidate_color": 0
+     },
+     {
+      "token": "a",
+      "reference_page": 0,
+      "candidate_page": 0,
+      "reference_bbox": [
+       348.51275634765625,
+       218.92115783691406,
+       353.96728515625,
+       229.8302459716797
+      ],
+      "candidate_bbox": [
+       349.40570068359375,
+       221.91262817382812,
+       354.90570068359375,
+       232.91262817382812
+      ],
+      "reference_font": "LMRoman10-Regular",
+      "candidate_font": "NewCM10-Regular",
+      "reference_size": 10.909088134765625,
+      "candidate_size": 11.0,
+      "font_size_abs_log_ratio": 0.008299057127878501,
+      "reference_style_bits": {
+       "italic": false,
+       "serif": true,
+       "monospace": false,
+       "bold": false
+      },
+      "candidate_style_bits": {
+       "italic": false,
+       "serif": true,
+       "monospace": false,
+       "bold": false
+      },
+      "reference_color": 0,
+      "candidate_color": 0
+     }
+    ]
+   },
+   "interpretation": "Raw PDF font observables are diagnostic; font names and flags are renderer metadata, not perceptual truth."
+  },
+  "raster_ink": {
+   "status": "scored",
+   "applicable": true,
+   "metrics": {
+    "paired_page_count": 1,
+    "unpaired_page_count": 0,
+    "unregistered_tolerant_ink_f1_macro": 0.28495118188397334,
+    "registered_tolerant_ink_f1_macro": 0.3106684413021494,
+    "registration_gain": 0.02571725941817604
+   },
+   "evidence": {
+    "pages": [
+     {
+      "page": 0,
+      "reference_raster_size": [
+       816,
+       1056
+      ],
+      "candidate_raster_size_before_resize": [
+       816,
+       1056
+      ],
+      "candidate_resized_to_reference_canvas": true,
+      "coordinate_frame": "registered_reference_raster",
+      "registration_translation_px": [
+       -1,
+       -4
+      ],
+      "unregistered": {
+       "reference_ink_pixels": 26441,
+       "candidate_ink_pixels": 22493,
+       "precision": 0.2944471613390833,
+       "recall": 0.27604856094701413,
+       "f1": 0.28495118188397334,
+       "unmatched_ink_pixels": 35012,
+       "unmatched_ink_fraction_of_union": 0.7751333879430583
+      },
+      "registered": {
+       "reference_ink_pixels": 26441,
+       "candidate_ink_pixels": 22493,
+       "precision": 0.32716845240741566,
+       "recall": 0.2957528081388752,
+       "f1": 0.3106684413021494,
+       "unmatched_ink_pixels": 33755,
+       "unmatched_ink_fraction_of_union": 0.7665319284222
+      },
+      "registered_mean_absolute_gray_difference": 0.016929290562778882,
+      "top_difference_bbox": {
+       "pixel_bbox": [
+        97,
+        153,
+        660,
+        1000
+       ],
+       "normalized_bbox": [
+        0.11887254901960784,
+        0.14488636363636365,
+        0.8088235294117647,
+        0.946969696969697
+       ]
+      }
+     }
+    ],
+    "top_difference_bbox": {
+     "page": 0,
+     "unpaired_side": null,
+     "coordinate_frame": "registered_reference_raster",
+     "registration_translation_px": [
+      -1,
+      -4
+     ],
+     "pixel_bbox": [
+      97,
+      153,
+      660,
+      1000
+     ],
+     "normalized_bbox": [
+      0.11887254901960784,
+      0.14488636363636365,
+      0.8088235294117647,
+      0.946969696969697
+     ]
+    }
+   },
+   "interpretation": "Candidate pages are resized to the reference canvas, then optionally translation-registered. Use canvas and geometry axes for layout claims."
+  },
+  "raster_perceptual": {
+   "status": "scored",
+   "applicable": true,
+   "metrics": {
+    "paired_page_count": 1,
+    "scored_page_count": 1,
+    "abstained_page_count": 0,
+    "unpaired_page_count": 0,
+    "unregistered_ssim_macro": 0.8840882849332933,
+    "registered_ssim_macro": 0.892298659083986,
+    "unregistered_multiscale_ssim_diagnostic_macro": 0.9015140730719788,
+    "registered_multiscale_ssim_diagnostic_macro": 0.9087452158746128
+   },
+   "evidence": {
+    "pages": [
+     {
+      "page": 0,
+      "status": "scored",
+      "unregistered_ssim": 0.8840882849332933,
+      "registered_ssim": 0.892298659083986,
+      "unregistered_multiscale_ssim_diagnostic": 0.9015140730719788,
+      "registered_multiscale_ssim_diagnostic": 0.9087452158746128,
+      "unregistered_scale_scores": [
+       {
+        "downsample_factor": 1,
+        "ssim": 0.8840882849332933
+       },
+       {
+        "downsample_factor": 2,
+        "ssim": 0.8422278809205773
+       },
+       {
+        "downsample_factor": 4,
+        "ssim": 0.7832976842056922
+       },
+       {
+        "downsample_factor": 8,
+        "ssim": 0.7074247786226902
+       }
+      ],
+      "registered_scale_scores": [
+       {
+        "downsample_factor": 1,
+        "ssim": 0.892298659083986
+       },
+       {
+        "downsample_factor": 2,
+        "ssim": 0.8510787008357592
+       },
+       {
+        "downsample_factor": 4,
+        "ssim": 0.7987743590816053
+       },
+       {
+        "downsample_factor": 8,
+        "ssim": 0.7317981810980433
+       }
+      ],
+      "registration_translation_px": [
+       -1,
+       -4
+      ],
+      "candidate_resized_to_reference_canvas": false,
+      "reference_raster_size": [
+       816,
+       1056
+      ],
+      "candidate_raster_size_before_resize": [
+       816,
+       1056
+      ],
+      "registered_difference_bbox": {
+       "pixel_bbox": [
+        97,
+        153,
+        660,
+        1000
+       ],
+       "normalized_bbox": [
+        0.11887254901960784,
+        0.14488636363636365,
+        0.8088235294117647,
+        0.946969696969697
+       ]
+      }
+     }
+    ]
+   },
+   "interpretation": "SSIM is reported before and after translation-only registration. The multiscale value is the documented geometric mean of four SSIM scales, not canonical MS-SSIM. No candidate resizing is performed; SSIM abstains when physical canvases/grids differ."
+  },
+  "tables": {
+   "status": "abstain",
+   "applicable": null,
+   "metrics": {},
+   "evidence": {
+    "source_flags": {
+     "reference": null,
+     "candidate": null
+    }
+   },
+   "reason": "Applicability for tables was not established by source metadata."
+  },
+  "formulas": {
+   "status": "abstain",
+   "applicable": null,
+   "metrics": {},
+   "evidence": {
+    "source_flags": {
+     "reference": null,
+     "candidate": null
+    }
+   },
+   "reason": "Applicability for formulas was not established by source metadata."
+  },
+  "figures": {
+   "status": "abstain",
+   "applicable": null,
+   "metrics": {},
+   "evidence": {
+    "source_flags": {
+     "reference": null,
+     "candidate": null
+    }
+   },
+   "reason": "Applicability for figures was not established by source metadata."
+  }
+ }
+}

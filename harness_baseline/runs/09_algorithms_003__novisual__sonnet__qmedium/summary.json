@@ -1,0 +1,30 @@
+{
+  "sample_id": "09_algorithms_003",
+  "set": null,
+  "mode": "novisual",
+  "model": "sonnet",
+  "method": "claude sonnet agentic (novisual, effort medium)",
+  "claude_exit": 0,
+  "cost_usd": 2.8559194,
+  "num_turns": 37,
+  "duration_s": 1759,
+  "is_error": false,
+  "tool_calls": 36,
+  "score_runs": 13,
+  "baseline_overall": 0.3438513718429454,
+  "final": {
+    "compiled": true,
+    "overall": 0.4277149546744786,
+    "visual": 0.27846213486927734,
+    "content": 0.949082817410078,
+    "pagination": 0.8629032258064515,
+    "layout": 0.40600043865080393,
+    "typography": 0.7805807886364227,
+    "raster": 0.05811022466310961,
+    "pages": "2/2",
+    "review_flags": [
+      "content_visual_disagreement",
+      "raster_layout_disagreement"
+    ]
+  }
+}

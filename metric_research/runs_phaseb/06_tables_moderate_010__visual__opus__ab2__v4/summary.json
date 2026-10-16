@@ -1,0 +1,14 @@
+{
+  "sample_id": "06_tables_moderate_010",
+  "arm": "v4_v2feedback",
+  "mode": "visual",
+  "model": "opus",
+  "effort": "medium",
+  "cost_usd": 2.0054585,
+  "num_turns": 36,
+  "duration_s": 432,
+  "final": {
+    "compiled": true,
+    "graded_file": "~/Downloads/learn/latex_typst/metric_research/runs_phaseb/06_tables_moderate_010__visual__opus__ab2__v4/work/feedback/best/output.typ"
+  }
+}

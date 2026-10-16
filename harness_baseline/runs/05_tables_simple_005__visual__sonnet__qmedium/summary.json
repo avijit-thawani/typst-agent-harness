@@ -1,0 +1,30 @@
+{
+  "sample_id": "05_tables_simple_005",
+  "set": null,
+  "mode": "visual",
+  "model": "sonnet",
+  "method": "claude sonnet agentic (visual, effort medium)",
+  "claude_exit": 0,
+  "cost_usd": 2.44939175,
+  "num_turns": 34,
+  "duration_s": 1617,
+  "is_error": false,
+  "tool_calls": 33,
+  "score_runs": 8,
+  "baseline_overall": 0.3350118062179044,
+  "final": {
+    "compiled": true,
+    "overall": 0.6362765427425336,
+    "visual": 0.4992773819716169,
+    "content": 0.9981838106185972,
+    "pagination": 0.9970049916805324,
+    "layout": 0.5724635659665415,
+    "typography": 0.8751309902214394,
+    "raster": 0.22726262522554924,
+    "pages": "2/2",
+    "review_flags": [
+      "content_visual_disagreement",
+      "raster_layout_disagreement"
+    ]
+  }
+}

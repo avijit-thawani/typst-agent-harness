@@ -1,0 +1,30 @@
+{
+  "sample_id": "arxiv5t_paper_019",
+  "set": "arxiv5t_paper",
+  "mode": "visual",
+  "model": "opus",
+  "method": "claude opus agentic (visual, effort medium) [v3]",
+  "claude_exit": 0,
+  "cost_usd": 1.8808259999999999,
+  "num_turns": 28,
+  "duration_s": 401,
+  "is_error": false,
+  "tool_calls": 27,
+  "score_runs": 6,
+  "baseline_overall": null,
+  "final": {
+    "compiled": true,
+    "overall": 0.6139462262649411,
+    "visual": 0.4878081576715586,
+    "content": 0.9410747727081243,
+    "pagination": 0.9986681465038845,
+    "layout": 0.7486173210254466,
+    "typography": 0.8818571889995818,
+    "raster": 0.1462439117655994,
+    "pages": "5/5",
+    "review_flags": [
+      "content_visual_disagreement",
+      "raster_layout_disagreement"
+    ]
+  }
+}

@@ -1,0 +1,43 @@
+This is BibTeX, Version 0.99d
+Capacity: max_strings=35307, hash_size=35307, hash_prime=30011
+The top-level auxiliary file: main.aux
+The style file: unsrt.bst
+I couldn't open database file literature.bib
+---line 85 of file main.aux
+ : \bibdata{literature
+ :                    }
+I'm skipping whatever remains of this command
+I found no database files---while reading file main.aux
+Warning--I didn't find a database entry for "jumper2021highly"
+Warning--I didn't find a database entry for "evans2021protein"
+Warning--I didn't find a database entry for "ahdritz2024openfold"
+Warning--I didn't find a database entry for "lin2022language"
+Warning--I didn't find a database entry for "shen2024accurate"
+Warning--I didn't find a database entry for "yim2023"
+Warning--I didn't find a database entry for "yim2024"
+Warning--I didn't find a database entry for "yim2023flow"
+Warning--I didn't find a database entry for "huguet2024sequence"
+Warning--I didn't find a database entry for "bose2024se3"
+Warning--I didn't find a database entry for "Zhang2023.11.21.568057"
+Warning--I didn't find a database entry for "wang2024proteus"
+Warning--I didn't find a database entry for "liu2024floating"
+Warning--I didn't find a database entry for "lin2023generating"
+Warning--I didn't find a database entry for "cutting2024novo"
+Warning--I didn't find a database entry for "wagnerseute2024gafl"
+Warning--I didn't find a database entry for "jin2025p2dflow"
+Warning--I didn't find a database entry for "anand2024rnaframeflow"
+Warning--I didn't find a database entry for "tarafder2024lociparse"
+Warning--I didn't find a database entry for "dao2022flashattention"
+Warning--I didn't find a database entry for "dao2024flashattention2"
+Warning--I didn't find a database entry for "gu2023mamba"
+Warning--I didn't find a database entry for "dauparas2022robust"
+Warning--I didn't find a database entry for "adamczyk2022rnasolo"
+Warning--I didn't find a database entry for "joshi2025grnade"
+Warning--I didn't find a database entry for "shen2022e2efold"
+Warning--I didn't find a database entry for "abramson2024accurate"
+Warning--I didn't find a database entry for "chai2024chai"
+Warning--I didn't find a database entry for "wohlwend2024boltz"
+Warning--I didn't find a database entry for "trifast"
+Warning--I didn't find a database entry for "campbell2024generative"
+Warning--I didn't find a database entry for "gordiceli5flashattention"
+(There were 2 error messages)

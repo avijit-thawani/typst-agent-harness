@@ -1,0 +1,3063 @@
+{
+ "evaluator": {
+  "name": "pdf_metric_axes_v2",
+  "version": 2,
+  "aggregate_score": null,
+  "policy": "No compensatory scalar. Report raw axes, coverage, abstentions, and localized evidence."
+ },
+ "inputs": {
+  "reference_pdf": "~/Downloads/learn/latex_typst/metric_research/runs_phaseb/pubmed_table_004__visual__opus__ab2__v4/work/reference.pdf",
+  "candidate_pdf": "~/Downloads/learn/latex_typst/metric_research/runs_phaseb/pubmed_table_004__visual__opus__ab2__v4/final_candidate.pdf",
+  "reference_page_count": 2,
+  "candidate_page_count": 2
+ },
+ "configuration": {
+  "render_dpi": 96,
+  "ink_threshold": 245,
+  "ink_tolerance_px": 2,
+  "normalization": "Unicode NFKC, soft-hyphen removal, collapsed whitespace; case preserved"
+ },
+ "applicability": {
+  "tables": null,
+  "formulas": null,
+  "figures": null
+ },
+ "axes": {
+  "canvas": {
+   "status": "scored",
+   "applicable": true,
+   "metrics": {
+    "reference_page_count": 2,
+    "candidate_page_count": 2,
+    "page_count_delta": 0,
+    "paired_page_count": 2,
+    "exact_paired_size_rate": 1.0,
+    "width_abs_log_ratio_max": 0.0,
+    "height_abs_log_ratio_max": 0.0
+   },
+   "evidence": {
+    "page_pairs": [
+     {
+      "page": 0,
+      "reference_size_points": [
+       612.0,
+       792.0
+      ],
+      "candidate_size_points": [
+       612.0,
+       792.0
+      ],
+      "width_abs_log_ratio": 0.0,
+      "height_abs_log_ratio": 0.0,
+      "exact_size_match": true
+     },
+     {
+      "page": 1,
+      "reference_size_points": [
+       612.0,
+       792.0
+      ],
+      "candidate_size_points": [
+       612.0,
+       792.0
+      ],
+      "width_abs_log_ratio": 0.0,
+      "height_abs_log_ratio": 0.0,
+      "exact_size_match": true
+     }
+    ]
+   },
+   "interpretation": "Canvas/page-size mismatch only; no token layout residual is folded into this axis."
+  },
+  "content": {
+   "status": "scored",
+   "applicable": true,
+   "metrics": {
+    "matched_block_normalized_edit_similarity_macro": 0.9999453492184938,
+    "matched_block_count": 7,
+    "strict_nfc_token_inventory": {
+     "reference_count": 346,
+     "candidate_count": 346,
+     "matched_count": 345,
+     "precision": 0.9971098265895953,
+     "recall": 0.9971098265895953,
+     "f1": 0.9971098265895953,
+     "exact_match": false,
+     "missing": [
+      "1,2-Dibromo-3-chloropro"
+     ],
+     "extra": [
+      "1,2-Dibromo-3-chloroprop"
+     ],
+     "missing_count": 1,
+     "extra_count": 1
+    },
+    "strict_nfc_document_edit_similarity": 0.9996401583303347,
+    "compatibility_nfkc_token_inventory": {
+     "reference_count": 346,
+     "candidate_count": 346,
+     "matched_count": 345,
+     "precision": 0.9971098265895953,
+     "recall": 0.9971098265895953,
+     "f1": 0.9971098265895953
+    },
+    "compatibility_nfkc_document_edit_similarity": 0.9996401583303347
+   },
+   "evidence": {
+    "unmatched_reference_words": [
+     {
+      "word_index": 240,
+      "page": 1,
+      "bbox": [
+       495.15264892578125,
+       480.5770263671875,
+       611.7815551757812,
+       491.4861145019531
+      ],
+      "text": "1,2-Dibromo-3-chloropro",
+      "normalized": "1,2-Dibromo-3-chloropro"
+     }
+    ],
+    "unmatched_candidate_words": [
+     {
+      "word_index": 240,
+      "page": 1,
+      "bbox": [
+       493.20001220703125,
+       486.54400634765625,
+       616.9060668945312,
+       497.54400634765625
+      ],
+      "text": "1,2-Dibromo-3-chloroprop",
+      "normalized": "1,2-Dibromo-3-chloroprop"
+     }
+    ],
+    "lowest_similarity_block_pairs": [
+     {
+      "reference_block_index": 5,
+      "candidate_block_index": 5,
+      "reference_page": 1,
+      "candidate_page": 1,
+      "reference_text": "NO. name tR (min) Exp. tR MLR tR ANN NO. name m1 Dichlorodifluoromethane 1.35 1.50 1.52 m44 p-Xylene m2 Carbon disulfide 4.11 2.71 2.67 m45 m-Xylene m3 Allyl chloride 4.11 6.57 6.57 m46 o-Xylenea m4 Methylene chloride 4.40 3.93 4.12 m47 Sty",
+      "candidate_text": "NO. name tR (min) Exp. tR MLR tR ANN NO. name m1 Dichlorodifluoromethane 1.35 1.50 1.52 m44 p-Xylene m2 Carbon disulfide 4.11 2.71 2.67 m45 m-Xylene m3 Allyl chloride 4.11 6.57 6.57 m46 o-Xylenea m4 Methylene chloride 4.40 3.93 4.12 m47 Sty",
+      "normalized_edit_similarity": 0.9996174445294568
+     },
+     {
+      "reference_block_index": 0,
+      "candidate_block_index": 0,
+      "reference_page": 0,
+      "candidate_page": 0,
+      "reference_text": "Clinical Table Sample 4",
+      "candidate_text": "Clinical Table Sample 4",
+      "normalized_edit_similarity": 1.0
+     },
+     {
+      "reference_block_index": 1,
+      "candidate_block_index": 1,
+      "reference_page": 0,
+      "candidate_page": 0,
+      "reference_text": "Dataset-expansion sample",
+      "candidate_text": "Dataset-expansion sample",
+      "normalized_edit_similarity": 1.0
+     },
+     {
+      "reference_block_index": 2,
+      "candidate_block_index": 2,
+      "reference_page": 0,
+      "candidate_page": 0,
+      "reference_text": "1 Patient Data",
+      "candidate_text": "1 Patient Data",
+      "normalized_edit_similarity": 1.0
+     },
+     {
+      "reference_block_index": 3,
+      "candidate_block_index": 3,
+      "reference_page": 0,
+      "candidate_page": 0,
+      "reference_text": "The table below is a medical-literature table reproduced verbatim from a PubMed-derived dataset.",
+      "candidate_text": "The table below is a medical-literature table reproduced verbatim from a PubMed-derived dataset.",
+      "normalized_edit_similarity": 1.0
+     },
+     {
+      "reference_block_index": 4,
+      "candidate_block_index": 4,
+      "reference_page": 0,
+      "candidate_page": 0,
+      "reference_text": "1",
+      "candidate_text": "1",
+      "normalized_edit_similarity": 1.0
+     },
+     {
+      "reference_block_index": 6,
+      "candidate_block_index": 6,
+      "reference_page": 1,
+      "candidate_page": 1,
+      "reference_text": "2",
+      "candidate_text": "2",
+      "normalized_edit_similarity": 1.0
+     }
+    ]
+   },
+   "interpretation": "Strict NFC preservation is the primary text view. NFKC is reported separately as a compatibility view for ligature/encoding equivalence; it never hides the strict mismatch."
+  },
+  "critical_content": {
+   "status": "scored",
+   "applicable": true,
+   "metrics": {
+    "numbers": {
+     "reference_count": 173,
+     "candidate_count": 173,
+     "matched_count": 173,
+     "precision": 1.0,
+     "recall": 1.0,
+     "f1": 1.0,
+     "exact_match": true,
+     "missing": [],
+     "extra": [],
+     "missing_count": 0,
+     "extra_count": 0
+    },
+    "operators": {
+     "reference_count": 0,
+     "candidate_count": 0,
+     "matched_count": 0,
+     "precision": 1.0,
+     "recall": 1.0,
+     "f1": 1.0,
+     "exact_match": true,
+     "missing": [],
+     "extra": [],
+     "missing_count": 0,
+     "extra_count": 0
+    },
+    "citation_markers": {
+     "reference_count": 0,
+     "candidate_count": 0,
+     "matched_count": 0,
+     "precision": 1.0,
+     "recall": 1.0,
+     "f1": 1.0,
+     "exact_match": true,
+     "missing": [],
+     "extra": [],
+     "missing_count": 0,
+     "extra_count": 0
+    }
+   },
+   "evidence": {
+    "normalization": "Unicode NFKC; case preserved; multiset comparison",
+    "number_pattern": "(?<![\\w.])[+-]?(?:\\d+(?:[.,]\\d+)*|\\.\\d+)(?:[eE][+-]?\\d+)?%?",
+    "operator_inventory": "*+/<=>^\u00b1\u00d7\u00f7\u2190\u2192\u2194\u2202\u2207\u2208\u2209\u220f\u2211\u2212\u221a\u221e\u2229\u222a\u222b\u2248\u2260\u2264\u2265\u2282\u2286",
+    "citation_pattern": "\\[(?:\\d+[a-z]?(?:\\s*[-,;]\\s*\\d+[a-z]?){0,12})\\]|\\((?:18|19|20)\\d{2}[a-z]?\\)"
+   },
+   "interpretation": "Exact critical-symbol inventories prevent visually small numeric or operator errors from disappearing inside a document-level text average. Empty inventories are reported as exact but do not establish construct applicability."
+  },
+  "text_grounding": {
+   "status": "scored",
+   "applicable": true,
+   "metrics": {
+    "reference_word_count": 346,
+    "candidate_word_count": 346,
+    "exact_matched_word_count": 345,
+    "word_precision": 0.9971098265895953,
+    "word_recall": 0.9971098265895953,
+    "word_hmean": 0.9971098265895953,
+    "split_count": null,
+    "merge_count": null
+   },
+   "evidence": {
+    "match_policy": "exact Unicode-NFKC word text with deterministic page/position assignment for repeats"
+   },
+   "interpretation": "Digital-PDF exact-word grounding adaptation; it is not the published CLEval algorithm. Split/merge values remain null until a validated implementation exists."
+  },
+  "geometry": {
+   "status": "scored",
+   "applicable": true,
+   "metrics": {
+    "matched_token_count": 345,
+    "reference_match_coverage": 0.9971098265895953,
+    "candidate_match_coverage": 0.9971098265895953,
+    "center_displacement_q50": 0.008136228184938647,
+    "center_displacement_q90": 0.011961658100557082,
+    "center_displacement_max": 0.7048651602646646,
+    "bbox_iou_q10": 0.12581406144485113,
+    "bbox_iou_q50": 0.3109859231981409,
+    "width_abs_log_ratio_q90": 0.008302537644388173,
+    "height_abs_log_ratio_q90": 0.008301854577162399
+   },
+   "evidence": {
+    "worst_token_pairs": [
+     {
+      "token": "dataset.",
+      "reference_word_index": 21,
+      "candidate_word_index": 21,
+      "reference_page": 0,
+      "candidate_page": 0,
+      "reference_bbox": [
+       502.36358642578125,
+       218.92115783691406,
+       539.9999389648438,
+       229.8302459716797
+      ],
+      "candidate_bbox": [
+       72.0,
+       259.9762878417969,
+       109.94999694824219,
+       270.9762878417969
+      ],
+      "reference_bbox_normalized": [
+       0.8208555333754596,
+       0.27641560332943693,
+       0.8823528414458232,
+       0.29018970450969656
+      ],
+      "candidate_bbox_normalized": [
+       0.11764705882352941,
+       0.3282528886891375,
+       0.17965685775856566,
+       0.3421417775780264
+      ],
+      "center_displacement": 0.7048651602646646,
+      "bbox_iou": 0.0,
+      "width_abs_log_ratio": 0.008299017255336747,
+      "height_abs_log_ratio": 0.008299057127879162
+     },
+     {
+      "token": "Data",
+      "reference_word_index": 8,
+      "candidate_word_index": 8,
+      "reference_page": 0,
+      "candidate_page": 0,
+      "reference_bbox": [
+       151.17666625976562,
+       191.78746032714844,
+       185.52145385742188,
+       206.13365173339844
+      ],
+      "candidate_bbox": [
+       139.416015625,
+       217.6942138671875,
+       168.77999877929688,
+       229.6942138671875
+      ],
+      "reference_bbox_normalized": [
+       0.247020696502885,
+       0.24215588425145004,
+       0.30313963048598347,
+       0.2602697622896445
+      ],
+      "candidate_bbox_normalized": [
+       0.2278039470996732,
+       0.27486643165048924,
+       0.27578431173087725,
+       0.29001794680200443
+      ],
+      "center_displacement": 0.03895526512720406,
+      "bbox_iou": 0.0,
+      "width_abs_log_ratio": 0.15668140270937794,
+      "height_abs_log_ratio": 0.17857784996093012
+     },
+     {
+      "token": "PubMed-derived",
+      "reference_word_index": 20,
+      "candidate_word_index": 20,
+      "reference_page": 0,
+      "candidate_page": 0,
+      "reference_bbox": [
+       420.5018005371094,
+       218.92115783691406,
+       499.199951171875,
+       229.8302459716797
+      ],
+      "candidate_bbox": [
+       428.5099792480469,
+       246.41323852539062,
+       507.8529968261719,
+       257.4132385253906
+      ],
+      "reference_bbox_normalized": [
+       0.6870944453220741,
+       0.27641560332943693,
+       0.8156861947252859,
+       0.29018970450969656
+      ],
+      "candidate_bbox_normalized": [
+       0.7001797046536714,
+       0.3111278264209478,
+       0.8298251582126991,
+       0.32501671530983667
+      ],
+      "center_displacement": 0.037339199771610224,
+      "bbox_iou": 0.0,
+      "width_abs_log_ratio": 0.008160791641563353,
+      "height_abs_log_ratio": 0.008299057127879162
+     },
+     {
+      "token": "a",
+      "reference_word_index": 19,
+      "candidate_word_index": 19,
+      "reference_page": 0,
+      "candidate_page": 0,
+      "reference_bbox": [
+       411.8727111816406,
+       218.92115783691406,
+       417.3272705078125,
+       229.8302459716797
+      ],
+      "candidate_bbox": [
+       419.34698486328125,
+       246.41323852539062,
+       424.84698486328125,
+       257.4132385253906
+      ],
+      "reference_bbox_normalized": [
+       0.6729946261137919,
+       0.27641560332943693,
+       0.6819073047513277,
+       0.29018970450969656
+      ],
+      "candidate_bbox_normalized": [
+       0.6852074916066687,
+       0.3111278264209478,
+       0.6941944197112438,
+       0.32501671530983667
+      ],
+      "center_displacement": 0.03686446151927685,
+      "bbox_iou": 0.0,
+      "width_abs_log_ratio": 0.008296259686413687,
+      "height_abs_log_ratio": 0.008299057127879162
+     },
+     {
+      "token": "from",
+      "reference_word_index": 18,
+      "candidate_word_index": 18,
+      "reference_page": 0,
+      "candidate_page": 0,
+      "reference_bbox": [
+       386.5417785644531,
+       218.92115783691406,
+       408.69818115234375,
+       229.8302459716797
+      ],
+      "candidate_bbox": [
+       393.3429870605469,
+       246.41323852539062,
+       415.6839904785156,
+       257.4132385253906
+      ],
+      "reference_bbox_normalized": [
+       0.6316042133406097,
+       0.27641560332943693,
+       0.6678074855430454,
+       0.29018970450969656
+      ],
+      "candidate_bbox_normalized": [
+       0.6427172991185407,
+       0.3111278264209478,
+       0.6792222066642413,
+       0.32501671530983667
+      ],
+      "center_displacement": 0.036548622183066225,
+      "bbox_iou": 0.0,
+      "width_abs_log_ratio": 0.008297197778212875,
+      "height_abs_log_ratio": 0.008299057127879162
+     },
+     {
+      "token": "verbatim",
+      "reference_word_index": 17,
+      "candidate_word_index": 17,
+      "reference_page": 0,
+      "candidate_page": 0,
+      "reference_bbox": [
+       340.9090576171875,
+       218.92115783691406,
+       383.3781433105469,
+       229.8302459716797
+      ],
+      "candidate_bbox": [
+       346.86798095703125,
+       246.41323852539062,
+       389.67999267578125,
+       257.4132385253906
+      ],
+      "reference_bbox_normalized": [
+       0.5570409438189339,
+       0.27641560332943693,
+       0.626434874690436,
+       0.29018970450969656
+      ],
+      "candidate_bbox_normalized": [
+       0.5667777466618158,
+       0.3111278264209478,
+       0.6367320141761131,
+       0.32501671530983667
+      ],
+      "center_displacement": 0.0361837805358346,
+      "bbox_iou": 0.0,
+      "width_abs_log_ratio": 0.00804229504834369,
+      "height_abs_log_ratio": 0.008299057127879162
+     },
+     {
+      "token": "reproduced",
+      "reference_word_index": 16,
+      "candidate_word_index": 16,
+      "reference_page": 0,
+      "candidate_page": 0,
+      "reference_bbox": [
+       284.6290588378906,
+       218.92115783691406,
+       337.7345275878906,
+       229.8302459716797
+      ],
+      "candidate_bbox": [
+       289.656982421875,
+       246.41323852539062,
+       343.2049865722656,
+       257.4132385253906
+      ],
+      "reference_bbox_normalized": [
+       0.4650801614998213,
+       0.27641560332943693,
+       0.5518538032481873,
+       0.29018970450969656
+      ],
+      "candidate_bbox_normalized": [
+       0.47329572291156047,
+       0.3111278264209478,
+       0.5607924617193882,
+       0.32501671530983667
+      ],
+      "center_displacement": 0.035811912508374885,
+      "bbox_iou": 0.0,
+      "width_abs_log_ratio": 0.008298612844493744,
+      "height_abs_log_ratio": 0.008299057127879162
+     },
+     {
+      "token": "table",
+      "reference_word_index": 15,
+      "candidate_word_index": 15,
+      "reference_page": 0,
+      "candidate_page": 0,
+      "reference_bbox": [
+       257.825439453125,
+       218.92115783691406,
+       281.4654235839844,
+       229.8302459716797
+      ],
+      "candidate_bbox": [
+       262.156982421875,
+       246.41323852539062,
+       285.9939880371094,
+       257.4132385253906
+      ],
+      "reference_bbox_normalized": [
+       0.42128339779922386,
+       0.27641560332943693,
+       0.4599108228496477,
+       0.29018970450969656
+      ],
+      "candidate_bbox_normalized": [
+       0.42836108238868464,
+       0.3111278264209478,
+       0.46731043796913296,
+       0.32501671530983667
+      ],
+      "center_displacement": 0.035515127963659326,
+      "bbox_iou": 0.0,
+      "width_abs_log_ratio": 0.008299709666334958,
+      "height_abs_log_ratio": 0.008299057127879162
+     },
+     {
+      "token": "medical-literature",
+      "reference_word_index": 14,
+      "candidate_word_index": 14,
+      "reference_page": 0,
+      "candidate_page": 0,
+      "reference_bbox": [
+       170.34542846679688,
+       218.92115783691406,
+       254.65087890625,
+       229.8302459716797
+      ],
+      "candidate_bbox": [
+       173.4860076904297,
+       246.41323852539062,
+       258.4939880371094,
+       257.4132385253906
+      ],
+      "reference_bbox_normalized": [
+       0.27834220337711907,
+       0.27641560332943693,
+       0.4160962073631536,
+       0.29018970450969656
+      ],
+      "candidate_bbox_normalized": [
+       0.2834738687752119,
+       0.3111278264209478,
+       0.42237579744625714,
+       0.32501671530983667
+      ],
+      "center_displacement": 0.03523464843692523,
+      "bbox_iou": 0.0,
+      "width_abs_log_ratio": 0.00829862032475992,
+      "height_abs_log_ratio": 0.008299057127879162
+     },
+     {
+      "token": "a",
+      "reference_word_index": 13,
+      "candidate_word_index": 13,
+      "reference_page": 0,
+      "candidate_page": 0,
+      "reference_bbox": [
+       161.71633911132812,
+       218.92115783691406,
+       167.17088317871094,
+       229.8302459716797
+      ],
+      "candidate_bbox": [
+       164.322998046875,
+       246.41323852539062,
+       169.822998046875,
+       257.4132385253906
+      ],
+      "reference_bbox_normalized": [
+       0.26424238416883683,
+       0.27641560332943693,
+       0.2731550378737107,
+       0.29018970450969656
+      ],
+      "candidate_bbox_normalized": [
+       0.2685016307955474,
+       0.3111278264209478,
+       0.27748855890012253,
+       0.32501671530983667
+      ],
+      "center_displacement": 0.03503405738056286,
+      "bbox_iou": 0.0,
+      "width_abs_log_ratio": 0.008299057127875199,
+      "height_abs_log_ratio": 0.008299057127879162
+     },
+     {
+      "token": "is",
+      "reference_word_index": 12,
+      "candidate_word_index": 12,
+      "reference_page": 0,
+      "candidate_page": 0,
+      "reference_bbox": [
+       151.2108917236328,
+       218.92115783691406,
+       158.54180908203125,
+       229.8302459716797
+      ],
+      "candidate_bbox": [
+       153.26800537109375,
+       246.41323852539062,
+       160.66000366210938,
+       257.4132385253906
+      ],
+      "reference_bbox_normalized": [
+       0.2470766204634523,
+       0.27641560332943693,
+       0.2590552435980903,
+       0.29018970450969656
+      ],
+      "candidate_bbox_normalized": [
+       0.250437917273029,
+       0.3111278264209478,
+       0.2625163458531199,
+       0.32501671530983667
+      ],
+      "center_displacement": 0.03493655027057793,
+      "bbox_iou": 0.0,
+      "width_abs_log_ratio": 0.008297443863806021,
+      "height_abs_log_ratio": 0.008299057127879162
+     },
+     {
+      "token": "below",
+      "reference_word_index": 11,
+      "candidate_word_index": 11,
+      "reference_page": 0,
+      "candidate_page": 0,
+      "reference_bbox": [
+       120.76362609863281,
+       218.92115783691406,
+       148.04725646972656,
+       229.8302459716797
+      ],
+      "candidate_bbox": [
+       122.1050033569336,
+       246.41323852539062,
+       149.60499572753906,
+       257.4132385253906
+      ],
+      "reference_bbox_normalized": [
+       0.19732618643567454,
+       0.27641560332943693,
+       0.2419072818132787,
+       0.29018970450969656
+      ],
+      "candidate_bbox_normalized": [
+       0.19951797934139476,
+       0.3111278264209478,
+       0.24445260739793964,
+       0.32501671530983667
+      ],
+      "center_displacement": 0.03485019849954103,
+      "bbox_iou": 0.0,
+      "width_abs_log_ratio": 0.007898824999532513,
+      "height_abs_log_ratio": 0.008299057127879162
+     },
+     {
+      "token": "table",
+      "reference_word_index": 10,
+      "candidate_word_index": 10,
+      "reference_page": 0,
+      "candidate_page": 0,
+      "reference_bbox": [
+       93.94908905029297,
+       218.92115783691406,
+       117.58908081054688,
+       229.8302459716797
+      ],
+      "candidate_bbox": [
+       94.6050033569336,
+       246.41323852539062,
+       118.44200134277344,
+       257.4132385253906
+      ],
+      "reference_bbox_normalized": [
+       0.15351158341551138,
+       0.27641560332943693,
+       0.19213902093226615,
+       0.29018970450969656
+      ],
+      "candidate_bbox_normalized": [
+       0.15458333881851893,
+       0.3111278264209478,
+       0.19353268193263634,
+       0.32501671530983667
+      ],
+      "center_displacement": 0.034791462057090175,
+      "bbox_iou": 0.0,
+      "width_abs_log_ratio": 0.008299066868554765,
+      "height_abs_log_ratio": 0.008299057127879162
+     },
+     {
+      "token": "The",
+      "reference_word_index": 9,
+      "candidate_word_index": 9,
+      "reference_page": 0,
+      "candidate_page": 0,
+      "reference_bbox": [
+       72.0,
+       218.92115783691406,
+       90.78545379638672,
+       229.8302459716797
+      ],
+      "candidate_bbox": [
+       72.0,
+       246.41323852539062,
+       90.94200134277344,
+       257.4132385253906
+      ],
+      "reference_bbox_normalized": [
+       0.11764705882352941,
+       0.27641560332943693,
+       0.14834224476533778,
+       0.29018970450969656
+      ],
+      "candidate_bbox_normalized": [
+       0.11764705882352941,
+       0.3111278264209478,
+       0.14859804140976052,
+       0.32501671530983667
+      ],
+      "center_displacement": 0.034769852178866946,
+      "bbox_iou": 0.0,
+      "width_abs_log_ratio": 0.008298913578260908,
+      "height_abs_log_ratio": 0.008299057127879162
+     },
+     {
+      "token": "Patient",
+      "reference_word_index": 7,
+      "candidate_word_index": 7,
+      "reference_page": 0,
+      "candidate_page": 0,
+      "reference_bbox": [
+       94.42311096191406,
+       191.78746032714844,
+       145.81118774414062,
+       206.13365173339844
+      ],
+      "candidate_bbox": [
+       90.9000015258789,
+       217.6942138671875,
+       134.82000732421875,
+       229.6942138671875
+      ],
+      "reference_bbox_normalized": [
+       0.1542861290227354,
+       0.24215588425145004,
+       0.23825357474532782,
+       0.2602697622896445
+      ],
+      "candidate_bbox_normalized": [
+       0.14852941425797206,
+       0.27486643165048924,
+       0.22029412961473652,
+       0.29001794680200443
+      ],
+      "center_displacement": 0.03340490021000685,
+      "bbox_iou": 0.0,
+      "width_abs_log_ratio": 0.15703624711296224,
+      "height_abs_log_ratio": 0.17857784996093012
+     },
+     {
+      "token": "1",
+      "reference_word_index": 6,
+      "candidate_word_index": 6,
+      "reference_page": 0,
+      "candidate_page": 0,
+      "reference_bbox": [
+       72.0,
+       191.78746032714844,
+       80.07691192626953,
+       206.13365173339844
+      ],
+      "candidate_bbox": [
+       72.0,
+       217.6942138671875,
+       78.9000015258789,
+       229.6942138671875
+      ],
+      "reference_bbox_normalized": [
+       0.11764705882352941,
+       0.24215588425145004,
+       0.13084462733050578,
+       0.2602697622896445
+      ],
+      "candidate_bbox_normalized": [
+       0.11764705882352941,
+       0.27486643165048924,
+       0.12892157112071717,
+       0.29001794680200443
+      ],
+      "center_displacement": 0.031244164803871936,
+      "bbox_iou": 0.0,
+      "width_abs_log_ratio": 0.15748797939286874,
+      "height_abs_log_ratio": 0.17857784996093012
+     },
+     {
+      "token": "sample",
+      "reference_word_index": 5,
+      "candidate_word_index": 5,
+      "reference_page": 0,
+      "candidate_page": 0,
+      "reference_bbox": [
+       337.33453369140625,
+       147.37034606933594,
+       372.5185852050781,
+       159.3255157470703
+      ],
+      "candidate_bbox": [
+       338.11798095703125,
+       165.062255859375,
+       374.177978515625,
+       177.062255859375
+      ],
+      "reference_bbox_normalized": [
+       0.5512002184500102,
+       0.18607366927946456,
+       0.608690498701108,
+       0.20116858048872513
+      ],
+      "candidate_bbox_normalized": [
+       0.5524803610409007,
+       0.20841193921638257,
+       0.6114019256791258,
+       0.22356345436789773
+      ],
+      "center_displacement": 0.022455438001152857,
+      "bbox_iou": 0.0,
+      "width_abs_log_ratio": 0.02459125213773782,
+      "height_abs_log_ratio": 0.0037428559433541507
+     },
+     {
+      "token": "Dataset-expansion",
+      "reference_word_index": 4,
+      "candidate_word_index": 4,
+      "reference_page": 0,
+      "candidate_page": 0,
+      "reference_bbox": [
+       239.48146057128906,
+       147.37034606933594,
+       333.4371337890625,
+       159.3255157470703
+      ],
+      "candidate_bbox": [
+       237.82200622558594,
+       165.062255859375,
+       334.12200927734375,
+       177.062255859375
+      ],
+      "reference_bbox_normalized": [
+       0.39130957609687755,
+       0.18607366927946456,
+       0.5448319179559845,
+       0.20116858048872513
+      ],
+      "candidate_bbox_normalized": [
+       0.3885980493882123,
+       0.20841193921638257,
+       0.5459509955512153,
+       0.22356345436789773
+      ],
+      "center_displacement": 0.022380739765755758,
+      "bbox_iou": 0.0,
+      "width_abs_log_ratio": 0.024645240957332774,
+      "height_abs_log_ratio": 0.0037428559433541507
+     },
+     {
+      "token": "m85",
+      "reference_word_index": 338,
+      "candidate_word_index": 338,
+      "reference_page": 1,
+      "candidate_page": 1,
+      "reference_bbox": [
+       460.0753479003906,
+       675.8445434570312,
+       480.07171630859375,
+       686.7536010742188
+      ],
+      "candidate_bbox": [
+       454.20001220703125,
+       684.1259765625,
+       474.3630065917969,
+       695.1259765625
+      ],
+      "reference_bbox_normalized": [
+       0.751757104412403,
+       0.8533390700215041,
+       0.7844309090009702,
+       0.8671131326694681
+      ],
+      "candidate_bbox_normalized": [
+       0.7421568826912275,
+       0.8637954249526515,
+       0.7751029519473805,
+       0.8776843138415404
+      ],
+      "center_displacement": 0.014145964321156007,
+      "bbox_iou": 0.09329860985090334,
+      "width_abs_log_ratio": 0.008298285687313224,
+      "height_abs_log_ratio": 0.008301854577170326
+     },
+     {
+      "token": "m84",
+      "reference_word_index": 331,
+      "candidate_word_index": 331,
+      "reference_page": 1,
+      "candidate_page": 1,
+      "reference_bbox": [
+       460.0753479003906,
+       661.8968505859375,
+       480.07171630859375,
+       672.805908203125
+      ],
+      "candidate_bbox": [
+       454.20001220703125,
+       670.0130004882812,
+       474.3630065917969,
+       681.0130004882812
+      ],
+      "reference_bbox_normalized": [
+       0.751757104412403,
+       0.835728346699416,
+       0.7844309090009702,
+       0.8495024093473801
+      ],
+      "candidate_bbox_normalized": [
+       0.7421568826912275,
+       0.8459760107175268,
+       0.7751029519473805,
+       0.8598648996064158
+      ],
+      "center_displacement": 0.013991554694325892,
+      "bbox_iou": 0.09975270894937345,
+      "width_abs_log_ratio": 0.008298285687313224,
+      "height_abs_log_ratio": 0.008301854577162399
+     },
+     {
+      "token": "4",
+      "reference_word_index": 3,
+      "candidate_word_index": 3,
+      "reference_page": 0,
+      "candidate_page": 0,
+      "reference_bbox": [
+       380.1641540527344,
+       112.83645629882812,
+       388.0660400390625,
+       130.05189514160156
+      ],
+      "candidate_bbox": [
+       387.3628845214844,
+       117.87456512451172,
+       396.0028991699219,
+       135.15457153320312
+      ],
+      "reference_bbox_normalized": [
+       0.6211832582561019,
+       0.14247027310458096,
+       0.6340948366651348,
+       0.164206938310103
+      ],
+      "candidate_bbox_normalized": [
+       0.6329458897409875,
+       0.14883152162185823,
+       0.6470635607351665,
+       0.17064971153182212
+      ],
+      "center_displacement": 0.01392464470171881,
+      "bbox_iou": 0.030937290500529645,
+      "width_abs_log_ratio": 0.08930281480801582,
+      "height_abs_log_ratio": 0.003743545900169792
+     },
+     {
+      "token": "m83",
+      "reference_word_index": 324,
+      "candidate_word_index": 324,
+      "reference_page": 1,
+      "candidate_page": 1,
+      "reference_bbox": [
+       460.0753479003906,
+       647.9491577148438,
+       480.07171630859375,
+       658.8582153320312
+      ],
+      "candidate_bbox": [
+       454.20001220703125,
+       655.8999633789062,
+       474.3630065917969,
+       666.8999633789062
+      ],
+      "reference_bbox_normalized": [
+       0.751757104412403,
+       0.818117623377328,
+       0.7844309090009702,
+       0.831891686025292
+      ],
+      "candidate_bbox_normalized": [
+       0.7421568826912275,
+       0.8281565194178109,
+       0.7751029519473805,
+       0.8420454083066998
+      ],
+      "center_displacement": 0.013838513164562022,
+      "bbox_iou": 0.10628588785252202,
+      "width_abs_log_ratio": 0.008298285687313224,
+      "height_abs_log_ratio": 0.008301854577170326
+     },
+     {
+      "token": "m82",
+      "reference_word_index": 317,
+      "candidate_word_index": 317,
+      "reference_page": 1,
+      "candidate_page": 1,
+      "reference_bbox": [
+       460.0753479003906,
+       634.0015258789062,
+       480.07171630859375,
+       644.9105834960938
+      ],
+      "candidate_bbox": [
+       454.20001220703125,
+       641.7869873046875,
+       474.3630065917969,
+       652.7869873046875
+      ],
+      "reference_bbox_normalized": [
+       0.751757104412403,
+       0.8005069771198311,
+       0.7844309090009702,
+       0.8142810397677951
+      ],
+      "candidate_bbox_normalized": [
+       0.7421568826912275,
+       0.8103371051826862,
+       0.7751029519473805,
+       0.8242259940715752
+      ],
+      "center_displacement": 0.013686944822865532,
+      "bbox_iou": 0.11289715249308603,
+      "width_abs_log_ratio": 0.008298285687313224,
+      "height_abs_log_ratio": 0.008301854577170326
+     },
+     {
+      "token": "m81",
+      "reference_word_index": 310,
+      "candidate_word_index": 310,
+      "reference_page": 1,
+      "candidate_page": 1,
+      "reference_bbox": [
+       460.0753479003906,
+       620.0538330078125,
+       480.07171630859375,
+       630.962890625
+      ],
+      "candidate_bbox": [
+       454.20001220703125,
+       627.6739501953125,
+       474.3630065917969,
+       638.6739501953125
+      ],
+      "reference_bbox_normalized": [
+       0.751757104412403,
+       0.7828962537977431,
+       0.7844309090009702,
+       0.7966703164457071
+      ],
+      "candidate_bbox_normalized": [
+       0.7421568826912275,
+       0.7925176138829704,
+       0.7751029519473805,
+       0.8064065027718592
+      ],
+      "center_displacement": 0.013536899153777603,
+      "bbox_iou": 0.11958791122985857,
+      "width_abs_log_ratio": 0.008298285687313224,
+      "height_abs_log_ratio": 0.008301854577162399
+     }
+    ]
+   },
+   "interpretation": "Token boxes are normalized by each page's own canvas; canvas mismatch remains a separate axis."
+  },
+  "text_ltsim": {
+   "status": "scored",
+   "applicable": true,
+   "metrics": {
+    "paired_page_count": 2,
+    "scored_page_count": 2,
+    "abstained_page_count": 0,
+    "text_ltsim_page_macro": 0.8914021512845758,
+    "text_ltsim_element_weighted": 0.8536134425394122,
+    "text_ltsim_worst_page": 0.8032284975458606
+   },
+   "evidence": {
+    "pages": [
+     {
+      "page": 0,
+      "status": "scored",
+      "reference_block_count": 5,
+      "candidate_block_count": 5,
+      "emd": 0.21911605066179643,
+      "text_ltsim": 0.8032284975458606,
+      "largest_cost_contributions": [
+       {
+        "reference_block_index": 2,
+        "candidate_block_index": 3,
+        "mass": 0.2,
+        "cost": 0.41065775216139844,
+        "reference_bbox_normalized": [
+         0.11764705882352941,
+         0.24215588425145004,
+         0.30313963048598347,
+         0.2602697622896445
+        ],
+        "candidate_bbox_normalized": [
+         0.11764705882352941,
+         0.3111278264209478,
+         0.8298251582126991,
+         0.3421417775780264
+        ]
+       },
+       {
+        "reference_block_index": 1,
+        "candidate_block_index": 1,
+        "mass": 0.2,
+        "cost": 0.30075224204868656,
+        "reference_bbox_normalized": [
+         0.39130957609687755,
+         0.18607366927946456,
+         0.608690498701108,
+         0.20116858048872513
+        ],
+        "candidate_bbox_normalized": [
+         0.3885980493882123,
+         0.20841193921638257,
+         0.6114019256791258,
+         0.22356345436789773
+        ]
+       },
+       {
+        "reference_block_index": 3,
+        "candidate_block_index": 2,
+        "mass": 0.2,
+        "cost": 0.2201544888933311,
+        "reference_bbox_normalized": [
+         0.11764705882352941,
+         0.27641560332943693,
+         0.8823528414458232,
+         0.29018970450969656
+        ],
+        "candidate_bbox_normalized": [
+         0.11764705882352941,
+         0.27486643165048924,
+         0.27578431173087725,
+         0.29001794680200443
+        ]
+       },
+       {
+        "reference_block_index": 0,
+        "candidate_block_index": 0,
+        "mass": 0.2,
+        "cost": 0.1280730665829639,
+        "reference_bbox_normalized": [
+         0.3659052381328508,
+         0.14247027310458096,
+         0.6340948366651348,
+         0.164206938310103
+        ],
+        "candidate_bbox_normalized": [
+         0.3529364641974954,
+         0.14883152162185823,
+         0.6470635607351665,
+         0.17064971153182212
+        ]
+       },
+       {
+        "reference_block_index": 4,
+        "candidate_block_index": 4,
+        "mass": 0.2,
+        "cost": 0.03594270362260199,
+        "reference_bbox_normalized": [
+         0.495543685613894,
+         0.9357262813683712,
+         0.5044563642514297,
+         0.9495003440163352
+        ],
+        "candidate_bbox_normalized": [
+         0.49550653594771243,
+         0.9346552376795296,
+         0.5044934640522876,
+         0.9485441265684186
+        ]
+       }
+      ]
+     },
+     {
+      "page": 1,
+      "status": "scored",
+      "reference_block_count": 2,
+      "candidate_block_count": 2,
+      "emd": 0.020635653042045787,
+      "text_ltsim": 0.979575805023291,
+      "largest_cost_contributions": [
+       {
+        "reference_block_index": 6,
+        "candidate_block_index": 6,
+        "mass": 0.5,
+        "cost": 0.03594270362260199,
+        "reference_bbox_normalized": [
+         0.495543685613894,
+         0.9357262813683712,
+         0.5044563642514297,
+         0.9495003440163352
+        ],
+        "candidate_bbox_normalized": [
+         0.49550653594771243,
+         0.9346552376795296,
+         0.5044934640522876,
+         0.9485441265684186
+        ]
+       },
+       {
+        "reference_block_index": 5,
+        "candidate_block_index": 5,
+        "mass": 0.5,
+        "cost": 0.005328602461489584,
+        "reference_bbox_normalized": [
+         0.12806552064185048,
+         0.11368932627668285,
+         1.0067553551368464,
+         0.8847238559915562
+        ],
+        "candidate_bbox_normalized": [
+         0.12450979893503625,
+         0.11537875551165956,
+         1.0080164491740706,
+         0.8955037280766651
+        ]
+       }
+      ]
+     }
+    ],
+    "equations": "uniform mass; delta_bbox=(1+GIoU)/2; delta_label=1 for text; mu=1-(delta_bbox+delta_label)/2; Text-LTSim=exp(-EMD), sigma=1"
+   },
+   "interpretation": "Faithful published LTSim equations on extracted text blocks only. It measures text-layout geometry/segmentation, not full semantic layout; non-text classes abstain."
+  },
+  "block_transport": {
+   "status": "scored",
+   "applicable": true,
+   "metrics": {
+    "reference_block_count": 7,
+    "candidate_block_count": 7,
+    "transported_mass": 1.0,
+    "combined_transport_cost": 0.028890042090853947,
+    "combined_transport_similarity_exp": 0.9715232852627357,
+    "transported_geometry_cost": 0.04424116280048405,
+    "geometry_transport_similarity_exp": 0.9567232036024714,
+    "transported_content_cost": 0.00038081791582662725,
+    "content_transport_similarity_exp": 0.9996192545861122,
+    "nonzero_flow_count": 13
+   },
+   "evidence": {
+    "largest_cost_contributions": [
+     {
+      "reference_block_index": 3,
+      "candidate_block_index": 3,
+      "mass": 0.03461954561846376,
+      "combined_cost": 0.4390680021786429,
+      "geometry_cost": 0.675489234120989,
+      "content_cost": 0.0,
+      "reference_page": 0,
+      "candidate_page": 0,
+      "reference_bbox_stacked_normalized": [
+       0.11764705882352941,
+       0.13820780166471847,
+       0.8823528414458232,
+       0.14509485225484828
+      ],
+      "candidate_bbox_stacked_normalized": [
+       0.11764705882352941,
+       0.1555639132104739,
+       0.8298251582126991,
+       0.1710708887890132
+      ],
+      "reference_text": "The table below is a medical-literature table reproduced verbatim from a PubMed-derived dataset.",
+      "candidate_text": "The table below is a medical-literature table reproduced verbatim from a PubMed-derived dataset."
+     },
+     {
+      "reference_block_index": 5,
+      "candidate_block_index": 5,
+      "mass": 0.9426406926406926,
+      "combined_cost": 0.007061077614626587,
+      "geometry_cost": 0.010657204922979169,
+      "content_cost": 0.00038255547054322214,
+      "reference_page": 1,
+      "candidate_page": 1,
+      "reference_bbox_stacked_normalized": [
+       0.12806552064185048,
+       0.5568446631383415,
+       1.0067553551368464,
+       0.9423619279957781
+      ],
+      "candidate_bbox_stacked_normalized": [
+       0.12450979893503625,
+       0.5576893777558298,
+       1.0080164491740706,
+       0.9477518640383326
+      ],
+      "reference_text": "NO. name tR (min) Exp. tR MLR tR ANN NO. name m1 Dichlorodifluoromethane 1.35 1.50 1.52 m44 p-Xylene m2 Carbon disulfide 4.11 2.71 2.67 m45 m-Xylene m3 Allyl chloride 4.11 6.57 6.5",
+      "candidate_text": "NO. name tR (min) Exp. tR MLR tR ANN NO. name m1 Dichlorodifluoromethane 1.35 1.50 1.52 m44 p-Xylene m2 Carbon disulfide 4.11 2.71 2.67 m45 m-Xylene m3 Allyl chloride 4.11 6.57 6.5"
+     },
+     {
+      "reference_block_index": 1,
+      "candidate_block_index": 1,
+      "mass": 0.00865488640461594,
+      "combined_cost": 0.3909779146632925,
+      "geometry_cost": 0.6015044840973731,
+      "content_cost": 0.0,
+      "reference_page": 0,
+      "candidate_page": 0,
+      "reference_bbox_stacked_normalized": [
+       0.39130957609687755,
+       0.09303683463973228,
+       0.608690498701108,
+       0.10058429024436256
+      ],
+      "candidate_bbox_stacked_normalized": [
+       0.3885980493882123,
+       0.10420596960819128,
+       0.6114019256791258,
+       0.11178172718394887
+      ],
+      "reference_text": "Dataset-expansion sample",
+      "candidate_text": "Dataset-expansion sample"
+     },
+     {
+      "reference_block_index": 2,
+      "candidate_block_index": 2,
+      "mass": 0.005048683736025965,
+      "combined_cost": 0.4392891601271545,
+      "geometry_cost": 0.6758294771186992,
+      "content_cost": 0.0,
+      "reference_page": 0,
+      "candidate_page": 0,
+      "reference_bbox_stacked_normalized": [
+       0.11764705882352941,
+       0.12107794212572502,
+       0.30313963048598347,
+       0.13013488114482225
+      ],
+      "candidate_bbox_stacked_normalized": [
+       0.11764705882352941,
+       0.13743321582524462,
+       0.27578431173087725,
+       0.14500897340100222
+      ],
+      "reference_text": "1 Patient Data",
+      "candidate_text": "1 Patient Data"
+     },
+     {
+      "reference_block_index": 0,
+      "candidate_block_index": 0,
+      "mass": 0.008294266137756943,
+      "combined_cost": 0.16649498655785316,
+      "geometry_cost": 0.25614613316592794,
+      "content_cost": 0.0,
+      "reference_page": 0,
+      "candidate_page": 0,
+      "reference_bbox_stacked_normalized": [
+       0.3659052381328508,
+       0.07123513655229048,
+       0.6340948366651348,
+       0.0821034691550515
+      ],
+      "candidate_bbox_stacked_normalized": [
+       0.3529364641974954,
+       0.07441576081092911,
+       0.6470635607351665,
+       0.08532485576591106
+      ],
+      "reference_text": "Clinical Table Sample 4",
+      "candidate_text": "Clinical Table Sample 4"
+     },
+     {
+      "reference_block_index": 6,
+      "candidate_block_index": 6,
+      "mass": 0.0003606202668589987,
+      "combined_cost": 0.04672551470938259,
+      "geometry_cost": 0.07188540724520398,
+      "content_cost": 0.0,
+      "reference_page": 1,
+      "candidate_page": 1,
+      "reference_bbox_stacked_normalized": [
+       0.495543685613894,
+       0.9678631406841856,
+       0.5044563642514297,
+       0.9747501720081676
+      ],
+      "candidate_bbox_stacked_normalized": [
+       0.49550653594771243,
+       0.9673276188397648,
+       0.5044934640522876,
+       0.9742720632842092
+      ],
+      "reference_text": "2",
+      "candidate_text": "2"
+     },
+     {
+      "reference_block_index": 4,
+      "candidate_block_index": 4,
+      "mass": 0.0003606202668589975,
+      "combined_cost": 0.04672551470938259,
+      "geometry_cost": 0.07188540724520398,
+      "content_cost": 0.0,
+      "reference_page": 0,
+      "candidate_page": 0,
+      "reference_bbox_stacked_normalized": [
+       0.495543685613894,
+       0.4678631406841856,
+       0.5044563642514297,
+       0.4747501720081676
+      ],
+      "candidate_bbox_stacked_normalized": [
+       0.49550653594771243,
+       0.4673276188397648,
+       0.5044934640522876,
+       0.4742720632842093
+      ],
+      "reference_text": "1",
+      "candidate_text": "1"
+     },
+     {
+      "reference_block_index": 3,
+      "candidate_block_index": 5,
+      "mass": 1.2489013570871066e-05,
+      "combined_cost": 0.8305888260504419,
+      "geometry_cost": 0.7572886771207434,
+      "content_cost": 0.9667176740627391,
+      "reference_page": 0,
+      "candidate_page": 1,
+      "reference_bbox_stacked_normalized": [
+       0.11764705882352941,
+       0.13820780166471847,
+       0.8823528414458232,
+       0.14509485225484828
+      ],
+      "candidate_bbox_stacked_normalized": [
+       0.12450979893503625,
+       0.5576893777558298,
+       1.0080164491740706,
+       0.9477518640383326
+      ],
+      "reference_text": "The table below is a medical-literature table reproduced verbatim from a PubMed-derived dataset.",
+      "candidate_text": "NO. name tR (min) Exp. tR MLR tR ANN NO. name m1 Dichlorodifluoromethane 1.35 1.50 1.52 m44 p-Xylene m2 Carbon disulfide 4.11 2.71 2.67 m45 m-Xylene m3 Allyl chloride 4.11 6.57 6.5"
+     },
+     {
+      "reference_block_index": 1,
+      "candidate_block_index": 5,
+      "mass": 3.1222533927177665e-06,
+      "combined_cost": 0.8477616204407014,
+      "geometry_cost": 0.7707309021434837,
+      "content_cost": 0.9908186687069626,
+      "reference_page": 0,
+      "candidate_page": 1,
+      "reference_bbox_stacked_normalized": [
+       0.39130957609687755,
+       0.09303683463973228,
+       0.608690498701108,
+       0.10058429024436256
+      ],
+      "candidate_bbox_stacked_normalized": [
+       0.12450979893503625,
+       0.5576893777558298,
+       1.0080164491740706,
+       0.9477518640383326
+      ],
+      "reference_text": "Dataset-expansion sample",
+      "candidate_text": "NO. name tR (min) Exp. tR MLR tR ANN NO. name m1 Dichlorodifluoromethane 1.35 1.50 1.52 m44 p-Xylene m2 Carbon disulfide 4.11 2.71 2.67 m45 m-Xylene m3 Allyl chloride 4.11 6.57 6.5"
+     },
+     {
+      "reference_block_index": 0,
+      "candidate_block_index": 5,
+      "mass": 2.9921595013551044e-06,
+      "combined_cost": 0.8512014139505688,
+      "geometry_cost": 0.7756109093442334,
+      "content_cost": 0.991583779648049,
+      "reference_page": 0,
+      "candidate_page": 1,
+      "reference_bbox_stacked_normalized": [
+       0.3659052381328508,
+       0.07123513655229048,
+       0.6340948366651348,
+       0.0821034691550515
+      ],
+      "candidate_bbox_stacked_normalized": [
+       0.12450979893503625,
+       0.5576893777558298,
+       1.0080164491740706,
+       0.9477518640383326
+      ],
+      "reference_text": "Clinical Table Sample 4",
+      "candidate_text": "NO. name tR (min) Exp. tR MLR tR ANN NO. name m1 Dichlorodifluoromethane 1.35 1.50 1.52 m44 p-Xylene m2 Carbon disulfide 4.11 2.71 2.67 m45 m-Xylene m3 Allyl chloride 4.11 6.57 6.5"
+     },
+     {
+      "reference_block_index": 2,
+      "candidate_block_index": 5,
+      "mass": 1.821314479085942e-06,
+      "combined_cost": 0.8452158263126996,
+      "geometry_cost": 0.7647543817205561,
+      "content_cost": 0.9946442234123948,
+      "reference_page": 0,
+      "candidate_page": 1,
+      "reference_bbox_stacked_normalized": [
+       0.11764705882352941,
+       0.12107794212572502,
+       0.30313963048598347,
+       0.13013488114482225
+      ],
+      "candidate_bbox_stacked_normalized": [
+       0.12450979893503625,
+       0.5576893777558298,
+       1.0080164491740706,
+       0.9477518640383326
+      ],
+      "reference_text": "1 Patient Data",
+      "candidate_text": "NO. name tR (min) Exp. tR MLR tR ANN NO. name m1 Dichlorodifluoromethane 1.35 1.50 1.52 m44 p-Xylene m2 Carbon disulfide 4.11 2.71 2.67 m45 m-Xylene m3 Allyl chloride 4.11 6.57 6.5"
+     },
+     {
+      "reference_block_index": 4,
+      "candidate_block_index": 5,
+      "mass": 1.3009389136325834e-07,
+      "combined_cost": 0.73565300503396,
+      "geometry_cost": 0.5935183068440772,
+      "content_cost": 0.9996174445294568,
+      "reference_page": 0,
+      "candidate_page": 1,
+      "reference_bbox_stacked_normalized": [
+       0.495543685613894,
+       0.4678631406841856,
+       0.5044563642514297,
+       0.4747501720081676
+      ],
+      "candidate_bbox_stacked_normalized": [
+       0.12450979893503625,
+       0.5576893777558298,
+       1.0080164491740706,
+       0.9477518640383326
+      ],
+      "reference_text": "1",
+      "candidate_text": "NO. name tR (min) Exp. tR MLR tR ANN NO. name m1 Dichlorodifluoromethane 1.35 1.50 1.52 m44 p-Xylene m2 Carbon disulfide 4.11 2.71 2.67 m45 m-Xylene m3 Allyl chloride 4.11 6.57 6.5"
+     },
+     {
+      "reference_block_index": 6,
+      "candidate_block_index": 5,
+      "mass": 1.3009389136206572e-07,
+      "combined_cost": 0.6958507455600912,
+      "geometry_cost": 0.5322840614996636,
+      "content_cost": 0.9996174445294568,
+      "reference_page": 1,
+      "candidate_page": 1,
+      "reference_bbox_stacked_normalized": [
+       0.495543685613894,
+       0.9678631406841856,
+       0.5044563642514297,
+       0.9747501720081676
+      ],
+      "candidate_bbox_stacked_normalized": [
+       0.12450979893503625,
+       0.5576893777558298,
+       1.0080164491740706,
+       0.9477518640383326
+      ],
+      "reference_text": "2",
+      "candidate_text": "NO. name tR (min) Exp. tR MLR tR ANN NO. name m1 Dichlorodifluoromethane 1.35 1.50 1.52 m44 p-Xylene m2 Carbon disulfide 4.11 2.71 2.67 m45 m-Xylene m3 Allyl chloride 4.11 6.57 6.5"
+     }
+    ],
+    "mass_policy": "block normalized-character count; minimum mass unit 1",
+    "cost_policy": "0.65 * (1 - rescaled GIoU) + 0.35 * normalized Levenshtein distance",
+    "page_geometry": "page boxes stacked vertically and normalized by max page count"
+   },
+   "interpretation": "Exact optimal transport over extracted text blocks. This is an LTSim-inspired, fully specified adaptation\u2014not the published LTSim implementation or a semantic table/formula metric. Report geometry and content costs separately with the flows."
+  },
+  "layout_relations": {
+   "status": "scored",
+   "applicable": true,
+   "metrics": {
+    "matched_block_count": 7,
+    "reference_block_coverage": 1.0,
+    "candidate_block_coverage": 1.0,
+    "matched_block_iou_q10": 0.0,
+    "matched_block_iou_q50": 0.5076146079349684,
+    "matched_block_center_displacement_q90": 0.04072402863446635,
+    "pairwise_relation_count": 21,
+    "pairwise_relation_agreement": 1.0
+   },
+   "evidence": {
+    "relation_mismatches": [],
+    "worst_block_pairs": [
+     {
+      "reference_block_index": 3,
+      "candidate_block_index": 3,
+      "reference_page": 0,
+      "candidate_page": 0,
+      "reference_bbox_normalized": [
+       0.11764705882352941,
+       0.27641560332943693,
+       0.8823528414458232,
+       0.29018970450969656
+      ],
+      "candidate_bbox_normalized": [
+       0.11764705882352941,
+       0.3111278264209478,
+       0.8298251582126991,
+       0.3421417775780264
+      ],
+      "center_displacement": 0.05067015328257846,
+      "bbox_iou": 0.0,
+      "reference_text": "The table below is a medical-literature table reproduced verbatim from a PubMed-derived dataset."
+     },
+     {
+      "reference_block_index": 2,
+      "candidate_block_index": 2,
+      "reference_page": 0,
+      "candidate_page": 0,
+      "reference_bbox_normalized": [
+       0.11764705882352941,
+       0.24215588425145004,
+       0.30313963048598347,
+       0.2602697622896445
+      ],
+      "candidate_bbox_normalized": [
+       0.11764705882352941,
+       0.27486643165048924,
+       0.27578431173087725,
+       0.29001794680200443
+      ],
+      "center_displacement": 0.03409327886905826,
+      "bbox_iou": 0.0,
+      "reference_text": "1 Patient Data"
+     },
+     {
+      "reference_block_index": 1,
+      "candidate_block_index": 1,
+      "reference_page": 0,
+      "candidate_page": 0,
+      "reference_bbox_normalized": [
+       0.39130957609687755,
+       0.18607366927946456,
+       0.608690498701108,
+       0.20116858048872513
+      ],
+      "candidate_bbox_normalized": [
+       0.3885980493882123,
+       0.20841193921638257,
+       0.6114019256791258,
+       0.22356345436789773
+      ],
+      "center_displacement": 0.022366571908100895,
+      "bbox_iou": 0.0,
+      "reference_text": "Dataset-expansion sample"
+     },
+     {
+      "reference_block_index": 0,
+      "candidate_block_index": 0,
+      "reference_page": 0,
+      "candidate_page": 0,
+      "reference_bbox_normalized": [
+       0.3659052381328508,
+       0.14247027310458096,
+       0.6340948366651348,
+       0.164206938310103
+      ],
+      "candidate_bbox_normalized": [
+       0.3529364641974954,
+       0.14883152162185823,
+       0.6470635607351665,
+       0.17064971153182212
+      ],
+      "center_displacement": 0.00640201086954676,
+      "bbox_iou": 0.5076146079349684,
+      "reference_text": "Clinical Table Sample 4"
+     },
+     {
+      "reference_block_index": 5,
+      "candidate_block_index": 5,
+      "reference_page": 1,
+      "candidate_page": 1,
+      "reference_bbox_normalized": [
+       0.12806552064185048,
+       0.11368932627668285,
+       1.0067553551368464,
+       0.8847238559915562
+      ],
+      "candidate_bbox_normalized": [
+       0.12450979893503625,
+       0.11537875551165956,
+       1.0080164491740706,
+       0.8955037280766651
+      ],
+      "center_displacement": 0.006339337338262159,
+      "bbox_iou": 0.978697371273232,
+      "reference_text": "NO. name tR (min) Exp. tR MLR tR ANN NO. name m1 Dichlorodifluoromethane 1.35 1.50 1.52 m44 p-Xylene m2 Carbon disulfide 4.11 2.71 2.67 m45 m-Xylene m3 Allyl ch"
+     },
+     {
+      "reference_block_index": 4,
+      "candidate_block_index": 4,
+      "reference_page": 0,
+      "candidate_page": 0,
+      "reference_bbox_normalized": [
+       0.495543685613894,
+       0.9357262813683712,
+       0.5044563642514297,
+       0.9495003440163352
+      ],
+      "candidate_bbox_normalized": [
+       0.49550653594771243,
+       0.9346552376795296,
+       0.5044934640522876,
+       0.9485441265684186
+      ],
+      "center_displacement": 0.0010136305686858592,
+      "bbox_iou": 0.8567613616805101,
+      "reference_text": "1"
+     },
+     {
+      "reference_block_index": 6,
+      "candidate_block_index": 6,
+      "reference_page": 1,
+      "candidate_page": 1,
+      "reference_bbox_normalized": [
+       0.495543685613894,
+       0.9357262813683712,
+       0.5044563642514297,
+       0.9495003440163352
+      ],
+      "candidate_bbox_normalized": [
+       0.49550653594771243,
+       0.9346552376795296,
+       0.5044934640522876,
+       0.9485441265684186
+      ],
+      "center_displacement": 0.0010136305686858592,
+      "bbox_iou": 0.8567613616805101,
+      "reference_text": "2"
+     }
+    ]
+   },
+   "interpretation": "Transparent matched-block relation trial inspired by pairwise-layout work; this is not the published PaIRS or LTSim metric."
+  },
+  "reading_order": {
+   "status": "scored",
+   "applicable": true,
+   "metrics": {
+    "matched_block_count": 7,
+    "reference_block_coverage": 1.0,
+    "candidate_block_coverage": 1.0,
+    "inversion_count": 0,
+    "kendall_tau": 1.0
+   },
+   "evidence": {
+    "inverted_block_pairs": []
+   },
+   "interpretation": "Kendall tau is computed only on content-matched blocks; coverage must accompany it."
+  },
+  "pagination": {
+   "status": "scored",
+   "applicable": true,
+   "metrics": {
+    "reference_page_count": 2,
+    "candidate_page_count": 2,
+    "page_count_delta": 0,
+    "matched_block_count": 7,
+    "matched_block_page_assignment_accuracy": 1.0,
+    "page_break_precision": 1.0,
+    "page_break_recall": 1.0,
+    "page_break_f1": 1.0,
+    "page_break_true_positive": 1,
+    "page_break_false_positive": 0,
+    "page_break_false_negative": 0
+   },
+   "evidence": {
+    "mismatched_page_breaks": []
+   },
+   "interpretation": "Page count, matched-block page assignment, and page-break boundaries are reported independently."
+  },
+  "typography": {
+   "status": "scored",
+   "applicable": true,
+   "metrics": {
+    "styled_matched_token_count": 345,
+    "reference_styled_token_count": 346,
+    "candidate_styled_token_count": 346,
+    "reference_style_coverage": 0.9971098265895953,
+    "candidate_style_coverage": 0.9971098265895953,
+    "style_coverage_hmean": 0.9971098265895953,
+    "font_size_abs_log_ratio_q50": 0.008299057127878501,
+    "font_size_abs_log_ratio_q90": 0.008299057127878501,
+    "font_size_abs_log_ratio_max": 0.17857818233979583,
+    "font_name_exact_agreement_rate": 0.0,
+    "color_exact_agreement_rate": 1.0,
+    "bold_agreement_rate": 1.0,
+    "italic_agreement_rate": 1.0,
+    "serif_agreement_rate": 1.0,
+    "monospace_agreement_rate": 1.0,
+    "baseline_displacement_q90": 0.010362490259035684
+   },
+   "evidence": {
+    "style_mismatches": [
+     {
+      "token": "1",
+      "reference_page": 0,
+      "candidate_page": 0,
+      "reference_bbox": [
+       72.0,
+       191.78746032714844,
+       80.07691192626953,
+       206.13365173339844
+      ],
+      "candidate_bbox": [
+       72.0,
+       217.6942138671875,
+       78.9000015258789,
+       229.6942138671875
+      ],
+      "reference_font": "LMRoman12-Bold",
+      "candidate_font": "NewCM10-Bold",
+      "reference_size": 14.346196174621582,
+      "candidate_size": 12.0,
+      "font_size_abs_log_ratio": 0.17857818233979583,
+      "reference_style_bits": {
+       "italic": false,
+       "serif": true,
+       "monospace": false,
+       "bold": true
+      },
+      "candidate_style_bits": {
+       "italic": false,
+       "serif": true,
+       "monospace": false,
+       "bold": true
+      },
+      "reference_color": 0,
+      "candidate_color": 0
+     },
+     {
+      "token": "Data",
+      "reference_page": 0,
+      "candidate_page": 0,
+      "reference_bbox": [
+       151.17666625976562,
+       191.78746032714844,
+       185.52145385742188,
+       206.13365173339844
+      ],
+      "candidate_bbox": [
+       139.416015625,
+       217.6942138671875,
+       168.77999877929688,
+       229.6942138671875
+      ],
+      "reference_font": "LMRoman12-Bold",
+      "candidate_font": "NewCM10-Bold",
+      "reference_size": 14.346196174621582,
+      "candidate_size": 12.0,
+      "font_size_abs_log_ratio": 0.17857818233979583,
+      "reference_style_bits": {
+       "italic": false,
+       "serif": true,
+       "monospace": false,
+       "bold": true
+      },
+      "candidate_style_bits": {
+       "italic": false,
+       "serif": true,
+       "monospace": false,
+       "bold": true
+      },
+      "reference_color": 0,
+      "candidate_color": 0
+     },
+     {
+      "token": "Patient",
+      "reference_page": 0,
+      "candidate_page": 0,
+      "reference_bbox": [
+       94.42311096191406,
+       191.78746032714844,
+       145.81118774414062,
+       206.13365173339844
+      ],
+      "candidate_bbox": [
+       90.9000015258789,
+       217.6942138671875,
+       134.82000732421875,
+       229.6942138671875
+      ],
+      "reference_font": "LMRoman12-Bold",
+      "candidate_font": "NewCM10-Bold",
+      "reference_size": 14.346196174621582,
+      "candidate_size": 12.0,
+      "font_size_abs_log_ratio": 0.17857818233979583,
+      "reference_style_bits": {
+       "italic": false,
+       "serif": true,
+       "monospace": false,
+       "bold": true
+      },
+      "candidate_style_bits": {
+       "italic": false,
+       "serif": true,
+       "monospace": false,
+       "bold": true
+      },
+      "reference_color": 0,
+      "candidate_color": 0
+     },
+     {
+      "token": "(Cume",
+      "reference_page": 1,
+      "candidate_page": 1,
+      "reference_bbox": [
+       580.7017822265625,
+       173.72802734375,
+       612.8180541992188,
+       184.63711547851562
+      ],
+      "candidate_bbox": [
+       579.4620361328125,
+       176.05801391601562,
+       611.8460083007812,
+       187.05801391601562
+      ],
+      "reference_font": "LMRoman10-Regular",
+      "candidate_font": "NewCM10-Regular",
+      "reference_size": 10.909088134765625,
+      "candidate_size": 11.0,
+      "font_size_abs_log_ratio": 0.008299057127878501,
+      "reference_style_bits": {
+       "italic": false,
+       "serif": true,
+       "monospace": false,
+       "bold": false
+      },
+      "candidate_style_bits": {
+       "italic": false,
+       "serif": true,
+       "monospace": false,
+       "bold": false
+      },
+      "reference_color": 0,
+      "candidate_color": 0
+     },
+     {
+      "token": "(min)",
+      "reference_page": 1,
+      "candidate_page": 1,
+      "reference_bbox": [
+       267.9306640625,
+       90.04194641113281,
+       298.5852355957031,
+       100.95103454589844
+      ],
+      "candidate_bbox": [
+       264.822998046875,
+       91.37997436523438,
+       295.7330017089844,
+       102.37997436523438
+      ],
+      "reference_font": "LMRoman10-Bold",
+      "candidate_font": "NewCM10-Bold",
+      "reference_size": 10.909088134765625,
+      "candidate_size": 11.0,
+      "font_size_abs_log_ratio": 0.008299057127878501,
+      "reference_style_bits": {
+       "italic": false,
+       "serif": true,
+       "monospace": false,
+       "bold": true
+      },
+      "candidate_style_bits": {
+       "italic": false,
+       "serif": true,
+       "monospace": false,
+       "bold": true
+      },
+      "reference_color": 0,
+      "candidate_color": 0
+     },
+     {
+      "token": "-0.12",
+      "reference_page": 1,
+      "candidate_page": 1,
+      "reference_bbox": [
+       400.13623046875,
+       257.41412353515625,
+       423.165283203125,
+       268.3232116699219
+      ],
+      "candidate_bbox": [
+       397.20001220703125,
+       260.7359924316406,
+       420.4210205078125,
+       271.7359924316406
+      ],
+      "reference_font": "LMRoman10-Regular",
+      "candidate_font": "NewCM10-Regular",
+      "reference_size": 10.909088134765625,
+      "candidate_size": 11.0,
+      "font_size_abs_log_ratio": 0.008299057127878501,
+      "reference_style_bits": {
+       "italic": false,
+       "serif": true,
+       "monospace": false,
+       "bold": false
+      },
+      "candidate_style_bits": {
+       "italic": false,
+       "serif": true,
+       "monospace": false,
+       "bold": false
+      },
+      "reference_color": 0,
+      "candidate_color": 0
+     },
+     {
+      "token": "-0.34",
+      "reference_page": 1,
+      "candidate_page": 1,
+      "reference_bbox": [
+       340.4371032714844,
+       257.41412353515625,
+       363.46612548828125,
+       268.3232116699219
+      ],
+      "candidate_bbox": [
+       337.20001220703125,
+       260.7359924316406,
+       360.4210205078125,
+       271.7359924316406
+      ],
+      "reference_font": "LMRoman10-Regular",
+      "candidate_font": "NewCM10-Regular",
+      "reference_size": 10.909088134765625,
+      "candidate_size": 11.0,
+      "font_size_abs_log_ratio": 0.008299057127878501,
+      "reference_style_bits": {
+       "italic": false,
+       "serif": true,
+       "monospace": false,
+       "bold": false
+      },
+      "candidate_style_bits": {
+       "italic": false,
+       "serif": true,
+       "monospace": false,
+       "bold": false
+      },
+      "reference_color": 0,
+      "candidate_color": 0
+     },
+     {
+      "token": "1",
+      "reference_page": 0,
+      "candidate_page": 0,
+      "reference_bbox": [
+       303.2727355957031,
+       741.09521484375,
+       308.727294921875,
+       752.0042724609375
+      ],
+      "candidate_bbox": [
+       303.25,
+       740.2469482421875,
+       308.75,
+       751.2469482421875
+      ],
+      "reference_font": "LMRoman10-Regular",
+      "candidate_font": "NewCM10-Regular",
+      "reference_size": 10.909088134765625,
+      "candidate_size": 11.0,
+      "font_size_abs_log_ratio": 0.008299057127878501,
+      "reference_style_bits": {
+       "italic": false,
+       "serif": true,
+       "monospace": false,
+       "bold": false
+      },
+      "candidate_style_bits": {
+       "italic": false,
+       "serif": true,
+       "monospace": false,
+       "bold": false
+      },
+      "reference_color": 0,
+      "candidate_color": 0
+     },
+     {
+      "token": "1,1,1,2-Tetrachloroethane",
+      "reference_page": 1,
+      "candidate_page": 1,
+      "reference_bbox": [
+       113.45341491699219,
+       675.8445434570312,
+       234.43521118164062,
+       686.7536010742188
+      ],
+      "candidate_bbox": [
+       112.19999694824219,
+       684.1259765625,
+       234.19000244140625,
+       695.1259765625
+      ],
+      "reference_font": "LMRoman10-Regular",
+      "candidate_font": "NewCM10-Regular",
+      "reference_size": 10.909088134765625,
+      "candidate_size": 11.0,
+      "font_size_abs_log_ratio": 0.008299057127878501,
+      "reference_style_bits": {
+       "italic": false,
+       "serif": true,
+       "monospace": false,
+       "bold": false
+      },
+      "candidate_style_bits": {
+       "italic": false,
+       "serif": true,
+       "monospace": false,
+       "bold": false
+      },
+      "reference_color": 0,
+      "candidate_color": 0
+     },
+     {
+      "token": "1,1,1-Trichloroethanea",
+      "reference_page": 1,
+      "candidate_page": 1,
+      "reference_bbox": [
+       113.45341491699219,
+       327.15252685546875,
+       219.8933868408203,
+       338.0616149902344
+      ],
+      "candidate_bbox": [
+       112.19999694824219,
+       331.3009948730469,
+       219.52700805664062,
+       342.3009948730469
+      ],
+      "reference_font": "LMRoman10-Regular",
+      "candidate_font": "NewCM10-Regular",
+      "reference_size": 10.909088134765625,
+      "candidate_size": 11.0,
+      "font_size_abs_log_ratio": 0.008299057127878501,
+      "reference_style_bits": {
+       "italic": false,
+       "serif": true,
+       "monospace": false,
+       "bold": false
+      },
+      "candidate_style_bits": {
+       "italic": false,
+       "serif": true,
+       "monospace": false,
+       "bold": false
+      },
+      "reference_color": 0,
+      "candidate_color": 0
+     },
+     {
+      "token": "1,1,2,2-Tetrachloroethane",
+      "reference_page": 1,
+      "candidate_page": 1,
+      "reference_bbox": [
+       495.15264892578125,
+       215.57107543945312,
+       616.13427734375,
+       226.48016357421875
+      ],
+      "candidate_bbox": [
+       493.20001220703125,
+       218.39700317382812,
+       615.1900024414062,
+       229.39700317382812
+      ],
+      "reference_font": "LMRoman10-Regular",
+      "candidate_font": "NewCM10-Regular",
+      "reference_size": 10.909088134765625,
+      "candidate_size": 11.0,
+      "font_size_abs_log_ratio": 0.008299057127878501,
+      "reference_style_bits": {
+       "italic": false,
+       "serif": true,
+       "monospace": false,
+       "bold": false
+      },
+      "candidate_style_bits": {
+       "italic": false,
+       "serif": true,
+       "monospace": false,
+       "bold": false
+      },
+      "reference_color": 0,
+      "candidate_color": 0
+     },
+     {
+      "token": "1,1-Dichloroethane",
+      "reference_page": 1,
+      "candidate_page": 1,
+      "reference_bbox": [
+       113.45341491699219,
+       215.57107543945312,
+       203.03884887695312,
+       226.48016357421875
+      ],
+      "candidate_bbox": [
+       112.19999694824219,
+       218.39700317382812,
+       202.53199768066406,
+       229.39700317382812
+      ],
+      "reference_font": "LMRoman10-Regular",
+      "candidate_font": "NewCM10-Regular",
+      "reference_size": 10.909088134765625,
+      "candidate_size": 11.0,
+      "font_size_abs_log_ratio": 0.008299057127878501,
+      "reference_style_bits": {
+       "italic": false,
+       "serif": true,
+       "monospace": false,
+       "bold": false
+      },
+      "candidate_style_bits": {
+       "italic": false,
+       "serif": true,
+       "monospace": false,
+       "bold": false
+      },
+      "reference_color": 0,
+      "candidate_color": 0
+     },
+     {
+      "token": "1,1-Dichloroethene",
+      "reference_page": 1,
+      "candidate_page": 1,
+      "reference_bbox": [
+       113.45341491699219,
+       159.78036499023438,
+       202.4279327392578,
+       170.689453125
+      ],
+      "candidate_bbox": [
+       112.19999694824219,
+       161.94503784179688,
+       201.91600036621094,
+       172.94503784179688
+      ],
+      "reference_font": "LMRoman10-Regular",
+      "candidate_font": "NewCM10-Regular",
+      "reference_size": 10.909088134765625,
+      "candidate_size": 11.0,
+      "font_size_abs_log_ratio": 0.008299057127878501,
+      "reference_style_bits": {
+       "italic": false,
+       "serif": true,
+       "monospace": false,
+       "bold": false
+      },
+      "candidate_style_bits": {
+       "italic": false,
+       "serif": true,
+       "monospace": false,
+       "bold": false
+      },
+      "reference_color": 0,
+      "candidate_color": 0
+     },
+     {
+      "token": "1,1-Dichloropropene",
+      "reference_page": 1,
+      "candidate_page": 1,
+      "reference_bbox": [
+       113.45341491699219,
+       355.0478820800781,
+       209.13702392578125,
+       365.95697021484375
+      ],
+      "candidate_bbox": [
+       112.19999694824219,
+       359.5270080566406,
+       208.68099975585938,
+       370.5270080566406
+      ],
+      "reference_font": "LMRoman10-Regular",
+      "candidate_font": "NewCM10-Regular",
+      "reference_size": 10.909088134765625,
+      "candidate_size": 11.0,
+      "font_size_abs_log_ratio": 0.008299057127878501,
+      "reference_style_bits": {
+       "italic": false,
+       "serif": true,
+       "monospace": false,
+       "bold": false
+      },
+      "candidate_style_bits": {
+       "italic": false,
+       "serif": true,
+       "monospace": false,
+       "bold": false
+      },
+      "reference_color": 0,
+      "candidate_color": 0
+     },
+     {
+      "token": "1,2,3-Trichlorobenzene",
+      "reference_page": 1,
+      "candidate_page": 1,
+      "reference_bbox": [
+       495.15264892578125,
+       550.3154296875,
+       602.1925048828125,
+       561.2244873046875
+      ],
+      "candidate_bbox": [
+       493.20001220703125,
+       557.1089477539062,
+       601.1320190429688,
+       568.1089477539062
+      ],
+      "reference_font": "LMRoman10-Regular",
+      "candidate_font": "NewCM10-Regular",
+      "reference_size": 10.909088134765625,
+      "candidate_size": 11.0,
+      "font_size_abs_log_ratio": 0.008299057127878501,
+      "reference_style_bits": {
+       "italic": false,
+       "serif": true,
+       "monospace": false,
+       "bold": false
+      },
+      "candidate_style_bits": {
+       "italic": false,
+       "serif": true,
+       "monospace": false,
+       "bold": false
+      },
+      "reference_color": 0,
+      "candidate_color": 0
+     },
+     {
+      "token": "1,2,3-Trichloropropanea",
+      "reference_page": 1,
+      "candidate_page": 1,
+      "reference_bbox": [
+       495.15264892578125,
+       243.4664306640625,
+       608.0070190429688,
+       254.37551879882812
+      ],
+      "candidate_bbox": [
+       493.20001220703125,
+       246.62301635742188,
+       606.9840087890625,
+       257.6230163574219
+      ],
+      "reference_font": "LMRoman10-Regular",
+      "candidate_font": "NewCM10-Regular",
+      "reference_size": 10.909088134765625,
+      "candidate_size": 11.0,
+      "font_size_abs_log_ratio": 0.008299057127878501,
+      "reference_style_bits": {
+       "italic": false,
+       "serif": true,
+       "monospace": false,
+       "bold": false
+      },
+      "candidate_style_bits": {
+       "italic": false,
+       "serif": true,
+       "monospace": false,
+       "bold": false
+      },
+      "reference_color": 0,
+      "candidate_color": 0
+     },
+     {
+      "token": "1,2,4-Trichlorobenzene",
+      "reference_page": 1,
+      "candidate_page": 1,
+      "reference_bbox": [
+       495.15264892578125,
+       494.5246887207031,
+       602.1925048828125,
+       505.43377685546875
+      ],
+      "candidate_bbox": [
+       493.20001220703125,
+       500.6570129394531,
+       601.1320190429688,
+       511.6570129394531
+      ],
+      "reference_font": "LMRoman10-Regular",
+      "candidate_font": "NewCM10-Regular",
+      "reference_size": 10.909088134765625,
+      "candidate_size": 11.0,
+      "font_size_abs_log_ratio": 0.008299057127878501,
+      "reference_style_bits": {
+       "italic": false,
+       "serif": true,
+       "monospace": false,
+       "bold": false
+      },
+      "candidate_style_bits": {
+       "italic": false,
+       "serif": true,
+       "monospace": false,
+       "bold": false
+      },
+      "reference_color": 0,
+      "candidate_color": 0
+     },
+     {
+      "token": "1,2,4-Trimethylbenzenea",
+      "reference_page": 1,
+      "candidate_page": 1,
+      "reference_bbox": [
+       495.15264892578125,
+       341.1002197265625,
+       611.552490234375,
+       352.0093078613281
+      ],
+      "candidate_bbox": [
+       493.20001220703125,
+       345.41400146484375,
+       610.5700073242188,
+       356.41400146484375
+      ],
+      "reference_font": "LMRoman10-Regular",
+      "candidate_font": "NewCM10-Regular",
+      "reference_size": 10.909088134765625,
+      "candidate_size": 11.0,
+      "font_size_abs_log_ratio": 0.008299057127878501,
+      "reference_style_bits": {
+       "italic": false,
+       "serif": true,
+       "monospace": false,
+       "bold": false
+      },
+      "candidate_style_bits": {
+       "italic": false,
+       "serif": true,
+       "monospace": false,
+       "bold": false
+      },
+      "reference_color": 0,
+      "candidate_color": 0
+     },
+     {
+      "token": "1,2-Dibromoethane",
+      "reference_page": 1,
+      "candidate_page": 1,
+      "reference_bbox": [
+       113.45341491699219,
+       634.0015258789062,
+       204.55520629882812,
+       644.9105834960938
+      ],
+      "candidate_bbox": [
+       112.19999694824219,
+       641.7869873046875,
+       204.06100463867188,
+       652.7869873046875
+      ],
+      "reference_font": "LMRoman10-Regular",
+      "candidate_font": "NewCM10-Regular",
+      "reference_size": 10.909088134765625,
+      "candidate_size": 11.0,
+      "font_size_abs_log_ratio": 0.008299057127878501,
+      "reference_style_bits": {
+       "italic": false,
+       "serif": true,
+       "monospace": false,
+       "bold": false
+      },
+      "candidate_style_bits": {
+       "italic": false,
+       "serif": true,
+       "monospace": false,
+       "bold": false
+      },
+      "reference_color": 0,
+      "candidate_color": 0
+     },
+     {
+      "token": "1,2-Dichlorobenzene",
+      "reference_page": 1,
+      "candidate_page": 1,
+      "reference_bbox": [
+       495.15264892578125,
+       466.62933349609375,
+       590.79248046875,
+       477.5384216308594
+      ],
+      "candidate_bbox": [
+       493.20001220703125,
+       472.4309997558594,
+       589.636962890625,
+       483.4309997558594
+      ],
+      "reference_font": "LMRoman10-Regular",
+      "candidate_font": "NewCM10-Regular",
+      "reference_size": 10.909088134765625,
+      "candidate_size": 11.0,
+      "font_size_abs_log_ratio": 0.008299057127878501,
+      "reference_style_bits": {
+       "italic": false,
+       "serif": true,
+       "monospace": false,
+       "bold": false
+      },
+      "candidate_style_bits": {
+       "italic": false,
+       "serif": true,
+       "monospace": false,
+       "bold": false
+      },
+      "reference_color": 0,
+      "candidate_color": 0
+     },
+     {
+      "token": "1,2-Dichlorobenzene-d4a",
+      "reference_page": 1,
+      "candidate_page": 1,
+      "reference_bbox": [
+       495.15264892578125,
+       620.0538330078125,
+       611.3997192382812,
+       630.962890625
+      ],
+      "candidate_bbox": [
+       493.20001220703125,
+       627.6739501953125,
+       610.416015625,
+       638.6739501953125
+      ],
+      "reference_font": "LMRoman10-Regular",
+      "candidate_font": "NewCM10-Regular",
+      "reference_size": 10.909088134765625,
+      "candidate_size": 11.0,
+      "font_size_abs_log_ratio": 0.008299057127878501,
+      "reference_style_bits": {
+       "italic": false,
+       "serif": true,
+       "monospace": false,
+       "bold": false
+      },
+      "candidate_style_bits": {
+       "italic": false,
+       "serif": true,
+       "monospace": false,
+       "bold": false
+      },
+      "reference_color": 0,
+      "candidate_color": 0
+     },
+     {
+      "token": "1,2-Dichloroethane",
+      "reference_page": 1,
+      "candidate_page": 1,
+      "reference_bbox": [
+       113.45341491699219,
+       396.89093017578125,
+       203.03884887695312,
+       407.8000183105469
+      ],
+      "candidate_bbox": [
+       112.19999694824219,
+       401.8659973144531,
+       202.53199768066406,
+       412.8659973144531
+      ],
+      "reference_font": "LMRoman10-Regular",
+      "candidate_font": "NewCM10-Regular",
+      "reference_size": 10.909088134765625,
+      "candidate_size": 11.0,
+      "font_size_abs_log_ratio": 0.008299057127878501,
+      "reference_style_bits": {
+       "italic": false,
+       "serif": true,
+       "monospace": false,
+       "bold": false
+      },
+      "candidate_style_bits": {
+       "italic": false,
+       "serif": true,
+       "monospace": false,
+       "bold": false
+      },
+      "reference_color": 0,
+      "candidate_color": 0
+     },
+     {
+      "token": "1,2-Dichloropropane",
+      "reference_page": 1,
+      "candidate_page": 1,
+      "reference_bbox": [
+       113.45341491699219,
+       424.7862854003906,
+       209.45338439941406,
+       435.69537353515625
+      ],
+      "candidate_bbox": [
+       112.19999694824219,
+       430.0920104980469,
+       208.98899841308594,
+       441.0920104980469
+      ],
+      "reference_font": "LMRoman10-Regular",
+      "candidate_font": "NewCM10-Regular",
+      "reference_size": 10.909088134765625,
+      "candidate_size": 11.0,
+      "font_size_abs_log_ratio": 0.008299057127878501,
+      "reference_style_bits": {
+       "italic": false,
+       "serif": true,
+       "monospace": false,
+       "bold": false
+      },
+      "candidate_style_bits": {
+       "italic": false,
+       "serif": true,
+       "monospace": false,
+       "bold": false
+      },
+      "reference_color": 0,
+      "candidate_color": 0
+     },
+     {
+      "token": "1,3,5-Trimethylbenzene",
+      "reference_page": 1,
+      "candidate_page": 1,
+      "reference_bbox": [
+       495.15264892578125,
+       299.2571716308594,
+       606.0979614257812,
+       310.166259765625
+      ],
+      "candidate_bbox": [
+       493.20001220703125,
+       303.07501220703125,
+       605.0700073242188,
+       314.07501220703125
+      ],
+      "reference_font": "LMRoman10-Regular",
+      "candidate_font": "NewCM10-Regular",
+      "reference_size": 10.909088134765625,
+      "candidate_size": 11.0,
+      "font_size_abs_log_ratio": 0.008299057127878501,
+      "reference_style_bits": {
+       "italic": false,
+       "serif": true,
+       "monospace": false,
+       "bold": false
+      },
+      "candidate_style_bits": {
+       "italic": false,
+       "serif": true,
+       "monospace": false,
+       "bold": false
+      },
+      "reference_color": 0,
+      "candidate_color": 0
+     }
+    ]
+   },
+   "interpretation": "Raw PDF font observables are diagnostic; font names and flags are renderer metadata, not perceptual truth."
+  },
+  "raster_ink": {
+   "status": "scored",
+   "applicable": true,
+   "metrics": {
+    "paired_page_count": 2,
+    "unpaired_page_count": 0,
+    "unregistered_tolerant_ink_f1_macro": 0.48438199870163184,
+    "registered_tolerant_ink_f1_macro": 0.6737248293878473,
+    "registration_gain": 0.18934283068621544
+   },
+   "evidence": {
+    "pages": [
+     {
+      "page": 0,
+      "reference_raster_size": [
+       816,
+       1056
+      ],
+      "candidate_raster_size_before_resize": [
+       816,
+       1056
+      ],
+      "candidate_resized_to_reference_canvas": true,
+      "coordinate_frame": "registered_reference_raster",
+      "registration_translation_px": [
+       -7,
+       -36
+      ],
+      "unregistered": {
+       "reference_ink_pixels": 5353,
+       "candidate_ink_pixels": 5492,
+       "precision": 0.2057538237436271,
+       "recall": 0.1946572015692135,
+       "f1": 0.20005175187575064,
+       "unmatched_ink_pixels": 8673,
+       "unmatched_ink_fraction_of_union": 0.8345039930722602
+      },
+      "registered": {
+       "reference_ink_pixels": 5353,
+       "candidate_ink_pixels": 5492,
+       "precision": 0.4979970866715222,
+       "recall": 0.5113020736035868,
+       "f1": 0.5045618842966036,
+       "unmatched_ink_pixels": 5373,
+       "unmatched_ink_fraction_of_union": 0.5740384615384615
+      },
+      "registered_mean_absolute_gray_difference": 0.005012304052637097,
+      "top_difference_bbox": {
+       "pixel_bbox": [
+        89,
+        123,
+        719,
+        1000
+       ],
+       "normalized_bbox": [
+        0.1090686274509804,
+        0.11647727272727272,
+        0.8811274509803921,
+        0.946969696969697
+       ]
+      }
+     },
+     {
+      "page": 1,
+      "reference_raster_size": [
+       816,
+       1056
+      ],
+      "candidate_raster_size_before_resize": [
+       816,
+       1056
+      ],
+      "candidate_resized_to_reference_canvas": true,
+      "coordinate_frame": "registered_reference_raster",
+      "registration_translation_px": [
+       2,
+       -4
+      ],
+      "unregistered": {
+       "reference_ink_pixels": 130264,
+       "candidate_ink_pixels": 138330,
+       "precision": 0.7661389431070629,
+       "recall": 0.7713028925873611,
+       "f1": 0.768712245527513,
+       "unmatched_ink_pixels": 62141,
+       "unmatched_ink_fraction_of_union": 0.2651134414703448
+      },
+      "registered": {
+       "reference_ink_pixels": 130264,
+       "candidate_ink_pixels": 138141,
+       "precision": 0.8333876256867983,
+       "recall": 0.85260701344961,
+       "f1": 0.8428877744790908,
+       "unmatched_ink_pixels": 42216,
+       "unmatched_ink_fraction_of_union": 0.1873618619018454
+      },
+      "registered_mean_absolute_gray_difference": 0.10016439991029091,
+      "top_difference_bbox": {
+       "pixel_bbox": [
+        97,
+        114,
+        816,
+        1000
+       ],
+       "normalized_bbox": [
+        0.11887254901960784,
+        0.10795454545454546,
+        1.0,
+        0.946969696969697
+       ]
+      }
+     }
+    ],
+    "top_difference_bbox": {
+     "page": 0,
+     "unpaired_side": null,
+     "coordinate_frame": "registered_reference_raster",
+     "registration_translation_px": [
+      -7,
+      -36
+     ],
+     "pixel_bbox": [
+      89,
+      123,
+      719,
+      1000
+     ],
+     "normalized_bbox": [
+      0.1090686274509804,
+      0.11647727272727272,
+      0.8811274509803921,
+      0.946969696969697
+     ]
+    }
+   },
+   "interpretation": "Candidate pages are resized to the reference canvas, then optionally translation-registered. Use canvas and geometry axes for layout claims."
+  },
+  "raster_perceptual": {
+   "status": "scored",
+   "applicable": true,
+   "metrics": {
+    "paired_page_count": 2,
+    "scored_page_count": 2,
+    "abstained_page_count": 0,
+    "unpaired_page_count": 0,
+    "unregistered_ssim_macro": 0.6570796269645531,
+    "registered_ssim_macro": 0.6966881857367927,
+    "unregistered_multiscale_ssim_diagnostic_macro": 0.8137252428312789,
+    "registered_multiscale_ssim_diagnostic_macro": 0.8583021844525118
+   },
+   "evidence": {
+    "pages": [
+     {
+      "page": 0,
+      "status": "scored",
+      "unregistered_ssim": 0.9604863653164744,
+      "registered_ssim": 0.9691303244319684,
+      "unregistered_multiscale_ssim_diagnostic": 0.9635947732568791,
+      "registered_multiscale_ssim_diagnostic": 0.9763785468064432,
+      "unregistered_scale_scores": [
+       {
+        "downsample_factor": 1,
+        "ssim": 0.9604863653164744
+       },
+       {
+        "downsample_factor": 2,
+        "ssim": 0.9433285447748119
+       },
+       {
+        "downsample_factor": 4,
+        "ssim": 0.9190573090355986
+       },
+       {
+        "downsample_factor": 8,
+        "ssim": 0.8866864253015503
+       }
+      ],
+      "registered_scale_scores": [
+       {
+        "downsample_factor": 1,
+        "ssim": 0.9691303244319684
+       },
+       {
+        "downsample_factor": 2,
+        "ssim": 0.958598013968795
+       },
+       {
+        "downsample_factor": 4,
+        "ssim": 0.9501762609233687
+       },
+       {
+        "downsample_factor": 8,
+        "ssim": 0.9333000436044046
+       }
+      ],
+      "registration_translation_px": [
+       -7,
+       -36
+      ],
+      "candidate_resized_to_reference_canvas": false,
+      "reference_raster_size": [
+       816,
+       1056
+      ],
+      "candidate_raster_size_before_resize": [
+       816,
+       1056
+      ],
+      "registered_difference_bbox": {
+       "pixel_bbox": [
+        89,
+        123,
+        719,
+        1000
+       ],
+       "normalized_bbox": [
+        0.1090686274509804,
+        0.11647727272727272,
+        0.8811274509803921,
+        0.946969696969697
+       ]
+      }
+     },
+     {
+      "page": 1,
+      "status": "scored",
+      "unregistered_ssim": 0.3536728886126318,
+      "registered_ssim": 0.42424604704161695,
+      "unregistered_multiscale_ssim_diagnostic": 0.6638557124056785,
+      "registered_multiscale_ssim_diagnostic": 0.7402258220985803,
+      "unregistered_scale_scores": [
+       {
+        "downsample_factor": 1,
+        "ssim": 0.3536728886126318
+       },
+       {
+        "downsample_factor": 2,
+        "ssim": 0.29540890893105637
+       },
+       {
+        "downsample_factor": 4,
+        "ssim": 0.2684623437124854
+       },
+       {
+        "downsample_factor": 8,
+        "ssim": 0.39706489451352983
+       }
+      ],
+      "registered_scale_scores": [
+       {
+        "downsample_factor": 1,
+        "ssim": 0.42424604704161695
+       },
+       {
+        "downsample_factor": 2,
+        "ssim": 0.3871079501824619
+       },
+       {
+        "downsample_factor": 4,
+        "ssim": 0.47467776464195216
+       },
+       {
+        "downsample_factor": 8,
+        "ssim": 0.6488626899219984
+       }
+      ],
+      "registration_translation_px": [
+       2,
+       -4
+      ],
+      "candidate_resized_to_reference_canvas": false,
+      "reference_raster_size": [
+       816,
+       1056
+      ],
+      "candidate_raster_size_before_resize": [
+       816,
+       1056
+      ],
+      "registered_difference_bbox": {
+       "pixel_bbox": [
+        97,
+        114,
+        816,
+        1000
+       ],
+       "normalized_bbox": [
+        0.11887254901960784,
+        0.10795454545454546,
+        1.0,
+        0.946969696969697
+       ]
+      }
+     }
+    ]
+   },
+   "interpretation": "SSIM is reported before and after translation-only registration. The multiscale value is the documented geometric mean of four SSIM scales, not canonical MS-SSIM. No candidate resizing is performed; SSIM abstains when physical canvases/grids differ."
+  },
+  "tables": {
+   "status": "abstain",
+   "applicable": null,
+   "metrics": {},
+   "evidence": {
+    "source_flags": {
+     "reference": null,
+     "candidate": null
+    }
+   },
+   "reason": "Applicability for tables was not established by source metadata."
+  },
+  "formulas": {
+   "status": "abstain",
+   "applicable": null,
+   "metrics": {},
+   "evidence": {
+    "source_flags": {
+     "reference": null,
+     "candidate": null
+    }
+   },
+   "reason": "Applicability for formulas was not established by source metadata."
+  },
+  "figures": {
+   "status": "abstain",
+   "applicable": null,
+   "metrics": {},
+   "evidence": {
+    "source_flags": {
+     "reference": null,
+     "candidate": null
+    }
+   },
+   "reason": "Applicability for figures was not established by source metadata."
+  }
+ }
+}

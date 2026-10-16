@@ -1,0 +1,30 @@
+{
+  "sample_id": "09_algorithms_003",
+  "set": null,
+  "mode": "visual",
+  "model": "opus",
+  "method": "claude opus agentic (visual, effort medium) [v3]",
+  "claude_exit": 0,
+  "cost_usd": 1.9645974999999998,
+  "num_turns": 34,
+  "duration_s": 471,
+  "is_error": false,
+  "tool_calls": 33,
+  "score_runs": 7,
+  "baseline_overall": 0.3438513718429454,
+  "final": {
+    "compiled": true,
+    "overall": 0.7485782885619295,
+    "visual": 0.652893841123327,
+    "content": 0.9650317147856518,
+    "pagination": 1.0,
+    "layout": 0.9258630887443381,
+    "typography": 0.8643266979779847,
+    "raster": 0.2948679656140596,
+    "pages": "2/2",
+    "review_flags": [
+      "content_visual_disagreement",
+      "raster_layout_disagreement"
+    ]
+  }
+}

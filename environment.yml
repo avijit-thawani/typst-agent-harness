@@ -1,0 +1,14 @@
+name: typst-harness
+channels:
+  - conda-forge
+dependencies:
+  - python=3.12
+  - pymupdf
+  - numpy
+  - scipy
+  - scikit-image
+  - opencv
+  - pillow
+  - reportlab
+  - rapidfuzz
+  - pytest

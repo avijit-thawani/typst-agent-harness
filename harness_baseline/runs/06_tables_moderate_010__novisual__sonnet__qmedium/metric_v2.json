@@ -1,0 +1,5116 @@
+{
+ "evaluator": {
+  "name": "pdf_metric_axes_v2",
+  "version": 2,
+  "aggregate_score": null,
+  "policy": "No compensatory scalar. Report raw axes, coverage, abstentions, and localized evidence."
+ },
+ "inputs": {
+  "reference_pdf": "~/Downloads/learn/latex_typst/harness_baseline/runs/06_tables_moderate_010__novisual__sonnet__qmedium/work/reference.pdf",
+  "candidate_pdf": "~/Downloads/learn/latex_typst/harness_baseline/runs/06_tables_moderate_010__novisual__sonnet__qmedium/final_candidate.pdf",
+  "reference_page_count": 2,
+  "candidate_page_count": 2
+ },
+ "configuration": {
+  "render_dpi": 96,
+  "ink_threshold": 245,
+  "ink_tolerance_px": 2,
+  "normalization": "Unicode NFKC, soft-hyphen removal, collapsed whitespace; case preserved"
+ },
+ "applicability": {
+  "tables": null,
+  "formulas": null,
+  "figures": null
+ },
+ "axes": {
+  "canvas": {
+   "status": "scored",
+   "applicable": true,
+   "metrics": {
+    "reference_page_count": 2,
+    "candidate_page_count": 2,
+    "page_count_delta": 0,
+    "paired_page_count": 2,
+    "exact_paired_size_rate": 1.0,
+    "width_abs_log_ratio_max": 0.0,
+    "height_abs_log_ratio_max": 0.0
+   },
+   "evidence": {
+    "page_pairs": [
+     {
+      "page": 0,
+      "reference_size_points": [
+       612.0,
+       792.0
+      ],
+      "candidate_size_points": [
+       612.0,
+       792.0
+      ],
+      "width_abs_log_ratio": 0.0,
+      "height_abs_log_ratio": 0.0,
+      "exact_size_match": true
+     },
+     {
+      "page": 1,
+      "reference_size_points": [
+       612.0,
+       792.0
+      ],
+      "candidate_size_points": [
+       612.0,
+       792.0
+      ],
+      "width_abs_log_ratio": 0.0,
+      "height_abs_log_ratio": 0.0,
+      "exact_size_match": true
+     }
+    ]
+   },
+   "interpretation": "Canvas/page-size mismatch only; no token layout residual is folded into this axis."
+  },
+  "content": {
+   "status": "scored",
+   "applicable": true,
+   "metrics": {
+    "matched_block_normalized_edit_similarity_macro": 0.9003830732082195,
+    "matched_block_count": 62,
+    "strict_nfc_token_inventory": {
+     "reference_count": 685,
+     "candidate_count": 683,
+     "matched_count": 675,
+     "precision": 0.9882869692532943,
+     "recall": 0.9854014598540146,
+     "f1": 0.9868421052631579,
+     "exact_match": false,
+     "missing": [
+      "1",
+      "2",
+      "\u223c150",
+      "\u03c00",
+      "\u03c00",
+      "\u03c00",
+      "\u03c00",
+      "\u223c100",
+      "\u223c30",
+      "\u223c50"
+     ],
+     "extra": [
+      "30",
+      "100",
+      "150",
+      "\ud835\udf0b0",
+      "\ud835\udf0b0",
+      "\ud835\udf0b0",
+      "\ud835\udf0b0",
+      "50"
+     ],
+     "missing_count": 10,
+     "extra_count": 8
+    },
+    "strict_nfc_document_edit_similarity": 0.948636806231743,
+    "compatibility_nfkc_token_inventory": {
+     "reference_count": 685,
+     "candidate_count": 683,
+     "matched_count": 679,
+     "precision": 0.9941434846266471,
+     "recall": 0.9912408759124087,
+     "f1": 0.9926900584795323
+    },
+    "compatibility_nfkc_document_edit_similarity": 0.9496105160662123
+   },
+   "evidence": {
+    "unmatched_reference_words": [
+     {
+      "word_index": 506,
+      "page": 0,
+      "bbox": [
+       303.2879943847656,
+       741.3756713867188,
+       308.7098083496094,
+       752.2847900390625
+      ],
+      "text": "1",
+      "normalized": "1"
+     },
+     {
+      "word_index": 611,
+      "page": 1,
+      "bbox": [
+       280.0860290527344,
+       440.4150695800781,
+       304.8206787109375,
+       451.4709777832031
+      ],
+      "text": "\u223c150",
+      "normalized": "\u223c150"
+     },
+     {
+      "word_index": 631,
+      "page": 1,
+      "bbox": [
+       280.0860595703125,
+       472.9443054199219,
+       304.8207092285156,
+       484.0002136230469
+      ],
+      "text": "\u223c100",
+      "normalized": "\u223c100"
+     },
+     {
+      "word_index": 649,
+      "page": 1,
+      "bbox": [
+       281.8927307128906,
+       505.4735412597656,
+       301.2095642089844,
+       516.5294189453125
+      ],
+      "text": "\u223c30",
+      "normalized": "\u223c30"
+     },
+     {
+      "word_index": 671,
+      "page": 1,
+      "bbox": [
+       289.4392395019531,
+       538.0027465820312,
+       308.75604248046875,
+       549.0586547851562
+      ],
+      "text": "\u223c50",
+      "normalized": "\u223c50"
+     },
+     {
+      "word_index": 684,
+      "page": 1,
+      "bbox": [
+       303.2879943847656,
+       741.3756713867188,
+       308.7098083496094,
+       752.2847900390625
+      ],
+      "text": "2",
+      "normalized": "2"
+     }
+    ],
+    "unmatched_candidate_words": [
+     {
+      "word_index": 574,
+      "page": 1,
+      "bbox": [
+       243.73599243164062,
+       171.37600708007812,
+       257.2359924316406,
+       180.37600708007812
+      ],
+      "text": "100",
+      "normalized": "100"
+     },
+     {
+      "word_index": 612,
+      "page": 1,
+      "bbox": [
+       246.7329864501953,
+       229.66397094726562,
+       260.23297119140625,
+       238.66397094726562
+      ],
+      "text": "150",
+      "normalized": "150"
+     },
+     {
+      "word_index": 652,
+      "page": 1,
+      "bbox": [
+       246.7329864501953,
+       287.9519958496094,
+       255.7329864501953,
+       296.9519958496094
+      ],
+      "text": "30",
+      "normalized": "30"
+     },
+     {
+      "word_index": 672,
+      "page": 1,
+      "bbox": [
+       246.7329864501953,
+       317.09600830078125,
+       255.7329864501953,
+       326.09600830078125
+      ],
+      "text": "50",
+      "normalized": "50"
+     }
+    ],
+    "lowest_similarity_block_pairs": [
+     {
+      "reference_block_index": 34,
+      "candidate_block_index": 32,
+      "reference_page": 1,
+      "candidate_page": 1,
+      "reference_text": "Reward",
+      "candidate_text": "Reward Demos",
+      "normalized_edit_similarity": 0.5
+     },
+     {
+      "reference_block_index": 67,
+      "candidate_block_index": 54,
+      "reference_page": 1,
+      "candidate_page": 1,
+      "reference_text": "Shelf-Cabinet",
+      "candidate_text": "Shelf-Cabinet Real Franka",
+      "normalized_edit_similarity": 0.52
+     },
+     {
+      "reference_block_index": 51,
+      "candidate_block_index": 44,
+      "reference_page": 1,
+      "candidate_page": 1,
+      "reference_text": "Joints, Init Obj. Pos",
+      "candidate_text": "Joints, Init Obj. Pos Obj. Pos Estimate",
+      "normalized_edit_similarity": 0.5384615384615384
+     },
+     {
+      "reference_block_index": 37,
+      "candidate_block_index": 34,
+      "reference_page": 1,
+      "candidate_page": 1,
+      "reference_text": "Camouflage Pick",
+      "candidate_text": "Camouflage Pick Sim. Koch",
+      "normalized_edit_similarity": 0.6
+     },
+     {
+      "reference_block_index": 42,
+      "candidate_block_index": 37,
+      "reference_page": 1,
+      "candidate_page": 1,
+      "reference_text": "Fully Obs. Pick",
+      "candidate_text": "Fully Obs. Pick Sim. xArm",
+      "normalized_edit_similarity": 0.6
+     },
+     {
+      "reference_block_index": 56,
+      "candidate_block_index": 47,
+      "reference_page": 1,
+      "candidate_page": 1,
+      "reference_text": "Wrist Cam, Joints",
+      "candidate_text": "Wrist Cam, Joints Bbox, Mask",
+      "normalized_edit_similarity": 0.6071428571428572
+     },
+     {
+      "reference_block_index": 62,
+      "candidate_block_index": 51,
+      "reference_page": 1,
+      "candidate_page": 1,
+      "reference_text": "Wrist Cam, Joints",
+      "candidate_text": "Wrist Cam, Joints Bbox, Mask",
+      "normalized_edit_similarity": 0.6071428571428572
+     },
+     {
+      "reference_block_index": 68,
+      "candidate_block_index": 55,
+      "reference_page": 1,
+      "candidate_page": 1,
+      "reference_text": "Wrist Cam, Joints",
+      "candidate_text": "Wrist Cam, Joints Bbox, Mask",
+      "normalized_edit_similarity": 0.6071428571428572
+     },
+     {
+      "reference_block_index": 75,
+      "candidate_block_index": 59,
+      "reference_page": 1,
+      "candidate_page": 1,
+      "reference_text": "Wrist Cam, Joints",
+      "candidate_text": "Wrist Cam, Joints Bbox, Mask",
+      "normalized_edit_similarity": 0.6071428571428572
+     },
+     {
+      "reference_block_index": 58,
+      "candidate_block_index": 49,
+      "reference_page": 1,
+      "candidate_page": 1,
+      "reference_text": "100K 0 Look for object &",
+      "candidate_text": "100K 0 Look for object & switch to \ud835\udf0b0",
+      "normalized_edit_similarity": 0.6486486486486487
+     },
+     {
+      "reference_block_index": 64,
+      "candidate_block_index": 53,
+      "reference_page": 1,
+      "candidate_page": 1,
+      "reference_text": "100K 0 Look for object &",
+      "candidate_text": "100K 0 Look for object & switch to \ud835\udf0b0",
+      "normalized_edit_similarity": 0.6486486486486487
+     },
+     {
+      "reference_block_index": 70,
+      "candidate_block_index": 57,
+      "reference_page": 1,
+      "candidate_page": 1,
+      "reference_text": "100K 0 Look for object &",
+      "candidate_text": "100K 0 Look for object & switch to \ud835\udf0b0",
+      "normalized_edit_similarity": 0.6486486486486487
+     },
+     {
+      "reference_block_index": 77,
+      "candidate_block_index": 61,
+      "reference_page": 1,
+      "candidate_page": 1,
+      "reference_text": "100K 0 Look for object &",
+      "candidate_text": "100K 0 Look for object & switch to \ud835\udf0b0",
+      "normalized_edit_similarity": 0.6486486486486487
+     },
+     {
+      "reference_block_index": 39,
+      "candidate_block_index": 36,
+      "reference_page": 1,
+      "candidate_page": 1,
+      "reference_text": "Sparse 100 suboptimal 20K 80K Pick up barely",
+      "candidate_text": "Sparse 100 suboptimal 20K 80K Pick up barely visible object",
+      "normalized_edit_similarity": 0.7457627118644068
+     },
+     {
+      "reference_block_index": 52,
+      "candidate_block_index": 45,
+      "reference_page": 1,
+      "candidate_page": 1,
+      "reference_text": "Dense 100 suboptimal 20K 1.2K Pick object from",
+      "candidate_text": "Dense 100 suboptimal 20K 1.2K Pick object from proprioception",
+      "normalized_edit_similarity": 0.7540983606557377
+     },
+     {
+      "reference_block_index": 48,
+      "candidate_block_index": 42,
+      "reference_page": 1,
+      "candidate_page": 1,
+      "reference_text": "Sparse 100 suboptimal 100K 900K Locate then pick",
+      "candidate_text": "Sparse 100 suboptimal 100K 900K Locate then pick up object",
+      "normalized_edit_similarity": 0.8275862068965517
+     },
+     {
+      "reference_block_index": 3,
+      "candidate_block_index": 2,
+      "reference_page": 0,
+      "candidate_page": 0,
+      "reference_text": "These tables are grouped from source-backed LaTeX table data and compiled as a single benchmark data point.",
+      "candidate_text": "1 Tables These tables are grouped from source-backed LaTeX table data and compiled as a single benchmark data point.",
+      "normalized_edit_similarity": 0.9224137931034483
+     },
+     {
+      "reference_block_index": 76,
+      "candidate_block_index": 60,
+      "reference_page": 1,
+      "candidate_page": 1,
+      "reference_text": "Dense \u223c50 expert",
+      "candidate_text": "Dense 50 expert",
+      "normalized_edit_similarity": 0.9375
+     },
+     {
+      "reference_block_index": 69,
+      "candidate_block_index": 56,
+      "reference_page": 1,
+      "candidate_page": 1,
+      "reference_text": "Dense \u223c30 suboptimal",
+      "candidate_text": "Dense 30 suboptimal",
+      "normalized_edit_similarity": 0.95
+     },
+     {
+      "reference_block_index": 57,
+      "candidate_block_index": 48,
+      "reference_page": 1,
+      "candidate_page": 1,
+      "reference_text": "Dense \u223c150 suboptimal",
+      "candidate_text": "Dense 150 suboptimal",
+      "normalized_edit_similarity": 0.9523809523809523
+     },
+     {
+      "reference_block_index": 63,
+      "candidate_block_index": 52,
+      "reference_page": 1,
+      "candidate_page": 1,
+      "reference_text": "Dense \u223c100 suboptimal",
+      "candidate_text": "Dense 100 suboptimal",
+      "normalized_edit_similarity": 0.9523809523809523
+     },
+     {
+      "reference_block_index": 0,
+      "candidate_block_index": 0,
+      "reference_page": 0,
+      "candidate_page": 0,
+      "reference_text": "Moderate Tables",
+      "candidate_text": "Moderate Tables",
+      "normalized_edit_similarity": 1.0
+     },
+     {
+      "reference_block_index": 1,
+      "candidate_block_index": 1,
+      "reference_page": 0,
+      "candidate_page": 0,
+      "reference_text": "Source-backed grouped table sample",
+      "candidate_text": "Source-backed grouped table sample",
+      "normalized_edit_similarity": 1.0
+     },
+     {
+      "reference_block_index": 4,
+      "candidate_block_index": 3,
+      "reference_page": 0,
+      "candidate_page": 0,
+      "reference_text": "Table 1: Source table 1: 2512.03369_table_1",
+      "candidate_text": "Table 1: Source table 1: 2512.03369_table_1",
+      "normalized_edit_similarity": 1.0
+     }
+    ]
+   },
+   "interpretation": "Strict NFC preservation is the primary text view. NFKC is reported separately as a compatibility view for ligature/encoding equivalence; it never hides the strict mismatch."
+  },
+  "critical_content": {
+   "status": "scored",
+   "applicable": true,
+   "metrics": {
+    "numbers": {
+     "reference_count": 217,
+     "candidate_count": 215,
+     "matched_count": 215,
+     "precision": 1.0,
+     "recall": 0.9907834101382489,
+     "f1": 0.9953703703703703,
+     "exact_match": false,
+     "missing": [
+      "1",
+      "2"
+     ],
+     "extra": [],
+     "missing_count": 2,
+     "extra_count": 0
+    },
+    "operators": {
+     "reference_count": 1,
+     "candidate_count": 1,
+     "matched_count": 1,
+     "precision": 1.0,
+     "recall": 1.0,
+     "f1": 1.0,
+     "exact_match": true,
+     "missing": [],
+     "extra": [],
+     "missing_count": 0,
+     "extra_count": 0
+    },
+    "citation_markers": {
+     "reference_count": 0,
+     "candidate_count": 0,
+     "matched_count": 0,
+     "precision": 1.0,
+     "recall": 1.0,
+     "f1": 1.0,
+     "exact_match": true,
+     "missing": [],
+     "extra": [],
+     "missing_count": 0,
+     "extra_count": 0
+    }
+   },
+   "evidence": {
+    "normalization": "Unicode NFKC; case preserved; multiset comparison",
+    "number_pattern": "(?<![\\w.])[+-]?(?:\\d+(?:[.,]\\d+)*|\\.\\d+)(?:[eE][+-]?\\d+)?%?",
+    "operator_inventory": "*+/<=>^\u00b1\u00d7\u00f7\u2190\u2192\u2194\u2202\u2207\u2208\u2209\u220f\u2211\u2212\u221a\u221e\u2229\u222a\u222b\u2248\u2260\u2264\u2265\u2282\u2286",
+    "citation_pattern": "\\[(?:\\d+[a-z]?(?:\\s*[-,;]\\s*\\d+[a-z]?){0,12})\\]|\\((?:18|19|20)\\d{2}[a-z]?\\)"
+   },
+   "interpretation": "Exact critical-symbol inventories prevent visually small numeric or operator errors from disappearing inside a document-level text average. Empty inventories are reported as exact but do not establish construct applicability."
+  },
+  "text_grounding": {
+   "status": "scored",
+   "applicable": true,
+   "metrics": {
+    "reference_word_count": 685,
+    "candidate_word_count": 683,
+    "exact_matched_word_count": 679,
+    "word_precision": 0.9941434846266471,
+    "word_recall": 0.9912408759124087,
+    "word_hmean": 0.9926900584795323,
+    "split_count": null,
+    "merge_count": null
+   },
+   "evidence": {
+    "match_policy": "exact Unicode-NFKC word text with deterministic page/position assignment for repeats"
+   },
+   "interpretation": "Digital-PDF exact-word grounding adaptation; it is not the published CLEval algorithm. Split/merge values remain null until a validated implementation exists."
+  },
+  "geometry": {
+   "status": "scored",
+   "applicable": true,
+   "metrics": {
+    "matched_token_count": 679,
+    "reference_match_coverage": 0.9912408759124087,
+    "candidate_match_coverage": 0.9941434846266471,
+    "center_displacement_q50": 0.036484233561761385,
+    "center_displacement_q90": 0.2816349209882468,
+    "center_displacement_max": 0.68033861002473,
+    "bbox_iou_q10": 0.0,
+    "bbox_iou_q50": 0.0,
+    "width_abs_log_ratio_q90": 0.18548909161701488,
+    "height_abs_log_ratio_q90": 0.1916440379003149
+   },
+   "evidence": {
+    "worst_token_pairs": [
+     {
+      "token": "benchmark",
+      "reference_word_index": 22,
+      "candidate_word_index": 22,
+      "reference_page": 0,
+      "candidate_page": 0,
+      "reference_bbox": [
+       487.74578857421875,
+       218.9496612548828,
+       539.8475952148438,
+       229.8587646484375
+      ],
+      "candidate_bbox": [
+       72.0,
+       181.21047973632812,
+       124.89900207519531,
+       192.21047973632812
+      ],
+      "reference_bbox_normalized": [
+       0.7969702427683313,
+       0.2764515924935389,
+       0.8821039137497447,
+       0.2902257129399463
+      ],
+      "candidate_bbox_normalized": [
+       0.11764705882352941,
+       0.22880111077819207,
+       0.20408333672417533,
+       0.24268999966708096
+      ],
+      "center_displacement": 0.68033861002473,
+      "bbox_iou": 0.0,
+      "width_abs_log_ratio": 0.015184849761621577,
+      "height_abs_log_ratio": 0.008297658406172366
+     },
+     {
+      "token": "2:",
+      "reference_word_index": 508,
+      "candidate_word_index": 507,
+      "reference_page": 1,
+      "candidate_page": 0,
+      "reference_bbox": [
+       227.7994842529297,
+       247.4897003173828,
+       236.2322235107422,
+       258.3988037109375
+      ],
+      "candidate_bbox": [
+       228.218994140625,
+       668.3812866210938,
+       236.77699279785156,
+       679.3812866210938
+      ],
+      "reference_bbox_normalized": [
+       0.3722213794982511,
+       0.31248699535023083,
+       0.386000365213631,
+       0.32626111579663825
+      ],
+      "candidate_bbox_normalized": [
+       0.3729068531709559,
+       0.8439157659357245,
+       0.3868905111076006,
+       0.8578046548246133
+      ],
+      "center_displacement": 0.5314867386826342,
+      "bbox_iou": 0.0,
+      "width_abs_log_ratio": 0.014744700245457062,
+      "height_abs_log_ratio": 0.008297658406168182
+     },
+     {
+      "token": "2:",
+      "reference_word_index": 511,
+      "candidate_word_index": 510,
+      "reference_page": 1,
+      "candidate_page": 0,
+      "reference_bbox": [
+       303.10498046875,
+       247.4897003173828,
+       311.5377197265625,
+       258.3988037109375
+      ],
+      "candidate_bbox": [
+       303.4150085449219,
+       668.3812866210938,
+       311.9730224609375,
+       679.3812866210938
+      ],
+      "reference_bbox_normalized": [
+       0.4952695759293301,
+       0.31248699535023083,
+       0.50904856164471,
+       0.32626111579663825
+      ],
+      "candidate_bbox_normalized": [
+       0.4957761577531403,
+       0.8439157659357245,
+       0.509759840622447,
+       0.8578046548246133
+      ],
+      "center_displacement": 0.5314865036362456,
+      "bbox_iou": 0.0,
+      "width_abs_log_ratio": 0.014746483229549098,
+      "height_abs_log_ratio": 0.008297658406168182
+     },
+     {
+      "token": "Source",
+      "reference_word_index": 509,
+      "candidate_word_index": 508,
+      "reference_page": 1,
+      "candidate_page": 0,
+      "reference_bbox": [
+       241.0431365966797,
+       247.4897003173828,
+       272.3740539550781,
+       258.3988037109375
+      ],
+      "candidate_bbox": [
+       240.44000244140625,
+       668.3812866210938,
+       272.2519836425781,
+       679.3812866210938
+      ],
+      "reference_bbox_normalized": [
+       0.39386133430830017,
+       0.31248699535023083,
+       0.44505564371744794,
+       0.32626111579663825
+      ],
+      "candidate_bbox_normalized": [
+       0.39287582098268997,
+       0.8439157659357245,
+       0.4448561824225133,
+       0.8578046548246133
+      ],
+      "center_displacement": 0.5314864850515588,
+      "bbox_iou": 0.0,
+      "width_abs_log_ratio": 0.015237601113514136,
+      "height_abs_log_ratio": 0.008297658406168182
+     },
+     {
+      "token": "2512.01188_table_1",
+      "reference_word_index": 512,
+      "candidate_word_index": 511,
+      "reference_page": 1,
+      "candidate_page": 0,
+      "reference_bbox": [
+       316.3595275878906,
+       247.4897003173828,
+       413.9413757324219,
+       258.3988037109375
+      ],
+      "candidate_bbox": [
+       315.635986328125,
+       668.3812866210938,
+       414.031005859375,
+       679.3812866210938
+      ],
+      "reference_bbox_normalized": [
+       0.516927332659952,
+       0.31248699535023083,
+       0.6763747969484017,
+       0.32626111579663825
+      ],
+      "candidate_bbox_normalized": [
+       0.5157450756995506,
+       0.8439157659357245,
+       0.6765212514042075,
+       0.8578046548246133
+      ],
+      "center_displacement": 0.5314864071384658,
+      "bbox_iou": 0.0,
+      "width_abs_log_ratio": 0.008298694260910755,
+      "height_abs_log_ratio": 0.008297658406168182
+     },
+     {
+      "token": "Table",
+      "reference_word_index": 507,
+      "candidate_word_index": 506,
+      "reference_page": 1,
+      "candidate_page": 0,
+      "reference_bbox": [
+       197.9739990234375,
+       247.4897003173828,
+       224.1776580810547,
+       258.3988037109375
+      ],
+      "candidate_bbox": [
+       197.968994140625,
+       668.3812866210938,
+       224.55599975585938,
+       679.3812866210938
+      ],
+      "reference_bbox_normalized": [
+       0.32348692650888483,
+       0.31248699535023083,
+       0.36630336287754034,
+       0.32626111579663825
+      ],
+      "candidate_bbox_normalized": [
+       0.3234787485957925,
+       0.8439157659357245,
+       0.3669215682285284,
+       0.8578046548246133
+      ],
+      "center_displacement": 0.531486242328639,
+      "bbox_iou": 0.0,
+      "width_abs_log_ratio": 0.014523526018586587,
+      "height_abs_log_ratio": 0.008297658406168182
+     },
+     {
+      "token": "table",
+      "reference_word_index": 510,
+      "candidate_word_index": 509,
+      "reference_page": 1,
+      "candidate_page": 0,
+      "reference_bbox": [
+       275.9958801269531,
+       247.4897003173828,
+       299.49407958984375,
+       258.3988037109375
+      ],
+      "candidate_bbox": [
+       275.9150085449219,
+       668.3812866210938,
+       299.7519836425781,
+       679.3812866210938
+      ],
+      "reference_bbox_normalized": [
+       0.4509736603381587,
+       0.31248699535023083,
+       0.4893694110945159,
+       0.32626111579663825
+      ],
+      "candidate_bbox_normalized": [
+       0.4508415172302645,
+       0.8439157659357245,
+       0.4897908229453891,
+       0.8578046548246133
+      ],
+      "center_displacement": 0.5314861744865518,
+      "bbox_iou": 0.0,
+      "width_abs_log_ratio": 0.014314151044826681,
+      "height_abs_log_ratio": 0.008297658406168182
+     },
+     {
+      "token": "\u03c00",
+      "reference_word_index": 681,
+      "candidate_word_index": 682,
+      "reference_page": 1,
+      "candidate_page": 1,
+      "reference_bbox": [
+       505.7825927734375,
+       538.14404296875,
+       516.2376708984375,
+       550.0383911132812
+      ],
+      "candidate_bbox": [
+       423.39599609375,
+       317.09600830078125,
+       432.1106872558594,
+       327.7951965332031
+      ],
+      "reference_bbox_normalized": [
+       0.8264421450546364,
+       0.6794748017282197,
+       0.8435256060431985,
+       0.6944929180723248
+      ],
+      "candidate_bbox_normalized": [
+       0.6918235230290033,
+       0.4003737478545218,
+       0.7060632144703585,
+       0.4138828239055595
+      ],
+      "center_displacement": 0.31116902448731365,
+      "bbox_iou": 0.0,
+      "width_abs_log_ratio": 0.1820775645187762,
+      "height_abs_log_ratio": 0.10589546899618932
+     },
+     {
+      "token": "to",
+      "reference_word_index": 680,
+      "candidate_word_index": 681,
+      "reference_page": 1,
+      "candidate_page": 1,
+      "reference_bbox": [
+       492.5377197265625,
+       538.1575317382812,
+       502.1743469238281,
+       549.0586547851562
+      ],
+      "candidate_bbox": [
+       412.3979797363281,
+       317.09600830078125,
+       420.39898681640625,
+       326.09600830078125
+      ],
+      "reference_bbox_normalized": [
+       0.8048001956316381,
+       0.6794918330028804,
+       0.8205463185029871,
+       0.6932558772539852
+      ],
+      "candidate_bbox_normalized": [
+       0.6738529080658956,
+       0.4003737478545218,
+       0.6869264490464154,
+       0.41173738421815814
+      ],
+      "center_displacement": 0.3099633661309601,
+      "bbox_iou": 0.0,
+      "width_abs_log_ratio": 0.1860037528325623,
+      "height_abs_log_ratio": 0.19164123841485892
+     },
+     {
+      "token": "0",
+      "reference_word_index": 674,
+      "candidate_word_index": 675,
+      "reference_page": 1,
+      "candidate_page": 1,
+      "reference_bbox": [
+       394.6354064941406,
+       538.1575317382812,
+       400.05328369140625,
+       549.0586547851562
+      ],
+      "candidate_bbox": [
+       317.0419921875,
+       317.09600830078125,
+       321.5419921875,
+       326.09600830078125
+      ],
+      "reference_bbox_normalized": [
+       0.6448290955786612,
+       0.6794918330028804,
+       0.6536818360970691,
+       0.6932558772539852
+      ],
+      "candidate_bbox_normalized": [
+       0.5180424708946079,
+       0.4003737478545218,
+       0.5253954120710784,
+       0.41173738421815814
+      ],
+      "center_displacement": 0.3079673817859243,
+      "bbox_iou": 0.0,
+      "width_abs_log_ratio": 0.18562668093497314,
+      "height_abs_log_ratio": 0.19164123841485892
+     },
+     {
+      "token": "\u03c00",
+      "reference_word_index": 659,
+      "candidate_word_index": 662,
+      "reference_page": 1,
+      "candidate_page": 1,
+      "reference_bbox": [
+       505.7825927734375,
+       505.61480712890625,
+       516.2376708984375,
+       517.5091552734375
+      ],
+      "candidate_bbox": [
+       423.39599609375,
+       287.9519958496094,
+       432.1106872558594,
+       298.65118408203125
+      ],
+      "reference_bbox_normalized": [
+       0.8264421450546364,
+       0.6384025342536696,
+       0.8435256060431985,
+       0.6534206505977747
+      ],
+      "candidate_bbox_normalized": [
+       0.6918235230290033,
+       0.3635757523353654,
+       0.7060632144703585,
+       0.3770848283864031
+      ],
+      "center_displacement": 0.307330560696369,
+      "bbox_iou": 0.0,
+      "width_abs_log_ratio": 0.1820775645187762,
+      "height_abs_log_ratio": 0.10589546899618932
+     },
+     {
+      "token": "switch",
+      "reference_word_index": 679,
+      "candidate_word_index": 680,
+      "reference_page": 1,
+      "candidate_page": 1,
+      "reference_bbox": [
+       459.0603332519531,
+       538.1575317382812,
+       488.9185485839844,
+       549.0586547851562
+      ],
+      "candidate_bbox": [
+       384.6059875488281,
+       317.09600830078125,
+       409.4009704589844,
+       326.09600830078125
+      ],
+      "reference_bbox_normalized": [
+       0.7500985837450215,
+       0.6794918330028804,
+       0.7988865172940921,
+       0.6932558772539852
+      ],
+      "candidate_bbox_normalized": [
+       0.6284411561255362,
+       0.4003737478545218,
+       0.6689558340833078,
+       0.41173738421815814
+      ],
+      "center_displacement": 0.3072498780753284,
+      "bbox_iou": 0.0,
+      "width_abs_log_ratio": 0.18581869178065866,
+      "height_abs_log_ratio": 0.19164123841485892
+     },
+     {
+      "token": "to",
+      "reference_word_index": 658,
+      "candidate_word_index": 661,
+      "reference_page": 1,
+      "candidate_page": 1,
+      "reference_bbox": [
+       492.5377197265625,
+       505.6282958984375,
+       502.1743469238281,
+       516.5294189453125
+      ],
+      "candidate_bbox": [
+       412.3979797363281,
+       287.9519958496094,
+       420.39898681640625,
+       296.9519958496094
+      ],
+      "reference_bbox_normalized": [
+       0.8048001956316381,
+       0.6384195655283301,
+       0.8205463185029871,
+       0.652183609779435
+      ],
+      "candidate_bbox_normalized": [
+       0.6738529080658956,
+       0.3635757523353654,
+       0.6869264490464154,
+       0.37493938869900173
+      ],
+      "center_displacement": 0.30610332330878676,
+      "bbox_iou": 0.0,
+      "width_abs_log_ratio": 0.1860037528325623,
+      "height_abs_log_ratio": 0.191641238414867
+     },
+     {
+      "token": "0",
+      "reference_word_index": 652,
+      "candidate_word_index": 655,
+      "reference_page": 1,
+      "candidate_page": 1,
+      "reference_bbox": [
+       394.6354064941406,
+       505.6282958984375,
+       400.05328369140625,
+       516.5294189453125
+      ],
+      "candidate_bbox": [
+       317.0419921875,
+       287.9519958496094,
+       321.5419921875,
+       296.9519958496094
+      ],
+      "reference_bbox_normalized": [
+       0.6448290955786612,
+       0.6384195655283301,
+       0.6536818360970691,
+       0.652183609779435
+      ],
+      "candidate_bbox_normalized": [
+       0.5180424708946079,
+       0.3635757523353654,
+       0.5253954120710784,
+       0.37493938869900173
+      ],
+      "center_displacement": 0.30408200282411535,
+      "bbox_iou": 0.0,
+      "width_abs_log_ratio": 0.18562668093497314,
+      "height_abs_log_ratio": 0.191641238414867
+     },
+     {
+      "token": "&",
+      "reference_word_index": 678,
+      "candidate_word_index": 679,
+      "reference_page": 1,
+      "candidate_page": 1,
+      "reference_bbox": [
+       521.9923706054688,
+       524.618408203125,
+       530.4189453125,
+       535.51953125
+      ],
+      "candidate_bbox": [
+       448.010986328125,
+       305.0989990234375,
+       455.01300048828125,
+       314.0989990234375
+      ],
+      "reference_bbox_normalized": [
+       0.8529287101396548,
+       0.6623969800544508,
+       0.8666976230596405,
+       0.6761610243055556
+      ],
+      "candidate_bbox_normalized": [
+       0.7320440953073938,
+       0.38522600886797664,
+       0.7434852949154922,
+       0.396589645231613
+      ],
+      "center_displacement": 0.3039512140722262,
+      "bbox_iou": 0.0,
+      "width_abs_log_ratio": 0.1851925227874934,
+      "height_abs_log_ratio": 0.19164123841485892
+     },
+     {
+      "token": "\u03c00",
+      "reference_word_index": 641,
+      "candidate_word_index": 642,
+      "reference_page": 1,
+      "candidate_page": 1,
+      "reference_bbox": [
+       505.7825622558594,
+       473.0855712890625,
+       516.2376708984375,
+       484.97991943359375
+      ],
+      "candidate_bbox": [
+       423.39599609375,
+       258.8080139160156,
+       432.1106872558594,
+       269.5072326660156
+      ],
+      "reference_bbox_normalized": [
+       0.8264420951893127,
+       0.5973302667791193,
+       0.8435256060431985,
+       0.6123483831232245
+      ],
+      "candidate_bbox_normalized": [
+       0.6918235230290033,
+       0.3267777953485046,
+       0.7060632144703585,
+       0.3402869099318379
+      ],
+      "center_displacement": 0.30350368355433827,
+      "bbox_iou": 0.0,
+      "width_abs_log_ratio": 0.1820804834384856,
+      "height_abs_log_ratio": 0.1058926166737672
+     },
+     {
+      "token": "switch",
+      "reference_word_index": 657,
+      "candidate_word_index": 660,
+      "reference_page": 1,
+      "candidate_page": 1,
+      "reference_bbox": [
+       459.0603332519531,
+       505.6282958984375,
+       488.9185485839844,
+       516.5294189453125
+      ],
+      "candidate_bbox": [
+       384.6059875488281,
+       287.9519958496094,
+       409.4009704589844,
+       296.9519958496094
+      ],
+      "reference_bbox_normalized": [
+       0.7500985837450215,
+       0.6384195655283301,
+       0.7988865172940921,
+       0.652183609779435
+      ],
+      "candidate_bbox_normalized": [
+       0.6284411561255362,
+       0.3635757523353654,
+       0.6689558340833078,
+       0.37493938869900173
+      ],
+      "center_displacement": 0.30335530945535166,
+      "bbox_iou": 0.0,
+      "width_abs_log_ratio": 0.18581869178065866,
+      "height_abs_log_ratio": 0.191641238414867
+     },
+     {
+      "token": "to",
+      "reference_word_index": 640,
+      "candidate_word_index": 641,
+      "reference_page": 1,
+      "candidate_page": 1,
+      "reference_bbox": [
+       492.5376892089844,
+       473.09906005859375,
+       502.17431640625,
+       484.0002136230469
+      ],
+      "candidate_bbox": [
+       412.3979797363281,
+       258.8080139160156,
+       420.39898681640625,
+       267.8080139160156
+      ],
+      "reference_bbox_normalized": [
+       0.8048001457663143,
+       0.59734729805378,
+       0.8205462686376634,
+       0.6111113808371804
+      ],
+      "candidate_bbox_normalized": [
+       0.6738529080658956,
+       0.3267777953485046,
+       0.6869264490464154,
+       0.33814143171214095
+      ],
+      "center_displacement": 0.30225438933949794,
+      "bbox_iou": 0.0,
+      "width_abs_log_ratio": 0.18600375283256937,
+      "height_abs_log_ratio": 0.19164403790031892
+     },
+     {
+      "token": "object",
+      "reference_word_index": 677,
+      "candidate_word_index": 678,
+      "reference_page": 1,
+      "candidate_page": 1,
+      "reference_bbox": [
+       489.17999267578125,
+       524.618408203125,
+       518.3841552734375,
+       535.51953125
+      ],
+      "candidate_bbox": [
+       421.010986328125,
+       305.0989990234375,
+       445.0140075683594,
+       314.0989990234375
+      ],
+      "reference_bbox_normalized": [
+       0.7993137135225183,
+       0.6623969800544508,
+       0.8470329334533292,
+       0.6761610243055556
+      ],
+      "candidate_bbox_normalized": [
+       0.6879264482485703,
+       0.38522600886797664,
+       0.7271470711901297,
+       0.396589645231613
+      ],
+      "center_displacement": 0.3014337838125922,
+      "bbox_iou": 0.0,
+      "width_abs_log_ratio": 0.19613154639367664,
+      "height_abs_log_ratio": 0.19164123841485892
+     },
+     {
+      "token": "100K",
+      "reference_word_index": 673,
+      "candidate_word_index": 674,
+      "reference_page": 1,
+      "candidate_page": 1,
+      "reference_bbox": [
+       385.00341796875,
+       524.618408203125,
+       409.6835632324219,
+       535.51953125
+      ],
+      "candidate_bbox": [
+       317.0419921875,
+       305.0989990234375,
+       337.54400634765625,
+       314.0989990234375
+      ],
+      "reference_bbox_normalized": [
+       0.6290905522365197,
+       0.6623969800544508,
+       0.6694175869810814,
+       0.6761610243055556
+      ],
+      "candidate_bbox_normalized": [
+       0.5180424708946079,
+       0.38522600886797664,
+       0.5515424940321181,
+       0.396589645231613
+      ],
+      "center_displacement": 0.3009849931063437,
+      "bbox_iou": 0.0,
+      "width_abs_log_ratio": 0.18547595187316343,
+      "height_abs_log_ratio": 0.19164123841485892
+     },
+     {
+      "token": "0",
+      "reference_word_index": 634,
+      "candidate_word_index": 635,
+      "reference_page": 1,
+      "candidate_page": 1,
+      "reference_bbox": [
+       394.6353759765625,
+       473.09906005859375,
+       400.0532531738281,
+       484.0002136230469
+      ],
+      "candidate_bbox": [
+       317.0419921875,
+       258.8080139160156,
+       321.5419921875,
+       267.8080139160156
+      ],
+      "reference_bbox_normalized": [
+       0.6448290457133374,
+       0.59734729805378,
+       0.6536817862317453,
+       0.6111113808371804
+      ],
+      "candidate_bbox_normalized": [
+       0.5180424708946079,
+       0.3267777953485046,
+       0.5253954120710784,
+       0.33814143171214095
+      ],
+      "center_displacement": 0.30020715555972555,
+      "bbox_iou": 0.0,
+      "width_abs_log_ratio": 0.18562668093497314,
+      "height_abs_log_ratio": 0.19164403790031892
+     },
+     {
+      "token": "&",
+      "reference_word_index": 656,
+      "candidate_word_index": 659,
+      "reference_page": 1,
+      "candidate_page": 1,
+      "reference_bbox": [
+       521.9923706054688,
+       492.0892028808594,
+       530.4189453125,
+       502.9903564453125
+      ],
+      "candidate_bbox": [
+       448.010986328125,
+       275.95501708984375,
+       455.01300048828125,
+       284.95501708984375
+      ],
+      "reference_bbox_normalized": [
+       0.8529287101396548,
+       0.6213247511121962,
+       0.8666976230596405,
+       0.6350888338955966
+      ],
+      "candidate_bbox_normalized": [
+       0.7320440953073938,
+       0.34842805188111586,
+       0.7434852949154922,
+       0.3597916882447522
+      ],
+      "center_displacement": 0.30004158425827243,
+      "bbox_iou": 0.0,
+      "width_abs_log_ratio": 0.1851925227874934,
+      "height_abs_log_ratio": 0.19164403790031084
+     },
+     {
+      "token": "\u03c00",
+      "reference_word_index": 621,
+      "candidate_word_index": 622,
+      "reference_page": 1,
+      "candidate_page": 1,
+      "reference_bbox": [
+       505.7825927734375,
+       440.55633544921875,
+       516.2376708984375,
+       452.45068359375
+      ],
+      "candidate_bbox": [
+       423.39599609375,
+       229.66397094726562,
+       432.1106872558594,
+       240.36318969726562
+      ],
+      "reference_bbox_normalized": [
+       0.8264421450546364,
+       0.5562579993045691,
+       0.8435256060431985,
+       0.5712761156486742
+      ],
+      "candidate_bbox_normalized": [
+       0.6918235230290033,
+       0.28997976129705255,
+       0.7060632144703585,
+       0.30348887588038587
+      ],
+      "center_displacement": 0.2996890106896944,
+      "bbox_iou": 0.0,
+      "width_abs_log_ratio": 0.1820775645187762,
+      "height_abs_log_ratio": 0.10589261667375979
+     },
+     {
+      "token": "switch",
+      "reference_word_index": 639,
+      "candidate_word_index": 640,
+      "reference_page": 1,
+      "candidate_page": 1,
+      "reference_bbox": [
+       459.060302734375,
+       473.09906005859375,
+       488.91851806640625,
+       484.0002136230469
+      ],
+      "candidate_bbox": [
+       384.6059875488281,
+       258.8080139160156,
+       409.4009704589844,
+       267.8080139160156
+      ],
+      "reference_bbox_normalized": [
+       0.7500985338796977,
+       0.59734729805378,
+       0.7988864674287683,
+       0.6111113808371804
+      ],
+      "candidate_bbox_normalized": [
+       0.6284411561255362,
+       0.3267777953485046,
+       0.6689558340833078,
+       0.33814143171214095
+      ],
+      "center_displacement": 0.2994710599645075,
+      "bbox_iou": 0.0,
+      "width_abs_log_ratio": 0.18581869178065866,
+      "height_abs_log_ratio": 0.19164403790031892
+     }
+    ]
+   },
+   "interpretation": "Token boxes are normalized by each page's own canvas; canvas mismatch remains a separate axis."
+  },
+  "text_ltsim": {
+   "status": "scored",
+   "applicable": true,
+   "metrics": {
+    "paired_page_count": 2,
+    "scored_page_count": 2,
+    "abstained_page_count": 0,
+    "text_ltsim_page_macro": 0.7223474301442916,
+    "text_ltsim_element_weighted": 0.7069968089726096,
+    "text_ltsim_worst_page": 0.6569053083071213
+   },
+   "evidence": {
+    "pages": [
+     {
+      "page": 0,
+      "status": "scored",
+      "reference_block_count": 31,
+      "candidate_block_count": 30,
+      "emd": 0.2385242908061098,
+      "text_ltsim": 0.7877895519814617,
+      "largest_cost_contributions": [
+       {
+        "reference_block_index": 30,
+        "candidate_block_index": 29,
+        "mass": 0.03225806451612903,
+        "cost": 0.4664085805905168,
+        "reference_bbox_normalized": [
+         0.4955686182757608,
+         0.9360803931650489,
+         0.5044277914209303,
+         0.9498545328776041
+        ],
+        "candidate_bbox_normalized": [
+         0.3234787485957925,
+         0.8439157659357245,
+         0.6765212514042075,
+         0.8578046548246133
+        ]
+       },
+       {
+        "reference_block_index": 8,
+        "candidate_block_index": 7,
+        "mass": 0.03118279569892473,
+        "cost": 0.44869000791277047,
+        "reference_bbox_normalized": [
+         0.5496599783305249,
+         0.3604197261309383,
+         0.5794298259261387,
+         0.3688957522613834
+        ],
+        "candidate_bbox_normalized": [
+         0.557747685052211,
+         0.30331846680304014,
+         0.5893507315442453,
+         0.3122375758007319
+        ]
+       },
+       {
+        "reference_block_index": 12,
+        "candidate_block_index": 5,
+        "mass": 0.027956989247311825,
+        "cost": 0.474624233467563,
+        "reference_bbox_normalized": [
+         0.38237251331603606,
+         0.4195740824998027,
+         0.8609002805223652,
+         0.4333000953751381
+        ],
+        "candidate_bbox_normalized": [
+         0.5553872600879545,
+         0.29140250851409605,
+         0.591711106643178,
+         0.3003216175117878
+        ]
+       },
+       {
+        "reference_block_index": 2,
+        "candidate_block_index": 3,
+        "mass": 0.03118279569892473,
+        "cost": 0.38348260806790113,
+        "reference_bbox_normalized": [
+         0.11764705882352941,
+         0.24231710337629223,
+         0.22838475345786102,
+         0.26043100068063446
+        ],
+        "candidate_bbox_normalized": [
+         0.3234787485957925,
+         0.25495390458540484,
+         0.6765212514042075,
+         0.26884279347429374
+        ]
+       },
+       {
+        "reference_block_index": 15,
+        "candidate_block_index": 14,
+        "mass": 0.03225806451612904,
+        "cost": 0.36317533541449687,
+        "reference_bbox_normalized": [
+         0.1409140942143459,
+         0.5654081864790483,
+         0.31193168490540746,
+         0.5738842126094934
+        ],
+        "candidate_bbox_normalized": [
+         0.14020664240020553,
+         0.5425914802936592,
+         0.31682242599188115,
+         0.551510589291351
+        ]
+       },
+       {
+        "reference_block_index": 7,
+        "candidate_block_index": 6,
+        "mass": 0.03118279569892473,
+        "cost": 0.3746172455779334,
+        "reference_bbox_normalized": [
+         0.6083655263863358,
+         0.349892587372751,
+         0.8726770737591911,
+         0.3688957522613834
+        ],
+        "candidate_bbox_normalized": [
+         0.6148062811957465,
+         0.29140250851409605,
+         0.8794974532781863,
+         0.3122375758007319
+        ]
+       },
+       {
+        "reference_block_index": 17,
+        "candidate_block_index": 13,
+        "mass": 0.03010752688172043,
+        "cost": 0.37155141150334237,
+        "reference_bbox_normalized": [
+         0.38237251331603606,
+         0.5759221471921362,
+         0.4599780911713644,
+         0.5843981733225813
+        ],
+        "candidate_bbox_normalized": [
+         0.3799015119964001,
+         0.5307023019501658,
+         0.47691524730009194,
+         0.551510589291351
+        ]
+       },
+       {
+        "reference_block_index": 11,
+        "candidate_block_index": 0,
+        "mass": 0.020430107526881715,
+        "cost": 0.4850106174101212,
+        "reference_bbox_normalized": [
+         0.14888261034597758,
+         0.4142969304865057,
+         0.46698731067133886,
+         0.4280501086302478
+        ],
+        "candidate_bbox_normalized": [
+         0.3806070564619077,
+         0.08829088885374743,
+         0.619392993403416,
+         0.11010906913063744
+        ]
+       },
+       {
+        "reference_block_index": 4,
+        "candidate_block_index": 8,
+        "mass": 0.03225806451612903,
+        "cost": 0.2761381395153124,
+        "reference_bbox_normalized": [
+         0.32348692650888483,
+         0.3333973354763455,
+         0.6763747969484017,
+         0.3471714366566051
+        ],
+        "candidate_bbox_normalized": [
+         0.1363861108917037,
+         0.3160995521930733,
+         0.8655761519288705,
+         0.3369077817358152
+        ]
+       },
+       {
+        "reference_block_index": 6,
+        "candidate_block_index": 9,
+        "mass": 0.03225806451612903,
+        "cost": 0.24520468915708493,
+        "reference_bbox_normalized": [
+         0.5474066640816483,
+         0.349892587372751,
+         0.5816957062365962,
+         0.35836861350319604
+        ],
+        "candidate_bbox_normalized": [
+         0.13740184260349647,
+         0.3407698351927478,
+         0.8655761519288705,
+         0.3615780840016375
+        ]
+       },
+       {
+        "reference_block_index": 5,
+        "candidate_block_index": 10,
+        "mass": 0.03225806451612903,
+        "cost": 0.23800386569362275,
+        "reference_bbox_normalized": [
+         0.1519252303379034,
+         0.349892587372751,
+         0.5281437393886591,
+         0.3688957522613834
+        ],
+        "candidate_bbox_normalized": [
+         0.14869029225866778,
+         0.36544006039397886,
+         0.47691524730009194,
+         0.38030373929726957
+        ]
+       },
+       {
+        "reference_block_index": 0,
+        "candidate_block_index": 1,
+        "mass": 0.03225806451612903,
+        "cost": 0.2283272814829298,
+        "reference_bbox_normalized": [
+         0.4033970552332261,
+         0.14285088548756608,
+         0.5966766457152523,
+         0.1645875025277186
+        ],
+        "candidate_bbox_normalized": [
+         0.3441176570318883,
+         0.13713898321594856,
+         0.6558823928334354,
+         0.1522904983674637
+        ]
+       },
+       {
+        "reference_block_index": 16,
+        "candidate_block_index": 17,
+        "mass": 0.03225806451612903,
+        "cost": 0.2232631668720606,
+        "reference_bbox_normalized": [
+         0.501296897339665,
+         0.5654081864790483,
+         0.8609041700176164,
+         0.5738842126094934
+        ],
+        "candidate_bbox_normalized": [
+         0.14617982253529668,
+         0.5672617440271859,
+         0.8655761519288705,
+         0.5889619384149108
+        ]
+       },
+       {
+        "reference_block_index": 1,
+        "candidate_block_index": 2,
+        "mass": 0.03225806451612903,
+        "cost": 0.2210236320181036,
+        "reference_bbox_normalized": [
+         0.3480261509714563,
+         0.1861886303834241,
+         0.6520829044915493,
+         0.20128358012498027
+        ],
+        "candidate_bbox_normalized": [
+         0.11764705882352941,
+         0.18590670884257615,
+         0.8150147581412122,
+         0.24268999966708096
+        ]
+       },
+       {
+        "reference_block_index": 29,
+        "candidate_block_index": 28,
+        "mass": 0.03118279569892473,
+        "cost": 0.22137474340883723,
+        "reference_bbox_normalized": [
+         0.14386923796211193,
+         0.7917316321170691,
+         0.8609325932521447,
+         0.8107349126025883
+        ],
+        "candidate_bbox_normalized": [
+         0.14338656656103196,
+         0.8065348153162484,
+         0.8655761519288705,
+         0.8273431026574337
+        ]
+       },
+       {
+        "reference_block_index": 13,
+        "candidate_block_index": 15,
+        "mass": 0.027956989247311832,
+        "cost": 0.2421971433228859,
+        "reference_bbox_normalized": [
+         0.1386859370212929,
+         0.43566123885337754,
+         0.8608988842933006,
+         0.5525066876652265
+        ],
+        "candidate_bbox_normalized": [
+         0.5091877357632506,
+         0.5425914802936592,
+         0.8655761519288705,
+         0.551510589291351
+        ]
+       },
+       {
+        "reference_block_index": 3,
+        "candidate_block_index": 4,
+        "mass": 0.03225806451612903,
+        "cost": 0.20643259589831708,
+        "reference_bbox_normalized": [
+         0.11764705882352941,
+         0.2764515924935389,
+         0.8821039137497447,
+         0.30733428338561397
+        ],
+        "candidate_bbox_normalized": [
+         0.15187021641949422,
+         0.29140250851409605,
+         0.539124083674811,
+         0.3122375758007319
+        ]
+       },
+       {
+        "reference_block_index": 10,
+        "candidate_block_index": 12,
+        "mass": 0.03010752688172043,
+        "cost": 0.21558572259561137,
+        "reference_bbox_normalized": [
+         0.13826261782178692,
+         0.39293258358733824,
+         0.8608948950674019,
+         0.4119365191218829
+        ],
+        "candidate_bbox_normalized": [
+         0.1359532798816955,
+         0.3901103241275055,
+         0.8655761519288705,
+         0.5268403255578243
+        ]
+       },
+       {
+        "reference_block_index": 19,
+        "candidate_block_index": 0,
+        "mass": 0.012903225806451618,
+        "cost": 0.48776160292803394,
+        "reference_bbox_normalized": [
+         0.15591500475515727,
+         0.608432923904573,
+         0.8609152401194853,
+         0.6274361273255011
+        ],
+        "candidate_bbox_normalized": [
+         0.3806070564619077,
+         0.08829088885374743,
+         0.619392993403416,
+         0.11010906913063744
+        ]
+       },
+       {
+        "reference_block_index": 27,
+        "candidate_block_index": 26,
+        "mass": 0.03225806451612903,
+        "cost": 0.17040569782295578,
+        "reference_bbox_normalized": [
+         0.38237251331603606,
+         0.7428245159110638,
+         0.860893199646395,
+         0.756550644383286
+        ],
+        "candidate_bbox_normalized": [
+         0.38730596405228757,
+         0.7494658653182212,
+         0.8655761519288705,
+         0.7643296212861033
+        ]
+       },
+       {
+        "reference_block_index": 26,
+        "candidate_block_index": 25,
+        "mass": 0.03225806451612903,
+        "cost": 0.16098568882321396,
+        "reference_bbox_normalized": [
+         0.14655590680689592,
+         0.7375473638977668,
+         0.46698731067133886,
+         0.7513006191061
+        ],
+        "candidate_bbox_normalized": [
+         0.1461971382689632,
+         0.7435212568803267,
+         0.47691524730009194,
+         0.7583850128482087
+        ]
+       },
+       {
+        "reference_block_index": 14,
+        "candidate_block_index": 16,
+        "mass": 0.03225806451612903,
+        "cost": 0.15952935941223056,
+        "reference_bbox_normalized": [
+         0.37537431405260674,
+         0.5548677926111703,
+         0.46698731067133886,
+         0.5738709960320983
+        ],
+        "candidate_bbox_normalized": [
+         0.38730596405228757,
+         0.5544806586371528,
+         0.46951079524420447,
+         0.5633997676348446
+        ]
+       },
+       {
+        "reference_block_index": 28,
+        "candidate_block_index": 27,
+        "mass": 0.03225806451612903,
+        "cost": 0.13183963179509295,
+        "reference_bbox_normalized": [
+         0.14341274585599215,
+         0.7589116722646386,
+         0.8608836255042381,
+         0.7890613440311316
+        ],
+        "candidate_bbox_normalized": [
+         0.1428729287939134,
+         0.768191559146149,
+         0.8655761519288705,
+         0.8026728774562026
+        ]
+       },
+       {
+        "reference_block_index": 18,
+        "candidate_block_index": 18,
+        "mass": 0.03225806451612903,
+        "cost": 0.1298797524249664,
+        "reference_bbox_normalized": [
+         0.14652573828603707,
+         0.5867593168008207,
+         0.8608610863779106,
+         0.606071741894038
+        ],
+        "candidate_bbox_normalized": [
+         0.156117819493113,
+         0.5928239148072522,
+         0.8655761519288705,
+         0.6136322021484375
+        ]
+       }
+      ]
+     },
+     {
+      "page": 1,
+      "status": "scored",
+      "reference_block_count": 50,
+      "candidate_block_count": 32,
+      "emd": 0.4202153982712974,
+      "text_ltsim": 0.6569053083071213,
+      "largest_cost_contributions": [
+       {
+        "reference_block_index": 78,
+        "candidate_block_index": 30,
+        "mass": 0.02,
+        "cost": 0.49817229652259076,
+        "reference_bbox_normalized": [
+         0.7500985837450215,
+         0.6794748017282197,
+         0.8435256060431985,
+         0.6944929180723248
+        ],
+        "candidate_bbox_normalized": [
+         0.12581699346405228,
+         0.09459597655016967,
+         0.19153758279638353,
+         0.12114141444967251
+        ]
+       },
+       {
+        "reference_block_index": 76,
+        "candidate_block_index": 32,
+        "mass": 0.02,
+        "cost": 0.4891767419191072,
+        "reference_bbox_normalized": [
+         0.4729399338267208,
+         0.6623969800544508,
+         0.5596145430421517,
+         0.6932558772539852
+        ],
+        "candidate_bbox_normalized": [
+         0.3982614255418964,
+         0.09459597655016967,
+         0.45504087560317097,
+         0.12114141444967251
+        ]
+       },
+       {
+        "reference_block_index": 75,
+        "candidate_block_index": 35,
+        "mass": 0.02,
+        "cost": 0.4886342674170647,
+        "reference_bbox_normalized": [
+         0.28353582643995096,
+         0.6623969800544508,
+         0.42512591991549226,
+         0.6761610243055556
+        ],
+        "candidate_bbox_normalized": [
+         0.2502009821873085,
+         0.12764011729847302,
+         0.3412304049223856,
+         0.15415149264865452
+        ]
+       },
+       {
+        "reference_block_index": 65,
+        "candidate_block_index": 36,
+        "mass": 0.02,
+        "cost": 0.48842515547418963,
+        "reference_bbox_normalized": [
+         0.7500985338796977,
+         0.5973302667791193,
+         0.8435256060431985,
+         0.6123483831232245
+        ],
+        "candidate_bbox_normalized": [
+         0.3982614255418964,
+         0.12764011729847302,
+         0.7222499972075419,
+         0.15415149264865452
+        ]
+       },
+       {
+        "reference_block_index": 73,
+        "candidate_block_index": 31,
+        "mass": 0.02,
+        "cost": 0.4871841576074616,
+        "reference_bbox_normalized": [
+         0.3079428080639808,
+         0.6384195655283301,
+         0.4007449929231133,
+         0.652183609779435
+        ],
+        "candidate_bbox_normalized": [
+         0.2502009821873085,
+         0.09459597655016967,
+         0.36418628069310405,
+         0.12114141444967251
+        ]
+       },
+       {
+        "reference_block_index": 77,
+        "candidate_block_index": 33,
+        "mass": 0.02,
+        "cost": 0.4850023634143299,
+        "reference_bbox_normalized": [
+         0.6290905522365197,
+         0.6623969800544508,
+         0.8666976230596405,
+         0.6932558772539852
+        ],
+        "candidate_bbox_normalized": [
+         0.5180424708946079,
+         0.09459597655016967,
+         0.7135293997970282,
+         0.12114141444967251
+        ]
+       },
+       {
+        "reference_block_index": 62,
+        "candidate_block_index": 41,
+        "mass": 0.02,
+        "cost": 0.4841276463077383,
+        "reference_bbox_normalized": [
+         0.28353582643995096,
+         0.5802524451053503,
+         0.42512591991549226,
+         0.5940165278887508
+        ],
+        "candidate_bbox_normalized": [
+         0.2502009821873085,
+         0.20123610833678582,
+         0.3412304049223856,
+         0.22774748368696732
+        ]
+       },
+       {
+        "reference_block_index": 54,
+        "candidate_block_index": 42,
+        "mass": 0.02,
+        "cost": 0.4823323181618686,
+        "reference_bbox_normalized": [
+         0.7392453461690666,
+         0.5152027631046796,
+         0.8518726623136234,
+         0.5289668458880801
+        ],
+        "candidate_bbox_normalized": [
+         0.3982614255418964,
+         0.20123610833678582,
+         0.7360735625223397,
+         0.22774748368696732
+        ]
+       },
+       {
+        "reference_block_index": 72,
+        "candidate_block_index": 34,
+        "mass": 0.02,
+        "cost": 0.48187651584856717,
+        "reference_bbox_normalized": [
+         0.14151210410922183,
+         0.6384195655283301,
+         0.23497330908681832,
+         0.652183609779435
+        ],
+        "candidate_bbox_normalized": [
+         0.12581699346405228,
+         0.12764011729847302,
+         0.23386111290626277,
+         0.15415149264865452
+        ]
+       },
+       {
+        "reference_block_index": 60,
+        "candidate_block_index": 44,
+        "mass": 0.02,
+        "cost": 0.4761439480770979,
+        "reference_bbox_normalized": [
+         0.3079427581986571,
+         0.5562750305792298,
+         0.4007449430577895,
+         0.5700391133626302
+        ],
+        "candidate_bbox_normalized": [
+         0.2502009821873085,
+         0.23803406532364663,
+         0.38192158119351255,
+         0.2645454406738281
+        ]
+       },
+       {
+        "reference_block_index": 53,
+        "candidate_block_index": 47,
+        "mass": 0.02,
+        "cost": 0.4720273302565481,
+        "reference_bbox_normalized": [
+         0.2849317563125511,
+         0.5152027631046796,
+         0.43020904142093036,
+         0.5289668458880801
+        ],
+        "candidate_bbox_normalized": [
+         0.2502009821873085,
+         0.2748320993750986,
+         0.36784804101083796,
+         0.3013433976606889
+        ]
+       },
+       {
+        "reference_block_index": 55,
+        "candidate_block_index": 43,
+        "mass": 0.02,
+        "cost": 0.46713203647043156,
+        "reference_bbox_normalized": [
+         0.13962455200993157,
+         0.5391801776308002,
+         0.2330857569875281,
+         0.5700391133626302
+        ],
+        "candidate_bbox_normalized": [
+         0.12581699346405228,
+         0.23803406532364663,
+         0.19364052816154131,
+         0.2645454406738281
+        ]
+       },
+       {
+        "reference_block_index": 58,
+        "candidate_block_index": 49,
+        "mass": 0.02,
+        "cost": 0.46649815965275165,
+        "reference_bbox_normalized": [
+         0.6290905023711959,
+         0.5391801776308002,
+         0.8666976230596405,
+         0.5700391133626302
+        ],
+        "candidate_bbox_normalized": [
+         0.5180424708946079,
+         0.2748320993750986,
+         0.7434852949154922,
+         0.30348887588038587
+        ]
+       },
+       {
+        "reference_block_index": 71,
+        "candidate_block_index": 40,
+        "mass": 0.018749999999999996,
+        "cost": 0.49755925666666956,
+        "reference_bbox_normalized": [
+         0.7500985837450215,
+         0.6384025342536696,
+         0.8435256060431985,
+         0.6534206505977747
+        ],
+        "candidate_bbox_normalized": [
+         0.12581699346405228,
+         0.20123610833678582,
+         0.1924052269630183,
+         0.22774748368696732
+        ]
+       },
+       {
+        "reference_block_index": 57,
+        "candidate_block_index": 52,
+        "mass": 0.02,
+        "cost": 0.46555929345935676,
+        "reference_bbox_normalized": [
+         0.45765691021688626,
+         0.5391801776308002,
+         0.5901270349041309,
+         0.5700391133626302
+        ],
+        "candidate_bbox_normalized": [
+         0.3982614255418964,
+         0.31163005636195945,
+         0.5017026016135621,
+         0.33814143171214095
+        ]
+       },
+       {
+        "reference_block_index": 68,
+        "candidate_block_index": 38,
+        "mass": 0.018749999999999996,
+        "cost": 0.48675378588029083,
+        "reference_bbox_normalized": [
+         0.28353582643995096,
+         0.6213247511121962,
+         0.42512591991549226,
+         0.6350888338955966
+        ],
+        "candidate_bbox_normalized": [
+         0.2502009821873085,
+         0.16443815134992504,
+         0.3412304049223856,
+         0.1909494496355153
+        ]
+       },
+       {
+        "reference_block_index": 49,
+        "candidate_block_index": 45,
+        "mass": 0.018750000000000017,
+        "cost": 0.4770756826627779,
+        "reference_bbox_normalized": [
+         0.7590086195203993,
+         0.4741304570978338,
+         0.8322884054744945,
+         0.4878945398812342
+        ],
+        "candidate_bbox_normalized": [
+         0.3982614255418964,
+         0.23803406532364663,
+         0.7353088279175602,
+         0.2645454406738281
+        ]
+       },
+       {
+        "reference_block_index": 45,
+        "candidate_block_index": 50,
+        "mass": 0.02,
+        "cost": 0.44426020282120937,
+        "reference_bbox_normalized": [
+         0.14784559860728144,
+         0.43305818962328363,
+         0.23439561931136388,
+         0.44682227240668404
+        ],
+        "candidate_bbox_normalized": [
+         0.12581699346405228,
+         0.31163005636195945,
+         0.20433170343536178,
+         0.33814143171214095
+        ]
+       },
+       {
+        "reference_block_index": 63,
+        "candidate_block_index": 48,
+        "mass": 0.0175,
+        "cost": 0.4735345640062705,
+        "reference_bbox_normalized": [
+         0.45765696008220996,
+         0.5802524451053503,
+         0.5901270847694546,
+         0.6111113808371804
+        ],
+        "candidate_bbox_normalized": [
+         0.3982614255418964,
+         0.2748320993750986,
+         0.5017026016135621,
+         0.3013433976606889
+        ]
+       },
+       {
+        "reference_block_index": 46,
+        "candidate_block_index": 46,
+        "mass": 0.0175,
+        "cost": 0.4456871709527639,
+        "reference_bbox_normalized": [
+         0.14339787352318858,
+         0.4570356041494042,
+         0.22551263547411152,
+         0.4878945398812342
+        ],
+        "candidate_bbox_normalized": [
+         0.12581699346405228,
+         0.2748320993750986,
+         0.20430229536068986,
+         0.3013433976606889
+        ]
+       },
+       {
+        "reference_block_index": 47,
+        "candidate_block_index": 51,
+        "mass": 0.0175,
+        "cost": 0.4399125556229463,
+        "reference_bbox_normalized": [
+         0.2934075648488562,
+         0.4570356041494042,
+         0.4053935879975363,
+         0.4878945398812342
+        ],
+        "candidate_bbox_normalized": [
+         0.2502009821873085,
+         0.31163005636195945,
+         0.36784804101083796,
+         0.33814143171214095
+        ]
+       },
+       {
+        "reference_block_index": 44,
+        "candidate_block_index": 60,
+        "mass": 0.02,
+        "cost": 0.37696152982155573,
+        "reference_bbox_normalized": [
+         0.46227438932929943,
+         0.415963336674854,
+         0.842311185948989,
+         0.44682227240668404
+        ],
+        "candidate_bbox_normalized": [
+         0.3982614255418964,
+         0.38522600886797664,
+         0.46365850112017465,
+         0.41173738421815814
+        ]
+       },
+       {
+        "reference_block_index": 61,
+        "candidate_block_index": 37,
+        "mass": 0.015000000000000003,
+        "cost": 0.47116762901996956,
+        "reference_bbox_normalized": [
+         0.13926373899372574,
+         0.5802524451053503,
+         0.23379371992123674,
+         0.6111113808371804
+        ],
+        "candidate_bbox_normalized": [
+         0.12581699346405228,
+         0.16443815134992504,
+         0.22559643415064592,
+         0.1909494496355153
+        ]
+       },
+       {
+        "reference_block_index": 69,
+        "candidate_block_index": 48,
+        "mass": 0.013749999999999998,
+        "cost": 0.47664008483228937,
+        "reference_bbox_normalized": [
+         0.4606090371125664,
+         0.6213247511121962,
+         0.5842265210120506,
+         0.652183609779435
+        ],
+        "candidate_bbox_normalized": [
+         0.3982614255418964,
+         0.2748320993750986,
+         0.5017026016135621,
+         0.3013433976606889
+        ]
+       }
+      ]
+     }
+    ],
+    "equations": "uniform mass; delta_bbox=(1+GIoU)/2; delta_label=1 for text; mu=1-(delta_bbox+delta_label)/2; Text-LTSim=exp(-EMD), sigma=1"
+   },
+   "interpretation": "Faithful published LTSim equations on extracted text blocks only. It measures text-layout geometry/segmentation, not full semantic layout; non-text classes abstain."
+  },
+  "block_transport": {
+   "status": "scored",
+   "applicable": true,
+   "metrics": {
+    "reference_block_count": 81,
+    "candidate_block_count": 62,
+    "transported_mass": 1.0,
+    "combined_transport_cost": 0.34862668537374564,
+    "combined_transport_similarity_exp": 0.7056565130019977,
+    "transported_geometry_cost": 0.4962013314987987,
+    "geometry_transport_similarity_exp": 0.6088390502540995,
+    "transported_content_cost": 0.07455948542721863,
+    "content_transport_similarity_exp": 0.9281522608830474,
+    "nonzero_flow_count": 142
+   },
+   "evidence": {
+    "largest_cost_contributions": [
+     {
+      "reference_block_index": 13,
+      "candidate_block_index": 12,
+      "mass": 0.22208467442436247,
+      "combined_cost": 0.14460990806319948,
+      "geometry_cost": 0.2224767816356915,
+      "content_cost": 0.0,
+      "reference_page": 0,
+      "candidate_page": 0,
+      "reference_bbox_stacked_normalized": [
+       0.1386859370212929,
+       0.21783061942668877,
+       0.8608988842933006,
+       0.27625334383261324
+      ],
+      "candidate_bbox_stacked_normalized": [
+       0.1359532798816955,
+       0.19505516206375276,
+       0.8655761519288705,
+       0.26342016277891217
+      ],
+      "reference_text": "FireDB USA Fire Intensity Forecast 375 m 1 day 9,834,000 2012-2017 Fig Satellite 4 Next Day fire USA Fire Mask Forecast 1 km 1 day 9,834,000 2012-2020 Fig Satellite 4 SeasFire Cube",
+      "candidate_text": "FireDB USA Fire Intensity Forecast 375 m 1 day 9,834,000 2012-2017 Fig Satellite 4 Next Day fire USA Fire Mask Forecast 1 km 1 day 9,834,000 2012-2020 Fig Satellite 4 SeasFire Cube"
+     },
+     {
+      "reference_block_index": 9,
+      "candidate_block_index": 8,
+      "mass": 0.027482050012379303,
+      "combined_cost": 0.47689653464932213,
+      "geometry_cost": 0.7336869763835725,
+      "content_cost": 0.0,
+      "reference_page": 0,
+      "candidate_page": 0,
+      "reference_bbox_stacked_normalized": [
+       0.137277241625817,
+       0.1857845229331893,
+       0.8608905069189134,
+       0.19528612464365333
+      ],
+      "candidate_bbox_stacked_normalized": [
+       0.1363861108917037,
+       0.15804977609653664,
+       0.8655761519288705,
+       0.1684538908679076
+      ],
+      "reference_text": "Sim2Real-Fire Worldwide Fire Mask Forecast Fire Mask Backtrack 30 m 1 hour 20,000,000 2013-2023 Fig Satellite 5",
+      "candidate_text": "Sim2Real-Fire Worldwide Fire Mask Forecast Fire Mask Backtrack 30 m 1 hour 20,000,000 2013-2023 Fig Satellite 5"
+     },
+     {
+      "reference_block_index": 18,
+      "candidate_block_index": 17,
+      "mass": 0.04010893785590493,
+      "combined_cost": 0.30763571746601787,
+      "geometry_cost": 0.47328571917848905,
+      "content_cost": 0.0,
+      "reference_page": 0,
+      "candidate_page": 0,
+      "reference_bbox_stacked_normalized": [
+       0.14652573828603707,
+       0.29337965840041036,
+       0.8608610863779106,
+       0.303035870947019
+      ],
+      "candidate_bbox_stacked_normalized": [
+       0.14617982253529668,
+       0.28363087201359294,
+       0.8655761519288705,
+       0.2944809692074554
+      ],
+      "reference_text": "NSMC-H8 China Fire Monitoring 3 km 1 hour 9,597,000 2019-2021 Fig Satellite 1 WCU-US Western USA Danger Forecast 250 m 5 weeks 4,200,000 2005-2017 Fig Satellite 1",
+      "candidate_text": "NSMC-H8 China Fire Monitoring 3 km 1 hour 9,597,000 2019-2021 Fig Satellite 1 WCU-US Western USA Danger Forecast 250 m 5 weeks 4,200,000 2005-2017 Fig Satellite 1"
+     },
+     {
+      "reference_block_index": 3,
+      "candidate_block_index": 2,
+      "mass": 0.02656405163853029,
+      "combined_cost": 0.4558556780425282,
+      "geometry_cost": 0.6595392394288232,
+      "content_cost": 0.07758620689655171,
+      "reference_page": 0,
+      "candidate_page": 0,
+      "reference_bbox_stacked_normalized": [
+       0.11764705882352941,
+       0.13822579624676945,
+       0.8821039137497447,
+       0.15366714169280699
+      ],
+      "candidate_bbox_stacked_normalized": [
+       0.11764705882352941,
+       0.09295335442128808,
+       0.8150147581412122,
+       0.12134499983354048
+      ],
+      "reference_text": "These tables are grouped from source-backed LaTeX table data and compiled as a single benchmark data point.",
+      "candidate_text": "1 Tables These tables are grouped from source-backed LaTeX table data and compiled as a single benchmark data point."
+     },
+     {
+      "reference_block_index": 10,
+      "candidate_block_index": 9,
+      "mass": 0.02550136172319881,
+      "combined_cost": 0.4688484778248775,
+      "geometry_cost": 0.7213053504998115,
+      "content_cost": 0.0,
+      "reference_page": 0,
+      "candidate_page": 0,
+      "reference_bbox_stacked_normalized": [
+       0.13826261782178692,
+       0.19646629179366912,
+       0.8608948950674019,
+       0.20596825956094145
+      ],
+      "candidate_bbox_stacked_normalized": [
+       0.13740184260349647,
+       0.1703849175963739,
+       0.8655761519288705,
+       0.18078904200081874
+      ],
+      "reference_text": "FireSpreadTS USA Fire Mask Forecast Fire Mask Backtrack 375 m 1 day 9,834,000 2018-2021 Fig Satellite 4",
+      "candidate_text": "FireSpreadTS USA Fire Mask Forecast Fire Mask Backtrack 375 m 1 day 9,834,000 2018-2021 Fig Satellite 4"
+     },
+     {
+      "reference_block_index": 28,
+      "candidate_block_index": 27,
+      "mass": 0.05570685813320129,
+      "combined_cost": 0.17139152133362076,
+      "geometry_cost": 0.2636792635901858,
+      "content_cost": 0.0,
+      "reference_page": 0,
+      "candidate_page": 0,
+      "reference_bbox_stacked_normalized": [
+       0.14341274585599215,
+       0.3794558361323193,
+       0.8608836255042381,
+       0.3945306720155658
+      ],
+      "candidate_bbox_stacked_normalized": [
+       0.1428729287939134,
+       0.3840957795730745,
+       0.8655761519288705,
+       0.4013364387281013
+      ],
+      "reference_text": "NIFC WP USA Fire Mask Forecast 2 km 5 mins 9,834,000 2000-2024 Fig Satellite 1 FRY Worldwide Fire Behavior 500 m 1 day 149,000,000 2005-2011 Fig Satellite 1 FireCanada Canada Fire ",
+      "candidate_text": "NIFC WP USA Fire Mask Forecast 2 km 5 mins 9,834,000 2000-2024 Fig Satellite 1 FRY Worldwide Fire Behavior 500 m 1 day 149,000,000 2005-2011 Fig Satellite 1 FireCanada Canada Fire "
+     },
+     {
+      "reference_block_index": 20,
+      "candidate_block_index": 19,
+      "mass": 0.0831889081455806,
+      "combined_cost": 0.11336594693311773,
+      "geometry_cost": 0.17440914912787342,
+      "content_cost": 0.0,
+      "reference_page": 0,
+      "candidate_page": 0,
+      "reference_bbox_stacked_normalized": [
+       0.14732008042678335,
+       0.31489861613572245,
+       0.860876145705678,
+       0.3353919982910156
+      ],
+      "candidate_bbox_stacked_normalized": [
+       0.14701664993186403,
+       0.30874708927038946,
+       0.8655761519288705,
+       0.33237831038658067
+      ],
+      "reference_text": "LCLQ Regions in China Danger Forecast 500 m 12 hour 16,411 2015-2020 Fig Satellite 4 CaBuAr Regions in USA Fire Mask Forecast 20 m 1 year 450,000 2015-2022 Fig Satellite 1 GABAM Wo",
+      "candidate_text": "LCLQ Regions in China Danger Forecast 500 m 12 hour 16,411 2015-2020 Fig Satellite 4 CaBuAr Regions in USA Fire Mask Forecast 20 m 1 year 450,000 2015-2022 Fig Satellite 1 GABAM Wo"
+     },
+     {
+      "reference_block_index": 44,
+      "candidate_block_index": 39,
+      "mass": 0.014359990096558554,
+      "combined_cost": 0.5979710165439798,
+      "geometry_cost": 0.9199554100676612,
+      "content_cost": 0.0,
+      "reference_page": 1,
+      "candidate_page": 1,
+      "reference_bbox_stacked_normalized": [
+       0.46227438932929943,
+       0.707981668337427,
+       0.842311185948989,
+       0.723411136203342
+      ],
+      "candidate_bbox_stacked_normalized": [
+       0.3982614255418964,
+       0.5822190756749626,
+       0.7130882412779564,
+       0.5954747248177577
+      ],
+      "reference_text": "Sparse 100 suboptimal 20K 20K Pick up fully visible object",
+      "candidate_text": "Sparse 100 suboptimal 20K 20K Pick up fully visible object"
+     },
+     {
+      "reference_block_index": 12,
+      "candidate_block_index": 11,
+      "mass": 0.01577045602790863,
+      "combined_cost": 0.5014236536453622,
+      "geometry_cost": 0.7714210056082496,
+      "content_cost": 0.0,
+      "reference_page": 0,
+      "candidate_page": 0,
+      "reference_bbox_stacked_normalized": [
+       0.38237251331603606,
+       0.20978704124990136,
+       0.8609002805223652,
+       0.21665004768756904
+      ],
+      "candidate_bbox_stacked_normalized": [
+       0.38730596405228757,
+       0.1856923151497889,
+       0.8655761519288705,
+       0.19312417386758207
+      ],
+      "reference_text": "Danger Forecast 1000 m 1 day 9,000,999 2006-2022 Fig Satellite 4",
+      "candidate_text": "Danger Forecast 1000 m 1 day 9,000,999 2006-2022 Fig Satellite 4"
+     },
+     {
+      "reference_block_index": 48,
+      "candidate_block_index": 42,
+      "mass": 0.011916583912611719,
+      "combined_cost": 0.65823559995002,
+      "geometry_cost": 0.9198319574827895,
+      "content_cost": 0.1724137931034483,
+      "reference_page": 1,
+      "candidate_page": 1,
+      "reference_bbox_stacked_normalized": [
+       0.46227438932929943,
+       0.7285178020747021,
+       0.8604613659428615,
+       0.7439472699406171
+      ],
+      "candidate_bbox_stacked_normalized": [
+       0.3982614255418964,
+       0.6006180541683929,
+       0.7360735625223397,
+       0.6138737418434836
+      ],
+      "reference_text": "Sparse 100 suboptimal 100K 900K Locate then pick",
+      "candidate_text": "Sparse 100 suboptimal 100K 900K Locate then pick up object"
+     },
+     {
+      "reference_block_index": 29,
+      "candidate_block_index": 28,
+      "mass": 0.02723446397623174,
+      "combined_cost": 0.2877871664314884,
+      "geometry_cost": 0.44274948681767445,
+      "content_cost": 0.0,
+      "reference_page": 0,
+      "candidate_page": 0,
+      "reference_bbox_stacked_normalized": [
+       0.14386923796211193,
+       0.39586581605853455,
+       0.8609325932521447,
+       0.40536745630129417
+      ],
+      "candidate_bbox_stacked_normalized": [
+       0.14338656656103196,
+       0.4032674076581242,
+       0.8655761519288705,
+       0.41367155132871686
+      ],
+      "reference_text": "FireSentry Regions in China Fire Video Prediction Infrared Video Prediction 0.5 m 1 s 0.7 2025.2 Video Drone 4",
+      "candidate_text": "FireSentry Regions in China Fire Video Prediction Infrared Video Prediction 0.5 m 1 s 0.7 2025.2 Video Drone 4"
+     },
+     {
+      "reference_block_index": 52,
+      "candidate_block_index": 45,
+      "mass": 0.011420059582919563,
+      "combined_cost": 0.6847587754492681,
+      "geometry_cost": 0.9210664641211943,
+      "content_cost": 0.24590163934426235,
+      "reference_page": 1,
+      "candidate_page": 1,
+      "reference_bbox_stacked_normalized": [
+       0.4622744391946232,
+       0.749053955078125,
+       0.8601275674657884,
+       0.76448342294404
+      ],
+      "candidate_bbox_stacked_normalized": [
+       0.3982614255418964,
+       0.6190170326618233,
+       0.7353088279175602,
+       0.6322727203369141
+      ],
+      "reference_text": "Dense 100 suboptimal 20K 1.2K Pick object from",
+      "candidate_text": "Dense 100 suboptimal 20K 1.2K Pick object from proprioception"
+     },
+     {
+      "reference_block_index": 19,
+      "candidate_block_index": 18,
+      "mass": 0.026244119831641495,
+      "combined_cost": 0.27727423090716086,
+      "geometry_cost": 0.42657573985717057,
+      "content_cost": 0.0,
+      "reference_page": 0,
+      "candidate_page": 0,
+      "reference_bbox_stacked_normalized": [
+       0.15591500475515727,
+       0.3042164619522865,
+       0.8609152401194853,
+       0.31371806366275057
+      ],
+      "candidate_bbox_stacked_normalized": [
+       0.156117819493113,
+       0.2964119574036261,
+       0.8655761519288705,
+       0.30681610107421875
+      ],
+      "reference_text": "ECUF Regions in South Korea Danger Forecast Casualty Prediction 1 km 1 month 605 2017-2021 Fig Satellite 5",
+      "candidate_text": "ECUF Regions in South Korea Danger Forecast Casualty Prediction 1 km 1 month 605 2017-2021 Fig Satellite 5"
+     },
+     {
+      "reference_block_index": 31,
+      "candidate_block_index": 29,
+      "mass": 0.010617126020308938,
+      "combined_cost": 0.6313649757509765,
+      "geometry_cost": 0.9713307319245792,
+      "content_cost": 0.0,
+      "reference_page": 1,
+      "candidate_page": 0,
+      "reference_bbox_stacked_normalized": [
+       0.32348692650888483,
+       0.6562434976751155,
+       0.6763747969484017,
+       0.6631305578983191
+      ],
+      "candidate_bbox_stacked_normalized": [
+       0.3234787485957925,
+       0.42195788296786224,
+       0.6765212514042075,
+       0.42890232741230666
+      ],
+      "reference_text": "Table 2: Source table 2: 2512.01188_table_1",
+      "candidate_text": "Table 2: Source table 2: 2512.01188_table_1"
+     },
+     {
+      "reference_block_index": 4,
+      "candidate_block_index": 3,
+      "mass": 0.010646199554345134,
+      "combined_cost": 0.5525292606468096,
+      "geometry_cost": 0.8500450163797071,
+      "content_cost": 0.0,
+      "reference_page": 0,
+      "candidate_page": 0,
+      "reference_bbox_stacked_normalized": [
+       0.32348692650888483,
+       0.16669866773817274,
+       0.6763747969484017,
+       0.17358571832830255
+      ],
+      "candidate_bbox_stacked_normalized": [
+       0.3234787485957925,
+       0.12747695229270242,
+       0.6765212514042075,
+       0.13442139673714687
+      ],
+      "reference_text": "Table 1: Source table 1: 2512.03369_table_1",
+      "candidate_text": "Table 1: Source table 1: 2512.03369_table_1"
+     },
+     {
+      "reference_block_index": 35,
+      "candidate_block_index": 33,
+      "mass": 0.009408269373607328,
+      "combined_cost": 0.603840613052192,
+      "geometry_cost": 0.9289855585418338,
+      "content_cost": 0.0,
+      "reference_page": 1,
+      "candidate_page": 1,
+      "reference_bbox_stacked_normalized": [
+       0.609700969621247,
+       0.6668948934535788,
+       0.8329692167394301,
+       0.6823243613194938
+      ],
+      "candidate_bbox_stacked_normalized": [
+       0.5180424708946079,
+       0.5472979882750848,
+       0.7135293997970282,
+       0.5605707072248363
+      ],
+      "reference_text": "Offline Steps Online Steps Description",
+      "candidate_text": "Offline Steps Online Steps Description"
+     },
+     {
+      "reference_block_index": 16,
+      "candidate_block_index": 15,
+      "mass": 0.01138895766278782,
+      "combined_cost": 0.4724732017046259,
+      "geometry_cost": 0.7268818487763475,
+      "content_cost": 0.0,
+      "reference_page": 0,
+      "candidate_page": 0,
+      "reference_bbox_stacked_normalized": [
+       0.501296897339665,
+       0.28270409323952417,
+       0.8609041700176164,
+       0.2869421063047467
+      ],
+      "candidate_bbox_stacked_normalized": [
+       0.5091877357632506,
+       0.2712957401468296,
+       0.8655761519288705,
+       0.2757552946456755
+      ],
+      "reference_text": "4 km 14 hours 92,150 2015-2021 Fig Satellite 1",
+      "candidate_text": "4 km 14 hours 92,150 2015-2021 Fig Satellite 1"
+     },
+     {
+      "reference_block_index": 11,
+      "candidate_block_index": 10,
+      "mass": 0.010151027482050013,
+      "combined_cost": 0.5036551129886542,
+      "geometry_cost": 0.7748540199825449,
+      "content_cost": 0.0,
+      "reference_page": 0,
+      "candidate_page": 0,
+      "reference_bbox_stacked_normalized": [
+       0.14888261034597758,
+       0.20714846524325284,
+       0.46698731067133886,
+       0.2140250543151239
+      ],
+      "candidate_bbox_stacked_normalized": [
+       0.14869029225866778,
+       0.18272003019698943,
+       0.47691524730009194,
+       0.19015186964863479
+      ],
+      "reference_text": "Mesogeos Mediterranean Fire Mask Forecast",
+      "candidate_text": "Mesogeos Mediterranean Fire Mask Forecast"
+     },
+     {
+      "reference_block_index": 7,
+      "candidate_block_index": 6,
+      "mass": 0.009903441445902451,
+      "combined_cost": 0.48700241925131343,
+      "geometry_cost": 0.7492344911558668,
+      "content_cost": 0.0,
+      "reference_page": 0,
+      "candidate_page": 0,
+      "reference_bbox_stacked_normalized": [
+       0.6083655263863358,
+       0.1749462936863755,
+       0.8726770737591911,
+       0.1844478761306917
+      ],
+      "candidate_bbox_stacked_normalized": [
+       0.6148062811957465,
+       0.14570125425704802,
+       0.8794974532781863,
+       0.15611878790036596
+      ],
+      "reference_text": "Areas (km2) Period Fig/Video Device Mod.",
+      "candidate_text": "Areas (km2) Period Fig/Video Device Mod."
+     },
+     {
+      "reference_block_index": 77,
+      "candidate_block_index": 49,
+      "mass": 0.005958291956305859,
+      "combined_cost": 0.7422458431143074,
+      "geometry_cost": 0.95272749252513,
+      "content_cost": 0.3513513513513513,
+      "reference_page": 1,
+      "candidate_page": 1,
+      "reference_bbox_stacked_normalized": [
+       0.6290905522365197,
+       0.8311984900272253,
+       0.8666976230596405,
+       0.8466279386269926
+      ],
+      "candidate_bbox_stacked_normalized": [
+       0.5180424708946079,
+       0.6374160496875493,
+       0.7434852949154922,
+       0.6517444379401929
+      ],
+      "reference_text": "100K 0 Look for object &",
+      "candidate_text": "100K 0 Look for object & switch to \ud835\udf0b0"
+     },
+     {
+      "reference_block_index": 58,
+      "candidate_block_index": 57,
+      "mass": 0.005958291956305859,
+      "combined_cost": 0.7149570434356736,
+      "geometry_cost": 0.9107447237887702,
+      "content_cost": 0.3513513513513513,
+      "reference_page": 1,
+      "candidate_page": 1,
+      "reference_bbox_stacked_normalized": [
+       0.6290905023711959,
+       0.7695900888154001,
+       0.8666976230596405,
+       0.7850195566813152
+      ],
+      "candidate_bbox_stacked_normalized": [
+       0.5180424708946079,
+       0.6742140259405579,
+       0.7434852949154922,
+       0.6885424141932015
+      ],
+      "reference_text": "100K 0 Look for object &",
+      "candidate_text": "100K 0 Look for object & switch to \ud835\udf0b0"
+     },
+     {
+      "reference_block_index": 1,
+      "candidate_block_index": 1,
+      "mass": 0.008407783298539341,
+      "combined_cost": 0.49864181069569935,
+      "geometry_cost": 0.7671412472241528,
+      "content_cost": 0.0,
+      "reference_page": 0,
+      "candidate_page": 0,
+      "reference_bbox_stacked_normalized": [
+       0.3480261509714563,
+       0.09309431519171205,
+       0.6520829044915493,
+       0.10064179006249013
+      ],
+      "candidate_bbox_stacked_normalized": [
+       0.3441176570318883,
+       0.06856949160797428,
+       0.6558823928334354,
+       0.07614524918373185
+      ],
+      "reference_text": "Source-backed grouped table sample",
+      "candidate_text": "Source-backed grouped table sample"
+     },
+     {
+      "reference_block_index": 25,
+      "candidate_block_index": 24,
+      "mass": 0.04555583065115128,
+      "combined_cost": 0.0917151948180854,
+      "geometry_cost": 0.14110029972013138,
+      "content_cost": 0.0,
+      "reference_page": 0,
+      "candidate_page": 0,
+      "reference_bbox_stacked_normalized": [
+       0.12365787481170853,
+       0.35793651234019885,
+       0.8608560001148897,
+       0.36759312947591144
+      ],
+      "candidate_bbox_stacked_normalized": [
+       0.12197545618792764,
+       0.3589795430501302,
+       0.8655761519288705,
+       0.36982965951014046
+      ],
+      "reference_text": "NOAA HMS Fire North America Danger Forecast 2 km 1 day 24,710,000 2003-2024 Fig Satellite 3 NOAA HMS Smoke North America Danger Forecast 2 km 1 day 24,710,000 2005-2024 Fig Satelli",
+      "candidate_text": "NOAA HMS Fire North America Danger Forecast 2 km 1 day 24,710,000 2003-2024 Fig Satellite 3 NOAA HMS Smoke North America Danger Forecast 2 km 1 day 24,710,000 2005-2024 Fig Satelli"
+     },
+     {
+      "reference_block_index": 51,
+      "candidate_block_index": 44,
+      "mass": 0.005213505461767627,
+      "combined_cost": 0.775477953764082,
+      "geometry_cost": 0.9445222957317237,
+      "content_cost": 0.46153846153846156,
+      "reference_page": 1,
+      "candidate_page": 1,
+      "reference_bbox_stacked_normalized": [
+       0.27705517937155333,
+       0.749053955078125,
+       0.43807848762063417,
+       0.7559359964698251
+      ],
+      "candidate_bbox_stacked_normalized": [
+       0.2502009821873085,
+       0.6190170326618233,
+       0.38192158119351255,
+       0.6322727203369141
+      ],
+      "reference_text": "Joints, Init Obj. Pos",
+      "candidate_text": "Joints, Init Obj. Pos Obj. Pos Estimate"
+     }
+    ],
+    "mass_policy": "block normalized-character count; minimum mass unit 1",
+    "cost_policy": "0.65 * (1 - rescaled GIoU) + 0.35 * normalized Levenshtein distance",
+    "page_geometry": "page boxes stacked vertically and normalized by max page count"
+   },
+   "interpretation": "Exact optimal transport over extracted text blocks. This is an LTSim-inspired, fully specified adaptation\u2014not the published LTSim implementation or a semantic table/formula metric. Report geometry and content costs separately with the flows."
+  },
+  "layout_relations": {
+   "status": "scored",
+   "applicable": true,
+   "metrics": {
+    "matched_block_count": 62,
+    "reference_block_coverage": 0.7654320987654321,
+    "candidate_block_coverage": 1.0,
+    "matched_block_iou_q10": 0.0,
+    "matched_block_iou_q50": 0.0,
+    "matched_block_center_displacement_q90": 0.2849359175822634,
+    "pairwise_relation_count": 1891,
+    "pairwise_relation_agreement": 0.7271285034373347
+   },
+   "evidence": {
+    "relation_mismatches": [
+     {
+      "reference_block_pair": [
+       0,
+       33
+      ],
+      "candidate_block_pair": [
+       0,
+       31
+      ],
+      "reference_relation": "below",
+      "candidate_relation": "left_of",
+      "reference_text": [
+       "Moderate Tables",
+       "Target Obs. Privileged Obs."
+      ]
+     },
+     {
+      "reference_block_pair": [
+       0,
+       34
+      ],
+      "candidate_block_pair": [
+       0,
+       32
+      ],
+      "reference_relation": "below",
+      "candidate_relation": "left_of",
+      "reference_text": [
+       "Moderate Tables",
+       "Reward"
+      ]
+     },
+     {
+      "reference_block_pair": [
+       0,
+       38
+      ],
+      "candidate_block_pair": [
+       0,
+       35
+      ],
+      "reference_relation": "below",
+      "candidate_relation": "left_of",
+      "reference_text": [
+       "Moderate Tables",
+       "Side Cam True Obj. Pos"
+      ]
+     },
+     {
+      "reference_block_pair": [
+       0,
+       39
+      ],
+      "candidate_block_pair": [
+       0,
+       36
+      ],
+      "reference_relation": "below",
+      "candidate_relation": "right_of",
+      "reference_text": [
+       "Moderate Tables",
+       "Sparse 100 suboptimal 20K 80K Pick up barely"
+      ]
+     },
+     {
+      "reference_block_pair": [
+       0,
+       43
+      ],
+      "candidate_block_pair": [
+       0,
+       38
+      ],
+      "reference_relation": "below",
+      "candidate_relation": "left_of",
+      "reference_text": [
+       "Moderate Tables",
+       "Side Cam True Obj. Pos"
+      ]
+     },
+     {
+      "reference_block_pair": [
+       0,
+       46
+      ],
+      "candidate_block_pair": [
+       0,
+       40
+      ],
+      "reference_relation": "below",
+      "candidate_relation": "left_of",
+      "reference_text": [
+       "Moderate Tables",
+       "AP Koch Sim. Koch"
+      ]
+     },
+     {
+      "reference_block_pair": [
+       0,
+       47
+      ],
+      "candidate_block_pair": [
+       0,
+       41
+      ],
+      "reference_relation": "below",
+      "candidate_relation": "left_of",
+      "reference_text": [
+       "Moderate Tables",
+       "Wrist Cam True Obj. Pos"
+      ]
+     },
+     {
+      "reference_block_pair": [
+       0,
+       50
+      ],
+      "candidate_block_pair": [
+       0,
+       43
+      ],
+      "reference_relation": "below",
+      "candidate_relation": "left_of",
+      "reference_text": [
+       "Moderate Tables",
+       "Blind Pick Real Koch"
+      ]
+     },
+     {
+      "reference_block_pair": [
+       0,
+       51
+      ],
+      "candidate_block_pair": [
+       0,
+       44
+      ],
+      "reference_relation": "below",
+      "candidate_relation": "left_of",
+      "reference_text": [
+       "Moderate Tables",
+       "Joints, Init Obj. Pos"
+      ]
+     },
+     {
+      "reference_block_pair": [
+       0,
+       55
+      ],
+      "candidate_block_pair": [
+       0,
+       46
+      ],
+      "reference_relation": "below",
+      "candidate_relation": "left_of",
+      "reference_text": [
+       "Moderate Tables",
+       "Bookshelf-P Real Franka"
+      ]
+     },
+     {
+      "reference_block_pair": [
+       0,
+       56
+      ],
+      "candidate_block_pair": [
+       0,
+       47
+      ],
+      "reference_relation": "below",
+      "candidate_relation": "left_of",
+      "reference_text": [
+       "Moderate Tables",
+       "Wrist Cam, Joints"
+      ]
+     },
+     {
+      "reference_block_pair": [
+       0,
+       61
+      ],
+      "candidate_block_pair": [
+       0,
+       50
+      ],
+      "reference_relation": "below",
+      "candidate_relation": "left_of",
+      "reference_text": [
+       "Moderate Tables",
+       "Bookshelf-D Real Franka"
+      ]
+     },
+     {
+      "reference_block_pair": [
+       0,
+       67
+      ],
+      "candidate_block_pair": [
+       0,
+       54
+      ],
+      "reference_relation": "below",
+      "candidate_relation": "left_of",
+      "reference_text": [
+       "Moderate Tables",
+       "Shelf-Cabinet"
+      ]
+     },
+     {
+      "reference_block_pair": [
+       0,
+       74
+      ],
+      "candidate_block_pair": [
+       0,
+       58
+      ],
+      "reference_relation": "below",
+      "candidate_relation": "left_of",
+      "reference_text": [
+       "Moderate Tables",
+       "Complex Real Franka"
+      ]
+     },
+     {
+      "reference_block_pair": [
+       1,
+       33
+      ],
+      "candidate_block_pair": [
+       1,
+       31
+      ],
+      "reference_relation": "below",
+      "candidate_relation": "left_of",
+      "reference_text": [
+       "Source-backed grouped table sample",
+       "Target Obs. Privileged Obs."
+      ]
+     },
+     {
+      "reference_block_pair": [
+       1,
+       34
+      ],
+      "candidate_block_pair": [
+       1,
+       32
+      ],
+      "reference_relation": "below",
+      "candidate_relation": "left_of",
+      "reference_text": [
+       "Source-backed grouped table sample",
+       "Reward"
+      ]
+     },
+     {
+      "reference_block_pair": [
+       1,
+       38
+      ],
+      "candidate_block_pair": [
+       1,
+       35
+      ],
+      "reference_relation": "below",
+      "candidate_relation": "left_of",
+      "reference_text": [
+       "Source-backed grouped table sample",
+       "Side Cam True Obj. Pos"
+      ]
+     },
+     {
+      "reference_block_pair": [
+       1,
+       39
+      ],
+      "candidate_block_pair": [
+       1,
+       36
+      ],
+      "reference_relation": "below",
+      "candidate_relation": "right_of",
+      "reference_text": [
+       "Source-backed grouped table sample",
+       "Sparse 100 suboptimal 20K 80K Pick up barely"
+      ]
+     },
+     {
+      "reference_block_pair": [
+       1,
+       43
+      ],
+      "candidate_block_pair": [
+       1,
+       38
+      ],
+      "reference_relation": "below",
+      "candidate_relation": "left_of",
+      "reference_text": [
+       "Source-backed grouped table sample",
+       "Side Cam True Obj. Pos"
+      ]
+     },
+     {
+      "reference_block_pair": [
+       1,
+       44
+      ],
+      "candidate_block_pair": [
+       1,
+       39
+      ],
+      "reference_relation": "below",
+      "candidate_relation": "right_of",
+      "reference_text": [
+       "Source-backed grouped table sample",
+       "Sparse 100 suboptimal 20K 20K Pick up fully visible object"
+      ]
+     },
+     {
+      "reference_block_pair": [
+       1,
+       47
+      ],
+      "candidate_block_pair": [
+       1,
+       41
+      ],
+      "reference_relation": "below",
+      "candidate_relation": "left_of",
+      "reference_text": [
+       "Source-backed grouped table sample",
+       "Wrist Cam True Obj. Pos"
+      ]
+     },
+     {
+      "reference_block_pair": [
+       1,
+       50
+      ],
+      "candidate_block_pair": [
+       1,
+       43
+      ],
+      "reference_relation": "below",
+      "candidate_relation": "left_of",
+      "reference_text": [
+       "Source-backed grouped table sample",
+       "Blind Pick Real Koch"
+      ]
+     },
+     {
+      "reference_block_pair": [
+       1,
+       51
+      ],
+      "candidate_block_pair": [
+       1,
+       44
+      ],
+      "reference_relation": "below",
+      "candidate_relation": "left_of",
+      "reference_text": [
+       "Source-backed grouped table sample",
+       "Joints, Init Obj. Pos"
+      ]
+     },
+     {
+      "reference_block_pair": [
+       1,
+       55
+      ],
+      "candidate_block_pair": [
+       1,
+       46
+      ],
+      "reference_relation": "below",
+      "candidate_relation": "left_of",
+      "reference_text": [
+       "Source-backed grouped table sample",
+       "Bookshelf-P Real Franka"
+      ]
+     }
+    ],
+    "worst_block_pairs": [
+     {
+      "reference_block_index": 31,
+      "candidate_block_index": 29,
+      "reference_page": 1,
+      "candidate_page": 0,
+      "reference_bbox_normalized": [
+       0.32348692650888483,
+       0.31248699535023083,
+       0.6763747969484017,
+       0.32626111579663825
+      ],
+      "candidate_bbox_normalized": [
+       0.3234787485957925,
+       0.8439157659357245,
+       0.6765212514042075,
+       0.8578046548246133
+      ],
+      "center_displacement": 0.5314861593036535,
+      "bbox_iou": 0.0,
+      "reference_text": "Table 2: Source table 2: 2512.01188_table_1"
+     },
+     {
+      "reference_block_index": 77,
+      "candidate_block_index": 61,
+      "reference_page": 1,
+      "candidate_page": 1,
+      "reference_bbox_normalized": [
+       0.6290905522365197,
+       0.6623969800544508,
+       0.8666976230596405,
+       0.6932558772539852
+      ],
+      "candidate_bbox_normalized": [
+       0.5180424708946079,
+       0.38522600886797664,
+       0.7434852949154922,
+       0.4138828239055595
+      ],
+      "center_displacement": 0.3019185282067331,
+      "bbox_iou": 0.0,
+      "reference_text": "100K 0 Look for object &"
+     },
+     {
+      "reference_block_index": 70,
+      "candidate_block_index": 57,
+      "reference_page": 1,
+      "candidate_page": 1,
+      "reference_bbox_normalized": [
+       0.6290905522365197,
+       0.6213247511121962,
+       0.8666976230596405,
+       0.652183609779435
+      ],
+      "candidate_bbox_normalized": [
+       0.5180424708946079,
+       0.34842805188111586,
+       0.7434852949154922,
+       0.3770848283864031
+      ],
+      "center_displacement": 0.29798363471717215,
+      "bbox_iou": 0.0,
+      "reference_text": "100K 0 Look for object &"
+     },
+     {
+      "reference_block_index": 64,
+      "candidate_block_index": 53,
+      "reference_page": 1,
+      "candidate_page": 1,
+      "reference_bbox_normalized": [
+       0.6290905023711959,
+       0.5802524451053503,
+       0.8666975233289931,
+       0.6111113808371804
+      ],
+      "candidate_bbox_normalized": [
+       0.5180424708946079,
+       0.31163005636195945,
+       0.7434852949154922,
+       0.3402869099318379
+      ],
+      "center_displacement": 0.29405815060488133,
+      "bbox_iou": 0.0,
+      "reference_text": "100K 0 Look for object &"
+     },
+     {
+      "reference_block_index": 76,
+      "candidate_block_index": 60,
+      "reference_page": 1,
+      "candidate_page": 1,
+      "reference_bbox_normalized": [
+       0.4729399338267208,
+       0.6623969800544508,
+       0.5596145430421517,
+       0.6932558772539852
+      ],
+      "candidate_bbox_normalized": [
+       0.3982614255418964,
+       0.38522600886797664,
+       0.46365850112017465,
+       0.41173738421815814
+      ],
+      "center_displacement": 0.292083064879359,
+      "bbox_iou": 0.0,
+      "reference_text": "Dense \u223c50 expert"
+     },
+     {
+      "reference_block_index": 58,
+      "candidate_block_index": 49,
+      "reference_page": 1,
+      "candidate_page": 1,
+      "reference_bbox_normalized": [
+       0.6290905023711959,
+       0.5391801776308002,
+       0.8666976230596405,
+       0.5700391133626302
+      ],
+      "candidate_bbox_normalized": [
+       0.5180424708946079,
+       0.2748320993750986,
+       0.7434852949154922,
+       0.30348887588038587
+      ],
+      "center_displacement": 0.29014261051378876,
+      "bbox_iou": 0.0,
+      "reference_text": "100K 0 Look for object &"
+     },
+     {
+      "reference_block_index": 69,
+      "candidate_block_index": 56,
+      "reference_page": 1,
+      "candidate_page": 1,
+      "reference_bbox_normalized": [
+       0.4606090371125664,
+       0.6213247511121962,
+       0.5842265210120506,
+       0.652183609779435
+      ],
+      "candidate_bbox_normalized": [
+       0.3982614255418964,
+       0.34842805188111586,
+       0.49434971030241526,
+       0.37493938869900173
+      ],
+      "center_displacement": 0.28540642378009473,
+      "bbox_iou": 0.0,
+      "reference_text": "Dense \u223c30 suboptimal"
+     },
+     {
+      "reference_block_index": 63,
+      "candidate_block_index": 52,
+      "reference_page": 1,
+      "candidate_page": 1,
+      "reference_bbox_normalized": [
+       0.45765696008220996,
+       0.5802524451053503,
+       0.5901270847694546,
+       0.6111113808371804
+      ],
+      "candidate_bbox_normalized": [
+       0.3982614255418964,
+       0.31163005636195945,
+       0.5017026016135621,
+       0.33814143171214095
+      ],
+      "center_displacement": 0.2807013618017816,
+      "bbox_iou": 0.0,
+      "reference_text": "Dense \u223c100 suboptimal"
+     },
+     {
+      "reference_block_index": 74,
+      "candidate_block_index": 58,
+      "reference_page": 1,
+      "candidate_page": 1,
+      "reference_bbox_normalized": [
+       0.1396245894089244,
+       0.6623969800544508,
+       0.23308580685285182,
+       0.6932558772539852
+      ],
+      "candidate_bbox_normalized": [
+       0.12581699346405228,
+       0.38522600886797664,
+       0.20430229536068986,
+       0.41173738421815814
+      ],
+      "center_displacement": 0.2801552783126327,
+      "bbox_iou": 0.0,
+      "reference_text": "Complex Real Franka"
+     },
+     {
+      "reference_block_index": 52,
+      "candidate_block_index": 45,
+      "reference_page": 1,
+      "candidate_page": 1,
+      "reference_bbox_normalized": [
+       0.4622744391946232,
+       0.49810791015625,
+       0.8601275674657884,
+       0.5289668458880801
+      ],
+      "candidate_bbox_normalized": [
+       0.3982614255418964,
+       0.23803406532364663,
+       0.7353088279175602,
+       0.2645454406738281
+      ],
+      "center_displacement": 0.2787259847675938,
+      "bbox_iou": 0.0,
+      "reference_text": "Dense 100 suboptimal 20K 1.2K Pick object from"
+     },
+     {
+      "reference_block_index": 57,
+      "candidate_block_index": 48,
+      "reference_page": 1,
+      "candidate_page": 1,
+      "reference_bbox_normalized": [
+       0.45765691021688626,
+       0.5391801776308002,
+       0.5901270349041309,
+       0.5700391133626302
+      ],
+      "candidate_bbox_normalized": [
+       0.3982614255418964,
+       0.2748320993750986,
+       0.5017026016135621,
+       0.3013433976606889
+      ],
+      "center_displacement": 0.27658019380647203,
+      "bbox_iou": 0.0,
+      "reference_text": "Dense \u223c150 suboptimal"
+     },
+     {
+      "reference_block_index": 48,
+      "candidate_block_index": 42,
+      "reference_page": 1,
+      "candidate_page": 1,
+      "reference_bbox_normalized": [
+       0.46227438932929943,
+       0.4570356041494042,
+       0.8604613659428615,
+       0.4878945398812342
+      ],
+      "candidate_bbox_normalized": [
+       0.3982614255418964,
+       0.20123610833678582,
+       0.7360735625223397,
+       0.22774748368696732
+      ],
+      "center_displacement": 0.2746341628477456,
+      "bbox_iou": 0.0,
+      "reference_text": "Sparse 100 suboptimal 100K 900K Locate then pick"
+     },
+     {
+      "reference_block_index": 75,
+      "candidate_block_index": 59,
+      "reference_page": 1,
+      "candidate_page": 1,
+      "reference_bbox_normalized": [
+       0.28353582643995096,
+       0.6623969800544508,
+       0.42512591991549226,
+       0.6761610243055556
+      ],
+      "candidate_bbox_normalized": [
+       0.2502009821873085,
+       0.38522600886797664,
+       0.36784804101083796,
+       0.41173738421815814
+      ],
+      "center_displacement": 0.27456119015570873,
+      "bbox_iou": 0.0,
+      "reference_text": "Wrist Cam, Joints"
+     },
+     {
+      "reference_block_index": 61,
+      "candidate_block_index": 50,
+      "reference_page": 1,
+      "candidate_page": 1,
+      "reference_bbox_normalized": [
+       0.13926373899372574,
+       0.5802524451053503,
+       0.23379371992123674,
+       0.6111113808371804
+      ],
+      "candidate_bbox_normalized": [
+       0.12581699346405228,
+       0.31163005636195945,
+       0.20433170343536178,
+       0.33814143171214095
+      ],
+      "center_displacement": 0.2716447230738612,
+      "bbox_iou": 0.0,
+      "reference_text": "Bookshelf-D Real Franka"
+     },
+     {
+      "reference_block_index": 44,
+      "candidate_block_index": 39,
+      "reference_page": 1,
+      "candidate_page": 1,
+      "reference_bbox_normalized": [
+       0.46227438932929943,
+       0.415963336674854,
+       0.842311185948989,
+       0.44682227240668404
+      ],
+      "candidate_bbox_normalized": [
+       0.3982614255418964,
+       0.16443815134992504,
+       0.7130882412779564,
+       0.1909494496355153
+      ],
+      "center_displacement": 0.27147414929309777,
+      "bbox_iou": 0.0,
+      "reference_text": "Sparse 100 suboptimal 20K 20K Pick up fully visible object"
+     },
+     {
+      "reference_block_index": 68,
+      "candidate_block_index": 55,
+      "reference_page": 1,
+      "candidate_page": 1,
+      "reference_bbox_normalized": [
+       0.28353582643995096,
+       0.6213247511121962,
+       0.42512591991549226,
+       0.6350888338955966
+      ],
+      "candidate_bbox_normalized": [
+       0.2502009821873085,
+       0.34842805188111586,
+       0.36784804101083796,
+       0.37493938869900173
+      ],
+      "center_displacement": 0.27034647107332044,
+      "bbox_iou": 0.0,
+      "reference_text": "Wrist Cam, Joints"
+     },
+     {
+      "reference_block_index": 55,
+      "candidate_block_index": 46,
+      "reference_page": 1,
+      "candidate_page": 1,
+      "reference_bbox_normalized": [
+       0.13962455200993157,
+       0.5391801776308002,
+       0.2330857569875281,
+       0.5700391133626302
+      ],
+      "candidate_bbox_normalized": [
+       0.12581699346405228,
+       0.2748320993750986,
+       0.20430229536068986,
+       0.3013433976606889
+      ],
+      "center_displacement": 0.2673713154379649,
+      "bbox_iou": 0.0,
+      "reference_text": "Bookshelf-P Real Franka"
+     },
+     {
+      "reference_block_index": 67,
+      "candidate_block_index": 54,
+      "reference_page": 1,
+      "candidate_page": 1,
+      "reference_bbox_normalized": [
+       0.1358495600083295,
+       0.6213247511121962,
+       0.24062155430613,
+       0.6350888338955966
+      ],
+      "candidate_bbox_normalized": [
+       0.12581699346405228,
+       0.34842805188111586,
+       0.2128464193905101,
+       0.37493938869900173
+      ],
+      "center_displacement": 0.2671926338706264,
+      "bbox_iou": 0.0,
+      "reference_text": "Shelf-Cabinet"
+     },
+     {
+      "reference_block_index": 39,
+      "candidate_block_index": 36,
+      "reference_page": 1,
+      "candidate_page": 1,
+      "reference_bbox_normalized": [
+       0.46227438932929943,
+       0.3748910692003038,
+       0.8492938272314134,
+       0.4057500049321338
+      ],
+      "candidate_bbox_normalized": [
+       0.3982614255418964,
+       0.12764011729847302,
+       0.7222499972075419,
+       0.15415149264865452
+      ],
+      "center_displacement": 0.2670924401679196,
+      "bbox_iou": 0.0,
+      "reference_text": "Sparse 100 suboptimal 20K 80K Pick up barely"
+     },
+     {
+      "reference_block_index": 62,
+      "candidate_block_index": 51,
+      "reference_page": 1,
+      "candidate_page": 1,
+      "reference_bbox_normalized": [
+       0.28353582643995096,
+       0.5802524451053503,
+       0.42512591991549226,
+       0.5940165278887508
+      ],
+      "candidate_bbox_normalized": [
+       0.2502009821873085,
+       0.31163005636195945,
+       0.36784804101083796,
+       0.33814143171214095
+      ],
+      "center_displacement": 0.2661335554216094,
+      "bbox_iou": 0.0,
+      "reference_text": "Wrist Cam, Joints"
+     },
+     {
+      "reference_block_index": 47,
+      "candidate_block_index": 41,
+      "reference_page": 1,
+      "candidate_page": 1,
+      "reference_bbox_normalized": [
+       0.2934075648488562,
+       0.4570356041494042,
+       0.4053935879975363,
+       0.4878945398812342
+      ],
+      "candidate_bbox_normalized": [
+       0.2502009821873085,
+       0.20123610833678582,
+       0.3412304049223856,
+       0.22774748368696732
+      ],
+      "center_displacement": 0.26350005271448573,
+      "bbox_iou": 0.0,
+      "reference_text": "Wrist Cam True Obj. Pos"
+     },
+     {
+      "reference_block_index": 35,
+      "candidate_block_index": 33,
+      "reference_page": 1,
+      "candidate_page": 1,
+      "reference_bbox_normalized": [
+       0.609700969621247,
+       0.3337897869071575,
+       0.8329692167394301,
+       0.3646487226389875
+      ],
+      "candidate_bbox_normalized": [
+       0.5180424708946079,
+       0.09459597655016967,
+       0.7135293997970282,
+       0.12114141444967251
+      ],
+      "center_displacement": 0.26342117830774253,
+      "bbox_iou": 0.0,
+      "reference_text": "Offline Steps Online Steps Description"
+     },
+     {
+      "reference_block_index": 50,
+      "candidate_block_index": 43,
+      "reference_page": 1,
+      "candidate_page": 1,
+      "reference_bbox_normalized": [
+       0.14355954936906404,
+       0.49810791015625,
+       0.22519337273890677,
+       0.5289668458880801
+      ],
+      "candidate_bbox_normalized": [
+       0.12581699346405228,
+       0.23803406532364663,
+       0.19364052816154131,
+       0.2645454406738281
+      ],
+      "center_displacement": 0.26340335221406697,
+      "bbox_iou": 0.0,
+      "reference_text": "Blind Pick Real Koch"
+     },
+     {
+      "reference_block_index": 56,
+      "candidate_block_index": 47,
+      "reference_page": 1,
+      "candidate_page": 1,
+      "reference_bbox_normalized": [
+       0.28353577657462725,
+       0.5391801776308002,
+       0.4251258700501685,
+       0.5529442604142006
+      ],
+      "candidate_bbox_normalized": [
+       0.2502009821873085,
+       0.2748320993750986,
+       0.36784804101083796,
+       0.3013433976606889
+      ],
+      "center_displacement": 0.26192267811932035,
+      "bbox_iou": 0.0,
+      "reference_text": "Wrist Cam, Joints"
+     }
+    ]
+   },
+   "interpretation": "Transparent matched-block relation trial inspired by pairwise-layout work; this is not the published PaIRS or LTSim metric."
+  },
+  "reading_order": {
+   "status": "scored",
+   "applicable": true,
+   "metrics": {
+    "matched_block_count": 62,
+    "reference_block_coverage": 0.7654320987654321,
+    "candidate_block_coverage": 1.0,
+    "inversion_count": 0,
+    "kendall_tau": 1.0
+   },
+   "evidence": {
+    "inverted_block_pairs": []
+   },
+   "interpretation": "Kendall tau is computed only on content-matched blocks; coverage must accompany it."
+  },
+  "pagination": {
+   "status": "scored",
+   "applicable": true,
+   "metrics": {
+    "reference_page_count": 2,
+    "candidate_page_count": 2,
+    "page_count_delta": 0,
+    "matched_block_count": 62,
+    "matched_block_page_assignment_accuracy": 0.9838709677419355,
+    "page_break_precision": 0.0,
+    "page_break_recall": 0.0,
+    "page_break_f1": 0.0,
+    "page_break_true_positive": 0,
+    "page_break_false_positive": 1,
+    "page_break_false_negative": 1
+   },
+   "evidence": {
+    "mismatched_page_breaks": [
+     {
+      "reference_block_pair": [
+       29,
+       31
+      ],
+      "candidate_block_pair": [
+       28,
+       29
+      ],
+      "reference_page_break": true,
+      "candidate_page_break": false,
+      "reference_pages": [
+       0,
+       1
+      ],
+      "candidate_pages": [
+       0,
+       0
+      ]
+     },
+     {
+      "reference_block_pair": [
+       31,
+       32
+      ],
+      "candidate_block_pair": [
+       29,
+       30
+      ],
+      "reference_page_break": false,
+      "candidate_page_break": true,
+      "reference_pages": [
+       1,
+       1
+      ],
+      "candidate_pages": [
+       0,
+       1
+      ]
+     }
+    ]
+   },
+   "interpretation": "Page count, matched-block page assignment, and page-break boundaries are reported independently."
+  },
+  "typography": {
+   "status": "scored",
+   "applicable": true,
+   "metrics": {
+    "styled_matched_token_count": 679,
+    "reference_styled_token_count": 685,
+    "candidate_styled_token_count": 683,
+    "reference_style_coverage": 0.9912408759124087,
+    "candidate_style_coverage": 0.9941434846266471,
+    "style_coverage_hmean": 0.9926900584795323,
+    "font_size_abs_log_ratio_q50": 0.0509531689676821,
+    "font_size_abs_log_ratio_q90": 0.19164246319071013,
+    "font_size_abs_log_ratio_max": 0.19164246319071013,
+    "font_name_exact_agreement_rate": 0.0,
+    "color_exact_agreement_rate": 1.0,
+    "bold_agreement_rate": 0.9779086892488954,
+    "italic_agreement_rate": 0.9941089837997055,
+    "serif_agreement_rate": 1.0,
+    "monospace_agreement_rate": 1.0,
+    "baseline_displacement_q90": 0.26869571570194134
+   },
+   "evidence": {
+    "style_mismatches": [
+     {
+      "token": "&",
+      "reference_page": 1,
+      "candidate_page": 1,
+      "reference_bbox": [
+       521.9923706054688,
+       427.03070068359375,
+       530.4189453125,
+       437.9318542480469
+      ],
+      "candidate_bbox": [
+       448.010986328125,
+       217.66702270507812,
+       455.01300048828125,
+       226.66702270507812
+      ],
+      "reference_font": "SFRM1095",
+      "candidate_font": "NewCM10-Regular",
+      "reference_size": 10.90113639831543,
+      "candidate_size": 9.0,
+      "font_size_abs_log_ratio": 0.19164246319071013,
+      "reference_style_bits": {
+       "italic": false,
+       "serif": true,
+       "monospace": false,
+       "bold": false
+      },
+      "candidate_style_bits": {
+       "italic": false,
+       "serif": true,
+       "monospace": false,
+       "bold": false
+      },
+      "reference_color": 0,
+      "candidate_color": 0
+     },
+     {
+      "token": "&",
+      "reference_page": 1,
+      "candidate_page": 1,
+      "reference_bbox": [
+       521.9923095703125,
+       459.5599365234375,
+       530.4188842773438,
+       470.4610900878906
+      ],
+      "candidate_bbox": [
+       448.010986328125,
+       246.81100463867188,
+       455.01300048828125,
+       255.81100463867188
+      ],
+      "reference_font": "SFRM1095",
+      "candidate_font": "NewCM10-Regular",
+      "reference_size": 10.90113639831543,
+      "candidate_size": 9.0,
+      "font_size_abs_log_ratio": 0.19164246319071013,
+      "reference_style_bits": {
+       "italic": false,
+       "serif": true,
+       "monospace": false,
+       "bold": false
+      },
+      "candidate_style_bits": {
+       "italic": false,
+       "serif": true,
+       "monospace": false,
+       "bold": false
+      },
+      "reference_color": 0,
+      "candidate_color": 0
+     },
+     {
+      "token": "&",
+      "reference_page": 1,
+      "candidate_page": 1,
+      "reference_bbox": [
+       521.9923706054688,
+       492.0892028808594,
+       530.4189453125,
+       502.9903564453125
+      ],
+      "candidate_bbox": [
+       448.010986328125,
+       275.95501708984375,
+       455.01300048828125,
+       284.95501708984375
+      ],
+      "reference_font": "SFRM1095",
+      "candidate_font": "NewCM10-Regular",
+      "reference_size": 10.90113639831543,
+      "candidate_size": 9.0,
+      "font_size_abs_log_ratio": 0.19164246319071013,
+      "reference_style_bits": {
+       "italic": false,
+       "serif": true,
+       "monospace": false,
+       "bold": false
+      },
+      "candidate_style_bits": {
+       "italic": false,
+       "serif": true,
+       "monospace": false,
+       "bold": false
+      },
+      "reference_color": 0,
+      "candidate_color": 0
+     },
+     {
+      "token": "&",
+      "reference_page": 1,
+      "candidate_page": 1,
+      "reference_bbox": [
+       521.9923706054688,
+       524.618408203125,
+       530.4189453125,
+       535.51953125
+      ],
+      "candidate_bbox": [
+       448.010986328125,
+       305.0989990234375,
+       455.01300048828125,
+       314.0989990234375
+      ],
+      "reference_font": "SFRM1095",
+      "candidate_font": "NewCM10-Regular",
+      "reference_size": 10.90113639831543,
+      "candidate_size": 9.0,
+      "font_size_abs_log_ratio": 0.19164246319071013,
+      "reference_style_bits": {
+       "italic": false,
+       "serif": true,
+       "monospace": false,
+       "bold": false
+      },
+      "candidate_style_bits": {
+       "italic": false,
+       "serif": true,
+       "monospace": false,
+       "bold": false
+      },
+      "reference_color": 0,
+      "candidate_color": 0
+     },
+     {
+      "token": "0",
+      "reference_page": 1,
+      "candidate_page": 1,
+      "reference_bbox": [
+       394.6363830566406,
+       440.56982421875,
+       400.05426025390625,
+       451.4709777832031
+      ],
+      "candidate_bbox": [
+       317.0419921875,
+       229.66397094726562,
+       321.5419921875,
+       238.66397094726562
+      ],
+      "reference_font": "SFRM1095",
+      "candidate_font": "NewCM10-Regular",
+      "reference_size": 10.90113639831543,
+      "candidate_size": 9.0,
+      "font_size_abs_log_ratio": 0.19164246319071013,
+      "reference_style_bits": {
+       "italic": false,
+       "serif": true,
+       "monospace": false,
+       "bold": false
+      },
+      "candidate_style_bits": {
+       "italic": false,
+       "serif": true,
+       "monospace": false,
+       "bold": false
+      },
+      "reference_color": 0,
+      "candidate_color": 0
+     },
+     {
+      "token": "0",
+      "reference_page": 1,
+      "candidate_page": 1,
+      "reference_bbox": [
+       394.6353759765625,
+       473.09906005859375,
+       400.0532531738281,
+       484.0002136230469
+      ],
+      "candidate_bbox": [
+       317.0419921875,
+       258.8080139160156,
+       321.5419921875,
+       267.8080139160156
+      ],
+      "reference_font": "SFRM1095",
+      "candidate_font": "NewCM10-Regular",
+      "reference_size": 10.90113639831543,
+      "candidate_size": 9.0,
+      "font_size_abs_log_ratio": 0.19164246319071013,
+      "reference_style_bits": {
+       "italic": false,
+       "serif": true,
+       "monospace": false,
+       "bold": false
+      },
+      "candidate_style_bits": {
+       "italic": false,
+       "serif": true,
+       "monospace": false,
+       "bold": false
+      },
+      "reference_color": 0,
+      "candidate_color": 0
+     },
+     {
+      "token": "0",
+      "reference_page": 1,
+      "candidate_page": 1,
+      "reference_bbox": [
+       394.6354064941406,
+       505.6282958984375,
+       400.05328369140625,
+       516.5294189453125
+      ],
+      "candidate_bbox": [
+       317.0419921875,
+       287.9519958496094,
+       321.5419921875,
+       296.9519958496094
+      ],
+      "reference_font": "SFRM1095",
+      "candidate_font": "NewCM10-Regular",
+      "reference_size": 10.90113639831543,
+      "candidate_size": 9.0,
+      "font_size_abs_log_ratio": 0.19164246319071013,
+      "reference_style_bits": {
+       "italic": false,
+       "serif": true,
+       "monospace": false,
+       "bold": false
+      },
+      "candidate_style_bits": {
+       "italic": false,
+       "serif": true,
+       "monospace": false,
+       "bold": false
+      },
+      "reference_color": 0,
+      "candidate_color": 0
+     },
+     {
+      "token": "0",
+      "reference_page": 1,
+      "candidate_page": 1,
+      "reference_bbox": [
+       394.6354064941406,
+       538.1575317382812,
+       400.05328369140625,
+       549.0586547851562
+      ],
+      "candidate_bbox": [
+       317.0419921875,
+       317.09600830078125,
+       321.5419921875,
+       326.09600830078125
+      ],
+      "reference_font": "SFRM1095",
+      "candidate_font": "NewCM10-Regular",
+      "reference_size": 10.90113639831543,
+      "candidate_size": 9.0,
+      "font_size_abs_log_ratio": 0.19164246319071013,
+      "reference_style_bits": {
+       "italic": false,
+       "serif": true,
+       "monospace": false,
+       "bold": false
+      },
+      "candidate_style_bits": {
+       "italic": false,
+       "serif": true,
+       "monospace": false,
+       "bold": false
+      },
+      "reference_color": 0,
+      "candidate_color": 0
+     },
+     {
+      "token": "1.2K",
+      "reference_page": 1,
+      "candidate_page": 1,
+      "reference_bbox": [
+       385.8058166503906,
+       408.04058837890625,
+       408.07684326171875,
+       418.9417419433594
+      ],
+      "candidate_bbox": [
+       317.0419921875,
+       200.51998901367188,
+       335.5460205078125,
+       209.51998901367188
+      ],
+      "reference_font": "SFRM1095",
+      "candidate_font": "NewCM10-Regular",
+      "reference_size": 10.90113639831543,
+      "candidate_size": 9.0,
+      "font_size_abs_log_ratio": 0.19164246319071013,
+      "reference_style_bits": {
+       "italic": false,
+       "serif": true,
+       "monospace": false,
+       "bold": false
+      },
+      "candidate_style_bits": {
+       "italic": false,
+       "serif": true,
+       "monospace": false,
+       "bold": false
+      },
+      "reference_color": 0,
+      "candidate_color": 0
+     },
+     {
+      "token": "100",
+      "reference_page": 1,
+      "candidate_page": 1,
+      "reference_bbox": [
+       282.91192626953125,
+       310.4528503417969,
+       299.16552734375,
+       321.35400390625
+      ],
+      "candidate_bbox": [
+       243.73599243164062,
+       113.08798217773438,
+       257.2359924316406,
+       122.08798217773438
+      ],
+      "reference_font": "SFRM1095",
+      "candidate_font": "NewCM10-Regular",
+      "reference_size": 10.90113639831543,
+      "candidate_size": 9.0,
+      "font_size_abs_log_ratio": 0.19164246319071013,
+      "reference_style_bits": {
+       "italic": false,
+       "serif": true,
+       "monospace": false,
+       "bold": false
+      },
+      "candidate_style_bits": {
+       "italic": false,
+       "serif": true,
+       "monospace": false,
+       "bold": false
+      },
+      "reference_color": 0,
+      "candidate_color": 0
+     },
+     {
+      "token": "100",
+      "reference_page": 1,
+      "candidate_page": 1,
+      "reference_bbox": [
+       282.91192626953125,
+       342.9820861816406,
+       299.16552734375,
+       353.88323974609375
+      ],
+      "candidate_bbox": [
+       243.73599243164062,
+       142.23196411132812,
+       257.2359924316406,
+       151.23196411132812
+      ],
+      "reference_font": "SFRM1095",
+      "candidate_font": "NewCM10-Regular",
+      "reference_size": 10.90113639831543,
+      "candidate_size": 9.0,
+      "font_size_abs_log_ratio": 0.19164246319071013,
+      "reference_style_bits": {
+       "italic": false,
+       "serif": true,
+       "monospace": false,
+       "bold": false
+      },
+      "candidate_style_bits": {
+       "italic": false,
+       "serif": true,
+       "monospace": false,
+       "bold": false
+      },
+      "reference_color": 0,
+      "candidate_color": 0
+     },
+     {
+      "token": "100",
+      "reference_page": 1,
+      "candidate_page": 1,
+      "reference_bbox": [
+       282.91192626953125,
+       375.5113220214844,
+       299.16552734375,
+       386.4124755859375
+      ],
+      "candidate_bbox": [
+       243.73599243164062,
+       200.51998901367188,
+       257.2359924316406,
+       209.51998901367188
+      ],
+      "reference_font": "SFRM1095",
+      "candidate_font": "NewCM10-Regular",
+      "reference_size": 10.90113639831543,
+      "candidate_size": 9.0,
+      "font_size_abs_log_ratio": 0.19164246319071013,
+      "reference_style_bits": {
+       "italic": false,
+       "serif": true,
+       "monospace": false,
+       "bold": false
+      },
+      "candidate_style_bits": {
+       "italic": false,
+       "serif": true,
+       "monospace": false,
+       "bold": false
+      },
+      "reference_color": 0,
+      "candidate_color": 0
+     },
+     {
+      "token": "100",
+      "reference_page": 1,
+      "candidate_page": 1,
+      "reference_bbox": [
+       282.9119567871094,
+       408.04058837890625,
+       299.1655578613281,
+       418.9417419433594
+      ],
+      "candidate_bbox": [
+       246.7329864501953,
+       258.8080139160156,
+       260.23297119140625,
+       267.8080139160156
+      ],
+      "reference_font": "SFRM1095",
+      "candidate_font": "NewCM10-Regular",
+      "reference_size": 10.90113639831543,
+      "candidate_size": 9.0,
+      "font_size_abs_log_ratio": 0.19164246319071013,
+      "reference_style_bits": {
+       "italic": false,
+       "serif": true,
+       "monospace": false,
+       "bold": false
+      },
+      "candidate_style_bits": {
+       "italic": false,
+       "serif": true,
+       "monospace": false,
+       "bold": false
+      },
+      "reference_color": 0,
+      "candidate_color": 0
+     },
+     {
+      "token": "100K",
+      "reference_page": 1,
+      "candidate_page": 1,
+      "reference_bbox": [
+       385.0033264160156,
+       361.9721984863281,
+       409.6834716796875,
+       372.87335205078125
+      ],
+      "candidate_bbox": [
+       317.0419921875,
+       159.37899780273438,
+       337.54400634765625,
+       168.37899780273438
+      ],
+      "reference_font": "SFRM1095",
+      "candidate_font": "NewCM10-Regular",
+      "reference_size": 10.90113639831543,
+      "candidate_size": 9.0,
+      "font_size_abs_log_ratio": 0.19164246319071013,
+      "reference_style_bits": {
+       "italic": false,
+       "serif": true,
+       "monospace": false,
+       "bold": false
+      },
+      "candidate_style_bits": {
+       "italic": false,
+       "serif": true,
+       "monospace": false,
+       "bold": false
+      },
+      "reference_color": 0,
+      "candidate_color": 0
+     },
+     {
+      "token": "100K",
+      "reference_page": 1,
+      "candidate_page": 1,
+      "reference_bbox": [
+       385.0033874511719,
+       427.03070068359375,
+       409.68353271484375,
+       437.9318542480469
+      ],
+      "candidate_bbox": [
+       317.0419921875,
+       217.66702270507812,
+       337.54400634765625,
+       226.66702270507812
+      ],
+      "reference_font": "SFRM1095",
+      "candidate_font": "NewCM10-Regular",
+      "reference_size": 10.90113639831543,
+      "candidate_size": 9.0,
+      "font_size_abs_log_ratio": 0.19164246319071013,
+      "reference_style_bits": {
+       "italic": false,
+       "serif": true,
+       "monospace": false,
+       "bold": false
+      },
+      "candidate_style_bits": {
+       "italic": false,
+       "serif": true,
+       "monospace": false,
+       "bold": false
+      },
+      "reference_color": 0,
+      "candidate_color": 0
+     },
+     {
+      "token": "100K",
+      "reference_page": 1,
+      "candidate_page": 1,
+      "reference_bbox": [
+       385.0033874511719,
+       459.5599365234375,
+       409.68353271484375,
+       470.4610900878906
+      ],
+      "candidate_bbox": [
+       317.0419921875,
+       246.81100463867188,
+       337.54400634765625,
+       255.81100463867188
+      ],
+      "reference_font": "SFRM1095",
+      "candidate_font": "NewCM10-Regular",
+      "reference_size": 10.90113639831543,
+      "candidate_size": 9.0,
+      "font_size_abs_log_ratio": 0.19164246319071013,
+      "reference_style_bits": {
+       "italic": false,
+       "serif": true,
+       "monospace": false,
+       "bold": false
+      },
+      "candidate_style_bits": {
+       "italic": false,
+       "serif": true,
+       "monospace": false,
+       "bold": false
+      },
+      "reference_color": 0,
+      "candidate_color": 0
+     },
+     {
+      "token": "100K",
+      "reference_page": 1,
+      "candidate_page": 1,
+      "reference_bbox": [
+       385.00341796875,
+       492.0892028808594,
+       409.6835632324219,
+       502.9903564453125
+      ],
+      "candidate_bbox": [
+       317.0419921875,
+       275.95501708984375,
+       337.54400634765625,
+       284.95501708984375
+      ],
+      "reference_font": "SFRM1095",
+      "candidate_font": "NewCM10-Regular",
+      "reference_size": 10.90113639831543,
+      "candidate_size": 9.0,
+      "font_size_abs_log_ratio": 0.19164246319071013,
+      "reference_style_bits": {
+       "italic": false,
+       "serif": true,
+       "monospace": false,
+       "bold": false
+      },
+      "candidate_style_bits": {
+       "italic": false,
+       "serif": true,
+       "monospace": false,
+       "bold": false
+      },
+      "reference_color": 0,
+      "candidate_color": 0
+     },
+     {
+      "token": "100K",
+      "reference_page": 1,
+      "candidate_page": 1,
+      "reference_bbox": [
+       385.00341796875,
+       524.618408203125,
+       409.6835632324219,
+       535.51953125
+      ],
+      "candidate_bbox": [
+       317.0419921875,
+       305.0989990234375,
+       337.54400634765625,
+       314.0989990234375
+      ],
+      "reference_font": "SFRM1095",
+      "candidate_font": "NewCM10-Regular",
+      "reference_size": 10.90113639831543,
+      "candidate_size": 9.0,
+      "font_size_abs_log_ratio": 0.19164246319071013,
+      "reference_style_bits": {
+       "italic": false,
+       "serif": true,
+       "monospace": false,
+       "bold": false
+      },
+      "candidate_style_bits": {
+       "italic": false,
+       "serif": true,
+       "monospace": false,
+       "bold": false
+      },
+      "reference_color": 0,
+      "candidate_color": 0
+     },
+     {
+      "token": "20K",
+      "reference_page": 1,
+      "candidate_page": 1,
+      "reference_bbox": [
+       386.8100280761719,
+       296.9137268066406,
+       406.07232666015625,
+       307.81488037109375
+      ],
+      "candidate_bbox": [
+       317.0419921875,
+       101.09097290039062,
+       333.04400634765625,
+       110.09097290039062
+      ],
+      "reference_font": "SFRM1095",
+      "candidate_font": "NewCM10-Regular",
+      "reference_size": 10.90113639831543,
+      "candidate_size": 9.0,
+      "font_size_abs_log_ratio": 0.19164246319071013,
+      "reference_style_bits": {
+       "italic": false,
+       "serif": true,
+       "monospace": false,
+       "bold": false
+      },
+      "candidate_style_bits": {
+       "italic": false,
+       "serif": true,
+       "monospace": false,
+       "bold": false
+      },
+      "reference_color": 0,
+      "candidate_color": 0
+     },
+     {
+      "token": "20K",
+      "reference_page": 1,
+      "candidate_page": 1,
+      "reference_bbox": [
+       386.8100280761719,
+       329.4429626464844,
+       406.07232666015625,
+       340.3441162109375
+      ],
+      "candidate_bbox": [
+       317.0419921875,
+       130.23501586914062,
+       333.04400634765625,
+       139.23501586914062
+      ],
+      "reference_font": "SFRM1095",
+      "candidate_font": "NewCM10-Regular",
+      "reference_size": 10.90113639831543,
+      "candidate_size": 9.0,
+      "font_size_abs_log_ratio": 0.19164246319071013,
+      "reference_style_bits": {
+       "italic": false,
+       "serif": true,
+       "monospace": false,
+       "bold": false
+      },
+      "candidate_style_bits": {
+       "italic": false,
+       "serif": true,
+       "monospace": false,
+       "bold": false
+      },
+      "reference_color": 0,
+      "candidate_color": 0
+     },
+     {
+      "token": "20K",
+      "reference_page": 1,
+      "candidate_page": 1,
+      "reference_bbox": [
+       386.8100280761719,
+       342.9820861816406,
+       406.07232666015625,
+       353.88323974609375
+      ],
+      "candidate_bbox": [
+       317.0419921875,
+       142.23196411132812,
+       333.04400634765625,
+       151.23196411132812
+      ],
+      "reference_font": "SFRM1095",
+      "candidate_font": "NewCM10-Regular",
+      "reference_size": 10.90113639831543,
+      "candidate_size": 9.0,
+      "font_size_abs_log_ratio": 0.19164246319071013,
+      "reference_style_bits": {
+       "italic": false,
+       "serif": true,
+       "monospace": false,
+       "bold": false
+      },
+      "candidate_style_bits": {
+       "italic": false,
+       "serif": true,
+       "monospace": false,
+       "bold": false
+      },
+      "reference_color": 0,
+      "candidate_color": 0
+     },
+     {
+      "token": "20K",
+      "reference_page": 1,
+      "candidate_page": 1,
+      "reference_bbox": [
+       387.31170654296875,
+       394.50146484375,
+       406.5740051269531,
+       405.4026184082031
+      ],
+      "candidate_bbox": [
+       317.0419921875,
+       188.52297973632812,
+       333.04400634765625,
+       197.52297973632812
+      ],
+      "reference_font": "SFRM1095",
+      "candidate_font": "NewCM10-Regular",
+      "reference_size": 10.90113639831543,
+      "candidate_size": 9.0,
+      "font_size_abs_log_ratio": 0.19164246319071013,
+      "reference_style_bits": {
+       "italic": false,
+       "serif": true,
+       "monospace": false,
+       "bold": false
+      },
+      "candidate_style_bits": {
+       "italic": false,
+       "serif": true,
+       "monospace": false,
+       "bold": false
+      },
+      "reference_color": 0,
+      "candidate_color": 0
+     },
+     {
+      "token": "80K",
+      "reference_page": 1,
+      "candidate_page": 1,
+      "reference_bbox": [
+       386.8100280761719,
+       310.4528503417969,
+       406.07232666015625,
+       321.35400390625
+      ],
+      "candidate_bbox": [
+       317.0419921875,
+       113.08798217773438,
+       333.04400634765625,
+       122.08798217773438
+      ],
+      "reference_font": "SFRM1095",
+      "candidate_font": "NewCM10-Regular",
+      "reference_size": 10.90113639831543,
+      "candidate_size": 9.0,
+      "font_size_abs_log_ratio": 0.19164246319071013,
+      "reference_style_bits": {
+       "italic": false,
+       "serif": true,
+       "monospace": false,
+       "bold": false
+      },
+      "candidate_style_bits": {
+       "italic": false,
+       "serif": true,
+       "monospace": false,
+       "bold": false
+      },
+      "reference_color": 0,
+      "candidate_color": 0
+     },
+     {
+      "token": "900K",
+      "reference_page": 1,
+      "candidate_page": 1,
+      "reference_bbox": [
+       385.0033264160156,
+       375.5113220214844,
+       409.6834716796875,
+       386.4124755859375
+      ],
+      "candidate_bbox": [
+       317.0419921875,
+       171.37600708007812,
+       337.54400634765625,
+       180.37600708007812
+      ],
+      "reference_font": "SFRM1095",
+      "candidate_font": "NewCM10-Regular",
+      "reference_size": 10.90113639831543,
+      "candidate_size": 9.0,
+      "font_size_abs_log_ratio": 0.19164246319071013,
+      "reference_style_bits": {
+       "italic": false,
+       "serif": true,
+       "monospace": false,
+       "bold": false
+      },
+      "candidate_style_bits": {
+       "italic": false,
+       "serif": true,
+       "monospace": false,
+       "bold": false
+      },
+      "reference_color": 0,
+      "candidate_color": 0
+     }
+    ]
+   },
+   "interpretation": "Raw PDF font observables are diagnostic; font names and flags are renderer metadata, not perceptual truth."
+  },
+  "raster_ink": {
+   "status": "scored",
+   "applicable": true,
+   "metrics": {
+    "paired_page_count": 2,
+    "unpaired_page_count": 0,
+    "unregistered_tolerant_ink_f1_macro": 0.3602616702594299,
+    "registered_tolerant_ink_f1_macro": 0.3602616702594299,
+    "registration_gain": 0.0
+   },
+   "evidence": {
+    "pages": [
+     {
+      "page": 0,
+      "reference_raster_size": [
+       816,
+       1056
+      ],
+      "candidate_raster_size_before_resize": [
+       816,
+       1056
+      ],
+      "candidate_resized_to_reference_canvas": true,
+      "coordinate_frame": "registered_reference_raster",
+      "registration_translation_px": [
+       0,
+       0
+      ],
+      "unregistered": {
+       "reference_ink_pixels": 74946,
+       "candidate_ink_pixels": 84296,
+       "precision": 0.5866114643636708,
+       "recall": 0.6699890587889947,
+       "f1": 0.6255341385626672,
+       "unmatched_ink_pixels": 59580,
+       "unmatched_ink_fraction_of_union": 0.4250704526807691
+      },
+      "registered": {
+       "reference_ink_pixels": 74946,
+       "candidate_ink_pixels": 84296,
+       "precision": 0.5866114643636708,
+       "recall": 0.6699890587889947,
+       "f1": 0.6255341385626672,
+       "unmatched_ink_pixels": 59580,
+       "unmatched_ink_fraction_of_union": 0.4250704526807691
+      },
+      "registered_mean_absolute_gray_difference": 0.05509926889279181,
+      "top_difference_bbox": {
+       "pixel_bbox": [
+        95,
+        96,
+        721,
+        1000
+       ],
+       "normalized_bbox": [
+        0.11642156862745098,
+        0.09090909090909091,
+        0.883578431372549,
+        0.946969696969697
+       ]
+      }
+     },
+     {
+      "page": 1,
+      "reference_raster_size": [
+       816,
+       1056
+      ],
+      "candidate_raster_size_before_resize": [
+       816,
+       1056
+      ],
+      "candidate_resized_to_reference_canvas": true,
+      "coordinate_frame": "registered_reference_raster",
+      "registration_translation_px": [
+       0,
+       0
+      ],
+      "unregistered": {
+       "reference_ink_pixels": 32874,
+       "candidate_ink_pixels": 25616,
+       "precision": 0.10977514053716428,
+       "recall": 0.08371357303644217,
+       "f1": 0.0949892019561926,
+       "unmatched_ink_pixels": 52926,
+       "unmatched_ink_fraction_of_union": 0.9213494881972007
+      },
+      "registered": {
+       "reference_ink_pixels": 32874,
+       "candidate_ink_pixels": 25616,
+       "precision": 0.10977514053716428,
+       "recall": 0.08371357303644217,
+       "f1": 0.0949892019561926,
+       "unmatched_ink_pixels": 52926,
+       "unmatched_ink_fraction_of_union": 0.9213494881972007
+      },
+      "registered_mean_absolute_gray_difference": 0.02849434002656321,
+      "top_difference_bbox": {
+       "pixel_bbox": [
+        95,
+        95,
+        716,
+        1000
+       ],
+       "normalized_bbox": [
+        0.11642156862745098,
+        0.08996212121212122,
+        0.8774509803921569,
+        0.946969696969697
+       ]
+      }
+     }
+    ],
+    "top_difference_bbox": {
+     "page": 1,
+     "unpaired_side": null,
+     "coordinate_frame": "registered_reference_raster",
+     "registration_translation_px": [
+      0,
+      0
+     ],
+     "pixel_bbox": [
+      95,
+      95,
+      716,
+      1000
+     ],
+     "normalized_bbox": [
+      0.11642156862745098,
+      0.08996212121212122,
+      0.8774509803921569,
+      0.946969696969697
+     ]
+    }
+   },
+   "interpretation": "Candidate pages are resized to the reference canvas, then optionally translation-registered. Use canvas and geometry axes for layout claims."
+  },
+  "raster_perceptual": {
+   "status": "scored",
+   "applicable": true,
+   "metrics": {
+    "paired_page_count": 2,
+    "scored_page_count": 2,
+    "abstained_page_count": 0,
+    "unpaired_page_count": 0,
+    "unregistered_ssim_macro": 0.675572780692543,
+    "registered_ssim_macro": 0.675572780692543,
+    "unregistered_multiscale_ssim_diagnostic_macro": 0.7905443863304602,
+    "registered_multiscale_ssim_diagnostic_macro": 0.7905443863304602
+   },
+   "evidence": {
+    "pages": [
+     {
+      "page": 0,
+      "status": "scored",
+      "unregistered_ssim": 0.5808485271022018,
+      "registered_ssim": 0.5808485271022018,
+      "unregistered_multiscale_ssim_diagnostic": 0.7595973346995338,
+      "registered_multiscale_ssim_diagnostic": 0.7595973346995338,
+      "unregistered_scale_scores": [
+       {
+        "downsample_factor": 1,
+        "ssim": 0.5808485271022018
+       },
+       {
+        "downsample_factor": 2,
+        "ssim": 0.5250210462018903
+       },
+       {
+        "downsample_factor": 4,
+        "ssim": 0.48303023992750566
+       },
+       {
+        "downsample_factor": 8,
+        "ssim": 0.4898330648265872
+       }
+      ],
+      "registered_scale_scores": [
+       {
+        "downsample_factor": 1,
+        "ssim": 0.5808485271022018
+       },
+       {
+        "downsample_factor": 2,
+        "ssim": 0.5250210462018903
+       },
+       {
+        "downsample_factor": 4,
+        "ssim": 0.48303023992750566
+       },
+       {
+        "downsample_factor": 8,
+        "ssim": 0.4898330648265872
+       }
+      ],
+      "registration_translation_px": [
+       0,
+       0
+      ],
+      "candidate_resized_to_reference_canvas": false,
+      "reference_raster_size": [
+       816,
+       1056
+      ],
+      "candidate_raster_size_before_resize": [
+       816,
+       1056
+      ],
+      "registered_difference_bbox": {
+       "pixel_bbox": [
+        95,
+        96,
+        721,
+        1000
+       ],
+       "normalized_bbox": [
+        0.11642156862745098,
+        0.09090909090909091,
+        0.883578431372549,
+        0.946969696969697
+       ]
+      }
+     },
+     {
+      "page": 1,
+      "status": "scored",
+      "unregistered_ssim": 0.7702970342828842,
+      "registered_ssim": 0.7702970342828842,
+      "unregistered_multiscale_ssim_diagnostic": 0.8214914379613865,
+      "registered_multiscale_ssim_diagnostic": 0.8214914379613865,
+      "unregistered_scale_scores": [
+       {
+        "downsample_factor": 1,
+        "ssim": 0.7702970342828842
+       },
+       {
+        "downsample_factor": 2,
+        "ssim": 0.6874045696152861
+       },
+       {
+        "downsample_factor": 4,
+        "ssim": 0.606571404973517
+       },
+       {
+        "downsample_factor": 8,
+        "ssim": 0.5183320256560879
+       }
+      ],
+      "registered_scale_scores": [
+       {
+        "downsample_factor": 1,
+        "ssim": 0.7702970342828842
+       },
+       {
+        "downsample_factor": 2,
+        "ssim": 0.6874045696152861
+       },
+       {
+        "downsample_factor": 4,
+        "ssim": 0.606571404973517
+       },
+       {
+        "downsample_factor": 8,
+        "ssim": 0.5183320256560879
+       }
+      ],
+      "registration_translation_px": [
+       0,
+       0
+      ],
+      "candidate_resized_to_reference_canvas": false,
+      "reference_raster_size": [
+       816,
+       1056
+      ],
+      "candidate_raster_size_before_resize": [
+       816,
+       1056
+      ],
+      "registered_difference_bbox": {
+       "pixel_bbox": [
+        95,
+        95,
+        716,
+        1000
+       ],
+       "normalized_bbox": [
+        0.11642156862745098,
+        0.08996212121212122,
+        0.8774509803921569,
+        0.946969696969697
+       ]
+      }
+     }
+    ]
+   },
+   "interpretation": "SSIM is reported before and after translation-only registration. The multiscale value is the documented geometric mean of four SSIM scales, not canonical MS-SSIM. No candidate resizing is performed; SSIM abstains when physical canvases/grids differ."
+  },
+  "tables": {
+   "status": "abstain",
+   "applicable": null,
+   "metrics": {},
+   "evidence": {
+    "source_flags": {
+     "reference": null,
+     "candidate": null
+    }
+   },
+   "reason": "Applicability for tables was not established by source metadata."
+  },
+  "formulas": {
+   "status": "abstain",
+   "applicable": null,
+   "metrics": {},
+   "evidence": {
+    "source_flags": {
+     "reference": null,
+     "candidate": null
+    }
+   },
+   "reason": "Applicability for formulas was not established by source metadata."
+  },
+  "figures": {
+   "status": "abstain",
+   "applicable": null,
+   "metrics": {},
+   "evidence": {
+    "source_flags": {
+     "reference": null,
+     "candidate": null
+    }
+   },
+   "reason": "Applicability for figures was not established by source metadata."
+  }
+ }
+}

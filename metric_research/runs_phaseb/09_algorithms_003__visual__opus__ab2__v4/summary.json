@@ -1,0 +1,14 @@
+{
+  "sample_id": "09_algorithms_003",
+  "arm": "v4_v2feedback",
+  "mode": "visual",
+  "model": "opus",
+  "effort": "medium",
+  "cost_usd": 2.025139,
+  "num_turns": 34,
+  "duration_s": 475,
+  "final": {
+    "compiled": true,
+    "graded_file": "~/Downloads/learn/latex_typst/metric_research/runs_phaseb/09_algorithms_003__visual__opus__ab2__v4/work/feedback/best/output.typ"
+  }
+}

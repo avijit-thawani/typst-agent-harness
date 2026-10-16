@@ -1,0 +1,3306 @@
+{
+ "evaluator": {
+  "name": "pdf_metric_axes_v2",
+  "version": 2,
+  "aggregate_score": null,
+  "policy": "No compensatory scalar. Report raw axes, coverage, abstentions, and localized evidence."
+ },
+ "inputs": {
+  "reference_pdf": "~/Downloads/learn/latex_typst/harness_baseline/runs/07_figures_captions_007__novisual__sonnet__qlow/work/reference.pdf",
+  "candidate_pdf": "~/Downloads/learn/latex_typst/harness_baseline/runs/07_figures_captions_007__novisual__sonnet__qlow/final_candidate.pdf",
+  "reference_page_count": 1,
+  "candidate_page_count": 1
+ },
+ "configuration": {
+  "render_dpi": 96,
+  "ink_threshold": 245,
+  "ink_tolerance_px": 2,
+  "normalization": "Unicode NFKC, soft-hyphen removal, collapsed whitespace; case preserved"
+ },
+ "applicability": {
+  "tables": null,
+  "formulas": null,
+  "figures": null
+ },
+ "axes": {
+  "canvas": {
+   "status": "scored",
+   "applicable": true,
+   "metrics": {
+    "reference_page_count": 1,
+    "candidate_page_count": 1,
+    "page_count_delta": 0,
+    "paired_page_count": 1,
+    "exact_paired_size_rate": 1.0,
+    "width_abs_log_ratio_max": 0.0,
+    "height_abs_log_ratio_max": 0.0
+   },
+   "evidence": {
+    "page_pairs": [
+     {
+      "page": 0,
+      "reference_size_points": [
+       612.0,
+       792.0
+      ],
+      "candidate_size_points": [
+       612.0,
+       792.0
+      ],
+      "width_abs_log_ratio": 0.0,
+      "height_abs_log_ratio": 0.0,
+      "exact_size_match": true
+     }
+    ]
+   },
+   "interpretation": "Canvas/page-size mismatch only; no token layout residual is folded into this axis."
+  },
+  "content": {
+   "status": "scored",
+   "applicable": true,
+   "metrics": {
+    "matched_block_normalized_edit_similarity_macro": 0.9423728813559322,
+    "matched_block_count": 5,
+    "strict_nfc_token_inventory": {
+     "reference_count": 74,
+     "candidate_count": 79,
+     "matched_count": 58,
+     "precision": 0.7341772151898734,
+     "recall": 0.7837837837837838,
+     "f1": 0.7581699346405228,
+     "exact_match": false,
+     "missing": [
+      "1",
+      "$8$)",
+      "$\\beta=5.30$",
+      "$\\kappa=0.1677$",
+      "$16^3\\times",
+      "32$",
+      "($\\times$)",
+      "$\\delta\\tau=0.0069$,",
+      "$\\delta\\tau=0.0069$,",
+      "($+$)",
+      "($\\bigcirc$)",
+      "$\\delta\\tau=0.004$.",
+      "blocksize$=40$",
+      "($\\Diamond$)",
+      "un-",
+      "corrected"
+     ],
+     "extra": [
+      "8)",
+      "\ud835\udefd=",
+      "5.30",
+      "\ud835\udf05=",
+      "0.1677",
+      "163",
+      "\u00d7",
+      "32",
+      "(\u00d7)",
+      "\ud835\udeff\ud835\udf0f=",
+      "\ud835\udeff\ud835\udf0f=",
+      "\ud835\udeff\ud835\udf0f=",
+      "0.0069,",
+      "0.0069,",
+      "(+)",
+      "(\u25cb)",
+      "0.004.",
+      "blocksize=",
+      "40",
+      "(\u25c7)",
+      "uncorrected"
+     ],
+     "missing_count": 16,
+     "extra_count": 21
+    },
+    "strict_nfc_document_edit_similarity": 0.813953488372093,
+    "compatibility_nfkc_token_inventory": {
+     "reference_count": 74,
+     "candidate_count": 79,
+     "matched_count": 58,
+     "precision": 0.7341772151898734,
+     "recall": 0.7837837837837838,
+     "f1": 0.7581699346405228
+    },
+    "compatibility_nfkc_document_edit_similarity": 0.813953488372093
+   },
+   "evidence": {
+    "unmatched_reference_words": [
+     {
+      "word_index": 23,
+      "page": 0,
+      "bbox": [
+       422.138427734375,
+       329.84368896484375,
+       442.6257019042969,
+       340.7527770996094
+      ],
+      "text": "$8$)",
+      "normalized": "$8$)"
+     },
+     {
+      "word_index": 25,
+      "page": 0,
+      "bbox": [
+       475.1348571777344,
+       329.84368896484375,
+       539.8912353515625,
+       340.7527770996094
+      ],
+      "text": "$\\beta=5.30$",
+      "normalized": "$\\beta=5.30$"
+     },
+     {
+      "word_index": 27,
+      "page": 0,
+      "bbox": [
+       98.56365203857422,
+       343.3927001953125,
+       181.38558959960938,
+       354.3017883300781
+      ],
+      "text": "$\\kappa=0.1677$",
+      "normalized": "$\\kappa=0.1677$"
+     },
+     {
+      "word_index": 30,
+      "page": 0,
+      "bbox": [
+       225.55654907226562,
+       343.3927001953125,
+       284.662109375,
+       354.3017883300781
+      ],
+      "text": "$16^3\\times",
+      "normalized": "$16^3\\times"
+     },
+     {
+      "word_index": 31,
+      "page": 0,
+      "bbox": [
+       293.76031494140625,
+       343.3927001953125,
+       310.0257568359375,
+       354.3017883300781
+      ],
+      "text": "32$",
+      "normalized": "32$"
+     },
+     {
+      "word_index": 35,
+      "page": 0,
+      "bbox": [
+       454.8114013671875,
+       343.3927001953125,
+       504.873291015625,
+       354.3017883300781
+      ],
+      "text": "($\\times$)",
+      "normalized": "($\\times$)"
+     },
+     {
+      "word_index": 38,
+      "page": 0,
+      "bbox": [
+       93.34911346435547,
+       356.94171142578125,
+       195.76377868652344,
+       367.8507995605469
+      ],
+      "text": "$\\delta\\tau=0.0069$,",
+      "normalized": "$\\delta\\tau=0.0069$,"
+     },
+     {
+      "word_index": 39,
+      "page": 0,
+      "bbox": [
+       209.4874267578125,
+       356.94171142578125,
+       237.20745849609375,
+       367.8507995605469
+      ],
+      "text": "($+$)",
+      "normalized": "($+$)"
+     },
+     {
+      "word_index": 42,
+      "page": 0,
+      "bbox": [
+       308.31298828125,
+       356.94171142578125,
+       410.7275695800781,
+       367.8507995605469
+      ],
+      "text": "$\\delta\\tau=0.0069$,",
+      "normalized": "$\\delta\\tau=0.0069$,"
+     },
+     {
+      "word_index": 43,
+      "page": 0,
+      "bbox": [
+       424.45123291015625,
+       356.94171142578125,
+       480.49127197265625,
+       367.8507995605469
+      ],
+      "text": "($\\bigcirc$)",
+      "normalized": "($\\bigcirc$)"
+     },
+     {
+      "word_index": 46,
+      "page": 0,
+      "bbox": [
+       72.0,
+       370.49072265625,
+       168.98191833496094,
+       381.3998107910156
+      ],
+      "text": "$\\delta\\tau=0.004$.",
+      "normalized": "$\\delta\\tau=0.004$."
+     },
+     {
+      "word_index": 51,
+      "page": 0,
+      "bbox": [
+       281.0401611328125,
+       370.49072265625,
+       353.0946960449219,
+       381.3998107910156
+      ],
+      "text": "blocksize$=40$",
+      "normalized": "blocksize$=40$"
+     },
+     {
+      "word_index": 52,
+      "page": 0,
+      "bbox": [
+       359.607421875,
+       370.49072265625,
+       427.5274658203125,
+       381.3998107910156
+      ],
+      "text": "($\\Diamond$)",
+      "normalized": "($\\Diamond$)"
+     },
+     {
+      "word_index": 55,
+      "page": 0,
+      "bbox": [
+       524.1820678710938,
+       370.49072265625,
+       539.8475952148438,
+       381.3998107910156
+      ],
+      "text": "un-",
+      "normalized": "un-"
+     },
+     {
+      "word_index": 56,
+      "page": 0,
+      "bbox": [
+       72.0,
+       384.04071044921875,
+       115.39640808105469,
+       394.9497985839844
+      ],
+      "text": "corrected",
+      "normalized": "corrected"
+     },
+     {
+      "word_index": 73,
+      "page": 0,
+      "bbox": [
+       303.2879943847656,
+       741.375732421875,
+       308.7098083496094,
+       752.2848510742188
+      ],
+      "text": "1",
+      "normalized": "1"
+     }
+    ],
+    "unmatched_candidate_words": [
+     {
+      "word_index": 23,
+      "page": 0,
+      "bbox": [
+       358.3608093261719,
+       342.4854736328125,
+       368.1398010253906,
+       353.4854736328125
+      ],
+      "text": "8)",
+      "normalized": "8)"
+     },
+     {
+      "word_index": 25,
+      "page": 0,
+      "bbox": [
+       388.643798828125,
+       342.4854736328125,
+       406.8793640136719,
+       353.4854736328125
+      ],
+      "text": "\ud835\udefd=",
+      "normalized": "\u03b2="
+     },
+     {
+      "word_index": 26,
+      "page": 0,
+      "bbox": [
+       409.9349060058594,
+       342.4854736328125,
+       429.492919921875,
+       353.4854736328125
+      ],
+      "text": "5.30",
+      "normalized": "5.30"
+     },
+     {
+      "word_index": 28,
+      "page": 0,
+      "bbox": [
+       454.5509033203125,
+       342.4854736328125,
+       472.50048828125,
+       353.4854736328125
+      ],
+      "text": "\ud835\udf05=",
+      "normalized": "\u03ba="
+     },
+     {
+      "word_index": 29,
+      "page": 0,
+      "bbox": [
+       475.5560302734375,
+       342.4854736328125,
+       506.25701904296875,
+       353.4854736328125
+      ],
+      "text": "0.1677",
+      "normalized": "0.1677"
+     },
+     {
+      "word_index": 32,
+      "page": 0,
+      "bbox": [
+       73.1637954711914,
+       355.8152770996094,
+       88.54509735107422,
+       368.1484680175781
+      ],
+      "text": "163",
+      "normalized": "163"
+     },
+     {
+      "word_index": 33,
+      "page": 0,
+      "bbox": [
+       91.60553741455078,
+       357.1484680175781,
+       100.16353607177734,
+       368.1484680175781
+      ],
+      "text": "\u00d7",
+      "normalized": "\u00d7"
+     },
+     {
+      "word_index": 34,
+      "page": 0,
+      "bbox": [
+       102.60798645019531,
+       357.1484680175781,
+       113.60798645019531,
+       368.1484680175781
+      ],
+      "text": "32",
+      "normalized": "32"
+     },
+     {
+      "word_index": 38,
+      "page": 0,
+      "bbox": [
+       219.10897827148438,
+       357.1484680175781,
+       236.22499084472656,
+       368.1484680175781
+      ],
+      "text": "(\u00d7)",
+      "normalized": "(\u00d7)"
+     },
+     {
+      "word_index": 41,
+      "page": 0,
+      "bbox": [
+       283.27197265625,
+       357.1484680175781,
+       306.09454345703125,
+       368.1484680175781
+      ],
+      "text": "\ud835\udeff\ud835\udf0f=",
+      "normalized": "\u03b4\u03c4="
+     },
+     {
+      "word_index": 42,
+      "page": 0,
+      "bbox": [
+       309.15008544921875,
+       357.1484680175781,
+       342.76611328125,
+       368.1484680175781
+      ],
+      "text": "0.0069,",
+      "normalized": "0.0069,"
+     },
+     {
+      "word_index": 43,
+      "page": 0,
+      "bbox": [
+       346.4291076660156,
+       357.1484680175781,
+       363.5450744628906,
+       368.1484680175781
+      ],
+      "text": "(+)",
+      "normalized": "(+)"
+     },
+     {
+      "word_index": 46,
+      "page": 0,
+      "bbox": [
+       411.0541076660156,
+       357.1484680175781,
+       433.8766784667969,
+       368.1484680175781
+      ],
+      "text": "\ud835\udeff\ud835\udf0f=",
+      "normalized": "\u03b4\u03c4="
+     },
+     {
+      "word_index": 47,
+      "page": 0,
+      "bbox": [
+       436.9322204589844,
+       357.1484680175781,
+       470.5482177734375,
+       368.1484680175781
+      ],
+      "text": "0.0069,",
+      "normalized": "0.0069,"
+     },
+     {
+      "word_index": 48,
+      "page": 0,
+      "bbox": [
+       474.2112121582031,
+       357.1484680175781,
+       494.9902038574219,
+       368.1484680175781
+      ],
+      "text": "(\u25cb)",
+      "normalized": "(\u25cb)"
+     },
+     {
+      "word_index": 51,
+      "page": 0,
+      "bbox": [
+       73.1637954711914,
+       371.8114929199219,
+       95.9863510131836,
+       382.8114929199219
+      ],
+      "text": "\ud835\udeff\ud835\udf0f=",
+      "normalized": "\u03b4\u03c4="
+     },
+     {
+      "word_index": 52,
+      "page": 0,
+      "bbox": [
+       99.04190826416016,
+       371.8114929199219,
+       127.15790557861328,
+       382.8114929199219
+      ],
+      "text": "0.004.",
+      "normalized": "0.004."
+     },
+     {
+      "word_index": 57,
+      "page": 0,
+      "bbox": [
+       218.9859161376953,
+       371.8114929199219,
+       270.0699157714844,
+       382.8114929199219
+      ],
+      "text": "blocksize=",
+      "normalized": "blocksize="
+     },
+     {
+      "word_index": 58,
+      "page": 0,
+      "bbox": [
+       273.1254577636719,
+       371.8114929199219,
+       284.1254577636719,
+       382.8114929199219
+      ],
+      "text": "40",
+      "normalized": "40"
+     },
+     {
+      "word_index": 59,
+      "page": 0,
+      "bbox": [
+       287.7884521484375,
+       370.843505859375,
+       303.6724548339844,
+       383.38348388671875
+      ],
+      "text": "(\u25c7)",
+      "normalized": "(\u25c7)"
+     },
+     {
+      "word_index": 62,
+      "page": 0,
+      "bbox": [
+       392.8714599609375,
+       371.8114929199219,
+       449.1584777832031,
+       382.8114929199219
+      ],
+      "text": "uncorrected",
+      "normalized": "uncorrected"
+     }
+    ],
+    "lowest_similarity_block_pairs": [
+     {
+      "reference_block_index": 3,
+      "candidate_block_index": 3,
+      "reference_page": 0,
+      "candidate_page": 0,
+      "reference_text": "Figure 1: Time history of the effective pion mass (distance $8$) for $\\beta=5.30$ and $\\kappa=0.1677$ on a $16^3\\times 32$ lattice. Symbols are: ($\\times$) HMC at $\\delta\\tau=0.0069$, ($+$) HMD at $\\delta\\tau=0.0069$, ($\\bigcirc$) HMD at $\\",
+      "candidate_text": "Figure 1: Time history of the effective pion mass (distance 8) for \ud835\udefd= 5.30 and \ud835\udf05= 0.1677 on a 163 \u00d7 32 lattice. Symbols are: (\u00d7) HMC at \ud835\udeff\ud835\udf0f= 0.0069, (+) HMD at \ud835\udeff\ud835\udf0f= 0.0069, (\u25cb) HMD at \ud835\udeff\ud835\udf0f= 0.004. Also shown is the blocksize= 40 (\u25c7) HMC accepta",
+      "normalized_edit_similarity": 0.711864406779661
+     },
+     {
+      "reference_block_index": 0,
+      "candidate_block_index": 0,
+      "reference_page": 0,
+      "candidate_page": 0,
+      "reference_text": "On the Dynamics of Light Wilson Quarks",
+      "candidate_text": "On the Dynamics of Light Wilson Quarks",
+      "normalized_edit_similarity": 1.0
+     },
+     {
+      "reference_block_index": 1,
+      "candidate_block_index": 1,
+      "reference_page": 0,
+      "candidate_page": 0,
+      "reference_text": "Source-backed arXiv sample",
+      "candidate_text": "Source-backed arXiv sample",
+      "normalized_edit_similarity": 1.0
+     },
+     {
+      "reference_block_index": 2,
+      "candidate_block_index": 2,
+      "reference_page": 0,
+      "candidate_page": 0,
+      "reference_text": "1 Figure Captions",
+      "candidate_text": "1 Figure Captions",
+      "normalized_edit_similarity": 1.0
+     },
+     {
+      "reference_block_index": 4,
+      "candidate_block_index": 4,
+      "reference_page": 0,
+      "candidate_page": 0,
+      "reference_text": "Figures 1 through 1 preserve source-backed captions while replacing external graphics with deterministic placeholders.",
+      "candidate_text": "Figures 1 through 1 preserve source-backed captions while replacing external graphics with deterministic placeholders.",
+      "normalized_edit_similarity": 1.0
+     }
+    ]
+   },
+   "interpretation": "Strict NFC preservation is the primary text view. NFKC is reported separately as a compatibility view for ligature/encoding equivalence; it never hides the strict mismatch."
+  },
+  "critical_content": {
+   "status": "scored",
+   "applicable": true,
+   "metrics": {
+    "numbers": {
+     "reference_count": 15,
+     "candidate_count": 13,
+     "matched_count": 12,
+     "precision": 0.9230769230769231,
+     "recall": 0.8,
+     "f1": 0.8571428571428571,
+     "exact_match": false,
+     "missing": [
+      "1",
+      "16",
+      "3"
+     ],
+     "extra": [
+      "163"
+     ],
+     "missing_count": 3,
+     "extra_count": 1
+    },
+    "operators": {
+     "reference_count": 8,
+     "candidate_count": 9,
+     "matched_count": 7,
+     "precision": 0.7777777777777778,
+     "recall": 0.875,
+     "f1": 0.823529411764706,
+     "exact_match": false,
+     "missing": [
+      "^"
+     ],
+     "extra": [
+      "\u00d7",
+      "\u00d7"
+     ],
+     "missing_count": 1,
+     "extra_count": 2
+    },
+    "citation_markers": {
+     "reference_count": 0,
+     "candidate_count": 0,
+     "matched_count": 0,
+     "precision": 1.0,
+     "recall": 1.0,
+     "f1": 1.0,
+     "exact_match": true,
+     "missing": [],
+     "extra": [],
+     "missing_count": 0,
+     "extra_count": 0
+    }
+   },
+   "evidence": {
+    "normalization": "Unicode NFKC; case preserved; multiset comparison",
+    "number_pattern": "(?<![\\w.])[+-]?(?:\\d+(?:[.,]\\d+)*|\\.\\d+)(?:[eE][+-]?\\d+)?%?",
+    "operator_inventory": "*+/<=>^\u00b1\u00d7\u00f7\u2190\u2192\u2194\u2202\u2207\u2208\u2209\u220f\u2211\u2212\u221a\u221e\u2229\u222a\u222b\u2248\u2260\u2264\u2265\u2282\u2286",
+    "citation_pattern": "\\[(?:\\d+[a-z]?(?:\\s*[-,;]\\s*\\d+[a-z]?){0,12})\\]|\\((?:18|19|20)\\d{2}[a-z]?\\)"
+   },
+   "interpretation": "Exact critical-symbol inventories prevent visually small numeric or operator errors from disappearing inside a document-level text average. Empty inventories are reported as exact but do not establish construct applicability."
+  },
+  "text_grounding": {
+   "status": "scored",
+   "applicable": true,
+   "metrics": {
+    "reference_word_count": 74,
+    "candidate_word_count": 79,
+    "exact_matched_word_count": 58,
+    "word_precision": 0.7341772151898734,
+    "word_recall": 0.7837837837837838,
+    "word_hmean": 0.7581699346405228,
+    "split_count": null,
+    "merge_count": null
+   },
+   "evidence": {
+    "match_policy": "exact Unicode-NFKC word text with deterministic page/position assignment for repeats"
+   },
+   "interpretation": "Digital-PDF exact-word grounding adaptation; it is not the published CLEval algorithm. Split/merge values remain null until a validated implementation exists."
+  },
+  "geometry": {
+   "status": "scored",
+   "applicable": true,
+   "metrics": {
+    "matched_token_count": 58,
+    "reference_match_coverage": 0.7837837837837838,
+    "candidate_match_coverage": 0.7341772151898734,
+    "center_displacement_q50": 0.04718436152495309,
+    "center_displacement_q90": 0.36023246928592484,
+    "center_displacement_max": 0.5903428013851675,
+    "bbox_iou_q10": 0.0,
+    "bbox_iou_q50": 0.0,
+    "width_abs_log_ratio_q90": 0.1886644533474773,
+    "height_abs_log_ratio_q90": 0.008299057127879162
+   },
+   "evidence": {
+    "worst_token_pairs": [
+     {
+      "token": "and",
+      "reference_word_index": 26,
+      "candidate_word_index": 27,
+      "reference_page": 0,
+      "candidate_page": 0,
+      "reference_bbox": [
+       72.0,
+       343.3927001953125,
+       89.46546173095703,
+       354.3017883300781
+      ],
+      "candidate_bbox": [
+       433.1559143066406,
+       342.4854736328125,
+       450.8879089355469,
+       353.4854736328125
+      ],
+      "reference_bbox_normalized": [
+       0.11764705882352941,
+       0.4335766416607481,
+       0.1461853949852239,
+       0.44735074284100773
+      ],
+      "candidate_bbox_normalized": [
+       0.7077711018082363,
+       0.43243115357678347,
+       0.7367449492410897,
+       0.44632004246567236
+      ],
+      "center_displacement": 0.5903428013851675,
+      "bbox_iou": 0.0,
+      "width_abs_log_ratio": 0.015145298568311628,
+      "height_abs_log_ratio": 0.008299057127879162
+     },
+     {
+      "token": "for",
+      "reference_word_index": 57,
+      "candidate_word_index": 63,
+      "reference_page": 0,
+      "candidate_page": 0,
+      "reference_bbox": [
+       119.00731658935547,
+       384.04071044921875,
+       131.9673309326172,
+       394.9497985839844
+      ],
+      "candidate_bbox": [
+       452.82147216796875,
+       371.8114929199219,
+       465.9994812011719,
+       382.8114929199219
+      ],
+      "reference_bbox_normalized": [
+       0.1944563996558096,
+       0.48489988693083175,
+       0.21563289368074703,
+       0.49867398811109137
+      ],
+      "candidate_bbox_normalized": [
+       0.7399043662875306,
+       0.46945895570697205,
+       0.7614370607862285,
+       0.48334784459586094
+      ],
+      "center_displacement": 0.5458428877144956,
+      "bbox_iou": 0.0,
+      "width_abs_log_ratio": 0.016680660310749024,
+      "height_abs_log_ratio": 0.008299057127879162
+     },
+     {
+      "token": "on",
+      "reference_word_index": 28,
+      "candidate_word_index": 30,
+      "reference_page": 0,
+      "candidate_page": 0,
+      "reference_bbox": [
+       190.49468994140625,
+       343.3927001953125,
+       201.93833923339844,
+       354.3017883300781
+      ],
+      "candidate_bbox": [
+       510.0630187988281,
+       342.4854736328125,
+       521.6790771484375,
+       353.4854736328125
+      ],
+      "reference_bbox_normalized": [
+       0.31126583323759194,
+       0.4335766416607481,
+       0.32996460659052035,
+       0.44735074284100773
+      ],
+      "candidate_bbox_normalized": [
+       0.8334363052268433,
+       0.43243115357678347,
+       0.8524167927262051,
+       0.44632004246567236
+      ],
+      "center_displacement": 0.5223124624360923,
+      "bbox_iou": 0.0,
+      "width_abs_log_ratio": 0.014953552140872873,
+      "height_abs_log_ratio": 0.008299057127879162
+     },
+     {
+      "token": "a",
+      "reference_word_index": 29,
+      "candidate_word_index": 31,
+      "reference_page": 0,
+      "candidate_page": 0,
+      "reference_bbox": [
+       211.03652954101562,
+       343.3927001953125,
+       216.45835876464844,
+       354.3017883300781
+      ],
+      "candidate_bbox": [
+       525.342041015625,
+       342.4854736328125,
+       530.842041015625,
+       353.4854736328125
+      ],
+      "reference_bbox_normalized": [
+       0.3448309306225745,
+       0.4335766416607481,
+       0.35369012870040595,
+       0.44735074284100773
+      ],
+      "candidate_bbox_normalized": [
+       0.8584020278033089,
+       0.43243115357678347,
+       0.867388955907884,
+       0.44632004246567236
+      ],
+      "center_displacement": 0.5136361147127346,
+      "bbox_iou": 0.0,
+      "width_abs_log_ratio": 0.014314838590330926,
+      "height_abs_log_ratio": 0.008299057127879162
+     },
+     {
+      "token": "HMC",
+      "reference_word_index": 36,
+      "candidate_word_index": 39,
+      "reference_page": 0,
+      "candidate_page": 0,
+      "reference_bbox": [
+       513.9714965820312,
+       343.3927001953125,
+       539.8696899414062,
+       354.3017883300781
+      ],
+      "candidate_bbox": [
+       239.8879852294922,
+       357.1484680175781,
+       266.1669616699219,
+       368.1484680175781
+      ],
+      "reference_bbox_normalized": [
+       0.8398227068333844,
+       0.4335766416607481,
+       0.8821400162441279,
+       0.44735074284100773
+      ],
+      "candidate_bbox_normalized": [
+       0.3919738320743336,
+       0.45094503537572994,
+       0.43491333606196386,
+       0.46483392426461884
+      ],
+      "center_displacement": 0.44787690310591055,
+      "bbox_iou": 0.0,
+      "width_abs_log_ratio": 0.014596032816390212,
+      "height_abs_log_ratio": 0.008299057127879162
+     },
+     {
+      "token": "are:",
+      "reference_word_index": 34,
+      "candidate_word_index": 37,
+      "reference_page": 0,
+      "candidate_page": 0,
+      "reference_bbox": [
+       421.53863525390625,
+       343.3927001953125,
+       439.0150146484375,
+       354.3017883300781
+      ],
+      "candidate_bbox": [
+       197.69198608398438,
+       357.1484680175781,
+       215.44598388671875,
+       368.1484680175781
+      ],
+      "reference_bbox_normalized": [
+       0.6887886196959252,
+       0.4335766416607481,
+       0.7173447951771854,
+       0.44735074284100773
+      ],
+      "candidate_bbox_normalized": [
+       0.323026121052262,
+       0.45094503537572994,
+       0.35203592138352735,
+       0.46483392426461884
+      ],
+      "center_displacement": 0.3659508108636424,
+      "bbox_iou": 0.0,
+      "width_abs_log_ratio": 0.0157604985703804,
+      "height_abs_log_ratio": 0.008299057127879162
+     },
+     {
+      "token": "Symbols",
+      "reference_word_index": 33,
+      "candidate_word_index": 36,
+      "reference_page": 0,
+      "candidate_page": 0,
+      "reference_bbox": [
+       372.92767333984375,
+       343.3927001953125,
+       412.4404296875,
+       354.3017883300781
+      ],
+      "candidate_bbox": [
+       153.93399047851562,
+       357.1484680175781,
+       194.0289764404297,
+       368.1484680175781
+      ],
+      "reference_bbox_normalized": [
+       0.6093589433657578,
+       0.4335766416607481,
+       0.6739222707312091,
+       0.44735074284100773
+      ],
+      "candidate_bbox_normalized": [
+       0.2515261282328687,
+       0.45094503537572994,
+       0.3170408111771727,
+       0.46483392426461884
+      ],
+      "center_displacement": 0.357781751466903,
+      "bbox_iou": 0.0,
+      "width_abs_log_ratio": 0.014627722856635305,
+      "height_abs_log_ratio": 0.008299057127879162
+     },
+     {
+      "token": "lattice.",
+      "reference_word_index": 32,
+      "candidate_word_index": 35,
+      "reference_page": 0,
+      "candidate_page": 0,
+      "reference_bbox": [
+       319.12396240234375,
+       343.3927001953125,
+       351.66583251953125,
+       354.3017883300781
+      ],
+      "candidate_bbox": [
+       117.27098846435547,
+       357.1484680175781,
+       150.27098083496094,
+       368.1484680175781
+      ],
+      "reference_bbox_normalized": [
+       0.5214443830103656,
+       0.4335766416607481,
+       0.5746173733979268,
+       0.44735074284100773
+      ],
+      "candidate_bbox_normalized": [
+       0.19161926219665926,
+       0.45094503537572994,
+       0.2455408183577793,
+       0.46483392426461884
+      ],
+      "center_displacement": 0.32991137095160045,
+      "bbox_iou": 0.0,
+      "width_abs_log_ratio": 0.013979758799842514,
+      "height_abs_log_ratio": 0.008299057127879162
+     },
+     {
+      "token": "at",
+      "reference_word_index": 37,
+      "candidate_word_index": 40,
+      "reference_page": 0,
+      "candidate_page": 0,
+      "reference_bbox": [
+       72.0,
+       356.94171142578125,
+       81.64364624023438,
+       367.8507995605469
+      ],
+      "candidate_bbox": [
+       269.8299865722656,
+       357.1484680175781,
+       279.6089782714844,
+       368.1484680175781
+      ],
+      "reference_bbox_normalized": [
+       0.11764705882352941,
+       0.4506839790729561,
+       0.13340465071933721,
+       0.4644580802532158
+      ],
+      "candidate_bbox_normalized": [
+       0.44089867086971507,
+       0.45094503537572994,
+       0.45687741547628163,
+       0.46483392426461884
+      ],
+      "center_displacement": 0.323362345207898,
+      "bbox_iou": 0.0,
+      "width_abs_log_ratio": 0.013937102696653025,
+      "height_abs_log_ratio": 0.008299057127875199
+     },
+     {
+      "token": "acceptance",
+      "reference_word_index": 54,
+      "candidate_word_index": 61,
+      "reference_page": 0,
+      "candidate_page": 0,
+      "reference_bbox": [
+       466.4511413574219,
+       370.49072265625,
+       517.6693115234375,
+       381.3998107910156
+      ],
+      "candidate_bbox": [
+       337.2774658203125,
+       371.8114929199219,
+       389.2084655761719,
+       382.8114929199219
+      ],
+      "reference_bbox_normalized": [
+       0.7621750675774868,
+       0.46779131648516414,
+       0.845864888110192,
+       0.48156541766542377
+      ],
+      "candidate_bbox_normalized": [
+       0.5511069702946283,
+       0.46945895570697205,
+       0.6359615450591044,
+       0.48334784459586094
+      ],
+      "center_displacement": 0.21049278879173752,
+      "bbox_iou": 0.0,
+      "width_abs_log_ratio": 0.01382155451797712,
+      "height_abs_log_ratio": 0.008299057127879162
+     },
+     {
+      "token": "HMC",
+      "reference_word_index": 53,
+      "candidate_word_index": 60,
+      "reference_page": 0,
+      "candidate_page": 0,
+      "reference_bbox": [
+       434.0401916503906,
+       370.49072265625,
+       459.93841552734375,
+       381.3998107910156
+      ],
+      "candidate_bbox": [
+       307.33544921875,
+       371.8114929199219,
+       333.61444091796875,
+       382.8114929199219
+      ],
+      "reference_bbox_normalized": [
+       0.7092159994287428,
+       0.46779131648516414,
+       0.7515333587048101,
+       0.48156541766542377
+      ],
+      "candidate_bbox_normalized": [
+       0.502182106566585,
+       0.46945895570697205,
+       0.5451216354868771,
+       0.48334784459586094
+      ],
+      "center_displacement": 0.20673000532838762,
+      "bbox_iou": 0.0,
+      "width_abs_log_ratio": 0.014595435096093212,
+      "height_abs_log_ratio": 0.008299057127879162
+     },
+     {
+      "token": "HMD",
+      "reference_word_index": 40,
+      "candidate_word_index": 44,
+      "reference_page": 0,
+      "candidate_page": 0,
+      "reference_bbox": [
+       248.9129180908203,
+       356.94171142578125,
+       275.2583923339844,
+       367.8507995605469
+      ],
+      "candidate_bbox": [
+       367.20806884765625,
+       357.1484680175781,
+       393.9490661621094,
+       368.1484680175781
+      ],
+      "reference_bbox_normalized": [
+       0.40672045439676524,
+       0.4506839790729561,
+       0.44976861492481107,
+       0.4644580802532158
+      ],
+      "candidate_bbox_normalized": [
+       0.6000131843915952,
+       0.45094503537572994,
+       0.6437076244478911,
+       0.46483392426461884
+      ],
+      "center_displacement": 0.1936161316446002,
+      "bbox_iou": 0.0,
+      "width_abs_log_ratio": 0.014901362946219986,
+      "height_abs_log_ratio": 0.008299057127875199
+     },
+     {
+      "token": "at",
+      "reference_word_index": 41,
+      "candidate_word_index": 45,
+      "reference_page": 0,
+      "candidate_page": 0,
+      "reference_bbox": [
+       286.9638671875,
+       356.94171142578125,
+       296.6075134277344,
+       367.8507995605469
+      ],
+      "candidate_bbox": [
+       397.6120910644531,
+       357.1484680175781,
+       407.3910827636719,
+       368.1484680175781
+      ],
+      "reference_bbox_normalized": [
+       0.46889520782271243,
+       0.4506839790729561,
+       0.4846527997185202,
+       0.4644580802532158
+      ],
+      "candidate_bbox_normalized": [
+       0.6496929592556424,
+       0.45094503537572994,
+       0.665671703862209,
+       0.46483392426461884
+      ],
+      "center_displacement": 0.18090860806955805,
+      "bbox_iou": 0.0,
+      "width_abs_log_ratio": 0.013937102696654777,
+      "height_abs_log_ratio": 0.008299057127875199
+     },
+     {
+      "token": "for",
+      "reference_word_index": 24,
+      "candidate_word_index": 24,
+      "reference_page": 0,
+      "candidate_page": 0,
+      "reference_bbox": [
+       452.4002685546875,
+       329.84368896484375,
+       465.36029052734375,
+       340.7527770996094
+      ],
+      "candidate_bbox": [
+       371.80279541015625,
+       342.4854736328125,
+       384.9808349609375,
+       353.4854736328125
+      ],
+      "reference_bbox_normalized": [
+       0.7392161250893586,
+       0.41646930424854006,
+       0.7603926315806271,
+       0.43024340542879974
+      ],
+      "candidate_bbox_normalized": [
+       0.6075209075329351,
+       0.43243115357678347,
+       0.6290536518969567,
+       0.44632004246567236
+      ],
+      "center_displacement": 0.13248910665249833,
+      "bbox_iou": 0.0,
+      "width_abs_log_ratio": 0.01668238741685136,
+      "height_abs_log_ratio": 0.008299057127875199
+     },
+     {
+      "token": "autocorrelations.",
+      "reference_word_index": 58,
+      "candidate_word_index": 64,
+      "reference_page": 0,
+      "candidate_page": 0,
+      "reference_bbox": [
+       135.5891571044922,
+       384.04071044921875,
+       214.87649536132812,
+       394.9497985839844
+      ],
+      "candidate_bbox": [
+       73.1637954711914,
+       386.4744873046875,
+       153.6617889404297,
+       397.4744873046875
+      ],
+      "reference_bbox_normalized": [
+       0.22155091030145782,
+       0.48489988693083175,
+       0.35110538457733353,
+       0.49867398811109137
+      ],
+      "candidate_bbox_normalized": [
+       0.11954868541044347,
+       0.4879728375059186,
+       0.2510813544778263,
+       0.5018617263948074
+      ],
+      "center_displacement": 0.10106161973083792,
+      "bbox_iou": 0.09589625154065956,
+      "width_abs_log_ratio": 0.015153811265883332,
+      "height_abs_log_ratio": 0.008299057127875199
+     },
+     {
+      "token": "the",
+      "reference_word_index": 50,
+      "candidate_word_index": 56,
+      "reference_page": 0,
+      "candidate_page": 0,
+      "reference_bbox": [
+       259.46197509765625,
+       370.49072265625,
+       274.5274353027344,
+       381.3998107910156
+      ],
+      "candidate_bbox": [
+       200.04391479492188,
+       371.8114929199219,
+       215.32290649414062,
+       382.8114929199219
+      ],
+      "reference_bbox_normalized": [
+       0.4239574756497651,
+       0.46779131648516414,
+       0.4485742406907424,
+       0.48156541766542377
+      ],
+      "candidate_bbox_normalized": [
+       0.3268691418217678,
+       0.46945895570697205,
+       0.35183481453290955,
+       0.48334784459586094
+      ],
+      "center_displacement": 0.09692923126897722,
+      "bbox_iou": 0.0,
+      "width_abs_log_ratio": 0.014074073210313143,
+      "height_abs_log_ratio": 0.008299057127879162
+     },
+     {
+      "token": "(distance",
+      "reference_word_index": 22,
+      "candidate_word_index": 22,
+      "reference_page": 0,
+      "candidate_page": 0,
+      "reference_bbox": [
+       369.5238342285156,
+       329.84368896484375,
+       412.35296630859375,
+       340.7527770996094
+      ],
+      "candidate_bbox": [
+       311.2477722167969,
+       342.4854736328125,
+       354.6977844238281,
+       353.4854736328125
+      ],
+      "reference_bbox_normalized": [
+       0.6037971147524765,
+       0.41646930424854006,
+       0.6737793567133885,
+       0.43024340542879974
+      ],
+      "candidate_bbox_normalized": [
+       0.5085747912039165,
+       0.43243115357678347,
+       0.5795715431761898,
+       0.44632004246567236
+      ],
+      "center_displacement": 0.09606019134492846,
+      "bbox_iou": 0.0,
+      "width_abs_log_ratio": 0.014392605532638,
+      "height_abs_log_ratio": 0.008299057127875199
+     },
+     {
+      "token": "is",
+      "reference_word_index": 49,
+      "candidate_word_index": 55,
+      "reference_page": 0,
+      "candidate_page": 0,
+      "reference_bbox": [
+       245.65106201171875,
+       370.49072265625,
+       252.93833923339844,
+       381.3998107910156
+      ],
+      "candidate_bbox": [
+       188.98892211914062,
+       371.8114929199219,
+       196.3809051513672,
+       382.8114929199219
+      ],
+      "reference_bbox_normalized": [
+       0.4013906242021548,
+       0.46779131648516414,
+       0.41329793992385366,
+       0.48156541766542377
+      ],
+      "candidate_bbox_normalized": [
+       0.3088054282992494,
+       0.46945895570697205,
+       0.3208838319466784,
+       0.48334784459586094
+      ],
+      "center_displacement": 0.09251573567854451,
+      "bbox_iou": 0.0,
+      "width_abs_log_ratio": 0.014266057627395592,
+      "height_abs_log_ratio": 0.008299057127879162
+     },
+     {
+      "token": "shown",
+      "reference_word_index": 48,
+      "candidate_word_index": 54,
+      "reference_page": 0,
+      "candidate_page": 0,
+      "reference_bbox": [
+       209.85830688476562,
+       370.49072265625,
+       239.13833618164062,
+       381.3998107910156
+      ],
+      "candidate_bbox": [
+       155.62591552734375,
+       371.8114929199219,
+       185.32591247558594,
+       382.8114929199219
+      ],
+      "reference_bbox_normalized": [
+       0.3429057302038654,
+       0.46779131648516414,
+       0.39074891532947814,
+       0.48156541766542377
+      ],
+      "candidate_bbox_normalized": [
+       0.25429071164598654,
+       0.46945895570697205,
+       0.30282011842416,
+       0.48334784459586094
+      ],
+      "center_displacement": 0.08828876164999452,
+      "bbox_iou": 0.0,
+      "width_abs_log_ratio": 0.014241253386917193,
+      "height_abs_log_ratio": 0.008299057127879162
+     },
+     {
+      "token": "mass",
+      "reference_word_index": 21,
+      "candidate_word_index": 21,
+      "reference_page": 0,
+      "candidate_page": 0,
+      "reference_bbox": [
+       336.7419738769531,
+       329.84368896484375,
+       359.7383728027344,
+       340.7527770996094
+      ],
+      "candidate_bbox": [
+       284.2537841796875,
+       342.4854736328125,
+       307.5848083496094,
+       353.4854736328125
+      ],
+      "reference_bbox_normalized": [
+       0.5502319834590738,
+       0.41646930424854006,
+       0.5878077986972784,
+       0.43024340542879974
+      ],
+      "candidate_bbox_normalized": [
+       0.46446696761386846,
+       0.43243115357678347,
+       0.5025895561268127,
+       0.44632004246567236
+      ],
+      "center_displacement": 0.08697950802776457,
+      "bbox_iou": 0.0,
+      "width_abs_log_ratio": 0.01444634911103144,
+      "height_abs_log_ratio": 0.008299057127875199
+     },
+     {
+      "token": "Also",
+      "reference_word_index": 47,
+      "candidate_word_index": 53,
+      "reference_page": 0,
+      "candidate_page": 0,
+      "reference_bbox": [
+       182.5092010498047,
+       370.49072265625,
+       203.3455810546875,
+       381.3998107910156
+      ],
+      "candidate_bbox": [
+       130.82090759277344,
+       371.8114929199219,
+       151.96290588378906,
+       382.8114929199219
+      ],
+      "reference_bbox_normalized": [
+       0.29821764877419066,
+       0.46779131648516414,
+       0.3322640213311887,
+       0.48156541766542377
+      ],
+      "candidate_bbox_normalized": [
+       0.21375965292936835,
+       0.46945895570697205,
+       0.24830540177089716,
+       0.48334784459586094
+      ],
+      "center_displacement": 0.08422597476575873,
+      "bbox_iou": 0.0,
+      "width_abs_log_ratio": 0.014561004896288912,
+      "height_abs_log_ratio": 0.008299057127879162
+     },
+     {
+      "token": "pion",
+      "reference_word_index": 20,
+      "candidate_word_index": 20,
+      "reference_page": 0,
+      "candidate_page": 0,
+      "reference_bbox": [
+       306.4801330566406,
+       329.84368896484375,
+       326.9565124511719,
+       340.7527770996094
+      ],
+      "candidate_bbox": [
+       259.8008117675781,
+       342.4854736328125,
+       280.5907897949219,
+       353.4854736328125
+      ],
+      "reference_bbox_normalized": [
+       0.5007845311383017,
+       0.41646930424854006,
+       0.5342426674038756,
+       0.43024340542879974
+      ],
+      "candidate_bbox_normalized": [
+       0.4245111303391799,
+       0.43243115357678347,
+       0.45848168267144096,
+       0.44632004246567236
+      ],
+      "center_displacement": 0.07768674113470984,
+      "bbox_iou": 0.0,
+      "width_abs_log_ratio": 0.015199047817368217,
+      "height_abs_log_ratio": 0.008299057127875199
+     },
+     {
+      "token": "effective",
+      "reference_word_index": 19,
+      "candidate_word_index": 19,
+      "reference_page": 0,
+      "candidate_page": 0,
+      "reference_bbox": [
+       258.4364929199219,
+       329.84368896484375,
+       296.70556640625,
+       340.7527770996094
+      ],
+      "candidate_bbox": [
+       217.351806640625,
+       342.4854736328125,
+       256.1378173828125,
+       353.4854736328125
+      ],
+      "reference_bbox_normalized": [
+       0.4222818511763429,
+       0.41646930424854006,
+       0.48481301700367646,
+       0.43024340542879974
+      ],
+      "candidate_bbox_normalized": [
+       0.3551500108506944,
+       0.43243115357678347,
+       0.41852584539675247,
+       0.44632004246567236
+      ],
+      "center_displacement": 0.06860593515438673,
+      "bbox_iou": 0.0,
+      "width_abs_log_ratio": 0.013417544510776886,
+      "height_abs_log_ratio": 0.008299057127875199
+     },
+     {
+      "token": "the",
+      "reference_word_index": 18,
+      "candidate_word_index": 18,
+      "reference_page": 0,
+      "candidate_page": 0,
+      "reference_bbox": [
+       233.5964813232422,
+       329.84368896484375,
+       248.6619415283203,
+       340.7527770996094
+      ],
+      "candidate_bbox": [
+       198.4097900390625,
+       342.4854736328125,
+       213.68881225585938,
+       353.4854736328125
+      ],
+      "reference_bbox_normalized": [
+       0.38169359693340227,
+       0.41646930424854006,
+       0.4063103619743796,
+       0.43024340542879974
+      ],
+      "candidate_bbox_normalized": [
+       0.32419900333180146,
+       0.43243115357678347,
+       0.34916472590826697,
+       0.44632004246567236
+      ],
+      "center_displacement": 0.059516482731327876,
+      "bbox_iou": 0.0,
+      "width_abs_log_ratio": 0.014076070563820858,
+      "height_abs_log_ratio": 0.008299057127875199
+     }
+    ]
+   },
+   "interpretation": "Token boxes are normalized by each page's own canvas; canvas mismatch remains a separate axis."
+  },
+  "text_ltsim": {
+   "status": "scored",
+   "applicable": true,
+   "metrics": {
+    "paired_page_count": 1,
+    "scored_page_count": 1,
+    "abstained_page_count": 0,
+    "text_ltsim_page_macro": 0.7846242050844365,
+    "text_ltsim_element_weighted": 0.7846242050844365,
+    "text_ltsim_worst_page": 0.7846242050844365
+   },
+   "evidence": {
+    "pages": [
+     {
+      "page": 0,
+      "status": "scored",
+      "reference_block_count": 6,
+      "candidate_block_count": 5,
+      "emd": 0.24255039546021775,
+      "text_ltsim": 0.7846242050844365,
+      "largest_cost_contributions": [
+       {
+        "reference_block_index": 2,
+        "candidate_block_index": 2,
+        "mass": 0.16666666666666666,
+        "cost": 0.3148824128377583,
+        "reference_bbox_normalized": [
+         0.11764705882352941,
+         0.24231710337629223,
+         0.3380909589381,
+         0.26043100068063446
+        ],
+        "candidate_bbox_normalized": [
+         0.11764705882352941,
+         0.2714672473946003,
+         0.35439998651641647,
+         0.28964905786995937
+        ]
+       },
+       {
+        "reference_block_index": 0,
+        "candidate_block_index": 0,
+        "mass": 0.16666666666666666,
+        "cost": 0.2961016697671506,
+        "reference_bbox_normalized": [
+         0.2579036039464614,
+         0.14285088548756608,
+         0.742213529698989,
+         0.1645875025277186
+        ],
+        "candidate_bbox_normalized": [
+         0.20351529588886336,
+         0.11606866663152521,
+         0.7964848038417841,
+         0.1378868469084152
+        ]
+       },
+       {
+        "reference_block_index": 1,
+        "candidate_block_index": 1,
+        "mass": 0.16666666666666666,
+        "cost": 0.2665791890143828,
+        "reference_bbox_normalized": [
+         0.3822908588484222,
+         0.1861886303834241,
+         0.617780997083078,
+         0.20128358012498027
+        ],
+        "candidate_bbox_normalized": [
+         0.37925490834354575,
+         0.16929048480409564,
+         0.6207450916564542,
+         0.1844419999556108
+        ]
+       },
+       {
+        "reference_block_index": 5,
+        "candidate_block_index": 2,
+        "mass": 0.033333333333333354,
+        "cost": 0.49578235427814976,
+        "reference_bbox_normalized": [
+         0.4955686182757608,
+         0.9360804702296401,
+         0.5044277914209303,
+         0.9498546099421954
+        ],
+        "candidate_bbox_normalized": [
+         0.11764705882352941,
+         0.2714672473946003,
+         0.35439998651641647,
+         0.28964905786995937
+        ]
+       },
+       {
+        "reference_block_index": 5,
+        "candidate_block_index": 1,
+        "mass": 0.033333333333333354,
+        "cost": 0.4949854134351106,
+        "reference_bbox_normalized": [
+         0.4955686182757608,
+         0.9360804702296401,
+         0.5044277914209303,
+         0.9498546099421954
+        ],
+        "candidate_bbox_normalized": [
+         0.37925490834354575,
+         0.16929048480409564,
+         0.6207450916564542,
+         0.1844419999556108
+        ]
+       },
+       {
+        "reference_block_index": 5,
+        "candidate_block_index": 0,
+        "mass": 0.033333333333333354,
+        "cost": 0.49339639539718916,
+        "reference_bbox_normalized": [
+         0.4955686182757608,
+         0.9360804702296401,
+         0.5044277914209303,
+         0.9498546099421954
+        ],
+        "candidate_bbox_normalized": [
+         0.20351529588886336,
+         0.11606866663152521,
+         0.7964848038417841,
+         0.1378868469084152
+        ]
+       },
+       {
+        "reference_block_index": 5,
+        "candidate_block_index": 4,
+        "mass": 0.03333333333333324,
+        "cost": 0.4813111505374379,
+        "reference_bbox_normalized": [
+         0.4955686182757608,
+         0.9360804702296401,
+         0.5044277914209303,
+         0.9498546099421954
+        ],
+        "candidate_bbox_normalized": [
+         0.11764705882352941,
+         0.5141255927808357,
+         0.8342468161988102,
+         0.5465284020009668
+        ]
+       },
+       {
+        "reference_block_index": 5,
+        "candidate_block_index": 3,
+        "mass": 0.033333333333333354,
+        "cost": 0.4663762127587119,
+        "reference_bbox_normalized": [
+         0.4955686182757608,
+         0.9360804702296401,
+         0.5044277914209303,
+         0.9498546099421954
+        ],
+        "candidate_bbox_normalized": [
+         0.11954868541044347,
+         0.43243115357678347,
+         0.8804512771905637,
+         0.5018617263948074
+        ]
+       },
+       {
+        "reference_block_index": 3,
+        "candidate_block_index": 3,
+        "mass": 0.16666666666666666,
+        "cost": 0.056993285691147144,
+        "reference_bbox_normalized": [
+         0.11764705882352941,
+         0.41646930424854006,
+         0.8821753208933313,
+         0.49867398811109137
+        ],
+        "candidate_bbox_normalized": [
+         0.11954868541044347,
+         0.43243115357678347,
+         0.8804512771905637,
+         0.5018617263948074
+        ]
+       },
+       {
+        "reference_block_index": 4,
+        "candidate_block_index": 4,
+        "mass": 0.16666666666666666,
+        "cost": 0.034375510169547874,
+        "reference_bbox_normalized": [
+         0.11764705882352941,
+         0.5135804378625118,
+         0.8821656470205269,
+         0.5444618764549795
+        ],
+        "candidate_bbox_normalized": [
+         0.11764705882352941,
+         0.5141255927808357,
+         0.8342468161988102,
+         0.5465284020009668
+        ]
+       }
+      ]
+     }
+    ],
+    "equations": "uniform mass; delta_bbox=(1+GIoU)/2; delta_label=1 for text; mu=1-(delta_bbox+delta_label)/2; Text-LTSim=exp(-EMD), sigma=1"
+   },
+   "interpretation": "Faithful published LTSim equations on extracted text blocks only. It measures text-layout geometry/segmentation, not full semantic layout; non-text classes abstain."
+  },
+  "block_transport": {
+   "status": "scored",
+   "applicable": true,
+   "metrics": {
+    "reference_block_count": 6,
+    "candidate_block_count": 5,
+    "transported_mass": 1.0,
+    "combined_transport_cost": 0.21080373035597283,
+    "combined_transport_similarity_exp": 0.8099330165471125,
+    "transported_geometry_cost": 0.20647615124743499,
+    "geometry_transport_similarity_exp": 0.8134456608899256,
+    "transported_content_cost": 0.21884066298611468,
+    "content_transport_similarity_exp": 0.803449727235408,
+    "nonzero_flow_count": 10
+   },
+   "evidence": {
+    "largest_cost_contributions": [
+     {
+      "reference_block_index": 3,
+      "candidate_block_index": 3,
+      "mass": 0.5819327731092437,
+      "combined_cost": 0.17493872902560992,
+      "geometry_cost": 0.11398657138229429,
+      "content_cost": 0.288135593220339,
+      "reference_page": 0,
+      "candidate_page": 0,
+      "reference_bbox_stacked_normalized": [
+       0.11764705882352941,
+       0.41646930424854006,
+       0.8821753208933313,
+       0.49867398811109137
+      ],
+      "candidate_bbox_stacked_normalized": [
+       0.11954868541044347,
+       0.43243115357678347,
+       0.8804512771905637,
+       0.5018617263948074
+      ],
+      "reference_text": "Figure 1: Time history of the effective pion mass (distance $8$) for $\\beta=5.30$ and $\\kappa=0.1677$ on a $16^3\\times 32$ lattice. Symbols are: ($\\times$) HMC at $\\delta\\tau=0.006",
+      "candidate_text": "Figure 1: Time history of the effective pion mass (distance 8) for \ud835\udefd= 5.30 and \ud835\udf05= 0.1677 on a 163 \u00d7 32 lattice. Symbols are: (\u00d7) HMC at \ud835\udeff\ud835\udf0f= 0.0069, (+) HMD at \ud835\udeff\ud835\udf0f= 0.0069, (\u25cb) HMD a"
+     },
+     {
+      "reference_block_index": 0,
+      "candidate_block_index": 0,
+      "mass": 0.06859205776173286,
+      "combined_cost": 0.38493217069729574,
+      "geometry_cost": 0.5922033395343012,
+      "content_cost": 0.0,
+      "reference_page": 0,
+      "candidate_page": 0,
+      "reference_bbox_stacked_normalized": [
+       0.2579036039464614,
+       0.14285088548756608,
+       0.742213529698989,
+       0.1645875025277186
+      ],
+      "candidate_bbox_stacked_normalized": [
+       0.20351529588886336,
+       0.11606866663152521,
+       0.7964848038417841,
+       0.1378868469084152
+      ],
+      "reference_text": "On the Dynamics of Light Wilson Quarks",
+      "candidate_text": "On the Dynamics of Light Wilson Quarks"
+     },
+     {
+      "reference_block_index": 3,
+      "candidate_block_index": 4,
+      "mass": 0.03490276977216874,
+      "combined_cost": 0.6554106696866135,
+      "geometry_cost": 0.5672115474535471,
+      "content_cost": 0.8192090395480226,
+      "reference_page": 0,
+      "candidate_page": 0,
+      "reference_bbox_stacked_normalized": [
+       0.11764705882352941,
+       0.41646930424854006,
+       0.8821753208933313,
+       0.49867398811109137
+      ],
+      "candidate_bbox_stacked_normalized": [
+       0.11764705882352941,
+       0.5141255927808357,
+       0.8342468161988102,
+       0.5465284020009668
+      ],
+      "reference_text": "Figure 1: Time history of the effective pion mass (distance $8$) for $\\beta=5.30$ and $\\kappa=0.1677$ on a $16^3\\times 32$ lattice. Symbols are: ($\\times$) HMC at $\\delta\\tau=0.006",
+      "candidate_text": "Figures 1 through 1 preserve source-backed captions while replacing external graphics with deterministic placeholders."
+     },
+     {
+      "reference_block_index": 1,
+      "candidate_block_index": 1,
+      "mass": 0.04693140794223827,
+      "combined_cost": 0.34655294571869766,
+      "geometry_cost": 0.5331583780287656,
+      "content_cost": 0.0,
+      "reference_page": 0,
+      "candidate_page": 0,
+      "reference_bbox_stacked_normalized": [
+       0.3822908588484222,
+       0.1861886303834241,
+       0.617780997083078,
+       0.20128358012498027
+      ],
+      "candidate_bbox_stacked_normalized": [
+       0.37925490834354575,
+       0.16929048480409564,
+       0.6207450916564542,
+       0.1844419999556108
+      ],
+      "reference_text": "Source-backed arXiv sample",
+      "candidate_text": "Source-backed arXiv sample"
+     },
+     {
+      "reference_block_index": 2,
+      "candidate_block_index": 2,
+      "mass": 0.030685920577617327,
+      "combined_cost": 0.40934713668908573,
+      "geometry_cost": 0.6297648256755165,
+      "content_cost": 0.0,
+      "reference_page": 0,
+      "candidate_page": 0,
+      "reference_bbox_stacked_normalized": [
+       0.11764705882352941,
+       0.24231710337629223,
+       0.3380909589381,
+       0.26043100068063446
+      ],
+      "candidate_bbox_stacked_normalized": [
+       0.11764705882352941,
+       0.2714672473946003,
+       0.35439998651641647,
+       0.28964905786995937
+      ],
+      "reference_text": "1 Figure Captions",
+      "candidate_text": "1 Figure Captions"
+     },
+     {
+      "reference_block_index": 3,
+      "candidate_block_index": 0,
+      "mass": 0.011239875011376382,
+      "combined_cost": 0.8891027958030184,
+      "geometry_cost": 0.8704580170111627,
+      "content_cost": 0.923728813559322,
+      "reference_page": 0,
+      "candidate_page": 0,
+      "reference_bbox_stacked_normalized": [
+       0.11764705882352941,
+       0.41646930424854006,
+       0.8821753208933313,
+       0.49867398811109137
+      ],
+      "candidate_bbox_stacked_normalized": [
+       0.20351529588886336,
+       0.11606866663152521,
+       0.7964848038417841,
+       0.1378868469084152
+      ],
+      "reference_text": "Figure 1: Time history of the effective pion mass (distance $8$) for $\\beta=5.30$ and $\\kappa=0.1677$ on a $16^3\\times 32$ lattice. Symbols are: ($\\times$) HMC at $\\delta\\tau=0.006",
+      "candidate_text": "On the Dynamics of Light Wilson Quarks"
+     },
+     {
+      "reference_block_index": 4,
+      "candidate_block_index": 4,
+      "mass": 0.21299638989169675,
+      "combined_cost": 0.04468816322041224,
+      "geometry_cost": 0.06875102033909575,
+      "content_cost": 0.0,
+      "reference_page": 0,
+      "candidate_page": 0,
+      "reference_bbox_stacked_normalized": [
+       0.11764705882352941,
+       0.5135804378625118,
+       0.8821656470205269,
+       0.5444618764549795
+      ],
+      "candidate_bbox_stacked_normalized": [
+       0.11764705882352941,
+       0.5141255927808357,
+       0.8342468161988102,
+       0.5465284020009668
+      ],
+      "reference_text": "Figures 1 through 1 preserve source-backed captions while replacing external graphics with deterministic placeholders.",
+      "candidate_text": "Figures 1 through 1 preserve source-backed captions while replacing external graphics with deterministic placeholders."
+     },
+     {
+      "reference_block_index": 3,
+      "candidate_block_index": 1,
+      "mass": 0.005885386645632984,
+      "combined_cost": 0.8953818115592462,
+      "geometry_cost": 0.8679494189133992,
+      "content_cost": 0.9463276836158192,
+      "reference_page": 0,
+      "candidate_page": 0,
+      "reference_bbox_stacked_normalized": [
+       0.11764705882352941,
+       0.41646930424854006,
+       0.8821753208933313,
+       0.49867398811109137
+      ],
+      "candidate_bbox_stacked_normalized": [
+       0.37925490834354575,
+       0.16929048480409564,
+       0.6207450916564542,
+       0.1844419999556108
+      ],
+      "reference_text": "Figure 1: Time history of the effective pion mass (distance $8$) for $\\beta=5.30$ and $\\kappa=0.1677$ on a $16^3\\times 32$ lattice. Symbols are: ($\\times$) HMC at $\\delta\\tau=0.006",
+      "candidate_text": "Source-backed arXiv sample"
+     },
+     {
+      "reference_block_index": 3,
+      "candidate_block_index": 2,
+      "mass": 0.005028365136668385,
+      "combined_cost": 0.859528848725948,
+      "geometry_cost": 0.8067067033854222,
+      "content_cost": 0.9576271186440678,
+      "reference_page": 0,
+      "candidate_page": 0,
+      "reference_bbox_stacked_normalized": [
+       0.11764705882352941,
+       0.41646930424854006,
+       0.8821753208933313,
+       0.49867398811109137
+      ],
+      "candidate_bbox_stacked_normalized": [
+       0.11764705882352941,
+       0.2714672473946003,
+       0.35439998651641647,
+       0.28964905786995937
+      ],
+      "reference_text": "Figure 1: Time history of the effective pion mass (distance $8$) for $\\beta=5.30$ and $\\kappa=0.1677$ on a $16^3\\times 32$ lattice. Symbols are: ($\\times$) HMC at $\\delta\\tau=0.006",
+      "candidate_text": "1 Figure Captions"
+     },
+     {
+      "reference_block_index": 5,
+      "candidate_block_index": 1,
+      "mass": 0.0018050541516245488,
+      "combined_cost": 0.9934810374656438,
+      "geometry_cost": 0.9899708268702212,
+      "content_cost": 1.0,
+      "reference_page": 0,
+      "candidate_page": 0,
+      "reference_bbox_stacked_normalized": [
+       0.4955686182757608,
+       0.9360804702296401,
+       0.5044277914209303,
+       0.9498546099421954
+      ],
+      "candidate_bbox_stacked_normalized": [
+       0.37925490834354575,
+       0.16929048480409564,
+       0.6207450916564542,
+       0.1844419999556108
+      ],
+      "reference_text": "1",
+      "candidate_text": "Source-backed arXiv sample"
+     }
+    ],
+    "mass_policy": "block normalized-character count; minimum mass unit 1",
+    "cost_policy": "0.65 * (1 - rescaled GIoU) + 0.35 * normalized Levenshtein distance",
+    "page_geometry": "page boxes stacked vertically and normalized by max page count"
+   },
+   "interpretation": "Exact optimal transport over extracted text blocks. This is an LTSim-inspired, fully specified adaptation\u2014not the published LTSim implementation or a semantic table/formula metric. Report geometry and content costs separately with the flows."
+  },
+  "layout_relations": {
+   "status": "scored",
+   "applicable": true,
+   "metrics": {
+    "matched_block_count": 5,
+    "reference_block_coverage": 0.8333333333333334,
+    "candidate_block_coverage": 1.0,
+    "matched_block_iou_q10": 0.0,
+    "matched_block_iou_q50": 0.0,
+    "matched_block_center_displacement_q90": 0.028877767033812417,
+    "pairwise_relation_count": 10,
+    "pairwise_relation_agreement": 1.0
+   },
+   "evidence": {
+    "relation_mismatches": [],
+    "worst_block_pairs": [
+     {
+      "reference_block_index": 2,
+      "candidate_block_index": 2,
+      "reference_page": 0,
+      "candidate_page": 0,
+      "reference_bbox_normalized": [
+       0.11764705882352941,
+       0.24231710337629223,
+       0.3380909589381,
+       0.26043100068063446
+      ],
+      "candidate_bbox_normalized": [
+       0.11764705882352941,
+       0.2714672473946003,
+       0.35439998651641647,
+       0.28964905786995937
+      ],
+      "center_displacement": 0.030301944214707645,
+      "bbox_iou": 0.0,
+      "reference_text": "1 Figure Captions"
+     },
+     {
+      "reference_block_index": 0,
+      "candidate_block_index": 0,
+      "reference_page": 0,
+      "candidate_page": 0,
+      "reference_bbox_normalized": [
+       0.2579036039464614,
+       0.14285088548756608,
+       0.742213529698989,
+       0.1645875025277186
+      ],
+      "candidate_bbox_normalized": [
+       0.20351529588886336,
+       0.11606866663152521,
+       0.7964848038417841,
+       0.1378868469084152
+      ],
+      "center_displacement": 0.02674150126246957,
+      "bbox_iou": 0.0,
+      "reference_text": "On the Dynamics of Light Wilson Quarks"
+     },
+     {
+      "reference_block_index": 4,
+      "candidate_block_index": 4,
+      "reference_page": 0,
+      "candidate_page": 0,
+      "reference_bbox_normalized": [
+       0.11764705882352941,
+       0.5135804378625118,
+       0.8821656470205269,
+       0.5444618764549795
+      ],
+      "candidate_bbox_normalized": [
+       0.11764705882352941,
+       0.5141255927808357,
+       0.8342468161988102,
+       0.5465284020009668
+      ],
+      "center_displacement": 0.02399497458931749,
+      "bbox_iou": 0.8664292065597919,
+      "reference_text": "Figures 1 through 1 preserve source-backed captions while replacing external graphics with deterministic placeholders."
+     },
+     {
+      "reference_block_index": 1,
+      "candidate_block_index": 1,
+      "reference_page": 0,
+      "candidate_page": 0,
+      "reference_bbox_normalized": [
+       0.3822908588484222,
+       0.1861886303834241,
+       0.617780997083078,
+       0.20128358012498027
+      ],
+      "candidate_bbox_normalized": [
+       0.37925490834354575,
+       0.16929048480409564,
+       0.6207450916564542,
+       0.1844419999556108
+      ],
+      "center_displacement": 0.01686990113243289,
+      "bbox_iou": 0.0,
+      "reference_text": "Source-backed arXiv sample"
+     },
+     {
+      "reference_block_index": 3,
+      "candidate_block_index": 3,
+      "reference_page": 0,
+      "candidate_page": 0,
+      "reference_bbox_normalized": [
+       0.11764705882352941,
+       0.41646930424854006,
+       0.8821753208933313,
+       0.49867398811109137
+      ],
+      "candidate_bbox_normalized": [
+       0.11954868541044347,
+       0.43243115357678347,
+       0.8804512771905637,
+       0.5018617263948074
+      ],
+      "center_displacement": 0.009575205498954716,
+      "bbox_iou": 0.7722038918089288,
+      "reference_text": "Figure 1: Time history of the effective pion mass (distance $8$) for $\\beta=5.30$ and $\\kappa=0.1677$ on a $16^3\\times 32$ lattice. Symbols are: ($\\times$) HMC "
+     }
+    ]
+   },
+   "interpretation": "Transparent matched-block relation trial inspired by pairwise-layout work; this is not the published PaIRS or LTSim metric."
+  },
+  "reading_order": {
+   "status": "scored",
+   "applicable": true,
+   "metrics": {
+    "matched_block_count": 5,
+    "reference_block_coverage": 0.8333333333333334,
+    "candidate_block_coverage": 1.0,
+    "inversion_count": 0,
+    "kendall_tau": 1.0
+   },
+   "evidence": {
+    "inverted_block_pairs": []
+   },
+   "interpretation": "Kendall tau is computed only on content-matched blocks; coverage must accompany it."
+  },
+  "pagination": {
+   "status": "scored",
+   "applicable": true,
+   "metrics": {
+    "reference_page_count": 1,
+    "candidate_page_count": 1,
+    "page_count_delta": 0,
+    "matched_block_count": 5,
+    "matched_block_page_assignment_accuracy": 1.0,
+    "page_break_precision": 1.0,
+    "page_break_recall": 1.0,
+    "page_break_f1": 1.0,
+    "page_break_true_positive": 0,
+    "page_break_false_positive": 0,
+    "page_break_false_negative": 0
+   },
+   "evidence": {
+    "mismatched_page_breaks": []
+   },
+   "interpretation": "Page count, matched-block page assignment, and page-break boundaries are reported independently."
+  },
+  "typography": {
+   "status": "scored",
+   "applicable": true,
+   "metrics": {
+    "styled_matched_token_count": 58,
+    "reference_styled_token_count": 74,
+    "candidate_styled_token_count": 79,
+    "reference_style_coverage": 0.7837837837837838,
+    "candidate_style_coverage": 0.7341772151898734,
+    "style_coverage_hmean": 0.7581699346405228,
+    "font_size_abs_log_ratio_q50": 0.008298008086413849,
+    "font_size_abs_log_ratio_q90": 0.008298008086413849,
+    "font_size_abs_log_ratio_max": 0.008298008086413849,
+    "font_name_exact_agreement_rate": 0.0,
+    "color_exact_agreement_rate": 1.0,
+    "bold_agreement_rate": 0.8793103448275862,
+    "italic_agreement_rate": 1.0,
+    "serif_agreement_rate": 1.0,
+    "monospace_agreement_rate": 1.0,
+    "baseline_displacement_q90": 0.026700655619303376
+   },
+   "evidence": {
+    "style_mismatches": [
+     {
+      "token": "(distance",
+      "reference_page": 0,
+      "candidate_page": 0,
+      "reference_bbox": [
+       369.5238342285156,
+       329.84368896484375,
+       412.35296630859375,
+       340.7527770996094
+      ],
+      "candidate_bbox": [
+       311.2477722167969,
+       342.4854736328125,
+       354.6977844238281,
+       353.4854736328125
+      ],
+      "reference_font": "SFRM1095",
+      "candidate_font": "NewCM10-Regular",
+      "reference_size": 10.909099578857422,
+      "candidate_size": 11.0,
+      "font_size_abs_log_ratio": 0.008298008086413849,
+      "reference_style_bits": {
+       "italic": false,
+       "serif": true,
+       "monospace": false,
+       "bold": false
+      },
+      "candidate_style_bits": {
+       "italic": false,
+       "serif": true,
+       "monospace": false,
+       "bold": false
+      },
+      "reference_color": 0,
+      "candidate_color": 0
+     },
+     {
+      "token": "1",
+      "reference_page": 0,
+      "candidate_page": 0,
+      "reference_bbox": [
+       129.11422729492188,
+       406.7557067871094,
+       134.5360565185547,
+       417.664794921875
+      ],
+      "candidate_bbox": [
+       111.05000305175781,
+       407.1874694824219,
+       116.55000305175781,
+       418.1874694824219
+      ],
+      "reference_font": "SFRM1095",
+      "candidate_font": "NewCM10-Regular",
+      "reference_size": 10.909099578857422,
+      "candidate_size": 11.0,
+      "font_size_abs_log_ratio": 0.008298008086413849,
+      "reference_style_bits": {
+       "italic": false,
+       "serif": true,
+       "monospace": false,
+       "bold": false
+      },
+      "candidate_style_bits": {
+       "italic": false,
+       "serif": true,
+       "monospace": false,
+       "bold": false
+      },
+      "reference_color": 0,
+      "candidate_color": 0
+     },
+     {
+      "token": "1",
+      "reference_page": 0,
+      "candidate_page": 0,
+      "reference_bbox": [
+       182.5360870361328,
+       406.7557067871094,
+       187.95791625976562,
+       417.664794921875
+      ],
+      "candidate_bbox": [
+       161.81500244140625,
+       407.1874694824219,
+       167.31500244140625,
+       418.1874694824219
+      ],
+      "reference_font": "SFRM1095",
+      "candidate_font": "NewCM10-Regular",
+      "reference_size": 10.909099578857422,
+      "candidate_size": 11.0,
+      "font_size_abs_log_ratio": 0.008298008086413849,
+      "reference_style_bits": {
+       "italic": false,
+       "serif": true,
+       "monospace": false,
+       "bold": false
+      },
+      "candidate_style_bits": {
+       "italic": false,
+       "serif": true,
+       "monospace": false,
+       "bold": false
+      },
+      "reference_color": 0,
+      "candidate_color": 0
+     },
+     {
+      "token": "1:",
+      "reference_page": 0,
+      "candidate_page": 0,
+      "reference_bbox": [
+       112.3527603149414,
+       329.84368896484375,
+       120.78549194335938,
+       340.7527770996094
+      ],
+      "candidate_bbox": [
+       107.87979888916016,
+       342.4854736328125,
+       116.43779754638672,
+       353.4854736328125
+      ],
+      "reference_font": "SFRM1095",
+      "candidate_font": "NewCM10-Regular",
+      "reference_size": 10.909099578857422,
+      "candidate_size": 11.0,
+      "font_size_abs_log_ratio": 0.008298008086413849,
+      "reference_style_bits": {
+       "italic": false,
+       "serif": true,
+       "monospace": false,
+       "bold": false
+      },
+      "candidate_style_bits": {
+       "italic": false,
+       "serif": true,
+       "monospace": false,
+       "bold": false
+      },
+      "reference_color": 0,
+      "candidate_color": 0
+     },
+     {
+      "token": "Also",
+      "reference_page": 0,
+      "candidate_page": 0,
+      "reference_bbox": [
+       182.5092010498047,
+       370.49072265625,
+       203.3455810546875,
+       381.3998107910156
+      ],
+      "candidate_bbox": [
+       130.82090759277344,
+       371.8114929199219,
+       151.96290588378906,
+       382.8114929199219
+      ],
+      "reference_font": "SFRM1095",
+      "candidate_font": "NewCM10-Regular",
+      "reference_size": 10.909099578857422,
+      "candidate_size": 11.0,
+      "font_size_abs_log_ratio": 0.008298008086413849,
+      "reference_style_bits": {
+       "italic": false,
+       "serif": true,
+       "monospace": false,
+       "bold": false
+      },
+      "candidate_style_bits": {
+       "italic": false,
+       "serif": true,
+       "monospace": false,
+       "bold": false
+      },
+      "reference_color": 0,
+      "candidate_color": 0
+     },
+     {
+      "token": "Figure",
+      "reference_page": 0,
+      "candidate_page": 0,
+      "reference_bbox": [
+       72.0,
+       329.84368896484375,
+       102.57820892333984,
+       340.7527770996094
+      ],
+      "candidate_bbox": [
+       73.1637954711914,
+       342.4854736328125,
+       104.216796875,
+       353.4854736328125
+      ],
+      "reference_font": "SFRM1095",
+      "candidate_font": "NewCM10-Regular",
+      "reference_size": 10.909099578857422,
+      "candidate_size": 11.0,
+      "font_size_abs_log_ratio": 0.008298008086413849,
+      "reference_style_bits": {
+       "italic": false,
+       "serif": true,
+       "monospace": false,
+       "bold": false
+      },
+      "candidate_style_bits": {
+       "italic": false,
+       "serif": true,
+       "monospace": false,
+       "bold": false
+      },
+      "reference_color": 0,
+      "candidate_color": 0
+     },
+     {
+      "token": "Figures",
+      "reference_page": 0,
+      "candidate_page": 0,
+      "reference_bbox": [
+       88.93600463867188,
+       406.7557067871094,
+       123.79058074951172,
+       417.664794921875
+      ],
+      "candidate_bbox": [
+       72.0,
+       407.1874694824219,
+       107.38700103759766,
+       418.1874694824219
+      ],
+      "reference_font": "SFRM1095",
+      "candidate_font": "NewCM10-Regular",
+      "reference_size": 10.909099578857422,
+      "candidate_size": 11.0,
+      "font_size_abs_log_ratio": 0.008298008086413849,
+      "reference_style_bits": {
+       "italic": false,
+       "serif": true,
+       "monospace": false,
+       "bold": false
+      },
+      "candidate_style_bits": {
+       "italic": false,
+       "serif": true,
+       "monospace": false,
+       "bold": false
+      },
+      "reference_color": 0,
+      "candidate_color": 0
+     },
+     {
+      "token": "HMC",
+      "reference_page": 0,
+      "candidate_page": 0,
+      "reference_bbox": [
+       513.9714965820312,
+       343.3927001953125,
+       539.8696899414062,
+       354.3017883300781
+      ],
+      "candidate_bbox": [
+       239.8879852294922,
+       357.1484680175781,
+       266.1669616699219,
+       368.1484680175781
+      ],
+      "reference_font": "SFRM1095",
+      "candidate_font": "NewCM10-Regular",
+      "reference_size": 10.909099578857422,
+      "candidate_size": 11.0,
+      "font_size_abs_log_ratio": 0.008298008086413849,
+      "reference_style_bits": {
+       "italic": false,
+       "serif": true,
+       "monospace": false,
+       "bold": false
+      },
+      "candidate_style_bits": {
+       "italic": false,
+       "serif": true,
+       "monospace": false,
+       "bold": false
+      },
+      "reference_color": 0,
+      "candidate_color": 0
+     },
+     {
+      "token": "HMC",
+      "reference_page": 0,
+      "candidate_page": 0,
+      "reference_bbox": [
+       434.0401916503906,
+       370.49072265625,
+       459.93841552734375,
+       381.3998107910156
+      ],
+      "candidate_bbox": [
+       307.33544921875,
+       371.8114929199219,
+       333.61444091796875,
+       382.8114929199219
+      ],
+      "reference_font": "SFRM1095",
+      "candidate_font": "NewCM10-Regular",
+      "reference_size": 10.909099578857422,
+      "candidate_size": 11.0,
+      "font_size_abs_log_ratio": 0.008298008086413849,
+      "reference_style_bits": {
+       "italic": false,
+       "serif": true,
+       "monospace": false,
+       "bold": false
+      },
+      "candidate_style_bits": {
+       "italic": false,
+       "serif": true,
+       "monospace": false,
+       "bold": false
+      },
+      "reference_color": 0,
+      "candidate_color": 0
+     },
+     {
+      "token": "HMD",
+      "reference_page": 0,
+      "candidate_page": 0,
+      "reference_bbox": [
+       248.9129180908203,
+       356.94171142578125,
+       275.2583923339844,
+       367.8507995605469
+      ],
+      "candidate_bbox": [
+       367.20806884765625,
+       357.1484680175781,
+       393.9490661621094,
+       368.1484680175781
+      ],
+      "reference_font": "SFRM1095",
+      "candidate_font": "NewCM10-Regular",
+      "reference_size": 10.909099578857422,
+      "candidate_size": 11.0,
+      "font_size_abs_log_ratio": 0.008298008086413849,
+      "reference_style_bits": {
+       "italic": false,
+       "serif": true,
+       "monospace": false,
+       "bold": false
+      },
+      "candidate_style_bits": {
+       "italic": false,
+       "serif": true,
+       "monospace": false,
+       "bold": false
+      },
+      "reference_color": 0,
+      "candidate_color": 0
+     },
+     {
+      "token": "HMD",
+      "reference_page": 0,
+      "candidate_page": 0,
+      "reference_bbox": [
+       492.1967468261719,
+       356.94171142578125,
+       518.542236328125,
+       367.8507995605469
+      ],
+      "candidate_bbox": [
+       498.6531982421875,
+       357.1484680175781,
+       525.3942260742188,
+       368.1484680175781
+      ],
+      "reference_font": "SFRM1095",
+      "candidate_font": "NewCM10-Regular",
+      "reference_size": 10.909099578857422,
+      "candidate_size": 11.0,
+      "font_size_abs_log_ratio": 0.008298008086413849,
+      "reference_style_bits": {
+       "italic": false,
+       "serif": true,
+       "monospace": false,
+       "bold": false
+      },
+      "candidate_style_bits": {
+       "italic": false,
+       "serif": true,
+       "monospace": false,
+       "bold": false
+      },
+      "reference_color": 0,
+      "candidate_color": 0
+     },
+     {
+      "token": "Symbols",
+      "reference_page": 0,
+      "candidate_page": 0,
+      "reference_bbox": [
+       372.92767333984375,
+       343.3927001953125,
+       412.4404296875,
+       354.3017883300781
+      ],
+      "candidate_bbox": [
+       153.93399047851562,
+       357.1484680175781,
+       194.0289764404297,
+       368.1484680175781
+      ],
+      "reference_font": "SFRM1095",
+      "candidate_font": "NewCM10-Regular",
+      "reference_size": 10.909099578857422,
+      "candidate_size": 11.0,
+      "font_size_abs_log_ratio": 0.008298008086413849,
+      "reference_style_bits": {
+       "italic": false,
+       "serif": true,
+       "monospace": false,
+       "bold": false
+      },
+      "candidate_style_bits": {
+       "italic": false,
+       "serif": true,
+       "monospace": false,
+       "bold": false
+      },
+      "reference_color": 0,
+      "candidate_color": 0
+     },
+     {
+      "token": "Time",
+      "reference_page": 0,
+      "candidate_page": 0,
+      "reference_bbox": [
+       137.92369079589844,
+       329.84368896484375,
+       162.62188720703125,
+       340.7527770996094
+      ],
+      "candidate_bbox": [
+       120.10079956054688,
+       342.4854736328125,
+       145.14779663085938,
+       353.4854736328125
+      ],
+      "reference_font": "SFRM1095",
+      "candidate_font": "NewCM10-Regular",
+      "reference_size": 10.909099578857422,
+      "candidate_size": 11.0,
+      "font_size_abs_log_ratio": 0.008298008086413849,
+      "reference_style_bits": {
+       "italic": false,
+       "serif": true,
+       "monospace": false,
+       "bold": false
+      },
+      "candidate_style_bits": {
+       "italic": false,
+       "serif": true,
+       "monospace": false,
+       "bold": false
+      },
+      "reference_color": 0,
+      "candidate_color": 0
+     },
+     {
+      "token": "a",
+      "reference_page": 0,
+      "candidate_page": 0,
+      "reference_bbox": [
+       211.03652954101562,
+       343.3927001953125,
+       216.45835876464844,
+       354.3017883300781
+      ],
+      "candidate_bbox": [
+       525.342041015625,
+       342.4854736328125,
+       530.842041015625,
+       353.4854736328125
+      ],
+      "reference_font": "SFRM1095",
+      "candidate_font": "NewCM10-Regular",
+      "reference_size": 10.909099578857422,
+      "candidate_size": 11.0,
+      "font_size_abs_log_ratio": 0.008298008086413849,
+      "reference_style_bits": {
+       "italic": false,
+       "serif": true,
+       "monospace": false,
+       "bold": false
+      },
+      "candidate_style_bits": {
+       "italic": false,
+       "serif": true,
+       "monospace": false,
+       "bold": false
+      },
+      "reference_color": 0,
+      "candidate_color": 0
+     },
+     {
+      "token": "acceptance",
+      "reference_page": 0,
+      "candidate_page": 0,
+      "reference_bbox": [
+       466.4511413574219,
+       370.49072265625,
+       517.6693115234375,
+       381.3998107910156
+      ],
+      "candidate_bbox": [
+       337.2774658203125,
+       371.8114929199219,
+       389.2084655761719,
+       382.8114929199219
+      ],
+      "reference_font": "SFRM1095",
+      "candidate_font": "NewCM10-Regular",
+      "reference_size": 10.909099578857422,
+      "candidate_size": 11.0,
+      "font_size_abs_log_ratio": 0.008298008086413849,
+      "reference_style_bits": {
+       "italic": false,
+       "serif": true,
+       "monospace": false,
+       "bold": false
+      },
+      "candidate_style_bits": {
+       "italic": false,
+       "serif": true,
+       "monospace": false,
+       "bold": false
+      },
+      "reference_color": 0,
+      "candidate_color": 0
+     },
+     {
+      "token": "and",
+      "reference_page": 0,
+      "candidate_page": 0,
+      "reference_bbox": [
+       72.0,
+       343.3927001953125,
+       89.46546173095703,
+       354.3017883300781
+      ],
+      "candidate_bbox": [
+       433.1559143066406,
+       342.4854736328125,
+       450.8879089355469,
+       353.4854736328125
+      ],
+      "reference_font": "SFRM1095",
+      "candidate_font": "NewCM10-Regular",
+      "reference_size": 10.909099578857422,
+      "candidate_size": 11.0,
+      "font_size_abs_log_ratio": 0.008298008086413849,
+      "reference_style_bits": {
+       "italic": false,
+       "serif": true,
+       "monospace": false,
+       "bold": false
+      },
+      "candidate_style_bits": {
+       "italic": false,
+       "serif": true,
+       "monospace": false,
+       "bold": false
+      },
+      "reference_color": 0,
+      "candidate_color": 0
+     },
+     {
+      "token": "are:",
+      "reference_page": 0,
+      "candidate_page": 0,
+      "reference_bbox": [
+       421.53863525390625,
+       343.3927001953125,
+       439.0150146484375,
+       354.3017883300781
+      ],
+      "candidate_bbox": [
+       197.69198608398438,
+       357.1484680175781,
+       215.44598388671875,
+       368.1484680175781
+      ],
+      "reference_font": "SFRM1095",
+      "candidate_font": "NewCM10-Regular",
+      "reference_size": 10.909099578857422,
+      "candidate_size": 11.0,
+      "font_size_abs_log_ratio": 0.008298008086413849,
+      "reference_style_bits": {
+       "italic": false,
+       "serif": true,
+       "monospace": false,
+       "bold": false
+      },
+      "candidate_style_bits": {
+       "italic": false,
+       "serif": true,
+       "monospace": false,
+       "bold": false
+      },
+      "reference_color": 0,
+      "candidate_color": 0
+     },
+     {
+      "token": "at",
+      "reference_page": 0,
+      "candidate_page": 0,
+      "reference_bbox": [
+       72.0,
+       356.94171142578125,
+       81.64364624023438,
+       367.8507995605469
+      ],
+      "candidate_bbox": [
+       269.8299865722656,
+       357.1484680175781,
+       279.6089782714844,
+       368.1484680175781
+      ],
+      "reference_font": "SFRM1095",
+      "candidate_font": "NewCM10-Regular",
+      "reference_size": 10.909099578857422,
+      "candidate_size": 11.0,
+      "font_size_abs_log_ratio": 0.008298008086413849,
+      "reference_style_bits": {
+       "italic": false,
+       "serif": true,
+       "monospace": false,
+       "bold": false
+      },
+      "candidate_style_bits": {
+       "italic": false,
+       "serif": true,
+       "monospace": false,
+       "bold": false
+      },
+      "reference_color": 0,
+      "candidate_color": 0
+     },
+     {
+      "token": "at",
+      "reference_page": 0,
+      "candidate_page": 0,
+      "reference_bbox": [
+       286.9638671875,
+       356.94171142578125,
+       296.6075134277344,
+       367.8507995605469
+      ],
+      "candidate_bbox": [
+       397.6120910644531,
+       357.1484680175781,
+       407.3910827636719,
+       368.1484680175781
+      ],
+      "reference_font": "SFRM1095",
+      "candidate_font": "NewCM10-Regular",
+      "reference_size": 10.909099578857422,
+      "candidate_size": 11.0,
+      "font_size_abs_log_ratio": 0.008298008086413849,
+      "reference_style_bits": {
+       "italic": false,
+       "serif": true,
+       "monospace": false,
+       "bold": false
+      },
+      "candidate_style_bits": {
+       "italic": false,
+       "serif": true,
+       "monospace": false,
+       "bold": false
+      },
+      "reference_color": 0,
+      "candidate_color": 0
+     },
+     {
+      "token": "at",
+      "reference_page": 0,
+      "candidate_page": 0,
+      "reference_bbox": [
+       530.2476806640625,
+       356.94171142578125,
+       539.8912963867188,
+       367.8507995605469
+      ],
+      "candidate_bbox": [
+       529.0571899414062,
+       357.1484680175781,
+       538.836181640625,
+       368.1484680175781
+      ],
+      "reference_font": "SFRM1095",
+      "candidate_font": "NewCM10-Regular",
+      "reference_size": 10.909099578857422,
+      "candidate_size": 11.0,
+      "font_size_abs_log_ratio": 0.008298008086413849,
+      "reference_style_bits": {
+       "italic": false,
+       "serif": true,
+       "monospace": false,
+       "bold": false
+      },
+      "candidate_style_bits": {
+       "italic": false,
+       "serif": true,
+       "monospace": false,
+       "bold": false
+      },
+      "reference_color": 0,
+      "candidate_color": 0
+     },
+     {
+      "token": "autocorrelations.",
+      "reference_page": 0,
+      "candidate_page": 0,
+      "reference_bbox": [
+       135.5891571044922,
+       384.04071044921875,
+       214.87649536132812,
+       394.9497985839844
+      ],
+      "candidate_bbox": [
+       73.1637954711914,
+       386.4744873046875,
+       153.6617889404297,
+       397.4744873046875
+      ],
+      "reference_font": "SFRM1095",
+      "candidate_font": "NewCM10-Regular",
+      "reference_size": 10.909099578857422,
+      "candidate_size": 11.0,
+      "font_size_abs_log_ratio": 0.008298008086413849,
+      "reference_style_bits": {
+       "italic": false,
+       "serif": true,
+       "monospace": false,
+       "bold": false
+      },
+      "candidate_style_bits": {
+       "italic": false,
+       "serif": true,
+       "monospace": false,
+       "bold": false
+      },
+      "reference_color": 0,
+      "candidate_color": 0
+     },
+     {
+      "token": "captions",
+      "reference_page": 0,
+      "candidate_page": 0,
+      "reference_bbox": [
+       308.0015563964844,
+       406.7557067871094,
+       347.2197570800781,
+       417.664794921875
+      ],
+      "candidate_bbox": [
+       283.9150085449219,
+       407.1874694824219,
+       323.7020568847656,
+       418.1874694824219
+      ],
+      "reference_font": "SFRM1095",
+      "candidate_font": "NewCM10-Regular",
+      "reference_size": 10.909099578857422,
+      "candidate_size": 11.0,
+      "font_size_abs_log_ratio": 0.008298008086413849,
+      "reference_style_bits": {
+       "italic": false,
+       "serif": true,
+       "monospace": false,
+       "bold": false
+      },
+      "candidate_style_bits": {
+       "italic": false,
+       "serif": true,
+       "monospace": false,
+       "bold": false
+      },
+      "reference_color": 0,
+      "candidate_color": 0
+     },
+     {
+      "token": "deterministic",
+      "reference_page": 0,
+      "candidate_page": 0,
+      "reference_bbox": [
+       72.0,
+       420.3047180175781,
+       133.51641845703125,
+       431.21380615234375
+      ],
+      "candidate_bbox": [
+       72.0,
+       421.8504943847656,
+       134.4250030517578,
+       432.8504943847656
+      ],
+      "reference_font": "SFRM1095",
+      "candidate_font": "NewCM10-Regular",
+      "reference_size": 10.909099578857422,
+      "candidate_size": 11.0,
+      "font_size_abs_log_ratio": 0.008298008086413849,
+      "reference_style_bits": {
+       "italic": false,
+       "serif": true,
+       "monospace": false,
+       "bold": false
+      },
+      "candidate_style_bits": {
+       "italic": false,
+       "serif": true,
+       "monospace": false,
+       "bold": false
+      },
+      "reference_color": 0,
+      "candidate_color": 0
+     },
+     {
+      "token": "effective",
+      "reference_page": 0,
+      "candidate_page": 0,
+      "reference_bbox": [
+       258.4364929199219,
+       329.84368896484375,
+       296.70556640625,
+       340.7527770996094
+      ],
+      "candidate_bbox": [
+       217.351806640625,
+       342.4854736328125,
+       256.1378173828125,
+       353.4854736328125
+      ],
+      "reference_font": "SFRM1095",
+      "candidate_font": "NewCM10-Regular",
+      "reference_size": 10.909099578857422,
+      "candidate_size": 11.0,
+      "font_size_abs_log_ratio": 0.008298008086413849,
+      "reference_style_bits": {
+       "italic": false,
+       "serif": true,
+       "monospace": false,
+       "bold": false
+      },
+      "candidate_style_bits": {
+       "italic": false,
+       "serif": true,
+       "monospace": false,
+       "bold": false
+      },
+      "reference_color": 0,
+      "candidate_color": 0
+     }
+    ]
+   },
+   "interpretation": "Raw PDF font observables are diagnostic; font names and flags are renderer metadata, not perceptual truth."
+  },
+  "raster_ink": {
+   "status": "scored",
+   "applicable": true,
+   "metrics": {
+    "paired_page_count": 1,
+    "unpaired_page_count": 0,
+    "unregistered_tolerant_ink_f1_macro": 0.5153861678852604,
+    "registered_tolerant_ink_f1_macro": 0.5274970497061552,
+    "registration_gain": 0.012110881820894814
+   },
+   "evidence": {
+    "pages": [
+     {
+      "page": 0,
+      "reference_raster_size": [
+       816,
+       1056
+      ],
+      "candidate_raster_size_before_resize": [
+       816,
+       1056
+      ],
+      "candidate_resized_to_reference_canvas": true,
+      "coordinate_frame": "registered_reference_raster",
+      "registration_translation_px": [
+       0,
+       -2
+      ],
+      "unregistered": {
+       "reference_ink_pixels": 19303,
+       "candidate_ink_pixels": 17677,
+       "precision": 0.5288793347287436,
+       "recall": 0.5025643682329172,
+       "f1": 0.5153861678852604,
+       "unmatched_ink_pixels": 17930,
+       "unmatched_ink_fraction_of_union": 0.5439597111825739
+      },
+      "registered": {
+       "reference_ink_pixels": 19303,
+       "candidate_ink_pixels": 17677,
+       "precision": 0.5344232618657012,
+       "recall": 0.520748070248148,
+       "f1": 0.5274970497061552,
+       "unmatched_ink_pixels": 17481,
+       "unmatched_ink_fraction_of_union": 0.5337221017922023
+      },
+      "registered_mean_absolute_gray_difference": 0.0168031371602414,
+      "top_difference_bbox": {
+       "pixel_bbox": [
+        96,
+        122,
+        720,
+        1000
+       ],
+       "normalized_bbox": [
+        0.11764705882352941,
+        0.11553030303030302,
+        0.8823529411764706,
+        0.946969696969697
+       ]
+      }
+     }
+    ],
+    "top_difference_bbox": {
+     "page": 0,
+     "unpaired_side": null,
+     "coordinate_frame": "registered_reference_raster",
+     "registration_translation_px": [
+      0,
+      -2
+     ],
+     "pixel_bbox": [
+      96,
+      122,
+      720,
+      1000
+     ],
+     "normalized_bbox": [
+      0.11764705882352941,
+      0.11553030303030302,
+      0.8823529411764706,
+      0.946969696969697
+     ]
+    }
+   },
+   "interpretation": "Candidate pages are resized to the reference canvas, then optionally translation-registered. Use canvas and geometry axes for layout claims."
+  },
+  "raster_perceptual": {
+   "status": "scored",
+   "applicable": true,
+   "metrics": {
+    "paired_page_count": 1,
+    "scored_page_count": 1,
+    "abstained_page_count": 0,
+    "unpaired_page_count": 0,
+    "unregistered_ssim_macro": 0.8841407517196442,
+    "registered_ssim_macro": 0.8855338891260655,
+    "unregistered_multiscale_ssim_diagnostic_macro": 0.9207674793210913,
+    "registered_multiscale_ssim_diagnostic_macro": 0.9227172612459508
+   },
+   "evidence": {
+    "pages": [
+     {
+      "page": 0,
+      "status": "scored",
+      "unregistered_ssim": 0.8841407517196442,
+      "registered_ssim": 0.8855338891260655,
+      "unregistered_multiscale_ssim_diagnostic": 0.9207674793210913,
+      "registered_multiscale_ssim_diagnostic": 0.9227172612459508,
+      "unregistered_scale_scores": [
+       {
+        "downsample_factor": 1,
+        "ssim": 0.8841407517196442
+       },
+       {
+        "downsample_factor": 2,
+        "ssim": 0.8538171404389452
+       },
+       {
+        "downsample_factor": 4,
+        "ssim": 0.8330889459464687
+       },
+       {
+        "downsample_factor": 8,
+        "ssim": 0.796205806110916
+       }
+      ],
+      "registered_scale_scores": [
+       {
+        "downsample_factor": 1,
+        "ssim": 0.8855338891260655
+       },
+       {
+        "downsample_factor": 2,
+        "ssim": 0.8564700861193429
+       },
+       {
+        "downsample_factor": 4,
+        "ssim": 0.8373876031472904
+       },
+       {
+        "downsample_factor": 8,
+        "ssim": 0.8033145329802107
+       }
+      ],
+      "registration_translation_px": [
+       0,
+       -2
+      ],
+      "candidate_resized_to_reference_canvas": false,
+      "reference_raster_size": [
+       816,
+       1056
+      ],
+      "candidate_raster_size_before_resize": [
+       816,
+       1056
+      ],
+      "registered_difference_bbox": {
+       "pixel_bbox": [
+        96,
+        122,
+        720,
+        1000
+       ],
+       "normalized_bbox": [
+        0.11764705882352941,
+        0.11553030303030302,
+        0.8823529411764706,
+        0.946969696969697
+       ]
+      }
+     }
+    ]
+   },
+   "interpretation": "SSIM is reported before and after translation-only registration. The multiscale value is the documented geometric mean of four SSIM scales, not canonical MS-SSIM. No candidate resizing is performed; SSIM abstains when physical canvases/grids differ."
+  },
+  "tables": {
+   "status": "abstain",
+   "applicable": null,
+   "metrics": {},
+   "evidence": {
+    "source_flags": {
+     "reference": null,
+     "candidate": null
+    }
+   },
+   "reason": "Applicability for tables was not established by source metadata."
+  },
+  "formulas": {
+   "status": "abstain",
+   "applicable": null,
+   "metrics": {},
+   "evidence": {
+    "source_flags": {
+     "reference": null,
+     "candidate": null
+    }
+   },
+   "reason": "Applicability for formulas was not established by source metadata."
+  },
+  "figures": {
+   "status": "abstain",
+   "applicable": null,
+   "metrics": {},
+   "evidence": {
+    "source_flags": {
+     "reference": null,
+     "candidate": null
+    }
+   },
+   "reason": "Applicability for figures was not established by source metadata."
+  }
+ }
+}

@@ -1,0 +1,30 @@
+{
+  "sample_id": "07_figures_captions_007",
+  "set": null,
+  "mode": "novisual",
+  "model": "sonnet",
+  "method": "claude sonnet agentic (novisual, effort high)",
+  "claude_exit": 0,
+  "cost_usd": 2.9210564499999996,
+  "num_turns": 47,
+  "duration_s": 1577,
+  "is_error": false,
+  "tool_calls": 46,
+  "score_runs": 24,
+  "baseline_overall": 0.38372040576890604,
+  "final": {
+    "compiled": true,
+    "overall": 0.6618197221652581,
+    "visual": 0.5418333646813073,
+    "content": 0.9595708812260536,
+    "pagination": 1.0,
+    "layout": 0.6474595185194647,
+    "typography": 0.8585331171321059,
+    "raster": 0.256309253626347,
+    "pages": "1/1",
+    "review_flags": [
+      "content_visual_disagreement",
+      "raster_layout_disagreement"
+    ]
+  }
+}

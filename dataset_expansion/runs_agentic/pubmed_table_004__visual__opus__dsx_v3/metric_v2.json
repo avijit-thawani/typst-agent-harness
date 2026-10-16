@@ -1,0 +1,4348 @@
+{
+ "evaluator": {
+  "name": "pdf_metric_axes_v2",
+  "version": 2,
+  "aggregate_score": null,
+  "policy": "No compensatory scalar. Report raw axes, coverage, abstentions, and localized evidence."
+ },
+ "inputs": {
+  "reference_pdf": "~/Downloads/learn/latex_typst/dataset_expansion/runs_agentic/pubmed_table_004__visual__opus__dsx_v3/work/reference.pdf",
+  "candidate_pdf": "~/Downloads/learn/latex_typst/dataset_expansion/runs_agentic/pubmed_table_004__visual__opus__dsx_v3/final_candidate.pdf",
+  "reference_page_count": 2,
+  "candidate_page_count": 2
+ },
+ "configuration": {
+  "render_dpi": 96,
+  "ink_threshold": 245,
+  "ink_tolerance_px": 2,
+  "normalization": "Unicode NFKC, soft-hyphen removal, collapsed whitespace; case preserved"
+ },
+ "applicability": {
+  "tables": null,
+  "formulas": null,
+  "figures": null
+ },
+ "axes": {
+  "canvas": {
+   "status": "scored",
+   "applicable": true,
+   "metrics": {
+    "reference_page_count": 2,
+    "candidate_page_count": 2,
+    "page_count_delta": 0,
+    "paired_page_count": 2,
+    "exact_paired_size_rate": 1.0,
+    "width_abs_log_ratio_max": 0.0,
+    "height_abs_log_ratio_max": 0.0
+   },
+   "evidence": {
+    "page_pairs": [
+     {
+      "page": 0,
+      "reference_size_points": [
+       612.0,
+       792.0
+      ],
+      "candidate_size_points": [
+       612.0,
+       792.0
+      ],
+      "width_abs_log_ratio": 0.0,
+      "height_abs_log_ratio": 0.0,
+      "exact_size_match": true
+     },
+     {
+      "page": 1,
+      "reference_size_points": [
+       612.0,
+       792.0
+      ],
+      "candidate_size_points": [
+       612.0,
+       792.0
+      ],
+      "width_abs_log_ratio": 0.0,
+      "height_abs_log_ratio": 0.0,
+      "exact_size_match": true
+     }
+    ]
+   },
+   "interpretation": "Canvas/page-size mismatch only; no token layout residual is folded into this axis."
+  },
+  "content": {
+   "status": "scored",
+   "applicable": true,
+   "metrics": {
+    "matched_block_normalized_edit_similarity_macro": 0.8819091356404789,
+    "matched_block_count": 7,
+    "strict_nfc_token_inventory": {
+     "reference_count": 346,
+     "candidate_count": 499,
+     "matched_count": 321,
+     "precision": 0.6432865731462926,
+     "recall": 0.9277456647398844,
+     "f1": 0.7597633136094674,
+     "exact_match": false,
+     "missing": [
+      "(Cume",
+      "trans-1,2-Dichloroethene",
+      "cis-1,4-Dichloro-2-butene",
+      "1,1,2,2-Tetrachloroethane",
+      "1,2,3-Trichloropropanea",
+      "cis-1,2-Dichloroethenea",
+      "trans-1,4-Dichloro-2-bute",
+      "1,3,5-Trimethylbenzene",
+      "1,1,1-Trichloroethanea",
+      "1,2,4-Trimethylbenzenea",
+      "1,2-Dibromo-3-chloropro",
+      "4-Methyl-2-pentanone",
+      "1,2,4-Trichlorobenzene",
+      "trans-1,3-Dichloropropene",
+      "Hexachlorobutadieneb",
+      "cis-1,3-Dichloropropene",
+      "1,2,3-Trichlorobenzene",
+      "1,4-Difluorobenzenea",
+      "1,4-Dichlorobenzene-d4",
+      "1,3-Dichloropropanea",
+      "4-Bromofluorobenzene",
+      "Dibromochloromethane",
+      "21.19",
+      "1,2-Dichlorobenzene-d4a"
+     ],
+     "extra": [
+      "tR",
+      "tR",
+      "tR",
+      "(min)",
+      "Exp.",
+      "MLR",
+      "ANN",
+      "23.54",
+      "23.54",
+      "22.69",
+      "22.69",
+      "22.8",
+      "4.11",
+      "22.6",
+      "25.16",
+      "22.66",
+      "22.5",
+      "25.3",
+      "23.09",
+      "22.9",
+      "26.23",
+      "26.19",
+      "26.2",
+      "26.37"
+     ],
+     "missing_count": 25,
+     "extra_count": 178
+    },
+    "strict_nfc_document_edit_similarity": 0.7171348314606741,
+    "compatibility_nfkc_token_inventory": {
+     "reference_count": 346,
+     "candidate_count": 499,
+     "matched_count": 321,
+     "precision": 0.6432865731462926,
+     "recall": 0.9277456647398844,
+     "f1": 0.7597633136094674
+    },
+    "compatibility_nfkc_document_edit_similarity": 0.7171348314606741
+   },
+   "evidence": {
+    "unmatched_reference_words": [
+     {
+      "word_index": 79,
+      "page": 1,
+      "bbox": [
+       580.7017822265625,
+       173.72802734375,
+       612.8180541992188,
+       184.63711547851562
+      ],
+      "text": "(Cume",
+      "normalized": "(Cume"
+     },
+     {
+      "word_index": 81,
+      "page": 1,
+      "bbox": [
+       113.45341491699219,
+       187.67572021484375,
+       230.39886474609375,
+       198.58480834960938
+      ],
+      "text": "trans-1,2-Dichloroethene",
+      "normalized": "trans-1,2-Dichloroethene"
+     },
+     {
+      "word_index": 86,
+      "page": 1,
+      "bbox": [
+       495.15264892578125,
+       187.67572021484375,
+       613.58154296875,
+       198.58480834960938
+      ],
+      "text": "cis-1,4-Dichloro-2-butene",
+      "normalized": "cis-1,4-Dichloro-2-butene"
+     },
+     {
+      "word_index": 100,
+      "page": 1,
+      "bbox": [
+       495.15264892578125,
+       215.57107543945312,
+       616.13427734375,
+       226.48016357421875
+      ],
+      "text": "1,1,2,2-Tetrachloroethane",
+      "normalized": "1,1,2,2-Tetrachloroethane"
+     },
+     {
+      "word_index": 115,
+      "page": 1,
+      "bbox": [
+       495.15264892578125,
+       243.4664306640625,
+       608.0070190429688,
+       254.37551879882812
+      ],
+      "text": "1,2,3-Trichloropropanea",
+      "normalized": "1,2,3-Trichloropropanea"
+     },
+     {
+      "word_index": 124,
+      "page": 1,
+      "bbox": [
+       113.45341491699219,
+       271.36181640625,
+       223.6897430419922,
+       282.2709045410156
+      ],
+      "text": "cis-1,2-Dichloroethenea",
+      "normalized": "cis-1,2-Dichloroethenea"
+     },
+     {
+      "word_index": 136,
+      "page": 1,
+      "bbox": [
+       495.15264892578125,
+       285.3094787597656,
+       614.836181640625,
+       296.21856689453125
+      ],
+      "text": "trans-1,4-Dichloro-2-bute",
+      "normalized": "trans-1,4-Dichloro-2-bute"
+     },
+     {
+      "word_index": 143,
+      "page": 1,
+      "bbox": [
+       495.15264892578125,
+       299.2571716308594,
+       606.0979614257812,
+       310.166259765625
+      ],
+      "text": "1,3,5-Trimethylbenzene",
+      "normalized": "1,3,5-Trimethylbenzene"
+     },
+     {
+      "word_index": 152,
+      "page": 1,
+      "bbox": [
+       113.45341491699219,
+       327.15252685546875,
+       219.8933868408203,
+       338.0616149902344
+      ],
+      "text": "1,1,1-Trichloroethanea",
+      "normalized": "1,1,1-Trichloroethanea"
+     },
+     {
+      "word_index": 165,
+      "page": 1,
+      "bbox": [
+       495.15264892578125,
+       341.1002197265625,
+       611.552490234375,
+       352.0093078613281
+      ],
+      "text": "1,2,4-Trimethylbenzenea",
+      "normalized": "1,2,4-Trimethylbenzenea"
+     },
+     {
+      "word_index": 240,
+      "page": 1,
+      "bbox": [
+       495.15264892578125,
+       480.5770263671875,
+       611.7815551757812,
+       491.4861145019531
+      ],
+      "text": "1,2-Dibromo-3-chloropro",
+      "normalized": "1,2-Dibromo-3-chloropro"
+     },
+     {
+      "word_index": 242,
+      "page": 1,
+      "bbox": [
+       113.45341491699219,
+       494.5246887207031,
+       218.01702880859375,
+       505.43377685546875
+      ],
+      "text": "4-Methyl-2-pentanone",
+      "normalized": "4-Methyl-2-pentanone"
+     },
+     {
+      "word_index": 247,
+      "page": 1,
+      "bbox": [
+       495.15264892578125,
+       494.5246887207031,
+       602.1925048828125,
+       505.43377685546875
+      ],
+      "text": "1,2,4-Trichlorobenzene",
+      "normalized": "1,2,4-Trichlorobenzene"
+     },
+     {
+      "word_index": 249,
+      "page": 1,
+      "bbox": [
+       113.45341491699219,
+       508.472412109375,
+       237.10794067382812,
+       519.3814697265625
+      ],
+      "text": "trans-1,3-Dichloropropene",
+      "normalized": "trans-1,3-Dichloropropene"
+     },
+     {
+      "word_index": 261,
+      "page": 1,
+      "bbox": [
+       495.15264892578125,
+       522.4200439453125,
+       600.9707641601562,
+       533.3291015625
+      ],
+      "text": "Hexachlorobutadieneb",
+      "normalized": "Hexachlorobutadieneb"
+     },
+     {
+      "word_index": 270,
+      "page": 1,
+      "bbox": [
+       113.45341491699219,
+       550.3154296875,
+       224.94430541992188,
+       561.2244873046875
+      ],
+      "text": "cis-1,3-Dichloropropene",
+      "normalized": "cis-1,3-Dichloropropene"
+     },
+     {
+      "word_index": 275,
+      "page": 1,
+      "bbox": [
+       495.15264892578125,
+       550.3154296875,
+       602.1925048828125,
+       561.2244873046875
+      ],
+      "text": "1,2,3-Trichlorobenzene",
+      "normalized": "1,2,3-Trichlorobenzene"
+     },
+     {
+      "word_index": 283,
+      "page": 1,
+      "bbox": [
+       495.15264892578125,
+       564.2630615234375,
+       594.7416381835938,
+       575.172119140625
+      ],
+      "text": "1,4-Difluorobenzenea",
+      "normalized": "1,4-Difluorobenzenea"
+     },
+     {
+      "word_index": 297,
+      "page": 1,
+      "bbox": [
+       495.15264892578125,
+       592.158447265625,
+       605.9451904296875,
+       603.0675048828125
+      ],
+      "text": "1,4-Dichlorobenzene-d4",
+      "normalized": "1,4-Dichlorobenzene-d4"
+     },
+     {
+      "word_index": 299,
+      "page": 1,
+      "bbox": [
+       113.45341491699219,
+       606.1061401367188,
+       214.90794372558594,
+       617.0151977539062
+      ],
+      "text": "1,3-Dichloropropanea",
+      "normalized": "1,3-Dichloropropanea"
+     },
+     {
+      "word_index": 304,
+      "page": 1,
+      "bbox": [
+       495.15264892578125,
+       606.1061401367188,
+       601.428955078125,
+       617.0151977539062
+      ],
+      "text": "4-Bromofluorobenzene",
+      "normalized": "4-Bromofluorobenzene"
+     },
+     {
+      "word_index": 306,
+      "page": 1,
+      "bbox": [
+       113.45341491699219,
+       620.0538330078125,
+       224.90066528320312,
+       630.962890625
+      ],
+      "text": "Dibromochloromethane",
+      "normalized": "Dibromochloromethane"
+     },
+     {
+      "word_index": 307,
+      "page": 1,
+      "bbox": [
+       249.46160888671875,
+       620.0538330078125,
+       274.3125,
+       630.962890625
+      ],
+      "text": "21.19",
+      "normalized": "21.19"
+     },
+     {
+      "word_index": 311,
+      "page": 1,
+      "bbox": [
+       495.15264892578125,
+       620.0538330078125,
+       611.3997192382812,
+       630.962890625
+      ],
+      "text": "1,2-Dichlorobenzene-d4a",
+      "normalized": "1,2-Dichlorobenzene-d4a"
+     }
+    ],
+    "unmatched_candidate_words": [
+     {
+      "word_index": 28,
+      "page": 1,
+      "bbox": [
+       230.98399353027344,
+       72.84002685546875,
+       241.46400451660156,
+       80.84002685546875
+      ],
+      "text": "tR",
+      "normalized": "tR"
+     },
+     {
+      "word_index": 30,
+      "page": 1,
+      "bbox": [
+       269.3039855957031,
+       72.84002685546875,
+       279.7839660644531,
+       80.84002685546875
+      ],
+      "text": "tR",
+      "normalized": "tR"
+     },
+     {
+      "word_index": 35,
+      "page": 1,
+      "bbox": [
+       417.2720031738281,
+       72.84002685546875,
+       439.7519836425781,
+       80.84002685546875
+      ],
+      "text": "(min)",
+      "normalized": "(min)"
+     },
+     {
+      "word_index": 36,
+      "page": 1,
+      "bbox": [
+       442.8160095214844,
+       72.84002685546875,
+       461.3840026855469,
+       80.84002685546875
+      ],
+      "text": "Exp.",
+      "normalized": "Exp."
+     },
+     {
+      "word_index": 37,
+      "page": 1,
+      "bbox": [
+       464.9840087890625,
+       72.84002685546875,
+       475.4639892578125,
+       80.84002685546875
+      ],
+      "text": "tR",
+      "normalized": "tR"
+     },
+     {
+      "word_index": 38,
+      "page": 1,
+      "bbox": [
+       478.52801513671875,
+       72.84002685546875,
+       499.7040100097656,
+       80.84002685546875
+      ],
+      "text": "MLR",
+      "normalized": "MLR"
+     },
+     {
+      "word_index": 40,
+      "page": 1,
+      "bbox": [
+       516.8479614257812,
+       72.84002685546875,
+       538.2000122070312,
+       80.84002685546875
+      ],
+      "text": "ANN",
+      "normalized": "ANN"
+     },
+     {
+      "word_index": 48,
+      "page": 1,
+      "bbox": [
+       403.7279968261719,
+       81.90399169921875,
+       421.9519958496094,
+       89.90399169921875
+      ],
+      "text": "23.54",
+      "normalized": "23.54"
+     },
+     {
+      "word_index": 49,
+      "page": 1,
+      "bbox": [
+       464.9840087890625,
+       81.90399169921875,
+       483.2080078125,
+       89.90399169921875
+      ],
+      "text": "22.69",
+      "normalized": "22.69"
+     },
+     {
+      "word_index": 50,
+      "page": 1,
+      "bbox": [
+       503.3039855957031,
+       81.90399169921875,
+       517.5280151367188,
+       89.90399169921875
+      ],
+      "text": "22.8",
+      "normalized": "22.8"
+     },
+     {
+      "word_index": 59,
+      "page": 1,
+      "bbox": [
+       403.7279968261719,
+       90.968017578125,
+       421.9519958496094,
+       98.968017578125
+      ],
+      "text": "23.54",
+      "normalized": "23.54"
+     },
+     {
+      "word_index": 60,
+      "page": 1,
+      "bbox": [
+       464.9840087890625,
+       90.968017578125,
+       483.2080078125,
+       98.968017578125
+      ],
+      "text": "22.69",
+      "normalized": "22.69"
+     },
+     {
+      "word_index": 61,
+      "page": 1,
+      "bbox": [
+       503.3039855957031,
+       90.968017578125,
+       517.5280151367188,
+       98.968017578125
+      ],
+      "text": "22.6",
+      "normalized": "22.6"
+     },
+     {
+      "word_index": 70,
+      "page": 1,
+      "bbox": [
+       403.7279968261719,
+       100.031982421875,
+       421.9519958496094,
+       108.031982421875
+      ],
+      "text": "25.16",
+      "normalized": "25.16"
+     },
+     {
+      "word_index": 71,
+      "page": 1,
+      "bbox": [
+       464.9840087890625,
+       100.031982421875,
+       483.2080078125,
+       108.031982421875
+      ],
+      "text": "22.66",
+      "normalized": "22.66"
+     },
+     {
+      "word_index": 72,
+      "page": 1,
+      "bbox": [
+       503.3039855957031,
+       100.031982421875,
+       517.5280151367188,
+       108.031982421875
+      ],
+      "text": "22.5",
+      "normalized": "22.5"
+     },
+     {
+      "word_index": 81,
+      "page": 1,
+      "bbox": [
+       403.7279968261719,
+       109.09600830078125,
+       417.9519958496094,
+       117.09600830078125
+      ],
+      "text": "25.3",
+      "normalized": "25.3"
+     },
+     {
+      "word_index": 82,
+      "page": 1,
+      "bbox": [
+       464.9840087890625,
+       109.09600830078125,
+       483.2080078125,
+       117.09600830078125
+      ],
+      "text": "23.09",
+      "normalized": "23.09"
+     },
+     {
+      "word_index": 83,
+      "page": 1,
+      "bbox": [
+       503.3039855957031,
+       109.09600830078125,
+       517.5280151367188,
+       117.09600830078125
+      ],
+      "text": "22.9",
+      "normalized": "22.9"
+     },
+     {
+      "word_index": 91,
+      "page": 1,
+      "bbox": [
+       403.7279968261719,
+       118.1600341796875,
+       421.9519958496094,
+       126.1600341796875
+      ],
+      "text": "26.23",
+      "normalized": "26.23"
+     },
+     {
+      "word_index": 92,
+      "page": 1,
+      "bbox": [
+       464.9840087890625,
+       118.1600341796875,
+       483.2080078125,
+       126.1600341796875
+      ],
+      "text": "26.19",
+      "normalized": "26.19"
+     },
+     {
+      "word_index": 93,
+      "page": 1,
+      "bbox": [
+       503.3039855957031,
+       118.1600341796875,
+       517.5280151367188,
+       126.1600341796875
+      ],
+      "text": "26.2",
+      "normalized": "26.2"
+     },
+     {
+      "word_index": 101,
+      "page": 1,
+      "bbox": [
+       403.7279968261719,
+       127.2239990234375,
+       421.9519958496094,
+       135.2239990234375
+      ],
+      "text": "26.37",
+      "normalized": "26.37"
+     },
+     {
+      "word_index": 102,
+      "page": 1,
+      "bbox": [
+       464.9840087890625,
+       127.2239990234375,
+       483.2080078125,
+       135.2239990234375
+      ],
+      "text": "27.00",
+      "normalized": "27.00"
+     }
+    ],
+    "lowest_similarity_block_pairs": [
+     {
+      "reference_block_index": 5,
+      "candidate_block_index": 35,
+      "reference_page": 1,
+      "candidate_page": 1,
+      "reference_text": "NO. name tR (min) Exp. tR MLR tR ANN NO. name m1 Dichlorodifluoromethane 1.35 1.50 1.52 m44 p-Xylene m2 Carbon disulfide 4.11 2.71 2.67 m45 m-Xylene m3 Allyl chloride 4.11 6.57 6.57 m46 o-Xylenea m4 Methylene chloride 4.40 3.93 4.12 m47 Sty",
+      "candidate_text": "m19 1,1-Dichloropropene 11.50 14.4 14.29 m62 Acrolein 3.19 3.33 3.44 m20 Benzenea 1.56 1.70 1.84 m63 sec-Butylbenzene 30.25 31.85 31.32 m21 Vinyl Chloride 12.09 11.39 11.53 m64 tert-Butylbenzene 30.59 30.14 29.86 m22 1,2-Dichloroethane 14.0",
+      "normalized_edit_similarity": 0.17336394948335243
+     },
+     {
+      "reference_block_index": 0,
+      "candidate_block_index": 0,
+      "reference_page": 0,
+      "candidate_page": 0,
+      "reference_text": "Clinical Table Sample 4",
+      "candidate_text": "Clinical Table Sample 4",
+      "normalized_edit_similarity": 1.0
+     },
+     {
+      "reference_block_index": 1,
+      "candidate_block_index": 1,
+      "reference_page": 0,
+      "candidate_page": 0,
+      "reference_text": "Dataset-expansion sample",
+      "candidate_text": "Dataset-expansion sample",
+      "normalized_edit_similarity": 1.0
+     },
+     {
+      "reference_block_index": 2,
+      "candidate_block_index": 2,
+      "reference_page": 0,
+      "candidate_page": 0,
+      "reference_text": "1 Patient Data",
+      "candidate_text": "1 Patient Data",
+      "normalized_edit_similarity": 1.0
+     },
+     {
+      "reference_block_index": 3,
+      "candidate_block_index": 3,
+      "reference_page": 0,
+      "candidate_page": 0,
+      "reference_text": "The table below is a medical-literature table reproduced verbatim from a PubMed-derived dataset.",
+      "candidate_text": "The table below is a medical-literature table reproduced verbatim from a PubMed-derived dataset.",
+      "normalized_edit_similarity": 1.0
+     },
+     {
+      "reference_block_index": 4,
+      "candidate_block_index": 4,
+      "reference_page": 0,
+      "candidate_page": 0,
+      "reference_text": "1",
+      "candidate_text": "1",
+      "normalized_edit_similarity": 1.0
+     },
+     {
+      "reference_block_index": 6,
+      "candidate_block_index": 74,
+      "reference_page": 1,
+      "candidate_page": 1,
+      "reference_text": "2",
+      "candidate_text": "2",
+      "normalized_edit_similarity": 1.0
+     }
+    ]
+   },
+   "interpretation": "Strict NFC preservation is the primary text view. NFKC is reported separately as a compatibility view for ligature/encoding equivalence; it never hides the strict mismatch."
+  },
+  "critical_content": {
+   "status": "scored",
+   "applicable": true,
+   "metrics": {
+    "numbers": {
+     "reference_count": 173,
+     "candidate_count": 295,
+     "matched_count": 172,
+     "precision": 0.5830508474576271,
+     "recall": 0.9942196531791907,
+     "f1": 0.7350427350427351,
+     "exact_match": false,
+     "missing": [
+      "21.19"
+     ],
+     "extra": [
+      "23.54",
+      "23.54",
+      "22.69",
+      "22.69",
+      "22.8",
+      "4.11",
+      "22.6",
+      "25.16",
+      "22.66",
+      "22.5",
+      "25.3",
+      "23.09",
+      "22.9",
+      "26.23",
+      "26.19",
+      "26.2",
+      "26.37",
+      "27.00",
+      "26.76",
+      "8.76",
+      "27.12",
+      "27.18",
+      "27.39",
+      "2.42"
+     ],
+     "missing_count": 1,
+     "extra_count": 123
+    },
+    "operators": {
+     "reference_count": 0,
+     "candidate_count": 0,
+     "matched_count": 0,
+     "precision": 1.0,
+     "recall": 1.0,
+     "f1": 1.0,
+     "exact_match": true,
+     "missing": [],
+     "extra": [],
+     "missing_count": 0,
+     "extra_count": 0
+    },
+    "citation_markers": {
+     "reference_count": 0,
+     "candidate_count": 0,
+     "matched_count": 0,
+     "precision": 1.0,
+     "recall": 1.0,
+     "f1": 1.0,
+     "exact_match": true,
+     "missing": [],
+     "extra": [],
+     "missing_count": 0,
+     "extra_count": 0
+    }
+   },
+   "evidence": {
+    "normalization": "Unicode NFKC; case preserved; multiset comparison",
+    "number_pattern": "(?<![\\w.])[+-]?(?:\\d+(?:[.,]\\d+)*|\\.\\d+)(?:[eE][+-]?\\d+)?%?",
+    "operator_inventory": "*+/<=>^\u00b1\u00d7\u00f7\u2190\u2192\u2194\u2202\u2207\u2208\u2209\u220f\u2211\u2212\u221a\u221e\u2229\u222a\u222b\u2248\u2260\u2264\u2265\u2282\u2286",
+    "citation_pattern": "\\[(?:\\d+[a-z]?(?:\\s*[-,;]\\s*\\d+[a-z]?){0,12})\\]|\\((?:18|19|20)\\d{2}[a-z]?\\)"
+   },
+   "interpretation": "Exact critical-symbol inventories prevent visually small numeric or operator errors from disappearing inside a document-level text average. Empty inventories are reported as exact but do not establish construct applicability."
+  },
+  "text_grounding": {
+   "status": "scored",
+   "applicable": true,
+   "metrics": {
+    "reference_word_count": 346,
+    "candidate_word_count": 499,
+    "exact_matched_word_count": 321,
+    "word_precision": 0.6432865731462926,
+    "word_recall": 0.9277456647398844,
+    "word_hmean": 0.7597633136094674,
+    "split_count": null,
+    "merge_count": null
+   },
+   "evidence": {
+    "match_policy": "exact Unicode-NFKC word text with deterministic page/position assignment for repeats"
+   },
+   "interpretation": "Digital-PDF exact-word grounding adaptation; it is not the published CLEval algorithm. Split/merge values remain null until a validated implementation exists."
+  },
+  "geometry": {
+   "status": "scored",
+   "applicable": true,
+   "metrics": {
+    "matched_token_count": 321,
+    "reference_match_coverage": 0.9277456647398844,
+    "candidate_match_coverage": 0.6432865731462926,
+    "center_displacement_q50": 0.18612322100542375,
+    "center_displacement_q90": 0.2631203635077134,
+    "center_displacement_max": 0.7032900513846696,
+    "bbox_iou_q10": 0.0,
+    "bbox_iou_q50": 0.0,
+    "width_abs_log_ratio_q90": 0.3101550846118624,
+    "height_abs_log_ratio_q90": 0.310154673990659
+   },
+   "evidence": {
+    "worst_token_pairs": [
+     {
+      "token": "dataset.",
+      "reference_word_index": 21,
+      "candidate_word_index": 21,
+      "reference_page": 0,
+      "candidate_page": 0,
+      "reference_bbox": [
+       502.36358642578125,
+       218.92115783691406,
+       539.9999389648438,
+       229.8302459716797
+      ],
+      "candidate_bbox": [
+       72.0,
+       236.13803100585938,
+       109.94999694824219,
+       247.13803100585938
+      ],
+      "reference_bbox_normalized": [
+       0.8208555333754596,
+       0.27641560332943693,
+       0.8823528414458232,
+       0.29018970450969656
+      ],
+      "candidate_bbox_normalized": [
+       0.11764705882352941,
+       0.2981540795528527,
+       0.17965685775856566,
+       0.3120429684417416
+      ],
+      "center_displacement": 0.7032900513846696,
+      "bbox_iou": 0.0,
+      "width_abs_log_ratio": 0.008299017255336747,
+      "height_abs_log_ratio": 0.008299057127879162
+     },
+     {
+      "token": "chloride",
+      "reference_word_index": 216,
+      "candidate_word_index": 304,
+      "reference_page": 1,
+      "candidate_page": 1,
+      "reference_bbox": [
+       531.054443359375,
+       438.7339782714844,
+       568.3743896484375,
+       449.64306640625
+      ],
+      "candidate_bbox": [
+       354.3919982910156,
+       388.21600341796875,
+       381.75201416015625,
+       396.21600341796875
+      ],
+      "reference_bbox_normalized": [
+       0.8677360185610703,
+       0.5539570432720762,
+       0.9287163229549632,
+       0.5677311444523359
+      ],
+      "candidate_bbox_normalized": [
+       0.5790718926323785,
+       0.4901717214873343,
+       0.623777800915288,
+       0.5002727315883444
+      ],
+      "center_displacement": 0.30396916848572175,
+      "bbox_iou": 0.0,
+      "width_abs_log_ratio": 0.31044526401164857,
+      "height_abs_log_ratio": 0.310154673990659
+     },
+     {
+      "token": "Trichlorofluoromethanea",
+      "reference_word_index": 93,
+      "candidate_word_index": 123,
+      "reference_page": 1,
+      "candidate_page": 1,
+      "reference_bbox": [
+       495.15264892578125,
+       201.62339782714844,
+       611.6398315429688,
+       212.53248596191406
+      ],
+      "candidate_bbox": [
+       328.0639953613281,
+       165.08001708984375,
+       413.4800109863281,
+       173.08001708984375
+      ],
+      "reference_bbox_normalized": [
+       0.8090729557610805,
+       0.25457499725650057,
+       0.9994114894492954,
+       0.2683490984367602
+      ],
+      "candidate_bbox_normalized": [
+       0.5360522800021701,
+       0.20843436501242898,
+       0.6756209329841962,
+       0.21853537511343907
+      ],
+      "center_displacement": 0.3022378555298353,
+      "bbox_iou": 0.0,
+      "width_abs_log_ratio": 0.3102476266954934,
+      "height_abs_log_ratio": 0.31015467399065766
+     },
+     {
+      "token": "1,2-Dichlorobenzene",
+      "reference_word_index": 231,
+      "candidate_word_index": 325,
+      "reference_page": 1,
+      "candidate_page": 1,
+      "reference_bbox": [
+       495.15264892578125,
+       466.62933349609375,
+       590.79248046875,
+       477.5384216308594
+      ],
+      "candidate_bbox": [
+       328.0639953613281,
+       416.2080078125,
+       398.20001220703125,
+       424.2080078125
+      ],
+      "reference_bbox_normalized": [
+       0.8090729557610805,
+       0.5891784513839567,
+       0.965347190308415,
+       0.6029525525642164
+      ],
+      "candidate_bbox_normalized": [
+       0.5360522800021701,
+       0.5255151613794192,
+       0.6506536147173714,
+       0.5356161714804293
+      ],
+      "center_displacement": 0.30106849514067646,
+      "bbox_iou": 0.0,
+      "width_abs_log_ratio": 0.31015292675019723,
+      "height_abs_log_ratio": 0.3101546739906645
+     },
+     {
+      "token": "1,4-Dichlorobenzene",
+      "reference_word_index": 208,
+      "candidate_word_index": 293,
+      "reference_page": 1,
+      "candidate_page": 1,
+      "reference_bbox": [
+       495.15264892578125,
+       424.7862854003906,
+       590.79248046875,
+       435.69537353515625
+      ],
+      "candidate_bbox": [
+       328.0639953613281,
+       379.1520080566406,
+       398.20001220703125,
+       387.1520080566406
+      ],
+      "reference_bbox_normalized": [
+       0.8090729557610805,
+       0.5363463199499882,
+       0.965347190308415,
+       0.5501204211302478
+      ],
+      "candidate_bbox_normalized": [
+       0.5360522800021701,
+       0.47872728289979877,
+       0.6506536147173714,
+       0.4888282930008089
+      ],
+      "center_displacement": 0.2998115685077103,
+      "bbox_iou": 0.0,
+      "width_abs_log_ratio": 0.31015292675019723,
+      "height_abs_log_ratio": 0.310154673990659
+     },
+     {
+      "token": "1,3-Dichlorobenzene",
+      "reference_word_index": 201,
+      "candidate_word_index": 283,
+      "reference_page": 1,
+      "candidate_page": 1,
+      "reference_bbox": [
+       495.15264892578125,
+       410.8385925292969,
+       590.79248046875,
+       421.7476806640625
+      ],
+      "candidate_bbox": [
+       328.0639953613281,
+       370.0880126953125,
+       398.20001220703125,
+       378.0880126953125
+      ],
+      "reference_bbox_normalized": [
+       0.8090729557610805,
+       0.5187355966279001,
+       0.965347190308415,
+       0.5325096978081597
+      ],
+      "candidate_bbox_normalized": [
+       0.5360522800021701,
+       0.46728284431226325,
+       0.6506536147173714,
+       0.47738385441327336
+      ],
+      "center_displacement": 0.2986498946523605,
+      "bbox_iou": 0.0,
+      "width_abs_log_ratio": 0.31015292675019723,
+      "height_abs_log_ratio": 0.31015467399065083
+     },
+     {
+      "token": "n-Butylbenzene",
+      "reference_word_index": 224,
+      "candidate_word_index": 314,
+      "reference_page": 1,
+      "candidate_page": 1,
+      "reference_bbox": [
+       495.15264892578125,
+       452.681640625,
+       569.2471923828125,
+       463.5907287597656
+      ],
+      "candidate_bbox": [
+       328.0639953613281,
+       397.2799987792969,
+       382.3999938964844,
+       405.2799987792969
+      ],
+      "reference_bbox_normalized": [
+       0.8090729557610805,
+       0.5715677280618687,
+       0.9301424712137459,
+       0.5853418292421283
+      ],
+      "candidate_bbox_normalized": [
+       0.5360522800021701,
+       0.5016161600748698,
+       0.6248365913341248,
+       0.5117171701758799
+      ],
+      "center_displacement": 0.2979411594306722,
+      "bbox_iou": 0.0,
+      "width_abs_log_ratio": 0.3101549283038384,
+      "height_abs_log_ratio": 0.3101546739906454
+     },
+     {
+      "token": "p-Isopropyltoluenea",
+      "reference_word_index": 194,
+      "candidate_word_index": 273,
+      "reference_page": 1,
+      "candidate_page": 1,
+      "reference_bbox": [
+       495.15264892578125,
+       396.89093017578125,
+       588.9053344726562,
+       407.8000183105469
+      ],
+      "candidate_bbox": [
+       328.0639953613281,
+       361.02398681640625,
+       396.8079833984375,
+       369.02398681640625
+      ],
+      "reference_bbox_normalized": [
+       0.8090729557610805,
+       0.5011249118381076,
+       0.9622636184193729,
+       0.5148990130183673
+      ],
+      "candidate_bbox_normalized": [
+       0.5360522800021701,
+       0.45583836719243215,
+       0.6483790578405841,
+       0.46593937729344226
+      ],
+      "center_displacement": 0.29721208713436365,
+      "bbox_iou": 0.0,
+      "width_abs_log_ratio": 0.310271024283531,
+      "height_abs_log_ratio": 0.310154673990659
+     },
+     {
+      "token": "Isopropylbenzene",
+      "reference_word_index": 78,
+      "candidate_word_index": 100,
+      "reference_page": 1,
+      "candidate_page": 1,
+      "reference_bbox": [
+       495.15264892578125,
+       173.72802734375,
+       577.0690307617188,
+       184.63711547851562
+      ],
+      "candidate_bbox": [
+       328.0639953613281,
+       127.2239990234375,
+       388.1360168457031,
+       135.2239990234375
+      ],
+      "reference_bbox_normalized": [
+       0.8090729557610805,
+       0.2193535698784722,
+       0.9429232528786254,
+       0.23312767105873186
+      ],
+      "candidate_bbox_normalized": [
+       0.5360522800021701,
+       0.16063636240333018,
+       0.6342091778524561,
+       0.1707373725043403
+      ],
+      "center_displacement": 0.29710366384802145,
+      "bbox_iou": 0.0,
+      "width_abs_log_ratio": 0.31015479283276276,
+      "height_abs_log_ratio": 0.3101546739906569
+     },
+     {
+      "token": "Chlorobenzene-d5",
+      "reference_word_index": 290,
+      "candidate_word_index": 414,
+      "reference_page": 1,
+      "candidate_page": 1,
+      "reference_bbox": [
+       495.15264892578125,
+       578.2108154296875,
+       580.3416748046875,
+       589.119873046875
+      ],
+      "candidate_bbox": [
+       328.0639953613281,
+       538.0399780273438,
+       390.5360107421875,
+       546.0399780273438
+      ],
+      "reference_bbox_normalized": [
+       0.8090729557610805,
+       0.7300641608960701,
+       0.9482707104651756,
+       0.7438382235440341
+      ],
+      "candidate_bbox_normalized": [
+       0.5360522800021701,
+       0.6793434066001816,
+       0.6381307365068423,
+       0.6894444167011916
+      ],
+      "center_displacement": 0.29627918182941315,
+      "bbox_iou": 0.0,
+      "width_abs_log_ratio": 0.31015391873670883,
+      "height_abs_log_ratio": 0.3101518765413733
+     },
+     {
+      "token": "Pentachloroethane",
+      "reference_word_index": 157,
+      "candidate_word_index": 219,
+      "reference_page": 1,
+      "candidate_page": 1,
+      "reference_bbox": [
+       495.15264892578125,
+       327.15252685546875,
+       583.2216796875,
+       338.0616149902344
+      ],
+      "candidate_bbox": [
+       328.0639953613281,
+       295.97601318359375,
+       392.64801025390625,
+       303.97601318359375
+      ],
+      "reference_bbox_normalized": [
+       0.8090729557610805,
+       0.41307137229225854,
+       0.9529766007965687,
+       0.42684547347251817
+      ],
+      "candidate_bbox_normalized": [
+       0.5360522800021701,
+       0.37370708735302244,
+       0.641581716101154,
+       0.3838080974540325
+      ],
+      "center_displacement": 0.2950981112400307,
+      "bbox_iou": 0.0,
+      "width_abs_log_ratio": 0.31015401475459475,
+      "height_abs_log_ratio": 0.3101546739906604
+     },
+     {
+      "token": "tert-Butylbenzene",
+      "reference_word_index": 187,
+      "candidate_word_index": 263,
+      "reference_page": 1,
+      "candidate_page": 1,
+      "reference_bbox": [
+       495.15264892578125,
+       382.9432373046875,
+       580.7889404296875,
+       393.8523254394531
+      ],
+      "candidate_bbox": [
+       328.0639953613281,
+       351.9599914550781,
+       390.864013671875,
+       359.9599914550781
+      ],
+      "reference_bbox_normalized": [
+       0.8090729557610805,
+       0.48351418851601957,
+       0.9490015366498161,
+       0.4972882896962792
+      ],
+      "candidate_bbox_normalized": [
+       0.5360522800021701,
+       0.4443939286048966,
+       0.6386666890063317,
+       0.45449493870590674
+      ],
+      "center_displacement": 0.2945392615318897,
+      "bbox_iou": 0.0,
+      "width_abs_log_ratio": 0.3101537944232346,
+      "height_abs_log_ratio": 0.31015467399065494
+     },
+     {
+      "token": "2-Chlorotoluene",
+      "reference_word_index": 129,
+      "candidate_word_index": 176,
+      "reference_page": 1,
+      "candidate_page": 1,
+      "reference_bbox": [
+       495.15264892578125,
+       271.36181640625,
+       570.948974609375,
+       282.2709045410156
+      ],
+      "candidate_bbox": [
+       328.0639953613281,
+       230.12799072265625,
+       383.64801025390625,
+       238.12799072265625
+      ],
+      "reference_bbox_normalized": [
+       0.8090729557610805,
+       0.34262855606849746,
+       0.9329231611264297,
+       0.3564026572487571
+      ],
+      "candidate_bbox_normalized": [
+       0.5360522800021701,
+       0.2905656448518387,
+       0.6268758337482129,
+       0.3006666549528488
+      ],
+      "center_displacement": 0.2945082163589456,
+      "bbox_iou": 0.0,
+      "width_abs_log_ratio": 0.3101541596543282,
+      "height_abs_log_ratio": 0.3101546739906604
+     },
+     {
+      "token": "n-Propylbenzene",
+      "reference_word_index": 122,
+      "candidate_word_index": 166,
+      "reference_page": 1,
+      "candidate_page": 1,
+      "reference_bbox": [
+       495.15264892578125,
+       257.41412353515625,
+       574.4398803710938,
+       268.3232116699219
+      ],
+      "candidate_bbox": [
+       328.0639953613281,
+       221.06396484375,
+       386.2080078125,
+       229.06396484375
+      ],
+      "reference_bbox_normalized": [
+       0.8090729557610805,
+       0.3250178327464094,
+       0.9386272555083232,
+       0.338791933926669
+      ],
+      "candidate_bbox_normalized": [
+       0.5360522800021701,
+       0.27912116773200757,
+       0.6310588362949346,
+       0.2892221778330177
+      ],
+      "center_displacement": 0.294192766209476,
+      "bbox_iou": 0.0,
+      "width_abs_log_ratio": 0.3101541934968781,
+      "height_abs_log_ratio": 0.31015467399065494
+     },
+     {
+      "token": "Dichloroethane-d4",
+      "reference_word_index": 318,
+      "candidate_word_index": 458,
+      "reference_page": 1,
+      "candidate_page": 1,
+      "reference_bbox": [
+       495.15264892578125,
+       634.0015258789062,
+       582.3162231445312,
+       644.9105834960938
+      ],
+      "candidate_bbox": [
+       328.0639953613281,
+       613.7520141601562,
+       391.9840087890625,
+       621.7520141601562
+      ],
+      "reference_bbox_normalized": [
+       0.8090729557610805,
+       0.8005069771198311,
+       0.9514970966413909,
+       0.8142810397677951
+      ],
+      "candidate_bbox_normalized": [
+       0.5360522800021701,
+       0.7749394118183791,
+       0.640496746387357,
+       0.7850404219193892
+      ],
+      "center_displacement": 0.29329357978201664,
+      "bbox_iou": 0.0,
+      "width_abs_log_ratio": 0.3101540052646357,
+      "height_abs_log_ratio": 0.3101518765413733
+     },
+     {
+      "token": "Naphthalenea",
+      "reference_word_index": 268,
+      "candidate_word_index": 380,
+      "reference_page": 1,
+      "candidate_page": 1,
+      "reference_bbox": [
+       495.15264892578125,
+       536.3677368164062,
+       560.6289672851562,
+       547.2767944335938
+      ],
+      "candidate_bbox": [
+       328.0639953613281,
+       491.1199951171875,
+       376.0719909667969,
+       499.1199951171875
+      ],
+      "reference_bbox_normalized": [
+       0.8090729557610805,
+       0.6772319909298059,
+       0.9160604040607129,
+       0.6910060535777699
+      ],
+      "candidate_bbox_normalized": [
+       0.5360522800021701,
+       0.6201010039358428,
+       0.614496717266008,
+       0.6302020140368529
+      ],
+      "center_displacement": 0.2932813752077207,
+      "bbox_iou": 0.0,
+      "width_abs_log_ratio": 0.31032095335061133,
+      "height_abs_log_ratio": 0.3101518765413622
+     },
+     {
+      "token": "sec-Butylbenzene",
+      "reference_word_index": 179,
+      "candidate_word_index": 252,
+      "reference_page": 1,
+      "candidate_page": 1,
+      "reference_bbox": [
+       495.15264892578125,
+       368.9955749511719,
+       577.1671142578125,
+       379.9046630859375
+      ],
+      "candidate_bbox": [
+       328.0639953613281,
+       342.89599609375,
+       388.2080078125,
+       350.89599609375
+      ],
+      "reference_bbox_normalized": [
+       0.8090729557610805,
+       0.46590350372622713,
+       0.9430835200291053,
+       0.47967760490648675
+      ],
+      "candidate_bbox_normalized": [
+       0.5360522800021701,
+       0.4329494900173611,
+       0.6343268101511438,
+       0.4430505001183712
+      ],
+      "center_displacement": 0.2929617972064637,
+      "bbox_iou": 0.0,
+      "width_abs_log_ratio": 0.31015374435016546,
+      "height_abs_log_ratio": 0.31015467399065494
+     },
+     {
+      "token": "Iodomethane",
+      "reference_word_index": 254,
+      "candidate_word_index": 360,
+      "reference_page": 1,
+      "candidate_page": 1,
+      "reference_bbox": [
+       495.15264892578125,
+       508.472412109375,
+       556.974365234375,
+       519.3814697265625
+      ],
+      "candidate_bbox": [
+       328.0639953613281,
+       463.12799072265625,
+       373.3999938964844,
+       471.12799072265625
+      ],
+      "reference_bbox_normalized": [
+       0.8090729557610805,
+       0.6420106213502209,
+       0.9100888320823121,
+       0.655784683998185
+      ],
+      "candidate_bbox_normalized": [
+       0.5360522800021701,
+       0.5847575640437579,
+       0.6101307089811836,
+       0.594858574144768
+      ],
+      "center_displacement": 0.2925196657891977,
+      "bbox_iou": 0.0,
+      "width_abs_log_ratio": 0.31015331276102415,
+      "height_abs_log_ratio": 0.3101518765413813
+     },
+     {
+      "token": "Bromobenzene",
+      "reference_word_index": 108,
+      "candidate_word_index": 145,
+      "reference_page": 1,
+      "candidate_page": 1,
+      "reference_bbox": [
+       495.15264892578125,
+       229.5187530517578,
+       565.0253295898438,
+       240.42784118652344
+      ],
+      "candidate_bbox": [
+       328.0639953613281,
+       193.072021484375,
+       379.30401611328125,
+       201.072021484375
+      ],
+      "reference_bbox_normalized": [
+       0.8090729557610805,
+       0.2897964053683811,
+       0.9232440025977839,
+       0.3035705065486407
+      ],
+      "candidate_bbox_normalized": [
+       0.5360522800021701,
+       0.2437778049045139,
+       0.6197778041066687,
+       0.253878815005524
+      ],
+      "center_displacement": 0.29218896975186576,
+      "bbox_iou": 0.0,
+      "width_abs_log_ratio": 0.31015385625762837,
+      "height_abs_log_ratio": 0.31015467399065494
+     },
+     {
+      "token": "Fluorobenzene",
+      "reference_word_index": 339,
+      "candidate_word_index": 488,
+      "reference_page": 1,
+      "candidate_page": 1,
+      "reference_bbox": [
+       495.15264892578125,
+       675.8445434570312,
+       564.4362182617188,
+       686.7536010742188
+      ],
+      "candidate_bbox": [
+       328.0639953613281,
+       640.9440307617188,
+       378.87200927734375,
+       648.9440307617188
+      ],
+      "reference_bbox_normalized": [
+       0.8090729557610805,
+       0.8533390700215041,
+       0.9222814023884294,
+       0.8671131326694681
+      ],
+      "candidate_bbox_normalized": [
+       0.5360522800021701,
+       0.8092727661132812,
+       0.619071910583895,
+       0.8193737762142913
+      ],
+      "center_displacement": 0.291748815458159,
+      "bbox_iou": 0.0,
+      "width_abs_log_ratio": 0.31015368697012546,
+      "height_abs_log_ratio": 0.3101518765413733
+     },
+     {
+      "token": "4-Chlorotoluene",
+      "reference_word_index": 150,
+      "candidate_word_index": 209,
+      "reference_page": 1,
+      "candidate_page": 1,
+      "reference_bbox": [
+       495.15264892578125,
+       313.204833984375,
+       570.948974609375,
+       324.1139221191406
+      ],
+      "candidate_bbox": [
+       328.0639953613281,
+       286.9119873046875,
+       383.64801025390625,
+       294.9119873046875
+      ],
+      "reference_bbox_normalized": [
+       0.8090729557610805,
+       0.39546064897017047,
+       0.9329231611264297,
+       0.4092347501504301
+      ],
+      "candidate_bbox_normalized": [
+       0.5360522800021701,
+       0.3622626102331913,
+       0.6268758337482129,
+       0.3723636203342014
+      ],
+      "center_displacement": 0.291645950014293,
+      "bbox_iou": 0.0,
+      "width_abs_log_ratio": 0.3101541596543282,
+      "height_abs_log_ratio": 0.31015467399065494
+     },
+     {
+      "token": "Bromoformb",
+      "reference_word_index": 71,
+      "candidate_word_index": 90,
+      "reference_page": 1,
+      "candidate_page": 1,
+      "reference_bbox": [
+       495.15264892578125,
+       159.78036499023438,
+       555.0762329101562,
+       170.689453125
+      ],
+      "candidate_bbox": [
+       328.0639953613281,
+       118.1600341796875,
+       372.0,
+       126.1600341796875
+      ],
+      "reference_bbox_normalized": [
+       0.8090729557610805,
+       0.20174288508867977,
+       0.906987308676726,
+       0.2155169862689394
+      ],
+      "candidate_bbox_normalized": [
+       0.5360522800021701,
+       0.1491919623480903,
+       0.6078431372549019,
+       0.15929297244910037
+      ],
+      "center_displacement": 0.29120636976767794,
+      "bbox_iou": 0.0,
+      "width_abs_log_ratio": 0.31033601508011266,
+      "height_abs_log_ratio": 0.31015467399065766
+     },
+     {
+      "token": "Acetonitrilea",
+      "reference_word_index": 325,
+      "candidate_word_index": 468,
+      "reference_page": 1,
+      "candidate_page": 1,
+      "reference_bbox": [
+       495.15264892578125,
+       647.9491577148438,
+       556.4071044921875,
+       658.8582153320312
+      ],
+      "candidate_bbox": [
+       328.0639953613281,
+       622.8159790039062,
+       372.97601318359375,
+       630.8159790039062
+      ],
+      "reference_bbox_normalized": [
+       0.8090729557610805,
+       0.818117623377328,
+       0.9091619354447508,
+       0.831891686025292
+      ],
+      "candidate_bbox_normalized": [
+       0.5360522800021701,
+       0.786383811873619,
+       0.6094379300385518,
+       0.7964848219746291
+      ],
+      "center_displacement": 0.28833328810459097,
+      "bbox_iou": 0.0,
+      "width_abs_log_ratio": 0.3103311742746384,
+      "height_abs_log_ratio": 0.3101518765413733
+     },
+     {
+      "token": "Benzyl",
+      "reference_word_index": 215,
+      "candidate_word_index": 303,
+      "reference_page": 1,
+      "candidate_page": 1,
+      "reference_bbox": [
+       495.15264892578125,
+       438.7339782714844,
+       527.4217529296875,
+       449.64306640625
+      ],
+      "candidate_bbox": [
+       328.0639953613281,
+       388.21600341796875,
+       351.7279968261719,
+       396.21600341796875
+      ],
+      "reference_bbox_normalized": [
+       0.8090729557610805,
+       0.5539570432720762,
+       0.8618002498851103,
+       0.5677311444523359
+      ],
+      "candidate_bbox_normalized": [
+       0.5360522800021701,
+       0.4901717214873343,
+       0.5747189490623723,
+       0.5002727315883444
+      ],
+      "center_displacement": 0.2876365510741014,
+      "bbox_iou": 0.0,
+      "width_abs_log_ratio": 0.3101552722025421,
+      "height_abs_log_ratio": 0.310154673990659
+     }
+    ]
+   },
+   "interpretation": "Token boxes are normalized by each page's own canvas; canvas mismatch remains a separate axis."
+  },
+  "text_ltsim": {
+   "status": "scored",
+   "applicable": true,
+   "metrics": {
+    "paired_page_count": 2,
+    "scored_page_count": 2,
+    "abstained_page_count": 0,
+    "text_ltsim_page_macro": 0.8056883830615615,
+    "text_ltsim_element_weighted": 0.7099740861088362,
+    "text_ltsim_worst_page": 0.6952488096545707
+   },
+   "evidence": {
+    "pages": [
+     {
+      "page": 0,
+      "status": "scored",
+      "reference_block_count": 5,
+      "candidate_block_count": 5,
+      "emd": 0.08759923359595972,
+      "text_ltsim": 0.9161279564685524,
+      "largest_cost_contributions": [
+       {
+        "reference_block_index": 3,
+        "candidate_block_index": 3,
+        "mass": 0.2,
+        "cost": 0.19803427743482938,
+        "reference_bbox_normalized": [
+         0.11764705882352941,
+         0.27641560332943693,
+         0.8823528414458232,
+         0.29018970450969656
+        ],
+        "candidate_bbox_normalized": [
+         0.11764705882352941,
+         0.28102901728466306,
+         0.8298251582126991,
+         0.3120429684417416
+        ]
+       },
+       {
+        "reference_block_index": 0,
+        "candidate_block_index": 0,
+        "mass": 0.2,
+        "cost": 0.15660253970547688,
+        "reference_bbox_normalized": [
+         0.3659052381328508,
+         0.14247027310458096,
+         0.6340948366651348,
+         0.164206938310103
+        ],
+        "candidate_bbox_normalized": [
+         0.35531945322074143,
+         0.13372351906516336,
+         0.6446805467792586,
+         0.1551881558967359
+        ]
+       },
+       {
+        "reference_block_index": 4,
+        "candidate_block_index": 4,
+        "mass": 0.2,
+        "cost": 0.03594270362260199,
+        "reference_bbox_normalized": [
+         0.495543685613894,
+         0.9357262813683712,
+         0.5044563642514297,
+         0.9495003440163352
+        ],
+        "candidate_bbox_normalized": [
+         0.49550653594771243,
+         0.9346552376795296,
+         0.5044934640522876,
+         0.9485441265684186
+        ]
+       },
+       {
+        "reference_block_index": 1,
+        "candidate_block_index": 1,
+        "mass": 0.2,
+        "cost": 0.03388257798439909,
+        "reference_bbox_normalized": [
+         0.39130957609687755,
+         0.18607366927946456,
+         0.608690498701108,
+         0.20116858048872513
+        ],
+        "candidate_bbox_normalized": [
+         0.39788152657303155,
+         0.1861843147663155,
+         0.6021184484943066,
+         0.2000732036552044
+        ]
+       },
+       {
+        "reference_block_index": 2,
+        "candidate_block_index": 2,
+        "mass": 0.2,
+        "cost": 0.01353406923249123,
+        "reference_bbox_normalized": [
+         0.11764705882352941,
+         0.24215588425145004,
+         0.30313963048598347,
+         0.2602697622896445
+        ],
+        "candidate_bbox_normalized": [
+         0.11764705882352941,
+         0.24197472466362846,
+         0.3051830366546032,
+         0.25965149234039614
+        ]
+       }
+      ]
+     },
+     {
+      "page": 1,
+      "status": "scored",
+      "reference_block_count": 2,
+      "candidate_block_count": 70,
+      "emd": 0.36348549798089747,
+      "text_ltsim": 0.6952488096545707,
+      "largest_cost_contributions": [
+       {
+        "reference_block_index": 6,
+        "candidate_block_index": 62,
+        "mass": 0.014285714285714285,
+        "cost": 0.49814190687427196,
+        "reference_bbox_normalized": [
+         0.495543685613894,
+         0.9357262813683712,
+         0.5044563642514297,
+         0.9495003440163352
+        ],
+        "candidate_bbox_normalized": [
+         0.12058824028065002,
+         0.7146868464922664,
+         0.17475817561928741,
+         0.7247878565932765
+        ]
+       },
+       {
+        "reference_block_index": 6,
+        "candidate_block_index": 21,
+        "mass": 0.014285714285714285,
+        "cost": 0.4959206275542183,
+        "reference_bbox_normalized": [
+         0.495543685613894,
+         0.9357262813683712,
+         0.5044563642514297,
+         0.9495003440163352
+        ],
+        "candidate_bbox_normalized": [
+         0.12058824028065002,
+         0.3144646846886837,
+         0.5906274334277982,
+         0.3245656947896938
+        ]
+       },
+       {
+        "reference_block_index": 6,
+        "candidate_block_index": 24,
+        "mass": 0.014285714285714285,
+        "cost": 0.4957555165658878,
+        "reference_bbox_normalized": [
+         0.495543685613894,
+         0.9357262813683712,
+         0.5044563642514297,
+         0.9495003440163352
+        ],
+        "candidate_bbox_normalized": [
+         0.12058824028065002,
+         0.3383636474609375,
+         0.5672810373742596,
+         0.3484646575619476
+        ]
+       },
+       {
+        "reference_block_index": 6,
+        "candidate_block_index": 53,
+        "mass": 0.014285714285714285,
+        "cost": 0.49550585963987026,
+        "reference_bbox_normalized": [
+         0.495543685613894,
+         0.9357262813683712,
+         0.5044563642514297,
+         0.9495003440163352
+        ],
+        "candidate_bbox_normalized": [
+         0.6596862693238102,
+         0.6315454425233783,
+         0.8456340116613051,
+         0.6416464526243885
+        ]
+       },
+       {
+        "reference_block_index": 6,
+        "candidate_block_index": 57,
+        "mass": 0.014285714285714285,
+        "cost": 0.495140604372893,
+        "reference_bbox_normalized": [
+         0.495543685613894,
+         0.9357262813683712,
+         0.5044563642514297,
+         0.9495003440163352
+        ],
+        "candidate_bbox_normalized": [
+         0.6596862693238102,
+         0.6554444438279278,
+         0.8456340116613051,
+         0.6655454539289378
+        ]
+       },
+       {
+        "reference_block_index": 6,
+        "candidate_block_index": 42,
+        "mass": 0.014285714285714285,
+        "cost": 0.49509318970822314,
+        "reference_bbox_normalized": [
+         0.495543685613894,
+         0.9357262813683712,
+         0.5044563642514297,
+         0.9495003440163352
+        ],
+        "candidate_bbox_normalized": [
+         0.5360522800021701,
+         0.5494141626839686,
+         0.6229280957988664,
+         0.5595151727849786
+        ]
+       },
+       {
+        "reference_block_index": 6,
+        "candidate_block_index": 47,
+        "mass": 0.014285714285714285,
+        "cost": 0.49467112087191856,
+        "reference_bbox_normalized": [
+         0.495543685613894,
+         0.9357262813683712,
+         0.5044563642514297,
+         0.9495003440163352
+        ],
+        "candidate_bbox_normalized": [
+         0.5360522800021701,
+         0.5733131254562224,
+         0.6330849641288807,
+         0.5834141355572324
+        ]
+       },
+       {
+        "reference_block_index": 6,
+        "candidate_block_index": 60,
+        "mass": 0.014285714285714285,
+        "cost": 0.49439908552317924,
+        "reference_bbox_normalized": [
+         0.495543685613894,
+         0.9357262813683712,
+         0.5044563642514297,
+         0.9495003440163352
+        ],
+        "candidate_bbox_normalized": [
+         0.6596862693238102,
+         0.6907878837200127,
+         0.8521699593737234,
+         0.7008888938210227
+        ]
+       },
+       {
+        "reference_block_index": 6,
+        "candidate_block_index": 64,
+        "mass": 0.014285714285714285,
+        "cost": 0.4938290329155415,
+        "reference_bbox_normalized": [
+         0.495543685613894,
+         0.9357262813683712,
+         0.5044563642514297,
+         0.9495003440163352
+        ],
+        "candidate_bbox_normalized": [
+         0.6596862693238102,
+         0.7146868464922664,
+         0.8521699593737234,
+         0.7247878565932765
+        ]
+       },
+       {
+        "reference_block_index": 6,
+        "candidate_block_index": 39,
+        "mass": 0.014285714285714285,
+        "cost": 0.4936631387028775,
+        "reference_bbox_normalized": [
+         0.495543685613894,
+         0.9357262813683712,
+         0.5044563642514297,
+         0.9495003440163352
+        ],
+        "candidate_bbox_normalized": [
+         0.2773333281473397,
+         0.5369595999669547,
+         0.6223268197252859,
+         0.5470606100679648
+        ]
+       },
+       {
+        "reference_block_index": 6,
+        "candidate_block_index": 72,
+        "mass": 0.014285714285714285,
+        "cost": 0.4934795742771807,
+        "reference_bbox_normalized": [
+         0.495543685613894,
+         0.9357262813683712,
+         0.5044563642514297,
+         0.9495003440163352
+        ],
+        "candidate_bbox_normalized": [
+         0.1536993512920305,
+         0.8217272517657039,
+         0.2572679955974903,
+         0.831828261866714
+        ]
+       },
+       {
+        "reference_block_index": 6,
+        "candidate_block_index": 55,
+        "mass": 0.014285714285714285,
+        "cost": 0.4934381219594588,
+        "reference_bbox_normalized": [
+         0.495543685613894,
+         0.9357262813683712,
+         0.5044563642514297,
+         0.9495003440163352
+        ],
+        "candidate_bbox_normalized": [
+         0.5360522800021701,
+         0.6439999667080966,
+         0.6330849641288807,
+         0.6541009768091067
+        ]
+       },
+       {
+        "reference_block_index": 6,
+        "candidate_block_index": 44,
+        "mass": 0.014285714285714285,
+        "cost": 0.4932300054811024,
+        "reference_bbox_normalized": [
+         0.495543685613894,
+         0.9357262813683712,
+         0.5044563642514297,
+         0.9495003440163352
+        ],
+        "candidate_bbox_normalized": [
+         0.2773333281473397,
+         0.5608586012715041,
+         0.5672810373742596,
+         0.5709596113725142
+        ]
+       },
+       {
+        "reference_block_index": 6,
+        "candidate_block_index": 68,
+        "mass": 0.014285714285714285,
+        "cost": 0.49312979119545963,
+        "reference_bbox_normalized": [
+         0.495543685613894,
+         0.9357262813683712,
+         0.5044563642514297,
+         0.9495003440163352
+        ],
+        "candidate_bbox_normalized": [
+         0.6596862693238102,
+         0.7385858863291114,
+         0.8521699593737234,
+         0.7486868964301215
+        ]
+       },
+       {
+        "reference_block_index": 6,
+        "candidate_block_index": 49,
+        "mass": 0.014285714285714285,
+        "cost": 0.492928558320443,
+        "reference_bbox_normalized": [
+         0.495543685613894,
+         0.9357262813683712,
+         0.5044563642514297,
+         0.9495003440163352
+        ],
+        "candidate_bbox_normalized": [
+         0.2773333281473397,
+         0.5847575640437579,
+         0.8456340116613051,
+         0.594858574144768
+        ]
+       },
+       {
+        "reference_block_index": 6,
+        "candidate_block_index": 58,
+        "mass": 0.014285714285714285,
+        "cost": 0.4928646838615933,
+        "reference_bbox_normalized": [
+         0.495543685613894,
+         0.9357262813683712,
+         0.5044563642514297,
+         0.9495003440163352
+        ],
+        "candidate_bbox_normalized": [
+         0.5360522800021701,
+         0.6678990065449416,
+         0.6343268101511438,
+         0.6780000166459517
+        ]
+       },
+       {
+        "reference_block_index": 6,
+        "candidate_block_index": 15,
+        "mass": 0.014285714285714285,
+        "cost": 0.4923081611604089,
+        "reference_bbox_normalized": [
+         0.495543685613894,
+         0.9357262813683712,
+         0.5044563642514297,
+         0.9495003440163352
+        ],
+        "candidate_bbox_normalized": [
+         0.12058824028065002,
+         0.2437778049045139,
+         0.8521699593737234,
+         0.2653232150607639
+        ]
+       },
+       {
+        "reference_block_index": 6,
+        "candidate_block_index": 18,
+        "mass": 0.014285714285714285,
+        "cost": 0.49190260751750936,
+        "reference_bbox_normalized": [
+         0.495543685613894,
+         0.9357262813683712,
+         0.5044563642514297,
+         0.9495003440163352
+        ],
+        "candidate_bbox_normalized": [
+         0.12058824028065002,
+         0.27912116773200757,
+         0.8521699593737234,
+         0.3006666549528488
+        ]
+       },
+       {
+        "reference_block_index": 6,
+        "candidate_block_index": 52,
+        "mass": 0.014285714285714285,
+        "cost": 0.49172491930194184,
+        "reference_bbox_normalized": [
+         0.495543685613894,
+         0.9357262813683712,
+         0.5044563642514297,
+         0.9495003440163352
+        ],
+        "candidate_bbox_normalized": [
+         0.2773333281473397,
+         0.6315454425233783,
+         0.5672810373742596,
+         0.6416464526243885
+        ]
+       },
+       {
+        "reference_block_index": 6,
+        "candidate_block_index": 61,
+        "mass": 0.014285714285714285,
+        "cost": 0.4916558183382391,
+        "reference_bbox_normalized": [
+         0.495543685613894,
+         0.9357262813683712,
+         0.5044563642514297,
+         0.9495003440163352
+        ],
+        "candidate_bbox_normalized": [
+         0.5360522800021701,
+         0.7032424464370265,
+         0.6477516523373672,
+         0.7133434565380367
+        ]
+       },
+       {
+        "reference_block_index": 6,
+        "candidate_block_index": 56,
+        "mass": 0.014285714285714285,
+        "cost": 0.4911732419172403,
+        "reference_bbox_normalized": [
+         0.495543685613894,
+         0.9357262813683712,
+         0.5044563642514297,
+         0.9495003440163352
+        ],
+        "candidate_bbox_normalized": [
+         0.12058824028065002,
+         0.6554444438279278,
+         0.5571111043294271,
+         0.6655454539289378
+        ]
+       },
+       {
+        "reference_block_index": 6,
+        "candidate_block_index": 27,
+        "mass": 0.014285714285714285,
+        "cost": 0.49075617422011986,
+        "reference_bbox_normalized": [
+         0.495543685613894,
+         0.9357262813683712,
+         0.5044563642514297,
+         0.9495003440163352
+        ],
+        "candidate_bbox_normalized": [
+         0.12058824028065002,
+         0.3622626102331913,
+         0.8521699593737234,
+         0.3838080974540325
+        ]
+       },
+       {
+        "reference_block_index": 6,
+        "candidate_block_index": 66,
+        "mass": 0.014285714285714285,
+        "cost": 0.4906948603498176,
+        "reference_bbox_normalized": [
+         0.495543685613894,
+         0.9357262813683712,
+         0.5044563642514297,
+         0.9495003440163352
+        ],
+        "candidate_bbox_normalized": [
+         0.5360522800021701,
+         0.7271414092092803,
+         0.6525098015280331,
+         0.7372424193102904
+        ]
+       },
+       {
+        "reference_block_index": 6,
+        "candidate_block_index": 63,
+        "mass": 0.014285714285714285,
+        "cost": 0.4887609184690266,
+        "reference_bbox_normalized": [
+         0.495543685613894,
+         0.9357262813683712,
+         0.5044563642514297,
+         0.9495003440163352
+        ],
+        "candidate_bbox_normalized": [
+         0.2773333281473397,
+         0.7146868464922664,
+         0.5469411712845945,
+         0.7247878565932765
+        ]
+       }
+      ]
+     }
+    ],
+    "equations": "uniform mass; delta_bbox=(1+GIoU)/2; delta_label=1 for text; mu=1-(delta_bbox+delta_label)/2; Text-LTSim=exp(-EMD), sigma=1"
+   },
+   "interpretation": "Faithful published LTSim equations on extracted text blocks only. It measures text-layout geometry/segmentation, not full semantic layout; non-text classes abstain."
+  },
+  "block_transport": {
+   "status": "scored",
+   "applicable": true,
+   "metrics": {
+    "reference_block_count": 7,
+    "candidate_block_count": 75,
+    "transported_mass": 0.9999999999999999,
+    "combined_transport_cost": 0.6242128911183829,
+    "combined_transport_similarity_exp": 0.5356829033949136,
+    "transported_geometry_cost": 0.4826452096193686,
+    "geometry_transport_similarity_exp": 0.6171487429733927,
+    "transported_content_cost": 0.8871242996165526,
+    "content_transport_similarity_exp": 0.4118383752770345,
+    "nonzero_flow_count": 81
+   },
+   "evidence": {
+    "largest_cost_contributions": [
+     {
+      "reference_block_index": 5,
+      "candidate_block_index": 35,
+      "mass": 0.15834767641996558,
+      "combined_cost": 0.5854394677628127,
+      "geometry_cost": 0.45556438474151717,
+      "content_cost": 0.8266360505166476,
+      "reference_page": 1,
+      "candidate_page": 1,
+      "reference_bbox_stacked_normalized": [
+       0.12806552064185048,
+       0.5568446631383415,
+       1.0067553551368464,
+       0.9423619279957781
+      ],
+      "candidate_bbox_stacked_normalized": [
+       0.12058824028065002,
+       0.7107525257149128,
+       0.8521699593737234,
+       0.75585858508794
+      ],
+      "reference_text": "NO. name tR (min) Exp. tR MLR tR ANN NO. name m1 Dichlorodifluoromethane 1.35 1.50 1.52 m44 p-Xylene m2 Carbon disulfide 4.11 2.71 2.67 m45 m-Xylene m3 Allyl chloride 4.11 6.57 6.5",
+      "candidate_text": "m19 1,1-Dichloropropene 11.50 14.4 14.29 m62 Acrolein 3.19 3.33 3.44 m20 Benzenea 1.56 1.70 1.84 m63 sec-Butylbenzene 30.25 31.85 31.32 m21 Vinyl Chloride 12.09 11.39 11.53 m64 ter"
+     },
+     {
+      "reference_block_index": 5,
+      "candidate_block_index": 5,
+      "mass": 0.13052208835341367,
+      "combined_cost": 0.6087267713717586,
+      "geometry_cost": 0.4749053864372841,
+      "content_cost": 0.8572522005357827,
+      "reference_page": 1,
+      "candidate_page": 1,
+      "reference_bbox_stacked_normalized": [
+       0.12806552064185048,
+       0.5568446631383415,
+       1.0067553551368464,
+       0.9423619279957781
+      ],
+      "candidate_bbox_stacked_normalized": [
+       0.12058824028065002,
+       0.5459848654390586,
+       0.8794117846520119,
+       0.5853686862521701
+      ],
+      "reference_text": "NO. name tR (min) Exp. tR MLR tR ANN NO. name m1 Dichlorodifluoromethane 1.35 1.50 1.52 m44 p-Xylene m2 Carbon disulfide 4.11 2.71 2.67 m45 m-Xylene m3 Allyl chloride 4.11 6.57 6.5",
+      "candidate_text": "NO. name tR (min) Exp. tR MLR tR ANN NO. name tR (min) Exp. tR MLR tR ANN m1 Dichlorodifluoromethane 1.35 1.50 1.52 m44 p-Xylene 23.54 22.69 22.8 m2 Carbon disulfide 4.11 2.71 2.67"
+     },
+     {
+      "reference_block_index": 5,
+      "candidate_block_index": 70,
+      "mass": 0.06418313948434413,
+      "combined_cost": 0.6348323378256453,
+      "geometry_cost": 0.48024192571957436,
+      "content_cost": 0.9219288174512055,
+      "reference_page": 1,
+      "candidate_page": 1,
+      "reference_bbox_stacked_normalized": [
+       0.12806552064185048,
+       0.5568446631383415,
+       1.0067553551368464,
+       0.9423619279957781
+      ],
+      "candidate_bbox_stacked_normalized": [
+       0.12058824028065002,
+       0.8874697059091896,
+       0.8521699593737234,
+       0.9096868881071456
+      ],
+      "reference_text": "NO. name tR (min) Exp. tR MLR tR ANN NO. name m1 Dichlorodifluoromethane 1.35 1.50 1.52 m44 p-Xylene m2 Carbon disulfide 4.11 2.71 2.67 m45 m-Xylene m3 Allyl chloride 4.11 6.57 6.5",
+      "candidate_text": "m39 1,2-Dibromoethane 21.52 20.89 20.21 m82 Dichloroethane-d4 12.08 8.62 8.76 m40 Chloroethane 2.21 2.83 3.03 m83 Acetonitrilea 4.11 3.23 4.00 m41 Chlorobenzene 23.17 23.52 23.61 m"
+     },
+     {
+      "reference_block_index": 5,
+      "candidate_block_index": 51,
+      "mass": 0.04188181296615032,
+      "combined_cost": 0.6474174796598933,
+      "geometry_cost": 0.48641518699479,
+      "content_cost": 0.9464217374665136,
+      "reference_page": 1,
+      "candidate_page": 1,
+      "reference_bbox_stacked_normalized": [
+       0.12806552064185048,
+       0.5568446631383415,
+       1.0067553551368464,
+       0.9423619279957781
+      ],
+      "candidate_bbox_stacked_normalized": [
+       0.12058824028065002,
+       0.8043282826741536,
+       0.8521699593737234,
+       0.8208232263121942
+      ],
+      "reference_text": "NO. name tR (min) Exp. tR MLR tR ANN NO. name m1 Dichlorodifluoromethane 1.35 1.50 1.52 m44 p-Xylene m2 Carbon disulfide 4.11 2.71 2.67 m45 m-Xylene m3 Allyl chloride 4.11 6.57 6.5",
+      "candidate_text": "m31 Bromomethane 18.29 18.63 18.53 m74 Hexachlorobutadieneb38.57 - - m32 Toluene 19.38 15.38 15.90 m75 Naphthalenea 39.05 33.39 33.04 m33 cis-1,3-"
+     },
+     {
+      "reference_block_index": 5,
+      "candidate_block_index": 12,
+      "mass": 0.03557085484796328,
+      "combined_cost": 0.6536417689134271,
+      "geometry_cost": 0.4926938927673967,
+      "content_cost": 0.9525449674703406,
+      "reference_page": 1,
+      "candidate_page": 1,
+      "reference_bbox_stacked_normalized": [
+       0.12806552064185048,
+       0.5568446631383415,
+       1.0067553551368464,
+       0.9423619279957781
+      ],
+      "candidate_bbox_stacked_normalized": [
+       0.12058824028065002,
+       0.6042171825062145,
+       0.8456340116613051,
+       0.6149898875843395
+      ],
+      "reference_text": "NO. name tR (min) Exp. tR MLR tR ANN NO. name m1 Dichlorodifluoromethane 1.35 1.50 1.52 m44 p-Xylene m2 Carbon disulfide 4.11 2.71 2.67 m45 m-Xylene m3 Allyl chloride 4.11 6.57 6.5",
+      "candidate_text": "m8 Acrylonitrile 5.00 4.52 4.80 m51 Trichlorofluoromethanea 2.42 6.04 5.75 m9 1,1-Dichloroethane 6.14 8.62 8.16 m52 1,1,2,2-"
+     },
+     {
+      "reference_block_index": 5,
+      "candidate_block_index": 15,
+      "mass": 0.034710269650028686,
+      "combined_cost": 0.6539760700886221,
+      "geometry_cost": 0.4925899915461567,
+      "content_cost": 0.9536930730960582,
+      "reference_page": 1,
+      "candidate_page": 1,
+      "reference_bbox_stacked_normalized": [
+       0.12806552064185048,
+       0.5568446631383415,
+       1.0067553551368464,
+       0.9423619279957781
+      ],
+      "candidate_bbox_stacked_normalized": [
+       0.12058824028065002,
+       0.6218889024522569,
+       0.8521699593737234,
+       0.6326616075303819
+      ],
+      "reference_text": "NO. name tR (min) Exp. tR MLR tR ANN NO. name m1 Dichlorodifluoromethane 1.35 1.50 1.52 m44 p-Xylene m2 Carbon disulfide 4.11 2.71 2.67 m45 m-Xylene m3 Allyl chloride 4.11 6.57 6.5",
+      "candidate_text": "m10 Vinyl acetate 6.43 11.47 11.50 m53 Bromobenzene 27.46 26.85 26.92 m11 2,2-Dichloropropane 8.10 12.42 12.61 m54 1,2,3-"
+     },
+     {
+      "reference_block_index": 5,
+      "candidate_block_index": 59,
+      "mass": 0.03442340791738382,
+      "combined_cost": 0.6543778800273911,
+      "geometry_cost": 0.4925899499611839,
+      "content_cost": 0.9548411787217758,
+      "reference_page": 1,
+      "candidate_page": 1,
+      "reference_bbox_stacked_normalized": [
+       0.12806552064185048,
+       0.5568446631383415,
+       1.0067553551368464,
+       0.9423619279957781
+      ],
+      "candidate_bbox_stacked_normalized": [
+       0.12058824028065002,
+       0.8396717033000908,
+       0.8521699593737234,
+       0.8504444469105114
+      ],
+      "reference_text": "NO. name tR (min) Exp. tR MLR tR ANN NO. name m1 Dichlorodifluoromethane 1.35 1.50 1.52 m44 p-Xylene m2 Carbon disulfide 4.11 2.71 2.67 m45 m-Xylene m3 Allyl chloride 4.11 6.57 6.5",
+      "candidate_text": "m35 2-Hexanone 20.30 21.03 21.24 m78 Chlorobenzene-d5 23.10 23.49 23.28 m36 Tetrachloroethene 20.26 19.88 19.62 m79 1,4-"
+     },
+     {
+      "reference_block_index": 5,
+      "candidate_block_index": 38,
+      "mass": 0.028399311531841654,
+      "combined_cost": 0.657324697981849,
+      "geometry_cost": 0.4925899707536703,
+      "content_cost": 0.9632606199770379,
+      "reference_page": 1,
+      "candidate_page": 1,
+      "reference_bbox_stacked_normalized": [
+       0.12806552064185048,
+       0.5568446631383415,
+       1.0067553551368464,
+       0.9423619279957781
+      ],
+      "candidate_bbox_stacked_normalized": [
+       0.12058824028065002,
+       0.7627575806897096,
+       0.8521699593737234,
+       0.7735303050339823
+      ],
+      "reference_text": "NO. name tR (min) Exp. tR MLR tR ANN NO. name m1 Dichlorodifluoromethane 1.35 1.50 1.52 m44 p-Xylene m2 Carbon disulfide 4.11 2.71 2.67 m45 m-Xylene m3 Allyl chloride 4.11 6.57 6.5",
+      "candidate_text": "m27 1,4-Dioxane 16.17 15.46 15.43 m70 1,2-Dichlorobenzene 32.31 32.00 32.17 m28 2-Chloroethyl vinyl"
+     },
+     {
+      "reference_block_index": 5,
+      "candidate_block_index": 18,
+      "mass": 0.02438324727481354,
+      "combined_cost": 0.6587980866864036,
+      "geometry_cost": 0.4925899499611839,
+      "content_cost": 0.967470340604669,
+      "reference_page": 1,
+      "candidate_page": 1,
+      "reference_bbox_stacked_normalized": [
+       0.12806552064185048,
+       0.5568446631383415,
+       1.0067553551368464,
+       0.9423619279957781
+      ],
+      "candidate_bbox_stacked_normalized": [
+       0.12058824028065002,
+       0.6395605838660038,
+       0.8521699593737234,
+       0.6503333274764244
+      ],
+      "reference_text": "NO. name tR (min) Exp. tR MLR tR ANN NO. name m1 Dichlorodifluoromethane 1.35 1.50 1.52 m44 p-Xylene m2 Carbon disulfide 4.11 2.71 2.67 m45 m-Xylene m3 Allyl chloride 4.11 6.57 6.5",
+      "candidate_text": "m12 Chloromethane 1.49 -0.34 -0.12 m55 n-Propylbenzene 27.58 27.92 27.64 m13 cis-1,2-"
+     },
+     {
+      "reference_block_index": 5,
+      "candidate_block_index": 27,
+      "mass": 0.02438324727481354,
+      "combined_cost": 0.6587980866864036,
+      "geometry_cost": 0.4925899499611839,
+      "content_cost": 0.967470340604669,
+      "reference_page": 1,
+      "candidate_page": 1,
+      "reference_bbox_stacked_normalized": [
+       0.12806552064185048,
+       0.5568446631383415,
+       1.0067553551368464,
+       0.9423619279957781
+      ],
+      "candidate_bbox_stacked_normalized": [
+       0.12058824028065002,
+       0.6811313051165957,
+       0.8521699593737234,
+       0.6919040487270163
+      ],
+      "reference_text": "NO. name tR (min) Exp. tR MLR tR ANN NO. name m1 Dichlorodifluoromethane 1.35 1.50 1.52 m44 p-Xylene m2 Carbon disulfide 4.11 2.71 2.67 m45 m-Xylene m3 Allyl chloride 4.11 6.57 6.5",
+      "candidate_text": "m16 Methacrylonitrile 9.19 8.47 8.74 m59 4-Chlorotoluene 28.33 27.85 27.94 m17 1,1,1-"
+     },
+     {
+      "reference_block_index": 5,
+      "candidate_block_index": 28,
+      "mass": 0.016351118760757316,
+      "combined_cost": 0.6645797258034203,
+      "geometry_cost": 0.4957148126376033,
+      "content_cost": 0.9781859931113662,
+      "reference_page": 1,
+      "candidate_page": 1,
+      "reference_bbox_stacked_normalized": [
+       0.12806552064185048,
+       0.5568446631383415,
+       1.0067553551368464,
+       0.9423619279957781
+      ],
+      "candidate_bbox_stacked_normalized": [
+       0.2773333281473397,
+       0.6868535436765112,
+       0.8521699593737234,
+       0.6919040487270163
+      ],
+      "reference_text": "NO. name tR (min) Exp. tR MLR tR ANN NO. name m1 Dichlorodifluoromethane 1.35 1.50 1.52 m44 p-Xylene m2 Carbon disulfide 4.11 2.71 2.67 m45 m-Xylene m3 Allyl chloride 4.11 6.57 6.5",
+      "candidate_text": "10.18 13.58 12.60 m60 Pentachloroethane 29.41 28.41 28.17"
+     },
+     {
+      "reference_block_index": 5,
+      "candidate_block_index": 36,
+      "mass": 0.01549053356282272,
+      "combined_cost": 0.6649815627724214,
+      "geometry_cost": 0.4957148126376032,
+      "content_cost": 0.9793340987370838,
+      "reference_page": 1,
+      "candidate_page": 1,
+      "reference_bbox_stacked_normalized": [
+       0.12806552064185048,
+       0.5568446631383415,
+       1.0067553551368464,
+       0.9423619279957781
+      ],
+      "candidate_bbox_stacked_normalized": [
+       0.2773333281473397,
+       0.7508080800374348,
+       0.8521699593737234,
+       0.75585858508794
+      ],
+      "reference_text": "NO. name tR (min) Exp. tR MLR tR ANN NO. name m1 Dichlorodifluoromethane 1.35 1.50 1.52 m44 p-Xylene m2 Carbon disulfide 4.11 2.71 2.67 m45 m-Xylene m3 Allyl chloride 4.11 6.57 6.5",
+      "candidate_text": "15.50 15.79 15.69 m69 n-Butylbenzene 32.23 32.68 32.35"
+     },
+     {
+      "reference_block_index": 5,
+      "candidate_block_index": 71,
+      "mass": 0.015203671830177854,
+      "combined_cost": 0.6652494540850891,
+      "geometry_cost": 0.4957148126376034,
+      "content_cost": 0.9800995024875622,
+      "reference_page": 1,
+      "candidate_page": 1,
+      "reference_bbox_stacked_normalized": [
+       0.12806552064185048,
+       0.5568446631383415,
+       1.0067553551368464,
+       0.9423619279957781
+      ],
+      "candidate_bbox_stacked_normalized": [
+       0.2773333281473397,
+       0.9046363830566406,
+       0.8521699593737234,
+       0.9096868881071456
+      ],
+      "reference_text": "NO. name tR (min) Exp. tR MLR tR ANN NO. name m1 Dichlorodifluoromethane 1.35 1.50 1.52 m44 p-Xylene m2 Carbon disulfide 4.11 2.71 2.67 m45 m-Xylene m3 Allyl chloride 4.11 6.57 6.5",
+      "candidate_text": "23.36 22.88 22.81 m85 Fluorobenzene 13.00 14.04 14.11"
+     },
+     {
+      "reference_block_index": 5,
+      "candidate_block_index": 19,
+      "mass": 0.01491681009753299,
+      "combined_cost": 0.6652494540850891,
+      "geometry_cost": 0.4957148126376034,
+      "content_cost": 0.9800995024875622,
+      "reference_page": 1,
+      "candidate_page": 1,
+      "reference_bbox_stacked_normalized": [
+       0.12806552064185048,
+       0.5568446631383415,
+       1.0067553551368464,
+       0.9423619279957781
+      ],
+      "candidate_bbox_stacked_normalized": [
+       0.2773333281473397,
+       0.6452828224259194,
+       0.8521699593737234,
+       0.6503333274764244
+      ],
+      "reference_text": "NO. name tR (min) Exp. tR MLR tR ANN NO. name m1 Dichlorodifluoromethane 1.35 1.50 1.52 m44 p-Xylene m2 Carbon disulfide 4.11 2.71 2.67 m45 m-Xylene m3 Allyl chloride 4.11 6.57 6.5",
+      "candidate_text": "8.25 9.82 9.86 m56 2-Chlorotoluene 28.19 27.88 27.96"
+     },
+     {
+      "reference_block_index": 5,
+      "candidate_block_index": 67,
+      "mass": 0.01434308663224326,
+      "combined_cost": 0.6689303598908258,
+      "geometry_cost": 0.5009656041654025,
+      "content_cost": 0.9808649062380406,
+      "reference_page": 1,
+      "candidate_page": 1,
+      "reference_bbox_stacked_normalized": [
+       0.12806552064185048,
+       0.5568446631383415,
+       1.0067553551368464,
+       0.9423619279957781
+      ],
+      "candidate_bbox_stacked_normalized": [
+       0.12058824028065002,
+       0.8692929431645557,
+       0.5571111043294271,
+       0.8743434482150607
+      ],
+      "reference_text": "NO. name tR (min) Exp. tR MLR tR ANN NO. name m1 Dichlorodifluoromethane 1.35 1.50 1.52 m44 p-Xylene m2 Carbon disulfide 4.11 2.71 2.67 m45 m-Xylene m3 Allyl chloride 4.11 6.57 6.5",
+      "candidate_text": "m38 Dibromochloromethane21.19 21.94 21.62 m81 1,2-"
+     },
+     {
+      "reference_block_index": 5,
+      "candidate_block_index": 21,
+      "mass": 0.013482501434308663,
+      "combined_cost": 0.6691698115381521,
+      "geometry_cost": 0.500715780593595,
+      "content_cost": 0.9820130118637581,
+      "reference_page": 1,
+      "candidate_page": 1,
+      "reference_bbox_stacked_normalized": [
+       0.12806552064185048,
+       0.5568446631383415,
+       1.0067553551368464,
+       0.9423619279957781
+      ],
+      "candidate_bbox_stacked_normalized": [
+       0.12058824028065002,
+       0.6572323423443418,
+       0.5906274334277982,
+       0.6622828473948469
+      ],
+      "reference_text": "NO. name tR (min) Exp. tR MLR tR ANN NO. name m1 Dichlorodifluoromethane 1.35 1.50 1.52 m44 p-Xylene m2 Carbon disulfide 4.11 2.71 2.67 m45 m-Xylene m3 Allyl chloride 4.11 6.57 6.5",
+      "candidate_text": "m14 Propionitrile 8.51 5.61 5.99 m57 trans-1,4-"
+     },
+     {
+      "reference_block_index": 5,
+      "candidate_block_index": 49,
+      "mass": 0.012908777969018933,
+      "combined_cost": 0.6662187436241729,
+      "geometry_cost": 0.49576353562952324,
+      "content_cost": 0.9827784156142365,
+      "reference_page": 1,
+      "candidate_page": 1,
+      "reference_bbox_stacked_normalized": [
+       0.12806552064185048,
+       0.5568446631383415,
+       1.0067553551368464,
+       0.9423619279957781
+      ],
+      "candidate_bbox_stacked_normalized": [
+       0.2773333281473397,
+       0.792378782021879,
+       0.8456340116613051,
+       0.797429287072384
+      ],
+      "reference_text": "NO. name tR (min) Exp. tR MLR tR ANN NO. name m1 Dichlorodifluoromethane 1.35 1.50 1.52 m44 p-Xylene m2 Carbon disulfide 4.11 2.71 2.67 m45 m-Xylene m3 Allyl chloride 4.11 6.57 6.5",
+      "candidate_text": "2.19 2.08 1.94 m73 Iodomethane 3.56 6.13 5.83"
+     },
+     {
+      "reference_block_index": 5,
+      "candidate_block_index": 24,
+      "mass": 0.011474469305794608,
+      "combined_cost": 0.6702205435208399,
+      "geometry_cost": 0.5008897996525977,
+      "content_cost": 0.9846919249904325,
+      "reference_page": 1,
+      "candidate_page": 1,
+      "reference_bbox_stacked_normalized": [
+       0.12806552064185048,
+       0.5568446631383415,
+       1.0067553551368464,
+       0.9423619279957781
+      ],
+      "candidate_bbox_stacked_normalized": [
+       0.12058824028065002,
+       0.6691818237304688,
+       0.5672810373742596,
+       0.6742323287809738
+      ],
+      "reference_text": "NO. name tR (min) Exp. tR MLR tR ANN NO. name m1 Dichlorodifluoromethane 1.35 1.50 1.52 m44 p-Xylene m2 Carbon disulfide 4.11 2.71 2.67 m45 m-Xylene m3 Allyl chloride 4.11 6.57 6.5",
+      "candidate_text": "m15 Chloroform 9.01 7.78 7.50 m58 1,3,5-"
+     },
+     {
+      "reference_block_index": 5,
+      "candidate_block_index": 9,
+      "mass": 0.010900745840504877,
+      "combined_cost": 0.6681554234617648,
+      "geometry_cost": 0.4973005513883785,
+      "content_cost": 0.9854573287409109,
+      "reference_page": 1,
+      "candidate_page": 1,
+      "reference_bbox_stacked_normalized": [
+       0.12806552064185048,
+       0.5568446631383415,
+       1.0067553551368464,
+       0.9423619279957781
+      ],
+      "candidate_bbox_stacked_normalized": [
+       0.2773333281473397,
+       0.592267662587792,
+       0.6394509708180147,
+       0.597318167638297
+      ],
+      "reference_text": "NO. name tR (min) Exp. tR MLR tR ANN NO. name m1 Dichlorodifluoromethane 1.35 1.50 1.52 m44 p-Xylene m2 Carbon disulfide 4.11 2.71 2.67 m45 m-Xylene m3 Allyl chloride 4.11 6.57 6.5",
+      "candidate_text": "4.57 8.77 8.76 m50 cis-1,4-Dichloro-2-"
+     },
+     {
+      "reference_block_index": 3,
+      "candidate_block_index": 3,
+      "mass": 0.027538726333907058,
+      "combined_cost": 0.2574445606652782,
+      "geometry_cost": 0.39606855486965875,
+      "content_cost": 0.0,
+      "reference_page": 0,
+      "candidate_page": 0,
+      "reference_bbox_stacked_normalized": [
+       0.11764705882352941,
+       0.13820780166471847,
+       0.8823528414458232,
+       0.14509485225484828
+      ],
+      "candidate_bbox_stacked_normalized": [
+       0.11764705882352941,
+       0.14051450864233153,
+       0.8298251582126991,
+       0.1560214842208708
+      ],
+      "reference_text": "The table below is a medical-literature table reproduced verbatim from a PubMed-derived dataset.",
+      "candidate_text": "The table below is a medical-literature table reproduced verbatim from a PubMed-derived dataset."
+     },
+     {
+      "reference_block_index": 5,
+      "candidate_block_index": 39,
+      "mass": 0.010327022375215147,
+      "combined_cost": 0.6685062898750336,
+      "geometry_cost": 0.49742820538930355,
+      "content_cost": 0.9862227324913893,
+      "reference_page": 1,
+      "candidate_page": 1,
+      "reference_bbox_stacked_normalized": [
+       0.12806552064185048,
+       0.5568446631383415,
+       1.0067553551368464,
+       0.9423619279957781
+      ],
+      "candidate_bbox_stacked_normalized": [
+       0.2773333281473397,
+       0.7684797999834774,
+       0.6223268197252859,
+       0.7735303050339823
+      ],
+      "reference_text": "NO. name tR (min) Exp. tR MLR tR ANN NO. name m1 Dichlorodifluoromethane 1.35 1.50 1.52 m44 p-Xylene m2 Carbon disulfide 4.11 2.71 2.67 m45 m-Xylene m3 Allyl chloride 4.11 6.57 6.5",
+      "candidate_text": "17.32 15.02 15.92 m71 1,2-Dibromo-3-"
+     },
+     {
+      "reference_block_index": 3,
+      "candidate_block_index": 56,
+      "mass": 0.007093308298127574,
+      "combined_cost": 0.9407409007968379,
+      "geometry_cost": 0.9929667704566738,
+      "content_cost": 0.84375,
+      "reference_page": 0,
+      "candidate_page": 1,
+      "reference_bbox_stacked_normalized": [
+       0.11764705882352941,
+       0.13820780166471847,
+       0.8823528414458232,
+       0.14509485225484828
+      ],
+      "candidate_bbox_stacked_normalized": [
+       0.12058824028065002,
+       0.8277222219139639,
+       0.5571111043294271,
+       0.8327727269644689
+      ],
+      "reference_text": "The table below is a medical-literature table reproduced verbatim from a PubMed-derived dataset.",
+      "candidate_text": "m34 methacrylatea Ethyl 20.01 24.52 24.70 m77 1,4-"
+     },
+     {
+      "reference_block_index": 5,
+      "candidate_block_index": 73,
+      "mass": 0.009753298909925417,
+      "combined_cost": 0.6714964271139245,
+      "geometry_cost": 0.5016162760450322,
+      "content_cost": 0.9869881362418675,
+      "reference_page": 1,
+      "candidate_page": 1,
+      "reference_bbox_stacked_normalized": [
+       0.12806552064185048,
+       0.5568446631383415,
+       1.0067553551368464,
+       0.9423619279957781
+      ],
+      "candidate_bbox_stacked_normalized": [
+       0.12058824028065002,
+       0.9165858644427676,
+       0.46981696833192915,
+       0.9216363694932725
+      ],
+      "reference_text": "NO. name tR (min) Exp. tR MLR tR ANN NO. name m1 Dichlorodifluoromethane 1.35 1.50 1.52 m44 p-Xylene m2 Carbon disulfide 4.11 2.71 2.67 m45 m-Xylene m3 Allyl chloride 4.11 6.57 6.5",
+      "candidate_text": "m43 Ethylbenzene 23.38 23.26 23.06"
+     },
+     {
+      "reference_block_index": 5,
+      "candidate_block_index": 8,
+      "mass": 0.008032128514056224,
+      "combined_cost": 0.6727088061139728,
+      "geometry_cost": 0.5022450530635643,
+      "content_cost": 0.9892843474933027,
+      "reference_page": 1,
+      "candidate_page": 1,
+      "reference_bbox_stacked_normalized": [
+       0.12806552064185048,
+       0.5568446631383415,
+       1.0067553551368464,
+       0.9423619279957781
+      ],
+      "candidate_bbox_stacked_normalized": [
+       0.12058824028065002,
+       0.592267662587792,
+       0.23925492031122345,
+       0.603545448996804
+      ],
+      "reference_text": "NO. name tR (min) Exp. tR MLR tR ANN NO. name m1 Dichlorodifluoromethane 1.35 1.50 1.52 m44 p-Xylene m2 Carbon disulfide 4.11 2.71 2.67 m45 m-Xylene m3 Allyl chloride 4.11 6.57 6.5",
+      "candidate_text": "m7 trans-1,2- Dichloroethene"
+     }
+    ],
+    "mass_policy": "block normalized-character count; minimum mass unit 1",
+    "cost_policy": "0.65 * (1 - rescaled GIoU) + 0.35 * normalized Levenshtein distance",
+    "page_geometry": "page boxes stacked vertically and normalized by max page count"
+   },
+   "interpretation": "Exact optimal transport over extracted text blocks. This is an LTSim-inspired, fully specified adaptation\u2014not the published LTSim implementation or a semantic table/formula metric. Report geometry and content costs separately with the flows."
+  },
+  "layout_relations": {
+   "status": "scored",
+   "applicable": true,
+   "metrics": {
+    "matched_block_count": 7,
+    "reference_block_coverage": 1.0,
+    "candidate_block_coverage": 0.09333333333333334,
+    "matched_block_iou_q10": 0.18852648280210088,
+    "matched_block_iou_q50": 0.48978892260570456,
+    "matched_block_center_displacement_q90": 0.05258223035233629,
+    "pairwise_relation_count": 21,
+    "pairwise_relation_agreement": 1.0
+   },
+   "evidence": {
+    "relation_mismatches": [],
+    "worst_block_pairs": [
+     {
+      "reference_block_index": 5,
+      "candidate_block_index": 35,
+      "reference_page": 1,
+      "candidate_page": 1,
+      "reference_bbox_normalized": [
+       0.12806552064185048,
+       0.11368932627668285,
+       1.0067553551368464,
+       0.8847238559915562
+      ],
+      "candidate_bbox_normalized": [
+       0.12058824028065002,
+       0.4215050514298256,
+       0.8521699593737234,
+       0.5117171701758799
+      ],
+      "center_displacement": 0.08734153127905606,
+      "bbox_iou": 0.09632177566431376,
+      "reference_text": "NO. name tR (min) Exp. tR MLR tR ANN NO. name m1 Dichlorodifluoromethane 1.35 1.50 1.52 m44 p-Xylene m2 Carbon disulfide 4.11 2.71 2.67 m45 m-Xylene m3 Allyl ch"
+     },
+     {
+      "reference_block_index": 3,
+      "candidate_block_index": 3,
+      "reference_page": 0,
+      "candidate_page": 0,
+      "reference_bbox_normalized": [
+       0.11764705882352941,
+       0.27641560332943693,
+       0.8823528414458232,
+       0.29018970450969656
+      ],
+      "candidate_bbox_normalized": [
+       0.11764705882352941,
+       0.28102901728466306,
+       0.8298251582126991,
+       0.3120429684417416
+      ],
+      "center_displacement": 0.029409363067856416,
+      "bbox_iou": 0.2499962875606256,
+      "reference_text": "The table below is a medical-literature table reproduced verbatim from a PubMed-derived dataset."
+     },
+     {
+      "reference_block_index": 0,
+      "candidate_block_index": 0,
+      "reference_page": 0,
+      "candidate_page": 0,
+      "reference_bbox_normalized": [
+       0.3659052381328508,
+       0.14247027310458096,
+       0.6340948366651348,
+       0.164206938310103
+      ],
+      "candidate_bbox_normalized": [
+       0.35531945322074143,
+       0.13372351906516336,
+       0.6446805467792586,
+       0.1551881558967359
+      ],
+      "center_displacement": 0.008882768226471065,
+      "bbox_iou": 0.39523673664803494,
+      "reference_text": "Clinical Table Sample 4"
+     },
+     {
+      "reference_block_index": 6,
+      "candidate_block_index": 74,
+      "reference_page": 1,
+      "candidate_page": 1,
+      "reference_bbox_normalized": [
+       0.495543685613894,
+       0.9357262813683712,
+       0.5044563642514297,
+       0.9495003440163352
+      ],
+      "candidate_bbox_normalized": [
+       0.49673202614379086,
+       0.9351212472626658,
+       0.5032679738562091,
+       0.9452222573636758
+      ],
+      "center_displacement": 0.0024415603793098315,
+      "bbox_iou": 0.48978892260570456,
+      "reference_text": "2"
+     },
+     {
+      "reference_block_index": 2,
+      "candidate_block_index": 2,
+      "reference_page": 0,
+      "candidate_page": 0,
+      "reference_bbox_normalized": [
+       0.11764705882352941,
+       0.24215588425145004,
+       0.30313963048598347,
+       0.2602697622896445
+      ],
+      "candidate_bbox_normalized": [
+       0.11764705882352941,
+       0.24197472466362846,
+       0.3051830366546032,
+       0.25965149234039614
+      ],
+      "center_displacement": 0.001097109424202193,
+      "bbox_iou": 0.9462319494802944,
+      "reference_text": "1 Patient Data"
+     },
+     {
+      "reference_block_index": 4,
+      "candidate_block_index": 4,
+      "reference_page": 0,
+      "candidate_page": 0,
+      "reference_bbox_normalized": [
+       0.495543685613894,
+       0.9357262813683712,
+       0.5044563642514297,
+       0.9495003440163352
+      ],
+      "candidate_bbox_normalized": [
+       0.49550653594771243,
+       0.9346552376795296,
+       0.5044934640522876,
+       0.9485441265684186
+      ],
+      "center_displacement": 0.0010136305686858592,
+      "bbox_iou": 0.8567613616805101,
+      "reference_text": "1"
+     },
+     {
+      "reference_block_index": 1,
+      "candidate_block_index": 1,
+      "reference_page": 0,
+      "candidate_page": 0,
+      "reference_bbox_normalized": [
+       0.39130957609687755,
+       0.18607366927946456,
+       0.608690498701108,
+       0.20116858048872513
+      ],
+      "candidate_bbox_normalized": [
+       0.39788152657303155,
+       0.1861843147663155,
+       0.6021184484943066,
+       0.2000732036552044
+      ],
+      "center_displacement": 0.0004923656758599879,
+      "bbox_iou": 0.8644696880624038,
+      "reference_text": "Dataset-expansion sample"
+     }
+    ]
+   },
+   "interpretation": "Transparent matched-block relation trial inspired by pairwise-layout work; this is not the published PaIRS or LTSim metric."
+  },
+  "reading_order": {
+   "status": "scored",
+   "applicable": true,
+   "metrics": {
+    "matched_block_count": 7,
+    "reference_block_coverage": 1.0,
+    "candidate_block_coverage": 0.09333333333333334,
+    "inversion_count": 0,
+    "kendall_tau": 1.0
+   },
+   "evidence": {
+    "inverted_block_pairs": []
+   },
+   "interpretation": "Kendall tau is computed only on content-matched blocks; coverage must accompany it."
+  },
+  "pagination": {
+   "status": "scored",
+   "applicable": true,
+   "metrics": {
+    "reference_page_count": 2,
+    "candidate_page_count": 2,
+    "page_count_delta": 0,
+    "matched_block_count": 7,
+    "matched_block_page_assignment_accuracy": 1.0,
+    "page_break_precision": 1.0,
+    "page_break_recall": 1.0,
+    "page_break_f1": 1.0,
+    "page_break_true_positive": 1,
+    "page_break_false_positive": 0,
+    "page_break_false_negative": 0
+   },
+   "evidence": {
+    "mismatched_page_breaks": []
+   },
+   "interpretation": "Page count, matched-block page assignment, and page-break boundaries are reported independently."
+  },
+  "typography": {
+   "status": "scored",
+   "applicable": true,
+   "metrics": {
+    "styled_matched_token_count": 321,
+    "reference_styled_token_count": 346,
+    "candidate_styled_token_count": 499,
+    "reference_style_coverage": 0.9277456647398844,
+    "candidate_style_coverage": 0.6432865731462926,
+    "style_coverage_hmean": 0.7597633136094674,
+    "font_size_abs_log_ratio_q50": 0.31015467399065616,
+    "font_size_abs_log_ratio_q90": 0.31015467399065616,
+    "font_size_abs_log_ratio_max": 0.31015467399065616,
+    "font_name_exact_agreement_rate": 0.0,
+    "color_exact_agreement_rate": 1.0,
+    "bold_agreement_rate": 1.0,
+    "italic_agreement_rate": 1.0,
+    "serif_agreement_rate": 1.0,
+    "monospace_agreement_rate": 1.0,
+    "baseline_displacement_q90": 0.06721434930358272
+   },
+   "evidence": {
+    "style_mismatches": [
+     {
+      "token": "(min)",
+      "reference_page": 1,
+      "candidate_page": 1,
+      "reference_bbox": [
+       267.9306640625,
+       90.04194641113281,
+       298.5852355957031,
+       100.95103454589844
+      ],
+      "candidate_bbox": [
+       183.27200317382812,
+       72.84002685546875,
+       205.7519989013672,
+       80.84002685546875
+      ],
+      "reference_font": "LMRoman10-Bold",
+      "candidate_font": "NewCM10-Bold",
+      "reference_size": 10.909088134765625,
+      "candidate_size": 8.0,
+      "font_size_abs_log_ratio": 0.31015467399065616,
+      "reference_style_bits": {
+       "italic": false,
+       "serif": true,
+       "monospace": false,
+       "bold": true
+      },
+      "candidate_style_bits": {
+       "italic": false,
+       "serif": true,
+       "monospace": false,
+       "bold": true
+      },
+      "reference_color": 0,
+      "candidate_color": 0
+     },
+     {
+      "token": "-0.12",
+      "reference_page": 1,
+      "candidate_page": 1,
+      "reference_bbox": [
+       400.13623046875,
+       257.41412353515625,
+       423.165283203125,
+       268.3232116699219
+      ],
+      "candidate_bbox": [
+       269.3039855957031,
+       221.06396484375,
+       286.1919860839844,
+       229.06396484375
+      ],
+      "reference_font": "LMRoman10-Regular",
+      "candidate_font": "NewCM10-Regular",
+      "reference_size": 10.909088134765625,
+      "candidate_size": 8.0,
+      "font_size_abs_log_ratio": 0.31015467399065616,
+      "reference_style_bits": {
+       "italic": false,
+       "serif": true,
+       "monospace": false,
+       "bold": false
+      },
+      "candidate_style_bits": {
+       "italic": false,
+       "serif": true,
+       "monospace": false,
+       "bold": false
+      },
+      "reference_color": 0,
+      "candidate_color": 0
+     },
+     {
+      "token": "-0.34",
+      "reference_page": 1,
+      "candidate_page": 1,
+      "reference_bbox": [
+       340.4371032714844,
+       257.41412353515625,
+       363.46612548828125,
+       268.3232116699219
+      ],
+      "candidate_bbox": [
+       230.98399353027344,
+       221.06396484375,
+       247.8719940185547,
+       229.06396484375
+      ],
+      "reference_font": "LMRoman10-Regular",
+      "candidate_font": "NewCM10-Regular",
+      "reference_size": 10.909088134765625,
+      "candidate_size": 8.0,
+      "font_size_abs_log_ratio": 0.31015467399065616,
+      "reference_style_bits": {
+       "italic": false,
+       "serif": true,
+       "monospace": false,
+       "bold": false
+      },
+      "candidate_style_bits": {
+       "italic": false,
+       "serif": true,
+       "monospace": false,
+       "bold": false
+      },
+      "reference_color": 0,
+      "candidate_color": 0
+     },
+     {
+      "token": "1,1-Dichloroethane",
+      "reference_page": 1,
+      "candidate_page": 1,
+      "reference_bbox": [
+       113.45341491699219,
+       215.57107543945312,
+       203.03884887695312,
+       226.48016357421875
+      ],
+      "candidate_bbox": [
+       94.06400299072266,
+       174.14398193359375,
+       159.760009765625,
+       182.14398193359375
+      ],
+      "reference_font": "LMRoman10-Regular",
+      "candidate_font": "NewCM10-Regular",
+      "reference_size": 10.909088134765625,
+      "candidate_size": 8.0,
+      "font_size_abs_log_ratio": 0.31015467399065616,
+      "reference_style_bits": {
+       "italic": false,
+       "serif": true,
+       "monospace": false,
+       "bold": false
+      },
+      "candidate_style_bits": {
+       "italic": false,
+       "serif": true,
+       "monospace": false,
+       "bold": false
+      },
+      "reference_color": 0,
+      "candidate_color": 0
+     },
+     {
+      "token": "1,1-Dichloroethene",
+      "reference_page": 1,
+      "candidate_page": 1,
+      "reference_bbox": [
+       113.45341491699219,
+       159.78036499023438,
+       202.4279327392578,
+       170.689453125
+      ],
+      "candidate_bbox": [
+       94.06400299072266,
+       118.1600341796875,
+       159.31201171875,
+       126.1600341796875
+      ],
+      "reference_font": "LMRoman10-Regular",
+      "candidate_font": "NewCM10-Regular",
+      "reference_size": 10.909088134765625,
+      "candidate_size": 8.0,
+      "font_size_abs_log_ratio": 0.31015467399065616,
+      "reference_style_bits": {
+       "italic": false,
+       "serif": true,
+       "monospace": false,
+       "bold": false
+      },
+      "candidate_style_bits": {
+       "italic": false,
+       "serif": true,
+       "monospace": false,
+       "bold": false
+      },
+      "reference_color": 0,
+      "candidate_color": 0
+     },
+     {
+      "token": "1,1-Dichloropropene",
+      "reference_page": 1,
+      "candidate_page": 1,
+      "reference_bbox": [
+       113.45341491699219,
+       355.0478820800781,
+       209.13702392578125,
+       365.95697021484375
+      ],
+      "candidate_bbox": [
+       94.06400299072266,
+       333.8320007324219,
+       164.2320098876953,
+       341.8320007324219
+      ],
+      "reference_font": "LMRoman10-Regular",
+      "candidate_font": "NewCM10-Regular",
+      "reference_size": 10.909088134765625,
+      "candidate_size": 8.0,
+      "font_size_abs_log_ratio": 0.31015467399065616,
+      "reference_style_bits": {
+       "italic": false,
+       "serif": true,
+       "monospace": false,
+       "bold": false
+      },
+      "candidate_style_bits": {
+       "italic": false,
+       "serif": true,
+       "monospace": false,
+       "bold": false
+      },
+      "reference_color": 0,
+      "candidate_color": 0
+     },
+     {
+      "token": "1,2-Dibromoethane",
+      "reference_page": 1,
+      "candidate_page": 1,
+      "reference_bbox": [
+       113.45341491699219,
+       634.0015258789062,
+       204.55520629882812,
+       644.9105834960938
+      ],
+      "candidate_bbox": [
+       94.06400299072266,
+       613.7520141601562,
+       160.87200927734375,
+       621.7520141601562
+      ],
+      "reference_font": "LMRoman10-Regular",
+      "candidate_font": "NewCM10-Regular",
+      "reference_size": 10.909088134765625,
+      "candidate_size": 8.0,
+      "font_size_abs_log_ratio": 0.31015467399065616,
+      "reference_style_bits": {
+       "italic": false,
+       "serif": true,
+       "monospace": false,
+       "bold": false
+      },
+      "candidate_style_bits": {
+       "italic": false,
+       "serif": true,
+       "monospace": false,
+       "bold": false
+      },
+      "reference_color": 0,
+      "candidate_color": 0
+     },
+     {
+      "token": "1,2-Dichlorobenzene",
+      "reference_page": 1,
+      "candidate_page": 1,
+      "reference_bbox": [
+       495.15264892578125,
+       466.62933349609375,
+       590.79248046875,
+       477.5384216308594
+      ],
+      "candidate_bbox": [
+       328.0639953613281,
+       416.2080078125,
+       398.20001220703125,
+       424.2080078125
+      ],
+      "reference_font": "LMRoman10-Regular",
+      "candidate_font": "NewCM10-Regular",
+      "reference_size": 10.909088134765625,
+      "candidate_size": 8.0,
+      "font_size_abs_log_ratio": 0.31015467399065616,
+      "reference_style_bits": {
+       "italic": false,
+       "serif": true,
+       "monospace": false,
+       "bold": false
+      },
+      "candidate_style_bits": {
+       "italic": false,
+       "serif": true,
+       "monospace": false,
+       "bold": false
+      },
+      "reference_color": 0,
+      "candidate_color": 0
+     },
+     {
+      "token": "1,2-Dichloroethane",
+      "reference_page": 1,
+      "candidate_page": 1,
+      "reference_bbox": [
+       113.45341491699219,
+       396.89093017578125,
+       203.03884887695312,
+       407.8000183105469
+      ],
+      "candidate_bbox": [
+       94.06400299072266,
+       361.02398681640625,
+       159.760009765625,
+       369.02398681640625
+      ],
+      "reference_font": "LMRoman10-Regular",
+      "candidate_font": "NewCM10-Regular",
+      "reference_size": 10.909088134765625,
+      "candidate_size": 8.0,
+      "font_size_abs_log_ratio": 0.31015467399065616,
+      "reference_style_bits": {
+       "italic": false,
+       "serif": true,
+       "monospace": false,
+       "bold": false
+      },
+      "candidate_style_bits": {
+       "italic": false,
+       "serif": true,
+       "monospace": false,
+       "bold": false
+      },
+      "reference_color": 0,
+      "candidate_color": 0
+     },
+     {
+      "token": "1,2-Dichloropropane",
+      "reference_page": 1,
+      "candidate_page": 1,
+      "reference_bbox": [
+       113.45341491699219,
+       424.7862854003906,
+       209.45338439941406,
+       435.69537353515625
+      ],
+      "candidate_bbox": [
+       94.06400299072266,
+       379.1520080566406,
+       164.4560089111328,
+       387.1520080566406
+      ],
+      "reference_font": "LMRoman10-Regular",
+      "candidate_font": "NewCM10-Regular",
+      "reference_size": 10.909088134765625,
+      "candidate_size": 8.0,
+      "font_size_abs_log_ratio": 0.31015467399065616,
+      "reference_style_bits": {
+       "italic": false,
+       "serif": true,
+       "monospace": false,
+       "bold": false
+      },
+      "candidate_style_bits": {
+       "italic": false,
+       "serif": true,
+       "monospace": false,
+       "bold": false
+      },
+      "reference_color": 0,
+      "candidate_color": 0
+     },
+     {
+      "token": "1,3-Dichlorobenzene",
+      "reference_page": 1,
+      "candidate_page": 1,
+      "reference_bbox": [
+       495.15264892578125,
+       410.8385925292969,
+       590.79248046875,
+       421.7476806640625
+      ],
+      "candidate_bbox": [
+       328.0639953613281,
+       370.0880126953125,
+       398.20001220703125,
+       378.0880126953125
+      ],
+      "reference_font": "LMRoman10-Regular",
+      "candidate_font": "NewCM10-Regular",
+      "reference_size": 10.909088134765625,
+      "candidate_size": 8.0,
+      "font_size_abs_log_ratio": 0.31015467399065616,
+      "reference_style_bits": {
+       "italic": false,
+       "serif": true,
+       "monospace": false,
+       "bold": false
+      },
+      "candidate_style_bits": {
+       "italic": false,
+       "serif": true,
+       "monospace": false,
+       "bold": false
+      },
+      "reference_color": 0,
+      "candidate_color": 0
+     },
+     {
+      "token": "1,4-Dichlorobenzene",
+      "reference_page": 1,
+      "candidate_page": 1,
+      "reference_bbox": [
+       495.15264892578125,
+       424.7862854003906,
+       590.79248046875,
+       435.69537353515625
+      ],
+      "candidate_bbox": [
+       328.0639953613281,
+       379.1520080566406,
+       398.20001220703125,
+       387.1520080566406
+      ],
+      "reference_font": "LMRoman10-Regular",
+      "candidate_font": "NewCM10-Regular",
+      "reference_size": 10.909088134765625,
+      "candidate_size": 8.0,
+      "font_size_abs_log_ratio": 0.31015467399065616,
+      "reference_style_bits": {
+       "italic": false,
+       "serif": true,
+       "monospace": false,
+       "bold": false
+      },
+      "candidate_style_bits": {
+       "italic": false,
+       "serif": true,
+       "monospace": false,
+       "bold": false
+      },
+      "reference_color": 0,
+      "candidate_color": 0
+     },
+     {
+      "token": "1,4-Dioxane",
+      "reference_page": 1,
+      "candidate_page": 1,
+      "reference_bbox": [
+       113.45341491699219,
+       466.62933349609375,
+       169.6788330078125,
+       477.5384216308594
+      ],
+      "candidate_bbox": [
+       94.06400299072266,
+       416.2080078125,
+       135.2880096435547,
+       424.2080078125
+      ],
+      "reference_font": "LMRoman10-Regular",
+      "candidate_font": "NewCM10-Regular",
+      "reference_size": 10.909088134765625,
+      "candidate_size": 8.0,
+      "font_size_abs_log_ratio": 0.31015467399065616,
+      "reference_style_bits": {
+       "italic": false,
+       "serif": true,
+       "monospace": false,
+       "bold": false
+      },
+      "candidate_style_bits": {
+       "italic": false,
+       "serif": true,
+       "monospace": false,
+       "bold": false
+      },
+      "reference_color": 0,
+      "candidate_color": 0
+     },
+     {
+      "token": "1.35",
+      "reference_page": 1,
+      "candidate_page": 1,
+      "reference_bbox": [
+       249.46160888671875,
+       103.9896240234375,
+       268.85797119140625,
+       114.89871215820312
+      ],
+      "candidate_bbox": [
+       169.72799682617188,
+       81.90399169921875,
+       183.95199584960938,
+       89.90399169921875
+      ],
+      "reference_font": "LMRoman10-Regular",
+      "candidate_font": "NewCM10-Regular",
+      "reference_size": 10.909088134765625,
+      "candidate_size": 8.0,
+      "font_size_abs_log_ratio": 0.31015467399065616,
+      "reference_style_bits": {
+       "italic": false,
+       "serif": true,
+       "monospace": false,
+       "bold": false
+      },
+      "candidate_style_bits": {
+       "italic": false,
+       "serif": true,
+       "monospace": false,
+       "bold": false
+      },
+      "reference_color": 0,
+      "candidate_color": 0
+     },
+     {
+      "token": "1.49",
+      "reference_page": 1,
+      "candidate_page": 1,
+      "reference_bbox": [
+       249.46160888671875,
+       257.41412353515625,
+       268.85797119140625,
+       268.3232116699219
+      ],
+      "candidate_bbox": [
+       169.72799682617188,
+       221.06396484375,
+       183.95199584960938,
+       229.06396484375
+      ],
+      "reference_font": "LMRoman10-Regular",
+      "candidate_font": "NewCM10-Regular",
+      "reference_size": 10.909088134765625,
+      "candidate_size": 8.0,
+      "font_size_abs_log_ratio": 0.31015467399065616,
+      "reference_style_bits": {
+       "italic": false,
+       "serif": true,
+       "monospace": false,
+       "bold": false
+      },
+      "candidate_style_bits": {
+       "italic": false,
+       "serif": true,
+       "monospace": false,
+       "bold": false
+      },
+      "reference_color": 0,
+      "candidate_color": 0
+     },
+     {
+      "token": "1.50",
+      "reference_page": 1,
+      "candidate_page": 1,
+      "reference_bbox": [
+       340.4371032714844,
+       103.9896240234375,
+       359.83343505859375,
+       114.89871215820312
+      ],
+      "candidate_bbox": [
+       230.98399353027344,
+       81.90399169921875,
+       245.20799255371094,
+       89.90399169921875
+      ],
+      "reference_font": "LMRoman10-Regular",
+      "candidate_font": "NewCM10-Regular",
+      "reference_size": 10.909088134765625,
+      "candidate_size": 8.0,
+      "font_size_abs_log_ratio": 0.31015467399065616,
+      "reference_style_bits": {
+       "italic": false,
+       "serif": true,
+       "monospace": false,
+       "bold": false
+      },
+      "candidate_style_bits": {
+       "italic": false,
+       "serif": true,
+       "monospace": false,
+       "bold": false
+      },
+      "reference_color": 0,
+      "candidate_color": 0
+     },
+     {
+      "token": "1.52",
+      "reference_page": 1,
+      "candidate_page": 1,
+      "reference_bbox": [
+       400.13623046875,
+       103.9896240234375,
+       419.53253173828125,
+       114.89871215820312
+      ],
+      "candidate_bbox": [
+       269.3039855957031,
+       81.90399169921875,
+       283.5279846191406,
+       89.90399169921875
+      ],
+      "reference_font": "LMRoman10-Regular",
+      "candidate_font": "NewCM10-Regular",
+      "reference_size": 10.909088134765625,
+      "candidate_size": 8.0,
+      "font_size_abs_log_ratio": 0.31015467399065616,
+      "reference_style_bits": {
+       "italic": false,
+       "serif": true,
+       "monospace": false,
+       "bold": false
+      },
+      "candidate_style_bits": {
+       "italic": false,
+       "serif": true,
+       "monospace": false,
+       "bold": false
+      },
+      "reference_color": 0,
+      "candidate_color": 0
+     },
+     {
+      "token": "1.56",
+      "reference_page": 1,
+      "candidate_page": 1,
+      "reference_bbox": [
+       249.46160888671875,
+       368.9955749511719,
+       268.85797119140625,
+       379.9046630859375
+      ],
+      "candidate_bbox": [
+       169.72799682617188,
+       342.89599609375,
+       183.95199584960938,
+       350.89599609375
+      ],
+      "reference_font": "LMRoman10-Regular",
+      "candidate_font": "NewCM10-Regular",
+      "reference_size": 10.909088134765625,
+      "candidate_size": 8.0,
+      "font_size_abs_log_ratio": 0.31015467399065616,
+      "reference_style_bits": {
+       "italic": false,
+       "serif": true,
+       "monospace": false,
+       "bold": false
+      },
+      "candidate_style_bits": {
+       "italic": false,
+       "serif": true,
+       "monospace": false,
+       "bold": false
+      },
+      "reference_color": 0,
+      "candidate_color": 0
+     },
+     {
+      "token": "1.70",
+      "reference_page": 1,
+      "candidate_page": 1,
+      "reference_bbox": [
+       340.4371032714844,
+       368.9955749511719,
+       359.83343505859375,
+       379.9046630859375
+      ],
+      "candidate_bbox": [
+       230.98399353027344,
+       342.89599609375,
+       245.20799255371094,
+       350.89599609375
+      ],
+      "reference_font": "LMRoman10-Regular",
+      "candidate_font": "NewCM10-Regular",
+      "reference_size": 10.909088134765625,
+      "candidate_size": 8.0,
+      "font_size_abs_log_ratio": 0.31015467399065616,
+      "reference_style_bits": {
+       "italic": false,
+       "serif": true,
+       "monospace": false,
+       "bold": false
+      },
+      "candidate_style_bits": {
+       "italic": false,
+       "serif": true,
+       "monospace": false,
+       "bold": false
+      },
+      "reference_color": 0,
+      "candidate_color": 0
+     },
+     {
+      "token": "1.84",
+      "reference_page": 1,
+      "candidate_page": 1,
+      "reference_bbox": [
+       400.13623046875,
+       368.9955749511719,
+       419.53253173828125,
+       379.9046630859375
+      ],
+      "candidate_bbox": [
+       269.3039855957031,
+       342.89599609375,
+       283.5279846191406,
+       350.89599609375
+      ],
+      "reference_font": "LMRoman10-Regular",
+      "candidate_font": "NewCM10-Regular",
+      "reference_size": 10.909088134765625,
+      "candidate_size": 8.0,
+      "font_size_abs_log_ratio": 0.31015467399065616,
+      "reference_style_bits": {
+       "italic": false,
+       "serif": true,
+       "monospace": false,
+       "bold": false
+      },
+      "candidate_style_bits": {
+       "italic": false,
+       "serif": true,
+       "monospace": false,
+       "bold": false
+      },
+      "reference_color": 0,
+      "candidate_color": 0
+     },
+     {
+      "token": "1.94",
+      "reference_page": 1,
+      "candidate_page": 1,
+      "reference_bbox": [
+       400.13623046875,
+       508.472412109375,
+       419.53253173828125,
+       519.3814697265625
+      ],
+      "candidate_bbox": [
+       269.3039855957031,
+       463.12799072265625,
+       283.5279846191406,
+       471.12799072265625
+      ],
+      "reference_font": "LMRoman10-Regular",
+      "candidate_font": "NewCM10-Regular",
+      "reference_size": 10.909088134765625,
+      "candidate_size": 8.0,
+      "font_size_abs_log_ratio": 0.31015467399065616,
+      "reference_style_bits": {
+       "italic": false,
+       "serif": true,
+       "monospace": false,
+       "bold": false
+      },
+      "candidate_style_bits": {
+       "italic": false,
+       "serif": true,
+       "monospace": false,
+       "bold": false
+      },
+      "reference_color": 0,
+      "candidate_color": 0
+     },
+     {
+      "token": "10.18",
+      "reference_page": 1,
+      "candidate_page": 1,
+      "reference_bbox": [
+       249.46160888671875,
+       327.15252685546875,
+       274.3125,
+       338.0616149902344
+      ],
+      "candidate_bbox": [
+       169.72799682617188,
+       295.97601318359375,
+       187.95199584960938,
+       303.97601318359375
+      ],
+      "reference_font": "LMRoman10-Regular",
+      "candidate_font": "NewCM10-Regular",
+      "reference_size": 10.909088134765625,
+      "candidate_size": 8.0,
+      "font_size_abs_log_ratio": 0.31015467399065616,
+      "reference_style_bits": {
+       "italic": false,
+       "serif": true,
+       "monospace": false,
+       "bold": false
+      },
+      "candidate_style_bits": {
+       "italic": false,
+       "serif": true,
+       "monospace": false,
+       "bold": false
+      },
+      "reference_color": 0,
+      "candidate_color": 0
+     },
+     {
+      "token": "11.02",
+      "reference_page": 1,
+      "candidate_page": 1,
+      "reference_bbox": [
+       249.46160888671875,
+       341.1002197265625,
+       274.3125,
+       352.0093078613281
+      ],
+      "candidate_bbox": [
+       169.72799682617188,
+       314.90399169921875,
+       187.95199584960938,
+       322.90399169921875
+      ],
+      "reference_font": "LMRoman10-Regular",
+      "candidate_font": "NewCM10-Regular",
+      "reference_size": 10.909088134765625,
+      "candidate_size": 8.0,
+      "font_size_abs_log_ratio": 0.31015467399065616,
+      "reference_style_bits": {
+       "italic": false,
+       "serif": true,
+       "monospace": false,
+       "bold": false
+      },
+      "candidate_style_bits": {
+       "italic": false,
+       "serif": true,
+       "monospace": false,
+       "bold": false
+      },
+      "reference_color": 0,
+      "candidate_color": 0
+     },
+     {
+      "token": "11.23",
+      "reference_page": 1,
+      "candidate_page": 1,
+      "reference_bbox": [
+       400.13623046875,
+       341.1002197265625,
+       424.987060546875,
+       352.0093078613281
+      ],
+      "candidate_bbox": [
+       269.3039855957031,
+       314.90399169921875,
+       287.5279846191406,
+       322.90399169921875
+      ],
+      "reference_font": "LMRoman10-Regular",
+      "candidate_font": "NewCM10-Regular",
+      "reference_size": 10.909088134765625,
+      "candidate_size": 8.0,
+      "font_size_abs_log_ratio": 0.31015467399065616,
+      "reference_style_bits": {
+       "italic": false,
+       "serif": true,
+       "monospace": false,
+       "bold": false
+      },
+      "candidate_style_bits": {
+       "italic": false,
+       "serif": true,
+       "monospace": false,
+       "bold": false
+      },
+      "reference_color": 0,
+      "candidate_color": 0
+     }
+    ]
+   },
+   "interpretation": "Raw PDF font observables are diagnostic; font names and flags are renderer metadata, not perceptual truth."
+  },
+  "raster_ink": {
+   "status": "scored",
+   "applicable": true,
+   "metrics": {
+    "paired_page_count": 2,
+    "unpaired_page_count": 0,
+    "unregistered_tolerant_ink_f1_macro": 0.6014557418668804,
+    "registered_tolerant_ink_f1_macro": 0.6014557418668804,
+    "registration_gain": 0.0
+   },
+   "evidence": {
+    "pages": [
+     {
+      "page": 0,
+      "reference_raster_size": [
+       816,
+       1056
+      ],
+      "candidate_raster_size_before_resize": [
+       816,
+       1056
+      ],
+      "candidate_resized_to_reference_canvas": true,
+      "coordinate_frame": "registered_reference_raster",
+      "registration_translation_px": [
+       0,
+       0
+      ],
+      "unregistered": {
+       "reference_ink_pixels": 5353,
+       "candidate_ink_pixels": 5562,
+       "precision": 0.6067961165048543,
+       "recall": 0.6301139547917056,
+       "f1": 0.6182352453842224,
+       "unmatched_ink_pixels": 4167,
+       "unmatched_ink_fraction_of_union": 0.44339221110874655
+      },
+      "registered": {
+       "reference_ink_pixels": 5353,
+       "candidate_ink_pixels": 5562,
+       "precision": 0.6067961165048543,
+       "recall": 0.6301139547917056,
+       "f1": 0.6182352453842224,
+       "unmatched_ink_pixels": 4167,
+       "unmatched_ink_fraction_of_union": 0.44339221110874655
+      },
+      "registered_mean_absolute_gray_difference": 0.004935005512157329,
+      "top_difference_bbox": {
+       "pixel_bbox": [
+        96,
+        143,
+        719,
+        328
+       ],
+       "normalized_bbox": [
+        0.11764705882352941,
+        0.13541666666666666,
+        0.8811274509803921,
+        0.3106060606060606
+       ]
+      }
+     },
+     {
+      "page": 1,
+      "reference_raster_size": [
+       816,
+       1056
+      ],
+      "candidate_raster_size_before_resize": [
+       816,
+       1056
+      ],
+      "candidate_resized_to_reference_canvas": true,
+      "coordinate_frame": "registered_reference_raster",
+      "registration_translation_px": [
+       0,
+       0
+      ],
+      "unregistered": {
+       "reference_ink_pixels": 130264,
+       "candidate_ink_pixels": 112589,
+       "precision": 0.6606506852356803,
+       "recall": 0.5243735798071608,
+       "f1": 0.5846762383495386,
+       "unmatched_ink_pixels": 100164,
+       "unmatched_ink_fraction_of_union": 0.4605368423956523
+      },
+      "registered": {
+       "reference_ink_pixels": 130264,
+       "candidate_ink_pixels": 112589,
+       "precision": 0.6606506852356803,
+       "recall": 0.5243735798071608,
+       "f1": 0.5846762383495386,
+       "unmatched_ink_pixels": 100164,
+       "unmatched_ink_fraction_of_union": 0.4605368423956523
+      },
+      "registered_mean_absolute_gray_difference": 0.09664393720946489,
+      "top_difference_bbox": {
+       "pixel_bbox": [
+        95,
+        95,
+        816,
+        1000
+       ],
+       "normalized_bbox": [
+        0.11642156862745098,
+        0.08996212121212122,
+        1.0,
+        0.946969696969697
+       ]
+      }
+     }
+    ],
+    "top_difference_bbox": {
+     "page": 1,
+     "unpaired_side": null,
+     "coordinate_frame": "registered_reference_raster",
+     "registration_translation_px": [
+      0,
+      0
+     ],
+     "pixel_bbox": [
+      95,
+      95,
+      816,
+      1000
+     ],
+     "normalized_bbox": [
+      0.11642156862745098,
+      0.08996212121212122,
+      1.0,
+      0.946969696969697
+     ]
+    }
+   },
+   "interpretation": "Candidate pages are resized to the reference canvas, then optionally translation-registered. Use canvas and geometry axes for layout claims."
+  },
+  "raster_perceptual": {
+   "status": "scored",
+   "applicable": true,
+   "metrics": {
+    "paired_page_count": 2,
+    "scored_page_count": 2,
+    "abstained_page_count": 0,
+    "unpaired_page_count": 0,
+    "unregistered_ssim_macro": 0.6653522930268921,
+    "registered_ssim_macro": 0.6653522930268921,
+    "unregistered_multiscale_ssim_diagnostic_macro": 0.8175967538286913,
+    "registered_multiscale_ssim_diagnostic_macro": 0.8175967538286913
+   },
+   "evidence": {
+    "pages": [
+     {
+      "page": 0,
+      "status": "scored",
+      "unregistered_ssim": 0.9714829067091715,
+      "registered_ssim": 0.9714829067091715,
+      "unregistered_multiscale_ssim_diagnostic": 0.9785169595027641,
+      "registered_multiscale_ssim_diagnostic": 0.9785169595027641,
+      "unregistered_scale_scores": [
+       {
+        "downsample_factor": 1,
+        "ssim": 0.9714829067091715
+       },
+       {
+        "downsample_factor": 2,
+        "ssim": 0.9632283285457713
+       },
+       {
+        "downsample_factor": 4,
+        "ssim": 0.95444638628778
+       },
+       {
+        "downsample_factor": 8,
+        "ssim": 0.9391250727349799
+       }
+      ],
+      "registered_scale_scores": [
+       {
+        "downsample_factor": 1,
+        "ssim": 0.9714829067091715
+       },
+       {
+        "downsample_factor": 2,
+        "ssim": 0.9632283285457713
+       },
+       {
+        "downsample_factor": 4,
+        "ssim": 0.95444638628778
+       },
+       {
+        "downsample_factor": 8,
+        "ssim": 0.9391250727349799
+       }
+      ],
+      "registration_translation_px": [
+       0,
+       0
+      ],
+      "candidate_resized_to_reference_canvas": false,
+      "reference_raster_size": [
+       816,
+       1056
+      ],
+      "candidate_raster_size_before_resize": [
+       816,
+       1056
+      ],
+      "registered_difference_bbox": {
+       "pixel_bbox": [
+        96,
+        143,
+        719,
+        328
+       ],
+       "normalized_bbox": [
+        0.11764705882352941,
+        0.13541666666666666,
+        0.8811274509803921,
+        0.3106060606060606
+       ]
+      }
+     },
+     {
+      "page": 1,
+      "status": "scored",
+      "unregistered_ssim": 0.35922167934461274,
+      "registered_ssim": 0.35922167934461274,
+      "unregistered_multiscale_ssim_diagnostic": 0.6566765481546186,
+      "registered_multiscale_ssim_diagnostic": 0.6566765481546186,
+      "unregistered_scale_scores": [
+       {
+        "downsample_factor": 1,
+        "ssim": 0.35922167934461274
+       },
+       {
+        "downsample_factor": 2,
+        "ssim": 0.2981152765337178
+       },
+       {
+        "downsample_factor": 4,
+        "ssim": 0.28098011226953934
+       },
+       {
+        "downsample_factor": 8,
+        "ssim": 0.3163763414050863
+       }
+      ],
+      "registered_scale_scores": [
+       {
+        "downsample_factor": 1,
+        "ssim": 0.35922167934461274
+       },
+       {
+        "downsample_factor": 2,
+        "ssim": 0.2981152765337178
+       },
+       {
+        "downsample_factor": 4,
+        "ssim": 0.28098011226953934
+       },
+       {
+        "downsample_factor": 8,
+        "ssim": 0.3163763414050863
+       }
+      ],
+      "registration_translation_px": [
+       0,
+       0
+      ],
+      "candidate_resized_to_reference_canvas": false,
+      "reference_raster_size": [
+       816,
+       1056
+      ],
+      "candidate_raster_size_before_resize": [
+       816,
+       1056
+      ],
+      "registered_difference_bbox": {
+       "pixel_bbox": [
+        95,
+        95,
+        816,
+        1000
+       ],
+       "normalized_bbox": [
+        0.11642156862745098,
+        0.08996212121212122,
+        1.0,
+        0.946969696969697
+       ]
+      }
+     }
+    ]
+   },
+   "interpretation": "SSIM is reported before and after translation-only registration. The multiscale value is the documented geometric mean of four SSIM scales, not canonical MS-SSIM. No candidate resizing is performed; SSIM abstains when physical canvases/grids differ."
+  },
+  "tables": {
+   "status": "abstain",
+   "applicable": null,
+   "metrics": {},
+   "evidence": {
+    "source_flags": {
+     "reference": null,
+     "candidate": null
+    }
+   },
+   "reason": "Applicability for tables was not established by source metadata."
+  },
+  "formulas": {
+   "status": "abstain",
+   "applicable": null,
+   "metrics": {},
+   "evidence": {
+    "source_flags": {
+     "reference": null,
+     "candidate": null
+    }
+   },
+   "reason": "Applicability for formulas was not established by source metadata."
+  },
+  "figures": {
+   "status": "abstain",
+   "applicable": null,
+   "metrics": {},
+   "evidence": {
+    "source_flags": {
+     "reference": null,
+     "candidate": null
+    }
+   },
+   "reason": "Applicability for figures was not established by source metadata."
+  }
+ }
+}

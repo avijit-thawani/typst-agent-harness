@@ -1,0 +1,14 @@
+{
+  "sample_id": "i2s_equation_001",
+  "arm": "v4_v2feedback",
+  "mode": "visual",
+  "model": "opus",
+  "effort": "medium",
+  "cost_usd": 1.9559944999999996,
+  "num_turns": 32,
+  "duration_s": 504,
+  "final": {
+    "compiled": true,
+    "graded_file": "~/Downloads/learn/latex_typst/metric_research/runs_phaseb/i2s_equation_001__visual__opus__ab2__v4/work/feedback/best/output.typ"
+  }
+}

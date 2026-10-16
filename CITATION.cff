@@ -1,0 +1,14 @@
+cff-version: 1.2.0
+message: "If you use this harness or datasets, please cite this repo and the Lathe benchmark."
+title: "typst-agent-harness: agentic LaTeX-to-Typst conversion with compile and visual-fidelity feedback"
+authors:
+  - family-names: Thawani
+    given-names: Avijit
+repository-code: "https://github.com/avijit-thawani/typst-agent-harness"
+license: MIT
+references:
+  - type: software
+    title: "Lathe: a LaTeX-to-Typst conversion benchmark"
+    authors:
+      - name: "Yashashwi S."
+    repository-code: "https://github.com/yashashwi-s/lathe"

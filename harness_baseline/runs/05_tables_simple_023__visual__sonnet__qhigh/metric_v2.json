@@ -1,0 +1,3660 @@
+{
+ "evaluator": {
+  "name": "pdf_metric_axes_v2",
+  "version": 2,
+  "aggregate_score": null,
+  "policy": "No compensatory scalar. Report raw axes, coverage, abstentions, and localized evidence."
+ },
+ "inputs": {
+  "reference_pdf": "~/Downloads/learn/latex_typst/harness_baseline/runs/05_tables_simple_023__visual__sonnet__qhigh/work/reference.pdf",
+  "candidate_pdf": "~/Downloads/learn/latex_typst/harness_baseline/runs/05_tables_simple_023__visual__sonnet__qhigh/final_candidate.pdf",
+  "reference_page_count": 3,
+  "candidate_page_count": 3
+ },
+ "configuration": {
+  "render_dpi": 96,
+  "ink_threshold": 245,
+  "ink_tolerance_px": 2,
+  "normalization": "Unicode NFKC, soft-hyphen removal, collapsed whitespace; case preserved"
+ },
+ "applicability": {
+  "tables": null,
+  "formulas": null,
+  "figures": null
+ },
+ "axes": {
+  "canvas": {
+   "status": "scored",
+   "applicable": true,
+   "metrics": {
+    "reference_page_count": 3,
+    "candidate_page_count": 3,
+    "page_count_delta": 0,
+    "paired_page_count": 3,
+    "exact_paired_size_rate": 1.0,
+    "width_abs_log_ratio_max": 0.0,
+    "height_abs_log_ratio_max": 0.0
+   },
+   "evidence": {
+    "page_pairs": [
+     {
+      "page": 0,
+      "reference_size_points": [
+       612.0,
+       792.0
+      ],
+      "candidate_size_points": [
+       612.0,
+       792.0
+      ],
+      "width_abs_log_ratio": 0.0,
+      "height_abs_log_ratio": 0.0,
+      "exact_size_match": true
+     },
+     {
+      "page": 1,
+      "reference_size_points": [
+       612.0,
+       792.0
+      ],
+      "candidate_size_points": [
+       612.0,
+       792.0
+      ],
+      "width_abs_log_ratio": 0.0,
+      "height_abs_log_ratio": 0.0,
+      "exact_size_match": true
+     },
+     {
+      "page": 2,
+      "reference_size_points": [
+       612.0,
+       792.0
+      ],
+      "candidate_size_points": [
+       612.0,
+       792.0
+      ],
+      "width_abs_log_ratio": 0.0,
+      "height_abs_log_ratio": 0.0,
+      "exact_size_match": true
+     }
+    ]
+   },
+   "interpretation": "Canvas/page-size mismatch only; no token layout residual is folded into this axis."
+  },
+  "content": {
+   "status": "scored",
+   "applicable": true,
+   "metrics": {
+    "matched_block_normalized_edit_similarity_macro": 0.9454690346083788,
+    "matched_block_count": 6,
+    "strict_nfc_token_inventory": {
+     "reference_count": 471,
+     "candidate_count": 501,
+     "matched_count": 456,
+     "precision": 0.9101796407185628,
+     "recall": 0.9681528662420382,
+     "f1": 0.9382716049382717,
+     "exact_match": false,
+     "missing": [
+      "1",
+      "1",
+      "\u00b5l",
+      "\u00b5h",
+      "\u00b5xin",
+      "\u00b5zx",
+      "\u00b5rs",
+      "\u00b5c",
+      "\u00b5a",
+      "\u00b5rcat",
+      "\u00b5m",
+      "\u00b5d",
+      "3",
+      "2",
+      "f"
+     ],
+     "extra": [
+      "0",
+      "\ud835\udf07\ud835\udc59",
+      "\ud835\udf07\u210e",
+      "\ud835\udf07\ud835\udc65in",
+      "\ud835\udf07\ud835\udc67\ud835\udc65",
+      "\ud835\udf07\ud835\udc5f\ud835\udc60",
+      "\ud835\udf07\ud835\udc50",
+      "\ud835\udf07\ud835\udc4e",
+      "\ud835\udf07\ud835\udc5fcat",
+      "\ud835\udf07\ud835\udc5a",
+      "\ud835\udf07\ud835\udc51",
+      "27",
+      "\ud835\udc53",
+      "neut)",
+      "(\u2018this\u2019,",
+      "(\u2018a",
+      "22.",
+      "aan",
+      "(\u2018to\u2019,",
+      "prep)",
+      "161",
+      "23.",
+      "veel",
+      "lot"
+     ],
+     "missing_count": 15,
+     "extra_count": 45
+    },
+    "strict_nfc_document_edit_similarity": 0.9211956521739131,
+    "compatibility_nfkc_token_inventory": {
+     "reference_count": 471,
+     "candidate_count": 501,
+     "matched_count": 467,
+     "precision": 0.9321357285429142,
+     "recall": 0.9915074309978769,
+     "f1": 0.9609053497942387
+    },
+    "compatibility_nfkc_document_edit_similarity": 0.9316123188405797
+   },
+   "evidence": {
+    "unmatched_reference_words": [
+     {
+      "word_index": 25,
+      "page": 0,
+      "bbox": [
+       303.2879638671875,
+       741.3756103515625,
+       308.70977783203125,
+       752.2847290039062
+      ],
+      "text": "1",
+      "normalized": "1"
+     },
+     {
+      "word_index": 44,
+      "page": 1,
+      "bbox": [
+       112.4667739868164,
+       194.89744567871094,
+       118.55168914794922,
+       207.14071655273438
+      ],
+      "text": "1",
+      "normalized": "1"
+     },
+     {
+      "word_index": 363,
+      "page": 1,
+      "bbox": [
+       303.2879943847656,
+       741.3756713867188,
+       308.7098083496094,
+       752.2847900390625
+      ],
+      "text": "2",
+      "normalized": "2"
+     },
+     {
+      "word_index": 470,
+      "page": 2,
+      "bbox": [
+       303.2879943847656,
+       741.3756713867188,
+       308.7098083496094,
+       752.2847900390625
+      ],
+      "text": "3",
+      "normalized": "3"
+     }
+    ],
+    "unmatched_candidate_words": [
+     {
+      "word_index": 6,
+      "page": 0,
+      "bbox": [
+       72.0,
+       172.90402221679688,
+       78.32499694824219,
+       183.90402221679688
+      ],
+      "text": "0",
+      "normalized": "0"
+     },
+     {
+      "word_index": 426,
+      "page": 2,
+      "bbox": [
+       306.5271911621094,
+       397.0826721191406,
+       381.25225830078125,
+       424.1177978515625
+      ],
+      "text": "neut)",
+      "normalized": "neut)"
+     },
+     {
+      "word_index": 468,
+      "page": 2,
+      "bbox": [
+       81.8309555053711,
+       655.4646606445312,
+       116.3818359375,
+       682.499755859375
+      ],
+      "text": "22.",
+      "normalized": "22."
+     },
+     {
+      "word_index": 469,
+      "page": 2,
+      "bbox": [
+       136.04373168945312,
+       655.4646606445312,
+       178.8673553466797,
+       682.499755859375
+      ],
+      "text": "aan",
+      "normalized": "aan"
+     },
+     {
+      "word_index": 470,
+      "page": 2,
+      "bbox": [
+       187.87005615234375,
+       655.4646606445312,
+       244.9682159423828,
+       682.499755859375
+      ],
+      "text": "(\u2018to\u2019,",
+      "normalized": "(\u2018to\u2019,"
+     },
+     {
+      "word_index": 471,
+      "page": 2,
+      "bbox": [
+       253.97091674804688,
+       655.4646606445312,
+       326.0195007324219,
+       682.499755859375
+      ],
+      "text": "prep)",
+      "normalized": "prep)"
+     },
+     {
+      "word_index": 472,
+      "page": 2,
+      "bbox": [
+       476.09881591796875,
+       655.4646606445312,
+       516.6514892578125,
+       682.499755859375
+      ],
+      "text": "161",
+      "normalized": "161"
+     },
+     {
+      "word_index": 473,
+      "page": 2,
+      "bbox": [
+       81.8309555053711,
+       681.3028564453125,
+       116.3818359375,
+       708.3379516601562
+      ],
+      "text": "23.",
+      "normalized": "23."
+     },
+     {
+      "word_index": 474,
+      "page": 2,
+      "bbox": [
+       136.04373168945312,
+       681.3028564453125,
+       178.89439392089844,
+       708.3379516601562
+      ],
+      "text": "veel",
+      "normalized": "veel"
+     },
+     {
+      "word_index": 475,
+      "page": 2,
+      "bbox": [
+       187.8970947265625,
+       681.3028564453125,
+       219.44708251953125,
+       708.3379516601562
+      ],
+      "text": "(\u2018a",
+      "normalized": "(\u2018a"
+     },
+     {
+      "word_index": 476,
+      "page": 2,
+      "bbox": [
+       228.44976806640625,
+       681.3028564453125,
+       259.999755859375,
+       708.3379516601562
+      ],
+      "text": "lot",
+      "normalized": "lot"
+     },
+     {
+      "word_index": 477,
+      "page": 2,
+      "bbox": [
+       269.00244140625,
+       681.3028564453125,
+       309.5821533203125,
+       708.3379516601562
+      ],
+      "text": "of\u2019)",
+      "normalized": "of\u2019)"
+     },
+     {
+      "word_index": 478,
+      "page": 2,
+      "bbox": [
+       476.09881591796875,
+       681.3028564453125,
+       516.6514892578125,
+       708.3379516601562
+      ],
+      "text": "155",
+      "normalized": "155"
+     },
+     {
+      "word_index": 479,
+      "page": 2,
+      "bbox": [
+       81.8309555053711,
+       707.14111328125,
+       116.3818359375,
+       734.1762084960938
+      ],
+      "text": "24.",
+      "normalized": "24."
+     },
+     {
+      "word_index": 480,
+      "page": 2,
+      "bbox": [
+       136.04373168945312,
+       707.14111328125,
+       182.00341796875,
+       734.1762084960938
+      ],
+      "text": "hier",
+      "normalized": "hier"
+     },
+     {
+      "word_index": 481,
+      "page": 2,
+      "bbox": [
+       191.00613403320312,
+       707.14111328125,
+       276.70745849609375,
+       734.1762084960938
+      ],
+      "text": "(\u2018here\u2019)",
+      "normalized": "(\u2018here\u2019)"
+     },
+     {
+      "word_index": 482,
+      "page": 2,
+      "bbox": [
+       476.09881591796875,
+       707.14111328125,
+       516.6514892578125,
+       734.1762084960938
+      ],
+      "text": "146",
+      "normalized": "146"
+     },
+     {
+      "word_index": 483,
+      "page": 2,
+      "bbox": [
+       81.8309555053711,
+       732.9793090820312,
+       116.3818359375,
+       760.014404296875
+      ],
+      "text": "25.",
+      "normalized": "25."
+     },
+     {
+      "word_index": 484,
+      "page": 2,
+      "bbox": [
+       136.04373168945312,
+       732.9793090820312,
+       186.13980102539062,
+       760.014404296875
+      ],
+      "text": "voor",
+      "normalized": "voor"
+     },
+     {
+      "word_index": 485,
+      "page": 2,
+      "bbox": [
+       195.1425018310547,
+       732.9793090820312,
+       263.5954284667969,
+       760.014404296875
+      ],
+      "text": "(\u2018for\u2019)",
+      "normalized": "(\u2018for\u2019)"
+     },
+     {
+      "word_index": 486,
+      "page": 2,
+      "bbox": [
+       476.09881591796875,
+       732.9793090820312,
+       516.6514892578125,
+       760.014404296875
+      ],
+      "text": "144",
+      "normalized": "144"
+     },
+     {
+      "word_index": 487,
+      "page": 2,
+      "bbox": [
+       81.8309555053711,
+       758.8175048828125,
+       116.3818359375,
+       785.8526000976562
+      ],
+      "text": "26.",
+      "normalized": "26."
+     },
+     {
+      "word_index": 488,
+      "page": 2,
+      "bbox": [
+       136.04373168945312,
+       758.8175048828125,
+       167.13412475585938,
+       785.8526000976562
+      ],
+      "text": "dit",
+      "normalized": "dit"
+     },
+     {
+      "word_index": 489,
+      "page": 2,
+      "bbox": [
+       176.13682556152344,
+       758.8175048828125,
+       252.9165496826172,
+       785.8526000976562
+      ],
+      "text": "(\u2018this\u2019,",
+      "normalized": "(\u2018this\u2019,"
+     }
+    ],
+    "lowest_similarity_block_pairs": [
+     {
+      "reference_block_index": 7,
+      "candidate_block_index": 5,
+      "reference_page": 2,
+      "candidate_page": 2,
+      "reference_text": "Table 2: Source table 2: 2512.02195_table_6 # Word type f 1. te (\u2018at\u2019, \u2018to\u2019, comp) 1018 2. dat (\u2018that\u2019) 658 3. niet (\u2018not\u2019) 650 4. om (\u2018to\u2019) 446 5. de (\u2018the\u2019, masc/fem/pl) 291 6. er (\u2018there\u2019) 271 7. geen (\u2018no\u2019) 270 8. elk (\u2018every\u2019, neut) 25",
+      "candidate_text": "Table 2: Source table 2: 2512.02195_table_6 # Word type \ud835\udc53 1. te (\u2018at\u2019, \u2018to\u2019, comp) 1018 2. dat (\u2018that\u2019) 658 3. niet (\u2018not\u2019) 650 4. om (\u2018to\u2019) 446 5. de (\u2018the\u2019, masc/fem/pl) 291 6. er (\u2018there\u2019) 271 7. geen (\u2018no\u2019) 270 8. elk (\u2018every\u2019, neut) 25",
+      "normalized_edit_similarity": 0.7978142076502732
+     },
+     {
+      "reference_block_index": 2,
+      "candidate_block_index": 2,
+      "reference_page": 0,
+      "candidate_page": 0,
+      "reference_text": "1 Tables",
+      "candidate_text": "0 Tables",
+      "normalized_edit_similarity": 0.875
+     },
+     {
+      "reference_block_index": 0,
+      "candidate_block_index": 0,
+      "reference_page": 0,
+      "candidate_page": 0,
+      "reference_text": "Simple Tables",
+      "candidate_text": "Simple Tables",
+      "normalized_edit_similarity": 1.0
+     },
+     {
+      "reference_block_index": 1,
+      "candidate_block_index": 1,
+      "reference_page": 0,
+      "candidate_page": 0,
+      "reference_text": "Source-backed grouped table sample",
+      "candidate_text": "Source-backed grouped table sample",
+      "normalized_edit_similarity": 1.0
+     },
+     {
+      "reference_block_index": 3,
+      "candidate_block_index": 3,
+      "reference_page": 0,
+      "candidate_page": 0,
+      "reference_text": "These tables are grouped from source-backed LaTeX table data and compiled as a single benchmark data point.",
+      "candidate_text": "These tables are grouped from source-backed LaTeX table data and compiled as a single benchmark data point.",
+      "normalized_edit_similarity": 1.0
+     },
+     {
+      "reference_block_index": 5,
+      "candidate_block_index": 4,
+      "reference_page": 1,
+      "candidate_page": 1,
+      "reference_text": "Table 1: Source table 1: 2512.03307_table_5 max-min iter. \u00b5l \u00b5h \u00b5xin \u00b5zx \u00b5rs \u00b5c \u00b5a \u00b5rcat \u00b5m \u00b5d 1 5 10 3 5 1.0 8 tanh 0.9 0.4 uniform 2 3 5 2 5 0.1 2 identity 1.0 0.4 uniform 3 12 128 13 200 0.0 2 identity 0.4 0.0 uniform 4 3 5 2 6 0.6 2 tan",
+      "candidate_text": "Table 1: Source table 1: 2512.03307_table_5 max-min iter. \ud835\udf07\ud835\udc59 \ud835\udf07\u210e \ud835\udf07\ud835\udc65in \ud835\udf07\ud835\udc67\ud835\udc65 \ud835\udf07\ud835\udc5f\ud835\udc60 \ud835\udf07\ud835\udc50 \ud835\udf07\ud835\udc4e \ud835\udf07\ud835\udc5fcat \ud835\udf07\ud835\udc5a \ud835\udf07\ud835\udc51 1 5 10 3 5 1.0 8 tanh 0.9 0.4 uniform 2 3 5 2 5 0.1 2 identity 1.0 0.4 uniform 3 12 128 13 200 0.0 2 identity 0.4 0.0 uniform 4 3 5 2 6 0.6 2 tan",
+      "normalized_edit_similarity": 1.0
+     }
+    ]
+   },
+   "interpretation": "Strict NFC preservation is the primary text view. NFKC is reported separately as a compatibility view for ligature/encoding equivalence; it never hides the strict mismatch."
+  },
+  "critical_content": {
+   "status": "scored",
+   "applicable": true,
+   "metrics": {
+    "numbers": {
+     "reference_count": 313,
+     "candidate_count": 322,
+     "matched_count": 309,
+     "precision": 0.9596273291925466,
+     "recall": 0.987220447284345,
+     "f1": 0.9732283464566928,
+     "exact_match": false,
+     "missing": [
+      "1",
+      "1",
+      "3",
+      "2"
+     ],
+     "extra": [
+      "0",
+      "22",
+      "23",
+      "24",
+      "25",
+      "26",
+      "27",
+      "161",
+      "155",
+      "146",
+      "144",
+      "140",
+      "130"
+     ],
+     "missing_count": 4,
+     "extra_count": 13
+    },
+    "operators": {
+     "reference_count": 5,
+     "candidate_count": 5,
+     "matched_count": 5,
+     "precision": 1.0,
+     "recall": 1.0,
+     "f1": 1.0,
+     "exact_match": true,
+     "missing": [],
+     "extra": [],
+     "missing_count": 0,
+     "extra_count": 0
+    },
+    "citation_markers": {
+     "reference_count": 0,
+     "candidate_count": 0,
+     "matched_count": 0,
+     "precision": 1.0,
+     "recall": 1.0,
+     "f1": 1.0,
+     "exact_match": true,
+     "missing": [],
+     "extra": [],
+     "missing_count": 0,
+     "extra_count": 0
+    }
+   },
+   "evidence": {
+    "normalization": "Unicode NFKC; case preserved; multiset comparison",
+    "number_pattern": "(?<![\\w.])[+-]?(?:\\d+(?:[.,]\\d+)*|\\.\\d+)(?:[eE][+-]?\\d+)?%?",
+    "operator_inventory": "*+/<=>^\u00b1\u00d7\u00f7\u2190\u2192\u2194\u2202\u2207\u2208\u2209\u220f\u2211\u2212\u221a\u221e\u2229\u222a\u222b\u2248\u2260\u2264\u2265\u2282\u2286",
+    "citation_pattern": "\\[(?:\\d+[a-z]?(?:\\s*[-,;]\\s*\\d+[a-z]?){0,12})\\]|\\((?:18|19|20)\\d{2}[a-z]?\\)"
+   },
+   "interpretation": "Exact critical-symbol inventories prevent visually small numeric or operator errors from disappearing inside a document-level text average. Empty inventories are reported as exact but do not establish construct applicability."
+  },
+  "text_grounding": {
+   "status": "scored",
+   "applicable": true,
+   "metrics": {
+    "reference_word_count": 471,
+    "candidate_word_count": 501,
+    "exact_matched_word_count": 467,
+    "word_precision": 0.9321357285429142,
+    "word_recall": 0.9915074309978769,
+    "word_hmean": 0.9609053497942387,
+    "split_count": null,
+    "merge_count": null
+   },
+   "evidence": {
+    "match_policy": "exact Unicode-NFKC word text with deterministic page/position assignment for repeats"
+   },
+   "interpretation": "Digital-PDF exact-word grounding adaptation; it is not the published CLEval algorithm. Split/merge values remain null until a validated implementation exists."
+  },
+  "geometry": {
+   "status": "scored",
+   "applicable": true,
+   "metrics": {
+    "matched_token_count": 467,
+    "reference_match_coverage": 0.9915074309978769,
+    "candidate_match_coverage": 0.9321357285429142,
+    "center_displacement_q50": 0.14172132653051167,
+    "center_displacement_q90": 0.1766034180559747,
+    "center_displacement_max": 0.6788272070184455,
+    "bbox_iou_q10": 0.0,
+    "bbox_iou_q50": 0.0,
+    "width_abs_log_ratio_q90": 0.13940066764175454,
+    "height_abs_log_ratio_q90": 0.13288450950399344
+   },
+   "evidence": {
+    "worst_token_pairs": [
+     {
+      "token": "benchmark",
+      "reference_word_index": 22,
+      "candidate_word_index": 22,
+      "reference_page": 0,
+      "candidate_page": 0,
+      "reference_bbox": [
+       487.7457275390625,
+       218.9496612548828,
+       539.8475341796875,
+       229.8587646484375
+      ],
+      "candidate_bbox": [
+       72.0,
+       207.39999389648438,
+       124.89900207519531,
+       218.39999389648438
+      ],
+      "reference_bbox_normalized": [
+       0.7969701430376839,
+       0.2764515924935389,
+       0.8821038140190972,
+       0.2902257129399463
+      ],
+      "candidate_bbox_normalized": [
+       0.11764705882352941,
+       0.2618686791622277,
+       0.20408333672417533,
+       0.2757575680511166
+      ],
+      "center_displacement": 0.6788272070184455,
+      "bbox_iou": 0.0,
+      "width_abs_log_ratio": 0.015184849761622888,
+      "height_abs_log_ratio": 0.008297658406172366
+     },
+     {
+      "token": "neut)",
+      "reference_word_index": 428,
+      "candidate_word_index": 490,
+      "reference_page": 2,
+      "candidate_page": 2,
+      "reference_bbox": [
+       295.363037109375,
+       481.7325439453125,
+       366.6806640625,
+       512.9216918945312
+      ],
+      "candidate_bbox": [
+       261.91925048828125,
+       758.8175048828125,
+       336.6443176269531,
+       785.8526000976562
+      ],
+      "reference_bbox_normalized": [
+       0.4826193416819853,
+       0.6082481615471117,
+       0.5991514118668301,
+       0.6476283988567314
+      ],
+      "candidate_bbox_normalized": [
+       0.42797263151679943,
+       0.9581029102055714,
+       0.550072414423126,
+       0.9922381314364347
+      ],
+      "center_displacement": 0.35108401349262397,
+      "bbox_iou": 0.0,
+      "width_abs_log_ratio": 0.04667208743649278,
+      "height_abs_log_ratio": 0.1429343674328413
+     },
+     {
+      "token": "3",
+      "reference_word_index": 353,
+      "candidate_word_index": 352,
+      "reference_page": 1,
+      "candidate_page": 1,
+      "reference_bbox": [
+       168.7662811279297,
+       620.6724243164062,
+       174.8511962890625,
+       632.9157104492188
+      ],
+      "candidate_bbox": [
+       174.30023193359375,
+       474.41107177734375,
+       181.29185485839844,
+       488.3943176269531
+      ],
+      "reference_bbox_normalized": [
+       0.275761897267859,
+       0.7836773034298059,
+       0.2857045690997753,
+       0.7991359980419429
+      ],
+      "candidate_bbox_normalized": [
+       0.2848043005450878,
+       0.5990038785067472,
+       0.29622852101045494,
+       0.6166594919532237
+      ],
+      "center_displacement": 0.18383546590449612,
+      "bbox_iou": 0.0,
+      "width_abs_log_ratio": 0.13889992333325832,
+      "height_abs_log_ratio": 0.1328821719859254
+     },
+     {
+      "token": "5",
+      "reference_word_index": 354,
+      "candidate_word_index": 353,
+      "reference_page": 1,
+      "candidate_page": 1,
+      "reference_bbox": [
+       197.4033203125,
+       620.6724243164062,
+       203.4882354736328,
+       632.9157104492188
+      ],
+      "candidate_bbox": [
+       201.94894409179688,
+       474.41107177734375,
+       208.94056701660156,
+       488.3943176269531
+      ],
+      "reference_bbox_normalized": [
+       0.32255444495506536,
+       0.7836773034298059,
+       0.33249711678698174,
+       0.7991359980419429
+      ],
+      "candidate_bbox_normalized": [
+       0.3299819347905178,
+       0.5990038785067472,
+       0.3414061552558849,
+       0.6166594919532237
+      ],
+      "center_displacement": 0.18375660124128346,
+      "bbox_iou": 0.0,
+      "width_abs_log_ratio": 0.1388999233332527,
+      "height_abs_log_ratio": 0.1328821719859254
+     },
+     {
+      "token": "29",
+      "reference_word_index": 352,
+      "candidate_word_index": 351,
+      "reference_page": 1,
+      "candidate_page": 1,
+      "reference_bbox": [
+       109.423095703125,
+       620.6724243164062,
+       121.5929183959961,
+       632.9157104492188
+      ],
+      "candidate_bbox": [
+       111.86817169189453,
+       474.41107177734375,
+       125.85143280029297,
+       488.3943176269531
+      ],
+      "reference_bbox_normalized": [
+       0.17879590801164216,
+       0.7836773034298059,
+       0.19868123920914393,
+       0.7991359980419429
+      ],
+      "candidate_bbox_normalized": [
+       0.18279113021551394,
+       0.5990038785067472,
+       0.20563959607891008,
+       0.6166594919532237
+      ],
+      "center_displacement": 0.18365664481340968,
+      "bbox_iou": 0.0,
+      "width_abs_log_ratio": 0.13890164146276254,
+      "height_abs_log_ratio": 0.1328821719859254
+     },
+     {
+      "token": "2",
+      "reference_word_index": 355,
+      "candidate_word_index": 354,
+      "reference_page": 1,
+      "candidate_page": 1,
+      "reference_bbox": [
+       230.94993591308594,
+       620.6724243164062,
+       237.03485107421875,
+       632.9157104492188
+      ],
+      "candidate_bbox": [
+       233.57449340820312,
+       474.41107177734375,
+       240.5661163330078,
+       488.3943176269531
+      ],
+      "reference_bbox_normalized": [
+       0.3773691763285718,
+       0.7836773034298059,
+       0.38731184816048814,
+       0.7991359980419429
+      ],
+      "candidate_bbox_normalized": [
+       0.3816576689676522,
+       0.5990038785067472,
+       0.3930818894330193,
+       0.6166594919532237
+      ],
+      "center_displacement": 0.1836438441293393,
+      "bbox_iou": 0.0,
+      "width_abs_log_ratio": 0.13889992333325832,
+      "height_abs_log_ratio": 0.1328821719859254
+     },
+     {
+      "token": "exponential",
+      "reference_word_index": 362,
+      "candidate_word_index": 361,
+      "reference_page": 1,
+      "candidate_page": 1,
+      "reference_bbox": [
+       467.52691650390625,
+       620.6724243164062,
+       528.7188110351562,
+       632.9157104492188
+      ],
+      "candidate_bbox": [
+       464.5933837890625,
+       474.41107177734375,
+       534.9151611328125,
+       488.3943176269531
+      ],
+      "reference_bbox_normalized": [
+       0.763932870104422,
+       0.7836773034298059,
+       0.8639196258744383,
+       0.7991359980419429
+      ],
+      "candidate_bbox_normalized": [
+       0.7591395159952001,
+       0.5990038785067472,
+       0.8740443809359681,
+       0.6166594919532237
+      ],
+      "center_displacement": 0.183594318865037,
+      "bbox_iou": 0.0,
+      "width_abs_log_ratio": 0.1390667896920944,
+      "height_abs_log_ratio": 0.1328821719859254
+     },
+     {
+      "token": "5",
+      "reference_word_index": 356,
+      "candidate_word_index": 355,
+      "reference_page": 1,
+      "candidate_page": 1,
+      "reference_bbox": [
+       264.48431396484375,
+       620.6724243164062,
+       270.5692138671875,
+       632.9157104492188
+      ],
+      "candidate_bbox": [
+       265.2000427246094,
+       474.41107177734375,
+       272.1916809082031,
+       488.3943176269531
+      ],
+      "reference_bbox_normalized": [
+       0.43216391170726104,
+       0.7836773034298059,
+       0.44210655860651554,
+       0.7991359980419429
+      ],
+      "candidate_bbox_normalized": [
+       0.4333334031447866,
+       0.5990038785067472,
+       0.4447576485428156,
+       0.6166594919532237
+      ],
+      "center_displacement": 0.18358490452920365,
+      "bbox_iou": 0.0,
+      "width_abs_log_ratio": 0.13890461341484478,
+      "height_abs_log_ratio": 0.1328821719859254
+     },
+     {
+      "token": "0.0",
+      "reference_word_index": 361,
+      "candidate_word_index": 360,
+      "reference_page": 1,
+      "candidate_page": 1,
+      "reference_bbox": [
+       438.16754150390625,
+       620.6724243164062,
+       453.71649169921875,
+       632.9157104492188
+      ],
+      "candidate_bbox": [
+       435.9183044433594,
+       474.41107177734375,
+       453.7889099121094,
+       488.3943176269531
+      ],
+      "reference_bbox_normalized": [
+       0.7159600351371017,
+       0.7836773034298059,
+       0.7413668165019914,
+       0.7991359980419429
+      ],
+      "candidate_bbox_normalized": [
+       0.7122848111819597,
+       0.5990038785067472,
+       0.7414851469152114,
+       0.6166594919532237
+      ],
+      "center_displacement": 0.1835835799667428,
+      "bbox_iou": 0.0,
+      "width_abs_log_ratio": 0.13916408566165464,
+      "height_abs_log_ratio": 0.1328821719859254
+     },
+     {
+      "token": "identity",
+      "reference_word_index": 359,
+      "candidate_word_index": 358,
+      "reference_page": 1,
+      "candidate_page": 1,
+      "reference_bbox": [
+       345.7796936035156,
+       620.6724243164062,
+       386.6845397949219,
+       632.9157104492188
+      ],
+      "candidate_bbox": [
+       343.6617431640625,
+       474.41107177734375,
+       390.6734313964844,
+       488.3943176269531
+      ],
+      "reference_bbox_normalized": [
+       0.5649994993521497,
+       0.7836773034298059,
+       0.6318374833250358,
+       0.7991359980419429
+      ],
+      "candidate_bbox_normalized": [
+       0.56153879601971,
+       0.5990038785067472,
+       0.638355280059615,
+       0.6166594919532237
+      ],
+      "center_displacement": 0.1835813291582389,
+      "bbox_iou": 0.0,
+      "width_abs_log_ratio": 0.13914771177212645,
+      "height_abs_log_ratio": 0.1328821719859254
+     },
+     {
+      "token": "0.1",
+      "reference_word_index": 357,
+      "candidate_word_index": 356,
+      "reference_page": 1,
+      "candidate_page": 1,
+      "reference_bbox": [
+       290.6482238769531,
+       620.6724243164062,
+       306.1971740722656,
+       632.9157104492188
+      ],
+      "candidate_bbox": [
+       290.23529052734375,
+       474.41107177734375,
+       308.10589599609375,
+       488.3943176269531
+      ],
+      "reference_bbox_normalized": [
+       0.47491539849175346,
+       0.7836773034298059,
+       0.5003221798566432,
+       0.7991359980419429
+      ],
+      "candidate_bbox_normalized": [
+       0.4742406707963133,
+       0.5990038785067472,
+       0.5034410065295649,
+       0.6166594919532237
+      ],
+      "center_displacement": 0.1835790330224049,
+      "bbox_iou": 0.0,
+      "width_abs_log_ratio": 0.13916408566165273,
+      "height_abs_log_ratio": 0.1328821719859254
+     },
+     {
+      "token": "0.2",
+      "reference_word_index": 360,
+      "candidate_word_index": 359,
+      "reference_page": 1,
+      "candidate_page": 1,
+      "reference_bbox": [
+       404.4617919921875,
+       620.6724243164062,
+       420.0107421875,
+       632.9157104492188
+      ],
+      "candidate_bbox": [
+       404.04315185546875,
+       474.41107177734375,
+       421.91375732421875,
+       488.3943176269531
+      ],
+      "reference_bbox_normalized": [
+       0.6608852810329862,
+       0.7836773034298059,
+       0.6862920623978758,
+       0.7991359980419429
+      ],
+      "candidate_bbox_normalized": [
+       0.6602012285220078,
+       0.5990038785067472,
+       0.6894015642552594,
+       0.6166594919532237
+      ],
+      "center_displacement": 0.18357897118575783,
+      "bbox_iou": 0.0,
+      "width_abs_log_ratio": 0.13916408566165908,
+      "height_abs_log_ratio": 0.1328821719859254
+     },
+     {
+      "token": "8",
+      "reference_word_index": 358,
+      "candidate_word_index": 357,
+      "reference_page": 1,
+      "candidate_page": 1,
+      "reference_bbox": [
+       323.22760009765625,
+       620.6724243164062,
+       329.3125,
+       632.9157104492188
+      ],
+      "candidate_bbox": [
+       322.82916259765625,
+       474.41107177734375,
+       329.82080078125,
+       488.3943176269531
+      ],
+      "reference_bbox_normalized": [
+       0.5281496733621834,
+       0.7836773034298059,
+       0.5380923202614379,
+       0.7991359980419429
+      ],
+      "candidate_bbox_normalized": [
+       0.5274986316955167,
+       0.5990038785067472,
+       0.5389228770935458,
+       0.6166594919532237
+      ],
+      "center_displacement": 0.1835749874490312,
+      "bbox_iou": 0.0,
+      "width_abs_log_ratio": 0.13890461341485463,
+      "height_abs_log_ratio": 0.1328821719859254
+     },
+     {
+      "token": "3",
+      "reference_word_index": 342,
+      "candidate_word_index": 341,
+      "reference_page": 1,
+      "candidate_page": 1,
+      "reference_bbox": [
+       168.7662811279297,
+       605.4663696289062,
+       174.8511962890625,
+       617.7096557617188
+      ],
+      "candidate_bbox": [
+       174.30023193359375,
+       461.046875,
+       181.29185485839844,
+       475.0301208496094
+      ],
+      "reference_bbox_normalized": [
+       0.275761897267859,
+       0.7644777394304372,
+       0.2857045690997753,
+       0.7799364340425742
+      ],
+      "candidate_bbox_normalized": [
+       0.2848043005450878,
+       0.5821298926767676,
+       0.29622852101045494,
+       0.5997855061232441
+      ],
+      "center_displacement": 0.18151322534099648,
+      "bbox_iou": 0.0,
+      "width_abs_log_ratio": 0.13889992333325832,
+      "height_abs_log_ratio": 0.1328821719859254
+     },
+     {
+      "token": "5",
+      "reference_word_index": 343,
+      "candidate_word_index": 342,
+      "reference_page": 1,
+      "candidate_page": 1,
+      "reference_bbox": [
+       197.4033203125,
+       605.4663696289062,
+       203.4882354736328,
+       617.7096557617188
+      ],
+      "candidate_bbox": [
+       201.94894409179688,
+       461.046875,
+       208.94056701660156,
+       475.0301208496094
+      ],
+      "reference_bbox_normalized": [
+       0.32255444495506536,
+       0.7644777394304372,
+       0.33249711678698174,
+       0.7799364340425742
+      ],
+      "candidate_bbox_normalized": [
+       0.3299819347905178,
+       0.5821298926767676,
+       0.3414061552558849,
+       0.5997855061232441
+      ],
+      "center_displacement": 0.18143335125912288,
+      "bbox_iou": 0.0,
+      "width_abs_log_ratio": 0.1388999233332527,
+      "height_abs_log_ratio": 0.1328821719859254
+     },
+     {
+      "token": "28",
+      "reference_word_index": 341,
+      "candidate_word_index": 340,
+      "reference_page": 1,
+      "candidate_page": 1,
+      "reference_bbox": [
+       109.423095703125,
+       605.4663696289062,
+       121.5929183959961,
+       617.7096557617188
+      ],
+      "candidate_bbox": [
+       111.86817169189453,
+       461.046875,
+       125.85143280029297,
+       475.0301208496094
+      ],
+      "reference_bbox_normalized": [
+       0.17879590801164216,
+       0.7644777394304372,
+       0.19868123920914393,
+       0.7799364340425742
+      ],
+      "candidate_bbox_normalized": [
+       0.18279113021551394,
+       0.5821298926767676,
+       0.20563959607891008,
+       0.5997855061232441
+      ],
+      "center_displacement": 0.18133211418137474,
+      "bbox_iou": 0.0,
+      "width_abs_log_ratio": 0.13890164146276254,
+      "height_abs_log_ratio": 0.1328821719859254
+     },
+     {
+      "token": "2",
+      "reference_word_index": 344,
+      "candidate_word_index": 343,
+      "reference_page": 1,
+      "candidate_page": 1,
+      "reference_bbox": [
+       230.94993591308594,
+       605.4663696289062,
+       237.03485107421875,
+       617.7096557617188
+      ],
+      "candidate_bbox": [
+       233.57449340820312,
+       461.046875,
+       240.5661163330078,
+       475.0301208496094
+      ],
+      "reference_bbox_normalized": [
+       0.3773691763285718,
+       0.7644777394304372,
+       0.38731184816048814,
+       0.7799364340425742
+      ],
+      "candidate_bbox_normalized": [
+       0.3816576689676522,
+       0.5821298926767676,
+       0.3930818894330193,
+       0.5997855061232441
+      ],
+      "center_displacement": 0.18131914939125784,
+      "bbox_iou": 0.0,
+      "width_abs_log_ratio": 0.13889992333325832,
+      "height_abs_log_ratio": 0.1328821719859254
+     },
+     {
+      "token": "exponential",
+      "reference_word_index": 351,
+      "candidate_word_index": 350,
+      "reference_page": 1,
+      "candidate_page": 1,
+      "reference_bbox": [
+       467.5268859863281,
+       605.4663696289062,
+       528.71875,
+       617.7096557617188
+      ],
+      "candidate_bbox": [
+       464.5933837890625,
+       461.046875,
+       534.9151611328125,
+       475.0301208496094
+      ],
+      "reference_bbox_normalized": [
+       0.7639328202390983,
+       0.7644777394304372,
+       0.8639195261437909,
+       0.7799364340425742
+      ],
+      "candidate_bbox_normalized": [
+       0.7591395159952001,
+       0.5821298926767676,
+       0.8740443809359681,
+       0.5997855061232441
+      ],
+      "center_displacement": 0.18126899008840075,
+      "bbox_iou": 0.0,
+      "width_abs_log_ratio": 0.13906728841150673,
+      "height_abs_log_ratio": 0.1328821719859254
+     },
+     {
+      "token": "6",
+      "reference_word_index": 345,
+      "candidate_word_index": 344,
+      "reference_page": 1,
+      "candidate_page": 1,
+      "reference_bbox": [
+       264.48431396484375,
+       605.4663696289062,
+       270.5692138671875,
+       617.7096557617188
+      ],
+      "candidate_bbox": [
+       265.2000427246094,
+       461.046875,
+       272.1916809082031,
+       475.0301208496094
+      ],
+      "reference_bbox_normalized": [
+       0.43216391170726104,
+       0.7644777394304372,
+       0.44210655860651554,
+       0.7799364340425742
+      ],
+      "candidate_bbox_normalized": [
+       0.4333334031447866,
+       0.5821298926767676,
+       0.4447576485428156,
+       0.5997855061232441
+      ],
+      "center_displacement": 0.1812594538785909,
+      "bbox_iou": 0.0,
+      "width_abs_log_ratio": 0.13890461341484478,
+      "height_abs_log_ratio": 0.1328821719859254
+     },
+     {
+      "token": "0.0",
+      "reference_word_index": 350,
+      "candidate_word_index": 349,
+      "reference_page": 1,
+      "candidate_page": 1,
+      "reference_bbox": [
+       438.1675109863281,
+       605.4663696289062,
+       453.7164611816406,
+       617.7096557617188
+      ],
+      "candidate_bbox": [
+       435.9183044433594,
+       461.046875,
+       453.7889099121094,
+       475.0301208496094
+      ],
+      "reference_bbox_normalized": [
+       0.715959985271778,
+       0.7644777394304372,
+       0.7413667666366677,
+       0.7799364340425742
+      ],
+      "candidate_bbox_normalized": [
+       0.7122848111819597,
+       0.5821298926767676,
+       0.7414851469152114,
+       0.5997855061232441
+      ],
+      "center_displacement": 0.18125811183340318,
+      "bbox_iou": 0.0,
+      "width_abs_log_ratio": 0.13916408566165464,
+      "height_abs_log_ratio": 0.1328821719859254
+     },
+     {
+      "token": "tanh",
+      "reference_word_index": 348,
+      "candidate_word_index": 347,
+      "reference_page": 1,
+      "candidate_page": 1,
+      "reference_bbox": [
+       354.0683898925781,
+       605.4663696289062,
+       378.4080505371094,
+       617.7096557617188
+      ],
+      "candidate_bbox": [
+       353.1773376464844,
+       461.046875,
+       381.1578369140625,
+       475.0301208496094
+      ],
+      "reference_bbox_normalized": [
+       0.5785431207395068,
+       0.7644777394304372,
+       0.6183138080671722,
+       0.7799364340425742
+      ],
+      "candidate_bbox_normalized": [
+       0.5770871530171313,
+       0.5821298926767676,
+       0.6228069230621937,
+       0.5997855061232441
+      ],
+      "center_displacement": 0.18125574880743908,
+      "bbox_iou": 0.0,
+      "width_abs_log_ratio": 0.13940066764175454,
+      "height_abs_log_ratio": 0.1328821719859254
+     },
+     {
+      "token": "0.4",
+      "reference_word_index": 346,
+      "candidate_word_index": 345,
+      "reference_page": 1,
+      "candidate_page": 1,
+      "reference_bbox": [
+       290.6482238769531,
+       605.4663696289062,
+       306.1971740722656,
+       617.7096557617188
+      ],
+      "candidate_bbox": [
+       290.23529052734375,
+       461.046875,
+       308.10589599609375,
+       475.0301208496094
+      ],
+      "reference_bbox_normalized": [
+       0.47491539849175346,
+       0.7644777394304372,
+       0.5003221798566432,
+       0.7799364340425742
+      ],
+      "candidate_bbox_normalized": [
+       0.4742406707963133,
+       0.5821298926767676,
+       0.5034410065295649,
+       0.5997855061232441
+      ],
+      "center_displacement": 0.1812535070414072,
+      "bbox_iou": 0.0,
+      "width_abs_log_ratio": 0.13916408566165273,
+      "height_abs_log_ratio": 0.1328821719859254
+     },
+     {
+      "token": "0.1",
+      "reference_word_index": 349,
+      "candidate_word_index": 348,
+      "reference_page": 1,
+      "candidate_page": 1,
+      "reference_bbox": [
+       404.4617614746094,
+       605.4663696289062,
+       420.0107116699219,
+       617.7096557617188
+      ],
+      "candidate_bbox": [
+       404.04315185546875,
+       461.046875,
+       421.91375732421875,
+       475.0301208496094
+      ],
+      "reference_bbox_normalized": [
+       0.6608852311676624,
+       0.7644777394304372,
+       0.6862920125325521,
+       0.7799364340425742
+      ],
+      "candidate_bbox_normalized": [
+       0.6602012285220078,
+       0.5821298926767676,
+       0.6894015642552594,
+       0.5997855061232441
+      ],
+      "center_displacement": 0.18125344474502497,
+      "bbox_iou": 0.0,
+      "width_abs_log_ratio": 0.13916408566165464,
+      "height_abs_log_ratio": 0.1328821719859254
+     },
+     {
+      "token": "4",
+      "reference_word_index": 347,
+      "candidate_word_index": 346,
+      "reference_page": 1,
+      "candidate_page": 1,
+      "reference_bbox": [
+       323.22760009765625,
+       605.4663696289062,
+       329.3125,
+       617.7096557617188
+      ],
+      "candidate_bbox": [
+       322.82916259765625,
+       461.046875,
+       329.82080078125,
+       475.0301208496094
+      ],
+      "reference_bbox_normalized": [
+       0.5281496733621834,
+       0.7644777394304372,
+       0.5380923202614379,
+       0.7799364340425742
+      ],
+      "candidate_bbox_normalized": [
+       0.5274986316955167,
+       0.5821298926767676,
+       0.5389228770935458,
+       0.5997855061232441
+      ],
+      "center_displacement": 0.1812494095611905,
+      "bbox_iou": 0.0,
+      "width_abs_log_ratio": 0.13890461341485463,
+      "height_abs_log_ratio": 0.1328821719859254
+     }
+    ]
+   },
+   "interpretation": "Token boxes are normalized by each page's own canvas; canvas mismatch remains a separate axis."
+  },
+  "text_ltsim": {
+   "status": "scored",
+   "applicable": true,
+   "metrics": {
+    "paired_page_count": 3,
+    "scored_page_count": 3,
+    "abstained_page_count": 0,
+    "text_ltsim_page_macro": 0.7962285983123047,
+    "text_ltsim_element_weighted": 0.7703675597526005,
+    "text_ltsim_worst_page": 0.7186454826331917
+   },
+   "evidence": {
+    "pages": [
+     {
+      "page": 0,
+      "status": "scored",
+      "reference_block_count": 5,
+      "candidate_block_count": 4,
+      "emd": 0.3303871129112947,
+      "text_ltsim": 0.7186454826331917,
+      "largest_cost_contributions": [
+       {
+        "reference_block_index": 1,
+        "candidate_block_index": 1,
+        "mass": 0.2,
+        "cost": 0.30206604762688727,
+        "reference_bbox_normalized": [
+         0.3480261260387944,
+         0.1861886303834241,
+         0.6520829044915493,
+         0.20128358012498027
+        ],
+        "candidate_bbox_normalized": [
+         0.35710784812378726,
+         0.16572983096344301,
+         0.6428921269435509,
+         0.1796187198523319
+        ]
+       },
+       {
+        "reference_block_index": 0,
+        "candidate_block_index": 0,
+        "mass": 0.2,
+        "cost": 0.2828959090266925,
+        "reference_bbox_normalized": [
+         0.4195440953073938,
+         0.14285088548756608,
+         0.5805307525435305,
+         0.1645875025277186
+        ],
+        "candidate_bbox_normalized": [
+         0.41543055515663296,
+         0.11604675138839568,
+         0.584569444843367,
+         0.13751138821996825
+        ]
+       },
+       {
+        "reference_block_index": 3,
+        "candidate_block_index": 3,
+        "mass": 0.2,
+        "cost": 0.2638235923839207,
+        "reference_bbox_normalized": [
+         0.11764703389086754,
+         0.2764515924935389,
+         0.8821038140190972,
+         0.30733428338561397
+        ],
+        "candidate_bbox_normalized": [
+         0.11764705882352941,
+         0.24335483589557685,
+         0.8150147581412122,
+         0.2757575680511166
+        ]
+       },
+       {
+        "reference_block_index": 4,
+        "candidate_block_index": 2,
+        "mass": 0.10000000000000003,
+        "cost": 0.49886432796820446,
+        "reference_bbox_normalized": [
+         0.4955685684104371,
+         0.9360803161004577,
+         0.5044277415556067,
+         0.949854455813013
+        ],
+        "candidate_bbox_normalized": [
+         0.11764705882352941,
+         0.21831315936464252,
+         0.20140524471507354,
+         0.2322020482535314
+        ]
+       },
+       {
+        "reference_block_index": 2,
+        "candidate_block_index": 2,
+        "mass": 0.14999999999999997,
+        "cost": 0.33012557997961967,
+        "reference_bbox_normalized": [
+         0.11764703389086754,
+         0.24231710337629223,
+         0.22838472852519914,
+         0.26043100068063446
+        ],
+        "candidate_bbox_normalized": [
+         0.11764705882352941,
+         0.21831315936464252,
+         0.20140524471507354,
+         0.2322020482535314
+        ]
+       },
+       {
+        "reference_block_index": 4,
+        "candidate_block_index": 1,
+        "mass": 0.04999999999999999,
+        "cost": 0.49543571262692054,
+        "reference_bbox_normalized": [
+         0.4955685684104371,
+         0.9360803161004577,
+         0.5044277415556067,
+         0.949854455813013
+        ],
+        "candidate_bbox_normalized": [
+         0.35710784812378726,
+         0.16572983096344301,
+         0.6428921269435509,
+         0.1796187198523319
+        ]
+       },
+       {
+        "reference_block_index": 4,
+        "candidate_block_index": 0,
+        "mass": 0.04999999999999999,
+        "cost": 0.49334795662784847,
+        "reference_bbox_normalized": [
+         0.4955685684104371,
+         0.9360803161004577,
+         0.5044277415556067,
+         0.949854455813013
+        ],
+        "candidate_bbox_normalized": [
+         0.41543055515663296,
+         0.11604675138839568,
+         0.584569444843367,
+         0.13751138821996825
+        ]
+       },
+       {
+        "reference_block_index": 2,
+        "candidate_block_index": 3,
+        "mass": 0.050000000000000044,
+        "cost": 0.23571099694585418,
+        "reference_bbox_normalized": [
+         0.11764703389086754,
+         0.24231710337629223,
+         0.22838472852519914,
+         0.26043100068063446
+        ],
+        "candidate_bbox_normalized": [
+         0.11764705882352941,
+         0.24335483589557685,
+         0.8150147581412122,
+         0.2757575680511166
+        ]
+       }
+      ]
+     },
+     {
+      "page": 1,
+      "status": "scored",
+      "reference_block_count": 2,
+      "candidate_block_count": 1,
+      "emd": 0.22789566280640133,
+      "text_ltsim": 0.7962073295400354,
+      "largest_cost_contributions": [
+       {
+        "reference_block_index": 6,
+        "candidate_block_index": 4,
+        "mass": 0.5,
+        "cost": 0.34673790354216694,
+        "reference_bbox_normalized": [
+         0.4955686182757608,
+         0.9360803931650489,
+         0.5044277914209303,
+         0.9498545328776041
+        ],
+        "candidate_bbox_normalized": [
+         0.12849633210624745,
+         0.08920076158311632,
+         0.8740443809359681,
+         0.6166594919532237
+        ]
+       },
+       {
+        "reference_block_index": 5,
+        "candidate_block_index": 4,
+        "mass": 0.5,
+        "cost": 0.10905342207063573,
+        "reference_bbox_normalized": [
+         0.12933951733159085,
+         0.2092534267541134,
+         0.8639196258744383,
+         0.7991359980419429
+        ],
+        "candidate_bbox_normalized": [
+         0.12849633210624745,
+         0.08920076158311632,
+         0.8740443809359681,
+         0.6166594919532237
+        ]
+       }
+      ]
+     },
+     {
+      "page": 2,
+      "status": "scored",
+      "reference_block_count": 2,
+      "candidate_block_count": 1,
+      "emd": 0.13486601682367844,
+      "text_ltsim": 0.8738329827636873,
+      "largest_cost_contributions": [
+       {
+        "reference_block_index": 8,
+        "candidate_block_index": 5,
+        "mass": 0.5,
+        "cost": 0.24995549336565526,
+        "reference_bbox_normalized": [
+         0.4955686182757608,
+         0.9360803931650489,
+         0.5044277914209303,
+         0.9498545328776041
+        ],
+        "candidate_bbox_normalized": [
+         0.1337107116100835,
+         0.08920076158311632,
+         0.8662893257889093,
+         1.0248621160333806
+        ]
+       },
+       {
+        "reference_block_index": 7,
+        "candidate_block_index": 5,
+        "mass": 0.5,
+        "cost": 0.019776540281701616,
+        "reference_bbox_normalized": [
+         0.11764705882352941,
+         0.10222689310709636,
+         0.8455025666679432,
+         1.0085321291528566
+        ],
+        "candidate_bbox_normalized": [
+         0.1337107116100835,
+         0.08920076158311632,
+         0.8662893257889093,
+         1.0248621160333806
+        ]
+       }
+      ]
+     }
+    ],
+    "equations": "uniform mass; delta_bbox=(1+GIoU)/2; delta_label=1 for text; mu=1-(delta_bbox+delta_label)/2; Text-LTSim=exp(-EMD), sigma=1"
+   },
+   "interpretation": "Faithful published LTSim equations on extracted text blocks only. It measures text-layout geometry/segmentation, not full semantic layout; non-text classes abstain."
+  },
+  "block_transport": {
+   "status": "scored",
+   "applicable": true,
+   "metrics": {
+    "reference_block_count": 9,
+    "candidate_block_count": 6,
+    "transported_mass": 1.0,
+    "combined_transport_cost": 0.17079517954437057,
+    "combined_transport_similarity_exp": 0.8429942182503003,
+    "transported_geometry_cost": 0.2110816717436881,
+    "geometry_transport_similarity_exp": 0.8097079339218745,
+    "transported_content_cost": 0.09597740831706665,
+    "content_transport_similarity_exp": 0.9084845400315481,
+    "nonzero_flow_count": 14
+   },
+   "evidence": {
+    "largest_cost_contributions": [
+     {
+      "reference_block_index": 5,
+      "candidate_block_index": 4,
+      "mass": 0.5941897412619156,
+      "combined_cost": 0.1417694486918263,
+      "geometry_cost": 0.21810684414127124,
+      "content_cost": 0.0,
+      "reference_page": 1,
+      "candidate_page": 1,
+      "reference_bbox_stacked_normalized": [
+       0.12933951733159085,
+       0.40308447558470445,
+       0.8639196258744383,
+       0.5997119993473143
+      ],
+      "candidate_bbox_stacked_normalized": [
+       0.12849633210624745,
+       0.36306692052770545,
+       0.8740443809359681,
+       0.5388864973177413
+      ],
+      "reference_text": "Table 1: Source table 1: 2512.03307_table_5 max-min iter. \u00b5l \u00b5h \u00b5xin \u00b5zx \u00b5rs \u00b5c \u00b5a \u00b5rcat \u00b5m \u00b5d 1 5 10 3 5 1.0 8 tanh 0.9 0.4 uniform 2 3 5 2 5 0.1 2 identity 1.0 0.4 uniform 3 12 1",
+      "candidate_text": "Table 1: Source table 1: 2512.03307_table_5 max-min iter. \ud835\udf07\ud835\udc59 \ud835\udf07\u210e \ud835\udf07\ud835\udc65in \ud835\udf07\ud835\udc67\ud835\udc65 \ud835\udf07\ud835\udc5f\ud835\udc60 \ud835\udf07\ud835\udc50 \ud835\udf07\ud835\udc4e \ud835\udf07\ud835\udc5fcat \ud835\udf07\ud835\udc5a \ud835\udf07\ud835\udc51 1 5 10 3 5 1.0 8 tanh 0.9 0.4 uniform 2 3 5 2 5 0.1 2 identity 1.0 0.4 uniform 3 12 1"
+     },
+     {
+      "reference_block_index": 7,
+      "candidate_block_index": 5,
+      "mass": 0.28377065111758987,
+      "combined_cost": 0.09647452968861632,
+      "geometry_cost": 0.03955308056340301,
+      "content_cost": 0.20218579234972678,
+      "reference_page": 2,
+      "candidate_page": 2,
+      "reference_bbox_stacked_normalized": [
+       0.11764705882352941,
+       0.7007422977023654,
+       0.8455025666679432,
+       1.0028440430509522
+      ],
+      "candidate_bbox_stacked_normalized": [
+       0.1337107116100835,
+       0.6964002538610389,
+       0.8662893257889093,
+       1.008287372011127
+      ],
+      "reference_text": "Table 2: Source table 2: 2512.02195_table_6 # Word type f 1. te (\u2018at\u2019, \u2018to\u2019, comp) 1018 2. dat (\u2018that\u2019) 658 3. niet (\u2018not\u2019) 650 4. om (\u2018to\u2019) 446 5. de (\u2018the\u2019, masc/fem/pl) 291 6. e",
+      "candidate_text": "Table 2: Source table 2: 2512.02195_table_6 # Word type \ud835\udc53 1. te (\u2018at\u2019, \u2018to\u2019, comp) 1018 2. dat (\u2018that\u2019) 658 3. niet (\u2018not\u2019) 650 4. om (\u2018to\u2019) 446 5. de (\u2018the\u2019, masc/fem/pl) 291 6. e"
+     },
+     {
+      "reference_block_index": 5,
+      "candidate_block_index": 5,
+      "mass": 0.04186468050679193,
+      "combined_cost": 0.6448330723938953,
+      "geometry_cost": 0.5819315881337592,
+      "content_cost": 0.7616501145912911,
+      "reference_page": 1,
+      "candidate_page": 2,
+      "reference_bbox_stacked_normalized": [
+       0.12933951733159085,
+       0.40308447558470445,
+       0.8639196258744383,
+       0.5997119993473143
+      ],
+      "candidate_bbox_stacked_normalized": [
+       0.1337107116100835,
+       0.6964002538610389,
+       0.8662893257889093,
+       1.008287372011127
+      ],
+      "reference_text": "Table 1: Source table 1: 2512.03307_table_5 max-min iter. \u00b5l \u00b5h \u00b5xin \u00b5zx \u00b5rs \u00b5c \u00b5a \u00b5rcat \u00b5m \u00b5d 1 5 10 3 5 1.0 8 tanh 0.9 0.4 uniform 2 3 5 2 5 0.1 2 identity 1.0 0.4 uniform 3 12 1",
+      "candidate_text": "Table 2: Source table 2: 2512.02195_table_6 # Word type \ud835\udc53 1. te (\u2018at\u2019, \u2018to\u2019, comp) 1018 2. dat (\u2018that\u2019) 658 3. niet (\u2018not\u2019) 650 4. om (\u2018to\u2019) 446 5. de (\u2018the\u2019, masc/fem/pl) 291 6. e"
+     },
+     {
+      "reference_block_index": 3,
+      "candidate_block_index": 3,
+      "mass": 0.04857013163867453,
+      "combined_cost": 0.34297067009909693,
+      "geometry_cost": 0.5276471847678414,
+      "content_cost": 0.0,
+      "reference_page": 0,
+      "candidate_page": 0,
+      "reference_bbox_stacked_normalized": [
+       0.11764703389086754,
+       0.09215053083117963,
+       0.8821038140190972,
+       0.102444761128538
+      ],
+      "candidate_bbox_stacked_normalized": [
+       0.11764705882352941,
+       0.08111827863185896,
+       0.8150147581412122,
+       0.0919191893503722
+      ],
+      "reference_text": "These tables are grouped from source-backed LaTeX table data and compiled as a single benchmark data point.",
+      "candidate_text": "These tables are grouped from source-backed LaTeX table data and compiled as a single benchmark data point."
+     },
+     {
+      "reference_block_index": 1,
+      "candidate_block_index": 1,
+      "mass": 0.015433499773036768,
+      "combined_cost": 0.39268586191495347,
+      "geometry_cost": 0.6041320952537745,
+      "content_cost": 0.0,
+      "reference_page": 0,
+      "candidate_page": 0,
+      "reference_bbox_stacked_normalized": [
+       0.3480261260387944,
+       0.0620628767944747,
+       0.6520829044915493,
+       0.06709452670832676
+      ],
+      "candidate_bbox_stacked_normalized": [
+       0.35710784812378726,
+       0.05524327698781434,
+       0.6428921269435509,
+       0.05987290661744397
+      ],
+      "reference_text": "Source-backed grouped table sample",
+      "candidate_text": "Source-backed grouped table sample"
+     },
+     {
+      "reference_block_index": 3,
+      "candidate_block_index": 5,
+      "mass": 0.0034220938229386835,
+      "combined_cost": 0.8573280251946631,
+      "geometry_cost": 0.8312612745743873,
+      "content_cost": 0.9057377049180327,
+      "reference_page": 0,
+      "candidate_page": 2,
+      "reference_bbox_stacked_normalized": [
+       0.11764703389086754,
+       0.09215053083117963,
+       0.8821038140190972,
+       0.102444761128538
+      ],
+      "candidate_bbox_stacked_normalized": [
+       0.1337107116100835,
+       0.6964002538610389,
+       0.8662893257889093,
+       1.008287372011127
+      ],
+      "reference_text": "These tables are grouped from source-backed LaTeX table data and compiled as a single benchmark data point.",
+      "candidate_text": "Table 2: Source table 2: 2512.02195_table_6 # Word type \ud835\udc53 1. te (\u2018at\u2019, \u2018to\u2019, comp) 1018 2. dat (\u2018that\u2019) 658 3. niet (\u2018not\u2019) 650 4. om (\u2018to\u2019) 446 5. de (\u2018the\u2019, masc/fem/pl) 291 6. e"
+     },
+     {
+      "reference_block_index": 0,
+      "candidate_block_index": 0,
+      "mass": 0.005901044030866999,
+      "combined_cost": 0.36776468173470034,
+      "geometry_cost": 0.5657918180533851,
+      "content_cost": 0.0,
+      "reference_page": 0,
+      "candidate_page": 0,
+      "reference_bbox_stacked_normalized": [
+       0.4195440953073938,
+       0.047616961829188696,
+       0.5805307525435305,
+       0.05486250084257286
+      ],
+      "candidate_bbox_stacked_normalized": [
+       0.41543055515663296,
+       0.03868225046279856,
+       0.584569444843367,
+       0.04583712940665608
+      ],
+      "reference_text": "Simple Tables",
+      "candidate_text": "Simple Tables"
+     },
+     {
+      "reference_block_index": 2,
+      "candidate_block_index": 2,
+      "mass": 0.003631411711302769,
+      "combined_cost": 0.47291325397350575,
+      "geometry_cost": 0.6602511599592396,
+      "content_cost": 0.125,
+      "reference_page": 0,
+      "candidate_page": 0,
+      "reference_bbox_stacked_normalized": [
+       0.11764703389086754,
+       0.08077236779209741,
+       0.22838472852519914,
+       0.08681033356021149
+      ],
+      "candidate_bbox_stacked_normalized": [
+       0.11764705882352941,
+       0.07277105312154751,
+       0.20140524471507354,
+       0.07740068275117713
+      ],
+      "reference_text": "1 Tables",
+      "candidate_text": "0 Tables"
+     },
+     {
+      "reference_block_index": 1,
+      "candidate_block_index": 5,
+      "mass": 0.001087394298877711,
+      "combined_cost": 0.8782926227477462,
+      "geometry_cost": 0.8340903737943469,
+      "content_cost": 0.9603825136612022,
+      "reference_page": 0,
+      "candidate_page": 2,
+      "reference_bbox_stacked_normalized": [
+       0.3480261260387944,
+       0.0620628767944747,
+       0.6520829044915493,
+       0.06709452670832676
+      ],
+      "candidate_bbox_stacked_normalized": [
+       0.1337107116100835,
+       0.6964002538610389,
+       0.8662893257889093,
+       1.008287372011127
+      ],
+      "reference_text": "Source-backed grouped table sample",
+      "candidate_text": "Table 2: Source table 2: 2512.02195_table_6 # Word type \ud835\udc53 1. te (\u2018at\u2019, \u2018to\u2019, comp) 1018 2. dat (\u2018that\u2019) 658 3. niet (\u2018not\u2019) 650 4. om (\u2018to\u2019) 446 5. de (\u2018the\u2019, masc/fem/pl) 291 6. e"
+     },
+     {
+      "reference_block_index": 4,
+      "candidate_block_index": 5,
+      "mass": 0.00048590864917395527,
+      "combined_cost": 0.8539135055885585,
+      "geometry_cost": 0.7759871502539402,
+      "content_cost": 0.9986338797814208,
+      "reference_page": 0,
+      "candidate_page": 2,
+      "reference_bbox_stacked_normalized": [
+       0.4955685684104371,
+       0.3120267720334859,
+       0.5044277415556067,
+       0.316618151937671
+      ],
+      "candidate_bbox_stacked_normalized": [
+       0.1337107116100835,
+       0.6964002538610389,
+       0.8662893257889093,
+       1.008287372011127
+      ],
+      "reference_text": "1",
+      "candidate_text": "Table 2: Source table 2: 2512.02195_table_6 # Word type \ud835\udc53 1. te (\u2018at\u2019, \u2018to\u2019, comp) 1018 2. dat (\u2018that\u2019) 658 3. niet (\u2018not\u2019) 650 4. om (\u2018to\u2019) 446 5. de (\u2018the\u2019, masc/fem/pl) 291 6. e"
+     },
+     {
+      "reference_block_index": 0,
+      "candidate_block_index": 5,
+      "mass": 0.00041576840839441936,
+      "combined_cost": 0.8886886761006304,
+      "geometry_cost": 0.8368434445264008,
+      "content_cost": 0.9849726775956285,
+      "reference_page": 0,
+      "candidate_page": 2,
+      "reference_bbox_stacked_normalized": [
+       0.4195440953073938,
+       0.047616961829188696,
+       0.5805307525435305,
+       0.05486250084257286
+      ],
+      "candidate_bbox_stacked_normalized": [
+       0.1337107116100835,
+       0.6964002538610389,
+       0.8662893257889093,
+       1.008287372011127
+      ],
+      "reference_text": "Simple Tables",
+      "candidate_text": "Table 2: Source table 2: 2512.02195_table_6 # Word type \ud835\udc53 1. te (\u2018at\u2019, \u2018to\u2019, comp) 1018 2. dat (\u2018that\u2019) 658 3. niet (\u2018not\u2019) 650 4. om (\u2018to\u2019) 446 5. de (\u2018the\u2019, masc/fem/pl) 291 6. e"
+     },
+     {
+      "reference_block_index": 6,
+      "candidate_block_index": 5,
+      "mass": 0.00048590864917395527,
+      "combined_cost": 0.7201783771437218,
+      "geometry_cost": 0.5702407988003453,
+      "content_cost": 0.9986338797814208,
+      "reference_page": 1,
+      "candidate_page": 2,
+      "reference_bbox_stacked_normalized": [
+       0.4955686182757608,
+       0.6453601310550163,
+       0.5044277914209303,
+       0.6499515109592013
+      ],
+      "candidate_bbox_stacked_normalized": [
+       0.1337107116100835,
+       0.6964002538610389,
+       0.8662893257889093,
+       1.008287372011127
+      ],
+      "reference_text": "2",
+      "candidate_text": "Table 2: Source table 2: 2512.02195_table_6 # Word type \ud835\udc53 1. te (\u2018at\u2019, \u2018to\u2019, comp) 1018 2. dat (\u2018that\u2019) 658 3. niet (\u2018not\u2019) 650 4. om (\u2018to\u2019) 446 5. de (\u2018the\u2019, masc/fem/pl) 291 6. e"
+     },
+     {
+      "reference_block_index": 8,
+      "candidate_block_index": 5,
+      "mass": 0.00048590864917395527,
+      "combined_cost": 0.674463999298849,
+      "geometry_cost": 0.4999109867313105,
+      "content_cost": 0.9986338797814208,
+      "reference_page": 2,
+      "candidate_page": 2,
+      "reference_bbox_stacked_normalized": [
+       0.4955686182757608,
+       0.9786934643883497,
+       0.5044277914209303,
+       0.9832848442925347
+      ],
+      "candidate_bbox_stacked_normalized": [
+       0.1337107116100835,
+       0.6964002538610389,
+       0.8662893257889093,
+       1.008287372011127
+      ],
+      "reference_text": "3",
+      "candidate_text": "Table 2: Source table 2: 2512.02195_table_6 # Word type \ud835\udc53 1. te (\u2018at\u2019, \u2018to\u2019, comp) 1018 2. dat (\u2018that\u2019) 658 3. niet (\u2018not\u2019) 650 4. om (\u2018to\u2019) 446 5. de (\u2018the\u2019, masc/fem/pl) 291 6. e"
+     },
+     {
+      "reference_block_index": 2,
+      "candidate_block_index": 5,
+      "mass": 0.0002558574820888731,
+      "combined_cost": 0.8898783079606527,
+      "geometry_cost": 0.8349956314148754,
+      "content_cost": 0.9918032786885246,
+      "reference_page": 0,
+      "candidate_page": 2,
+      "reference_bbox_stacked_normalized": [
+       0.11764703389086754,
+       0.08077236779209741,
+       0.22838472852519914,
+       0.08681033356021149
+      ],
+      "candidate_bbox_stacked_normalized": [
+       0.1337107116100835,
+       0.6964002538610389,
+       0.8662893257889093,
+       1.008287372011127
+      ],
+      "reference_text": "1 Tables",
+      "candidate_text": "Table 2: Source table 2: 2512.02195_table_6 # Word type \ud835\udc53 1. te (\u2018at\u2019, \u2018to\u2019, comp) 1018 2. dat (\u2018that\u2019) 658 3. niet (\u2018not\u2019) 650 4. om (\u2018to\u2019) 446 5. de (\u2018the\u2019, masc/fem/pl) 291 6. e"
+     }
+    ],
+    "mass_policy": "block normalized-character count; minimum mass unit 1",
+    "cost_policy": "0.65 * (1 - rescaled GIoU) + 0.35 * normalized Levenshtein distance",
+    "page_geometry": "page boxes stacked vertically and normalized by max page count"
+   },
+   "interpretation": "Exact optimal transport over extracted text blocks. This is an LTSim-inspired, fully specified adaptation\u2014not the published LTSim implementation or a semantic table/formula metric. Report geometry and content costs separately with the flows."
+  },
+  "layout_relations": {
+   "status": "scored",
+   "applicable": true,
+   "metrics": {
+    "matched_block_count": 6,
+    "reference_block_coverage": 0.6666666666666666,
+    "candidate_block_coverage": 1.0,
+    "matched_block_iou_q10": 0.0,
+    "matched_block_iou_q50": 0.0,
+    "matched_block_center_displacement_q90": 0.09896433281992598,
+    "pairwise_relation_count": 15,
+    "pairwise_relation_agreement": 1.0
+   },
+   "evidence": {
+    "relation_mismatches": [],
+    "worst_block_pairs": [
+     {
+      "reference_block_index": 5,
+      "candidate_block_index": 4,
+      "reference_page": 1,
+      "candidate_page": 1,
+      "reference_bbox_normalized": [
+       0.12933951733159085,
+       0.2092534267541134,
+       0.8639196258744383,
+       0.7991359980419429
+      ],
+      "candidate_bbox_normalized": [
+       0.12849633210624745,
+       0.08920076158311632,
+       0.8740443809359681,
+       0.6166594919532237
+      ],
+      "center_displacement": 0.1513357583336757,
+      "bbox_iou": 0.5675675814992569,
+      "reference_text": "Table 1: Source table 1: 2512.03307_table_5 max-min iter. \u00b5l \u00b5h \u00b5xin \u00b5zx \u00b5rs \u00b5c \u00b5a \u00b5rcat \u00b5m \u00b5d 1 5 10 3 5 1.0 8 tanh 0.9 0.4 uniform 2 3 5 2 5 0.1 2 identity 1."
+     },
+     {
+      "reference_block_index": 3,
+      "candidate_block_index": 3,
+      "reference_page": 0,
+      "candidate_page": 0,
+      "reference_bbox_normalized": [
+       0.11764703389086754,
+       0.2764515924935389,
+       0.8821038140190972,
+       0.30733428338561397
+      ],
+      "candidate_bbox_normalized": [
+       0.11764705882352941,
+       0.24335483589557685,
+       0.8150147581412122,
+       0.2757575680511166
+      ],
+      "center_displacement": 0.04659290730617623,
+      "bbox_iou": 0.0,
+      "reference_text": "These tables are grouped from source-backed LaTeX table data and compiled as a single benchmark data point."
+     },
+     {
+      "reference_block_index": 2,
+      "candidate_block_index": 2,
+      "reference_page": 0,
+      "candidate_page": 0,
+      "reference_bbox_normalized": [
+       0.11764703389086754,
+       0.24231710337629223,
+       0.22838472852519914,
+       0.26043100068063446
+      ],
+      "candidate_bbox_normalized": [
+       0.11764705882352941,
+       0.21831315936464252,
+       0.20140524471507354,
+       0.2322020482535314
+      ],
+      "center_displacement": 0.029394585690660075,
+      "bbox_iou": 0.0,
+      "reference_text": "1 Tables"
+     },
+     {
+      "reference_block_index": 0,
+      "candidate_block_index": 0,
+      "reference_page": 0,
+      "candidate_page": 0,
+      "reference_bbox_normalized": [
+       0.4195440953073938,
+       0.14285088548756608,
+       0.5805307525435305,
+       0.1645875025277186
+      ],
+      "candidate_bbox_normalized": [
+       0.41543055515663296,
+       0.11604675138839568,
+       0.584569444843367,
+       0.13751138821996825
+      ],
+      "center_displacement": 0.026940150197206924,
+      "bbox_iou": 0.0,
+      "reference_text": "Simple Tables"
+     },
+     {
+      "reference_block_index": 1,
+      "candidate_block_index": 1,
+      "reference_page": 0,
+      "candidate_page": 0,
+      "reference_bbox_normalized": [
+       0.3480261260387944,
+       0.1861886303834241,
+       0.6520829044915493,
+       0.20128358012498027
+      ],
+      "candidate_bbox_normalized": [
+       0.35710784812378726,
+       0.16572983096344301,
+       0.6428921269435509,
+       0.1796187198523319
+      ],
+      "center_displacement": 0.02106190043060256,
+      "bbox_iou": 0.0,
+      "reference_text": "Source-backed grouped table sample"
+     },
+     {
+      "reference_block_index": 7,
+      "candidate_block_index": 5,
+      "reference_page": 2,
+      "candidate_page": 2,
+      "reference_bbox_normalized": [
+       0.11764705882352941,
+       0.10222689310709636,
+       0.8455025666679432,
+       1.0085321291528566
+      ],
+      "candidate_bbox_normalized": [
+       0.1337107116100835,
+       0.08920076158311632,
+       0.8662893257889093,
+       1.0248621160333806
+      ],
+      "center_displacement": 0.018499110235163107,
+      "bbox_iou": 0.9215670478585754,
+      "reference_text": "Table 2: Source table 2: 2512.02195_table_6 # Word type f 1. te (\u2018at\u2019, \u2018to\u2019, comp) 1018 2. dat (\u2018that\u2019) 658 3. niet (\u2018not\u2019) 650 4. om (\u2018to\u2019) 446 5. de (\u2018the\u2019, m"
+     }
+    ]
+   },
+   "interpretation": "Transparent matched-block relation trial inspired by pairwise-layout work; this is not the published PaIRS or LTSim metric."
+  },
+  "reading_order": {
+   "status": "scored",
+   "applicable": true,
+   "metrics": {
+    "matched_block_count": 6,
+    "reference_block_coverage": 0.6666666666666666,
+    "candidate_block_coverage": 1.0,
+    "inversion_count": 0,
+    "kendall_tau": 1.0
+   },
+   "evidence": {
+    "inverted_block_pairs": []
+   },
+   "interpretation": "Kendall tau is computed only on content-matched blocks; coverage must accompany it."
+  },
+  "pagination": {
+   "status": "scored",
+   "applicable": true,
+   "metrics": {
+    "reference_page_count": 3,
+    "candidate_page_count": 3,
+    "page_count_delta": 0,
+    "matched_block_count": 6,
+    "matched_block_page_assignment_accuracy": 1.0,
+    "page_break_precision": 1.0,
+    "page_break_recall": 1.0,
+    "page_break_f1": 1.0,
+    "page_break_true_positive": 2,
+    "page_break_false_positive": 0,
+    "page_break_false_negative": 0
+   },
+   "evidence": {
+    "mismatched_page_breaks": []
+   },
+   "interpretation": "Page count, matched-block page assignment, and page-break boundaries are reported independently."
+  },
+  "typography": {
+   "status": "scored",
+   "applicable": true,
+   "metrics": {
+    "styled_matched_token_count": 467,
+    "reference_styled_token_count": 471,
+    "candidate_styled_token_count": 501,
+    "reference_style_coverage": 0.9915074309978769,
+    "candidate_style_coverage": 0.9321357285429142,
+    "style_coverage_hmean": 0.9609053497942387,
+    "font_size_abs_log_ratio_q50": 0.1328831655724867,
+    "font_size_abs_log_ratio_q90": 0.1328831655724867,
+    "font_size_abs_log_ratio_max": 0.26558982523243646,
+    "font_name_exact_agreement_rate": 0.0,
+    "color_exact_agreement_rate": 1.0,
+    "bold_agreement_rate": 0.9978586723768736,
+    "italic_agreement_rate": 0.9764453961456103,
+    "serif_agreement_rate": 1.0,
+    "monospace_agreement_rate": 1.0,
+    "baseline_displacement_q90": 0.1754998101128472
+   },
+   "evidence": {
+    "style_mismatches": [
+     {
+      "token": "Tables",
+      "reference_page": 0,
+      "candidate_page": 0,
+      "reference_bbox": [
+       95.67121887207031,
+       191.91514587402344,
+       139.77145385742188,
+       206.2613525390625
+      ],
+      "candidate_bbox": [
+       88.03800201416016,
+       172.90402221679688,
+       123.260009765625,
+       183.90402221679688
+      ],
+      "reference_font": "SFBX1440",
+      "candidate_font": "NewCM10-Bold",
+      "reference_size": 14.346199989318848,
+      "candidate_size": 11.0,
+      "font_size_abs_log_ratio": 0.26558982523243646,
+      "reference_style_bits": {
+       "italic": false,
+       "serif": true,
+       "monospace": false,
+       "bold": true
+      },
+      "candidate_style_bits": {
+       "italic": false,
+       "serif": true,
+       "monospace": false,
+       "bold": true
+      },
+      "reference_color": 0,
+      "candidate_color": 0
+     },
+     {
+      "token": "0.0",
+      "reference_page": 1,
+      "candidate_page": 1,
+      "reference_bbox": [
+       290.6433410644531,
+       225.31065368652344,
+       306.19232177734375,
+       237.55392456054688
+      ],
+      "candidate_bbox": [
+       290.23529052734375,
+       126.9423828125,
+       308.10589599609375,
+       140.92564392089844
+      ],
+      "reference_font": "SFRM1095",
+      "candidate_font": "NewCM10-Regular",
+      "reference_size": 12.243282318115234,
+      "candidate_size": 13.983255386352539,
+      "font_size_abs_log_ratio": 0.1328831655724867,
+      "reference_style_bits": {
+       "italic": false,
+       "serif": true,
+       "monospace": false,
+       "bold": false
+      },
+      "candidate_style_bits": {
+       "italic": false,
+       "serif": true,
+       "monospace": false,
+       "bold": false
+      },
+      "reference_color": 0,
+      "candidate_color": 0
+     },
+     {
+      "token": "0.0",
+      "reference_page": 1,
+      "candidate_page": 1,
+      "reference_bbox": [
+       438.1626892089844,
+       225.31065368652344,
+       453.69940185546875,
+       237.55392456054688
+      ],
+      "candidate_bbox": [
+       435.9183044433594,
+       126.9423828125,
+       453.7889099121094,
+       140.92564392089844
+      ],
+      "reference_font": "SFRM1095",
+      "candidate_font": "NewCM10-Regular",
+      "reference_size": 12.243282318115234,
+      "candidate_size": 13.983255386352539,
+      "font_size_abs_log_ratio": 0.1328831655724867,
+      "reference_style_bits": {
+       "italic": false,
+       "serif": true,
+       "monospace": false,
+       "bold": false
+      },
+      "candidate_style_bits": {
+       "italic": false,
+       "serif": true,
+       "monospace": false,
+       "bold": false
+      },
+      "reference_color": 0,
+      "candidate_color": 0
+     },
+     {
+      "token": "0.0",
+      "reference_page": 1,
+      "candidate_page": 1,
+      "reference_bbox": [
+       438.17486572265625,
+       240.51670837402344,
+       453.7238464355469,
+       252.75997924804688
+      ],
+      "candidate_bbox": [
+       435.9183044433594,
+       140.30657958984375,
+       453.7889099121094,
+       154.2898406982422
+      ],
+      "reference_font": "SFRM1095",
+      "candidate_font": "NewCM10-Regular",
+      "reference_size": 12.243282318115234,
+      "candidate_size": 13.983255386352539,
+      "font_size_abs_log_ratio": 0.1328831655724867,
+      "reference_style_bits": {
+       "italic": false,
+       "serif": true,
+       "monospace": false,
+       "bold": false
+      },
+      "candidate_style_bits": {
+       "italic": false,
+       "serif": true,
+       "monospace": false,
+       "bold": false
+      },
+      "reference_color": 0,
+      "candidate_color": 0
+     },
+     {
+      "token": "0.0",
+      "reference_page": 1,
+      "candidate_page": 1,
+      "reference_bbox": [
+       438.16259765625,
+       255.72276306152344,
+       453.7115783691406,
+       267.9660339355469
+      ],
+      "candidate_bbox": [
+       435.9183044433594,
+       153.6707763671875,
+       453.7889099121094,
+       167.65403747558594
+      ],
+      "reference_font": "SFRM1095",
+      "candidate_font": "NewCM10-Regular",
+      "reference_size": 12.243282318115234,
+      "candidate_size": 13.983255386352539,
+      "font_size_abs_log_ratio": 0.1328831655724867,
+      "reference_style_bits": {
+       "italic": false,
+       "serif": true,
+       "monospace": false,
+       "bold": false
+      },
+      "candidate_style_bits": {
+       "italic": false,
+       "serif": true,
+       "monospace": false,
+       "bold": false
+      },
+      "reference_color": 0,
+      "candidate_color": 0
+     },
+     {
+      "token": "0.0",
+      "reference_page": 1,
+      "candidate_page": 1,
+      "reference_bbox": [
+       404.45684814453125,
+       270.9288024902344,
+       420.0058288574219,
+       283.1720886230469
+      ],
+      "candidate_bbox": [
+       404.04315185546875,
+       167.034912109375,
+       421.91375732421875,
+       181.01817321777344
+      ],
+      "reference_font": "SFRM1095",
+      "candidate_font": "NewCM10-Regular",
+      "reference_size": 12.243282318115234,
+      "candidate_size": 13.983255386352539,
+      "font_size_abs_log_ratio": 0.1328831655724867,
+      "reference_style_bits": {
+       "italic": false,
+       "serif": true,
+       "monospace": false,
+       "bold": false
+      },
+      "candidate_style_bits": {
+       "italic": false,
+       "serif": true,
+       "monospace": false,
+       "bold": false
+      },
+      "reference_color": 0,
+      "candidate_color": 0
+     },
+     {
+      "token": "0.0",
+      "reference_page": 1,
+      "candidate_page": 1,
+      "reference_bbox": [
+       438.16265869140625,
+       286.1359558105469,
+       453.71160888671875,
+       298.3792419433594
+      ],
+      "candidate_bbox": [
+       435.9183044433594,
+       180.39910888671875,
+       453.7889099121094,
+       194.3823699951172
+      ],
+      "reference_font": "SFRM1095",
+      "candidate_font": "NewCM10-Regular",
+      "reference_size": 12.243282318115234,
+      "candidate_size": 13.983255386352539,
+      "font_size_abs_log_ratio": 0.1328831655724867,
+      "reference_style_bits": {
+       "italic": false,
+       "serif": true,
+       "monospace": false,
+       "bold": false
+      },
+      "candidate_style_bits": {
+       "italic": false,
+       "serif": true,
+       "monospace": false,
+       "bold": false
+      },
+      "reference_color": 0,
+      "candidate_color": 0
+     },
+     {
+      "token": "0.0",
+      "reference_page": 1,
+      "candidate_page": 1,
+      "reference_bbox": [
+       290.643310546875,
+       301.3420104980469,
+       306.1922912597656,
+       313.5852966308594
+      ],
+      "candidate_bbox": [
+       290.23529052734375,
+       193.7633056640625,
+       308.10589599609375,
+       207.74656677246094
+      ],
+      "reference_font": "SFRM1095",
+      "candidate_font": "NewCM10-Regular",
+      "reference_size": 12.243282318115234,
+      "candidate_size": 13.983255386352539,
+      "font_size_abs_log_ratio": 0.1328831655724867,
+      "reference_style_bits": {
+       "italic": false,
+       "serif": true,
+       "monospace": false,
+       "bold": false
+      },
+      "candidate_style_bits": {
+       "italic": false,
+       "serif": true,
+       "monospace": false,
+       "bold": false
+      },
+      "reference_color": 0,
+      "candidate_color": 0
+     },
+     {
+      "token": "0.0",
+      "reference_page": 1,
+      "candidate_page": 1,
+      "reference_bbox": [
+       438.1625671386719,
+       301.3420104980469,
+       453.7115478515625,
+       313.5852966308594
+      ],
+      "candidate_bbox": [
+       435.9183044433594,
+       193.7633056640625,
+       453.7889099121094,
+       207.74656677246094
+      ],
+      "reference_font": "SFRM1095",
+      "candidate_font": "NewCM10-Regular",
+      "reference_size": 12.243282318115234,
+      "candidate_size": 13.983255386352539,
+      "font_size_abs_log_ratio": 0.1328831655724867,
+      "reference_style_bits": {
+       "italic": false,
+       "serif": true,
+       "monospace": false,
+       "bold": false
+      },
+      "candidate_style_bits": {
+       "italic": false,
+       "serif": true,
+       "monospace": false,
+       "bold": false
+      },
+      "reference_color": 0,
+      "candidate_color": 0
+     },
+     {
+      "token": "0.0",
+      "reference_page": 1,
+      "candidate_page": 1,
+      "reference_bbox": [
+       438.1748962402344,
+       316.5480651855469,
+       453.7116394042969,
+       328.7913513183594
+      ],
+      "candidate_bbox": [
+       435.9183044433594,
+       207.12744140625,
+       453.7889099121094,
+       221.11070251464844
+      ],
+      "reference_font": "SFRM1095",
+      "candidate_font": "NewCM10-Regular",
+      "reference_size": 12.243282318115234,
+      "candidate_size": 13.983255386352539,
+      "font_size_abs_log_ratio": 0.1328831655724867,
+      "reference_style_bits": {
+       "italic": false,
+       "serif": true,
+       "monospace": false,
+       "bold": false
+      },
+      "candidate_style_bits": {
+       "italic": false,
+       "serif": true,
+       "monospace": false,
+       "bold": false
+      },
+      "reference_color": 0,
+      "candidate_color": 0
+     },
+     {
+      "token": "0.0",
+      "reference_page": 1,
+      "candidate_page": 1,
+      "reference_bbox": [
+       438.16754150390625,
+       331.7541198730469,
+       453.71649169921875,
+       343.9974060058594
+      ],
+      "candidate_bbox": [
+       435.9183044433594,
+       220.49163818359375,
+       453.7889099121094,
+       234.4748992919922
+      ],
+      "reference_font": "SFRM1095",
+      "candidate_font": "NewCM10-Regular",
+      "reference_size": 12.243282318115234,
+      "candidate_size": 13.983255386352539,
+      "font_size_abs_log_ratio": 0.1328831655724867,
+      "reference_style_bits": {
+       "italic": false,
+       "serif": true,
+       "monospace": false,
+       "bold": false
+      },
+      "candidate_style_bits": {
+       "italic": false,
+       "serif": true,
+       "monospace": false,
+       "bold": false
+      },
+      "reference_color": 0,
+      "candidate_color": 0
+     },
+     {
+      "token": "0.0",
+      "reference_page": 1,
+      "candidate_page": 1,
+      "reference_bbox": [
+       290.6482238769531,
+       346.9601745605469,
+       306.1971740722656,
+       359.2034606933594
+      ],
+      "candidate_bbox": [
+       290.23529052734375,
+       233.8558349609375,
+       308.10589599609375,
+       247.83909606933594
+      ],
+      "reference_font": "SFRM1095",
+      "candidate_font": "NewCM10-Regular",
+      "reference_size": 12.243282318115234,
+      "candidate_size": 13.983255386352539,
+      "font_size_abs_log_ratio": 0.1328831655724867,
+      "reference_style_bits": {
+       "italic": false,
+       "serif": true,
+       "monospace": false,
+       "bold": false
+      },
+      "candidate_style_bits": {
+       "italic": false,
+       "serif": true,
+       "monospace": false,
+       "bold": false
+      },
+      "reference_color": 0,
+      "candidate_color": 0
+     },
+     {
+      "token": "0.0",
+      "reference_page": 1,
+      "candidate_page": 1,
+      "reference_bbox": [
+       438.1798095703125,
+       346.9601745605469,
+       453.716552734375,
+       359.2034606933594
+      ],
+      "candidate_bbox": [
+       435.9183044433594,
+       233.8558349609375,
+       453.7889099121094,
+       247.83909606933594
+      ],
+      "reference_font": "SFRM1095",
+      "candidate_font": "NewCM10-Regular",
+      "reference_size": 12.243282318115234,
+      "candidate_size": 13.983255386352539,
+      "font_size_abs_log_ratio": 0.1328831655724867,
+      "reference_style_bits": {
+       "italic": false,
+       "serif": true,
+       "monospace": false,
+       "bold": false
+      },
+      "candidate_style_bits": {
+       "italic": false,
+       "serif": true,
+       "monospace": false,
+       "bold": false
+      },
+      "reference_color": 0,
+      "candidate_color": 0
+     },
+     {
+      "token": "0.0",
+      "reference_page": 1,
+      "candidate_page": 1,
+      "reference_bbox": [
+       438.1798095703125,
+       362.1662292480469,
+       453.716552734375,
+       374.4095153808594
+      ],
+      "candidate_bbox": [
+       435.9183044433594,
+       247.219970703125,
+       453.7889099121094,
+       261.2032165527344
+      ],
+      "reference_font": "SFRM1095",
+      "candidate_font": "NewCM10-Regular",
+      "reference_size": 12.243282318115234,
+      "candidate_size": 13.983255386352539,
+      "font_size_abs_log_ratio": 0.1328831655724867,
+      "reference_style_bits": {
+       "italic": false,
+       "serif": true,
+       "monospace": false,
+       "bold": false
+      },
+      "candidate_style_bits": {
+       "italic": false,
+       "serif": true,
+       "monospace": false,
+       "bold": false
+      },
+      "reference_color": 0,
+      "candidate_color": 0
+     },
+     {
+      "token": "0.0",
+      "reference_page": 1,
+      "candidate_page": 1,
+      "reference_bbox": [
+       438.1675109863281,
+       377.3733825683594,
+       453.7164611816406,
+       389.6166687011719
+      ],
+      "candidate_bbox": [
+       435.9183044433594,
+       260.584228515625,
+       453.7889099121094,
+       274.5674743652344
+      ],
+      "reference_font": "SFRM1095",
+      "candidate_font": "NewCM10-Regular",
+      "reference_size": 12.243282318115234,
+      "candidate_size": 13.983255386352539,
+      "font_size_abs_log_ratio": 0.1328831655724867,
+      "reference_style_bits": {
+       "italic": false,
+       "serif": true,
+       "monospace": false,
+       "bold": false
+      },
+      "candidate_style_bits": {
+       "italic": false,
+       "serif": true,
+       "monospace": false,
+       "bold": false
+      },
+      "reference_color": 0,
+      "candidate_color": 0
+     },
+     {
+      "token": "0.0",
+      "reference_page": 1,
+      "candidate_page": 1,
+      "reference_bbox": [
+       438.1675720214844,
+       392.5794372558594,
+       453.716552734375,
+       404.8227233886719
+      ],
+      "candidate_bbox": [
+       435.9183044433594,
+       273.9483642578125,
+       453.7889099121094,
+       287.9316101074219
+      ],
+      "reference_font": "SFRM1095",
+      "candidate_font": "NewCM10-Regular",
+      "reference_size": 12.243282318115234,
+      "candidate_size": 13.983255386352539,
+      "font_size_abs_log_ratio": 0.1328831655724867,
+      "reference_style_bits": {
+       "italic": false,
+       "serif": true,
+       "monospace": false,
+       "bold": false
+      },
+      "candidate_style_bits": {
+       "italic": false,
+       "serif": true,
+       "monospace": false,
+       "bold": false
+      },
+      "reference_color": 0,
+      "candidate_color": 0
+     },
+     {
+      "token": "0.0",
+      "reference_page": 1,
+      "candidate_page": 1,
+      "reference_bbox": [
+       438.1675109863281,
+       407.7854919433594,
+       453.7164611816406,
+       420.0287780761719
+      ],
+      "candidate_bbox": [
+       435.9183044433594,
+       287.31256103515625,
+       453.7889099121094,
+       301.2958068847656
+      ],
+      "reference_font": "SFRM1095",
+      "candidate_font": "NewCM10-Regular",
+      "reference_size": 12.243282318115234,
+      "candidate_size": 13.983255386352539,
+      "font_size_abs_log_ratio": 0.1328831655724867,
+      "reference_style_bits": {
+       "italic": false,
+       "serif": true,
+       "monospace": false,
+       "bold": false
+      },
+      "candidate_style_bits": {
+       "italic": false,
+       "serif": true,
+       "monospace": false,
+       "bold": false
+      },
+      "reference_color": 0,
+      "candidate_color": 0
+     },
+     {
+      "token": "0.0",
+      "reference_page": 1,
+      "candidate_page": 1,
+      "reference_bbox": [
+       438.16754150390625,
+       422.9915466308594,
+       453.71649169921875,
+       435.2348327636719
+      ],
+      "candidate_bbox": [
+       435.9183044433594,
+       300.6767272949219,
+       453.7889099121094,
+       314.65997314453125
+      ],
+      "reference_font": "SFRM1095",
+      "candidate_font": "NewCM10-Regular",
+      "reference_size": 12.243282318115234,
+      "candidate_size": 13.983255386352539,
+      "font_size_abs_log_ratio": 0.1328831655724867,
+      "reference_style_bits": {
+       "italic": false,
+       "serif": true,
+       "monospace": false,
+       "bold": false
+      },
+      "candidate_style_bits": {
+       "italic": false,
+       "serif": true,
+       "monospace": false,
+       "bold": false
+      },
+      "reference_color": 0,
+      "candidate_color": 0
+     },
+     {
+      "token": "0.0",
+      "reference_page": 1,
+      "candidate_page": 1,
+      "reference_bbox": [
+       290.6482238769531,
+       438.1976013183594,
+       306.1971740722656,
+       450.4408874511719
+      ],
+      "candidate_bbox": [
+       290.23529052734375,
+       314.0408935546875,
+       308.10589599609375,
+       328.0241394042969
+      ],
+      "reference_font": "SFRM1095",
+      "candidate_font": "NewCM10-Regular",
+      "reference_size": 12.243282318115234,
+      "candidate_size": 13.983255386352539,
+      "font_size_abs_log_ratio": 0.1328831655724867,
+      "reference_style_bits": {
+       "italic": false,
+       "serif": true,
+       "monospace": false,
+       "bold": false
+      },
+      "candidate_style_bits": {
+       "italic": false,
+       "serif": true,
+       "monospace": false,
+       "bold": false
+      },
+      "reference_color": 0,
+      "candidate_color": 0
+     },
+     {
+      "token": "0.0",
+      "reference_page": 1,
+      "candidate_page": 1,
+      "reference_bbox": [
+       438.16754150390625,
+       438.1976013183594,
+       453.71649169921875,
+       450.4408874511719
+      ],
+      "candidate_bbox": [
+       435.9183044433594,
+       314.0408935546875,
+       453.7889099121094,
+       328.0241394042969
+      ],
+      "reference_font": "SFRM1095",
+      "candidate_font": "NewCM10-Regular",
+      "reference_size": 12.243282318115234,
+      "candidate_size": 13.983255386352539,
+      "font_size_abs_log_ratio": 0.1328831655724867,
+      "reference_style_bits": {
+       "italic": false,
+       "serif": true,
+       "monospace": false,
+       "bold": false
+      },
+      "candidate_style_bits": {
+       "italic": false,
+       "serif": true,
+       "monospace": false,
+       "bold": false
+      },
+      "reference_color": 0,
+      "candidate_color": 0
+     },
+     {
+      "token": "0.0",
+      "reference_page": 1,
+      "candidate_page": 1,
+      "reference_bbox": [
+       290.6482238769531,
+       453.4036560058594,
+       306.1971740722656,
+       465.6469421386719
+      ],
+      "candidate_bbox": [
+       290.23529052734375,
+       327.40509033203125,
+       308.10589599609375,
+       341.3883361816406
+      ],
+      "reference_font": "SFRM1095",
+      "candidate_font": "NewCM10-Regular",
+      "reference_size": 12.243282318115234,
+      "candidate_size": 13.983255386352539,
+      "font_size_abs_log_ratio": 0.1328831655724867,
+      "reference_style_bits": {
+       "italic": false,
+       "serif": true,
+       "monospace": false,
+       "bold": false
+      },
+      "candidate_style_bits": {
+       "italic": false,
+       "serif": true,
+       "monospace": false,
+       "bold": false
+      },
+      "reference_color": 0,
+      "candidate_color": 0
+     },
+     {
+      "token": "0.0",
+      "reference_page": 1,
+      "candidate_page": 1,
+      "reference_bbox": [
+       438.1675109863281,
+       453.4036560058594,
+       453.7164611816406,
+       465.6469421386719
+      ],
+      "candidate_bbox": [
+       435.9183044433594,
+       327.40509033203125,
+       453.7889099121094,
+       341.3883361816406
+      ],
+      "reference_font": "SFRM1095",
+      "candidate_font": "NewCM10-Regular",
+      "reference_size": 12.243282318115234,
+      "candidate_size": 13.983255386352539,
+      "font_size_abs_log_ratio": 0.1328831655724867,
+      "reference_style_bits": {
+       "italic": false,
+       "serif": true,
+       "monospace": false,
+       "bold": false
+      },
+      "candidate_style_bits": {
+       "italic": false,
+       "serif": true,
+       "monospace": false,
+       "bold": false
+      },
+      "reference_color": 0,
+      "candidate_color": 0
+     },
+     {
+      "token": "0.0",
+      "reference_page": 1,
+      "candidate_page": 1,
+      "reference_bbox": [
+       438.1675109863281,
+       468.6108093261719,
+       453.7164611816406,
+       480.8540954589844
+      ],
+      "candidate_bbox": [
+       435.9183044433594,
+       340.7692565917969,
+       453.7889099121094,
+       354.75250244140625
+      ],
+      "reference_font": "SFRM1095",
+      "candidate_font": "NewCM10-Regular",
+      "reference_size": 12.243282318115234,
+      "candidate_size": 13.983255386352539,
+      "font_size_abs_log_ratio": 0.1328831655724867,
+      "reference_style_bits": {
+       "italic": false,
+       "serif": true,
+       "monospace": false,
+       "bold": false
+      },
+      "candidate_style_bits": {
+       "italic": false,
+       "serif": true,
+       "monospace": false,
+       "bold": false
+      },
+      "reference_color": 0,
+      "candidate_color": 0
+     },
+     {
+      "token": "0.0",
+      "reference_page": 1,
+      "candidate_page": 1,
+      "reference_bbox": [
+       438.1553039550781,
+       483.8168640136719,
+       453.70428466796875,
+       496.0601501464844
+      ],
+      "candidate_bbox": [
+       435.9183044433594,
+       354.1334533691406,
+       453.7889099121094,
+       368.11669921875
+      ],
+      "reference_font": "SFRM1095",
+      "candidate_font": "NewCM10-Regular",
+      "reference_size": 12.243282318115234,
+      "candidate_size": 13.983255386352539,
+      "font_size_abs_log_ratio": 0.1328831655724867,
+      "reference_style_bits": {
+       "italic": false,
+       "serif": true,
+       "monospace": false,
+       "bold": false
+      },
+      "candidate_style_bits": {
+       "italic": false,
+       "serif": true,
+       "monospace": false,
+       "bold": false
+      },
+      "reference_color": 0,
+      "candidate_color": 0
+     }
+    ]
+   },
+   "interpretation": "Raw PDF font observables are diagnostic; font names and flags are renderer metadata, not perceptual truth."
+  },
+  "raster_ink": {
+   "status": "scored",
+   "applicable": true,
+   "metrics": {
+    "paired_page_count": 3,
+    "unpaired_page_count": 0,
+    "unregistered_tolerant_ink_f1_macro": 0.26770450420275077,
+    "registered_tolerant_ink_f1_macro": 0.48684403094656586,
+    "registration_gain": 0.2191395267438151
+   },
+   "evidence": {
+    "pages": [
+     {
+      "page": 0,
+      "reference_raster_size": [
+       816,
+       1056
+      ],
+      "candidate_raster_size_before_resize": [
+       816,
+       1056
+      ],
+      "candidate_resized_to_reference_canvas": true,
+      "coordinate_frame": "registered_reference_raster",
+      "registration_translation_px": [
+       1,
+       28
+      ],
+      "unregistered": {
+       "reference_ink_pixels": 5229,
+       "candidate_ink_pixels": 5269,
+       "precision": 0.05143290947048776,
+       "recall": 0.06636068081851214,
+       "f1": 0.057950910241628,
+       "unmatched_ink_pixels": 9880,
+       "unmatched_ink_fraction_of_union": 0.9547738693467337
+      },
+      "registered": {
+       "reference_ink_pixels": 5229,
+       "candidate_ink_pixels": 5269,
+       "precision": 0.5403302334408806,
+       "recall": 0.514247466054695,
+       "f1": 0.5269662984768633,
+       "unmatched_ink_pixels": 4962,
+       "unmatched_ink_fraction_of_union": 0.5324605644382444
+      },
+      "registered_mean_absolute_gray_difference": 0.004801424896310276,
+      "top_difference_bbox": {
+       "pixel_bbox": [
+        96,
+        153,
+        720,
+        1000
+       ],
+       "normalized_bbox": [
+        0.11764705882352941,
+        0.14488636363636365,
+        0.8823529411764706,
+        0.946969696969697
+       ]
+      }
+     },
+     {
+      "page": 1,
+      "reference_raster_size": [
+       816,
+       1056
+      ],
+      "candidate_raster_size_before_resize": [
+       816,
+       1056
+      ],
+      "candidate_resized_to_reference_canvas": true,
+      "coordinate_frame": "registered_reference_raster",
+      "registration_translation_px": [
+       0,
+       126
+      ],
+      "unregistered": {
+       "reference_ink_pixels": 41254,
+       "candidate_ink_pixels": 49942,
+       "precision": 0.4071122502102439,
+       "recall": 0.4609250012120037,
+       "f1": 0.43235060272845066,
+       "unmatched_ink_pixels": 51849,
+       "unmatched_ink_fraction_of_union": 0.6185755189692198
+      },
+      "registered": {
+       "reference_ink_pixels": 41254,
+       "candidate_ink_pixels": 49942,
+       "precision": 0.5551039205478355,
+       "recall": 0.6322538420516798,
+       "f1": 0.5911724293374534,
+       "unmatched_ink_pixels": 37390,
+       "unmatched_ink_fraction_of_union": 0.46318893004472084
+      },
+      "registered_mean_absolute_gray_difference": 0.04319402393310265,
+      "top_difference_bbox": {
+       "pixel_bbox": [
+        96,
+        236,
+        721,
+        1000
+       ],
+       "normalized_bbox": [
+        0.11764705882352941,
+        0.22348484848484848,
+        0.883578431372549,
+        0.946969696969697
+       ]
+      }
+     },
+     {
+      "page": 2,
+      "reference_raster_size": [
+       816,
+       1056
+      ],
+      "candidate_raster_size_before_resize": [
+       816,
+       1056
+      ],
+      "candidate_resized_to_reference_canvas": true,
+      "coordinate_frame": "registered_reference_raster",
+      "registration_translation_px": [
+       2,
+       16
+      ],
+      "unregistered": {
+       "reference_ink_pixels": 47557,
+       "candidate_ink_pixels": 66532,
+       "precision": 0.2728160884987675,
+       "recall": 0.36654961414723386,
+       "f1": 0.3128119996381737,
+       "unmatched_ink_pixels": 78506,
+       "unmatched_ink_fraction_of_union": 0.7304854332796754
+      },
+      "registered": {
+       "reference_ink_pixels": 47557,
+       "candidate_ink_pixels": 65800,
+       "precision": 0.3017477203647416,
+       "recall": 0.3956935887461362,
+       "f1": 0.34239336502538104,
+       "unmatched_ink_pixels": 74684,
+       "unmatched_ink_fraction_of_union": 0.7064521316344581
+      },
+      "registered_mean_absolute_gray_difference": 0.07530691411665676,
+      "top_difference_bbox": {
+       "pixel_bbox": [
+        96,
+        108,
+        723,
+        1056
+       ],
+       "normalized_bbox": [
+        0.11764705882352941,
+        0.10227272727272728,
+        0.8860294117647058,
+        1.0
+       ]
+      }
+     }
+    ],
+    "top_difference_bbox": {
+     "page": 2,
+     "unpaired_side": null,
+     "coordinate_frame": "registered_reference_raster",
+     "registration_translation_px": [
+      2,
+      16
+     ],
+     "pixel_bbox": [
+      96,
+      108,
+      723,
+      1056
+     ],
+     "normalized_bbox": [
+      0.11764705882352941,
+      0.10227272727272728,
+      0.8860294117647058,
+      1.0
+     ]
+    }
+   },
+   "interpretation": "Candidate pages are resized to the reference canvas, then optionally translation-registered. Use canvas and geometry axes for layout claims."
+  },
+  "raster_perceptual": {
+   "status": "scored",
+   "applicable": true,
+   "metrics": {
+    "paired_page_count": 3,
+    "scored_page_count": 3,
+    "abstained_page_count": 0,
+    "unpaired_page_count": 0,
+    "unregistered_ssim_macro": 0.7539647121266339,
+    "registered_ssim_macro": 0.7763974887137399,
+    "unregistered_multiscale_ssim_diagnostic_macro": 0.8243042032086202,
+    "registered_multiscale_ssim_diagnostic_macro": 0.8486137127533763
+   },
+   "evidence": {
+    "pages": [
+     {
+      "page": 0,
+      "status": "scored",
+      "unregistered_ssim": 0.958361337078783,
+      "registered_ssim": 0.9710722618848733,
+      "unregistered_multiscale_ssim_diagnostic": 0.9621289485081611,
+      "registered_multiscale_ssim_diagnostic": 0.9770419642121037,
+      "unregistered_scale_scores": [
+       {
+        "downsample_factor": 1,
+        "ssim": 0.958361337078783
+       },
+       {
+        "downsample_factor": 2,
+        "ssim": 0.941927154856882
+       },
+       {
+        "downsample_factor": 4,
+        "ssim": 0.9192208936652414
+       },
+       {
+        "downsample_factor": 8,
+        "ssim": 0.8784618789876538
+       }
+      ],
+      "registered_scale_scores": [
+       {
+        "downsample_factor": 1,
+        "ssim": 0.9710722618848733
+       },
+       {
+        "downsample_factor": 2,
+        "ssim": 0.9611478766682374
+       },
+       {
+        "downsample_factor": 4,
+        "ssim": 0.9503308752931433
+       },
+       {
+        "downsample_factor": 8,
+        "ssim": 0.9339786123219308
+       }
+      ],
+      "registration_translation_px": [
+       1,
+       28
+      ],
+      "candidate_resized_to_reference_canvas": false,
+      "reference_raster_size": [
+       816,
+       1056
+      ],
+      "candidate_raster_size_before_resize": [
+       816,
+       1056
+      ],
+      "registered_difference_bbox": {
+       "pixel_bbox": [
+        96,
+        153,
+        720,
+        1000
+       ],
+       "normalized_bbox": [
+        0.11764705882352941,
+        0.14488636363636365,
+        0.8823529411764706,
+        0.946969696969697
+       ]
+      }
+     },
+     {
+      "page": 1,
+      "status": "scored",
+      "unregistered_ssim": 0.688056123270571,
+      "registered_ssim": 0.7317250458261734,
+      "unregistered_multiscale_ssim_diagnostic": 0.7868552495146559,
+      "registered_multiscale_ssim_diagnostic": 0.8342900408516879,
+      "unregistered_scale_scores": [
+       {
+        "downsample_factor": 1,
+        "ssim": 0.688056123270571
+       },
+       {
+        "downsample_factor": 2,
+        "ssim": 0.5913861123362134
+       },
+       {
+        "downsample_factor": 4,
+        "ssim": 0.5203187794910535
+       },
+       {
+        "downsample_factor": 8,
+        "ssim": 0.5017659853722186
+       }
+      ],
+      "registered_scale_scores": [
+       {
+        "downsample_factor": 1,
+        "ssim": 0.7317250458261734
+       },
+       {
+        "downsample_factor": 2,
+        "ssim": 0.6660764090012271
+       },
+       {
+        "downsample_factor": 4,
+        "ssim": 0.6288131454590693
+       },
+       {
+        "downsample_factor": 8,
+        "ssim": 0.649464986454862
+       }
+      ],
+      "registration_translation_px": [
+       0,
+       126
+      ],
+      "candidate_resized_to_reference_canvas": false,
+      "reference_raster_size": [
+       816,
+       1056
+      ],
+      "candidate_raster_size_before_resize": [
+       816,
+       1056
+      ],
+      "registered_difference_bbox": {
+       "pixel_bbox": [
+        96,
+        236,
+        721,
+        1000
+       ],
+       "normalized_bbox": [
+        0.11764705882352941,
+        0.22348484848484848,
+        0.883578431372549,
+        0.946969696969697
+       ]
+      }
+     },
+     {
+      "page": 2,
+      "status": "scored",
+      "unregistered_ssim": 0.6154766760305473,
+      "registered_ssim": 0.6263951584301729,
+      "unregistered_multiscale_ssim_diagnostic": 0.7239284116030434,
+      "registered_multiscale_ssim_diagnostic": 0.7345091331963375,
+      "unregistered_scale_scores": [
+       {
+        "downsample_factor": 1,
+        "ssim": 0.6154766760305473
+       },
+       {
+        "downsample_factor": 2,
+        "ssim": 0.5041103142389324
+       },
+       {
+        "downsample_factor": 4,
+        "ssim": 0.40241017931745354
+       },
+       {
+        "downsample_factor": 8,
+        "ssim": 0.2895762661541399
+       }
+      ],
+      "registered_scale_scores": [
+       {
+        "downsample_factor": 1,
+        "ssim": 0.6263951584301729
+       },
+       {
+        "downsample_factor": 2,
+        "ssim": 0.5190065110251763
+       },
+       {
+        "downsample_factor": 4,
+        "ssim": 0.4242720237398871
+       },
+       {
+        "downsample_factor": 8,
+        "ssim": 0.3235188533472469
+       }
+      ],
+      "registration_translation_px": [
+       2,
+       16
+      ],
+      "candidate_resized_to_reference_canvas": false,
+      "reference_raster_size": [
+       816,
+       1056
+      ],
+      "candidate_raster_size_before_resize": [
+       816,
+       1056
+      ],
+      "registered_difference_bbox": {
+       "pixel_bbox": [
+        96,
+        108,
+        723,
+        1056
+       ],
+       "normalized_bbox": [
+        0.11764705882352941,
+        0.10227272727272728,
+        0.8860294117647058,
+        1.0
+       ]
+      }
+     }
+    ]
+   },
+   "interpretation": "SSIM is reported before and after translation-only registration. The multiscale value is the documented geometric mean of four SSIM scales, not canonical MS-SSIM. No candidate resizing is performed; SSIM abstains when physical canvases/grids differ."
+  },
+  "tables": {
+   "status": "abstain",
+   "applicable": null,
+   "metrics": {},
+   "evidence": {
+    "source_flags": {
+     "reference": null,
+     "candidate": null
+    }
+   },
+   "reason": "Applicability for tables was not established by source metadata."
+  },
+  "formulas": {
+   "status": "abstain",
+   "applicable": null,
+   "metrics": {},
+   "evidence": {
+    "source_flags": {
+     "reference": null,
+     "candidate": null
+    }
+   },
+   "reason": "Applicability for formulas was not established by source metadata."
+  },
+  "figures": {
+   "status": "abstain",
+   "applicable": null,
+   "metrics": {},
+   "evidence": {
+    "source_flags": {
+     "reference": null,
+     "candidate": null
+    }
+   },
+   "reason": "Applicability for figures was not established by source metadata."
+  }
+ }
+}

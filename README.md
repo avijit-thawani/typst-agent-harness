@@ -55,9 +55,12 @@ the cost.
   <img src="figures/fig4_gate_feedback.png" width="40%" alt="Gate-first feedback">
 </p>
 
-| pdfLaTeX reference | Best agentic Typst output |
-|---|---|
-| ![reference](harness_baseline/report/best_ref.png) | ![candidate](harness_baseline/report/best_cand.png) |
+Sample `05_tables_simple_005`, page 1. Both converters silently drop the
+47-row table; the agentic harness reproduces it.
+
+| pdfLaTeX reference | Pandoc | Tylax | Agentic harness |
+|---|---|---|---|
+| ![reference](harness_baseline/report/best_ref.png) | ![pandoc](figures/engine_pandoc_05_tables_simple_005.png) | ![tylax](figures/engine_tylax_05_tables_simple_005.png) | ![agentic](harness_baseline/report/best_cand.png) |
 
 **2. A fix for the reward.** The original raster metric topped out at about 25–30
 even for faithful conversions. We traced this to the metric itself, not to the
@@ -105,7 +108,7 @@ harness_baseline/   agentic + one-shot runners, feedback tools, raster_v0.2, res
                     summary.json, score JSONs, claude_transcript.jsonl.gz
 dataset_expansion/  dataset builders, corpus + provenance, 1-turn and agentic runs, report
 metric_research/    metric-v2 rescoring (phase A), gate-first feedback A/B (phase B), report
-figures/            README charts (make_figures.py regenerates PNG + SVG)
+figures/            README charts (make_figures.py) and engine renders (make_engine_panels.py)
 third_party/lathe   upstream Lathe benchmark (git submodule, pinned)
 ```
 
